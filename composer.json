@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "require": {
       "composer/installer":"~1.0"
-    }
+    },
   
     "extra": {
         "installer-paths": {
