@@ -1,0 +1,16 @@
+uuid: 84678733-d809-4965-a4a6-43da48063818
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_menus
+  module:
+    - user
+_core:
+  default_config_hash: 1p1McxU25slul8ZmMb0ZrbZ0rJOUzPl_4bplqsqTdSc
+id: user_add_role_action.gestor_menus
+label: 'Add the gestor menus role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_menus

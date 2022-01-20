@@ -1,0 +1,8 @@
+_core:
+  default_config_hash: G7NXuzvp6zwivGb5PADfQHDRpaF9K729xXC9aEM6aM8
+langcode: es
+abs_urls: false
+admin_theme: false
+roles_profiles:
+  gestor_basico:
+    public: member

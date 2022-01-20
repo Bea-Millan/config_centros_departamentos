@@ -1,0 +1,26 @@
+uuid: d2245556-7448-4eab-b441-90390d5499c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.te_interesa.field_link
+    - node.type.te_interesa
+  module:
+    - user
+_core:
+  default_config_hash: PDoYQLXpVg-2sxert7iqSFziyRnZa-n02h-oBchWEgQ
+id: node.te_interesa.teaser
+targetEntityType: node
+bundle: te_interesa
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_link: true
+  langcode: true

@@ -1,0 +1,21 @@
+uuid: 4498c8dd-fffe-4add-8b13-7f829b849424
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: LJag7DJ154U2Xkqs5i8-W5oOJfxhW_K9L4Wc7Xbh8go
+id: paragraph.field_enlace_bolo
+field_name: field_enlace_bolo
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

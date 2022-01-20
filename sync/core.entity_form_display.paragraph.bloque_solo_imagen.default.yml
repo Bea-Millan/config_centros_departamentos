@@ -1,0 +1,38 @@
+uuid: a12487f7-626e-4d41-80c4-6a77ab2489bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_solo_imagen.field_enlace_bolo
+    - field.field.paragraph.bloque_solo_imagen.field_imagen_bolo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bloque_solo_imagen
+  module:
+    - image
+    - link
+_core:
+  default_config_hash: 2gnUZf8KDwsk5joEiVuzhU7XplNujdFLa7v2bhPBrG0
+id: paragraph.bloque_solo_imagen.default
+targetEntityType: paragraph
+bundle: bloque_solo_imagen
+mode: default
+content:
+  field_enlace_bolo:
+    type: link_default
+    weight: 1
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_imagen_bolo:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

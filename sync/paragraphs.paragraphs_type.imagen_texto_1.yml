@@ -1,0 +1,12 @@
+uuid: 2b32abc4-4ead-47e0-ad6a-78901281fb73
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: '-EkYwXIKvKzOx7yiGhQpGI-31VFv3sPlZxPczNF_jEM'
+id: imagen_texto_1
+label: 'Banda imagen y texto'
+icon_uuid: null
+icon_default: null
+description: 'Muestra dos bloques uno para la imagen y otro para texto'
+behavior_plugins: {  }

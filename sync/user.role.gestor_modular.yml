@@ -1,0 +1,26 @@
+uuid: 406bc3b5-d5af-41c7-b058-1b237e7fcf78
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_modular
+  module:
+    - block_region_permissions
+    - node
+    - publishcontent
+_core:
+  default_config_hash: NXrmSD20ySVkWnUiAGSSDr5xTCPxIYp6j6XKdUIlbIg
+id: gestor_modular
+label: 'gestor modular'
+weight: 8
+is_admin: null
+permissions:
+  - 'administer unizar_centro menu_principal'
+  - 'create pagina_modular content'
+  - 'delete any pagina_modular content'
+  - 'delete own pagina_modular content'
+  - 'edit any pagina_modular content'
+  - 'edit own pagina_modular content'
+  - 'publish editable node type pagina_modular'
+  - 'publish own node type pagina_modular'
+  - 'unpublish any node type pagina_modular'

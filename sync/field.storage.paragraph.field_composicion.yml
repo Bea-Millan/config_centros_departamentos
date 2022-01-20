@@ -1,0 +1,29 @@
+uuid: b940bdbb-c1db-401f-beb9-3afef6a13dd6
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: HY0cQUyEolXfyC-Sm12B3bdu50QUV92m28GmZGjZHz4
+id: paragraph.field_composicion
+field_name: field_composicion
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: layout-1
+      label: 'Composición 1'
+    -
+      value: layout-2
+      label: 'Composición 2'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

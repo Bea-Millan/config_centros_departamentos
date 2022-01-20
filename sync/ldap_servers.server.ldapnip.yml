@@ -1,0 +1,40 @@
+uuid: 4e12d1e2-6be5-4039-b3d5-e187b2b59354
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 9VtsIrM0nAJtqPNZFSpHWDfGAZQ3016YZQ4iPhcd7j4
+id: ldapnip
+label: LDAPNip
+type: openldap
+address: gestldap.unizar.es
+port: 389
+timeout: 10
+encryption: none
+weight: null
+bind_method: anon
+binddn: null
+bindpw: null
+basedn:
+  - 'ou=admon,dc=unizar,dc=es'
+user_attr: uid
+account_name_attr: uid
+mail_attr: mail
+mail_template: ''
+picture_attr: ''
+unique_persistent_attr: ''
+unique_persistent_attr_binary: false
+user_dn_expression: ''
+testing_drupal_username: ''
+testing_drupal_user_dn: ''
+grp_unused: false
+grp_object_cat: ''
+grp_nested: false
+grp_user_memb_attr_exists: false
+grp_user_memb_attr: ''
+grp_memb_attr: ''
+grp_memb_attr_match_user_attr: ''
+grp_derive_from_dn: false
+grp_derive_from_dn_attr: ''
+grp_test_grp_dn: ''
+grp_test_grp_dn_writeable: ''

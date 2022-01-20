@@ -1,0 +1,24 @@
+uuid: 10478eec-553e-4a54-9196-6ec56fd7b267
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: D5bv5vr5F5crqoeG7SIWL9RbvafKtl2IuVxkplrX_CQ
+id: galeria
+label: Galería
+type: 'canonical_entities:node'
+pattern: 'galeria/[node:title]'
+selection_criteria:
+  2adace0b-aecd-4a6c-839d-e26d7be14b13:
+    id: node_type
+    negate: false
+    uuid: 2adace0b-aecd-4a6c-839d-e26d7be14b13
+    context_mapping:
+      node: node
+    bundles:
+      galeria: galeria
+selection_logic: and
+weight: -5
+relationships: {  }

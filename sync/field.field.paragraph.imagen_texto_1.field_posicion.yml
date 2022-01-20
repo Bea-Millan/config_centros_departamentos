@@ -1,0 +1,23 @@
+uuid: 7bfb9681-38a9-4175-bde5-8d7f5d938cb1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_posicion
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - options
+_core:
+  default_config_hash: k7ryxgT3OTEUYChXwkxBQkTmxaw6QgHjTk_BTuRng4w
+id: paragraph.imagen_texto_1.field_posicion
+field_name: field_posicion
+entity_type: paragraph
+bundle: imagen_texto_1
+label: 'Posición imagen'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

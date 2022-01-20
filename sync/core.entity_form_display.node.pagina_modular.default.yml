@@ -1,0 +1,122 @@
+uuid: 85678f60-4aba-407b-a14d-3f39609ae457
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_modular.field_color_principal
+    - field.field.node.pagina_modular.field_color_secundario
+    - field.field.node.pagina_modular.field_modular
+    - node.type.pagina_modular
+  module:
+    - color_field
+    - paragraphs
+    - path
+_core:
+  default_config_hash: HV_yiiTboTP55ecwwJbKrGR-QtZTIEEBAQJQxp1xz_8
+id: node.pagina_modular.default
+targetEntityType: node
+bundle: pagina_modular
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_color_principal:
+    type: color_field_widget_grid
+    weight: 8
+    region: content
+    settings:
+      cell_width: '10'
+      cell_height: '10'
+      cell_margin: '1'
+      box_width: '115'
+      box_height: '20'
+      columns: '16'
+    third_party_settings: {  }
+  field_color_secundario:
+    type: color_field_widget_grid
+    weight: 9
+    region: content
+    settings:
+      cell_width: '10'
+      cell_height: '10'
+      cell_margin: '1'
+      box_width: '115'
+      box_height: '20'
+      columns: '16'
+    third_party_settings: {  }
+  field_modular:
+    type: paragraphs
+    weight: 10
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: _none
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 1
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 4
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 7
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

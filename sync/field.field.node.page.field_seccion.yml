@@ -1,0 +1,31 @@
+uuid: a45f9a98-e670-4427-9497-7768fe2029f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seccion
+    - node.type.page
+    - taxonomy.vocabulary.secciones
+_core:
+  default_config_hash: wTdZT5LkdRpn8ClwumqfuBMnvWUSV0umNdP9VchA4wY
+id: node.page.field_seccion
+field_name: field_seccion
+entity_type: node
+bundle: page
+label: Sección
+description: 'Si necesita añadir nuevos elementos al desplegable <a href="/admin/structure/taxonomy/manage/secciones/overview">debe añadir nuevos términos al vocabulario "Secciones"</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      secciones: secciones
+    sort:
+      field: _none
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: 5b616a9b-ed91-42d4-b838-bd4e952e3899
+langcode: es
+status: true
+dependencies:
+  module:
+    - link
+    - node
+_core:
+  default_config_hash: '-krLMc-Mono2KNzN_5U_iVA4STBJjmG9kFgyvEk0DAw'
+id: node.field_link_noticia
+field_name: field_link_noticia
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

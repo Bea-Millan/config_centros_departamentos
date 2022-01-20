@@ -1,0 +1,20 @@
+uuid: de57736e-f465-4271-a7d6-7a4e4d319932
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'use text format filtered_html'

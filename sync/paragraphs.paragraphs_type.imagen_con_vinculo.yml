@@ -1,0 +1,12 @@
+uuid: f6874722-3cbb-4568-95cd-533a1dcab9a2
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dXExWTHz3PVRlgWcBqhMUCUuKA-ikv5sJFjNGymdoCY
+id: imagen_con_vinculo
+label: 'Imagen con vinculo'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

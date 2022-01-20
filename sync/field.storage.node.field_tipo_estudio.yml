@@ -1,0 +1,25 @@
+uuid: 14c00a59-7705-407f-80dc-4e45bba7880c
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: x4-heTuToqalS4eQWb7KLKsgpoiqxRQpqjgEE8HH5Gk
+id: node.field_tipo_estudio
+field_name: field_tipo_estudio
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,13 @@
+uuid: 237ad130-d246-46d6-af13-d19dd1a95952
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pestana
+_core:
+  default_config_hash: d_TFdUAAmNlI5r42kxCexhoYqfToYmmArPImdwpaeZQ
+id: node.pestana
+target_entity_type_id: node
+target_bundle: pestana
+default_langcode: site_default
+language_alterable: false

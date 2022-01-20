@@ -1,0 +1,73 @@
+uuid: 9debb26c-9854-41cd-bd10-2bf503cecf5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_modular
+    - node.type.pagina_modular
+    - paragraphs.paragraphs_type.banda_imagenes
+    - paragraphs.paragraphs_type.bolos
+    - paragraphs.paragraphs_type.cubos
+    - paragraphs.paragraphs_type.imagen
+    - paragraphs.paragraphs_type.imagen_texto_1
+    - paragraphs.paragraphs_type.texto
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 5lWDhlhVOZmtGMopPxnNwt7s9s5uiPtyEyr2OauDp04
+id: node.pagina_modular.field_modular
+field_name: field_modular
+entity_type: node
+bundle: pagina_modular
+label: Modular
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      texto: texto
+      imagen_texto_1: imagen_texto_1
+      imagen: imagen
+      bolos: bolos
+      banda_imagenes: banda_imagenes
+      cubos: cubos
+    negate: 0
+    target_bundles_drag_drop:
+      banda_imagenes:
+        weight: -18
+        enabled: true
+      bolos:
+        weight: -20
+        enabled: true
+      bolos_texto:
+        weight: -19
+        enabled: false
+      columnas:
+        weight: -14
+        enabled: true
+      columnas_texto:
+        weight: -16
+        enabled: false
+      cubos:
+        weight: -17
+        enabled: true
+      cubos_texto:
+        weight: -15
+        enabled: false
+      imagen:
+        weight: -21
+        enabled: true
+      imagen_con_vinculo:
+        weight: -13
+        enabled: false
+      imagen_texto_1:
+        weight: -22
+        enabled: true
+      texto:
+        weight: -23
+        enabled: true
+field_type: entity_reference_revisions

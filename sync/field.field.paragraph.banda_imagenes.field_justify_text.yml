@@ -1,0 +1,23 @@
+uuid: ae14c082-999c-4960-9eaf-323ac1358ccc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_justify_text
+    - paragraphs.paragraphs_type.banda_imagenes
+  module:
+    - options
+_core:
+  default_config_hash: '-EJY66bgF2Ln_n44Y0sGDOFSgstxggK440PNWke1z_0'
+id: paragraph.banda_imagenes.field_justify_text
+field_name: field_justify_text
+entity_type: paragraph
+bundle: banda_imagenes
+label: 'Posición título'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

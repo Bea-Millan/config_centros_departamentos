@@ -1,0 +1,17 @@
+uuid: 2e1812e3-22ef-451e-bd44-ce0f8d4a5e5b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: qRXiXBJ-JlVpX8_ZwIhhnHuzILZzlG8lvyBj2g5h6f8
+name: img_cab_pag_basica_765x245
+label: 'Img cabecera pag_basica 765x245'
+effects:
+  28da44bb-3811-4eca-bf37-55b32141aaf4:
+    uuid: 28da44bb-3811-4eca-bf37-55b32141aaf4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 765
+      height: 245
+      anchor: center-center

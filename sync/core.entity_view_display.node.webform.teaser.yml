@@ -1,0 +1,48 @@
+uuid: b081eaf9-f0c6-4a8b-824c-6a1c68018556
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.body
+    - field.field.node.webform.field_columna_lateral
+    - field.field.node.webform.field_ocultar_dato_actualizacion
+    - field.field.node.webform.field_ocultar_lateral
+    - field.field.node.webform.field_ocultar_social
+    - field.field.node.webform.field_ocultar_titulo
+    - field.field.node.webform.field_seccion
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - text
+    - user
+_core:
+  default_config_hash: cLaWBKuJMuQ3xNvAyVGG-5QLKg-E9mmvZ95Il5TxxZI
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_columna_lateral: true
+  field_ocultar_dato_actualizacion: true
+  field_ocultar_lateral: true
+  field_ocultar_social: true
+  field_ocultar_titulo: true
+  field_seccion: true
+  langcode: true
+  webform: true

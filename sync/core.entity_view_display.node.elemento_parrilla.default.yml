@@ -1,0 +1,56 @@
+uuid: f796fafa-2f0c-414d-8925-1c2fe300225e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.elemento_parrilla.field_enlace
+    - field.field.node.elemento_parrilla.field_imagen_parrilla
+    - node.type.elemento_parrilla
+  module:
+    - image
+    - link
+    - user
+_core:
+  default_config_hash: bXBABJlnoFxR_tSrjC378HUB0TFE1T6r_GmV04Ncwb8
+id: node.elemento_parrilla.default
+targetEntityType: node
+bundle: elemento_parrilla
+mode: default
+content:
+  field_enlace:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_parrilla:
+    type: image
+    label: inline
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  langcode:
+    type: language
+    label: inline
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden:
+  addtoany: true

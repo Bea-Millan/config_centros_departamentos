@@ -1,0 +1,137 @@
+uuid: e4cda296-6bad-4e33-add5-434f383791d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.elemento_parrilla
+    - node.type.estudio
+    - node.type.galeria
+    - node.type.noticia
+    - node.type.page
+    - node.type.pestana
+    - node.type.slideshow
+    - node.type.te_interesa
+    - node.type.webform
+    - taxonomy.vocabulary.pestanas
+    - taxonomy.vocabulary.secciones
+    - taxonomy.vocabulary.tipos_de_estudio
+  module:
+    - captcha
+    - content_moderation
+    - contextual
+    - entity_clone
+    - language
+    - locale
+    - node
+    - path
+    - publishcontent
+    - system
+    - taxonomy
+    - toolbar
+    - webform
+    - webform_node
+_core:
+  default_config_hash: CL5_SfZaz0GAjWOw1Z5dhNeIrUKzxN1-nCfmY3w284M
+id: gestor_basico
+label: 'gestor básico'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'administer CAPTCHA settings'
+  - 'administer languages'
+  - 'administer site configuration'
+  - 'clone imce_profile entity'
+  - 'clone node entity'
+  - 'create elemento_parrilla content'
+  - 'create estudio content'
+  - 'create galeria content'
+  - 'create noticia content'
+  - 'create page content'
+  - 'create pestana content'
+  - 'create slideshow content'
+  - 'create te_interesa content'
+  - 'create terms in pestanas'
+  - 'create terms in secciones'
+  - 'create terms in tipos_de_estudio'
+  - 'create url aliases'
+  - 'create webform'
+  - 'create webform content'
+  - 'delete own elemento_parrilla content'
+  - 'delete own estudio content'
+  - 'delete own galeria content'
+  - 'delete own noticia content'
+  - 'delete own page content'
+  - 'delete own pestana content'
+  - 'delete own slideshow content'
+  - 'delete own te_interesa content'
+  - 'delete own webform'
+  - 'delete own webform content'
+  - 'delete own webform submission'
+  - 'delete terms in pestanas'
+  - 'delete terms in secciones'
+  - 'delete terms in tipos_de_estudio'
+  - 'delete webform submissions own node'
+  - 'edit own elemento_parrilla content'
+  - 'edit own estudio content'
+  - 'edit own galeria content'
+  - 'edit own noticia content'
+  - 'edit own page content'
+  - 'edit own pestana content'
+  - 'edit own slideshow content'
+  - 'edit own te_interesa content'
+  - 'edit own webform'
+  - 'edit own webform content'
+  - 'edit own webform submission'
+  - 'edit terms in pestanas'
+  - 'edit terms in secciones'
+  - 'edit terms in tipos_de_estudio'
+  - 'edit webform submissions own node'
+  - 'publish any node type elemento_parrilla'
+  - 'publish any node type estudio'
+  - 'publish any node type galeria'
+  - 'publish any node type noticia'
+  - 'publish any node type page'
+  - 'publish any node type pestana'
+  - 'publish any node type slideshow'
+  - 'publish any node type te_interesa'
+  - 'publish any node type webform'
+  - 'publish editable content'
+  - 'publish editable node type elemento_parrilla'
+  - 'publish editable node type estudio'
+  - 'publish editable node type galeria'
+  - 'publish editable node type noticia'
+  - 'publish editable node type page'
+  - 'publish editable node type pestana'
+  - 'publish editable node type slideshow'
+  - 'publish editable node type te_interesa'
+  - 'publish editable node type webform'
+  - 'publish own node type elemento_parrilla'
+  - 'publish own node type estudio'
+  - 'publish own node type galeria'
+  - 'publish own node type noticia'
+  - 'publish own node type page'
+  - 'publish own node type pestana'
+  - 'publish own node type slideshow'
+  - 'publish own node type te_interesa'
+  - 'publish own node type webform'
+  - 'translate interface'
+  - 'unpublish any node type elemento_parrilla'
+  - 'unpublish any node type estudio'
+  - 'unpublish any node type galeria'
+  - 'unpublish any node type noticia'
+  - 'unpublish any node type page'
+  - 'unpublish any node type pestana'
+  - 'unpublish any node type slideshow'
+  - 'unpublish any node type te_interesa'
+  - 'unpublish any node type webform'
+  - 'unpublish editable content'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view own webform submission'
+  - 'view the administration theme'
+  - 'view webform submissions own node'

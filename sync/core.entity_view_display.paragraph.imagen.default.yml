@@ -1,0 +1,55 @@
+uuid: 45f0fe11-b242-4f2b-86d7-1ebf3068b64e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen.field_fullsize
+    - field.field.paragraph.imagen.field_imagen_modular
+    - field.field.paragraph.imagen.field_justify_text
+    - field.field.paragraph.imagen.field_solo_texto
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - image
+    - options
+    - text
+_core:
+  default_config_hash: cREwxv-qWZcB6Bm58-mwHZhfSD7zVT6lOpudgD1Hi_Y
+id: paragraph.imagen.default
+targetEntityType: paragraph
+bundle: imagen
+mode: default
+content:
+  field_fullsize:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_imagen_modular:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_justify_text:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_solo_texto:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

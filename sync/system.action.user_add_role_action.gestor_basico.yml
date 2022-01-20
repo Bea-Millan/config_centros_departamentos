@@ -1,0 +1,16 @@
+uuid: 419fadf6-5ad0-42c4-8356-b65a1dc400c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_basico
+  module:
+    - user
+_core:
+  default_config_hash: lVcLwBA8s6rsaont8_-N0HS-84Ubi2wjC8_zhLKFGgM
+id: user_add_role_action.gestor_basico
+label: 'Add the gestor básico role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_basico

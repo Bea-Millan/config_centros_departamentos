@@ -1,0 +1,13 @@
+uuid: ee94968c-c48a-49e6-a21b-522dfc661fa0
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: 4MirWlt9zcXEB5tb2vL-lNtoYmQQ1ofzuEBXln_UJwY
+name: 'Tipos de estudio'
+vid: tipos_de_estudio
+description: ''
+weight: 0

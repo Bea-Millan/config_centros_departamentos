@@ -1,0 +1,19 @@
+uuid: 0ee7c635-e8e2-4e04-9bed-edeb635bd18b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: VWBupwlQZlVn1pgWB_AAaUiNBxehIjyALRsVzSHkZdM
+name: 'Página básica'
+type: page
+description: 'Tipo de contenido genérico para todas las páginas'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,21 @@
+uuid: 2eeb2067-7aea-4e2d-863b-09c37d9a2d56
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.bolos
+_core:
+  default_config_hash: F_54IOZZyGpjN_hVnouYPzuGrS4Zdox4lwQ-GF4cLLY
+id: paragraph.bolos.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: bolos
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

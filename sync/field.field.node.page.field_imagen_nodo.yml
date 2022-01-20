@@ -1,0 +1,40 @@
+uuid: 388029b3-b00e-4d3a-930e-562cbbe07e4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_nodo
+    - node.type.page
+  module:
+    - image
+_core:
+  default_config_hash: q3ddkrU_2UBfAfMqi0EWe6EUu0tRwpflZzPh15ehIJ0
+id: node.page.field_imagen_nodo
+field_name: field_imagen_nodo
+entity_type: node
+bundle: page
+label: 'Imagen nodo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: img/nodos
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

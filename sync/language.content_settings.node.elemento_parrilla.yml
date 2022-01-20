@@ -1,0 +1,11 @@
+uuid: ff05ecbb-58d8-4c6f-8999-284875060f64
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.elemento_parrilla
+id: node.elemento_parrilla
+target_entity_type_id: node
+target_bundle: elemento_parrilla
+default_langcode: site_default
+language_alterable: true

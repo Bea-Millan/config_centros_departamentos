@@ -1,0 +1,21 @@
+uuid: a7c37d1f-158c-411d-8a52-e6bac8aef100
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_texto_bolo
+    - paragraphs.paragraphs_type.bolos_texto
+_core:
+  default_config_hash: T5g9tNtaC72mPv82NB1Cn9TwV6CgCA9aV41RQnWLEgw
+id: paragraph.bolos_texto.field_texto_bolo
+field_name: field_texto_bolo
+entity_type: paragraph
+bundle: bolos_texto
+label: Texto_bolo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

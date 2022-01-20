@@ -1,0 +1,38 @@
+uuid: ccc5a9b5-8e76-48bc-875d-e90605d6495d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipos_de_estudio.field_imagen_estudio
+    - taxonomy.vocabulary.tipos_de_estudio
+  module:
+    - image
+    - text
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: zqAuT2mf8v0xJUWFNt5TmCauPtKhedb0zZJKa4urkv8
+id: taxonomy_term.tipos_de_estudio.default
+targetEntityType: taxonomy_term
+bundle: tipos_de_estudio
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_estudio:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

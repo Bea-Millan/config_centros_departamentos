@@ -1,0 +1,24 @@
+uuid: 3e5b69cb-bd89-42bb-963a-f93aaa75edac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_solo_texto.field_solo_texto
+    - paragraphs.paragraphs_type.bloque_solo_texto
+  module:
+    - text
+_core:
+  default_config_hash: wqX5_hu7oghjquEMYUK6J0YbuRFE7GjN_qmUpPPkxk8
+id: paragraph.bloque_solo_texto.default
+targetEntityType: paragraph
+bundle: bloque_solo_texto
+mode: default
+content:
+  field_solo_texto:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

@@ -1,0 +1,12 @@
+uuid: 10a2fe6c-573c-462e-84bf-87d08ba96022
+langcode: es
+status: true
+dependencies: {  }
+id: colectivo
+label: Colectivo
+category: UNIZAR
+likert: false
+options: |-
+  'Personal Docente e Investigador': 'Personal Docente e Investigador'
+  'Personal de Administración y Servicios': 'Personal de Administración y Servicios'
+  Estudiante: Estudiante

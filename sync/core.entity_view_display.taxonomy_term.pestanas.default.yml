@@ -1,0 +1,35 @@
+uuid: f7c25a61-3800-4f75-8659-acfb8e52944e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pestanas.field_imagen_pestana
+    - taxonomy.vocabulary.pestanas
+  module:
+    - image
+    - text
+_core:
+  default_config_hash: EdcOHoJvhXYLjVZ006Euhk5VzSFBcNWWsnEy7tR2m0Y
+id: taxonomy_term.pestanas.default
+targetEntityType: taxonomy_term
+bundle: pestanas
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagen_pestana:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

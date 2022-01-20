@@ -1,0 +1,26 @@
+uuid: 1979c53c-ce71-4ff5-95ea-569f70af1840
+langcode: es
+status: true
+dependencies: {  }
+id: centros_propios
+label: 'Centros propios'
+category: UNIZAR
+likert: false
+options: |-
+  'Escuela de Doctorado': 'Escuela de Doctorado'
+  'Escuela de Ingeniería y Arquitectura': 'Escuela de Ingeniería y Arquitectura'
+  'Escuela Politécnica Superior': 'Escuela Politécnica Superior'
+  'Escuela Universitaria Politécnica': 'Escuela Universitaria Politécnica'
+  'Facultad de Ciencias de la Salud': 'Facultad de Ciencias de la Salud'
+  'Facultad de Ciencias': 'Facultad de Ciencias'
+  'Facultad de Ciencias de la Salud y del Deporte': 'Facultad de Ciencias de la Salud y del Deporte'
+  'Facultad de Ciencias Sociales y del Trabajo': 'Facultad de Ciencias Sociales y del Trabajo'
+  'Facultad de Ciencias Sociales y Humanas': 'Facultad de Ciencias Sociales y Humanas'
+  'Facultad de Ciencias Humanas y de la Educación': 'Facultad de Ciencias Humanas y de la Educación'
+  'Facultad de Derecho': 'Facultad de Derecho'
+  'Facultad de Economía y Empresa': 'Facultad de Economía y Empresa'
+  'Facultad de Educación': 'Facultad de Educación'
+  'Facultad de Empresa y Gestión Pública': 'Facultad de Empresa y Gestión Pública'
+  'Facultad de Filosofía y Letras': 'Facultad de Filosofía y Letras'
+  'Facultad de Medicina': 'Facultad de Medicina'
+  'Facultad de Veterinaria': 'Facultad de Veterinaria'

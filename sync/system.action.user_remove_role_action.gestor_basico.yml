@@ -1,0 +1,16 @@
+uuid: b7c419c5-314d-40da-ba15-fa5179f15962
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_basico
+  module:
+    - user
+_core:
+  default_config_hash: VBnOofnpfeEniU-S3x0sS1a4aAedXOvwK8qkxSvQFG4
+id: user_remove_role_action.gestor_basico
+label: 'Remove the gestor básico role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_basico

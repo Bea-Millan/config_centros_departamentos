@@ -1,0 +1,25 @@
+uuid: 2648a207-4613-4f28-98e1-3b8cfbc51ee6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_bolo
+    - paragraphs.paragraphs_type.bloque_solo_imagen
+  module:
+    - link
+_core:
+  default_config_hash: PSFn5lPLDGVLwvMr8o24x3uKj5v9Vc43JomNc-ehUVI
+id: paragraph.bloque_solo_imagen.field_enlace_bolo
+field_name: field_enlace_bolo
+entity_type: paragraph
+bundle: bloque_solo_imagen
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

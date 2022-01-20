@@ -1,0 +1,20 @@
+uuid: 0b770597-8bad-49f8-bd62-527b0af6161b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: CXfkSQ411c3FzsYqb8-n4zuFR7P2oFzg9dEQukY8d44
+name: 'Contenido pestaña'
+type: pestana
+description: 'Tipo de contenido que será utilizado por el bloque pestañas'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

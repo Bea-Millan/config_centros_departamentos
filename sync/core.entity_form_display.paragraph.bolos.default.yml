@@ -1,0 +1,116 @@
+uuid: b9ea237c-86e4-485a-bded-86dd0854ab3e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bolos.field_bolos
+    - field.field.paragraph.bolos.field_borde
+    - field.field.paragraph.bolos.field_colorfondo
+    - field.field.paragraph.bolos.field_colortexto
+    - field.field.paragraph.bolos.field_estilo_titulo
+    - field.field.paragraph.bolos.field_fondo
+    - field.field.paragraph.bolos.field_imagen_fondo
+    - field.field.paragraph.bolos.field_justify_text
+    - field.field.paragraph.bolos.field_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - field_group
+    - image
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_opciones_titulo:
+      children:
+        - field_estilo_titulo
+        - field_justify_text
+        - field_colortexto
+      label: 'Opciones título'
+      region: content
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        required_fields: true
+        direction: vertical
+        width_breakpoint: 640
+_core:
+  default_config_hash: HmWfbBhk3q8kunQnZSP8ddJjmlOaCMmFH41e7YO5wuE
+id: paragraph.bolos.default
+targetEntityType: paragraph
+bundle: bolos
+mode: default
+content:
+  field_bolos:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: bolos_texto
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_colorfondo:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colortexto:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_estilo_titulo:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fondo:
+    type: options_select
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_fondo:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_justify_text:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_borde: true
+  status: true

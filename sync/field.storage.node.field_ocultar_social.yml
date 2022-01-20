@@ -1,0 +1,20 @@
+uuid: 5104f236-3b06-4115-9de6-b6c7daf6cb34
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: nBfXGVUyVKKVn5_LMPoBmFiQMbSpmuYZsyqYwrCAd9U
+id: node.field_ocultar_social
+field_name: field_ocultar_social
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

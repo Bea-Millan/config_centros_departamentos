@@ -1,0 +1,23 @@
+uuid: bbd3a470-52be-4658-b8a3-1fdab3cec7b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorfondo
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - options
+_core:
+  default_config_hash: bl9BhLkS6BN3kRqQADUQMDczN2lyBefdMMR5z1Ea_fU
+id: paragraph.imagen_texto_1.field_colorfondo
+field_name: field_colorfondo
+entity_type: paragraph
+bundle: imagen_texto_1
+label: 'Color de fondo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

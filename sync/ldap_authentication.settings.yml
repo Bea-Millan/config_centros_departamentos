@@ -1,0 +1,24 @@
+_core:
+  default_config_hash: pmZFVF16O-kmuJnnQuXP64BqY7fSvco4S6Y5hFHpWA4
+langcode: es
+sids:
+  ldapnip: ldapnip
+authenticationMode: mixed
+loginUIUsernameTxt: ''
+loginUIPasswordTxt: ''
+ldapUserHelpLinkUrl: ''
+ldapUserHelpLinkText: 'Cambiar la contraseña'
+emailOption: disable
+emailUpdate: update
+emailTemplateHandling: if_empty
+emailTemplate: '@username@example.com'
+emailTemplateUsageResolveConflict: true
+emailTemplateUsageNeverUpdate: false
+emailTemplateUsagePromptUser: false
+emailTemplateUsageRedirectOnLogin: false
+emailTemplateUsagePromptRegex: '.*@unizar\.es'
+passwordOption: hide
+allowOnlyIfTextInDn: {  }
+excludeIfTextInDn: {  }
+excludeIfNoAuthorizations: false
+skipAdministrators: true

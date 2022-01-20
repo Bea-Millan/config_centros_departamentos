@@ -1,0 +1,25 @@
+uuid: 2ea2ed45-5b52-4405-b92e-f16c1d8f04ee
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_bolo
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - link
+_core:
+  default_config_hash: HJKJk3N63LzL5muLvLPsIfsY2MM2aHjfqry9JOfXAkg
+id: paragraph.bolos_texto.field_enlace_bolo
+field_name: field_enlace_bolo
+entity_type: paragraph
+bundle: bolos_texto
+label: Enlace_bolo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

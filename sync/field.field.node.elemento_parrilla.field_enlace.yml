@@ -1,0 +1,25 @@
+uuid: 7b6fbe44-8dfd-4c79-9577-8404590f2918
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace
+    - node.type.elemento_parrilla
+  module:
+    - link
+_core:
+  default_config_hash: BBZGfzUthlWQpkccT61YxTD0WH12WzCv6KZl68ryDrY
+id: node.elemento_parrilla.field_enlace
+field_name: field_enlace
+entity_type: node
+bundle: elemento_parrilla
+label: Enlace
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

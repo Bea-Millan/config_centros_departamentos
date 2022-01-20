@@ -1,0 +1,13 @@
+uuid: d5ec6729-54a1-4dc3-8951-80764c17353e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.page
+_core:
+  default_config_hash: YQ2DWI17BROfeLP_thyZhMUZFrVhwoKnG1lio9Yz5qM
+id: node.page
+target_entity_type_id: node
+target_bundle: page
+default_langcode: current_interface
+language_alterable: true

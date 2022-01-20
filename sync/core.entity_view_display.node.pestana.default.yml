@@ -1,0 +1,46 @@
+uuid: 458b6f15-5aed-48c2-a260-2de01dde7b82
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pestana.field_configuracion_pestana
+    - field.field.node.pestana.field_enlace_a_la_informacion
+    - node.type.pestana
+  module:
+    - link
+    - user
+_core:
+  default_config_hash: rQfdKr_d8tzEp-w5113r-vBKmShvIoIgB0AIeN4ZjrM
+id: node.pestana.default
+targetEntityType: node
+bundle: pestana
+mode: default
+content:
+  field_configuracion_pestana:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_enlace_a_la_informacion:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

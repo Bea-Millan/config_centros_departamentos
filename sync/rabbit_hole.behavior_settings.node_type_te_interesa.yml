@@ -1,0 +1,16 @@
+uuid: 7673eaae-7044-4910-9f1c-83830538ee72
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.te_interesa
+_core:
+  default_config_hash: 5YTVL9292gDGgn2Or0j6BC9IucVv2zPiaYoVBrmtNJQ
+id: node_type_te_interesa
+entity_type_id: node_type
+entity_id: te_interesa
+action: page_not_found
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

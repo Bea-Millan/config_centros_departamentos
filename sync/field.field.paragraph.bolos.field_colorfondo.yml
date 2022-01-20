@@ -1,0 +1,23 @@
+uuid: e060161a-e255-4cc7-9dcc-ea32e0fc9e05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorfondo
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - options
+_core:
+  default_config_hash: mlJrwTdtLq4p8-LsxeaclOUyDgvoPTnMVW5sZ1yW9CU
+id: paragraph.bolos.field_colorfondo
+field_name: field_colorfondo
+entity_type: paragraph
+bundle: bolos
+label: 'Color de fondo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

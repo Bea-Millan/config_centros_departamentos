@@ -1,0 +1,19 @@
+uuid: e8cd9836-d4ce-4734-a473-270e4be2f948
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: wEQGV265Bf0k4nujU7lnxsnxFVVs2loaRLShbcwdelw
+name: 'Imagen rotativa'
+type: slideshow
+description: 'Imágenes para el rotativo'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,25 @@
+uuid: 4e3df8cc-8a96-4c8f-8083-b3e47fec94c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_estilo_titulo
+    - paragraphs.paragraphs_type.cubos
+  module:
+    - options
+_core:
+  default_config_hash: vDkabLLn7ycc6RHHUiBUvRJTyIf2Nue8oVWgtt0jd1w
+id: paragraph.cubos.field_estilo_titulo
+field_name: field_estilo_titulo
+entity_type: paragraph
+bundle: cubos
+label: 'Estilo título'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '2'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

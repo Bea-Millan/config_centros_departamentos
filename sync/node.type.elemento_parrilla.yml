@@ -1,0 +1,20 @@
+uuid: 8d8cd269-1272-4e66-a3d3-7e7cae2abd03
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: aU4rO9mKif8ufWXk7J-lP7i0Gm3aej21GaGSm924XLI
+name: 'Elemento parrilla'
+type: elemento_parrilla
+description: 'Elementos que aparecen en la parrilla de la página principal'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

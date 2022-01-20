@@ -1,0 +1,12 @@
+uuid: 376424fe-d492-49c0-87ea-b55eaf13438b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: llK79NFnQeonMofJ4r0P8rb6KUtWlsxfx712bBYS0uA
+id: imagen
+label: 'Banda imagen'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

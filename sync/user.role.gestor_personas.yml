@@ -1,0 +1,18 @@
+uuid: 7b53bd19-3ff3-40ef-b089-1bc974ee696b
+langcode: es
+status: true
+dependencies:
+  module:
+    - role_delegation
+_core:
+  default_config_hash: slTI11C1c7oAFPc6Oe30MujN2JAj2XUKmTe89ESuRn4
+id: gestor_personas
+label: 'gestor personas'
+weight: 6
+is_admin: null
+permissions:
+  - 'administer users'
+  - 'assign gestor_basico role'
+  - 'assign gestor_bloques role'
+  - 'assign gestor_menus role'
+  - 'assign gestor_personas role'

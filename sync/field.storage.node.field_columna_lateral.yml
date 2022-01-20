@@ -1,0 +1,21 @@
+uuid: c05a8e70-b1db-441b-a852-75b4ad37504c
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - text
+_core:
+  default_config_hash: sBp32fg77F_66q8zD2pg1Ytz3QAfgO7OcLfzDpXxI00
+id: node.field_columna_lateral
+field_name: field_columna_lateral
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

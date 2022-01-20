@@ -1,0 +1,12 @@
+uuid: c8a7ebe6-5a68-4c01-ad08-bff64731ba8b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: E8j_yDqrDlHcvv1YMhGiGn_DNZ3j_hWnHd29gqdXSEg
+id: banda_imagenes_fullsize
+label: 'Banda imágenes fullsize'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

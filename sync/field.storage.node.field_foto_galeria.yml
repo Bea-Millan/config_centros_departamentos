@@ -1,0 +1,28 @@
+uuid: d0d9053e-5197-4ce6-97fe-c7a87a655254
+langcode: und
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+_core:
+  default_config_hash: mBX-zObI76-q1PCync0b-gTNwsefejjIeIpYdLrvOp8
+id: node.field_foto_galeria
+field_name: field_foto_galeria
+entity_type: node
+type: image
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

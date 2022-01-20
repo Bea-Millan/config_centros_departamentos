@@ -1,0 +1,65 @@
+uuid: 016526b5-bda5-4a71-8bd2-4d0b1bd3347a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slideshow.field_enlace
+    - field.field.node.slideshow.field_imagen_slide
+    - field.field.node.slideshow.field_ocultar_titulo
+    - field.field.node.slideshow.field_subtitulo
+    - image.style.large
+    - node.type.slideshow
+  module:
+    - image
+    - link
+    - user
+_core:
+  default_config_hash: lCOPrLRVAVEMk88HjnUZONaYePkKUS6Xy-qH4pLsz1U
+id: node.slideshow.default
+targetEntityType: node
+bundle: slideshow
+mode: default
+content:
+  field_enlace:
+    type: link
+    label: inline
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_slide:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_ocultar_titulo:
+    type: boolean
+    label: inline
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_subtitulo:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

@@ -1,0 +1,63 @@
+uuid: 7a4e7869-6a46-4568-9ab2-562f758d50fc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bolos_texto.field_colorfondo
+    - field.field.paragraph.bolos_texto.field_colortexto
+    - field.field.paragraph.bolos_texto.field_destino_enlace
+    - field.field.paragraph.bolos_texto.field_enlace_bolo
+    - field.field.paragraph.bolos_texto.field_imagen_bolo
+    - field.field.paragraph.bolos_texto.field_texto_bolo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - image
+    - link
+_core:
+  default_config_hash: Fiemz5f0KycrxTjfhatUbiq7eDp_RBYTl3UcAO03CUQ
+id: paragraph.bolos_texto.default
+targetEntityType: paragraph
+bundle: bolos_texto
+mode: default
+content:
+  field_colortexto:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_destino_enlace:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_enlace_bolo:
+    type: link_default
+    weight: 5
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_imagen_bolo:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_texto_bolo:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_colorfondo: true
+  status: true

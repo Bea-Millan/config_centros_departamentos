@@ -1,0 +1,20 @@
+uuid: 268d8144-63ed-4b57-8a18-f8ba81db0172
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: KLGvUuqHPBnYRGnkifjmXBBmRwkcRfkQJ-RHpbxB2b8
+id: paragraph.field_color_fondo
+field_name: field_color_fondo
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,27 @@
+uuid: 6873244a-1228-4b4a-959f-7510b49364e7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_solo_texto.field_solo_texto
+    - paragraphs.paragraphs_type.bloque_solo_texto
+  module:
+    - text
+_core:
+  default_config_hash: YpfcNeOq4oBF9XoDU18i94HQ13ezTvNV_hAx9xsoljQ
+id: paragraph.bloque_solo_texto.default
+targetEntityType: paragraph
+bundle: bloque_solo_texto
+mode: default
+content:
+  field_solo_texto:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

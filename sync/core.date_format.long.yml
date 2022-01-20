@@ -1,0 +1,10 @@
+uuid: 72c891bd-e62d-4eac-9f8b-af1628fcf333
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: EB7O_3yIuhUGv3hSEyOdiR7SZkJ9MOscyMLL_4phsZc
+id: long
+label: 'Fecha larga por defecto'
+locked: false
+pattern: 'l, j \d\e F, Y'

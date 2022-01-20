@@ -1,0 +1,25 @@
+uuid: f4c03829-5254-4081-9be2-1d674d0e0a48
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.galeria
+  module:
+    - text
+_core:
+  default_config_hash: hCy0aNacE6yBrPoJC2wK6V1nyTthUTXUz0YR5xhCPfY
+id: node.galeria.body
+field_name: body
+entity_type: node
+bundle: galeria
+label: 'Descripción de la galería'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

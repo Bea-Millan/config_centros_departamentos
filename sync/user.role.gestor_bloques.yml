@@ -1,0 +1,20 @@
+uuid: 7b5f5422-0a97-4b12-afde-f8f324e7f63e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block
+    - block_region_permissions
+    - entity_clone
+_core:
+  default_config_hash: __NLS01B2zVm3ZNGdU6_NRgfOyVJ0FnNONENWRO6xjk
+id: gestor_bloques
+label: 'gestor bloques'
+weight: 5
+is_admin: null
+permissions:
+  - 'administer blocks'
+  - 'administer unizar_centro columna_lateral'
+  - 'administer unizar_centro content'
+  - 'clone block entity'
+  - 'clone block_content entity'

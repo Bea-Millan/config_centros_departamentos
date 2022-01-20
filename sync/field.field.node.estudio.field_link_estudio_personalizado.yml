@@ -1,0 +1,28 @@
+uuid: 517d2cee-06ad-40f8-8027-538e54567d1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_estudio_personalizado
+    - node.type.estudio
+  module:
+    - link
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: yVuktU5P_FW1-H3Ijsp1902AAHiaagCZopZXmu_0zY4
+id: node.estudio.field_link_estudio_personalizado
+field_name: field_link_estudio_personalizado
+entity_type: node
+bundle: estudio
+label: 'Enlace estudio personalizado'
+description: '<strong>Completar solo</strong> si quiere que enlace con una url distinta a la propuesta por el campo "Enlace a la información del estudio"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

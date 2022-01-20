@@ -1,0 +1,141 @@
+uuid: f301ac81-a777-4bbc-982a-cdc81f7dbba2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cubos.field_borde
+    - field.field.paragraph.cubos.field_color_fondo
+    - field.field.paragraph.cubos.field_colorfondo
+    - field.field.paragraph.cubos.field_colortexto
+    - field.field.paragraph.cubos.field_composicion
+    - field.field.paragraph.cubos.field_cubos_texto
+    - field.field.paragraph.cubos.field_es_carrusel
+    - field.field.paragraph.cubos.field_estilo_titulo
+    - field.field.paragraph.cubos.field_fondo
+    - field.field.paragraph.cubos.field_imagen_fondo
+    - field.field.paragraph.cubos.field_justify_text
+    - field.field.paragraph.cubos.field_num_bloques
+    - field.field.paragraph.cubos.field_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.cubos
+  module:
+    - field_group
+    - image
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_opciones_titulo:
+      children:
+        - field_estilo_titulo
+        - field_justify_text
+        - field_colortexto
+      label: 'Opciones título'
+      region: content
+      parent_name: ''
+      weight: 3
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+        open: false
+        effect: none
+_core:
+  default_config_hash: UdnkNypQaqtl7QNcic8QoAG7QnzsdiBcNrv_kLo62dQ
+id: paragraph.cubos.default
+targetEntityType: paragraph
+bundle: cubos
+mode: default
+content:
+  field_colorfondo:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_colortexto:
+    type: options_select
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_composicion:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_cubos_texto:
+    type: paragraphs
+    weight: 7
+    region: content
+    settings:
+      title: Párrafo
+      title_plural: Parráfos
+      edit_mode: closed
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: cubos_texto
+      features:
+        add_above: '0'
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_es_carrusel:
+    type: boolean_checkbox
+    weight: 8
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_estilo_titulo:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_fondo:
+    type: options_select
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_imagen_fondo:
+    type: image_image
+    weight: 6
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_justify_text:
+    type: options_select
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_num_bloques:
+    type: options_select
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_titulo:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_borde: true
+  field_color_fondo: true
+  status: true

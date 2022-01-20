@@ -1,0 +1,20 @@
+uuid: 7ae58671-211e-4553-b980-a0cc570d8c06
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: t7VG1eEnws2oYIAvTa6daEvjxXRf0pzjlmz8b8Rj5yY
+id: paragraph.field_mostrar_puntos
+field_name: field_mostrar_puntos
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

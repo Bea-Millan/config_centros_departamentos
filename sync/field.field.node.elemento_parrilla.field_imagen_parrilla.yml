@@ -1,0 +1,40 @@
+uuid: 25230d13-0f67-4f9c-9235-36bff799276e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_imagen_parrilla
+    - node.type.elemento_parrilla
+  module:
+    - image
+_core:
+  default_config_hash: FzA4dXysv6fjZfQNpCGTgpoErPEBRqU8t57BFDDZ4ok
+id: node.elemento_parrilla.field_imagen_parrilla
+field_name: field_imagen_parrilla
+entity_type: node
+bundle: elemento_parrilla
+label: 'Imagen parrilla'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: img/parrilla
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

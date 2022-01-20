@@ -1,0 +1,29 @@
+uuid: 8c50cd9a-f77b-4daf-8cb5-ebe527d587b5
+langcode: und
+status: true
+dependencies:
+  module:
+    - node
+    - options
+_core:
+  default_config_hash: Xd7RHJaXHagmBWBZtbCsa8omjz91dSSylK_OHz-niZA
+id: node.field_agenda_noticias
+field_name: field_agenda_noticias
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Mostrar en noticias'
+    -
+      value: '2'
+      label: 'Mostrar en calendario'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

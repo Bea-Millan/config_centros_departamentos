@@ -1,0 +1,66 @@
+uuid: db5f457c-9b15-4713-959d-ff5883ffdd1c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cubos_texto.field_caja_texto
+    - field.field.paragraph.cubos_texto.field_colortexto
+    - field.field.paragraph.cubos_texto.field_enlace_bolo
+    - field.field.paragraph.cubos_texto.field_imagen_bolo
+    - field.field.paragraph.cubos_texto.field_titulo
+    - paragraphs.paragraphs_type.cubos_texto
+  module:
+    - image
+    - link
+    - options
+_core:
+  default_config_hash: SAwDD5EZAFPVdJR6aZ3OOzNRkvVsvPiypOBg_ygY69w
+id: paragraph.cubos_texto.default
+targetEntityType: paragraph
+bundle: cubos_texto
+mode: default
+content:
+  field_caja_texto:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_colortexto:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_enlace_bolo:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_imagen_bolo:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titulo:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
