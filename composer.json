@@ -4,9 +4,7 @@
     "version": "1.0",
     "type": "drupal-config",
     "minimum-stability": "dev",
-    "require": {
-      "composer/installer":"~1.0"
-    },
+    
   
     "extra": {
         "installer-paths": {
