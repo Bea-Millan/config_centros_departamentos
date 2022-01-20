@@ -10,7 +10,7 @@
   
     "extra": {
         "installer-paths": {
-            "../config/{$name}/": ["type": "drupal-config"]
+            "../config/": ["type:drupal-config"]
         }
     
     }
