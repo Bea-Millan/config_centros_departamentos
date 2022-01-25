@@ -1,0 +1,16 @@
+uuid: 02ecfa5a-4339-4419-82b2-7326badf7335
+langcode: es
+status: true
+dependencies: {  }
+name: usuario_autenticado
+label: 'Usuario autenticado'
+triggers:
+  login: login
+destination_path: 'internal:/usuario-autenticado'
+pages_type: 0
+pages: ''
+language: ''
+roles:
+  authenticated: authenticated
+weight: -8
+enabled: true
