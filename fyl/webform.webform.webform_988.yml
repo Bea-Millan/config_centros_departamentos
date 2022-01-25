@@ -1,0 +1,287 @@
+uuid: 1d42e8bb-465f-4fb8-9e4c-66f369ea195d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_988
+title: 'PDI: Comunicación de confinamiento por contacto estrecho'
+description: null
+category: null
+elements: |
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer Apellido' 
+    '#description': ""
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo Apellido' 
+    '#description': ""
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  nip_o_dni:
+    '#type': textfield
+    '#title': 'NIP o DNI' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo Electrónico' 
+    '#description': ""
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'Teléfono de contacto' 
+    '#description': ""
+    '#required': true
+  departamento:
+    '#type': select
+    '#options':
+      antiguedad: 'Ciencias de la Antigüedad'
+      documentacion: 'Ciencias de la Documentación e Historia de la Ciencia'
+      frances: 'Filología Francesa'
+      ingles: 'Filología Inglesa y Alemana'
+      filosofia: 'Unidad Predepartamental de Filosofía'
+      geografia: 'Geografía y Ordenación del Territorio'
+      arte: 'Historia del Arte'
+      historia: 'Historia'
+      literatura: 'Lingüística y Literatura Hispánicas'
+      periodismo: 'Unidad Predepartamental de Periodismo, Comunicación Audiovisual y Publicidad'
+    '#title': 'Departamento' 
+    '#description': ""
+    '#required': true
+  director:
+    '#type': email
+    '#size': 20
+    '#title': 'director' 
+    '#description': ""
+  asignaturas_48_horas:
+    '#type': textarea
+    '#title': 'Asignaturas impartidas en las últimas 48 horas' 
+    '#description': "Consigne las asignaturas impartidas presencialmente en las últimas 48 horas. Indique por favor si ha hecho uso de los códigos QR FYL-COVID en el caso de disponer el aula de los mismos."
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': 'Observaciones' 
+    '#description': "Indique cualquier información que crea pueda ser de interés."
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p><span style=\"font-size: 13.008px;\">Desde la Facultad de Filosofía y Letras le deseamos una evolución favorable.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">Le hemos enviado un correo electrónico a la cuenta que ha consignado en el formulario que contiene información importante para Vd. Le rogamos lo lea con atención.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">También se han enviado sus datos al responsable COVID de la Facultad de Filosofía y Letras, a la dirección del Departamento y a la Unidad de Prevención de Riesgos de la Universidad de Zaragoza.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">Le trasladamos nuestros mejores deseos y agradecemos sinceramente su colaboración.</span></p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Incidencia COVID-19 registrada e instrucciones'
+      body: |-
+        <p>Estimado Sr./Estimada Sra.</p>
+        <p>Como responsable en temas COVID en el centro me pongo en contacto con usted, y en primer lugar le agradezco que nos comunique su situación. Su cooperación y sensibilidad ante la pandemia es muy importante para el control de sus efectos.</p>
+        <p>Le rogamos cumpla escrupulosamente las indicaciones hasta que las autoridades sanitarias le comuniquen que puede reincorporarse a su actividad docente de forma presencial.</p>
+        <p>En cuanto tenga alguna otra información, como el resultado negativo de la PCR o la evolución hacia un caso confirmado de COVID-19, deberá comunicarlo mediante la cumplimentación del correspondiente formulario en la siguiente dirección:</p>
+        <p>https://fyl.unizar.es/comunicacion-covid</p>
+        <p>Deberá seguir las instrucciones de los servicios sanitarios en cuanto a la continuación del confinamiento o reincorporación dependiendo de su nueva situación.</p>
+        <p>Cuando sepa de su reincorporación por confirmación de las autoridades sanitarias deberá cumplimentar el formulario de ALTA, al que podrá acceder también a través del anterior enlace.</p>
+        <p>Durante el periodo de confinamiento y en tanto no se produzca una situación que genere una baja laboral, le envío las indicaciones que ha de seguir:</p>
+        <p>- Puede desarrollar su labor docente habitual proporcionando la documentación y elementos de trabajo (tutorías, reuniones virtuales, acceso a plataformas educativas, o cualquier procedimiento que considere adecuado para la formación docente) para un seguimiento de la asignatura reforzado que permita el cumplimiento de la guía académica. Se encargará de informar a los estudiantes por los canales que considere más adecuados. En este caso el apoyo del coordinador es de gran importancia.</p>
+        <p>- En cuanto a posibles canales de relación, un procedimiento útil es mantener la docencia de forma telemática. La retransmisión se realizará en la franja horaria con docencia a través de Google Meet, permitiendo que los alumnos vayan al aula. En ese sentido el coordinador o la persona designada por el Departamento informarán a Conserjería. El personal de conserjería abrirá el aula y el armario. Pero la coordinación o la dirección tienen que designar a una persona que encienda el ordenador y haga la conexión online con Google Meet para que imparta las clases. En este caso le solicito que haga un control de lista virtual para quienes estén en el aula. Es muy importante informar a Conserjería para que estén atentos en el control del aula. Una vez terminada la clase, es este responsable quien apaga los dispositivos electrónicos, siendo conserjería quien cierra el aula.</p>
+        <p>Recuerde que no se puede reincorporar a la actividad académica normal hasta que le sea indicado por las autoridades sanitarias.</p>
+        <p>Reciba un atento saludo y nuestro deseo de una pronta reincorporación.</p>
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: covidfil@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19 (PDI)'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_6:
+    id: email
+    handler_id: email_6
+    label: 'Email 6'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 6
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:director:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19 (PDI)'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_7:
+    id: email
+    handler_id: email_7
+    label: 'Email 7'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 7
+    settings:
+      states:
+        - completed
+      to_mail: jefeuprl@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19 (PDI) Fac. de Filosofía y Letras'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

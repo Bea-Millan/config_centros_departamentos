@@ -1,4 +1,4 @@
-uuid: 9ad0b114-dc42-44c3-be0b-cb66557365e5
+uuid: 3c54b07c-ab6a-48c8-b2b0-626e76ce1a56
 langcode: es
 status: true
 dependencies:
@@ -27,5 +27,4 @@ visibility:
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
-      administrator: administrator
       gestor_basico: gestor_basico

@@ -7,13 +7,18 @@ label: fyl
 description: ''
 weight: 0
 folder: ../config/fyl
-module: {  }
+module:
+  c11n_migrate: 0
 theme: {  }
 blacklist:
   - 'block.block.*'
   - 'webform.webform.*'
+  - migrate_drupal.settings
   - unizar_admin_menu.settings
   - unizar_modulos_configuracion.settings
+  - language.types
+  - language.negociation
+  - 'language.entity.*'
   - smtp.settings
   - shortcut.set.default
   - core.entity_view_mode.shortcut.token
