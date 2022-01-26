@@ -1,6 +1,6 @@
 _core:
-  default_config_hash: 7wRraxWyWYJwXrAoNOWPqvqxWMgPbMS4k-v5HCAM4Lw
+  default_config_hash: 9GZSWLIqkpjoRGvyLhzDONixwlWiYGLcdO8FjOg8Dqw
 plugin:
-  url_host: path
-  host: fyl.unizar.es
+  url_host: sites/magister
+  host: magister.unizar.es
 langcode: es

@@ -1,8 +1,0 @@
-uuid: 52a272a2-122e-4cf8-955a-e187e258e565
-langcode: es
-status: true
-dependencies: {  }
-id: menu-intranet
-label: Intranet
-description: ''
-locked: false

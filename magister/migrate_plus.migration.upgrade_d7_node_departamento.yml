@@ -1,4 +1,4 @@
-uuid: 4a9086c5-0d37-4566-a7a5-aed8b9d1f971
+uuid: 4e0a00ee-612f-41ef-bc24-84aca95511b1
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: n46v5sHfdsfE5eTHFWu-7TRICfvuiE0F1m_mmaJIknk
+  default_config_hash: xDVfKilwpvPSOmVA33AJqF7oTAoDvqrT3de3xXdTAKY
 id: upgrade_d7_node_departamento
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: departamento
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

@@ -1,4 +1,4 @@
-uuid: 1de1bd43-83d9-4e28-8948-50241193d841
+uuid: 6d565374-a92f-41ec-bce8-347d25ebc878
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: _OqX8AXZ_H3EFBMFhGKXvHAVLaYbzE28GTFkF_dDs2s
+  default_config_hash: _JnOUa2dFdgHtWblLdXm9kZ57dXXZcrdf9awFtcPipc
 id: upgrade_d7_node_horarios
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: horarios
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

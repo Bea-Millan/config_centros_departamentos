@@ -23,8 +23,9 @@ settings:
 visibility:
   user_role:
     id: user_role
+    roles:
+      administrator: administrator
+      gestor_basico: gestor_basico
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
-    roles:
-      gestor_basico: gestor_basico

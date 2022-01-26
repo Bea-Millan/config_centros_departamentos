@@ -1,4 +1,4 @@
-uuid: fcfb42ff-2ce1-4708-a21c-3320c4047d23
+uuid: 59b02a18-a341-4f20-966d-65ece6124b77
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: p8sj5HBkpMVwkkU8TzALdI_qk-Bfi66VTv0VnWQ6cao
+  default_config_hash: zeHAKFx48b0FdJhlEASIVjvN90TpJdjv_qzZVoPZIMI
 id: upgrade_d7_node_webform
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: webform
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

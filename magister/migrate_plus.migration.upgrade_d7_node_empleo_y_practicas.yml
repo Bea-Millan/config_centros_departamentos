@@ -1,4 +1,4 @@
-uuid: bc51457a-4d93-4c0c-87cf-8b835d5869f8
+uuid: 61ffa401-e964-4fa6-9783-f204167fb261
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: '-8kRu-d09VwZdb3MnSoJpw7lx_Kq3nOcA1zD8vaPKPY'
+  default_config_hash: gm0IszPnza6TGn46_MVhqWhH8WX14PLo0tAXHCskwUE
 id: upgrade_d7_node_empleo_y_practicas
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: empleo_y_practicas
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

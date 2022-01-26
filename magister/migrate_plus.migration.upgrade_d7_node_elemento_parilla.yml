@@ -1,4 +1,4 @@
-uuid: 2baced72-11a0-421e-8c17-ccdf5b9ffea2
+uuid: 86e92c43-0322-4f03-a14e-f6ae7599b15e
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: HGTjcN7Ajv3b6K6unxu14gFLaBBr2ybAzPz7f1fZzw8
+  default_config_hash: 2DNUKWc8IwyOMx_TXX9nHxTzXCen4fTugac_wIoXU6g
 id: upgrade_d7_node_elemento_parilla
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: elemento_parilla
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

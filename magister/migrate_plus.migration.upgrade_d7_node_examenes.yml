@@ -1,4 +1,4 @@
-uuid: 5234b745-9418-4011-a819-f06bf33b6c6a
+uuid: 2d58c6e7-ada7-4d05-a96b-b3eec556a0f4
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: 0oYf039pdDa2RzI0-HGTwUKNNem9VpTH6IvJhgwslOw
+  default_config_hash: I9mBj8zr_2ThlIGkcaPe2Mq12gxTjTbqoT3R8PiKtiM
 id: upgrade_d7_node_examenes
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: examenes
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

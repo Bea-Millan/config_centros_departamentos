@@ -1,4 +1,4 @@
-uuid: bfe910ad-be2a-4d57-8d3f-fa5df0dcb753
+uuid: a8a073f3-212b-4104-b76a-0fa28f61cceb
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: MbHtElrSa_reflrL8sOV1Uwb96GzpmoEGA51UIyZbWs
+  default_config_hash: M3L9fpvA91Co6ms5zjaAgKrG-H6hVubzneqn4c7LBeg
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: noticia
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

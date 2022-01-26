@@ -11,23 +11,22 @@ module:
   c11n_migrate: 0
 theme: {  }
 blacklist:
-  - config_split.config_split.magister
-  - core.entity_view_mode.shortcut.token
-  - core.extension
-  - language.types
-  - migrate_drupal.settings
-  - shortcut.set.default
-  - smtp.settings
-  - system.site
-  - system.theme
-  - unizar_admin_menu.settings
-  - unizar_modulos_configuracion.settings
   - 'block.block.*'
   - 'webform.webform.*'
+  - migrate_drupal.settings
+  - unizar_admin_menu.settings
+  - unizar_modulos_configuracion.settings
+  - language.types
   - language.negociation
   - 'language.entity.*'
+  - smtp.settings
+  - shortcut.set.default
+  - core.entity_view_mode.shortcut.token
   - asset_injector.css.magister_inyeccion_css
-  - 'system.menu.*'
+  - core.extension
+  - system.theme
+  - system.site
+  - config_split.config_split.magister
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

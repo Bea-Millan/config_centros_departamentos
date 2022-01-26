@@ -1,4 +1,4 @@
-uuid: f0d91590-fe96-4451-937f-73b6b1d69b51
+uuid: 97d586d4-e70b-4788-8198-ee6cf7b72874
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: 1TD1swFDxiqTRgfJ93uqYTjOwT-wMtpluAf3ofzJfOg
+  default_config_hash: TmFXYFUpta_Od5jWd1oHzJ8j_Tpmw47iKn0e4B626eA
 id: upgrade_d7_menu_links
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -50,30 +50,39 @@ process:
     -
       plugin: skip_on_empty
       method: row
-  link_path_processed:
+  link/uri:
     -
-      plugin: static_map
-      bypass: true
-      map:
-        '<nolink>': 'route:<nolink>'
+      plugin: urlhost
       source: link_path
     -
-      plugin: migrated_path_lookup
-  link/uri:
-    plugin: link_uri
-    validate_route: false
-    source:
-      - '@link_path_processed'
-  link/options: options
+      plugin: link_uri
+      validate_route: false
+  link/options:
+    -
+      plugin: get
+      source: options
   route:
-    plugin: route
-    source:
-      - '@link_path_processed'
-      - options
-  route_name: '@route/route_name'
-  route_parameters: '@route/route_parameters'
-  url: '@route/url'
-  options: '@route/options'
+    -
+      plugin: route
+      source:
+        - link_path
+        - options
+  route_name:
+    -
+      plugin: get
+      source: '@route/route_name'
+  route_parameters:
+    -
+      plugin: get
+      source: '@route/route_parameters'
+  url:
+    -
+      plugin: get
+      source: '@route/url'
+  options:
+    -
+      plugin: get
+      source: '@route/options'
   external: external
   weight: weight
   expanded: expanded

@@ -1,8 +1,0 @@
-uuid: 405a037b-2c3a-44b2-91c6-f4ebbf9db129
-langcode: es
-status: true
-dependencies: {  }
-id: menu-calidad-y-gesti-n
-label: 'CALIDAD Y GESTIÓN'
-description: ''
-locked: false

@@ -1,0 +1,333 @@
+uuid: 52c60bca-ff0e-4a50-bed1-ec123ef62ccf
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 86
+template: false
+archive: false
+id: webform_533
+title: 'Pago tasas de inscripción cursos'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellido_1:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Apellido 1' 
+    '#description': ""
+    '#required': true
+  apellido_2:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Apellido 2' 
+    '#description': ""
+    '#required': true
+  nif:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'NIF' 
+    '#description': ""
+    '#required': true
+  e_mail:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]' 
+    '#title_display': inline
+    '#title': 'E_mail: ' 
+    '#description': "Las comunicaciones se enviarán a este correo"
+    '#required': true
+  fieldset_tipos_producto:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Pago tasas de inscripción cursos' 
+    '#description': "Selecciona el tipo de documento que deseas"
+    occual_13:
+      '#type': textfield
+      '#default_value': 'En el caso de que solicites otras certificaciones, escribe cual aquí' 
+      '#title_display': invisible
+      '#title': 'Como realizar un trabajo académico en el ámbito educativo' 
+      '#description': ""
+    cn_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '31,90€' 
+      '#title_display': inline
+      '#title': 'Importe del certificado de notas' 
+      '#description': ""
+    cnfn1_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '15,95€' 
+      '#title_display': inline
+      '#title': 'Importe del certificado de notas FN 1ª' 
+      '#description': ""
+    cnfn2yh_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': 'Exentas' 
+      '#title_display': inline
+      '#title': 'Importe del certificado de notas FN 2ª y honor' 
+      '#description': ""
+    oc_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '15,95€' 
+      '#title_display': inline
+      '#title': 'Importe de otras certificaciones' 
+      '#description': ""
+    titulo_13:
+      '#type': select
+      '#options':
+        T1: 'Título Grado'
+        T2: 'T. Grado Familias numerosas de 1ª pagan el 50%'
+        T3: 'T. Grado Familias numerosas de 2ª y honor, exentas'
+        T4: 'Título Máster'
+        T5: 'T. Máster Familias numerosas de 1ª pagan el 50%'
+        T6: 'T. Máster Familias numerosas de 2ª y honor, exentas'
+      '#title_display': inline
+      '#title': 'Titulo' 
+      '#description': ""
+    itg_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '176,79€' 
+      '#title_display': inline
+      '#title': 'Importe del Título Grado' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T1
+            
+    itgfn1_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '88,40€' 
+      '#title_display': inline
+      '#title': 'Importe del Título Grado FN 1ª' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T2
+            
+    itgfn2h_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': 'Exentas' 
+      '#title_display': inline
+      '#title': 'Importe del Título Grado FN 2ª y honor' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T3
+            
+    itm_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '176,79€' 
+      '#title_display': inline
+      '#title': 'Importe del Título de Máster' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T4
+            
+    itmfn1_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '88,40€' 
+      '#title_display': inline
+      '#title': 'Importe del Título de Máster FN 1ª' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T5
+            
+    itmfn2h_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': 'Exentas' 
+      '#title_display': inline
+      '#title': 'Importe del Título de Máster FN 2ª y honor' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="titulo_13"]':
+            value: T6
+            
+    com_13:
+      '#type': select
+      '#options':
+        C1: 'Compulsa'
+      '#title_display': inline
+      '#title': 'Compulsa' 
+      '#description': ""
+    ccaed_13:
+      '#type': textfield
+      '#size': 
+      '#default_value': '12,48€' 
+      '#title_display': inline
+      '#title': 'Importe de la compulsa o copia auténtica electrónica de documentos' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="com_13"]':
+            value: C1
+            
+    tasas_de_inscripcion_cursos_13:
+      '#type': textfield
+      '#size': 
+      '#title_display': inline
+      '#title': 'Tasas de inscripción cursos' 
+      '#description': ""
+  fieldset_forma_de_pago:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Forma de pago' 
+    '#description': "En Secretaría  con tarjeta o en entidad financiera mediante ingreso o transferencia\n"
+    fp_29:
+      '#type': select
+      '#options':
+        T1: 'En Secretaría con tarjeta'
+        T2: 'Ingreso o transferencia en Ibercaja ccc 2085.0168.51.0300011902'
+        T3: 'Exentas'
+      '#title_display': inline
+      '#title': 'Forma de pago' 
+      '#description': ""
+      '#required': true
+  secretaria:
+    '#type': radios
+    '#options':
+      s1: 'certificado'
+      s2: 'título'
+      s3: 'compulsa'
+      s4: 'otro documento'
+    '#title': 'Secretaría' 
+    '#description': "Campo no visible para usuarios anónimos"
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '1'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Solicitud enviada</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+      - gestor_básico
+      - pas
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '25'
+      body: |
+        Solicitud enviada con fecha: [webform_submission:date:long]
+        Efectuada por la cuenta de  [webform_submission:user]
+        Los datos que constan en esta solicitud son:
+        [webform_submission:values]
+
+        Esta solicitud puedes verla en la cuenta de correo informada
+      excluded_elements:
+        secretaria: secretaria
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: admciheh@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        ADMINISTRACIÓN DE SOLICITUD
+        Solicitud enviada con fecha: [webform_submission:date:long]
+        Efectuada por la cuenta de  [webform_submission:user]
+        Los datos que constan en esta solicitud son:
+        [webform_submission:values]
+
+        Esta solicitud puedes verla en:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

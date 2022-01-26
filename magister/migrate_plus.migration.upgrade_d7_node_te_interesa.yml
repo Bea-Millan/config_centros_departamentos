@@ -1,4 +1,4 @@
-uuid: 4647ff2f-064a-4e86-89c5-f6d62b492945
+uuid: ffc0f7ba-174a-4764-8100-5f7528b30a8c
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: VPiKuiwtRtTpt9ItusK08LV5ncXeM3I-YFdRhX2Cv24
+  default_config_hash: qG8ETO9J8k6V1Q1P0S9x3NLCwP0-moLI_g3mjf2rUAM
 id: upgrade_d7_node_te_interesa
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: te_interesa
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

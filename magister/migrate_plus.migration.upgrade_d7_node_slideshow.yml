@@ -1,4 +1,4 @@
-uuid: 323a2204-b2a8-4439-b1fd-be318d33347e
+uuid: b4a94626-3fa8-42a4-a12d-9c65a19131f8
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: MQ-ceeZha7ZD1g0Fn_BoIC0wugc3idZqNJ9Ei9d1a_0
+  default_config_hash: dbbmd45aCcSDQalvum8OhC8nvngXvBB8lofDYChR0Js
 id: upgrade_d7_node_slideshow
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: slideshow
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

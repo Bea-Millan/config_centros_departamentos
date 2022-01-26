@@ -1,4 +1,4 @@
-uuid: 33211fbb-3e42-4ba0-8df8-e33669c060c6
+uuid: 292b768f-8af0-4d00-a68d-de035a9f0df4
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: vZOjhACp6pHAoHnNkXD9ImT47uuApTsT9xFXWOr_CNc
+  default_config_hash: WSnmJk7zdTn1ZO5WfBq67pqbU0wC85PV607cEyEZVh4
 id: upgrade_d7_node_complete_estudio
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: estudio
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value

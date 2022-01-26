@@ -1,0 +1,202 @@
+uuid: 9d1e5016-3fe1-4960-889b-a0babe5fa6d3
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 86
+template: false
+archive: false
+id: webform_339
+title: 'Reclamaciones y sugerencias para administracion y servicios'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    fieldset_datos_personales_opcional:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Datos personales (OPCIONAL)' 
+      '#description': ""
+      apellidos_12:
+        '#type': textfield
+        '#title': 'Apellidos' 
+        '#description': ""
+      nombre_12:
+        '#type': textfield
+        '#title': 'Nombre' 
+        '#description': ""
+      telefono_12:
+        '#type': textfield
+        '#size': 20
+        '#min': 
+        '#max': 
+        '#step': 
+        '#unique': false
+        '#title': 'Teléfono' 
+        '#description': ""
+      correo_electronico_12:
+        '#type': email
+        '#size': 20
+        '#title': 'Correo electrónico' 
+        '#description': ""
+  inicio_formulario_incidencias:
+    '#type': webform_wizard_page
+    '#title': hola
+    comunicacion_de_incidencia:
+      '#type': hidden
+      '#title': 'Comunicación de incidencia' 
+      '#description': ""
+    fieldset_hojas_de_incidencias:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Reclamaciones y sugerencias relacionadas con la Administración y los Servicios de la Facultad' 
+      '#description': "Rellena un formulario para cada tipo de incidencia observada"
+      academico_10:
+        '#type': select
+        '#options':
+          clave_atencion: ' Atención al público'
+          clave_registro: ' Registro Auxiliar'
+          clave_ceralu: ' Certificaciones académicas estudiantes'
+          clave_cerpdippee: ' Certificaciones al P.D.I. de la U.Z. Tutor prácticas escolares'
+          clave_cerpdidirtfg: ' Certificaciones al P.D.I. de la U.Z. Dirección TFG o TFM'
+          clave_cerpdimietfg: ' Certificaciones al P.D.I. de la U.Z. Miembro tribunal TFG o TFM'
+          clave_solmodweb: ' Solicitud modificación web'
+          clave_titulos: ' Títulos a estudiantes'
+          clave_mav: ' Información y asesoramiento de equipos de medios audiovisuales'
+          clave_salausuarios: ' Sala de Usuarios'
+          clave_actascds: ' Actas CDS'
+        '#title': 'Incidencia relativa a' 
+        '#description': "----------------------------------------------------------------"
+        '#required': true
+  salto_de_pagina_incidencia:
+    '#type': webform_wizard_page
+    '#title': Datos incidencias
+    descripcion_de_la_incidencia_o_sugerencia:
+      '#type': textarea
+      '#title': 'Descripción de la reclamación o sugerencia' 
+      '#description': ""
+      '#required': true
+    respuesta:
+      '#type': select
+      '#options':
+        0a: ' nada'
+        1b: ' suspenso'
+        2c: ' aprobado'
+        3d: ' notable'
+        4: ' sobresaliente'
+      '#multiple': true
+      '#title': 'Respuesta' 
+      '#description': ""
+      '#required': true
+  fin:
+    '#type': webform_wizard_page
+    '#title': fin
+    la_incidencia_esta_resuelta:
+      '#type': hidden
+      '#title': '¿La incidencia está resuelta?' 
+      '#description': ""
+    fecha_resolucion:
+      '#type': hidden
+      '#title': 'Fecha resolución' 
+      '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Gracias por tu colaboración</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:academico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:comunicacion_de_incidencia:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:respuesta:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: egbhu@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:academico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:academico:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

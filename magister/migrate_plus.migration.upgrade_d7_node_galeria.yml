@@ -1,4 +1,4 @@
-uuid: cbe1442a-014e-4426-a50f-48d2c22c4d6b
+uuid: 5057c74c-77ac-4c78-9ef8-a1d8b3a0fa14
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: XLV9UZ1jcmrZqimrHMoViEB34_EnLEmCO7ZHxvNEAAI
+  default_config_hash: VfZW-RD_bdZQ5MqW_ARr_eHEaEpzEKp4pafus73BBUg
 id: upgrade_d7_node_galeria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -20,6 +20,8 @@ source:
   plugin: d7_node_complete
   node_type: galeria
 process:
+  nid: tnid
+  vid: vid
   langcode:
     -
       plugin: default_value
