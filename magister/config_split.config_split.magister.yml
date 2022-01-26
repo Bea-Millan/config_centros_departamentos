@@ -1,0 +1,33 @@
+uuid: 000309f0-7f32-4b5d-8b83-280c91bcc188
+langcode: es
+status: true
+dependencies: {  }
+id: magister
+label: magister
+description: ''
+weight: 0
+folder: ../config/magister
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.magister
+  - core.entity_view_mode.shortcut.token
+  - core.extension
+  - language.types
+  - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
+  - unizar_admin_menu.settings
+  - unizar_modulos_configuracion.settings
+  - 'block.block.*'
+  - 'webform.webform.*'
+  - language.negociation
+  - 'language.entity.*'
+  - asset_injector.css.magister_inyeccion_css
+  - 'system.menu.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

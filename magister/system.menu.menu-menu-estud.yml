@@ -1,0 +1,8 @@
+uuid: a7d632aa-c518-4378-aeaf-491efe0df8e0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-estud
+label: magisterio
+description: 'menu de magisterio, asignaturas especiales y optativas'
+locked: false

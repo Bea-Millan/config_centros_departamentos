@@ -1,0 +1,105 @@
+uuid: f0d91590-fe96-4451-937f-73b6b1d69b51
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: 1TD1swFDxiqTRgfJ93uqYTjOwT-wMtpluAf3ofzJfOg
+id: upgrade_d7_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Menu links'
+source:
+  plugin: menu_link
+  constants:
+    bundle: menu_link_content
+process:
+  id:
+    -
+      plugin: gate_unizar
+      source: mlid
+      use_as_key: language
+      valid_keys:
+        - es
+        - und
+      key_direction: unlock
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  title:
+    -
+      plugin: get
+      source: link_title
+  description:
+    -
+      plugin: get
+      source: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+  link_path_processed:
+    -
+      plugin: static_map
+      bypass: true
+      map:
+        '<nolink>': 'route:<nolink>'
+      source: link_path
+    -
+      plugin: migrated_path_lookup
+  link/uri:
+    plugin: link_uri
+    validate_route: false
+    source:
+      - '@link_path_processed'
+  link/options: options
+  route:
+    plugin: route
+    source:
+      - '@link_path_processed'
+      - options
+  route_name: '@route/route_name'
+  route_parameters: '@route/route_parameters'
+  url: '@route/url'
+  options: '@route/options'
+  external: external
+  weight: weight
+  expanded: expanded
+  enabled: enabled
+  parent:
+    plugin: menu_link_parent
+    source:
+      - plid
+      - '@menu_name'
+      - parent_link_path
+  changed: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_menu
+  optional:
+    - upgrade_d7_node_compatibilidad
+    - upgrade_d7_node_elemento_parilla
+    - upgrade_d7_node_estudio
+    - upgrade_d7_node_galeria
+    - upgrade_d7_node_noticia
+    - upgrade_d7_node_page
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_slideshow
+    - upgrade_d7_node_te_interesa
+    - upgrade_d7_node_webform
+    - upgrade_d7_menu
