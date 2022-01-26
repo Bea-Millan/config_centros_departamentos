@@ -13,12 +13,12 @@ pattern: 'noticia/[node:title]'
 selection_criteria:
   69de57ba-6195-454a-9933-3e7a4b840be3:
     id: node_type
-    negate: false
-    uuid: 69de57ba-6195-454a-9933-3e7a4b840be3
-    context_mapping:
-      node: node
     bundles:
       noticia: noticia
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 69de57ba-6195-454a-9933-3e7a4b840be3
 selection_logic: and
 weight: -5
 relationships: {  }

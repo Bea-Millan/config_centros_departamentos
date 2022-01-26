@@ -14,19 +14,19 @@ id: imagen_cabecera_adaptable
 label: 'Imagen cabecera adaptable'
 image_style_mappings:
   -
-    image_mapping_type: image_style
-    image_mapping: imagen_cabecera_975x275
     breakpoint_id: unizar_tipos_contenidos_basicos.wide
     multiplier: 1x
-  -
     image_mapping_type: image_style
-    image_mapping: imagen_cabecera_960x275
+    image_mapping: imagen_cabecera_975x275
+  -
     breakpoint_id: unizar_tipos_contenidos_basicos.narrow
     multiplier: 1x
-  -
     image_mapping_type: image_style
-    image_mapping: imagen_cabecera_480x225
+    image_mapping: imagen_cabecera_960x275
+  -
     breakpoint_id: cunizar_tipos_contenidos_basicos.mobile
     multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: imagen_cabecera_480x225
 breakpoint_group: unizar_tipos_contenidos_basicos
 fallback_image_style: imagen_cabecera_975x275

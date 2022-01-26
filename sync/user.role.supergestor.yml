@@ -3,19 +3,10 @@ langcode: es
 status: true
 dependencies:
   config:
-    - node.type.elemento_parrilla
     - node.type.estudio
-    - node.type.galeria
-    - node.type.noticia
-    - node.type.page
-    - node.type.pestana
-    - node.type.slideshow
-    - node.type.te_interesa
-    - node.type.webform
   module:
     - node
     - publishcontent
-    - role_delegation
     - webform
     - webform_node
 _core:
@@ -25,7 +16,11 @@ label: supergestor
 weight: 7
 is_admin: null
 permissions:
+  - 'access all webform results'
   - 'assign supergestor role'
+  - 'clone node'
+  - 'delete all webform submissions'
+  - 'delete any elemento_parilla content'
   - 'delete any elemento_parrilla content'
   - 'delete any estudio content'
   - 'delete any galeria content'
@@ -38,6 +33,8 @@ permissions:
   - 'delete any webform content'
   - 'delete any webform submission'
   - 'delete webform submissions any node'
+  - 'edit all webform submissions'
+  - 'edit any elemento_parilla content'
   - 'edit any elemento_parrilla content'
   - 'edit any estudio content'
   - 'edit any galeria content'

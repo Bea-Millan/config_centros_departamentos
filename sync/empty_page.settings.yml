@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: qFTni1G0TWrV31A8Lh6zisEVwevWwrUj0lfyNQfQtCg
 new_id: 2
 langcode: es
 callback_1:
@@ -6,5 +8,3 @@ callback_1:
   updated: 1598526653
   path: home
   page_title: Home
-_core:
-  default_config_hash: qFTni1G0TWrV31A8Lh6zisEVwevWwrUj0lfyNQfQtCg

@@ -7,7 +7,7 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.pestanas
   module:
-    - image
+    - svg_image
 _core:
   default_config_hash: YsnbSbI9vF_jnDpA_ma1ATlYTr0NT_lodTcPv9o-GbQ
 id: taxonomy_term.pestanas.default
@@ -16,13 +16,13 @@ bundle: pestanas
 mode: default
 content:
   field_imagen_pestana:
-    type: image_image
     weight: 1
-    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
   name:
     type: string_textfield
     weight: 0

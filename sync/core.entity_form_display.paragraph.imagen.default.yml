@@ -10,7 +10,7 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.imagen
   module:
-    - image
+    - svg_image
     - text
 _core:
   default_config_hash: lQAX74oc19QzFYvUYkC_S2ENl_2FW7TnFOk2q8OQyls
@@ -20,34 +20,34 @@ bundle: imagen
 mode: default
 content:
   field_fullsize:
-    type: boolean_checkbox
     weight: 1
-    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  field_imagen_modular:
-    type: image_image
-    weight: 0
+    type: boolean_checkbox
     region: content
+  field_imagen_modular:
+    weight: 0
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_justify_text:
-    type: options_select
-    weight: 4
+    type: image_image
     region: content
+  field_justify_text:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_solo_texto:
-    type: text_textarea
-    weight: 2
+    type: options_select
     region: content
+  field_solo_texto:
+    weight: 2
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
+    region: content
 hidden:
   created: true
   status: true

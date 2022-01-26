@@ -11,8 +11,16 @@ label: 'gestor personas'
 weight: 6
 is_admin: null
 permissions:
+  - 'access dashboard'
+  - 'administer EU Cookie Compliance popup'
+  - 'administer fields'
   - 'administer users'
+  - 'assign gestor bloques role'
+  - 'assign gestor básico role'
+  - 'assign gestor menus role'
+  - 'assign gestor personas role'
   - 'assign gestor_basico role'
   - 'assign gestor_bloques role'
   - 'assign gestor_menus role'
   - 'assign gestor_personas role'
+  - 'display EU Cookie Compliance popup'

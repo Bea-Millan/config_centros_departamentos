@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: aU4rO9mKif8ufWXk7J-lP7i0Gm3aej21GaGSm924XLI
+  default_config_hash: H02Z-daQPLPvrP7LgKqu737z5-LlIInkrQ4PIu8GH0M
 name: 'Elemento parrilla'
 type: elemento_parrilla
 description: 'Elementos que aparecen en la parrilla de la página principal'

@@ -1,4 +1,4 @@
-uuid: 0d7714de-985d-43e4-8cc5-f899c927e62e
+uuid: 0149c066-c883-49bd-b2f9-54e1bae715b9
 langcode: es
 status: true
 dependencies:
@@ -7,7 +7,7 @@ dependencies:
 _core:
   default_config_hash: TBnl4vapW7sy5bRi7TcF-ueJnvz7aZNLif95ifvhfTQ
 id: webform_submission_delete_action
-label: 'Delete submission'
+label: 'Eliminar envío'
 type: webform_submission
 plugin: webform_submission_delete_action
 configuration: {  }

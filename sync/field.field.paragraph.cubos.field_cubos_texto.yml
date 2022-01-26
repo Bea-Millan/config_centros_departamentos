@@ -25,21 +25,21 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       cubos_texto: cubos_texto
       bloque_solo_imagen: bloque_solo_imagen
       bloque_solo_texto: bloque_solo_texto
-    negate: 0
     target_bundles_drag_drop:
       banda_imagenes:
         weight: 16
         enabled: false
       bloque_solo_imagen:
+        enabled: true
         weight: 14
-        enabled: true
       bloque_solo_texto:
-        weight: 15
         enabled: true
+        weight: 15
       bolos:
         weight: 10
         enabled: false
@@ -56,8 +56,8 @@ settings:
         weight: 8
         enabled: false
       cubos_texto:
-        weight: 11
         enabled: true
+        weight: 11
       imagen:
         weight: 12
         enabled: false

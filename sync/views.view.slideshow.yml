@@ -14,10 +14,10 @@ dependencies:
     - user.role.authenticated
   module:
     - draggableviews
-    - image
     - link
     - node
     - responsive_image
+    - svg_image
     - user
     - views_slideshow
 _core:
@@ -31,12 +31,131 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Máster
-    display_plugin: default
     position: 0
     display_options:
-      title: 'Presentación de diapositivas'
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: some
+        options:
+          items_per_page: 6
+          offset: 0
+      style:
+        type: slideshow
+        options:
+          row_class: ''
+          default_row_class: true
+          slideshow_skin: default
+          slideshow_type: views_slideshow_cycle
+          views_slideshow_cycle:
+            effect: fade
+            transition_advanced: 0
+            timeout: '5000'
+            speed: '700'
+            delay: '0'
+            sync: 1
+            random: 0
+            pause: 1
+            pause_on_click: 0
+            action_advanced: 0
+            start_paused: 0
+            remember_slide: 0
+            remember_slide_days: '1'
+            pause_in_middle: 0
+            pause_when_hidden: 0
+            pause_when_hidden_type: full
+            amount_allowed_visible: ''
+            nowrap: 0
+            fixed_height: 1
+            items_per_slide: '1'
+            items_per_slide_first: 0
+            items_per_slide_first_number: '1'
+            wait_for_image_load: 1
+            wait_for_image_load_timeout: '3000'
+            cleartype: 0
+            cleartypenobg: 0
+            advanced_options_choices: '0'
+            advanced_options_entry: ''
+            advanced_options: '{}'
+          widgets:
+            top:
+              views_slideshow_pager:
+                enable: true
+                weight: '1'
+                hide_on_single_slide: '1'
+                type: views_slideshow_pager_fields
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    title: title
+                    field_enlace: 0
+                    field_subtitulo: 0
+                    field_imagen_slide: 0
+                    field_ocultar_titulo: 0
+                  views_slideshow_pager_fields_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+            bottom:
+              views_slideshow_pager:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_pager_fields
+                views_slideshow_pager_bullets:
+                  views_slideshow_pager_bullets_hover: 0
+                views_slideshow_pager_fields:
+                  views_slideshow_pager_fields_fields:
+                    field_enlace: field_enlace
+                    title: 0
+                    field_subtitulo: 0
+                    field_imagen_slide: 0
+                    field_ocultar_titulo: 0
+                  views_slideshow_pager_fields_hover: 0
+              views_slideshow_slide_counter:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+              views_slideshow_controls:
+                enable: false
+                weight: '1'
+                hide_on_single_slide: '0'
+                type: views_slideshow_controls_text
+      row:
+        type: fields
       fields:
         field_enlace:
           id: field_enlace
@@ -45,7 +164,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -105,6 +223,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -112,7 +231,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -168,6 +286,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_subtitulo:
           id: field_subtitulo
           table: node__field_subtitulo
@@ -175,7 +294,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -231,6 +349,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_imagen_slide:
           id: field_imagen_slide
           table: node__field_imagen_slide
@@ -238,7 +357,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -283,8 +401,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
             image_style: imagen_cabecera_975x275
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -295,6 +413,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         nothing:
           id: nothing
           table: views
@@ -302,7 +421,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: custom
           label: ''
           exclude: false
           alter:
@@ -344,61 +462,21 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: false
-      pager:
-        type: some
-        options:
-          offset: 0
-          items_per_page: 6
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Aplicar
-          reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      empty: {  }
-      sorts:
-        weight:
-          id: weight
-          table: draggableviews_structure
-          field: weight
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: standard
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: weight
-          exposed: false
-          draggable_views_reference: 'slideshow:page_1'
-          draggable_views_null_order: after
-          draggable_views_pass_arguments: 0
-      arguments: {  }
+          plugin_id: custom
       filters:
         status:
-          id: status
+          value: '1'
           table: node_field_data
           field: status
+          plugin_id: boolean
           entity_type: node
           entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
+          id: status
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+          group: 1
         type:
           id: type
           table: node_field_data
@@ -406,9 +484,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
           operator: in
           value:
             slideshow: slideshow
@@ -441,107 +516,32 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-      style:
-        type: slideshow
-        options:
-          row_class: ''
-          default_row_class: true
-          slideshow_skin: default
-          slideshow_type: views_slideshow_cycle
-          widgets:
-            top:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-              views_slideshow_pager:
-                enable: true
-                weight: '1'
-                hide_on_single_slide: '1'
-                type: views_slideshow_pager_fields
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
-                views_slideshow_pager_fields:
-                  views_slideshow_pager_fields_fields:
-                    title: title
-                    field_enlace: 0
-                    field_subtitulo: 0
-                    field_imagen_slide: 0
-                    field_ocultar_titulo: 0
-                  views_slideshow_pager_fields_hover: 0
-            bottom:
-              views_slideshow_controls:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_controls_text
-              views_slideshow_slide_counter:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-              views_slideshow_pager:
-                enable: false
-                weight: '1'
-                hide_on_single_slide: '0'
-                type: views_slideshow_pager_fields
-                views_slideshow_pager_bullets:
-                  views_slideshow_pager_bullets_hover: 0
-                views_slideshow_pager_fields:
-                  views_slideshow_pager_fields_fields:
-                    field_enlace: field_enlace
-                    title: 0
-                    field_subtitulo: 0
-                    field_imagen_slide: 0
-                    field_ocultar_titulo: 0
-                  views_slideshow_pager_fields_hover: 0
-          views_slideshow_cycle:
-            effect: fade
-            transition_advanced: 0
-            timeout: '5000'
-            speed: '700'
-            delay: '0'
-            sync: 1
-            random: 0
-            pause: 1
-            pause_on_click: 0
-            action_advanced: 0
-            start_paused: 0
-            remember_slide: 0
-            remember_slide_days: '1'
-            pause_in_middle: 0
-            pause_when_hidden: 0
-            pause_when_hidden_type: full
-            amount_allowed_visible: ''
-            nowrap: 0
-            fixed_height: 1
-            items_per_slide: '1'
-            items_per_slide_first: 0
-            items_per_slide_first_number: '1'
-            wait_for_image_load: 1
-            wait_for_image_load_timeout: '3000'
-            cleartype: 0
-            cleartypenobg: 0
-            advanced_options_choices: '0'
-            advanced_options_entry: ''
-            advanced_options: '{}'
-      row:
-        type: fields
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
-      relationships: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        weight:
+          id: weight
+          table: draggableviews_structure
+          field: weight
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+            field_identifier: weight
+          draggable_views_reference: 'slideshow:page_1'
+          draggable_views_null_order: after
+          draggable_views_pass_arguments: 0
+          plugin_id: standard
+      title: 'Presentación de diapositivas'
       header: {  }
       footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -555,12 +555,16 @@ display:
         - 'config:field.storage.node.field_imagen_slide'
         - 'config:field.storage.node.field_subtitulo'
   block_1:
+    display_plugin: block
     id: block_1
     display_title: Bloque
-    display_plugin: block
     position: 1
     display_options:
+      display_extenders: {  }
       title: 'Imágenes cabecera'
+      defaults:
+        title: false
+        fields: false
       fields:
         title:
           id: title
@@ -569,7 +573,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -625,6 +628,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_subtitulo:
           id: field_subtitulo
           table: node__field_subtitulo
@@ -632,7 +636,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -688,6 +691,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_enlace_1:
           id: field_enlace_1
           table: node__field_enlace
@@ -695,7 +699,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -755,6 +758,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_imagen_slide:
           id: field_imagen_slide
           table: node__field_imagen_slide
@@ -762,7 +766,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -819,6 +822,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_ocultar_titulo:
           id: field_ocultar_titulo
           table: node__field_ocultar_titulo
@@ -826,7 +830,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -872,8 +875,8 @@ display:
           type: boolean
           settings:
             format: boolean
-            format_custom_false: ''
             format_custom_true: ''
+            format_custom_false: ''
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -884,6 +887,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         field_enlace:
           id: field_enlace
           table: node__field_enlace
@@ -891,7 +895,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -951,10 +954,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      defaults:
-        title: false
-        fields: false
-      display_extenders: {  }
+          plugin_id: field
     cache_metadata:
       max-age: -1
       contexts:
@@ -968,11 +968,76 @@ display:
         - 'config:field.storage.node.field_ocultar_titulo'
         - 'config:field.storage.node.field_subtitulo'
   page_1:
+    display_plugin: page
     id: page_1
     display_title: Página
-    display_plugin: page
     position: 2
     display_options:
+      display_extenders: {  }
+      style:
+        type: table
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          override: true
+          sticky: false
+          caption: ''
+          summary: ''
+          description: ''
+          columns:
+            field_enlace: field_enlace
+            title: title
+            field_subtitulo: field_subtitulo
+            field_imagen_slide: field_imagen_slide
+            nothing: nothing
+          info:
+            field_enlace:
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            title:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_subtitulo:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            field_imagen_slide:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+            nothing:
+              sortable: false
+              default_sort_order: asc
+              align: ''
+              separator: ''
+              empty_column: false
+              responsive: ''
+          default: '-1'
+          empty_table: false
+      defaults:
+        style: false
+        row: false
+        title: false
+        fields: false
+        access: false
+        pager: false
+        header: false
+      row:
+        type: fields
+        options: {  }
       title: 'Orden diapositivas'
       fields:
         field_imagen_slide:
@@ -982,7 +1047,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -1027,8 +1091,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_link: ''
             image_style: 100x100
+            image_link: ''
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1039,6 +1103,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -1046,7 +1111,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: Título
           exclude: false
           alter:
@@ -1102,6 +1166,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         draggableviews:
           id: draggableviews
           table: node_field_data
@@ -1109,9 +1174,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: nid
-          plugin_id: draggable_views_field
           label: ''
           exclude: false
           alter:
@@ -1156,6 +1218,9 @@ display:
           action_title: Acción
           include_exclude: exclude
           selected_actions: null
+          entity_type: node
+          entity_field: nid
+          plugin_id: draggable_views_field
         weight_1:
           id: weight_1
           table: draggableviews_structure
@@ -1163,7 +1228,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: numeric
           label: 'DraggableViews Weight'
           exclude: false
           alter:
@@ -1213,6 +1277,7 @@ display:
           format_plural_string: !!binary MQNAY291bnQ=
           prefix: ''
           suffix: ''
+          plugin_id: numeric
         field_enlace:
           id: field_enlace
           table: node__field_enlace
@@ -1220,7 +1285,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: Enlace
           exclude: false
           alter:
@@ -1280,6 +1344,7 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          plugin_id: field
         operations:
           id: operations
           table: node_revision
@@ -1287,8 +1352,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          plugin_id: entity_operations
           label: ''
           exclude: false
           alter:
@@ -1331,79 +1394,27 @@ display:
           empty_zero: false
           hide_alter_empty: true
           destination: false
-      pager:
-        type: none
-        options:
-          offset: 0
+          entity_type: node
+          plugin_id: entity_operations
+      path: admin/content/orden-imagenes-cabecera
       access:
         type: role
         options:
           role:
             authenticated: authenticated
-      style:
-        type: table
+      pager:
+        type: none
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          columns:
-            field_enlace: field_enlace
-            title: title
-            field_subtitulo: field_subtitulo
-            field_imagen_slide: field_imagen_slide
-            nothing: nothing
-          default: '-1'
-          info:
-            field_enlace:
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            title:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_subtitulo:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            field_imagen_slide:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-            nothing:
-              sortable: false
-              default_sort_order: asc
-              align: ''
-              separator: ''
-              empty_column: false
-              responsive: ''
-          override: true
-          sticky: false
-          summary: ''
-          empty_table: false
-          caption: ''
-          description: ''
-      row:
-        type: fields
-        options: {  }
-      defaults:
-        access: false
-        title: false
-        pager: false
-        style: false
-        row: false
-        fields: false
-        header: false
+          offset: 0
+      menu:
+        type: tab
+        title: 'Ordenar imágenes cabecera'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
       header:
         area:
           id: area
@@ -1412,23 +1423,12 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: text
           empty: false
+          tokenize: false
           content:
             value: '<a href="/node/add/slideshow" class="button">Añadir imagen rotativa</a>'
             format: filtered_html
-          tokenize: false
-      display_extenders: {  }
-      path: admin/content/orden-imagenes-cabecera
-      menu:
-        type: tab
-        title: 'Ordenar imágenes cabecera'
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: main
-        parent: ''
-        context: '0'
+          plugin_id: text
     cache_metadata:
       max-age: 0
       contexts:

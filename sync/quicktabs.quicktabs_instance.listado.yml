@@ -7,8 +7,6 @@ _core:
 id: listado
 label: Listado
 renderer: quick_tabs
-hide_empty_tabs: false
-default_tab: 0
 options:
   accordion_tabs:
     jquery_ui:
@@ -16,6 +14,8 @@ options:
       heightStyle: auto
   quick_tabs:
     ajax: false
+hide_empty_tabs: false
+default_tab: 0
 configuration_data:
   -
     title: Tab1

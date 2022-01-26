@@ -2,15 +2,17 @@ uuid: 2080955f-5f74-4266-99cd-481ea110b5a1
 langcode: es
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: U-zdaHik8hsQ7Jksc8UJTs3EFI-29pa8IIv4_DkWsTk
 name: administrador
 label: Administrador
 triggers:
   login: login
-destination_path: 'internal:/opciones'
+roles:
+  administrator: administrator
 pages_type: 0
 pages: ''
 language: ''
-roles:
-  administrator: administrator
-weight: -10
 enabled: true
+destination_path: 'internal:/opciones'
+weight: -10

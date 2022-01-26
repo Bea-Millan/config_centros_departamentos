@@ -16,8 +16,8 @@ dependencies:
     - field.field.paragraph.texto.field_titulo
     - paragraphs.paragraphs_type.texto
   module:
-    - image
     - options
+    - svg_image
     - text
 _core:
   default_config_hash: gmPwiMTLWMmBEx2hMh3XSypu5Zr6jGCT3laPl5XGyIE
@@ -27,63 +27,63 @@ bundle: texto
 mode: default
 content:
   field_colorfondo:
-    type: list_default
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    type: list_default
     region: content
   field_colortexto:
-    type: list_default
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    type: list_default
     region: content
   field_estilo_titulo:
-    type: list_default
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    type: list_default
     region: content
   field_fondo:
-    type: list_default
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    type: list_default
     region: content
   field_imagen_fondo:
-    type: image
+    weight: 7
     label: hidden
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 7
+    type: image
     region: content
   field_justify_text:
-    type: list_default
+    weight: 10
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 10
+    type: list_default
     region: content
   field_solo_texto:
-    type: text_default
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_titulo:
-    type: string
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    type: string
     region: content
 hidden:
   field_color_fondo: true

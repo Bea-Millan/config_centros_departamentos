@@ -9,7 +9,7 @@ third_party_settings:
     available_menus: {  }
     parent: ''
 _core:
-  default_config_hash: bbWOvaaFdi4qhRI0VUjrDV3GzZ-XPrCtjSE7402MHJg
+  default_config_hash: HiKnBvwjjKQpToqwqLejKvE8uTZmtg0GgaPnZ-7URUQ
 name: 'Te interesa'
 type: te_interesa
 description: 'Enlaces destacados en la página principal'

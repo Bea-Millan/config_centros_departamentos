@@ -13,7 +13,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: p1JKhEESf25rXHrLAaUL4Dr82LyiqkU7KGNAoaA4t4I
+  default_config_hash: PoL_fbjOn0KCx-BsUiAUhSxjTErw7WZxdjjARJt9Qyk
 name: Webform
 type: webform
 description: 'A basic page with a webform attached.'

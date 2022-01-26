@@ -9,8 +9,8 @@ dependencies:
     - field.field.paragraph.imagen.field_solo_texto
     - paragraphs.paragraphs_type.imagen
   module:
-    - image
     - options
+    - svg_image
     - text
 _core:
   default_config_hash: cREwxv-qWZcB6Bm58-mwHZhfSD7zVT6lOpudgD1Hi_Y
@@ -21,35 +21,35 @@ mode: default
 content:
   field_fullsize:
     type: boolean
+    weight: 3
+    region: content
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 3
-    region: content
   field_imagen_modular:
-    type: image
+    weight: 2
     label: hidden
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 2
+    type: image
     region: content
   field_justify_text:
-    type: list_default
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    type: list_default
     region: content
   field_solo_texto:
-    type: text_default
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    type: text_default
     region: content
 hidden: {  }

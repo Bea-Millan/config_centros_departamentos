@@ -16,15 +16,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes:
-          layout_class: {  }
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        label: ''
+        classes:
+          layout_class: {  }
     regions:
       ds_content:
         - field_descripcion
@@ -40,13 +40,13 @@ mode: default
 content:
   langcode:
     type: language
+    weight: 1
+    region: ds_content
     label: hidden
     settings:
       link_to_entity: false
       native_language: false
     third_party_settings: {  }
-    weight: 1
-    region: ds_content
 hidden:
   addtoany: true
   field_link: true

@@ -17,35 +17,35 @@ mode: default
 content:
   account:
     weight: -10
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   contact:
     weight: 5
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_apellidos:
-    type: string_textfield
     weight: 32
-    region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_nombre:
     type: string_textfield
-    weight: 31
     region: content
+  field_nombre:
+    weight: 31
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
   language:
     weight: 0
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
   path:
     type: path
     weight: 30
@@ -54,8 +54,8 @@ content:
     third_party_settings: {  }
   timezone:
     weight: 6
-    region: content
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden:
   langcode: true

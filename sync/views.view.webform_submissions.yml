@@ -1,4 +1,4 @@
-uuid: 3e465d96-4e22-4c81-a9b6-fa332b248530
+uuid: 853746b1-ea14-41fb-a588-57442cdc77b7
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: YPgxGC8TmLtfCOLGCCHJcdH2llA7QksUkdi1abhB7Ro
 id: webform_submissions
-label: 'Webform submissions'
+label: 'Envíos de formulario web'
 module: views
 description: 'Default webform submissions views.'
 tag: ''
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Webform submissions'
+      title: 'Envíos de formulario web'
       fields:
         sid:
           id: sid
@@ -36,7 +36,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -102,7 +102,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Borrador
           exclude: false
           alter:
             alter_text: false
@@ -665,7 +665,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -731,7 +731,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Borrador
           exclude: false
           alter:
             alter_text: false
@@ -999,7 +999,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false
@@ -1587,7 +1587,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -1653,7 +1653,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Borrador
           exclude: false
           alter:
             alter_text: false
@@ -1921,7 +1921,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false
@@ -2421,7 +2421,7 @@ display:
           entity_type: webform_submission
           entity_field: sid
           plugin_id: field
-          label: '#'
+          label: Nº
           exclude: false
           alter:
             alter_text: false
@@ -2487,7 +2487,7 @@ display:
           entity_type: webform_submission
           entity_field: in_draft
           plugin_id: field
-          label: Draft
+          label: Borrador
           exclude: false
           alter:
             alter_text: false
@@ -2755,7 +2755,7 @@ display:
           entity_type: webform_submission
           entity_field: completed
           plugin_id: field
-          label: Completed
+          label: Completado
           exclude: false
           alter:
             alter_text: false

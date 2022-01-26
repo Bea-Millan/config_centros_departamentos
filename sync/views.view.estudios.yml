@@ -18,7 +18,7 @@ dependencies:
     module:
       - unizar_estudios
 _core:
-  default_config_hash: nxSrT3SYCCZw4hHGkUoxBiQGhmZezZHxQutsgUClyAE
+  default_config_hash: fCldrdios96n-Qs_5iz7C_7OdmGObF_5rS14b81XDak
 id: estudios
 label: Estudios
 module: views
@@ -319,6 +319,21 @@ display:
         options: {  }
       empty: {  }
       sorts:
+        title:
+          id: title
+          table: node_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: title
+          plugin_id: standard
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
         field_tipo_estudio_target_id:
           id: field_tipo_estudio_target_id
           table: node__field_tipo_estudio

@@ -16,16 +16,15 @@ bundle: banda_imagenes_fullsize
 mode: default
 content:
   field_altura_imagenes:
-    type: number
     weight: 0
-    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
+    type: number
+    region: content
   field_imagen_fullsize:
     type: paragraphs
     weight: 1
-    region: content
     settings:
       title: Paragraph
       title_plural: Paragraphs
@@ -41,6 +40,7 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
   status: true

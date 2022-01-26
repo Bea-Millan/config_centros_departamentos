@@ -11,8 +11,8 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.cubos_texto
   module:
-    - image
     - link
+    - svg_image
 _core:
   default_config_hash: K17dhtWXSjCh7b5XCmzJjhIu8RC52XzJogKgMRflFkM
 id: paragraph.cubos_texto.default
@@ -21,43 +21,43 @@ bundle: cubos_texto
 mode: default
 content:
   field_caja_texto:
-    type: string_textarea
     weight: 4
-    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_colortexto:
-    type: options_select
-    weight: 1
+    type: string_textarea
     region: content
+  field_colortexto:
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-  field_enlace_bolo:
-    type: link_default
-    weight: 3
+    type: options_select
     region: content
+  field_enlace_bolo:
+    weight: 3
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_imagen_bolo:
-    type: image_image
-    weight: 2
+    type: link_default
     region: content
+  field_imagen_bolo:
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_titulo:
-    type: string_textfield
-    weight: 0
+    type: image_image
     region: content
+  field_titulo:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   status: true

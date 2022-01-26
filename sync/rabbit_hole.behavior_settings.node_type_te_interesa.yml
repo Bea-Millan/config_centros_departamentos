@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.te_interesa
 _core:
-  default_config_hash: 5YTVL9292gDGgn2Or0j6BC9IucVv2zPiaYoVBrmtNJQ
+  default_config_hash: KxRpHHniHiOH4OfOsSLQnvBvA6rajBg2HrCwXBr_gJw
 id: node_type_te_interesa
 entity_type_id: node_type
 entity_id: te_interesa

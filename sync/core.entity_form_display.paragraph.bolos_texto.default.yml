@@ -12,8 +12,8 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.bolos_texto
   module:
-    - image
     - link
+    - svg_image
 _core:
   default_config_hash: Fiemz5f0KycrxTjfhatUbiq7eDp_RBYTl3UcAO03CUQ
 id: paragraph.bolos_texto.default
@@ -22,41 +22,41 @@ bundle: bolos_texto
 mode: default
 content:
   field_colortexto:
-    type: options_select
     weight: 4
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_destino_enlace:
     type: options_select
-    weight: 6
     region: content
+  field_destino_enlace:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
-  field_enlace_bolo:
-    type: link_default
-    weight: 5
+    type: options_select
     region: content
+  field_enlace_bolo:
+    weight: 5
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_imagen_bolo:
-    type: image_image
-    weight: 1
+    type: link_default
     region: content
+  field_imagen_bolo:
+    weight: 1
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_texto_bolo:
-    type: string_textfield
-    weight: 2
+    type: image_image
     region: content
+  field_texto_bolo:
+    weight: 2
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   field_colorfondo: true

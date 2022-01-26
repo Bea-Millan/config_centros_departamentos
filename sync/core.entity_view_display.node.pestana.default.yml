@@ -17,15 +17,15 @@ bundle: pestana
 mode: default
 content:
   field_configuracion_pestana:
-    type: entity_reference_label
+    weight: 103
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 103
+    type: entity_reference_label
     region: content
   field_enlace_a_la_informacion:
-    type: link
+    weight: 102
     label: above
     settings:
       trim_length: 80
@@ -34,12 +34,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 102
+    type: link
     region: content
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   addtoany: true

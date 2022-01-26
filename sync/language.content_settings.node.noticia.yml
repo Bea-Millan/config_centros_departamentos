@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.noticia
+_core:
+  default_config_hash: hZuyineNDuW7nze4zcBzwqwby9-6ZfTBWoKV5Vn8EYM
 id: node.noticia
 target_entity_type_id: node
 target_bundle: noticia

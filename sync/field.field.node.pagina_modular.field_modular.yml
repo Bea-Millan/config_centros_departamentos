@@ -28,6 +28,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       texto: texto
       imagen_texto_1: imagen_texto_1
@@ -35,39 +36,38 @@ settings:
       bolos: bolos
       banda_imagenes: banda_imagenes
       cubos: cubos
-    negate: 0
     target_bundles_drag_drop:
       banda_imagenes:
+        enabled: true
         weight: -18
-        enabled: true
       bolos:
-        weight: -20
         enabled: true
+        weight: -20
       bolos_texto:
         weight: -19
         enabled: false
       columnas:
-        weight: -14
         enabled: true
+        weight: -14
       columnas_texto:
         weight: -16
         enabled: false
       cubos:
-        weight: -17
         enabled: true
+        weight: -17
       cubos_texto:
         weight: -15
         enabled: false
       imagen:
-        weight: -21
         enabled: true
+        weight: -21
       imagen_con_vinculo:
         weight: -13
         enabled: false
       imagen_texto_1:
+        enabled: true
         weight: -22
-        enabled: true
       texto:
-        weight: -23
         enabled: true
+        weight: -23
 field_type: entity_reference_revisions

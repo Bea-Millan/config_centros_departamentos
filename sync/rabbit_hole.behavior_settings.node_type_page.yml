@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.page
+_core:
+  default_config_hash: SITseJzly9uZWuko_oTucvOSAf45Zwy2BAj-pVqry9s
 id: node_type_page
 entity_type_id: node_type
 entity_id: page

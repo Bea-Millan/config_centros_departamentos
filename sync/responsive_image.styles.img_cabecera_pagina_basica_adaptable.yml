@@ -13,19 +13,19 @@ id: img_cabecera_pagina_basica_adaptable
 label: 'Img cabecera página básica adaptable'
 image_style_mappings:
   -
-    image_mapping_type: image_style
-    image_mapping: img_cab_pag_basica_765x245
     breakpoint_id: unizar_tipos_contenidos_basicos.wide
     multiplier: 1x
-  -
     image_mapping_type: image_style
     image_mapping: img_cab_pag_basica_765x245
+  -
     breakpoint_id: unizar_tipos_contenidos_basicos.narrow
     multiplier: 1x
-  -
     image_mapping_type: image_style
-    image_mapping: img_cab_pag_basica_460x225
+    image_mapping: img_cab_pag_basica_765x245
+  -
     breakpoint_id: unizar_tipos_contenidos_basicos.mobile
     multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: img_cab_pag_basica_460x225
 breakpoint_group: unizar_tipos_contenidos_basicos
 fallback_image_style: img_cab_pag_basica_765x245

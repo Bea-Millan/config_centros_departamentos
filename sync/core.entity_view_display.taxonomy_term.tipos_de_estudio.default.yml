@@ -6,7 +6,7 @@ dependencies:
     - field.field.taxonomy_term.tipos_de_estudio.field_imagen_estudio
     - taxonomy.vocabulary.tipos_de_estudio
   module:
-    - image
+    - svg_image
     - text
   enforced:
     module:
@@ -19,20 +19,20 @@ bundle: tipos_de_estudio
 mode: default
 content:
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 0
     region: content
-  field_imagen_estudio:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
+    settings: {  }
     third_party_settings: {  }
+  field_imagen_estudio:
+    label: above
     weight: 0
+    type: image
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
     region: content
 hidden:
   langcode: true

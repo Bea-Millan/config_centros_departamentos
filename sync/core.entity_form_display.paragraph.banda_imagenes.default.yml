@@ -19,42 +19,42 @@ dependencies:
     - paragraphs.paragraphs_type.banda_imagenes
   module:
     - field_group
-    - image
     - paragraphs
+    - svg_image
 third_party_settings:
   field_group:
     group_acordeon:
       children:
         - field_auto_play
         - field_mostrar_puntos
-      label: Acordeon
-      region: content
       parent_name: ''
       weight: 6
       format_type: details
+      region: content
       format_settings:
-        classes: ''
         id: ''
-        open: false
+        classes: ''
         description: ''
         required_fields: false
+        open: false
+      label: Acordeon
     group_opciones_titulo:
       children:
         - field_estilo_titulo
         - field_justify_text
         - field_colortexto
-      label: 'Opciones título'
-      region: content
       parent_name: ''
       weight: 1
       format_type: details
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
-        open: false
+        classes: ''
         description: ''
+        open: false
         required_fields: true
+      label: 'Opciones título'
 _core:
   default_config_hash: zG_itQ-1tZxzSobjiy_UOSnEvp8mTUyQ5pCOn-87x3M
 id: paragraph.banda_imagenes.default
@@ -63,97 +63,97 @@ bundle: banda_imagenes
 mode: default
 content:
   field_altura_imagenes:
-    type: number
     weight: 7
-    region: content
     settings:
       placeholder: ''
     third_party_settings: {  }
+    type: number
+    region: content
   field_auto_play:
-    type: boolean_checkbox
     weight: 7
-    region: content
     settings:
       display_label: true
     third_party_settings: {  }
-  field_colorfondo:
-    type: options_select
-    weight: 3
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_colortexto:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_es_carrusel:
     type: boolean_checkbox
-    weight: 5
     region: content
+  field_colorfondo:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_colortexto:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_es_carrusel:
+    weight: 5
     settings:
       display_label: true
     third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_estilo_titulo:
-    type: options_select
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_fondo:
-    type: options_select
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_imagen_fondo:
-    type: image_image
-    weight: 4
+    type: options_select
     region: content
+  field_imagen_fondo:
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
   field_imagenes:
     type: paragraphs
     weight: 8
-    region: content
     settings:
       title: Párrafo
       title_plural: Parráfos
       edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
       features:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
-  field_justify_text:
-    type: options_select
-    weight: 3
     region: content
+  field_justify_text:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_mostrar_puntos:
-    type: boolean_checkbox
-    weight: 8
+    type: options_select
     region: content
+  field_mostrar_puntos:
+    weight: 8
     settings:
       display_label: true
     third_party_settings: {  }
-  field_titulo:
-    type: string_textfield
-    weight: 0
+    type: boolean_checkbox
     region: content
+  field_titulo:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   status: true

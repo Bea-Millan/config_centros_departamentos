@@ -5,7 +5,6 @@ dependencies:
   config:
     - node.type.pagina_modular
   module:
-    - block_region_permissions
     - node
     - publishcontent
 _core:

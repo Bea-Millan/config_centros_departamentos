@@ -16,7 +16,7 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.imagen_texto_1
   module:
-    - image
+    - svg_image
     - text
 _core:
   default_config_hash: 52_kIhp-q2VkQizFWFVkAzSxZD9fkpGACs3_luPCYws
@@ -26,71 +26,71 @@ bundle: imagen_texto_1
 mode: default
 content:
   field_align_text:
-    type: options_select
     weight: 9
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_color_fondo:
-    type: boolean_checkbox
-    weight: 0
+    type: options_select
     region: content
+  field_color_fondo:
+    weight: 0
     settings:
       display_label: true
     third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_colorfondo:
-    type: options_select
     weight: 7
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_colortexto:
     type: options_select
-    weight: 6
     region: content
+  field_colortexto:
+    weight: 6
     settings: {  }
     third_party_settings: {  }
-  field_imagen_modular:
-    type: image_image
-    weight: 2
+    type: options_select
     region: content
+  field_imagen_modular:
+    weight: 2
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
   field_justify_text:
-    type: options_select
     weight: 8
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_posicion:
     type: options_select
-    weight: 3
     region: content
+  field_posicion:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_sin_margen:
-    type: boolean_checkbox
-    weight: 1
+    type: options_select
     region: content
+  field_sin_margen:
+    weight: 1
     settings:
       display_label: true
     third_party_settings: {  }
-  field_solo_texto:
-    type: text_textarea
-    weight: 5
+    type: boolean_checkbox
     region: content
+  field_solo_texto:
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-  field_tamano_imagen:
-    type: options_select
-    weight: 4
+    type: text_textarea
     region: content
+  field_tamano_imagen:
+    weight: 4
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
 hidden:
   created: true
   status: true

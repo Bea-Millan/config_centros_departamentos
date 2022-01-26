@@ -1,4 +1,4 @@
-uuid: a5af5c2d-18ec-4141-bc6e-efb37cc5818f
+uuid: abeb8f8e-3201-4174-9eed-a72af134f4ed
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     module:
       - content_moderation
 _core:
-  default_config_hash: RKnL13CZ61m1tYbO5jkEJ9f8jhlmvQdBTMp6DucLS4A
+  default_config_hash: upi3_YaKY1MjDALjDauLNPXfHakisQNehC9Dj6icMPQ
 id: moderated_content
 label: 'Contenido moderado'
 module: views

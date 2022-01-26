@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.galeria
+_core:
+  default_config_hash: 3IU-pirEKI--OEsixzihR1U6wjXgsdb_-W4G4cqExCA
 id: node.galeria
 target_entity_type_id: node
 target_bundle: galeria

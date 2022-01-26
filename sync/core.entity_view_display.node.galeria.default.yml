@@ -12,12 +12,13 @@ dependencies:
     - field.field.node.galeria.field_ocultar_social
     - image.style.100x100
     - node.type.galeria
+    - responsive_image.styles.img_cabecera_pagina_basica_adaptable
   module:
     - colorbox
     - datetime
     - ds
-    - image
     - layout_builder
+    - responsive_image
     - text
     - user
 third_party_settings:
@@ -58,7 +59,7 @@ third_party_settings:
           wrapper: h1
           class: ''
 _core:
-  default_config_hash: Qnba957tuM6c-Q42mmAA7w14vsFGWMn-Qo-aArn68H8
+  default_config_hash: pVWZeBTCqdtWwe7X1MgOZrPWYluyFKL3V5olPzdTu6Q
 id: node.galeria.default
 targetEntityType: node
 bundle: galeria
@@ -97,11 +98,11 @@ content:
     weight: 4
     region: ds_content
   field_imagen_nodo:
-    type: image
+    type: responsive_image
     label: hidden
     settings:
+      responsive_image_style: img_cabecera_pagina_basica_adaptable
       image_link: ''
-      image_style: ''
     third_party_settings: {  }
     weight: 0
     region: ds_content

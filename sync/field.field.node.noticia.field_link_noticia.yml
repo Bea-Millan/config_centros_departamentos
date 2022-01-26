@@ -13,13 +13,13 @@ id: node.noticia.field_link_noticia
 field_name: field_link_noticia
 entity_type: node
 bundle: noticia
-label: 'Enlace a la noticia2'
+label: 'Enlace a la noticia'
 description: 'Si completa este campo, al clickar en el título de la noticia dirigirá a la dirección en él insertada, por lo que no es necesario completar el campo "Texto de la noticia"'
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  title: 0
   link_type: 17
+  title: 0
 field_type: link

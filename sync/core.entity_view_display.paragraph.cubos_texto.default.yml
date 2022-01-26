@@ -10,9 +10,9 @@ dependencies:
     - field.field.paragraph.cubos_texto.field_titulo
     - paragraphs.paragraphs_type.cubos_texto
   module:
-    - image
     - link
     - options
+    - svg_image
 _core:
   default_config_hash: SAwDD5EZAFPVdJR6aZ3OOzNRkvVsvPiypOBg_ygY69w
 id: paragraph.cubos_texto.default
@@ -21,21 +21,21 @@ bundle: cubos_texto
 mode: default
 content:
   field_caja_texto:
-    type: basic_string
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    type: basic_string
     region: content
   field_colortexto:
-    type: list_default
+    weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    type: list_default
     region: content
   field_enlace_bolo:
-    type: link
+    weight: 2
     label: hidden
     settings:
       trim_length: 80
@@ -44,23 +44,23 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    type: link
     region: content
   field_imagen_bolo:
-    type: image
+    weight: 1
     label: hidden
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 1
+    type: image
     region: content
   field_titulo:
-    type: string
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    type: string
     region: content
 hidden: {  }

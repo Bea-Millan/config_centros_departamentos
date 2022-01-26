@@ -1,15 +1,15 @@
-uuid: 928e38ef-2232-4b7a-aea8-a731788b51da
+uuid: 7658c97e-5242-4071-bff7-9335f28f1964
 langcode: es
 status: true
 dependencies:
   config:
     - image.style.thumbnail
   module:
-    - image
     - media
+    - svg_image
     - user
 _core:
-  default_config_hash: XMFQya90W1qr0g4mSZ9p5TxBOCfn0aOs9pe17SKVTW0
+  default_config_hash: mF_CA96Q4unIl78LRoLKR5YPUDGdxn0wbSqyUbvrQjc
 id: media
 label: Multimedia
 module: views

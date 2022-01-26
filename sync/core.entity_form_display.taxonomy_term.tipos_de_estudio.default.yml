@@ -7,7 +7,7 @@ dependencies:
     - image.style.thumbnail
     - taxonomy.vocabulary.tipos_de_estudio
   module:
-    - image
+    - svg_image
   enforced:
     module:
       - unizar_estudios
@@ -19,13 +19,13 @@ bundle: tipos_de_estudio
 mode: default
 content:
   field_imagen_estudio:
-    type: image_image
     weight: 1
-    region: content
+    type: image_image
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -36,10 +36,10 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 2
-    region: content
     settings:
       display_label: true
+    weight: 2
+    region: content
     third_party_settings: {  }
 hidden:
   description: true

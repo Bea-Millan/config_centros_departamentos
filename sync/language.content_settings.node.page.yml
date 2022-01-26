@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.page
 _core:
-  default_config_hash: YQ2DWI17BROfeLP_thyZhMUZFrVhwoKnG1lio9Yz5qM
+  default_config_hash: PZo4XF2kuyJ-I2zouUbbg-8ZNITpnCCicIVOWHMyoRE
 id: node.page
 target_entity_type_id: node
 target_bundle: page

@@ -6,7 +6,7 @@ dependencies:
     - field.field.taxonomy_term.pestanas.field_imagen_pestana
     - taxonomy.vocabulary.pestanas
   module:
-    - image
+    - svg_image
     - text
 _core:
   default_config_hash: EdcOHoJvhXYLjVZ006Euhk5VzSFBcNWWsnEy7tR2m0Y
@@ -16,20 +16,20 @@ bundle: pestanas
 mode: default
 content:
   description:
-    type: text_default
     label: hidden
-    settings: {  }
-    third_party_settings: {  }
+    type: text_default
     weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
   field_imagen_pestana:
-    type: image
+    weight: 1
     label: above
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 1
+    type: image
     region: content
 hidden:
   langcode: true

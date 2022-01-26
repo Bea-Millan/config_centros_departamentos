@@ -8,9 +8,9 @@ dependencies:
     - image.style.thumbnail
     - node.type.elemento_parrilla
   module:
-    - image
     - link
     - path
+    - svg_image
 _core:
   default_config_hash: cKKFcS-ypGWm5ztxWVwodVVpMLaupHdYZXASxmZ4SHo
 id: node.elemento_parrilla.default
@@ -55,24 +55,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 4
-    region: content
     settings:
       display_label: true
+    weight: 4
+    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 7
-    region: content
     settings:
       display_label: true
+    weight: 7
+    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 5
-    region: content
     settings:
       display_label: true
+    weight: 5
+    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -85,11 +85,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 2
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden: {  }

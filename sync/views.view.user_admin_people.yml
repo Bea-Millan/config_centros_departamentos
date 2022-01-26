@@ -1,4 +1,4 @@
-uuid: 2b9a322a-eb73-45ae-96ef-064b9c0a057f
+uuid: 5da50edc-d491-4d4b-8eba-0f219fb0ac2f
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     - role_delegation
     - user
 _core:
-  default_config_hash: GbPVHdpSCucZ1MunS3Lai6FtyVVfmP9rJHk1GZ73JY0
+  default_config_hash: njaZigMvB4ap21Fg_tQcJhWgYJCGNi49Z5rRL_N6RI0
 id: user_admin_people
 label: Usuarios
 module: user

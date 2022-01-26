@@ -16,6 +16,8 @@ dependencies:
   module:
     - node
     - user
+_core:
+  default_config_hash: CwL2oHOaS1mKHRCI_HFeF4gQkv5zQDhS_6g8rJdKCKM
 id: login
 label: Login
 module: views

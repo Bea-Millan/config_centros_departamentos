@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.pestana
 _core:
-  default_config_hash: d_TFdUAAmNlI5r42kxCexhoYqfToYmmArPImdwpaeZQ
+  default_config_hash: 7Ze4EuO4_xncqwV6IyQcr07-MfcTrtpcA3UKfanHKYk
 id: node.pestana
 target_entity_type_id: node
 target_bundle: pestana

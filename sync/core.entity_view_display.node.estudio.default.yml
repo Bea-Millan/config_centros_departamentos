@@ -21,7 +21,7 @@ bundle: estudio
 mode: default
 content:
   field_link_estudio:
-    type: link
+    weight: 2
     label: inline
     settings:
       trim_length: 255
@@ -30,10 +30,10 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    weight: 2
+    type: link
     region: content
   field_link_estudio_personalizado:
-    type: link
+    weight: 3
     label: inline
     settings:
       trim_length: 255
@@ -42,15 +42,15 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
-    weight: 3
+    type: link
     region: content
   field_tipo_estudio:
-    type: entity_reference_label
     label: inline
+    weight: 1
+    type: entity_reference_label
     settings:
       link: true
     third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   addtoany: true

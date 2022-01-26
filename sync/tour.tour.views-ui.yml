@@ -1,11 +1,11 @@
-uuid: af755d14-3d93-4505-9db0-1e23e47b7066
+uuid: 5b8b65b4-6873-4641-a8ce-5c498f393747
 langcode: es
 status: true
 dependencies:
   module:
     - views_ui
 _core:
-  default_config_hash: SQMiFkCe2dvWXIB-mlAPqsM6ofosgIHWWGLF5N201Jw
+  default_config_hash: XIYL1KF7ND2XQRa5AxvEcp8vgCN2kUGiuBNhCgxrPME
 id: views-ui
 label: 'Ver página de edición'
 module: views_ui
@@ -81,7 +81,7 @@ tips:
   views-ui-preview:
     id: views-ui-preview
     plugin: text
-    label: Preview
+    label: 'Vista previa'
     weight: 10
     position: right
     selector: '#preview-submit'

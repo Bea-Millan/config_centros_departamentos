@@ -14,10 +14,10 @@ dependencies:
     - image.style.imagen_cuadrada
     - node.type.galeria
   module:
-    - image
+    - svg_image
     - user
 _core:
-  default_config_hash: 7RJTJSTC3f5CJ6hIIaAGntTtym7z-eaYOC5EatYRx0A
+  default_config_hash: HG099ThooxXK4AQd0pbTC6cAzyw5K8OPWPJlmUKumwU
 id: node.galeria.teaser
 targetEntityType: node
 bundle: galeria

@@ -1,4 +1,4 @@
-uuid: 254a2859-c03a-4681-8d94-919baa078a36
+uuid: 568e0787-6dda-4198-8228-f2fc5e1542a4
 langcode: es
 status: true
 dependencies:
@@ -16,5 +16,8 @@ weight: 1
 is_admin: false
 permissions:
   - 'access content'
+  - 'access site map'
+  - 'edit webform components'
+  - 'opt-in or out of matomo tracking'
   - 'search content'
   - 'use text format filtered_html'

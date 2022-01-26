@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.te_interesa
+_core:
+  default_config_hash: pJ7W8-0Dg9_jTE1DzgHd5bC4cesgccd7Dfca_cGS2OM
 id: node.te_interesa
 target_entity_type_id: node
 target_bundle: te_interesa

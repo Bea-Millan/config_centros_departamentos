@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.webform
+_core:
+  default_config_hash: 60TYxLBTVv7xriKZeZHjzVCKxlvaeipRkBhkKeqgdAg
 id: node.webform
 target_entity_type_id: node
 target_bundle: webform

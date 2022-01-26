@@ -9,9 +9,9 @@ dependencies:
       - unizar_estudios
 third_party_settings:
   menu_ui:
+    parent: 'main:'
     available_menus:
       - main
-    parent: 'main:'
 _core:
   default_config_hash: _buWl1HMN1ajva3Om5it4HE1_FzUOjdPHf-qwjBvYv0
 name: Estudio

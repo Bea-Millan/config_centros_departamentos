@@ -1,11 +1,11 @@
-uuid: d34947ed-25aa-4910-84c6-701822a956a4
+uuid: 2ff7095b-cad0-4c60-8b9d-0aae81d9a5e7
 langcode: es
 status: true
 dependencies:
   module:
     - locale
 _core:
-  default_config_hash: L6glUO7ZoSIgGnjaceBBx17SS78AaLPlm7-qd0w3RN8
+  default_config_hash: Kcx1PIw-KgGbTo5_tOkbI6TWJiP_0Sr7t5T9SuMV2hA
 id: locale
 label: Traducción
 module: locale

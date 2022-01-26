@@ -1,11 +1,11 @@
-uuid: fb28417d-dfc4-40e6-a4b3-ca285df3d0ec
+uuid: 821c07de-5b82-4ce0-a86f-9bb9ffb305b9
 langcode: es
 status: true
 dependencies:
   module:
     - language
 _core:
-  default_config_hash: i0rlksghfAqbopMmmoAR1IEzR3yTsE8cq8rYefYoSwM
+  default_config_hash: vcDd9H0uIlyOQGoVAJuD3ADMnQeRR_X3B-ojyb8Cbnc
 id: language-add
 label: 'Añadiendo idiomas'
 module: language

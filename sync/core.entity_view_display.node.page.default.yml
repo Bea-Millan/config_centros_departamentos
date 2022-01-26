@@ -29,15 +29,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes:
-          layout_class: {  }
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        label: ''
+        classes:
+          layout_class: {  }
     regions:
       ds_content:
         - field_imagen_nodo
@@ -53,9 +53,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: false
           wrapper: h1
           class: ''
+          link: false
       node_changed_date:
         plugin_id: node_changed_date
         weight: 2
@@ -69,19 +69,19 @@ bundle: page
 mode: default
 content:
   addtoany:
-    settings: {  }
-    third_party_settings: {  }
     weight: 5
     region: ds_content
+    settings: {  }
+    third_party_settings: {  }
   body:
-    type: text_default
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    type: text_default
     region: ds_content
   field_foto_galeria:
-    type: colorbox
+    weight: 4
     label: hidden
     settings:
       colorbox_node_style: 100x100
@@ -94,17 +94,17 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    weight: 4
+    type: colorbox
     region: ds_content
   field_imagen_nodo:
     type: responsive_image
+    weight: 0
+    region: ds_content
     label: hidden
     settings:
       responsive_image_style: img_cabecera_pagina_basica_adaptable
       image_link: ''
     third_party_settings: {  }
-    weight: 0
-    region: ds_content
 hidden:
   field_columna_lateral: true
   field_ocultar_dato_actualizacion: true

@@ -14,5 +14,5 @@ effects:
     data:
       width: 565
       height: 225
-      anchor: center-center
       upscale: center-center
+      anchor: center-center

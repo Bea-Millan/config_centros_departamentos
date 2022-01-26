@@ -16,19 +16,19 @@ bundle: pestana
 mode: default
 content:
   field_configuracion_pestana:
-    type: options_select
     weight: 1
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_enlace_a_la_informacion:
-    type: link_default
-    weight: 2
+    type: options_select
     region: content
+  field_enlace_a_la_informacion:
+    weight: 2
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    type: link_default
+    region: content
   title:
     type: string_textfield
     weight: 0

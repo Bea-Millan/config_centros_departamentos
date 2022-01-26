@@ -7,7 +7,7 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.imanen_popup
   module:
-    - image
+    - svg_image
 _core:
   default_config_hash: XBLQ-ybcn0KmFNOPdZe1xJc5W9i1cS5GCEAL7lTGPQY
 id: paragraph.imanen_popup.default
@@ -16,13 +16,13 @@ bundle: imanen_popup
 mode: default
 content:
   field_imagen_bolo:
-    type: image_image
     weight: 0
-    region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
 hidden:
   created: true
   status: true

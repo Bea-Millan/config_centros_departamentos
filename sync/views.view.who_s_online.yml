@@ -1,11 +1,11 @@
-uuid: 23150db8-3b13-430b-8670-0837dc34da0f
+uuid: d269cfd0-f2ed-4ce0-8f5d-46febb46747b
 langcode: es
 status: true
 dependencies:
   module:
     - user
 _core:
-  default_config_hash: oZCZq8MBtIG4FvWKljxJ2sY3jp-K6ts5Z5OCF7-p8ms
+  default_config_hash: suDsVMgawXoQt4rfmdfpr05EVX3z3KyfDDTYgeSM898
 id: who_s_online
 label: 'Bloque de usuarios conectados'
 module: user

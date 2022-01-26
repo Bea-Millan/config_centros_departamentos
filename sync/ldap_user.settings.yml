@@ -1,40 +1,23 @@
 _core:
-  default_config_hash: d71NfedVbdK6SWE47G7YLe7hmKQpO6Xx1nGGaqPKySg
+  default_config_hash: xGaDFlyXTmhzluhiRhEx58v_3Fu-nMhCzEBF8K4eqHU
 langcode: es
-drupalAcctProvisionServer: ldapnip
-ldapEntryProvisionServer: null
+drupalAcctProvisionServer: '0'
+ldapEntryProvisionServer: '0'
 drupalAcctProvisionTriggers:
-  - drupal_on_login
-  - drupal_on_update_create
-ldapEntryProvisionTriggers: {  }
-orphanedDrupalAcctBehavior: ldap_user_orphan_do_not_check
+  drupal_on_login: '0'
+  drupal_on_update_create: '0'
+ldapEntryProvisionTriggers:
+  ldap_on_update_create: '0'
+  ldap_on_login: '0'
+  ldap_on_delete: '0'
+  drupal_on_manual_creation: '0'
+orphanedDrupalAcctBehavior: ldap_user_orphan_email
+orphanedDrupalAcctReportingInbox: ''
 orphanedCheckQty: 100
 orphanedAccountCheckInterval: weekly
 userConflictResolve: resolve
 manualAccountConflict: conflict_reject
 acctCreation: ldap_behaviour
-disableAdminPasswordField: false
 userUpdateCronQuery: none
 userUpdateCronInterval: daily
-ldapUserSyncMappings:
-  drupal:
-    field-ldap_user_current_dn:
-      ldap_attr: '[dn]'
-      user_attr: '[field.ldap_user_current_dn]'
-      convert: false
-      user_tokens: ''
-      config_module: ldap_user
-      prov_module: ldap_user
-      prov_events:
-        - create_drupal_user
-        - sync_to_drupal_user
-    field-name:
-      ldap_attr: '[uid]'
-      user_attr: '[field.name]'
-      convert: false
-      user_tokens: ''
-      config_module: ldap_user
-      prov_module: ldap_user
-      prov_events:
-        - create_drupal_user
-        - sync_to_drupal_user
+ldapUserSyncMappings: {  }

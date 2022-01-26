@@ -25,15 +25,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes:
-          layout_class: {  }
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        label: ''
+        classes:
+          layout_class: {  }
     regions:
       ds_content:
         - node_title
@@ -47,9 +47,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: false
           wrapper: h1
           class: ''
+          link: false
 _core:
   default_config_hash: UkT0qwG6WQk57H6I57Rdx5ri_txclMcsvGFZEzakiDE
 id: node.webform.default
@@ -58,24 +58,24 @@ bundle: webform
 mode: default
 content:
   addtoany:
-    settings: {  }
-    third_party_settings: {  }
     weight: 3
     region: ds_content
-  body:
-    type: text_default
-    label: hidden
     settings: {  }
     third_party_settings: {  }
+  body:
+    label: hidden
+    type: text_default
     weight: 1
+    settings: {  }
+    third_party_settings: {  }
     region: ds_content
   webform:
-    type: webform_entity_reference_entity_view
+    weight: 2
     label: hidden
     settings:
       source_entity: true
     third_party_settings: {  }
-    weight: 2
+    type: webform_entity_reference_entity_view
     region: ds_content
 hidden:
   field_columna_lateral: true

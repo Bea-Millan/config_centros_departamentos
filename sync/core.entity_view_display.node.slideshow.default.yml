@@ -10,8 +10,8 @@ dependencies:
     - image.style.large
     - node.type.slideshow
   module:
-    - image
     - link
+    - svg_image
     - user
 _core:
   default_config_hash: lCOPrLRVAVEMk88HjnUZONaYePkKUS6Xy-qH4pLsz1U
@@ -21,7 +21,7 @@ bundle: slideshow
 mode: default
 content:
   field_enlace:
-    type: link
+    weight: 2
     label: inline
     settings:
       trim_length: 80
@@ -30,34 +30,34 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 2
+    type: link
     region: content
   field_imagen_slide:
-    type: image
     label: above
-    settings:
-      image_link: ''
-      image_style: large
-    third_party_settings: {  }
     weight: 4
+    type: image
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
     region: content
   field_ocultar_titulo:
-    type: boolean
+    weight: 3
     label: inline
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 3
+    type: boolean
     region: content
   field_subtitulo:
-    type: string
     label: inline
+    weight: 1
+    type: string
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 1
     region: content
 hidden:
   addtoany: true

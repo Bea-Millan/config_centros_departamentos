@@ -5,7 +5,7 @@ dependencies:
   config:
     - node.type.elemento_parrilla
 _core:
-  default_config_hash: 4Muo4v2H9jwCnd34W0etDWuiVpV_D1eQ1kJbYeiHS_M
+  default_config_hash: EswmJGIYwfy_YJIBV99Nkg3LR_FihoBZV1OiDTKG468
 id: node_type_elemento_parrilla
 entity_type_id: node_type
 entity_id: elemento_parrilla

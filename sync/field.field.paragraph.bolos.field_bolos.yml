@@ -23,16 +23,16 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       bolos_texto: bolos_texto
-    negate: 0
     target_bundles_drag_drop:
       bolos:
         weight: 4
         enabled: false
       bolos_texto:
-        weight: 5
         enabled: true
+        weight: 5
       texto:
         weight: 6
         enabled: false

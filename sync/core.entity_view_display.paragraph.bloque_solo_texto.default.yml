@@ -15,10 +15,10 @@ bundle: bloque_solo_texto
 mode: default
 content:
   field_solo_texto:
-    type: text_default
+    weight: 2
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    type: text_default
     region: content
 hidden: {  }

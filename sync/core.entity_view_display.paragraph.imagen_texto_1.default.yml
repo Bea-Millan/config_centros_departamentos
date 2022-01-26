@@ -15,8 +15,8 @@ dependencies:
     - field.field.paragraph.imagen_texto_1.field_tamano_imagen
     - paragraphs.paragraphs_type.imagen_texto_1
   module:
-    - image
     - options
+    - svg_image
     - text
 _core:
   default_config_hash: f8XKDEBimBPRfO9jpIbmdWeY5hMxQldprNT4F5PZR30
@@ -26,80 +26,80 @@ bundle: imagen_texto_1
 mode: default
 content:
   field_align_text:
-    type: list_default
+    weight: 5
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 5
+    type: list_default
     region: content
   field_color_fondo:
-    type: boolean
+    weight: 8
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 8
+    type: boolean
     region: content
   field_colorfondo:
-    type: list_default
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    type: list_default
     region: content
   field_colortexto:
-    type: list_default
+    weight: 7
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 7
+    type: list_default
     region: content
   field_imagen_modular:
-    type: image_url
+    weight: 0
     label: hidden
     settings:
       image_style: ''
     third_party_settings: {  }
-    weight: 0
+    type: image_url
     region: content
   field_justify_text:
-    type: list_default
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    type: list_default
     region: content
   field_posicion:
     type: list_default
+    weight: 2
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
-    region: content
   field_sin_margen:
-    type: boolean
+    weight: 9
     label: above
     settings:
       format: default
       format_custom_false: ''
       format_custom_true: ''
     third_party_settings: {  }
-    weight: 9
+    type: boolean
     region: content
   field_solo_texto:
-    type: text_default
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: text_default
     region: content
   field_tamano_imagen:
     type: list_default
+    weight: 3
+    region: content
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 3
-    region: content
 hidden: {  }

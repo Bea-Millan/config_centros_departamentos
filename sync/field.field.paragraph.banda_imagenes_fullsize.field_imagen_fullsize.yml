@@ -23,9 +23,9 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       imagen: imagen
-    negate: 0
     target_bundles_drag_drop:
       banda_imagenes:
         weight: 14
@@ -52,8 +52,8 @@ settings:
         weight: 20
         enabled: false
       imagen:
-        weight: 21
         enabled: true
+        weight: 21
       imagen_con_vinculo:
         weight: 22
         enabled: false

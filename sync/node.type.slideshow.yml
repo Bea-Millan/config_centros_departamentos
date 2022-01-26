@@ -6,8 +6,8 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
-    available_menus: {  }
     parent: ''
+    available_menus: {  }
 _core:
   default_config_hash: wEQGV265Bf0k4nujU7lnxsnxFVVs2loaRLShbcwdelw
 name: 'Imagen rotativa'

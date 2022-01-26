@@ -12,14 +12,14 @@ dependencies:
     - node.type.noticia
   module:
     - datetime
-    - image
     - link
     - node
     - options
+    - svg_image
     - text
     - user
 _core:
-  default_config_hash: '-mVhrtBjiceJ3zjExolA_a2Le5yYQTrqyNIwApMPPk4'
+  default_config_hash: cYk1iAwXy6Zs15hSc4jEefp14BBRn8m2VUCC6Veze_k
 id: noticias
 label: Noticias
 module: views

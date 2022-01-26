@@ -16,8 +16,8 @@ dependencies:
     - paragraphs.paragraphs_type.bolos
   module:
     - field_group
-    - image
     - paragraphs
+    - svg_image
 third_party_settings:
   field_group:
     group_opciones_titulo:
@@ -25,19 +25,19 @@ third_party_settings:
         - field_estilo_titulo
         - field_justify_text
         - field_colortexto
-      label: 'Opciones título'
-      region: content
       parent_name: ''
       weight: 1
       format_type: details
+      region: content
       format_settings:
-        classes: ''
         show_empty_fields: false
         id: ''
-        open: false
-        required_fields: true
+        classes: ''
         direction: vertical
         width_breakpoint: 640
+        open: false
+        required_fields: true
+      label: 'Opciones título'
 _core:
   default_config_hash: HmWfbBhk3q8kunQnZSP8ddJjmlOaCMmFH41e7YO5wuE
 id: paragraph.bolos.default
@@ -48,7 +48,6 @@ content:
   field_bolos:
     type: paragraphs
     weight: 5
-    region: content
     settings:
       title: Párrafo
       title_plural: Parráfos
@@ -64,52 +63,53 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+    region: content
   field_colorfondo:
-    type: options_select
     weight: 3
-    region: content
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_colortexto:
-    type: options_select
     weight: 4
-    region: content
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_estilo_titulo:
-    type: options_select
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   field_fondo:
-    type: options_select
     weight: 2
-    region: content
     settings: {  }
     third_party_settings: {  }
-  field_imagen_fondo:
-    type: image_image
-    weight: 4
+    type: options_select
     region: content
+  field_imagen_fondo:
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  field_justify_text:
-    type: options_select
-    weight: 3
+    type: image_image
     region: content
+  field_justify_text:
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-  field_titulo:
-    type: string_textfield
-    weight: 0
+    type: options_select
     region: content
+  field_titulo:
+    weight: 0
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    type: string_textfield
+    region: content
 hidden:
   created: true
   field_borde: true

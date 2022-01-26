@@ -6,9 +6,9 @@ dependencies:
     - menu_ui
 third_party_settings:
   menu_ui:
+    parent: 'main:'
     available_menus:
       - main
-    parent: 'main:'
 _core:
   default_config_hash: xo1axJ-8IcOu9FL1o1X9CHqtYDDFakYmsl1dTRlf59A
 name: Galería

@@ -13,12 +13,12 @@ pattern: '[node:field_seccion]/[node:title]'
 selection_criteria:
   5bdbd8e9-e31e-44f8-900f-0e495cd706e9:
     id: node_type
-    negate: false
-    uuid: 5bdbd8e9-e31e-44f8-900f-0e495cd706e9
-    context_mapping:
-      node: node
     bundles:
       page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5bdbd8e9-e31e-44f8-900f-0e495cd706e9
 selection_logic: and
 weight: -5
 relationships: {  }

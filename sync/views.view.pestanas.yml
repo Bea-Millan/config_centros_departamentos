@@ -10,13 +10,13 @@ dependencies:
     - taxonomy.vocabulary.pestanas
   module:
     - draggableviews
-    - image
     - link
     - node
+    - svg_image
     - taxonomy
     - user
 _core:
-  default_config_hash: nTi_-ZISVBoXlEDwC-chTAEj5dtOdfZP8h7RC1fULUs
+  default_config_hash: um4V1yqQphDEtBBcSO2mLRBjbtY1SAImb9O1xy3NX3k
 id: pestanas
 label: Pestañas
 module: views
@@ -826,7 +826,7 @@ display:
       path: admin/content/orden-pestanas
       menu:
         type: tab
-        title: 'Ordenar imágenes cabecera'
+        title: 'Ordenar pestañas'
         description: ''
         weight: 0
         expanded: false

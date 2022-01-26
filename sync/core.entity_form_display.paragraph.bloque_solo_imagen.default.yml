@@ -8,8 +8,8 @@ dependencies:
     - image.style.thumbnail
     - paragraphs.paragraphs_type.bloque_solo_imagen
   module:
-    - image
     - link
+    - svg_image
 _core:
   default_config_hash: 2gnUZf8KDwsk5joEiVuzhU7XplNujdFLa7v2bhPBrG0
 id: paragraph.bloque_solo_imagen.default
@@ -18,21 +18,21 @@ bundle: bloque_solo_imagen
 mode: default
 content:
   field_enlace_bolo:
-    type: link_default
     weight: 1
-    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  field_imagen_bolo:
-    type: image_image
-    weight: 0
+    type: link_default
     region: content
+  field_imagen_bolo:
+    weight: 0
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
+    type: image_image
+    region: content
 hidden:
   created: true
   status: true

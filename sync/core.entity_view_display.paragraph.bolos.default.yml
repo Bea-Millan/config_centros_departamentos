@@ -15,8 +15,8 @@ dependencies:
     - paragraphs.paragraphs_type.bolos
   module:
     - entity_reference_revisions
-    - image
     - options
+    - svg_image
 _core:
   default_config_hash: DK_bjqwJhpCgBdpxHHVwccL0CE3n5hRnuotMX9yNTmA
 id: paragraph.bolos.default
@@ -26,64 +26,64 @@ mode: default
 content:
   field_bolos:
     type: entity_reference_revisions_entity_view
+    weight: 2
     label: hidden
     settings:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 2
     region: content
   field_colorfondo:
-    type: list_default
+    weight: 8
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 8
+    type: list_default
     region: content
   field_colortexto:
-    type: list_default
+    weight: 3
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 3
+    type: list_default
     region: content
   field_estilo_titulo:
-    type: list_default
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 6
+    type: list_default
     region: content
   field_fondo:
-    type: list_default
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 9
+    type: list_default
     region: content
   field_imagen_fondo:
-    type: image
+    weight: 11
     label: above
     settings:
-      image_link: ''
       image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    weight: 11
+    type: image
     region: content
   field_justify_text:
-    type: list_default
+    weight: 4
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    type: list_default
     region: content
   field_titulo:
-    type: string
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 0
+    type: string
     region: content
 hidden:
   field_borde: true

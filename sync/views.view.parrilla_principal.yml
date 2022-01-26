@@ -11,12 +11,12 @@ dependencies:
     - user.role.authenticated
   module:
     - draggableviews
-    - image
     - link
     - node
+    - svg_image
     - user
 _core:
-  default_config_hash: Kh8X_9lNqOHCt8b-s-oSJ3OAFz_NQ4ncMn7uBGH15TU
+  default_config_hash: dbuNWFksvMX-mrDIEyEI5UW_9aadVUxjEEQyd4VVF_k
 id: parrilla_principal
 label: 'Parrilla principal '
 module: views
@@ -539,6 +539,9 @@ display:
             label: 'DraggableViews Weight'
             field_identifier: weight
           exposed: false
+          draggable_views_reference: 'parrilla_principal:page_1'
+          draggable_views_null_order: after
+          draggable_views_pass_arguments: 0
       defaults:
         fields: false
         sorts: false

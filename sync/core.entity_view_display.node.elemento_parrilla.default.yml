@@ -5,13 +5,14 @@ dependencies:
   config:
     - field.field.node.elemento_parrilla.field_enlace
     - field.field.node.elemento_parrilla.field_imagen_parrilla
+    - image.style.thumbnail
     - node.type.elemento_parrilla
   module:
-    - image
     - link
+    - svg_image
     - user
 _core:
-  default_config_hash: bXBABJlnoFxR_tSrjC378HUB0TFE1T6r_GmV04Ncwb8
+  default_config_hash: WCpwEbTMLA_w_DNGSee8OCBpciqluaCjIQGn8vd33hc
 id: node.elemento_parrilla.default
 targetEntityType: node
 bundle: elemento_parrilla
@@ -19,7 +20,7 @@ mode: default
 content:
   field_enlace:
     type: link
-    label: inline
+    label: above
     settings:
       trim_length: 80
       url_only: true
@@ -31,10 +32,10 @@ content:
     region: content
   field_imagen_parrilla:
     type: image
-    label: inline
+    label: above
     settings:
       image_link: ''
-      image_style: ''
+      image_style: thumbnail
     third_party_settings: {  }
     weight: 1
     region: content

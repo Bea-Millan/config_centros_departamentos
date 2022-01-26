@@ -1,4 +1,4 @@
-uuid: de57736e-f465-4271-a7d6-7a4e4d319932
+uuid: 552b2aac-d927-4022-bf1a-1175c55f5a46
 langcode: es
 status: true
 dependencies:
@@ -15,6 +15,8 @@ label: 'usuario anónimo'
 weight: 0
 is_admin: false
 permissions:
+  - 'access comments'
   - 'access content'
+  - 'access site map'
   - 'search content'
   - 'use text format filtered_html'

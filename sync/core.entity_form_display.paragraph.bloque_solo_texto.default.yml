@@ -15,13 +15,13 @@ bundle: bloque_solo_texto
 mode: default
 content:
   field_solo_texto:
-    type: text_textarea
     weight: 2
-    region: content
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
+    type: text_textarea
+    region: content
 hidden:
   created: true
   status: true

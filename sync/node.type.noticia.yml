@@ -10,7 +10,7 @@ third_party_settings:
       - main
     parent: 'main:'
 _core:
-  default_config_hash: lHmzZrb0som-wLf9VS_gxYGom-XoZq_1cwzyMnWLaPw
+  default_config_hash: g4FK3hXBuvOsTTD02kC2AySKCzZplY4uCd6zldmGf88
 name: Noticia
 type: noticia
 description: 'Noticias, actualidad o actividades del centro'

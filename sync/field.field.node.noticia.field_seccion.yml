@@ -7,13 +7,13 @@ dependencies:
     - node.type.noticia
     - taxonomy.vocabulary.secciones
 _core:
-  default_config_hash: PIaz3uqiMYBY75f4kRsWd--Vtqy09-CssBzpwY15pLU
+  default_config_hash: K0vzomZ5XwBHV-rCItrZCiTzVBAzIkxzcm9JWId2zIA
 id: node.noticia.field_seccion
 field_name: field_seccion
 entity_type: node
 bundle: noticia
 label: Sección
-description: 'Si necesita añadir nuevos elementos al desplegable <a href="/admin/structure/taxonomy/manage/secciones/overview">debe añadir nuevos términos al vocabulario "Secciones"</a>'
+description: 'Si necesita añadir nuevos elementos al desplegable <a href="/admin/structure/taxonomy/manage/secciones/overview">debe agregar nuevos términos al vocabulario "Secciones"</a>'
 required: false
 translatable: true
 default_value: {  }

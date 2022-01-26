@@ -21,11 +21,70 @@ base_table: node_field_data
 base_field: nid
 display:
   default:
+    display_plugin: default
     id: default
     display_title: Máster
-    display_plugin: default
     position: 0
     display_options:
+      access:
+        type: perm
+        options:
+          perm: 'access content'
+      cache:
+        type: tag
+        options: {  }
+      query:
+        type: views_query
+        options:
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_comment: ''
+          query_tags: {  }
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      pager:
+        type: calendar
+        options:
+          pager_placement: top
+      style:
+        type: calendar
+        options:
+          calendar_type: month
+          mini: '1'
+          link_to_date: '1'
+          month_name_size: '99'
+          name_size: '1'
+          with_weekno: '0'
+          max_items: '0'
+          max_items_behavior: more
+          groupby_times: hour
+          groupby_times_custom: null
+          theme_style: '1'
+          groupby_field: ''
+          multiday_theme: '1'
+          multiday_hidden: {  }
+          granularity_links:
+            day: ''
+            week: ''
+      row:
+        type: calendar_row
+        options:
+          colors:
+            legend: type
+            calendar_colors_type:
+              article: '#ffffff'
+              page: '#ffffff'
+            taxonomy_field: ''
+            calendar_colors_vocabulary: {  }
       fields:
         title:
           id: title
@@ -34,9 +93,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -89,6 +145,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: created
+          plugin_id: field
         field_fecha:
           id: field_fecha
           table: node__field_fecha
@@ -96,7 +155,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -153,58 +211,21 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      pager:
-        type: calendar
-        options:
-          pager_placement: top
-      exposed_form:
-        type: basic
-        options:
-          submit_button: Aplicar
-          reset_button: false
-          reset_button_label: Restablecer
-          exposed_sorts_label: 'Ordenar por'
-          expose_sort_order: true
-          sort_asc_label: Asc
-          sort_desc_label: Desc
-      access:
-        type: perm
-        options:
-          perm: 'access content'
-      cache:
-        type: tag
-        options: {  }
-      empty: {  }
-      sorts:
-        field_fecha_value:
-          id: field_fecha_value
-          table: node__field_fecha
-          field: field_fecha_value
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime
-          order: ASC
-          expose:
-            label: ''
-            field_identifier: field_fecha_value
-          exposed: false
-          granularity: second
-      arguments: {  }
+          plugin_id: field
       filters:
         status:
-          id: status
+          value: '1'
           table: node_field_data
           field: status
+          plugin_id: boolean
           entity_type: node
           entity_field: status
-          plugin_id: boolean
-          value: '1'
-          group: 1
+          id: status
           expose:
             operator: ''
             operator_limit_selection: false
             operator_list: {  }
+          group: 1
         type:
           id: type
           table: node_field_data
@@ -212,9 +233,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
           operator: in
           value:
             noticia: noticia
@@ -247,47 +265,29 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
-      style:
-        type: calendar
-        options:
-          calendar_type: month
-          mini: '1'
-          link_to_date: '1'
-          month_name_size: '99'
-          name_size: '1'
-          with_weekno: '0'
-          max_items: '0'
-          max_items_behavior: more
-          groupby_times: hour
-          groupby_times_custom: null
-          theme_style: '1'
-          groupby_field: ''
-          multiday_theme: '1'
-          multiday_hidden: {  }
-          granularity_links:
-            day: ''
-            week: ''
-      row:
-        type: calendar_row
-        options:
-          colors:
-            legend: type
-            calendar_colors_type:
-              article: '#ffffff'
-              page: '#ffffff'
-            taxonomy_field: ''
-            calendar_colors_vocabulary: {  }
-      query:
-        type: views_query
-        options:
-          query_comment: ''
-          disable_sql_rewrite: false
-          distinct: false
-          replica: false
-          query_tags: {  }
-      relationships: {  }
+          entity_type: node
+          entity_field: type
+          plugin_id: bundle
+      sorts:
+        field_fecha_value:
+          id: field_fecha_value
+          table: node__field_fecha
+          field: field_fecha_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+            field_identifier: field_fecha_value
+          granularity: second
+          plugin_id: datetime
       header: {  }
       footer: {  }
+      empty: {  }
+      relationships: {  }
+      arguments: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -299,11 +299,12 @@ display:
       tags:
         - 'config:field.storage.node.field_fecha'
   block_1:
+    display_plugin: block
     id: block_1
     display_title: Bloque
-    display_plugin: block
     position: 5
     display_options:
+      display_extenders: {  }
       arguments:
         field_fecha_value_year_month:
           id: field_fecha_value_year_month
@@ -312,7 +313,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime_year_month
           default_action: default
           exception:
             value: all
@@ -326,8 +326,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            override: false
             items_per_page: 25
+            override: false
           summary:
             sort_order: asc
             number_of_records: 0
@@ -338,6 +338,7 @@ display:
             fail: empty
           validate_options:
             replacement_format: 'F Y'
+          plugin_id: datetime_year_month
       defaults:
         arguments: false
         header: false
@@ -349,12 +350,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: calendar_header
           empty: true
           tokenize: 1
           content: '{{ arguments.field_fecha_value_year_month }}'
           pager_embed: 0
-      display_extenders: {  }
+          plugin_id: calendar_header
     cache_metadata:
       max-age: 0
       contexts:
@@ -366,12 +366,119 @@ display:
       tags:
         - 'config:field.storage.node.field_fecha'
   page_day:
+    display_plugin: page
     id: page_day
     display_title: Día
-    display_plugin: page
     position: 3
     display_options:
-      title: Noticias
+      display_extenders: {  }
+      display_description: ''
+      style:
+        type: html_list
+        options:
+          grouping: {  }
+          row_class: ''
+          default_row_class: true
+          type: ul
+          wrapper_class: item-list
+          class: ''
+      defaults:
+        style: false
+        row: false
+        arguments: false
+        header: false
+        fields: false
+        title: false
+        css_class: false
+      row:
+        type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
+      path: calendar-field_fecha/day
+      menu:
+        type: tab
+        title: Día
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
+      arguments:
+        field_fecha_value_full_date:
+          id: field_fecha_value_full_date
+          table: node__field_fecha
+          field: field_fecha_value_full_date
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: Todo(s)
+          title_enable: false
+          title: ''
+          default_argument_type: date
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: calendar
+            fail: 'not found'
+          validate_options:
+            replacement_format: 'l, F j, Y'
+          plugin_id: datetime_full_date
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: "<h1>[view:title] </h1>\r\n<div class=\"ver-noticias\"><a href=\"/noticias\">Ver más noticias</a></div>"
+            format: filtered_html
+          plugin_id: text
+        calendar_header:
+          id: calendar_header
+          table: views
+          field: calendar_header
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: 1
+          content: '{{ arguments.field_fecha_value_full_date }}'
+          pager_embed: 0
+          plugin_id: calendar_header
+        calendar_header_1:
+          id: calendar_header_1
+          table: views
+          field: calendar_header
+          relationship: none
+          group_type: group
+          admin_label: 'Calendar Pager'
+          empty: true
+          tokenize: 1
+          content: ''
+          pager_embed: 0
+          plugin_id: calendar_header
       fields:
         title:
           id: title
@@ -380,9 +487,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          entity_type: node
-          entity_field: created
-          plugin_id: field
           label: ''
           exclude: false
           alter:
@@ -438,6 +542,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: created
+          plugin_id: field
         field_fecha:
           id: field_fecha
           table: node__field_fecha
@@ -445,7 +552,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: field
           label: ''
           exclude: true
           alter:
@@ -502,115 +608,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-      arguments:
-        field_fecha_value_full_date:
-          id: field_fecha_value_full_date
-          table: node__field_fecha
-          field: field_fecha_value_full_date
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime_full_date
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: Todo(s)
-          title_enable: false
-          title: ''
-          default_argument_type: date
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: true
-          validate:
-            type: calendar
-            fail: 'not found'
-          validate_options:
-            replacement_format: 'l, F j, Y'
-      style:
-        type: html_list
-        options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          type: ul
-          wrapper_class: item-list
-          class: ''
-      row:
-        type: fields
-        options:
-          default_field_elements: true
-          inline: {  }
-          separator: ''
-          hide_empty: false
-      defaults:
-        title: false
-        css_class: false
-        style: false
-        row: false
-        fields: false
-        arguments: false
-        header: false
+          plugin_id: field
+      title: Noticias
       css_class: paginador
-      display_description: ''
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: text
-          empty: true
-          content:
-            value: "<h1>[view:title] </h1>\r\n<div class=\"ver-noticias\"><a href=\"/noticias\">Ver más noticias</a></div>"
-            format: filtered_html
-          tokenize: false
-        calendar_header:
-          id: calendar_header
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: calendar_header
-          empty: true
-          tokenize: 1
-          content: '{{ arguments.field_fecha_value_full_date }}'
-          pager_embed: 0
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          plugin_id: calendar_header
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 0
-      display_extenders: {  }
-      path: calendar-field_fecha/day
-      menu:
-        type: tab
-        title: Día
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: main
-        parent: ''
-        context: '0'
     cache_metadata:
       max-age: 0
       contexts:
@@ -622,11 +622,28 @@ display:
       tags:
         - 'config:field.storage.node.field_fecha'
   page_month:
+    display_plugin: page
     id: page_month
     display_title: Mes
-    display_plugin: page
     position: 1
     display_options:
+      display_extenders: {  }
+      path: calendar-field_fecha/mes
+      display_description: ''
+      menu:
+        type: 'default tab'
+        title: Mes
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
+        menu_name: main
+      tab_options:
+        type: none
+        title: Calendar
+        description: ''
+        weight: 0
       arguments:
         field_fecha_value_year_month:
           id: field_fecha_value_year_month
@@ -635,7 +652,6 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime_year_month
           default_action: default
           exception:
             value: all
@@ -649,8 +665,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            override: false
             items_per_page: 25
+            override: false
           summary:
             sort_order: asc
             number_of_records: 0
@@ -661,10 +677,7 @@ display:
             fail: 'not found'
           validate_options:
             replacement_format: 'F Y'
-      defaults:
-        arguments: false
-        header: false
-      display_description: ''
+          plugin_id: datetime_year_month
       header:
         calendar_header:
           id: calendar_header
@@ -673,11 +686,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: calendar_header
           empty: true
           tokenize: 1
           content: '{{ arguments.field_fecha_value_year_month }}'
           pager_embed: 0
+          plugin_id: calendar_header
         calendar_header_1:
           id: calendar_header_1
           table: views
@@ -685,27 +698,14 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Calendar Pager'
-          plugin_id: calendar_header
           empty: true
           tokenize: 1
           content: ''
           pager_embed: 1
-      display_extenders: {  }
-      path: calendar-field_fecha/mes
-      menu:
-        type: 'default tab'
-        title: Mes
-        description: ''
-        weight: 0
-        expanded: false
-        menu_name: main
-        parent: ''
-        context: '0'
-      tab_options:
-        type: none
-        title: Calendar
-        description: ''
-        weight: 0
+          plugin_id: calendar_header
+      defaults:
+        arguments: false
+        header: false
     cache_metadata:
       max-age: 0
       contexts:
@@ -717,45 +717,13 @@ display:
       tags:
         - 'config:field.storage.node.field_fecha'
   page_week:
+    display_plugin: page
     id: page_week
     display_title: Week
-    display_plugin: page
     position: 2
     display_options:
-      arguments:
-        field_fecha_value_year_week:
-          id: field_fecha_value_year_week
-          table: node__field_fecha
-          field: field_fecha_value_year_week
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: datetime_year_week
-          default_action: default
-          exception:
-            value: all
-            title_enable: false
-            title: Todo(s)
-          title_enable: false
-          title: ''
-          default_argument_type: date
-          default_argument_options: {  }
-          default_argument_skip_url: false
-          summary_options:
-            base_path: ''
-            count: true
-            override: false
-            items_per_page: 25
-          summary:
-            sort_order: asc
-            number_of_records: 0
-            format: default_summary
-          specify_validation: true
-          validate:
-            type: calendar
-            fail: 'not found'
-          validate_options:
-            replacement_format: 'F j, Y'
+      display_extenders: {  }
+      display_description: ''
       style:
         type: calendar
         options:
@@ -771,6 +739,11 @@ display:
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
+      defaults:
+        style: false
+        row: false
+        arguments: false
+        header: false
       row:
         type: calendar_row
         options:
@@ -781,73 +754,24 @@ display:
               page: '#ffffff'
             taxonomy_field: ''
             calendar_colors_vocabulary: {  }
-      defaults:
-        style: false
-        row: false
-        arguments: false
-        header: false
-      display_description: ''
-      header:
-        calendar_header:
-          id: calendar_header
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: calendar_header
-          empty: true
-          tokenize: 1
-          content: 'Week of {{ arguments.field_fecha_value_year_week }}'
-          pager_embed: 0
-        calendar_header_1:
-          id: calendar_header_1
-          table: views
-          field: calendar_header
-          relationship: none
-          group_type: group
-          admin_label: 'Calendar Pager'
-          plugin_id: calendar_header
-          empty: true
-          tokenize: 1
-          content: ''
-          pager_embed: 1
-      display_extenders: {  }
       path: calendar-field_fecha/week
       menu:
         type: tab
         title: Week
         description: ''
-        weight: 0
         expanded: false
-        menu_name: main
         parent: ''
+        weight: 0
         context: '0'
-    cache_metadata:
-      max-age: 0
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - url
-        - 'user.node_grants:view'
-        - user.permissions
-      tags:
-        - 'config:field.storage.node.field_fecha'
-  page_year:
-    id: page_year
-    display_title: Año
-    display_plugin: page
-    position: 4
-    display_options:
+        menu_name: main
       arguments:
-        field_fecha_value_year:
-          id: field_fecha_value_year
+        field_fecha_value_year_week:
+          id: field_fecha_value_year_week
           table: node__field_fecha
-          field: field_fecha_value_year
+          field: field_fecha_value_year_week
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: datetime_year
           default_action: default
           exception:
             value: all
@@ -861,8 +785,8 @@ display:
           summary_options:
             base_path: ''
             count: true
-            override: false
             items_per_page: 25
+            override: false
           summary:
             sort_order: asc
             number_of_records: 0
@@ -872,7 +796,51 @@ display:
             type: calendar
             fail: 'not found'
           validate_options:
-            replacement_format: 'Y'
+            replacement_format: 'F j, Y'
+          plugin_id: datetime_year_week
+      header:
+        calendar_header:
+          id: calendar_header
+          table: views
+          field: calendar_header
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: 1
+          content: 'Week of {{ arguments.field_fecha_value_year_week }}'
+          pager_embed: 0
+          plugin_id: calendar_header
+        calendar_header_1:
+          id: calendar_header_1
+          table: views
+          field: calendar_header
+          relationship: none
+          group_type: group
+          admin_label: 'Calendar Pager'
+          empty: true
+          tokenize: 1
+          content: ''
+          pager_embed: 1
+          plugin_id: calendar_header
+    cache_metadata:
+      max-age: 0
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.field_fecha'
+  page_year:
+    display_plugin: page
+    id: page_year
+    display_title: Año
+    position: 4
+    display_options:
+      display_extenders: {  }
+      display_description: ''
       style:
         type: calendar
         options:
@@ -888,6 +856,11 @@ display:
           groupby_field: ''
           multiday_theme: '1'
           multiday_hidden: {  }
+      defaults:
+        style: false
+        row: false
+        arguments: false
+        header: false
       row:
         type: calendar_row
         options:
@@ -898,12 +871,40 @@ display:
               page: '#ffffff'
             taxonomy_field: ''
             calendar_colors_vocabulary: {  }
-      defaults:
-        style: false
-        row: false
-        arguments: false
-        header: false
-      display_description: ''
+      arguments:
+        field_fecha_value_year:
+          id: field_fecha_value_year
+          table: node__field_fecha
+          field: field_fecha_value_year
+          relationship: none
+          group_type: group
+          admin_label: ''
+          default_action: default
+          exception:
+            value: all
+            title_enable: false
+            title: Todo(s)
+          title_enable: false
+          title: ''
+          default_argument_type: date
+          default_argument_options: {  }
+          default_argument_skip_url: false
+          summary_options:
+            base_path: ''
+            count: true
+            items_per_page: 25
+            override: false
+          summary:
+            sort_order: asc
+            number_of_records: 0
+            format: default_summary
+          specify_validation: true
+          validate:
+            type: calendar
+            fail: 'not found'
+          validate_options:
+            replacement_format: 'Y'
+          plugin_id: datetime_year
       header:
         calendar_header:
           id: calendar_header
@@ -912,11 +913,11 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          plugin_id: calendar_header
           empty: true
           tokenize: 1
           content: '{{ arguments.field_fecha_value_year }}'
           pager_embed: 0
+          plugin_id: calendar_header
         calendar_header_1:
           id: calendar_header_1
           table: views
@@ -924,22 +925,21 @@ display:
           relationship: none
           group_type: group
           admin_label: 'Calendar Pager'
-          plugin_id: calendar_header
           empty: true
           tokenize: 1
           content: ''
           pager_embed: 1
-      display_extenders: {  }
+          plugin_id: calendar_header
       path: calendar-field_fecha/year
       menu:
         type: tab
         title: Año
         description: ''
-        weight: 0
         expanded: false
-        menu_name: main
         parent: ''
+        weight: 0
         context: '0'
+        menu_name: main
     cache_metadata:
       max-age: 0
       contexts:

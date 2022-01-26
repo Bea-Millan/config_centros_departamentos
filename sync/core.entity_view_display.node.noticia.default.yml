@@ -22,7 +22,7 @@ dependencies:
     - colorbox
     - datetime
     - ds
-    - image
+    - svg_image
     - text
     - user
 third_party_settings:
@@ -33,15 +33,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        classes:
-          layout_class: {  }
+        label: ''
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        label: ''
+        classes:
+          layout_class: {  }
     regions:
       ds_content:
         - node_title
@@ -58,9 +58,9 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
-          link: false
           wrapper: h1
           class: ''
+          link: false
 _core:
   default_config_hash: XjoFYO1L9Uj7DEjDLfYZoCGJ9Ue1p9dISujotuIrb44
 id: node.noticia.default
@@ -69,28 +69,28 @@ bundle: noticia
 mode: default
 content:
   addtoany:
-    settings: {  }
-    third_party_settings: {  }
     weight: 6
     region: ds_content
+    settings: {  }
+    third_party_settings: {  }
   body:
     type: text_default
+    weight: 4
+    region: ds_content
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
-    region: ds_content
   field_fecha:
-    type: datetime_default
     label: hidden
-    settings:
-      timezone_override: ''
-      format_type: short
-    third_party_settings: {  }
     weight: 2
+    type: datetime_default
+    settings:
+      format_type: short
+      timezone_override: ''
+    third_party_settings: {  }
     region: ds_content
   field_foto_galeria:
-    type: colorbox
+    weight: 5
     label: hidden
     settings:
       colorbox_node_style: 100x100
@@ -103,23 +103,23 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    weight: 5
+    type: colorbox
     region: ds_content
   field_imagen_noticia:
     type: image
-    label: hidden
-    settings:
-      image_link: ''
-      image_style: imagen_noticia
-    third_party_settings: {  }
     weight: 3
     region: ds_content
+    label: hidden
+    settings:
+      image_style: imagen_noticia
+      image_link: ''
+    third_party_settings: {  }
   field_subtitulo_noticia:
-    type: basic_string
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 1
+    type: basic_string
     region: ds_content
 hidden:
   field_agenda_noticias: true
