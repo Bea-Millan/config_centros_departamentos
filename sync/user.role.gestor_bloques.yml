@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - block
-    - entity_clone
 _core:
   default_config_hash: __NLS01B2zVm3ZNGdU6_NRgfOyVJ0FnNONENWRO6xjk
 id: gestor_bloques
@@ -14,13 +13,8 @@ is_admin: null
 permissions:
   - 'access the block administration page'
   - 'administer blocks'
-  - 'administer centro columna_lateral'
-  - 'administer centro content'
-  - 'administer centro imagen_cabecera'
-  - 'administer unizar_centro columna_lateral'
-  - 'administer unizar_centro content'
-  - 'clone block entity'
-  - 'clone block_content entity'
+  - 'administer columna_lateral region'
+  - 'administer content region'
   - 'configure all block body fields'
   - 'configure all block descriptions'
   - 'configure all block titles'
@@ -31,7 +25,6 @@ permissions:
   - 'create blocks'
   - 'delete all blocks'
   - 'disable all blocks'
-  - 'display EU Cookie Compliance popup'
   - 'enable all blocks'
   - 'move all blocks'
   - 'view all blocks'

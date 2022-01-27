@@ -1,9 +1,7 @@
 uuid: 7b53bd19-3ff3-40ef-b089-1bc974ee696b
 langcode: es
 status: true
-dependencies:
-  module:
-    - role_delegation
+dependencies: {  }
 _core:
   default_config_hash: slTI11C1c7oAFPc6Oe30MujN2JAj2XUKmTe89ESuRn4
 id: gestor_personas
@@ -12,15 +10,11 @@ weight: 6
 is_admin: null
 permissions:
   - 'access dashboard'
-  - 'administer EU Cookie Compliance popup'
   - 'administer fields'
   - 'administer users'
+  - 'assign PAS role'
+  - 'assign PDI role'
   - 'assign gestor bloques role'
   - 'assign gestor básico role'
   - 'assign gestor menus role'
   - 'assign gestor personas role'
-  - 'assign gestor_basico role'
-  - 'assign gestor_bloques role'
-  - 'assign gestor_menus role'
-  - 'assign gestor_personas role'
-  - 'display EU Cookie Compliance popup'
