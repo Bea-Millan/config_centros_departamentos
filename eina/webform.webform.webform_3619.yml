@@ -1,0 +1,107 @@
+uuid: c1dc0ff0-6244-482e-bfd2-ddc11829f8f9
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3619
+title: 'Reserva de espacios en Salas de Estudio'
+description: null
+category: null
+elements: |
+  nip:
+    '#min': 111111
+    '#max': 999999
+    '#title_display': inline
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  edificio:
+    '#type': select
+    '#options':
+      BT: 'Edificio Agustín de Betancourt'
+    '#title_display': inline
+    '#title': 'Edificio' 
+    '#description': ""
+    '#required': true
+  fecha:
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha' 
+    '#description': ""
+    '#required': true
+  turno:
+    '#type': select
+    '#options':
+      M: 'Mañana'
+      T: 'Tarde'
+    '#title_display': inline
+    '#title': 'Turno' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Queda registrada su solicitud de Reserva de espacio en<strong> Sala de Estudio en el&nbsp;[submission:values:edificio]</strong>&nbsp;para el día&nbsp;<strong>[submission:values:fecha]</strong>&nbsp;en <strong>turno de&nbsp;[submission:values:turno]</strong>.</p><ul><li>Para acceder a la Sala de Estudio, deberá acudir con el carnet universitario a la Conserjería del&nbsp;<strong>[submission:values:edificio]</strong>&nbsp;dónde le asignará su número de puesto, que será fijo durante todo el tiempo que permanezca en la Sala.</li><li>Antes de ocupar su asiento y antes de abandonarlo, deberá limpiar su puesto con el spray y papel disponibles en la Sala.</li><li>Se recomienda traer su propio ordenador portátil, así como auriculares, preferiblemente con micrófono.</li><li>En caso de no cumplir con las normas de seguridad e higiene no podrá hacer uso de la Sala durante este semestre.</li></ul><p>Si se produce algún cambio en la solicitud se procederá a comunicarla a través de la dirección&nbsp;<em>[submission:values:nip]@unizar.es</em> de correo electrónico</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:edificio:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Reserva de espacios en Salas de Estudio'
+      body: |
+        Valores enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

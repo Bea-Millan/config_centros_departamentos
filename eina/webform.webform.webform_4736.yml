@@ -1,0 +1,54 @@
+uuid: 125c6112-48d8-492b-a8be-d8581ea22b1a
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4736
+title: 'Inscripción acto de clausura X Aniversario Escuela de Ingeniería y Arquitectura (17 diciembre 2021)'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p><span style="font-size: 13.008px;">Tu solicitud de inscripción al acto de clausura del X Aniversario de la EINA se ha recibido correctamente.</span></p><p>En los próximos días, recibirás la confirmación a través del correo electrónico</p><p>Muchas gracias.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

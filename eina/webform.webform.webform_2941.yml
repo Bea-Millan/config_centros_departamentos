@@ -1,0 +1,167 @@
+uuid: 36ca2bde-a746-4426-97c8-25f74e438bdb
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_2941
+title: 'Solicitud inserción información convocatoria exámen'
+description: null
+category: null
+elements: |
+  asignatura_codigo___nombre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Asignatura (Código - Nombre)' 
+    '#description': "(Ej. 30700 - Física 1)"
+    '#required': true
+  profesor:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Profesor' 
+    '#description': ""
+    '#required': true
+  fecha_de_examen:
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha de examen' 
+    '#description': ""
+    '#required': true
+  hora_inicio:
+    '#type': textfield
+    '#title': 'Hora inicio' 
+    '#description': ""
+    '#required': true
+  duracion:
+    '#type': textfield
+    '#title': 'Duración' 
+    '#description': ""
+    '#required': true
+  aula:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Aula' 
+    '#description': ""
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title_display': inline
+    '#title': 'Observaciones' 
+    '#description': ""
+  email_para_avisos:
+    '#type': email
+    '#size': 20
+    '#title': 'Email para avisos' 
+    '#description': "Si desea recibir comprobante del envío del formulario, indique la dirección de email para comunicar notificaciones al respecto."
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: einaweb@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Submitted on [webform_submission:date:long]
+        Submitted values are:
+        [webform_submission:values]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email_para_avisos:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Fecha de envío [webform_submission:date:long]
+
+        Los valores enviados son:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

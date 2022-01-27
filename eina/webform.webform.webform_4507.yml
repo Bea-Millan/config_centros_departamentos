@@ -1,0 +1,230 @@
+uuid: e114874d-0e6d-4340-93b4-a1ae2f02576d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4507
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 513'
+description: null
+category: null
+elements: |
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)' 
+    '#description': "Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      843862: 'ABAD ARBUÉS, BELÉN'
+      845366: 'ABASCAL MARTÍNEZ, PABLO'
+      852888: 'ABENDAÑO DELGADO, MARIO FABRICIO'
+      863864: 'AISSA SABOUNI, AKRAM'
+      774803: 'ALADRÉN MAIQUES, LAURA'
+      796887: 'ALCAY GARCÍA, ÁLVARO'
+      841408: 'ALCAYA ORTIZ, JAVIER'
+      800001: 'ALCÁZAR SÁNCHEZ, PABLO'
+      818788: 'ALCRUDO PÉREZ, JOSÉ FRANCISCO'
+      797948: 'ALCUBIERRE TIL, VÍCTOR'
+      819625: 'ALFONSO GASCÓN, JORGE'
+      842261: 'ALIAGA GUILLÉN, CRISTINA'
+      819675: 'ALONSO LÓPEZ, DIEGO'
+      842134: 'ALONSO OCAÑA, MARCOS'
+      858740: 'ALONSO RODRÍGUEZ, EMMA'
+      815874: 'ALONSO SÁNCHEZ, CARLOS'
+      842661: 'ÁLVAREZ ARMISÉN, LUCÍA'
+      818459: 'ÁLVAREZ CEBALLOS, JERSON ADRIÁN'
+      801541: 'ALVAREZ MARTINEZ, PABLO'
+      735954: 'ANDRÉS GASPAR, ISMAEL'
+      844242: 'ANGLEVIEL GONZÁLEZ, HUGO'
+      858626: 'ANTÓN FERNÁNDEZ, ALEJANDRO'
+      822058: 'APARICIO LÓPEZ, DANIEL'
+      843192: 'APREUTESE  , LEONARD CRISTIAN'
+      841860: 'ARANA SORET, JAVIER'
+      841861: 'ARGENTE YAGÜE, IGNACIO'
+      718384: 'ARGUEDAS CORTÉS, SILVIA'
+      820034: 'ARMINGOL ALASTUEY, ALVARO LIZER'
+      835649: 'ARNANZ FERNÁNDEZ-GALLARDO, ALEJANDRO'
+      843211: 'ARRIAGA PARICIO, RUBÉN'
+      816405: 'ARRUGA MÉNDEZ, MARIO'
+      845010: 'ARTERO VITALLA, MARCOS'
+      860951: 'ASUMU MBA ANGUE, SINDULFO ACASIO'
+      841161: 'AYLAGAS BERROJO, SERGIO'
+      824122: 'AYOUB KHOURY, JORGE'
+      819918: 'AZNÁREZ CONESA, MATEO'
+      843475: 'BÁGUENA SANZ, CLARA'
+      775493: 'BARTOLOMÉ ESTEBAN, PEDRO'
+      818790: 'BECAS AZAGRA, NICOLÁS'
+      842668: 'BELÍO TEMPRANO, ÁNGELA'
+      841414: 'BEN-CHAABANE BEN-CHEIKH, HANIN'
+      820223: 'BERGES MASEGOSA, DIEGO'
+      839845: 'BERGES PUYAL, MARIO'
+      818229: 'BERNAL LOSTAO, LUIS RITO'
+      840074: 'BIEL PARDOS, JORGE'
+      821858: 'BLAS BLAY, FERNANDO'
+      844990: 'BOFFELLI  , MATEO'
+      758663: 'BOIL LACADENA, CARLOS'
+      761451: 'BOIX MORT, ÁLVARO'
+      842864: 'BOIX PIZARRO, ALEJANDRO'
+      841020: 'BONAL ASENSIO, VÍCTOR'
+      829927: 'BOUDA TAHIRI, ANÁS'
+      842610: 'BOUZITE RUIZ, ISMAEL'
+      777311: 'BRIEBA BERNAL, IGNACIO'
+      771915: 'CABALLERO CUESTA, FRANCISCO JAVIER'
+      819866: 'CABELLO SANJUAN, DIEGO'
+      745173: 'CABEZAS ESCALERA, ALVARO'
+      861343: 'CALDERÓN MARTÍN, MARCO'
+      795542: 'CALLAU SALINERO, MARCOS'
+      818602: 'CALLES ARCOS, ALEJANDRO'
+      850203: 'CALVILLO CASAS, MARIO'
+      801900: 'CALVO CADARSO, SOFIA'
+      839959: 'CALVO CARRERAS, MARIO'
+      818945: 'CALVO RIVERA, NEREA'
+      839395: 'CANALIS BLASCO, BRUNO'
+      800335: 'CAPARRÓS MORANCHO, PABLO MIGUEL'
+      839177: 'CARNICER OTAL, NICOLÁS'
+      840078: 'CARO BURILLO, PEDRO'
+      771730: 'CAROT PORCAR, MARIA'
+      820057: 'CARRERA MARTÍN, FRANCISCO JOSÉ'
+      819834: 'CASADO GRACIA, JAVIER'
+      830902: 'CASTILLA ABELLA, ALEJANDRO'
+      840481: 'CELMA CASTELLÓN, JOAQUÍN'
+      800891: 'CIOCAN  , COSTI ALEXANDRU'
+      815135: 'CIUDAD TENÍAS, ALEJANDRO'
+      698953: 'CLAVERÍA LATORRE, ALEJANDRO'
+      852232: 'CODERCH MARTINEZ, IGNACIO'
+      795988: 'COLORADO ALTAMIRANO, JOHN EDWARD'
+      820155: 'COLUNGO BUXEDA, IRENE'
+      820824: 'COMPAIS CIRIA, JUAN'
+      821050: 'CÓNDOR LACAMBRA, DAVID'
+      820228: 'COQUE VIVAS, DANIEL'
+      815804: 'CORTÉS ABADÍAS, JOSÉ'
+      843895: 'CORTÉS GONZÁLEZ, ALBERTO'
+      740802: 'CORTES MOÑIZ, ALEJANDRO'
+      816210: 'COVETA BALLANO, GUILLERMO PABLO'
+      841669: 'CRESPO PÉREZ, FRANCISCO'
+      845328: 'CRUAÑES LUZÓN, ADRIANA'
+      764379: 'DE MIGUEL RODRIGUEZ, ALVARO'
+      797518: 'DE SANTA PAU ESTABLÉS, DAVID'
+      780204: 'DELCAZO ROCAÑÍN, JULIÁN'
+      843401: 'DÍAZ CABALLERO, MARÍA ISABEL'
+      845330: 'DÍAZ DORTA, ANDRÉS SEBASTIÁN'
+      838638: 'DOMPER LÓPEZ, CARLOS'
+      799145: 'ESPINOSA LAHOZ, EDUARDO'
+      757156: 'ESPINOZA CASA, KEVIN'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

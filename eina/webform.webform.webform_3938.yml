@@ -1,0 +1,157 @@
+uuid: 9f3c291d-33bc-460e-8d03-2acc3254e7f6
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3938
+title: 'Solicitud reutilización de equipamiento'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  correo_electronico_r:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (R)' 
+    '#description': "Utilizar direcciones de email de @unizar.es"
+    '#required': true
+  equipo_solicitado:
+    '#type': radios
+    '#options':
+      211095: 'Netbook Asus Eee 1000H + ratón USB'
+      211097: 'Netbook Asus Eee 1000H'
+      211134: 'Notebook L6 Asus'
+      223584: 'Notebook HP Mini 100e'
+      Espectroscopia: 'Equipo para la medida de la constante dieléctrica y tangente de pérdidas (Espectrospia de relajación diléctrica)'
+      Mesbib: 'Mesas de madera de biblioteca de 1,00 m x 70 cm'
+      QxxxA: 'Tóner para impresora láser color HP Q7581A (azul), Q7582A (amarillo), Q7583A (magenta) y Q6470A (negro)'
+      D3000: 'Tóner compatible para impresora láser Dell3000/3100'
+      CPUMedion: 'CPU Marca MEDION con sistema operativo windows 7'
+    '#title': 'Equipo solicitado' 
+    '#description': "Señale el equipo solicitado. (Una solicitud para cada equipo)"
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su solicitud se ha registrado correctamente.</p><p>El cedente del equipamiento, recibirá un mensaje con los datos de su solicitud y se pondrá en contacto con usted para concretar la manera de hacer efectiva la cesión.</p><p>El equipamiento solicitado queda bloqueado "en proceso de cesión"</p><p>Cuando la cesión sea efectiva, debe comunicarlo por correo electrónico a einaweb@unizar.es para eliminar el equipamiento del sistema.</p><p><span style="font-size: 13.008px;">Gracias</span></p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_r:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Su solicitud se ha registrado correctamente con los siguientes datos:
+        [webform_submission:values]
+
+        El cedente del equipamiento, recibirá un mensaje con los datos de su solicitud y se pondrá en contacto con usted para concretar la manera de hacer efectiva la cesión.
+        El equipamiento solicitado queda bloqueado "en proceso de cesión"
+        IMPORTANTE: Cuando la cesión sea efectiva, debe comunicarlo por correo electrónico a einaweb@unizar.es para eliminar el equipamiento del sistema.
+
+        Gracias
+
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:equipo_solicitado:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Se ha recibido una solicitud para reutilizar el equipamiento ofrecido por usted.
+        Los datos recibidos son:
+        [webform_submission:values]
+
+        Por favor, póngase en contacto con el solicitante [webform_submission:values:correo_electronico_r] para concretar la manera de realizar la cesión.
+
+        Gracias
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,200 @@
+uuid: e459284c-5cf2-40d7-a57e-f49cbcc1546c
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3691
+title: 'Delegados/as y Subdelegados/as Grupo 021'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        758135: 'ABAD TORRALBA, DANIEL'
+        800133: 'ACERETE PALACIOS, BEATRIZ'
+        808706: 'ALDEA MARCO, MATEO'
+        777647: 'ALMENARA CAMACHO, PAULA'
+        755656: 'ALMUDÍ CID, ÁLVARO'
+        796439: 'ALÓS ORRADRE, CARLA'
+        723888: 'ANTOMÁS NAVARRO, SANDRA'
+        683360: 'ARAGÜÉS MIANA, HÉCTOR'
+        804169: 'ARELLANO JARAUTA, ÁNGELA'
+        797221: 'AZNAR BERNAL, PATRICIA'
+        784550: 'BARAJUAN MUÑOZ, ZURIÑE'
+        800002: 'BAYONA DÍAZ, SOFIA'
+        760487: 'BENITO CRUZ, JORGE'
+        799713: 'BERNAD ARASANZ, SOFÍA'
+        798407: 'BERNAD VIVES, ELVIRA'
+        798981: 'BERNAL GONZÁLEZ, MARÍA ISABEL'
+        756814: 'BLESA QUÍLEZ, GONZALO JOSÉ'
+        774357: 'BONILLA DOMINGUEZ, JULIA'
+        801015: 'BORRA BADÍA, PAULA'
+        799700: 'BURILLO PALACÍN, FRANCISCO JAVIER'
+        798558: 'CAMAÑES GÓMEZ, IRENE'
+        795587: 'CAMPOS GAVÍN, BLADIMIRO'
+        801335: 'CASADO ALTABA, IRENE'
+        756473: 'CASTÁN GRAU, PABLO'
+        759811: 'CASTEL MORÉ, SOFÍA'
+        776409: 'CASTELLANOS CARNICERO, PABLO'
+        796969: 'CASTRILLO MARÍN, DAVID'
+        800621: 'CEBRIÁN ALDANA, ELENA'
+        797010: 'CEREZUELA SANCHEZ, ALEJANDRO'
+        795883: 'CODURAS CUARTERO, DANIEL'
+        797293: 'CORROCHANO ALBAREDA, PABLO LUIS'
+        800814: 'CUENCA MICHANS, ANA'
+        766205: 'DÍEZ RUIZ, PABLO'
+        783075: 'DONCEL JUNQUERA, NEREA'
+        764618: 'ECHEITA JALÓN, AINHOA'
+        807707: 'ESCUDERO PEREZ, IKER'
+        799473: 'ESPALLARGAS GOMARIZ, IRIS'
+        697842: 'ESPAÑOL GÜIL, ANA MARIA'
+        799541: 'FALCÓN GARCÍA, DANIEL'
+        805954: 'FERNÁNDEZ DE ARROYABE SANTAMARÍA, IRATI'
+        802770: 'FERNANDEZ JEREZ, NAGORE'
+        799779: 'FIDALGO VALLÉS, DANIEL'
+        805120: 'FUENTELSAZ SOBRINO, SARA'
+        784037: 'FUNCIA JUANGO, FERMÍN'
+        799214: 'FUNES OTERO, ALEJANDRO'
+        755222: 'GARCÍA CÓLERA, GUILLERMO'
+        680068: 'GARCÍA MARTÍN, ANDREA MARÍA'
+        784373: 'GARCÍA PETROVIC, LUCÍA'
+        798716: 'GARCÍA VIAMONTE, MANUEL'
+        755430: 'GARGALLO CARCELLER, RAUL'
+        680299: 'GARRIDO LAFUENTE, CHRISTIAN'
+        797343: 'GAYARRE CATALAN, ANA'
+        776279: 'GAYARRE VEGA, MIGUEL'
+        800629: 'GIL RAMOS, LAURA'
+        740785: 'GIMENO LISBONA, BELÉN'
+        807006: 'GÓMEZ ARNEDO, MÍRIAM'
+        800279: 'GONZÁLEZ LÓPEZ, MARÍA PILAR'
+        801471: 'GRACIA COSTA, RAQUEL'
+        796526: 'GRANADA ALCALDE, SANDRA'
+        779439: 'GRASA MATEO, PABLO'
+        780101: 'HERNANDO ARCHE, IVÁN'
+        775293: 'IBÁÑEZ ALLO, LUIS'
+        801678: 'IBÁÑEZ NÚÑEZ, CLARA'
+        780838: 'IBARZ NAVARRO, JAVIER'
+        764343: 'IMAZ MARTINEZ DE ALBENIZ, IRATXE'
+        757136: 'JIMÉNEZ ROBRES, ANA COVADONGA'
+        779905: 'LALANA ROSSI, IVÁN'
+        779557: 'LASALA PELEGRÍN, ALBA'
+        805187: 'LETONA BARRIOS, CRISTINA'
+        715637: 'LOPEZ ANDRES, RAÚL'
+        737976: 'LÓPEZ FONTANA, LAURA'
+        745407: 'LÓPEZ GARCÍA, ANDRÉS'
+        740386: 'LÓPEZ GUTIÉRREZ, FERNANDO'
+        798951: 'LÓPEZ TORRES, BELÉN'
+        656696: 'LORENTE INIESTA, HECTOR'
+        797861: 'LOZANO FERNÁNDEZ, NURIA'
+        801698: 'MARÍN FELIPE, INÉS'
+        766620: 'MARRERO DIEZ, AINARA'
+        777633: 'MARTÍN GIMÉNEZ, JAIME'
+        696674: 'MARTÍN MENDES, HECTOR LUÍS'
+        796732: 'MARTÍNEZ LEÓN, ELENA'
+        799681: 'MEDRANO BERMEJO, SALVADOR'
+        806536: 'MENCHERO RAMÍREZ, LINA'
+        807400: 'MORENO HERNÁNDEZ, PABLO'
+        805680: 'MORENO OLMEÑO, IGNACIO'
+        783037: 'MUNARRIZ DIAZ DE CERIO, JULIA'
+        736942: 'MUÑOZ LLORENS, LAURA'
+        808685: 'MURUAMENDIARAZ MARTINEZ DE MORENTIN, JUNE'
+        801420: 'NAVE MAYOLAS, SARA'
+        806698: 'OLARTE MARTÍNEZ, IRENE'
+        776062: 'OLAVE JORDANA, NURIA'
+        777238: 'OLIVAR MUZÁS, ANTONIO'
+        805450: 'OMEÑACA VERA, PAULA'
+        777907: 'ORTIZ MASTRAL, SARAI'
+        744902: 'OTERO MOYA, MARIA'
+        744707: 'PACIO TESO, PAULA'
+        799931: 'PALACIOS CENDOYA, JAVIER'
+        797465: 'PAMPLONA UNGO, MARÍA'
+        755423: 'PARDO LOU, ALEJANDRO'
+        795318: 'PEÑA BARCO, ILIA YI'
+        785834: 'PÉREZ RODRÍGUEZ, BRAIS'
+        735548: 'PEREZ SERRANO, LUIS'
+        775376: 'PERIBAÑEZ VALLES, JORGE'
+        800075: 'PINACHO JARA, ISAAC'
+        797492: 'PINILLA MENDI, PABLO'
+        784592: 'QUINTANILLA PEREZ, LUCIA'
+        645272: 'RENGEL GALÁN, JAIME'
+        718063: 'RÍOS VISIEDO, JOSÉ IGNACIO'
+        764466: 'RIVED ALVARADO, ALEJANDRO'
+        736666: 'RIVEROLA PIMPINELA, VÍCTOR'
+        715468: 'RODRIGUEZ GARCÍA, ALEJANDRO'
+        800391: 'RODRIGUEZ-SIERRA BAYARRI, IÑIGO'
+        775509: 'ROMEA LOREN, LAURA'
+        757751: 'ROMEO CARRERAS, LEONARDO'
+        795463: 'RUBIO MARTÍNEZ, MARÍA'
+        798761: 'RUBIO PALOMAR, ANDRÉS'
+        801342: 'SALAFRANCA IGUAZ, LAURA PILAR'
+        681896: 'SALESA DIESTE, IGNACIO'
+        797917: 'SALVATIERRA OLIVÉ, JUDITH'
+        799908: 'SAN ROMÁN OLIVEROS, REBECA'
+        796333: 'SÁNCHEZ MARTÍNEZ, MARIOLA'
+        736361: 'SARVISÉ BIEC, ALBA'
+        785325: 'SEGUÍN LAPUERTA, MANUEL'
+        797208: 'SERRANO BONDIA, ELENA'
+        717677: 'SERRANO TERUEL, ÁLVARO'
+        799889: 'SOLDEVILLA GARCÍA, MARÍA'
+        682925: 'SOLSONA SABROSO, DANIEL'
+        785616: 'STEHR PÉREZ, MARINA'
+        777038: 'TAUSIET CHAVES, EVA'
+        796175: 'TORAL MATEO, ISABEL'
+        784650: 'TRICIO AMELIVIA, MARÍA'
+        797278: 'UCAR SÁNCHEZ, IRENE'
+        806577: 'VALBUENA GÓMEZ, ELVIRA'
+        682458: 'VALIEN RAMÍREZ, DIEGO'
+        696237: 'VICIÉN SIERRA, CRISTINA'
+        795997: 'VILLACAMPA MUÑOZ, JORGE'
+        784695: 'ZELLALI VALLÉS, HAKIM'
+        784311: 'ZURBANO SÁNCHEZ, IÑAKI'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

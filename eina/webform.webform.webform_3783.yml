@@ -1,0 +1,54 @@
+uuid: 153c5b51-ae69-4653-8af4-ca9280c2d78b
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3783
+title: 'Solicitud de inscripción en la Sesión 311 de Ateneo de la EINA'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': "La dirección de correo electrónico debe corresponder a una cuenta Google"
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Se ha recibido su solicitud para asistir a la sesión 311 de Ateneo.</p><p><span style="font-size: 13.008px;">Recibirá la correspondiente confirmación e invitación unos minutos antes del comienzo de la sesión.</span></p><p><span style="font-size: 13.008px;">También puede seguir la conferencia a través del canal de Youtube de la EINA</span></p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

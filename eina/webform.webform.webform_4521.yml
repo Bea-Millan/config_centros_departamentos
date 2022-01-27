@@ -1,0 +1,195 @@
+uuid: 81fd351e-1c36-4f1e-a5db-43cfd0bec4a9
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4521
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 741'
+description: null
+category: null
+elements: |
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)' 
+    '#description': "Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      778205: 'ABAD SEGURA, EDUARDO'
+      696436: 'ABIÁN SÁNCHEZ, DAVID'
+      705587: 'ABIZANDA CHARLEZ, ANTONIO'
+      745196: 'ARRIAZU MARTÓN, ÓSCAR'
+      849124: 'AVIÑA PADILLA, EISAKEN'
+      717904: 'BENEDET ORÚS, CARLOS'
+      774901: 'BERDEJO BARCELONA, MIRIAN'
+      752525: 'BINTI AHMAD, NOR ADILAH'
+      761873: 'BLANCO CAMBRONERO, AITANA'
+      721074: 'CAMARERO DE GRACIA, CARLOS'
+      780136: 'CANO HERRANZ, LUCÍA'
+      761906: 'CARDO BARTOLOMÉ, NOELIA'
+      780643: 'CARRERAS PALLÁS, BEATRIZ'
+      761548: 'CELIMÉNDIZ GASCÓN, SERGIO'
+      740023: 'CHOI JEON, RYU JUNG'
+      739216: 'DE LOS SANTOS MARTÍNEZ, JUAN MANUEL'
+      719598: 'DOMENE MENAYO, ALEJANDRO'
+      755772: 'DUASO MONTAÑÉS, JOAQUÍN'
+      648430: 'ESTEBAN DEL VILLAR, MARCOS'
+      761937: 'FAJARDO BECERRIL, ÁNGELA'
+      720810: 'FERNANDEZ PUEYO, ALEJANDRO'
+      738418: 'FERRANDO LANUZA, PABLO'
+      701595: 'FUENTE PIRNIYA, AMIR XOEL DE LA'
+      777442: 'GALINDO CALLÉN, JUAN GABRIEL'
+      780116: 'GARCÍA COMAS, CRISTINA'
+      680104: 'GARCÍA PARDOS, FRANCISCO JAVIER'
+      780111: 'GIMENO IZQUIERDO, CHUAN'
+      765022: 'GOICOECHEA APARICIO, BLANCA'
+      756776: 'GÓMEZ GIMENO, LUCÍA'
+      672217: 'GONZÁLEZ DEL CAMPO, CARLOS'
+      791278: 'GONZÁLEZ DÍAZ, MARIANGELA'
+      777082: 'HERAS LÁZARO, MARÍA'
+      758316: 'HERNÁNDEZ LUQUE, IRENE'
+      779361: 'HERRERO GADEA, PAOLA'
+      762888: 'IBAÑEZ LORDA, LUIS'
+      698791: 'ILLESCAS GARCÍA, LAURA'
+      760923: 'LABORDA CUARTERO, MARÍA'
+      740579: 'LANZ ANDRÉS, INÉS EUGENIA'
+      697805: 'LECIÑENA ANSÓ, ALBERTO'
+      740697: 'LÓPEZ MARFIL, FRANCISCO JAVIER'
+      779734: 'LUJAMBIO GALDÁMEZ, CARLOTA'
+      755559: 'LUZ CAMARDIEL, SANTIAGO'
+      761477: 'MARCO SALCEDO, ÁNGELA'
+      779859: 'MIGUEL BERGES, JOSÉ MANUEL'
+      717251: 'MORENO MERCADAL, DANIEL'
+      525502: 'MORENO PÉREZ, OSCAR'
+      745496: 'NUIN PORTILLA, ESTÍBALIZ'
+      858901: 'NUNEZ TORRES  , SANDRA'
+      780050: 'PÉREZ BENITO, TERESA'
+      721614: 'PÉREZ GARRALAGA, IRENE'
+      780671: 'POLO MARTÍN, ENRIQUE'
+      736667: 'PUÉRTOLAS PÉREZ, ALEJANDRO'
+      614593: 'REBOLLO MARCO, PALOMA'
+      622473: 'RODRIGUEZ HEREDIA, KIMBERLY VANESSA'
+      759273: 'ROMERO IBARZO, ALEJANDRO'
+      745826: 'SALINAS SANTOS, BUSTAR'
+      780215: 'SERRANO BELLIDO, BORJA'
+      738337: 'SOLER VALLÉS, MARÍA'
+      738574: 'URUÉN RODRÍGUEZ, MARÍA'
+      775417: 'VAL PLANELLS, MARÍA EDURNE'
+      760668: 'VICENTE OLIETE, ANDRÉS'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

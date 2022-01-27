@@ -1,0 +1,63 @@
+uuid: d140a616-be7d-4c58-b01a-990a9c2ca95c
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4720
+title: 'Inscripción XIII Seminario de Innovación y buenas prácticas docentes de la EINA  (14 Dic 2021)'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': radios
+    '#options':
+      PDI: 'PDI'
+      Est: 'Estudiante'
+      PAS: 'PAS'
+    '#title': 'Colectivo EINA al que perteneces' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu inscripción al&nbsp;XIII Seminario de Innovación y buenas prácticas docentes de la EINA se ha recibido correctamente.</p><p>&nbsp;</p><p>Muchas gracias por tu interés en esta actividad.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

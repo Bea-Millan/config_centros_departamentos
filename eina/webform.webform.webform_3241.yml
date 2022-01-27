@@ -1,0 +1,207 @@
+uuid: 1b1e226d-f872-42c3-8218-dfeb24a790bf
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3241
+title: 'Solicitud de cambio Grupos Rotados 2019-20 (Diciembre)'
+description: null
+category: null
+elements: |
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  nip:
+    '#type': textfield
+    '#size': 20
+    '#min': 000001
+    '#max': 999999
+    '#step': 
+    '#unique': false
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title_display': inline
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  titulacion:
+    '#type': select
+    '#options':
+      Electrica: 'Grado en Ingeniería Eléctrica'
+      Electronica_Autom.: 'Grado en Ingeniería Electrónica y Automática'
+      Mecanica: 'Grado en Ingeniería Mecánica'
+      Quimica: 'Grado en Ingeniería Química'
+      Tecnologias_Industr: 'Grado en Ingeniería de Tecnologías Industriales'
+    '#title': 'Titulación' 
+    '#description': ""
+    '#required': true
+  asignaturas_grado_de_ingenieria_electrica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29600_Grupo_215: 'Matemáticas I.  29600 - Grupo 215'
+      Matematicas_III_29610_Grupo_225: 'Matemáticas III.  29610 - Grupo 225'
+      Fisica_I_29601_Grupo_215: 'Física I.  29601 - Grupo 215'
+      Fund_Admon_Empresas_29602_Grupo_215: 'Fundamentos de administración de empresas. 29602 - Grupo 215'
+      Fund_Informatica_29603_Grupo_215: 'Fundamentos de informática. 29603 - Grupo 215'
+      Estadistica_29611_Grupo_225: 'Estadística. 29611 - Grupo 225'
+      Quimica_29604_Grupo_215: 'Química. 29604 - Grupo 215'
+    '#multiple': true
+    '#title': 'Asignaturas Grado de Ingeniería Eléctrica' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Electrica
+          
+  asignaturas_grado_de_ingenieria_tecnologias_industriales:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_30000_Grupo_815: 'Matemáticas I.  30000 - Grupo 815'
+      Matematicas_II_30001_Grupo_815: 'Matemáticas II.  30001 - Grupo 815'
+      Fisica_I_30002_Grupo_815: 'Física I.  30002 - Grupo 815'
+      Fund_Informatica_30007_Grupo_815: 'Fundamentos de informática. 30007 - Grupo 815'
+      Quimica_30004_Grupo_815: 'Química. 30004 - Grupo 815'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería de Tecnologías Industriales' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Tecnologias_Industr
+          
+  asignaturas_grado_de_ingenieria_electronica_automatica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29800_Grupo_315: 'Matemáticas I.  29800 - Grupo 315'
+      Matematicas_II_29801_Grupo_315: 'Matemáticas II.  29801 - Grupo 315'
+      Fisica_I_29802_Grupo_315: 'Física I.  29802 - Grupo 315'
+      Fund_Informatica_29804_Grupo_315: 'Fundamentos de informática. 29804 - Grupo 315'
+      Quimica_29803_Grupo_315: 'Química. 29803 - Grupo 315'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Electronica y Automática' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Electronica_Autom.
+          
+  asignaturas_grado_de_ingenieria_mecanica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29700_Grupo_515: 'Matemáticas I.  29700 - Grupo 515'
+      Matematicas_III_29710_Grupo_525: 'Matemáticas III.  29710 - Grupo 525'
+      Fisica_I_29701_Grupo_515: 'Física I.  29701 - Grupo 515'
+      Expr_Grafica_y_DAO_ 29703_Grupo_515: 'Expresión gráfica y diseño asistido por ordenador. 29703 - Grupo 515'
+      Fund_Admon_Empresas_29702_Grupo_515: 'Fundamentos de administración de empresas. 29702 - Grupo 515'
+      Quimica_29704_Grupo_515: 'Química. 29704 - Grupo 515'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Mecánica' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Mecanica
+          
+  asignaturas_grado_de_ingenieria_quimica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29900_Grupo_715: 'Matemáticas I.  29900 - Grupo 715'
+      Matematicas_II_29905_Grupo_715: 'Matemáticas II.  29905 - Grupo 715'
+      Fisica_I_29901_Grupo_715: 'Física I.  29901 - Grupo 715'
+      Expr_Grafica_y_DAO_ 29903_Grupo_715: 'Expresión gráfica y diseño asistido por ordenador. 29903 - Grupo 715'
+      Estadistica_29908_Grupo_725: 'Estadística. 29908 - Grupo 725'
+      Quimica_29904_Grupo_715: 'Química. 29904 - Grupo 715'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Química' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Quimica
+          
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Enviado: [webform_submission:date:long]
+
+        Los valores enviados son:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

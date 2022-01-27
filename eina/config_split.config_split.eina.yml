@@ -5,7 +5,8 @@ dependencies: {  }
 id: eina
 label: eina
 description: ''
-folder: ../config/eina 
+weight: 0
+folder: ../config/eina
 module:
   c11n_migrate: 0
 theme: {  }
@@ -29,4 +30,3 @@ blacklist:
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

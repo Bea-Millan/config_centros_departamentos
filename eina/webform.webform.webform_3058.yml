@@ -1,0 +1,224 @@
+uuid: 834fd139-5ad1-4863-980a-e8e5effc9301
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3058
+title: 'Solicitud de cambio Grupos Rotados 2019-20'
+description: null
+category: null
+elements: |
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  nip:
+    '#min': 000001
+    '#max': 999999
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title_display': inline
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  titulacion:
+    '#type': select
+    '#options':
+      Electrica: 'Grado en Ingeniería Eléctrica'
+      Electronica_Autom.: 'Grado en Ingeniería Electrónica y Automática'
+      Mecanica: 'Grado en Ingeniería Mecánica'
+      Quimica: 'Grado en Ingeniería Química'
+      Tecnologias_Industr: 'Grado en Ingeniería de Tecnologías Industriales'
+    '#title': 'Titulación' 
+    '#description': ""
+    '#required': true
+  asignaturas_grado_de_ingenieria_electrica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29600_Grupo_215: 'Matemáticas I.  29600 - Grupo 215'
+      Matematicas_II_29605_Grupo_215: 'Matemáticas II.  29605 - Grupo 215'
+      Matematicas_III_29610_Grupo_225: 'Matemáticas III.  29610 - Grupo 225'
+      Fisica_I_29601_Grupo_215: 'Física I.  29601 - Grupo 215'
+      Fisica_II_29606_Grupo_215: 'Física II.  29606 - Grupo 215'
+      Expr_Grafica_y_DAO_ 29607_Grupo_215: 'Expresión gráfica y diseño asistido por ordenador. 29607 - Grupo 215'
+      Fund_Admon_Empresas_29602_Grupo_215: 'Fundamentos de administración de empresas. 29602 - Grupo 215'
+      Fund_Informatica_29603_Grupo_215: 'Fundamentos de informática. 29603 - Grupo 215'
+      Estadistica_29611_Grupo_225: 'Estadística. 29611 - Grupo 225'
+      Quimica_29604_Grupo_215: 'Química. 29604 - Grupo 215'
+    '#multiple': true
+    '#title': 'Asignaturas Grado de Ingeniería Eléctrica' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Electrica
+          
+  asignaturas_grado_de_ingenieria_tecnologias_industriales:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_30000_Grupo_815: 'Matemáticas I.  30000 - Grupo 815'
+      Matematicas_II_30001_Grupo_815: 'Matemáticas II.  30001 - Grupo 815'
+      Matematicas_III_30005_Grupo_815: 'Matemáticas III.  30005 - Grupo 815'
+      Fisica_I_30002_Grupo_815: 'Física I.  30002 - Grupo 815'
+      Fisica_II_30006_Grupo_815: 'Física II.  30006 - Grupo 815'
+      Expr_Grafica_y_DAO_ 30003_Grupo_815: 'Expresión gráfica y diseño asistido por ordenador. 30003 - Grupo 815'
+      Fund_Admon_Empresas_30009_Grupo_815: 'Fundamentos de administración de empresas. 30009 - Grupo 815'
+      Fund_Informatica_30007_Grupo_815: 'Fundamentos de informática. 30007 - Grupo 815'
+      Estadistica_30008_Grupo_815: 'Estadística. 30008 - Grupo 825'
+      Quimica_30004_Grupo_815: 'Química. 30004 - Grupo 815'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería de Tecnologías Industriales' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Tecnologias_Industr
+          
+  asignaturas_grado_de_ingenieria_electronica_automatica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29800_Grupo_315: 'Matemáticas I.  29800 - Grupo 315'
+      Matematicas_II_29801_Grupo_315: 'Matemáticas II.  29801 - Grupo 315'
+      Matematicas_III_29805_Grupo_315: 'Matemáticas III.  29805 - Grupo 315'
+      Fisica_I_29802_Grupo_315: 'Física I.  29802 - Grupo 315'
+      Fisica_II_29807_Grupo_315: 'Física II.  29807 - Grupo 315'
+      Expr_Grafica_y_DAO_ 29806_Grupo_315: 'Expresión gráfica y diseño asistido por ordenador. 29806 - Grupo 315'
+      Fund_Admon_Empresas_29808_Grupo_315: 'Fundamentos de administración de empresas. 29808 - Grupo 315'
+      Fund_Informatica_29804_Grupo_315: 'Fundamentos de informática. 29804 - Grupo 315'
+      Estadistica_29815_Grupo_325: 'Estadística. 29815 - Grupo 325'
+      Quimica_29803_Grupo_315: 'Química. 29803 - Grupo 315'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Electronica y Automática' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Electronica_Autom.
+          
+  asignaturas_grado_de_ingenieria_mecanica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29700_Grupo_515: 'Matemáticas I.  29700 - Grupo 515'
+      Matematicas_II_29705_Grupo_515: 'Matemáticas II.  29705 - Grupo 515'
+      Matematicas_III_29710_Grupo_525: 'Matemáticas III.  29710 - Grupo 525'
+      Fisica_I_29701_Grupo_515: 'Física I.  29701 - Grupo 515'
+      Fisica_II_29706_Grupo_515: 'Física II.  29706 - Grupo 515'
+      Expr_Grafica_y_DAO_ 29703_Grupo_515: 'Expresión gráfica y diseño asistido por ordenador. 29703 - Grupo 515'
+      Fund_Admon_Empresas_29702_Grupo_515: 'Fundamentos de administración de empresas. 29702 - Grupo 515'
+      Fund_Informatica_29707_Grupo_515: 'Fundamentos de informática. 29707 - Grupo 515'
+      Estadistica_29708_Grupo_515: 'Estadística. 29708 - Grupo 515'
+      Quimica_29704_Grupo_515: 'Química. 29704 - Grupo 515'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Mecánica' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Mecanica
+          
+  asignaturas_grado_de_ingenieria_quimica:
+    '#type': checkboxes
+    '#options':
+      Matematicas_I_29900_Grupo_715: 'Matemáticas I.  29900 - Grupo 715'
+      Matematicas_II_29905_Grupo_715: 'Matemáticas II.  29905 - Grupo 715'
+      Matematicas_III_29910_Grupo_715: 'Matemáticas III.  29910 - Grupo 715'
+      Fisica_I_29901_Grupo_715: 'Física I.  29901 - Grupo 715'
+      Fisica_II_29906_Grupo_715: 'Física II.  29906 - Grupo 715'
+      Expr_Grafica_y_DAO_ 29903_Grupo_715: 'Expresión gráfica y diseño asistido por ordenador. 29903 - Grupo 715'
+      Fund_Admon_Empresas_29907_Grupo_715: 'Fundamentos de administración de empresas. 29907 - Grupo 715'
+      Fund_Informatica_29902_Grupo_715: 'Fundamentos de informática. 29902 - Grupo 715'
+      Estadistica_29908_Grupo_725: 'Estadística. 29908 - Grupo 725'
+      Quimica_29904_Grupo_715: 'Química. 29904 - Grupo 715'
+    '#multiple': true
+    '#title': 'Asignaturas Grado en Ingeniería Química' 
+    '#description': ""
+    '#required': true
+    '#states':
+      visible:
+        ':input[name="titulacion"]':
+          value: Quimica
+          
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Enviado: [webform_submission:date:long]
+
+        Los valores enviados son:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

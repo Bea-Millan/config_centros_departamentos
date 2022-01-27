@@ -1,0 +1,136 @@
+uuid: 058dd467-96ff-4ee4-b336-f2082faf134a
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4051
+title: 'Elecciones Representante PDI en CEC MUIINF'
+description: null
+category: null
+elements: |
+  nip:
+    '#type': textfield
+    '#title': 'NIP/NIA' 
+    '#description': "El NIP o NIA está formado por 6 dígitos. (P. ej. 123456) "
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  candidatura:
+    '#type': radios
+    '#options':
+      Lopez: 'Francisco Javier López Pellicer'
+    '#title': 'Candidatura' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: 'https://eina.unizar.es/elecciones/confirmacion-voto-correcto'
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_17:
+    id: email
+    handler_id: email_17
+    label: 'Email 17'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 17
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que su voto se registre debe hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:modified_date]
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirme el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrá volver a cumplimentar el formulario
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_18:
+    id: email
+    handler_id: email_18
+    label: 'Email 18'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 18
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Su voto ha sido registrado correctamente.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

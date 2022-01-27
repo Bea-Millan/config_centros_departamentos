@@ -1,0 +1,46 @@
+uuid: fdfc54f6-e2fd-4d6f-b94f-1d3e3cb5eec4
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_2387
+title: Inscripción
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'nombre' 
+    '#description': ""
+  apellido:
+    '#type': textfield
+    '#title': 'apellido' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

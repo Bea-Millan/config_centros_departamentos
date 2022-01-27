@@ -1,0 +1,154 @@
+uuid: fb5807c0-379e-49c5-9fae-bcd7bd0002d1
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3684
+title: 'Delegados/as y Subdelegados/as Grupo 112'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        823342: 'LAGE RODRÍGUEZ, ANTONIO MARCOS'
+        796742: 'LARRAZ MARTÍNEZ, MALENA'
+        777951: 'LASSA TIRADO, IRENE'
+        799520: 'LÁZARO NAVARRO, AMANDA'
+        796014: 'LEBRERO LAUNA, MARÍA'
+        798069: 'LEÓN DIONIS, MARIO'
+        815089: 'LEÓN GÁMIZ, LOURDES MARÍA'
+        797676: 'LIESA CABESTRE, CARLOTA'
+        815415: 'LÓPEZ GONZÁLEZ, PEDRO'
+        800393: 'LOPEZ LEOZ, JORGE'
+        815239: 'LÓPEZ-FERNÁNDEZ DE HEREDIA PRADILLA, MIGUEL ÁNGEL'
+        797588: 'LORENTE HORNO, SOFÍA'
+        815364: 'LOSCERTALES MONTORIO, ÁLVARO'
+        815886: 'LUZ CAMARDIEL, LAURA'
+        805947: 'MAHAVE ANADÓN, INÉS'
+        776541: 'MANTECÓN MARTÍNEZ, CLAUDIA'
+        720241: 'MARTINEZ ALCRUDO, ALEJANDRO'
+        795763: 'MARTÍNEZ BOSQUE, LUCÍA'
+        816795: 'MARTÍNEZ MARÍN, PABLO'
+        774272: 'MARTÍNEZ MELENDO, RICARDO'
+        828881: 'MARTÍNEZ-CARRASCO GÓMEZ, PABLO'
+        799476: 'MATEOS MILLÁN, ISABEL'
+        795195: 'MEDRANO ROCHE, SOFÍA'
+        817259: 'MOLINA ABELLEIRA, PAULA'
+        818920: 'MONGE CALVO, MARÍA'
+        775443: 'MORALES DÍEZ, CARLOS'
+        699189: 'MORENO BLANC, ANDRÉS'
+        755369: 'MORENO GARGALLO, JON'
+        776207: 'MORENO PLOU, MARÍA PILAR'
+        779531: 'MOROS EGEA, ISABEL'
+        774279: 'MUÑOZ ÍÑIGO, ANA'
+        808169: 'MUÑOZ RODRÍGUEZ, LORETO'
+        716892: 'MURILLO SERRANO, JACOBO'
+        820560: 'NAVARRO COZCOLLUELA, SARA'
+        815411: 'NOJA GOJA, ANA AIDA'
+        775272: 'OLLOQUI RUIZ, ELVA'
+        648810: 'O"VALLE AISA, PAULA'
+        821520: 'PALACÍN VILLAGRASA, MIRIAM'
+        774932: 'PALACIO BRUGGENKAMP, ELENA'
+        834779: 'PAPPALARDO  , MARCO'
+        755850: 'PARDO VALENZUELA, LIBERTO RAFAEL'
+        801012: 'PARIENTE FLORES, ALEJANDRA NOEMÍ'
+        820181: 'PAZMIÑO MURILLO, FERNANDO JAVIER'
+        779693: 'PEDROSA AGUILAR, JUAN'
+        761362: 'PEQUERUL EZQUERRA, ELENA'
+        820743: 'PERDIGUER TORRALBA, BELÉN'
+        720164: 'PEREZ SANZ, PATRICIA'
+        799545: 'PICAZO BOISA, ENRIQUE'
+        812050: 'PLAZA SÁEZ, HUGO'
+        798776: 'POVILL GIL, CARLOS'
+        820273: 'POZUELO KHAMLICHI, RUBÉN'
+        739651: 'QUEROL BONDIA, AINHOA'
+        650242: 'REKROUK  , MOHAMED'
+        758192: 'RODRIGO DUERTO, ADRIÁN'
+        820141: 'ROYO BONO, ISMAEL'
+        815516: 'ROYO ESTEVE, MARÍA'
+        800680: 'RUIZ CEPERO, ANA'
+        820289: 'SAGRADO PEDRAJAS, DAVID'
+        799024: 'SAIZ MARQUETA, CRISTINA'
+        785287: 'SAN JUAN DRONDA, NATALIA'
+        799634: 'SÁNCHEZ BAZTÁN, HUGO'
+        800715: 'SÁNCHEZ SEN, INÉS'
+        817630: 'SANCHO BENEDÍ, VÍCTOR'
+        800731: 'SANDOVALIN CANGAHUAMIN, BRYAN DAVID'
+        761919: 'SANTANDER SISAMÓN, MARTA'
+        819200: 'SEBASTIÁN BERGES, ÁLVARO'
+        783663: 'SEGUROLA SOLANA, LEIRE'
+        799987: 'SERRANO DE MARTA, VICTORIA'
+        759223: 'SERRANO HORNERO, DIEGO'
+        800080: 'SESÉ BUISÁN, LUCÍA'
+        818099: 'SIURANA VAZQUEZ, MARÍA'
+        801144: 'STOICA  , NATALY ALINA'
+        502056: 'TABUENCA AZCONA, ELENA'
+        750120: 'TALEB ABDALAHE, ABDALAHE'
+        817851: 'TEJERO MARÍN, ADRIANA'
+        819636: 'TITAH  , KHADDOUJ'
+        796040: 'TOMÁS FARIA, DIOGO VALENTIM'
+        821357: 'TOPAL  , ELVIRA'
+        761236: 'TUDELA RUIZ, MARTA'
+        818307: 'TURÓN BES, ALEJANDRO'
+        797030: 'UGARTE IRIARTE, NAIA'
+        721845: 'URCOLA ETOMO, ANDREA JOAQUINA'
+        818433: 'URREGO PARRA, LAURA VALENTINA'
+        801772: 'URRIOLABEITIA RODRIGO, ANDER'
+        799231: 'URUÉN RODRÍGUEZ, ANA'
+        817321: 'VALLEJO HERRANZ, PAULA'
+        815497: 'VALLESPÍN ALCAZAR, ANDRÉS'
+        801145: 'VAN KERREBROECK RODRIGUEZ, CHRISTOPHER'
+        797319: 'VILLAMOR APARICIO, CRISTINA'
+        820798: 'YEBRA ROYO, SERGIO'
+        836121: 'YZAGUIRRE GARCÍA, RAQUEL'
+        739790: 'ZUBIAURRE VILLAR, FRANCISCO DE ASÍS'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
