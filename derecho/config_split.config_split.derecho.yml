@@ -1,0 +1,32 @@
+uuid: 000309f0-7f32-4b5d-8b83-280c91bcc188
+langcode: es
+status: true
+dependencies: {  }
+id: derecho
+label: derecho
+description: ''
+weight: 0
+folder: ../config/derecho
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - 'block.block.*'
+  - 'webform.webform.*'
+  - migrate_drupal.settings
+  - unizar_admin_menu.settings
+  - unizar_modulos_configuracion.settings
+  - language.types
+  - language.negociation
+  - 'language.entity.*'
+  - smtp.settings
+  - shortcut.set.default
+  - core.entity_view_mode.shortcut.token
+  - asset_injector.css.derecho_inyeccion_css
+  - core.extension
+  - system.theme
+  - system.site
+  - config_split.config_split.derecho
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
