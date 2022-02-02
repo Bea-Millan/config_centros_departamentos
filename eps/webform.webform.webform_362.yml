@@ -1,0 +1,374 @@
+uuid: f4b0d383-d738-42ed-996c-09444b8c9bdd
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 95
+template: false
+archive: false
+id: webform_362
+title: 'Solicitud de medios de transporte para visitas docentes y prácticas'
+description: null
+category: null
+elements: |
+  viaje_autorizado_por_direccion:
+    '#type': radios
+    '#options':
+      SÍ: 'SÍ'
+      NO: 'NO'
+    '#title': 'Viaje autorizado por Dirección' 
+    '#description': ""
+    '#required': true
+  profesores:
+    '#type': textfield
+    '#title': 'Nombre del profesor responsable del viaje' 
+    '#description': "Indicar todos los profesores responsables del viaje de prácticas "
+    '#required': true
+  correo_electronico_de_contacto:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico de contacto' 
+    '#description': ""
+    '#required': true
+  asignaturas:
+    '#type': textfield
+    '#title': 'Códigos de las asignaturas' 
+    '#description': "Incluir todas los códigos de las asignaturas implicadas en la visita.  Con el código es suficiente, no es necesario indicar el nombre de la asignatura"
+    '#required': true
+  fecha_visita:
+    '#type': date
+    '#default_value': '"d-m-Y"' 
+    '#title': 'Fecha visita' 
+    '#description': ""
+    '#required': true
+  hora_de_salida:
+    '#type': time
+    '#title': 'Hora de salida de Huesca' 
+    '#description': ""
+    '#required': true
+  lugar_preferente_de_salida:
+    '#type': textfield
+    '#title': 'Lugar de salida de Huesca' 
+    '#description': ""
+    '#required': true
+  hora_de_llegada:
+    '#type': time
+    '#title': 'Hora de llegada a Huesca' 
+    '#description': ""
+    '#required': true
+  lugar_de_llegada_a_huesca:
+    '#type': textfield
+    '#title': 'Lugar de llegada a Huesca' 
+    '#description': ""
+    '#required': true
+  destino_o_recorrido:
+    '#type': textfield
+    '#title': 'Destino' 
+    '#description': "Indicar claramente todo el itinerario previsto"
+    '#required': true
+  itinerario_a_realizar:
+    '#type': textfield
+    '#title': 'Itinerario a realizar' 
+    '#description': ""
+    '#required': true
+  paradas_a_realizar_si_las_hubiera:
+    '#type': textfield
+    '#title': 'Paradas a realizar (si las hubiera)' 
+    '#description': ""
+    '#required': true
+  circulacion:
+    '#type': radios
+    '#options':
+      SÍ: 'SÍ'
+      NO: 'NO'
+    '#title': 'Circulación por terrenos no asfaltados y practicables' 
+    '#description': ""
+    '#required': true
+  numero_de_viajeros:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'Número de estudiantes' 
+    '#description': ""
+    '#required': true
+  numero_de_profesores_acompanantes:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'Número de profesores acompañantes' 
+    '#description': ""
+    '#required': true
+  se_ofertan_plazas_a_estudiantes_de_nuevo_ingreso:
+    '#type': radios
+    '#options':
+      SÍ: 'SÍ'
+      NO: 'NO'
+    '#title': 'Se ofertan plazas a estudiantes de nuevo ingreso' 
+    '#description': ""
+    '#required': true
+  en_caso_afirmativo_cuantas_plazas:
+    '#type': textfield
+    '#title': 'En caso afirmativo, ¿cuántas plazas?' 
+    '#description': ""
+  explicacion_ieps:
+    '#type': textarea
+    '#title': 'Explicación de la actividad para incluir en el iEPS' 
+    '#description': ""
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': 'OBSERVACIONES' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su solicitud ha sido enviada a los responsables de gestionar los viajes en el Centro.</p><p>Recuerde que tiene que enviar a la Secretaría del Centro, siete días antes del viaje, el listado de estudiantes que realizarán la visita (<a href="https://eps.unizar.es/sites/eps.unizar.es/files/users/ccano/impresos/prc-033_frc-033-02_v2_organizacionsalidacampo.pdf">Modelo hoja de control listado</a>) para garantizar que todos los estudiantes están matriculados e informados sobre las<a href="https://eps.unizar.es/sites/eps.unizar.es/files/users/ccano/Normativa/normas_campo_eps_20160607.pdf"> Normas y medidas de seguridad durante la realización de prácticas de campo.</a></p><p>En breve se pondrán en contacto con usted para informarle sobre los detalles del viaje.</p><p>Muchas gracias por utilizar esta herramienta</p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ccano@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: tfranco@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: admespsh@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: mlamenca@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_6:
+    id: email
+    handler_id: email_6
+    label: 'Email 6'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 6
+    settings:
+      states:
+        - completed
+      to_mail: rcalvomavilla@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_7:
+    id: email
+    handler_id: email_7
+    label: 'Email 7'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 7
+    settings:
+      states:
+        - completed
+      to_mail: lperalta@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

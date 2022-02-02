@@ -1,0 +1,8 @@
+uuid: ed2cf9a4-ffa0-43b6-9d52-62a955b7f67f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-diploma
+label: diploma
+description: ''
+locked: false
