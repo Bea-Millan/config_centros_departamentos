@@ -1,0 +1,44 @@
+langcode: es
+status: true
+dependencies: {  }
+id: fichamaster
+label: 'Ficha master'
+description: ''
+weight: 0
+folder: ../config/fichamaster
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - node.type.ficha_master
+  - field.storage.node.field_nombre_plan_estudio
+  - field.storage.node.field_nombre_del_coordinador
+  - field.storage.node.field_id_del_estudio
+  - field.storage.node.field_es_interuniversitario
+  - field.storage.node.field_email_del_coordinador
+  - field.storage.node.field_duracion
+  - field.storage.node.field_creditos
+  - field.storage.node.field_centro_de_imparticion
+  - field.storage.node.field_area_de_conocimiento
+  - field.storage.node.feeds_item
+  - field.field.node.ficha_master.field_nombre_plan_estudio
+  - field.field.node.ficha_master.field_nombre_del_coordinador
+  - field.field.node.ficha_master.field_id_del_estudio
+  - field.field.node.ficha_master.field_es_interuniversitario
+  - field.field.node.ficha_master.field_email_del_coordinador
+  - field.field.node.ficha_master.field_duracion
+  - field.field.node.ficha_master.field_creditos
+  - field.field.node.ficha_master.field_centro_de_imparticion
+  - field.field.node.ficha_master.field_area_de_conocimiento
+  - field.field.node.ficha_master.feeds_item
+  - field.field.node.ficha_master.body
+  - field.field.node.elemento_parrilla.feeds_item
+  - feeds.feed_type.master
+  - core.entity_view_mode.node.teaser
+  - core.entity_view_display.node.ficha_master.teaser
+  - core.entity_view_display.node.ficha_master.default
+  - core.entity_form_display.node.ficha_master.default
+  - config_split.config_split.fichamaster
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

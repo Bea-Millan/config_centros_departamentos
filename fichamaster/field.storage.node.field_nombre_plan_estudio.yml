@@ -1,0 +1,21 @@
+uuid: e88ee6ee-3e28-4649-9d7e-1141002e0abd
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_nombre_plan_estudio
+field_name: field_nombre_plan_estudio
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

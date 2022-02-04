@@ -1,0 +1,23 @@
+uuid: 638d1d0e-562c-44b2-a814-650ceae87fb0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_es_interuniversitario
+    - node.type.ficha_master
+id: node.ficha_master.field_es_interuniversitario
+field_name: field_es_interuniversitario
+entity_type: node
+bundle: ficha_master
+label: 'Es interuniversitario'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean
