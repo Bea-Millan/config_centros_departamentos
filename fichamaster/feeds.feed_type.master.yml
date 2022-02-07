@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.ficha_master.field_area_de_conocimiento
     - field.field.node.ficha_master.field_centro_de_imparticion
+    - field.field.node.ficha_master.field_codigo_plan_estudio
     - field.field.node.ficha_master.field_creditos
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
@@ -96,6 +97,9 @@ parser_configuration:
     codigo_estudio:
       value: CODIGO_ESTUDIO
       label: CODIGO_ESTUDIO
+    codigo_plan_estudio:
+      value: CODIGO_PLAN_ESTUDIO
+      label: CODIGO_PLAN_ESTUDIO
   context:
     value: '$.data.*'
   source_encoding:
@@ -138,8 +142,8 @@ custom_sources:
     label: CODIGO_PLAN_ESTUDIO
     machine_name: codigo_plan_estudio
   '':
-    value: ''
-    label: ''
+    value: CODIGO_PLAN_ESTUDIO
+    label: CODIGO_PLAN_ESTUDIO
     machine_name: ''
   nombre_coord:
     value: NOMBRE_COORD
@@ -252,3 +256,11 @@ mappings:
     settings:
       language: null
     unique: {  }
+  -
+    target: field_codigo_plan_estudio
+    map:
+      value: codigo_plan_estudio
+    settings:
+      language: null
+    unique:
+      value: '1'

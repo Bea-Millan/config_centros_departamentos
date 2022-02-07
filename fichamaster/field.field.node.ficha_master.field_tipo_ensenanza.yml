@@ -1,0 +1,21 @@
+uuid: d9022168-0434-4783-bbc6-d38de51bc835
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_ensenanza
+    - node.type.ficha_master
+  module:
+    - options
+id: node.ficha_master.field_tipo_ensenanza
+field_name: field_tipo_ensenanza
+entity_type: node
+bundle: ficha_master
+label: 'Tipo de enseñanza'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

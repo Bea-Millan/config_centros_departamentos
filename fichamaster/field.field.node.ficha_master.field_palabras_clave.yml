@@ -1,0 +1,19 @@
+uuid: 208ffe6f-a491-4ea0-959c-cf737a3a49c6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_palabras_clave
+    - node.type.ficha_master
+id: node.ficha_master.field_palabras_clave
+field_name: field_palabras_clave
+entity_type: node
+bundle: ficha_master
+label: 'Palabras clave'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

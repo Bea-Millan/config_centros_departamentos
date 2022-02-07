@@ -1,0 +1,23 @@
+uuid: 0acd07e9-df41-45d7-936a-1d02ba638169
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_codigo_plan_estudio
+    - node.type.ficha_master
+id: node.ficha_master.field_codigo_plan_estudio
+field_name: field_codigo_plan_estudio
+entity_type: node
+bundle: ficha_master
+label: 'Código plan estudio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,21 @@
+uuid: 2daeba81-93e6-43f1-b8dc-2340b6a0756f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_idioma
+    - node.type.ficha_master
+  module:
+    - options
+id: node.ficha_master.field_idioma
+field_name: field_idioma
+entity_type: node
+bundle: ficha_master
+label: 'Idioma de impartición'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

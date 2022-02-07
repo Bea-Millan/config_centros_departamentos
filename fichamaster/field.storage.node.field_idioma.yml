@@ -1,0 +1,27 @@
+uuid: 2d0418b2-2f77-441c-9b73-e226f6135361
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_idioma
+field_name: field_idioma
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Inglés
+      label: Inglés
+    -
+      value: Español
+      label: Español
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

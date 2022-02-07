@@ -7,15 +7,25 @@ dependencies:
     - field.field.node.ficha_master.feeds_item
     - field.field.node.ficha_master.field_area_de_conocimiento
     - field.field.node.ficha_master.field_centro_de_imparticion
+    - field.field.node.ficha_master.field_codigo_plan_estudio
     - field.field.node.ficha_master.field_creditos
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
     - field.field.node.ficha_master.field_es_interuniversitario
     - field.field.node.ficha_master.field_id_del_estudio
+    - field.field.node.ficha_master.field_idioma
+    - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_plan_estudio
+    - field.field.node.ficha_master.field_num_areas_conocimiento
+    - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_rrss
+    - field.field.node.ficha_master.field_tipo_ensenanza
+    - field.field.node.ficha_master.field_universidades_conjuntas_
+    - field.field.node.ficha_master.field_web_estudios
     - node.type.ficha_master
   module:
+    - link
     - path
     - text
 id: node.ficha_master.default
@@ -55,6 +65,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_codigo_plan_estudio:
+    type: number
+    weight: 133
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_creditos:
     type: number
     weight: 126
@@ -91,6 +108,20 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
+  field_idioma:
+    type: options_select
+    weight: 138
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nombre_coloquial:
+    type: string_textfield
+    weight: 134
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_nombre_del_coordinador:
     type: string_textfield
     weight: 129
@@ -106,6 +137,51 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_num_areas_conocimiento:
+    type: number
+    weight: 136
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_palabras_clave:
+    type: string_textfield
+    weight: 140
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rrss:
+    type: link_default
+    weight: 141
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_tipo_ensenanza:
+    type: options_select
+    weight: 137
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_universidades_conjuntas_:
+    type: string_textfield
+    weight: 139
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_web_estudios:
+    type: link_default
+    weight: 135
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   langcode:
     type: language_select
@@ -161,3 +237,4 @@ content:
     third_party_settings: {  }
 hidden:
   feeds_item: true
+  field_pagina_web: true

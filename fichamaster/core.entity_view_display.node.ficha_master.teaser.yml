@@ -8,13 +8,22 @@ dependencies:
     - field.field.node.ficha_master.feeds_item
     - field.field.node.ficha_master.field_area_de_conocimiento
     - field.field.node.ficha_master.field_centro_de_imparticion
+    - field.field.node.ficha_master.field_codigo_plan_estudio
     - field.field.node.ficha_master.field_creditos
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
     - field.field.node.ficha_master.field_es_interuniversitario
     - field.field.node.ficha_master.field_id_del_estudio
+    - field.field.node.ficha_master.field_idioma
+    - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_plan_estudio
+    - field.field.node.ficha_master.field_num_areas_conocimiento
+    - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_rrss
+    - field.field.node.ficha_master.field_tipo_ensenanza
+    - field.field.node.ficha_master.field_universidades_conjuntas_
+    - field.field.node.ficha_master.field_web_estudios
     - node.type.ficha_master
   module:
     - text
@@ -42,11 +51,21 @@ hidden:
   feeds_item: true
   field_area_de_conocimiento: true
   field_centro_de_imparticion: true
+  field_codigo_plan_estudio: true
   field_creditos: true
   field_duracion: true
   field_email_del_coordinador: true
   field_es_interuniversitario: true
   field_id_del_estudio: true
+  field_idioma: true
+  field_nombre_coloquial: true
   field_nombre_del_coordinador: true
   field_nombre_plan_estudio: true
+  field_num_areas_conocimiento: true
+  field_pagina_web: true
+  field_palabras_clave: true
+  field_rrss: true
+  field_tipo_ensenanza: true
+  field_universidades_conjuntas_: true
+  field_web_estudios: true
   langcode: true

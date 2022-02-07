@@ -7,15 +7,26 @@ dependencies:
     - field.field.node.ficha_master.feeds_item
     - field.field.node.ficha_master.field_area_de_conocimiento
     - field.field.node.ficha_master.field_centro_de_imparticion
+    - field.field.node.ficha_master.field_codigo_plan_estudio
     - field.field.node.ficha_master.field_creditos
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
     - field.field.node.ficha_master.field_es_interuniversitario
     - field.field.node.ficha_master.field_id_del_estudio
+    - field.field.node.ficha_master.field_idioma
+    - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_plan_estudio
+    - field.field.node.ficha_master.field_num_areas_conocimiento
+    - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_rrss
+    - field.field.node.ficha_master.field_tipo_ensenanza
+    - field.field.node.ficha_master.field_universidades_conjuntas_
+    - field.field.node.ficha_master.field_web_estudios
     - node.type.ficha_master
   module:
+    - link
+    - options
     - text
     - user
 id: node.ficha_master.default
@@ -45,6 +56,15 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 110
+    region: content
+  field_codigo_plan_estudio:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 113
     region: content
   field_creditos:
     type: number_decimal
@@ -94,6 +114,21 @@ content:
     third_party_settings: {  }
     weight: 112
     region: content
+  field_idioma:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 118
+    region: content
+  field_nombre_coloquial:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 114
+    region: content
   field_nombre_del_coordinador:
     type: string
     label: above
@@ -110,6 +145,62 @@ content:
     third_party_settings: {  }
     weight: 111
     region: content
+  field_num_areas_conocimiento:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 116
+    region: content
+  field_palabras_clave:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 120
+    region: content
+  field_rrss:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 121
+    region: content
+  field_tipo_ensenanza:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 117
+    region: content
+  field_universidades_conjuntas_:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 119
+    region: content
+  field_web_estudios:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 115
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -118,4 +209,5 @@ content:
 hidden:
   addtoany: true
   feeds_item: true
+  field_pagina_web: true
   langcode: true
