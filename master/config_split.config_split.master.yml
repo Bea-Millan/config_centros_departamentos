@@ -27,6 +27,7 @@ blacklist:
   - system.theme
   - system.site
   - config_split.config_split.master
+  - config_split.config_split.master
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

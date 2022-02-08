@@ -1,0 +1,8 @@
+uuid: 7345031e-dad1-4912-bf3b-6dbec8898012
+langcode: es
+status: true
+dependencies: {  }
+id: menu-drupal
+label: 'Manual de Drupal'
+description: 'Manual de usuario de Drupal'
+locked: false

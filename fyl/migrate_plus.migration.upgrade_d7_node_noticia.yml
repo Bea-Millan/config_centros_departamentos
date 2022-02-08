@@ -1,4 +1,4 @@
-uuid: 131ce602-20a3-414a-92b9-e806f35e27f1
+uuid: 396234c2-c883-4fd8-9e75-f3c8a0f155b3
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: M3L9fpvA91Co6ms5zjaAgKrG-H6hVubzneqn4c7LBeg
+  default_config_hash: qIlQLhxXGQKmOSXvqqDl85pUAukP4tl_UQ8aFCLyWvA
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -120,30 +120,22 @@ process:
         title: title
         width: width
         height: height
-  prepare_tipo_evento:
+  _prepare_tipo_evento:
     -
-      plugin: sub_process
+      plugin: static_map
       source: field_tipo_evento
-      process:
-        value:
-          plugin: static_map
-          source: value
-          map:
-            1: Actualidad
-            2: 'Agenda cultural'
+      map:
+        1: Actualidad
+        2: 'Agenda cultural'
   field_seccion:
     -
-      plugin: sub_process
+      plugin: entity_generate
+      entity_type: taxonomy_term
       source: '@_prepare_tipo_evento'
-      process:
-        target_id:
-          plugin: entity_generate
-          source: value
-          value_key: name
-          bundle_key: vid
-          bundle: secciones
-          entity_type: taxonomy_term
-          ignore_case: true
+      value_key: name
+      bundle_key: vid
+      bundle: secciones
+      ignore_case: true
   field_fecha:
     -
       plugin: sub_process

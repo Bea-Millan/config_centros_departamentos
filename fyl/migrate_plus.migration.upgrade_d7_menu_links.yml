@@ -1,4 +1,4 @@
-uuid: a5042de7-8870-4d7c-8900-353020b73e2a
+uuid: 589ceb7a-51d9-4b8f-a2ed-0012400bbe49
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: DZZbiR6SKGMUcmFLGiCi0szt9oTp6kdQz6Wznj8Pp8w
+  default_config_hash: TmFXYFUpta_Od5jWd1oHzJ8j_Tpmw47iKn0e4B626eA
 id: upgrade_d7_menu_links
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -56,6 +56,7 @@ process:
       source: link_path
     -
       plugin: link_uri
+      validate_route: false
   link/options:
     -
       plugin: get

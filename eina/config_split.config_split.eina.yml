@@ -26,6 +26,7 @@ blacklist:
   - core.extension
   - system.theme
   - system.site
+  - 'system.menu.*'
   - config_split.config_split.eina
 graylist: {  }
 graylist_dependents: true

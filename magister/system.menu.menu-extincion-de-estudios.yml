@@ -1,0 +1,8 @@
+uuid: bbc83645-f802-487e-bc90-0d5ed722540b
+langcode: es
+status: true
+dependencies: {  }
+id: menu-extincion-de-estudios
+label: 'Extincion de Estudios'
+description: 'menú de extinción de estudios'
+locked: false
