@@ -5,13 +5,13 @@ dependencies: {  }
 id: fcs
 label: fcs
 description: ''
-weight: 0
-folder: ../config/fcs
+folder: ../config/fcs 
 module:
   c11n_migrate: 0
 theme: {  }
 blacklist:
   - 'block.block.*'
+  - 'system.menu.*'
   - 'webform.webform.*'
   - migrate_drupal.settings
   - unizar_admin_menu.settings
@@ -27,6 +27,9 @@ blacklist:
   - system.theme
   - system.site
   - config_split.config_split.fcs
+  - feeds.feed_type.master_desde_csv
+  - feeds.feed_type.master
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
+weight: 0
