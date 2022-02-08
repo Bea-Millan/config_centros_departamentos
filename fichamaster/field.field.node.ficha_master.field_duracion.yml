@@ -1,0 +1,23 @@
+uuid: c6e72467-34a8-4bbf-ade4-681ee95744c7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_duracion
+    - node.type.ficha_master
+id: node.ficha_master.field_duracion
+field_name: field_duracion
+entity_type: node
+bundle: ficha_master
+label: Duración
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

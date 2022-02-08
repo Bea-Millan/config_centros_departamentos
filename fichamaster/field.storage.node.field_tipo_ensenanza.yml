@@ -1,0 +1,27 @@
+uuid: 4056ca26-8856-4e77-beef-e78e12878cc1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tipo_ensenanza
+field_name: field_tipo_ensenanza
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Presencial
+      label: Presencial
+    -
+      value: Semipresencial
+      label: Semipresencial
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

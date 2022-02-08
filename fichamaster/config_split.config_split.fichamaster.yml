@@ -1,0 +1,62 @@
+uuid: af796a7a-3272-496e-b241-1f60d8f5dee8
+langcode: es
+status: true
+dependencies: {  }
+id: fichamaster
+label: fichamaster
+description: ''
+weight: 0
+folder: ../config/fichamaster
+module: {  }
+theme: {  }
+blacklist:
+  - core.entity_form_display.node.ficha_master.default
+  - core.entity_view_display.node.ficha_master.default
+  - core.entity_view_display.node.ficha_master.teaser
+  - core.entity_view_mode.node.teasercd
+  - feeds.feed_type.master_desde_csv
+  - feeds.feed_type.master
+  - field.field.node.ficha_master.body
+  - field.field.node.ficha_master.feeds_item
+  - field.field.node.ficha_master.field_area_de_conocimiento
+  - field.field.node.ficha_master.field_centro_de_imparticion
+  - field.field.node.ficha_master.field_codigo_plan_estudio
+  - field.field.node.ficha_master.field_creditos
+  - field.field.node.ficha_master.field_duracion
+  - field.field.node.ficha_master.field_email_del_coordinador
+  - field.field.node.ficha_master.field_es_interuniversitario
+  - field.field.node.ficha_master.field_id_del_estudio
+  - field.field.node.ficha_master.field_idioma
+  - field.field.node.ficha_master.field_nombre_coloquial
+  - field.field.node.ficha_master.field_nombre_del_coordinador
+  - field.field.node.ficha_master.field_nombre_plan_estudio
+  - field.field.node.ficha_master.field_num_areas_conocimiento
+  - field.field.node.ficha_master.field_palabras_clave
+  - field.field.node.ficha_master.field_rrss
+  - field.field.node.ficha_master.field_tipo_ensenanza
+  - field.field.node.ficha_master.field_universidades_conjuntas_
+  - field.field.node.ficha_master.field_web_estudios
+  - field.storage.node.feeds_item
+  - field.storage.node.field_area_de_conocimiento
+  - field.storage.node.field_centro_de_imparticion
+  - field.storage.node.field_codigo_plan_estudio
+  - field.storage.node.field_creditos
+  - field.storage.node.field_duracion
+  - field.storage.node.field_email_del_coordinador
+  - field.storage.node.field_es_interuniversitario
+  - field.storage.node.field_id_del_estudio
+  - field.storage.node.field_idioma
+  - field.storage.node.field_nombre_coloquial
+  - field.storage.node.field_nombre_del_coordinador
+  - field.storage.node.field_nombre_plan_estudio
+  - field.storage.node.field_num_areas_conocimiento
+  - field.storage.node.field_palabras_clave
+  - field.storage.node.field_rrss
+  - field.storage.node.field_tipo_ensenanza
+  - field.storage.node.field_universidades_conjuntas_
+  - field.storage.node.field_web_estudios
+  - node.type.ficha_master
+  - config_split.config_split.fichamaster
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

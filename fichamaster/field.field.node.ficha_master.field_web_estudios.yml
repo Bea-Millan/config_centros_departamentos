@@ -1,0 +1,23 @@
+uuid: bfc60ce6-55db-4d6f-be5d-2e0d07ec9397
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_web_estudios
+    - node.type.ficha_master
+  module:
+    - link
+id: node.ficha_master.field_web_estudios
+field_name: field_web_estudios
+entity_type: node
+bundle: ficha_master
+label: 'Web estudios'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 17
+field_type: link

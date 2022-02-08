@@ -1,0 +1,240 @@
+uuid: aab09d86-7785-4d9c-9a5e-9d4ae002638a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ficha_master.body
+    - field.field.node.ficha_master.feeds_item
+    - field.field.node.ficha_master.field_area_de_conocimiento
+    - field.field.node.ficha_master.field_centro_de_imparticion
+    - field.field.node.ficha_master.field_codigo_plan_estudio
+    - field.field.node.ficha_master.field_creditos
+    - field.field.node.ficha_master.field_duracion
+    - field.field.node.ficha_master.field_email_del_coordinador
+    - field.field.node.ficha_master.field_es_interuniversitario
+    - field.field.node.ficha_master.field_id_del_estudio
+    - field.field.node.ficha_master.field_idioma
+    - field.field.node.ficha_master.field_nombre_coloquial
+    - field.field.node.ficha_master.field_nombre_del_coordinador
+    - field.field.node.ficha_master.field_nombre_plan_estudio
+    - field.field.node.ficha_master.field_num_areas_conocimiento
+    - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_rrss
+    - field.field.node.ficha_master.field_tipo_ensenanza
+    - field.field.node.ficha_master.field_universidades_conjuntas_
+    - field.field.node.ficha_master.field_web_estudios
+    - node.type.ficha_master
+  module:
+    - link
+    - path
+    - text
+id: node.ficha_master.default
+targetEntityType: node
+bundle: ficha_master
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 121
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_area_de_conocimiento:
+    type: string_textfield
+    weight: 124
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_centro_de_imparticion:
+    type: string_textfield
+    weight: 130
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_codigo_plan_estudio:
+    type: number
+    weight: 133
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_creditos:
+    type: number
+    weight: 126
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_duracion:
+    type: number
+    weight: 127
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_email_del_coordinador:
+    type: email_default
+    weight: 125
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_es_interuniversitario:
+    type: boolean_checkbox
+    weight: 128
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_id_del_estudio:
+    type: number
+    weight: 132
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_idioma:
+    type: options_select
+    weight: 138
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_nombre_coloquial:
+    type: string_textfield
+    weight: 134
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nombre_del_coordinador:
+    type: string_textfield
+    weight: 129
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_nombre_plan_estudio:
+    type: string_textfield
+    weight: 131
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_num_areas_conocimiento:
+    type: number
+    weight: 136
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_palabras_clave:
+    type: string_textfield
+    weight: 140
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_rrss:
+    type: link_default
+    weight: 141
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_tipo_ensenanza:
+    type: options_select
+    weight: 137
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_universidades_conjuntas_:
+    type: string_textfield
+    weight: 139
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_web_estudios:
+    type: link_default
+    weight: 135
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    weight: 15
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 120
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    weight: 16
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  feeds_item: true
+  field_pagina_web: true
