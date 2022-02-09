@@ -13,9 +13,11 @@ dependencies:
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
     - field.field.node.ficha_master.field_es_interuniversitario
+    - field.field.node.ficha_master.field_habilitante
     - field.field.node.ficha_master.field_id_del_estudio
     - field.field.node.ficha_master.field_idioma
     - field.field.node.ficha_master.field_idioma_imparticion
+    - field.field.node.ficha_master.field_imagen
     - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_en_ingles
@@ -23,15 +25,18 @@ dependencies:
     - field.field.node.ficha_master.field_num_areas_conocimiento
     - field.field.node.ficha_master.field_pagina_web
     - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_precio
     - field.field.node.ficha_master.field_rama_conocimiento
     - field.field.node.ficha_master.field_rrss
     - field.field.node.ficha_master.field_tipo_ensenanza
     - field.field.node.ficha_master.field_universidades_conjuntas_
     - field.field.node.ficha_master.field_web_estudios
+    - image.style.thumbnail
     - node.type.ficha_master
   module:
     - link
     - path
+    - svg_image
     - text
 id: node.ficha_master.default
 targetEntityType: node
@@ -119,6 +124,13 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_habilitante:
+    type: boolean_checkbox
+    weight: 31
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
   field_id_del_estudio:
     type: number
     weight: 19
@@ -141,6 +153,14 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_imagen:
+    type: image_image
+    weight: 33
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   field_nombre_coloquial:
     type: string_textfield
@@ -187,6 +207,13 @@ content:
     region: content
     settings:
       size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_precio:
+    type: number
+    weight: 32
+    region: content
+    settings:
       placeholder: ''
     third_party_settings: {  }
   field_rama_conocimiento:

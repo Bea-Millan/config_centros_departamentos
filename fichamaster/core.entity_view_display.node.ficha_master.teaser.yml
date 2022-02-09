@@ -14,9 +14,11 @@ dependencies:
     - field.field.node.ficha_master.field_duracion
     - field.field.node.ficha_master.field_email_del_coordinador
     - field.field.node.ficha_master.field_es_interuniversitario
+    - field.field.node.ficha_master.field_habilitante
     - field.field.node.ficha_master.field_id_del_estudio
     - field.field.node.ficha_master.field_idioma
     - field.field.node.ficha_master.field_idioma_imparticion
+    - field.field.node.ficha_master.field_imagen
     - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_en_ingles
@@ -24,6 +26,7 @@ dependencies:
     - field.field.node.ficha_master.field_num_areas_conocimiento
     - field.field.node.ficha_master.field_pagina_web
     - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_precio
     - field.field.node.ficha_master.field_rama_conocimiento
     - field.field.node.ficha_master.field_rrss
     - field.field.node.ficha_master.field_tipo_ensenanza
@@ -62,9 +65,11 @@ hidden:
   field_duracion: true
   field_email_del_coordinador: true
   field_es_interuniversitario: true
+  field_habilitante: true
   field_id_del_estudio: true
   field_idioma: true
   field_idioma_imparticion: true
+  field_imagen: true
   field_nombre_coloquial: true
   field_nombre_del_coordinador: true
   field_nombre_en_ingles: true
@@ -72,6 +77,7 @@ hidden:
   field_num_areas_conocimiento: true
   field_pagina_web: true
   field_palabras_clave: true
+  field_precio: true
   field_rama_conocimiento: true
   field_rrss: true
   field_tipo_ensenanza: true

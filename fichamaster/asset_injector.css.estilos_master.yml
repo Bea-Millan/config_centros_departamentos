@@ -302,7 +302,11 @@ code: |
     font-family: var(--font);
   }
 
-  .path-masteres-universitarios .ui-dialog article{
+  .path-masteres-universitarios #drupal-off-canvas article{
+      font-family: var(--font);
+  }
+
+  .path-masteres-universitarios #drupal-off-canvas article.node--type-ficha-master{
       max-width: 940px;
       margin: 0 auto;
       margin-top: 80px;
@@ -313,7 +317,7 @@ code: |
     flex-wrap: wrap;
   }
 
-  .path-masteres-universitarios .ui-dialog article fieldset{
+  .path-masteres-universitarios #drupal-off-canvas article.node--type-ficha-master fieldset{
     width: 40%;
   }
 

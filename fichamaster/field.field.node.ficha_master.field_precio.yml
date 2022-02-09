@@ -1,0 +1,23 @@
+uuid: 1b435514-58ea-40d2-b131-67f5d1760891
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_precio
+    - node.type.ficha_master
+id: node.ficha_master.field_precio
+field_name: field_precio
+entity_type: node
+bundle: ficha_master
+label: Precio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

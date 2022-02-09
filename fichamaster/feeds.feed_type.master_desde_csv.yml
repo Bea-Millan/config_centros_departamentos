@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.ficha_master.body
     - field.field.node.ficha_master.field_codigo_plan_estudio
+    - field.field.node.ficha_master.field_habilitante
     - field.field.node.ficha_master.field_idioma_imparticion
     - field.field.node.ficha_master.field_nombre_coloquial
     - field.field.node.ficha_master.field_nombre_en_ingles
     - field.field.node.ficha_master.field_num_areas_conocimiento
     - field.field.node.ficha_master.field_palabras_clave
+    - field.field.node.ficha_master.field_precio
     - field.field.node.ficha_master.field_rrss
     - field.field.node.ficha_master.field_tipo_ensenanza
     - field.field.node.ficha_master.field_universidades_conjuntas_
@@ -136,6 +138,14 @@ custom_sources:
     value: idioma
     label: idioma
     machine_name: idioma2
+  precio:
+    value: precio
+    label: precio
+    machine_name: precio
+  habilitante:
+    value: habilitante
+    label: habilitante
+    machine_name: habilitante
 mappings:
   -
     target: field_nombre_coloquial
@@ -216,3 +226,16 @@ mappings:
       language: ''
       reference_by: name
       autocreate: 0
+  -
+    target: field_precio
+    map:
+      value: precio
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_habilitante
+    map:
+      value: habilitante
+    settings:
+      language: null

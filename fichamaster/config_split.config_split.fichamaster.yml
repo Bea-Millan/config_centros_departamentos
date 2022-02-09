@@ -28,9 +28,11 @@ blacklist:
   - field.field.node.ficha_master.field_duracion
   - field.field.node.ficha_master.field_email_del_coordinador
   - field.field.node.ficha_master.field_es_interuniversitario
+  - field.field.node.ficha_master.field_habilitante
   - field.field.node.ficha_master.field_idioma
   - field.field.node.ficha_master.field_idioma_imparticion
   - field.field.node.ficha_master.field_id_del_estudio
+  - field.field.node.ficha_master.field_imagen
   - field.field.node.ficha_master.field_nombre_coloquial
   - field.field.node.ficha_master.field_nombre_del_coordinador
   - field.field.node.ficha_master.field_nombre_en_ingles
@@ -38,6 +40,7 @@ blacklist:
   - field.field.node.ficha_master.field_num_areas_conocimiento
   - field.field.node.ficha_master.field_pagina_web
   - field.field.node.ficha_master.field_palabras_clave
+  - field.field.node.ficha_master.field_precio
   - field.field.node.ficha_master.field_rama_conocimiento
   - field.field.node.ficha_master.field_rrss
   - field.field.node.ficha_master.field_tipo_ensenanza
@@ -52,15 +55,18 @@ blacklist:
   - field.storage.node.field_duracion
   - field.storage.node.field_email_del_coordinador
   - field.storage.node.field_es_interuniversitario
+  - field.storage.node.field_habilitante
   - field.storage.node.field_idioma
   - field.storage.node.field_idioma_imparticion
   - field.storage.node.field_id_del_estudio
+  - field.storage.node.field_imagen
   - field.storage.node.field_nombre_coloquial
   - field.storage.node.field_nombre_del_coordinador
   - field.storage.node.field_nombre_en_ingles
   - field.storage.node.field_nombre_plan_estudio
   - field.storage.node.field_num_areas_conocimiento
   - field.storage.node.field_palabras_clave
+  - field.storage.node.field_precio
   - field.storage.node.field_rama_conocimiento
   - field.storage.node.field_rrss
   - field.storage.node.field_tipo_ensenanza
