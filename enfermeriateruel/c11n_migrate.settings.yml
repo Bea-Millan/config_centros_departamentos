@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: WC-E93SrJrCxRi11MrZhk8khUg-l3WvLyAufjX7STRA
+plugin:
+  url_host: sites/enfermeriateruel
+  host: enfermeriateruel.unizar.es
+langcode: es
