@@ -5,6 +5,7 @@ dependencies:
   config:
     - node.type.elemento_parrilla
     - node.type.estudio
+    - node.type.ficha_master
     - node.type.galeria
     - node.type.noticia
     - node.type.page
@@ -164,10 +165,10 @@ display:
           plugin_id: bundle
           operator: 'not in'
           value:
-            all: all
             pestana: pestana
             elemento_parrilla: elemento_parrilla
             estudio: estudio
+            ficha_master: ficha_master
             galeria: galeria
             slideshow: slideshow
             noticia: noticia

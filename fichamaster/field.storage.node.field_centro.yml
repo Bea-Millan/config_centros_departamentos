@@ -1,19 +1,19 @@
-uuid: 086e8c80-d7c8-4fb7-8681-11a03e8357b2
+uuid: 20156ade-003d-4b61-b3b2-d10d0c9ccbb4
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_duracion
-field_name: field_duracion
+id: node.field_centro
+field_name: field_centro
 entity_type: node
 type: entity_reference
 settings:
   target_type: taxonomy_term
 module: core
 locked: false
-cardinality: 1
+cardinality: -1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

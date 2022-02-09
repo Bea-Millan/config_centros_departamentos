@@ -1,16 +1,17 @@
-uuid: 086e8c80-d7c8-4fb7-8681-11a03e8357b2
+uuid: 173a29dd-ecff-42e7-99da-aac7b94be7a4
 langcode: es
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_duracion
-field_name: field_duracion
+id: node.field_nombre_en_ingles
+field_name: field_nombre_en_ingles
 entity_type: node
-type: entity_reference
+type: string
 settings:
-  target_type: taxonomy_term
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
 module: core
 locked: false
 cardinality: 1

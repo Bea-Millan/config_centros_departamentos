@@ -15,8 +15,11 @@ settings:
       value: Inglés
       label: Inglés
     -
-      value: Español
+      value: Españo
       label: Español
+    -
+      value: 'English friendly'
+      label: 'English friendly'
   allowed_values_function: ''
 module: options
 locked: false

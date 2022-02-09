@@ -1,0 +1,11 @@
+uuid: 733a15b5-840d-4832-b30d-cb2ab4e14b58
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_master
+id: node.ficha_master
+target_entity_type_id: node
+target_bundle: ficha_master
+default_langcode: site_default
+language_alterable: false

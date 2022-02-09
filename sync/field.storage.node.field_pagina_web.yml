@@ -1,17 +1,16 @@
-uuid: 086e8c80-d7c8-4fb7-8681-11a03e8357b2
+uuid: 7a933152-0a21-4cd1-b6b4-a48e68fc182d
 langcode: es
 status: true
 dependencies:
   module:
+    - link
     - node
-    - taxonomy
-id: node.field_duracion
-field_name: field_duracion
+id: node.field_pagina_web
+field_name: field_pagina_web
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: 1
 translatable: true

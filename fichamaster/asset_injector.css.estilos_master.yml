@@ -1,0 +1,362 @@
+uuid: 202e48b0-8ddf-4607-bcf6-b786b4a438db
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - system
+id: estilos_master
+label: 'Estilos master'
+code: |
+  #contenido{
+    order: 1;
+  }
+
+  #contenido-wrapper #columna-lateral{
+    order: 0;
+    padding-right: 3%;
+    margin-right: 3%;
+    border-right: 1px solid #eeeeee;
+    padding-left: 0;
+    margin-left: 0;
+    border-left: 0;
+  }
+
+  .view-masteres-universitarios .view-content .views-row{
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      align-items: flex-end;
+      padding: 15px 0;
+      border-bottom: 1px solid;
+  }
+
+
+
+  .view-masteres-universitarios .view-content .views-field-title{
+    width: 70%
+  }
+
+  .view-masteres-universitarios .view-content .views-field-title span{
+    font-size: 2.5rem;
+  }
+
+  .view-masteres-universitarios .view-content .views-field-field-rama-conocimiento{
+    padding-left: 2%;
+    width: 28%%
+    color: black;
+  }
+
+  .view-masteres-universitarios .view-content .views-field-field-universidades-conjuntas-{
+    width: 100%
+    color: black;
+    margin-top: 10px;
+  }
+
+  .view-masteres-universitarios .pager{
+    padding: 40px 0;
+    margin-bottom: 50px;
+  }
+
+  .view-masteres-universitarios .pager__items{
+      display: flex;
+      justify-content: center;
+  }
+
+  .view-masteres-universitarios .pager__item{
+    border-radius: 50px;
+    border: 1px solid #457b9d;
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .view-masteres-universitarios .pager__item:first-child{
+    margin-left: 0;
+  }
+
+  .view-masteres-universitarios .pager__item.pager__item--ellipsis,
+  .view-masteres-universitarios .pager__item.pager__item--next,
+  .view-masteres-universitarios .pager__item.pager__item--last,
+  .view-masteres-universitarios .pager__item.pager__item--first,
+  .view-masteres-universitarios .pager__item.pager__item--previous{
+    width: auto;
+    border: 0
+  }
+
+  .exposed-filter-masteres .form-item{
+    width: 100%;
+  }
+  .exposed-filter-masteres .form-type-checkbox{
+      display: flex;
+      align-items: center;
+  }
+
+  .exposed-filter-masteres .form-type-textfield > label,
+  .exposed-filter-masteres .form-type-select > label{
+      width: 100%;
+      display: inline-block;
+      margin-bottom: 5px;
+      font-weight: 700;
+  }
+
+  .exposed-filter-masteres  input[type=text],
+  .exposed-filter-masteres select{
+    font-size: 1.8rem;
+    color: inherit;
+    padding: 10px 18px 8px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 2px solid #457b9d;
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    margin: 0;
+  }
+
+  .exposed-filter-masteres select{
+    padding: 10px 8px 8px;
+    background: none;
+  }
+
+  @supports (-webkit-appearance: none) or (-moz-appearance: none) {
+  .exposed-filter-masteres input[type=checkbox],
+  .exposed-filter-masteres input[type=radio] {
+      --active: #44abd2;
+      --active-inner: #fff;
+      --focus: 2px rgba(39, 94, 254, 0.3);
+      --border: #bbc1e1;
+      --border-hover: #44abd2;
+      --background: #fff;
+      --disabled: #f6f8ff;
+      --disabled-inner: #e1e6f9;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      height: 18px;
+      outline: none;
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      margin: 0;
+      cursor: pointer;
+      border: 1px solid var(--bc, var(--border));
+      background: var(--b, var(--background));
+      transition: background 0.3s, border-color 0.3s, box-shadow 0.2s;
+    }
+    .exposed-filter-masteres input[type=checkbox]:after,
+    .exposed-filter-masteres input[type=radio]:after {
+      content: "";
+      display: block;
+      left: 0;
+      top: 0;
+      position: absolute;
+      transition: transform var(--d-t, 0.3s) var(--d-t-e, ease), opacity var(--d-o, 0.2s);
+    }
+    .exposed-filter-masteres input[type=checkbox]:checked,
+    .exposed-filter-masteres input[type=radio]:checked {
+      --b: var(--active);
+      --bc: var(--active);
+      --d-o: 0.3s;
+      --d-t: 0.6s;
+      --d-t-e: cubic-bezier(0.2, 0.85, 0.32, 1.2);
+    }
+    .exposed-filter-masteres input[type=checkbox]:disabled,
+    .exposed-filter-masteres input[type=radio]:disabled {
+      --b: var(--disabled);
+      cursor: not-allowed;
+      opacity: 0.9;
+    }
+    .exposed-filter-masteres input[type=checkbox]:disabled:checked,
+    .exposed-filter-masteres input[type=radio]:disabled:checked {
+      --b: var(--disabled-inner);
+      --bc: var(--border);
+    }
+    .exposed-filter-masteres input[type=checkbox]:disabled + label,
+    .exposed-filter-masteres input[type=radio]:disabled + label {
+      cursor: not-allowed;
+    }
+    .exposed-filter-masteres input[type=checkbox]:hover:not(:checked):not(:disabled),
+    .exposed-filter-masteres input[type=radio]:hover:not(:checked):not(:disabled) {
+      --bc: var(--border-hover);
+    }
+    .exposed-filter-masteres input[type=checkbox]:focus,
+    .exposed-filter-masteres input[type=radio]:focus {
+      box-shadow: 0 0 0 var(--focus);
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch),
+    .exposed-filter-masteres input[type=radio]:not(.switch) {
+      width: 18px;
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch):after,
+    .exposed-filter-masteres input[type=radio]:not(.switch):after {
+      opacity: var(--o, 0);
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch):checked,
+    .exposed-filter-masteres input[type=radio]:not(.switch):checked {
+      --o: 1;
+    }
+    .exposed-filter-masteres input[type=checkbox] + label,
+    .exposed-filter-masteres input[type=radio] + label {
+      font-size: 14px;
+      line-height: 24px;
+      display: inline-block;
+      vertical-align: top;
+      cursor: pointer;
+      font-weight: normal;
+      margin-left: 8px;
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch) {
+      border-radius: 7px;
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch):after {
+      width: 5px;
+      height: 6px;
+      border: 2px solid var(--active-inner);
+      border-top: 0;
+      border-left: 0;
+      left: 5px;
+      top: 4px;
+      transform: rotate(var(--r, 20deg));
+    }
+    .exposed-filter-masteres input[type=checkbox]:not(.switch):checked {
+      --r: 43deg;
+    }
+    .exposed-filter-masteres input[type=checkbox].switch {
+      width: 38px;
+      border-radius: 11px;
+    }
+    .exposed-filter-masteres input[type=checkbox].switch:after {
+      left: 2px;
+      top: 2px;
+      border-radius: 50%;
+      width: 15px;
+      height: 15px;
+      background: var(--ab, var(--border));
+      transform: translateX(var(--x, 0));
+    }
+    .exposed-filter-masteres input[type=checkbox].switch:checked {
+      --ab: var(--active-inner);
+      --x: 17px;
+    }
+    .exposed-filter-masteres input[type=checkbox].switch:disabled:not(:checked):after {
+      opacity: 0.6;
+    }
+
+    .exposed-filter-masteres input[type=radio] {
+      border-radius: 50%;
+    }
+    .exposed-filter-masteres input[type=radio]:after {
+      width: 19px;
+      height: 19px;
+      border-radius: 50%;
+      background: var(--active-inner);
+      opacity: 0;
+      transform: scale(var(--s, 0.7));
+    }
+    .exposed-filter-masteres input[type=radio]:checked {
+      --s: 0.5;
+    }
+  }
+
+  .exposed-filter-masteres input.button{
+      border: 1px solid rgba(0, 0, 0, 0.2);
+      padding: 10px 30px;
+      border-radius: 30px;
+      transition: 0.2s all ease-in-out;
+  }
+
+  .exposed-filter-masteres input.button:hover {
+      background: #171A2B;
+      color: white;
+  }
+
+  .exposed-filter-masteres input.button{
+      background: #44abd2;
+      color: white;
+  }
+
+
+  /* ui-dialog */
+
+  .path-masteres-universitarios .dialog-off-canvas-main-canvas{
+    padding-right: 0!important;
+  }
+
+  .path-masteres-universitarios .ui-dialog.ui-dialog-off-canvas{
+    border: 0;
+    width: 80%!important;
+    /*position: fixed;
+    width: 80%!important;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;*/
+    background: none;
+    z-index: 5000;
+    font-family: var(--font);
+  }
+
+  .path-masteres-universitarios .ui-dialog article{
+      max-width: 940px;
+      margin: 0 auto;
+      margin-top: 80px;
+  }
+
+  .path-masteres-universitarios .ui-dialog article .node__content{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .path-masteres-universitarios .ui-dialog article fieldset{
+    width: 40%;
+  }
+
+  .path-masteres-universitarios .ui-dialog article .field--name-body{
+    width: 60%
+  }
+
+  .path-masteres-universitarios .ui-dialog.ui-dialog-off-canvas .ui-dialog-title{
+    font-size: 25px;
+    font-weight: bold;
+    max-width: 80%;
+    font-family: var(--font);
+  }
+
+  .path-masteres-universitarios .ui-dialog.ui-dialog-off-canvas .ui-dialog-title:before {
+      content: none;
+  }
+
+  .path-masteres-universitarios #drupal-off-canvas .contextual-links,
+  .path-masteres-universitarios #drupal-off-canvas .trigger{
+    display: none;
+  }
+
+  .path-masteres-universitarios #drupal-off-canvas {
+    color: #444;
+    background: #f4f4f4;
+    padding: 0 45px 20px;
+  }
+
+  /* eol ui-dialog */
+media: all
+preprocess: true
+conditions:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      ficha_master: ficha_master
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/masteres-universitarios\r\n/masteres-universitarios*"
+contexts: {  }
+conditions_require_all: false

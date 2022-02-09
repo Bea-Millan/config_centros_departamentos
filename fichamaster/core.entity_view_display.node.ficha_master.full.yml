@@ -1,8 +1,9 @@
-uuid: aecc903b-beca-4115-8318-7031eb09fbe1
+uuid: 9869f9c1-e408-4835-ac2f-59a09e29a0b2
 langcode: es
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.full
     - field.field.node.ficha_master.body
     - field.field.node.ficha_master.feeds_item
     - field.field.node.ficha_master.field_area_de_conocimiento
@@ -30,6 +31,7 @@ dependencies:
     - field.field.node.ficha_master.field_web_estudios
     - node.type.ficha_master
   module:
+    - field_group
     - layout_builder
     - link
     - options
@@ -39,17 +41,37 @@ third_party_settings:
   layout_builder:
     enabled: false
     allow_custom: false
-id: node.ficha_master.default
+  field_group:
+    group_destalle:
+      children:
+        - field_rama_conocimiento
+        - field_tipo_ensenanza
+        - field_centro
+        - field_creditos
+        - field_duracion
+        - field_nombre_del_coordinador
+        - field_email_del_coordinador
+      label: ''
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: fieldset
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        description: ''
+id: node.ficha_master.full
 targetEntityType: node
 bundle: ficha_master
-mode: default
+mode: full
 content:
   body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 4
+    weight: 2
     region: content
   field_centro:
     type: entity_reference_label
@@ -59,7 +81,7 @@ content:
     third_party_settings:
       ds:
         ds_limit: ''
-    weight: 3
+    weight: 4
     region: content
   field_creditos:
     type: number_decimal
@@ -101,7 +123,7 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_rrss:
     type: link
@@ -113,14 +135,14 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 11
+    weight: 5
     region: content
   field_tipo_ensenanza:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_universidades_conjuntas_:
     type: string
@@ -128,7 +150,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 10
+    weight: 4
     region: content
   field_web_estudios:
     type: link
@@ -140,7 +162,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 9
+    weight: 3
     region: content
   links:
     settings: {  }

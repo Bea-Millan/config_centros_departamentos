@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.ficha_master.field_area_de_conocimiento
+    - field.field.node.ficha_master.field_centro
     - field.field.node.ficha_master.field_centro_de_imparticion
     - field.field.node.ficha_master.field_codigo_plan_estudio
     - field.field.node.ficha_master.field_creditos
@@ -13,6 +14,7 @@ dependencies:
     - field.field.node.ficha_master.field_id_del_estudio
     - field.field.node.ficha_master.field_nombre_del_coordinador
     - field.field.node.ficha_master.field_nombre_plan_estudio
+    - field.field.node.ficha_master.field_rama_conocimiento
     - node.type.ficha_master
   module:
     - feeds_ex
@@ -64,9 +66,6 @@ parser_configuration:
     creditos_necesarios:
       value: CREDITOS_NECESARIOS
       label: CREDITOS_NECESARIOS
-    duracion:
-      value: DURACION
-      label: DURACION
     email_coord:
       value: EMAIL_COORD
       label: EMAIL_COORD
@@ -100,6 +99,9 @@ parser_configuration:
     codigo_plan_estudio:
       value: CODIGO_PLAN_ESTUDIO
       label: CODIGO_PLAN_ESTUDIO
+    duracion:
+      value: DURACION
+      label: DURACION
   context:
     value: '$.data.*'
   source_encoding:
@@ -186,13 +188,6 @@ mappings:
       language: null
     unique: {  }
   -
-    target: field_duracion
-    map:
-      value: duracion
-    settings:
-      language: null
-    unique: {  }
-  -
     target: field_email_del_coordinador
     map:
       value: email_coord
@@ -264,3 +259,27 @@ mappings:
       language: null
     unique:
       value: '1'
+  -
+    target: field_centro
+    map:
+      target_id: nombre_centro
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: '1'
+  -
+    target: field_rama_conocimiento
+    map:
+      target_id: nombre_rama_macroarea
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: field_duracion
+    map:
+      target_id: duracion
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0

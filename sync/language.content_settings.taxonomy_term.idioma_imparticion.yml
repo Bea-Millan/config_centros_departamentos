@@ -1,0 +1,11 @@
+uuid: e8f71dce-8086-4be7-81d1-1c25dd4911bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.idioma_imparticion
+id: taxonomy_term.idioma_imparticion
+target_entity_type_id: taxonomy_term
+target_bundle: idioma_imparticion
+default_langcode: site_default
+language_alterable: false

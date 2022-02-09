@@ -5,8 +5,9 @@ dependencies:
   config:
     - field.field.node.ficha_master.body
     - field.field.node.ficha_master.field_codigo_plan_estudio
-    - field.field.node.ficha_master.field_idioma
+    - field.field.node.ficha_master.field_idioma_imparticion
     - field.field.node.ficha_master.field_nombre_coloquial
+    - field.field.node.ficha_master.field_nombre_en_ingles
     - field.field.node.ficha_master.field_num_areas_conocimiento
     - field.field.node.ficha_master.field_palabras_clave
     - field.field.node.ficha_master.field_rrss
@@ -28,6 +29,25 @@ third_party_settings:
         source: rrss
         weight: 0
         label: Explode
+      3c4118a0-cbbf-4f1d-8188-c13b4a4822b4:
+        separator: ','
+        limit: null
+        uuid: 3c4118a0-cbbf-4f1d-8188-c13b4a4822b4
+        plugin: explode
+        source: idioma2
+        weight: -9
+        label: Explode
+      eba6a49c-eb21-446e-a3d4-7b43a92451d0:
+        find: ', '
+        replace: ','
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: eba6a49c-eb21-446e-a3d4-7b43a92451d0
+        plugin: find_replace
+        source: idioma2
+        weight: -10
+        label: 'Find replace'
 label: 'Master desde csv'
 id: master_desde_csv
 description: ''
@@ -108,6 +128,14 @@ custom_sources:
     value: rrss
     label: rrss
     machine_name: rrss
+  nombre_ingles:
+    value: nombre_ingles
+    label: nombre_ingles
+    machine_name: nombre_ingles
+  idioma2:
+    value: idioma
+    label: idioma
+    machine_name: idioma2
 mappings:
   -
     target: field_nombre_coloquial
@@ -145,12 +173,6 @@ mappings:
     settings:
       language: null
   -
-    target: field_idioma
-    map:
-      value: idioma
-    settings:
-      language: null
-  -
     target: field_universidades_conjuntas_
     map:
       value: universidades_conjuntas_
@@ -179,3 +201,18 @@ mappings:
       title: ''
     settings:
       language: null
+  -
+    target: field_nombre_en_ingles
+    map:
+      value: nombre_ingles
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: field_idioma_imparticion
+    map:
+      target_id: idioma2
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0

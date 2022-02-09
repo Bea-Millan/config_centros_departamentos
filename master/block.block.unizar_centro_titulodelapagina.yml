@@ -28,5 +28,6 @@ visibility:
     bundles:
       elemento_parrilla: elemento_parrilla
       estudio: estudio
+      ficha_master: ficha_master
       slideshow: slideshow
       te_interesa: te_interesa

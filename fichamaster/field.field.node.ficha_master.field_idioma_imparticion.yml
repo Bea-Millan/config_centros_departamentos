@@ -1,16 +1,16 @@
-uuid: 6b1b398d-6c09-45ae-9c24-143748f131d8
+uuid: dbbe6e5a-9819-4932-9900-c5919bf9e2cd
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_duracion
+    - field.storage.node.field_idioma_imparticion
     - node.type.ficha_master
-    - taxonomy.vocabulary.duracion
-id: node.ficha_master.field_duracion
-field_name: field_duracion
+    - taxonomy.vocabulary.idioma_imparticion
+id: node.ficha_master.field_idioma_imparticion
+field_name: field_idioma_imparticion
 entity_type: node
 bundle: ficha_master
-label: Duración
+label: Idioma
 description: ''
 required: false
 translatable: false
@@ -20,7 +20,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      duracion: duracion
+      idioma_imparticion: idioma_imparticion
     sort:
       field: name
       direction: asc

@@ -17,6 +17,9 @@ settings:
     -
       value: Semipresencial
       label: Semipresencial
+    -
+      value: Online
+      label: Online
   allowed_values_function: ''
 module: options
 locked: false
