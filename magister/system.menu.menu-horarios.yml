@@ -1,0 +1,8 @@
+uuid: c0e6ab4f-494f-4d61-8b64-e8ac553568b4
+langcode: es
+status: true
+dependencies: {  }
+id: menu-horarios
+label: Horarios
+description: 'Horarios de clases, tutorias y exámenes'
+locked: false

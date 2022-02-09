@@ -1,0 +1,8 @@
+uuid: 2de77173-96d0-4b6d-a09b-3d465bc7d52d
+langcode: es
+status: true
+dependencies: {  }
+id: menu-magisterio-en-_en
+label: 'Magisterio en Educación Primaria_en'
+description: 'bloque de menu lateral que aparecerá a la derecha en primer lugar de las páginas de Educación Primaria'
+locked: false

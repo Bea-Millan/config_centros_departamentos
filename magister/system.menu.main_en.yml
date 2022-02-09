@@ -1,0 +1,8 @@
+uuid: fb51880d-189c-42bc-9e8b-63b82b0f9bf1
+langcode: es
+status: true
+dependencies: {  }
+id: main_en
+label: 'Main menu_en'
+description: 'Menú principal, barra con menús que aparece encima de la región de contenido y barra lateral'
+locked: false

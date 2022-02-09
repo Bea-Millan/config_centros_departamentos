@@ -1,0 +1,8 @@
+uuid: b58da24d-4193-4a2a-abfc-4f592ee7ed13
+langcode: es
+status: true
+dependencies: {  }
+id: menu-calidad-dcha
+label: 'calidad dcha'
+description: ''
+locked: false

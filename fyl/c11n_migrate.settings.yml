@@ -1,6 +1,6 @@
 _core:
-  default_config_hash: 71dp1ydCOda3ZvgKhhEIZdUQixKXsQxL0imKZm1TMs0
+  default_config_hash: CgHox37L7Jl8ZClm5g0vwvnN2kh96kEq0GwT05tX25Q
 plugin:
-  url_host: sites/fyl
-  host: fyl.unizar.es
+  url_host: sites/eina
+  host: eina.unizar.es
 langcode: es

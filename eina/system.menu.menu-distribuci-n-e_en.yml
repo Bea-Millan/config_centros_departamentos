@@ -1,0 +1,8 @@
+uuid: c84a886a-7331-4d0e-a784-6c8a7ddfd4d9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-distribuci-n-e_en
+label: 'Distribución estudiantes grupos A y B_en'
+description: ''
+locked: false

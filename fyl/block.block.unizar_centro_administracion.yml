@@ -27,4 +27,5 @@ visibility:
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
+      administrator: administrator
       gestor_basico: gestor_basico
