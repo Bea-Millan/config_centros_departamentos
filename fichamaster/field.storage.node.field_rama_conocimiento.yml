@@ -1,12 +1,12 @@
-uuid: 086e8c80-d7c8-4fb7-8681-11a03e8357b2
+uuid: 6b469ca2-9209-44a5-8ef8-7252d932b8c0
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - taxonomy
-id: node.field_duracion
-field_name: field_duracion
+id: node.field_rama_conocimiento
+field_name: field_rama_conocimiento
 entity_type: node
 type: entity_reference
 settings:

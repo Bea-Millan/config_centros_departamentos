@@ -1,0 +1,11 @@
+uuid: 8916cd0b-7dbd-486f-a1f6-14d8160035c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.duracion
+id: taxonomy_term.duracion
+target_entity_type_id: taxonomy_term
+target_bundle: duracion
+default_langcode: site_default
+language_alterable: false

@@ -1,12 +1,15 @@
+langcode: es
 favicon:
-  use_default: true
+  mimetype: image/vnd.microsoft.icon
+  path: 'public://favicon.ico'
+  use_default: false
 features:
   comment_user_picture: true
   comment_user_verification: true
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://facultad_gestion_empresa.png'
+  path: 'public://logo-unizar_0.png'
   use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

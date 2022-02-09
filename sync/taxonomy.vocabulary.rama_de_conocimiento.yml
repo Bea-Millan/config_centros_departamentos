@@ -1,0 +1,8 @@
+uuid: 6ee7cef7-7e00-4558-9707-5490d885f441
+langcode: es
+status: true
+dependencies: {  }
+name: 'Rama de conocimiento'
+vid: rama_de_conocimiento
+description: ''
+weight: 0
