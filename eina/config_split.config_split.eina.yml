@@ -6,7 +6,7 @@ id: eina
 label: eina
 description: ''
 weight: 0
-folder: ../config/eina
+folder: ../config/sites/eina
 module:
   c11n_migrate: 0
 theme: {  }
