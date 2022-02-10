@@ -6,7 +6,7 @@ id: enfermeriateruel
 label: enfermeriateruel
 description: ''
 weight: 0
-folder: ../config/enfermeriateruel
+folder: ../config/sites/enfermeriateruel
 module:
   c11n_migrate: 0
 theme: {  }
