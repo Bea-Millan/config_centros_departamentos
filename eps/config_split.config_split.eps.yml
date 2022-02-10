@@ -6,7 +6,7 @@ id: eps
 label: eps
 description: ''
 weight: 0
-folder: ../config/eps
+folder: ../config/sites/eps
 module:
   c11n_migrate: 0
 theme: {  }
