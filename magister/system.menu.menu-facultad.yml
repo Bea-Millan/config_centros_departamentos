@@ -1,8 +1,0 @@
-uuid: 93f83a79-6baa-46eb-a9ac-41865f1cc850
-langcode: es
-status: true
-dependencies: {  }
-id: menu-facultad
-label: facultad
-description: ''
-locked: false

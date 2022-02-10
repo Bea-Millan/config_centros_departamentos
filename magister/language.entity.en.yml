@@ -1,9 +1,0 @@
-uuid: 40a30e87-e057-43fd-8e93-7941abc093d4
-langcode: es
-status: true
-dependencies: {  }
-id: en
-label: English
-direction: ltr
-weight: -9
-locked: false

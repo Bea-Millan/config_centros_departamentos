@@ -1,8 +1,0 @@
-uuid: 40668d27-270d-42c6-8abd-f0cb29d9ecef
-langcode: es
-status: true
-dependencies: {  }
-id: menu-master-profesorado-educacio
-label: 'Máster Profesorado Educación Física'
-description: 'bloque de menu lateral que aparecerá a la derecha en primer lugar de las páginas de Máster Profesorado'
-locked: false

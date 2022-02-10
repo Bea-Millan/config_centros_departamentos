@@ -1,8 +1,0 @@
-uuid: adf6a3b2-5ff2-4537-bd72-7deefb2dcdc5
-langcode: es
-status: true
-dependencies: {  }
-id: menu-magisterio-en-educaci-n-pri
-label: 'Magisterio en Educación Primaria'
-description: 'bloque de menu lateral que aparecerá a la derecha en primer lugar de las páginas de Educación Primaria'
-locked: false

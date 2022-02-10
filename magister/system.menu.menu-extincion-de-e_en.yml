@@ -1,8 +1,0 @@
-uuid: 1d30207b-6daf-4898-9c74-2de5e874e63a
-langcode: es
-status: true
-dependencies: {  }
-id: menu-extincion-de-e_en
-label: 'Extincion de Estudios_en'
-description: 'menú de extinción de estudios'
-locked: false
