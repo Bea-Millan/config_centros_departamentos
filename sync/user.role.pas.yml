@@ -1,9 +1,0 @@
-uuid: 5cd28dc1-5cf0-4a39-aeb4-3da235aba550
-langcode: es
-status: true
-dependencies: {  }
-id: pas
-label: PAS
-weight: 7
-is_admin: null
-permissions: {  }
