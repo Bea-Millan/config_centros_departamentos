@@ -6,7 +6,7 @@ id: magister
 label: magister
 description: ''
 weight: 0
-folder: ../config/magister
+folder: ../config/sites/magister
 module:
   c11n_migrate: 0
 theme: {  }
