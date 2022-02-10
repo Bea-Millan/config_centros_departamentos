@@ -6,7 +6,7 @@ id: derecho
 label: derecho
 description: ''
 weight: 0
-folder: ../config/derecho
+folder: ../config/sites/derecho
 module:
   c11n_migrate: 0
 theme: {  }
