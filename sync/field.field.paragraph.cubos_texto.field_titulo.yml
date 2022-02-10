@@ -1,0 +1,21 @@
+uuid: 7002a2db-10f0-4fab-a2a1-532e39947637
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.cubos_texto
+_core:
+  default_config_hash: MhT_T8XxZgz3NgU3_EVa7Lkx5iWjgmTZMCL5XfH-qWg
+id: paragraph.cubos_texto.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: cubos_texto
+label: Rótulo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

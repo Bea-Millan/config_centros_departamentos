@@ -1,0 +1,18 @@
+uuid: 5f906d91-d26a-4fdb-9211-28c3efba6128
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: jul0VJU5WUP8H7pot-Lf5EzpJ5LiJbIpB5z_nB2A_Gk
+name: imag_noticia_vista
+label: 'Imagen noticia vista'
+effects:
+  237297de-253a-4d6a-9c97-ab362da682b1:
+    uuid: 237297de-253a-4d6a-9c97-ab362da682b1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 565
+      height: 225
+      upscale: center-center
+      anchor: center-center

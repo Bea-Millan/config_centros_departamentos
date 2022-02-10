@@ -1,0 +1,206 @@
+uuid: 9baf3fe8-4c55-4693-91af-7b3ae3bb9131
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 95
+template: false
+archive: false
+id: webform_837
+title: 'Inscripción Jornada Técnica sobre reconocimiento de plántulas de malas hierbas 2020'
+description: null
+category: null
+elements: |
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI' 
+    '#description': ""
+    '#required': true
+  ocupacion:
+    '#type': textfield
+    '#title': 'Ocupación' 
+    '#description': ""
+    '#required': true
+  en_su_caso_empresa_y_cargo:
+    '#type': textfield
+    '#title': 'En su caso, empresa y cargo' 
+    '#description': ""
+  en_su_caso_estudiante_de:
+    '#type': textfield
+    '#title': 'En su caso, estudiante de' 
+    '#description': ""
+  correo_electronico:
+    '#type': textfield
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#title': 'Teléfono de contacto' 
+    '#description': ""
+    '#required': true
+  justificante_del_pago:
+    '#type': managed_file
+    '#max_filesize': '2'
+    '#file_extensions': 'gif jpg jpeg png pdf doc docx'
+    '#title': 'Justificante del pago' 
+    '#description': ""
+    '#required': true
+  necesita_factura:
+    '#type': radios
+    '#options':
+      "SÍ: 'SÍ"'
+      "NO: 'NO"'
+    '#title': '¿Necesita factura?' 
+    '#description': ""
+    '#required': true
+  en_su_caso_datos_de_facturacion:
+    '#type': textfield
+    '#title': 'En su caso, datos de facturación' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Se ha recibido correctamente su inscripción</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ccano@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Inscripciones malas hierbas'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: tfranco@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Inscripciones malas hierbas'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: jaibar@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Inscripciones malas hierbas'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

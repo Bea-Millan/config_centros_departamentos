@@ -1,0 +1,25 @@
+uuid: 575e2150-6366-4df8-82d9-78476bd82227
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.noticia
+  module:
+    - text
+_core:
+  default_config_hash: 1P0gogj5iefuhbMZbqZUgY5ZN-oiNuTY7hDT6IogRgc
+id: node.noticia.body
+field_name: body
+entity_type: node
+bundle: noticia
+label: 'Texto de la noticia'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

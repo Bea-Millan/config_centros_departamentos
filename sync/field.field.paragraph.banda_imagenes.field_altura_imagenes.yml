@@ -1,0 +1,27 @@
+uuid: 10fcf326-6299-467e-942f-f1a66754b5ac
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_altura_imagenes
+    - paragraphs.paragraphs_type.banda_imagenes
+_core:
+  default_config_hash: qZHT5Ghr0V8KxhmqxlCdaF4hX4hoiqUdNCEq6Li2v1Y
+id: paragraph.banda_imagenes.field_altura_imagenes
+field_name: field_altura_imagenes
+entity_type: paragraph
+bundle: banda_imagenes
+label: 'Altura de las imágenes'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: 100
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

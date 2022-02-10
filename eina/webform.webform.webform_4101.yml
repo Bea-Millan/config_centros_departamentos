@@ -1,0 +1,278 @@
+uuid: 7743f38f-46f5-445d-ab5c-cbf1899a3b5b
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_4101
+title: 'Clone of Tareas Teletrabajo PAS-tirar'
+description: null
+category: null
+elements: |
+  fecha_comienzo_informe:
+    '#type': date
+    '#title': 'Fecha comienzo informe' 
+    '#description': ""
+    '#required': true
+  fecha_fin_informe:
+    '#type': date
+    '#title': 'Fecha fin informe' 
+    '#description': ""
+    '#required': true
+  nip:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  numero_de_jornadas_teletrabajadas:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'Número de jornadas teletrabajadas' 
+    '#description': ""
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#states':
+      visible:
+        ':input[name="nip[111111]"]':
+          value:
+            greater: '111111'
+          
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': ""
+  correo_electronico_tutor:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico tutor' 
+    '#description': ""
+    '#states':
+      visible:
+        ':input[name="nip[111111]"]':
+          value:
+            greater: '111111'
+          
+  funciones_realizadas_durante_el_periodo:
+    '#type': checkboxes
+    '#options':
+      01_Planif_Prog_Org: 'Planificación, programación y organización de actividades.'
+      02_Informes_Estudios: 'Realización, revisión y supervisión de informes, estudios, estadísticas y documentación.'
+      03_Normas_Proced: 'Elaboración de normas internas, instrucciones de funcionamiento y procedimientos de trabajo.'
+      04_Propuestas: 'Elaboración de propuesta de reglamentos, procedimientos y normativas.'
+      05_Informar: 'Informar de normativa a unidades o áreas dependientes.'
+      06_Divulgacion: 'Elaboración de material divulgativo y de difusión e información.'
+      07_Seg_Presupuesto: 'Seguimiento del presupuesto asignado al área de su competencia.'
+      08_Atencion: 'Atención de consultas no presenciales.'
+      09_App_informaticas: 'Diseño de aplicaciones informáticas.'
+      10_ Ev_informatica: 'Evaluación de sistemas informáticos.'
+      11_Sup_Sistemas: 'Supervisión de sistemas susceptibles de realización de forma remota.'
+      12_Adap_Inf: 'Adaptación de la información al uso de las nuevas tecnologías de la información.'
+      13_Web: 'Diseño y mantenimiento de páginas web.'
+      14_Gest_Presencia: 'Seguimiento y control de sistemas de gestión de presencia.'
+      15_Actualiz: 'Actualizar la información de los diversos elementos, dispositivos y software de su competencia.'
+      16_Datos: 'Grabación de datos en aplicaciones informáticas.'
+      17_ Diseno: 'Diseño y creación de prototipos, instrumentos, componentes y herramientas de trabajo.'
+      18_Presupuestar: 'Presupuestar y realizar valoraciones económicas de trabajos para su posterior facturación.'
+    '#multiple': true
+    '#title': 'Funciones realizadas durante el periodo' 
+    '#description': "Selecciona las tareas realizadas en este periodo de tiempo"
+  otras_tareas_realizadas:
+    '#type': textarea
+    '#title': 'Otras tareas realizadas' 
+    '#description': ""
+  observaciones:
+    '#type': textarea
+    '#title': 'Observaciones' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu informe se ha recibido correctamente.</p><p>Recibirás una copia del mismo en tu correo electrónico.</p><p>No se recibirá respuesta expresa a este informe salvo que el Supervisor, contacte directamente con el trabajador para los efectos que estime oportunos.&nbsp;<br><span style="font-size: 13.008px;">En el resto de los casos, se entenderá que la resolución del Supervisor es favorable.</span></p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_tutor:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Informe teletrabajo de [webform_submission:values:fecha_comienzo_informe] a [webform_submission:values:fecha_fin_informe]
+        Correspondiente a [webform_submission:values:nombre]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Informe teletrabajo de [webform_submission:values:fecha_comienzo_informe] a [webform_submission:values:fecha_fin_informe]
+        Correspondiente a [webform_submission:values:nombre]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: glaplana@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Otra prueba'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: Prueba
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_4:
+    id: email
+    handler_id: email_4
+    label: 'Email 4'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: bea.millan@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

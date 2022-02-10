@@ -1,0 +1,10 @@
+uuid: 06fd00b3-a942-4b99-8d61-ea7e2a9ee590
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Main menu'
+description: 'Menú principal, barra con menús que aparece encima de la región de contenido y barra lateral'
+locked: true

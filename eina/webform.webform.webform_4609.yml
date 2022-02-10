@@ -1,0 +1,54 @@
+uuid: ab778367-f05f-418f-ae80-f43d86d7e6d5
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4609
+title: 'Plantación árboles 23 de noviembre'
+description: null
+category: null
+elements: |
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': "El correo electrónico debe ser de @unizar.es"
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

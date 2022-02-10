@@ -1,0 +1,76 @@
+uuid: 7734ddf6-3355-43cb-9a6c-a85f81d3ba92
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3763
+title: 'Delegados/as y Subdelegados/as Grupo 882'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        611986: 'CATALÁN SOLSONA, JUAN ANTONIO'
+        720740: 'GUILLÉN LÓPEZ, ALEJANDRO'
+        406154: 'IBARRA CHACON, PEDRO ANTONIO DE'
+        720724: 'MENGOD SIMÓN, DANIEL'
+        699088: 'PARDO CABRERA, LAURA'
+        691127: 'RAMÍREZ SÁNCHEZ, ANDRÉS'
+        717705: 'REAL RUIZ, BENJAMIN'
+        680465: 'ROYO RUBIO, CARLOS'
+        781696: 'SÁEZ BENITO HORNILLOS, ÓSCAR'
+        680290: 'SANCHEZ HERNANDEZ, ALVARO'
+        698709: 'SUELVES MUR, JORGE LUIS'
+        679770: 'TORRES HORNERO, MIGUEL'
+        701384: 'VALERO HERRERO, DIEGO VICENTE'
+        720693: 'VICENTE NOE, SAMUEL'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

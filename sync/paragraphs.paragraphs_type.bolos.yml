@@ -1,0 +1,12 @@
+uuid: 74632247-0f15-43ab-8ea5-3df34f27d3b7
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: kXtnODyKy3AlxxAB9tQRuqxtx0Mijw7kD4LERzqK0EQ
+id: bolos
+label: 'Banda bolos'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

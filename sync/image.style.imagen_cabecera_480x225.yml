@@ -1,0 +1,17 @@
+uuid: c2fc5216-8377-464a-b70b-52ae2d7b71e7
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: z6OEgzZ2XrYzrfwK5GyGR9yttr4s6vHElpFFf_EG-hk
+name: imagen_cabecera_480x225
+label: 'Imagen cabecera 480X225'
+effects:
+  6752368b-29a4-441c-8283-0240d92a3cec:
+    uuid: 6752368b-29a4-441c-8283-0240d92a3cec
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 480
+      height: 225
+      anchor: center-center

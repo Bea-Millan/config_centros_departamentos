@@ -1,0 +1,16 @@
+uuid: cf34532c-2181-4db3-a9b8-6d94a5deaadb
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_modular
+  module:
+    - user
+_core:
+  default_config_hash: vMr-LG7f4hRD5NM0Y2TTYkgRmN0LDhmQJZJ0refVPBA
+id: user_add_role_action.gestor_modular
+label: 'Añade el rol gestor modular al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_modular

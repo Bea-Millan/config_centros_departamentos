@@ -1,0 +1,22 @@
+uuid: fbd31f7f-0642-4b04-9fc6-d08de22a0322
+langcode: und
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+_core:
+  default_config_hash: 8q3DNbtqfZPDfCycB6pIdw8kIx3Cj25kzcXprVE86aE
+id: node.field_fecha_caducidad
+field_name: field_fecha_caducidad
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

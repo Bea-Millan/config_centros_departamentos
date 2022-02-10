@@ -1,0 +1,203 @@
+uuid: 84ffb87a-2ea9-4a36-a698-fdf218f17f4b
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4489
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 212'
+description: null
+category: null
+elements: |
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)' 
+    '#description': "Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      842683: 'ABAJO BERNÉ, LUCÍA'
+      778526: 'ACÍN MOYA, IXEIA'
+      816056: 'AGUIRÁN BLASCO, SABINA MARÍA'
+      770993: 'AHENKE BELTRAN, ANA VICTORIA'
+      820775: 'AÍSA VÁZQUEZ, DIEGO'
+      840070: 'ALASTRUÉ MATEO, JAVIER'
+      756803: 'ALDANA PÉREZ, DAVID'
+      696538: 'ANORO VELA, ARIADNA'
+      842907: 'AQUINO NAVALIZA, ALJEN VANFERVIN'
+      840652: 'ARCEGA PARDO, ARMANDO'
+      843473: 'ARTIGAS SALVADOR, ALBERTO'
+      844463: 'ARTIGAS SALVADOR, ÁNGEL'
+      799720: 'AVELLANAS FERRAZ, JOSÉ ADRIÁN'
+      842318: 'AZNAR TELLO, ALBERTO'
+      838944: 'BARCELONA URBANO, MARCOS'
+      838997: 'BARDAVÍO VENTURA, MARTÍN'
+      818312: 'BARÓ GRACIA, JORGE'
+      740814: 'BARRENA ALONSO, GERMÁN'
+      841105: 'BECANA MÍNGUEZ, IRENE'
+      838628: 'BESTUÉ COARASA, ÁLVARO'
+      856165: 'BIEDULSKI  , ERNEST'
+      682222: 'BLASCO CUBAS, CARLOS EDUARDO'
+      804921: 'BLASONI  , RENZO LEONARDO'
+      817038: 'BORRUEL DOMINGO, SIMÓN'
+      820922: 'BRIEVA DOMÍNGUEZ, PABLO'
+      698859: 'BUESA ESTALLO, ALFONSO'
+      759758: 'BURGOS ARDILES, DIEGO ANTONIO'
+      817055: 'BURRUECO SESÉ, PAÚL'
+      736106: 'CALVO ESTEBAN, JAVIER'
+      817890: 'CAROD LÁZARO, SAMUEL'
+      816299: 'CAUDEVILLA SÁNCHEZ, ALEJANDRO'
+      822647: 'CELIS QUINTERO, JOHN EDWIN'
+      843655: 'CHICÓN IBÁÑEZ, MARIO'
+      819782: 'CODINA GONZÁLEZ, JUAN'
+      801325: 'CORIA MARTÍNEZ, PABLO'
+      840755: 'DEL RINCÓN BERDONCES, IKER'
+      818944: 'DEL VAL TAJAHUERCE, PABLO'
+      816401: 'DÍAZ FINESTRA, PABLO'
+      847946: 'DÍAZ GARCÍA, SAMUEL ENRIQUE'
+      809144: 'ESPIGA ORTIZ, DAVID'
+      839722: 'EZQUERRA GIMENO, LUCÍA'
+      799586: 'FERNÁNDEZ ALONSO, MIGUEL'
+      815023: 'FORCÉN GARCÍA, ADRIÁN JOSÉ'
+      821193: 'FRANCIA LÓPEZ, JAIME DE'
+      816165: 'GALICIA OLIVÁN, CARLOS'
+      795408: 'GALINDO HERNÁNDEZ, DAVID'
+      818625: 'GALLEGO ROMEO, OSCAR'
+      739205: 'GAMÓN PÉREZ, ALCHER'
+      816479: 'GARCÍA LÓPEZ, JORGE'
+      853459: 'GARRIDO GIL, MANUEL'
+      850970: 'GIL ARANDA, HUMBERTO'
+      816885: 'GIMENO GIMENO, DANIEL'
+      777155: 'GIMENO LÁZARO, GABRIEL'
+      797167: 'GISTAS CUBERO, ALEJANDRO'
+      851403: 'GONZALEZ DE LA HIGUERA PEREZ, MARIO'
+      799516: 'GONZÁLEZ GUILLÉN, IGNACIO'
+      863203: 'GONZALEZ RUBIO GARCES, VALERIA KATHERINE'
+      798420: 'GUARÁS LACASTA, ALEJANDRO ROBERTO'
+      761006: 'GUERRERO BLANCO, PAOLA'
+      811009: 'HAO  , JIAYAN'
+      823813: 'HERNÁNDEZ RODRÍGUEZ, ADRIÁN'
+      798715: 'IBÁÑEZ ALLO, JORGE'
+      852545: 'JACHO YANEZ, DONOVAN MATEO'
+      824941: 'JIMENO REGUEIRA, ALEX'
+      835502: 'RAMOS DI BENEDETTO, CESAR'
+      738020: 'ROYO RUBIO, ALBERTO JOAQUÍN'
+      797908: 'ROYO RUBIO, JAVIER'
+      851628: 'SANCHO MARTINEZ, LUCIA'
+      796859: 'TRIF  , ADRIÁN GABRIEL'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

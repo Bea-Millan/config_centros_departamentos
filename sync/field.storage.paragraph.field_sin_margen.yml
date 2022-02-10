@@ -1,0 +1,20 @@
+uuid: f2f71f68-db8d-4b2c-93cb-911aa6646bfc
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: LGkKdiyleQo8EzSaHCucbuUQqr9bYoJoWorxHi0hJQY
+id: paragraph.field_sin_margen
+field_name: field_sin_margen
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

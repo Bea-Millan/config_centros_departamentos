@@ -1,0 +1,25 @@
+uuid: 85f9924c-4d67-43ec-a6d7-9e1df0d7a8b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_fondo
+    - paragraphs.paragraphs_type.texto
+_core:
+  default_config_hash: Uk4vigK1EzN6oeV9JRB9rLK4_htVYnu1XkMI5gmKRzU
+id: paragraph.texto.field_color_fondo
+field_name: field_color_fondo
+entity_type: paragraph
+bundle: texto
+label: 'Color de fondo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

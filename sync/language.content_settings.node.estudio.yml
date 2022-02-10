@@ -1,0 +1,13 @@
+uuid: 4ed0223a-de30-45ad-ac39-51fa8f994303
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estudio
+_core:
+  default_config_hash: D9-cS8cY27mHCBs1PUGHlLqgnBUHg4Zh00TbuunMEHA
+id: node.estudio
+target_entity_type_id: node
+target_bundle: estudio
+default_langcode: site_default
+language_alterable: false

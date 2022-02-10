@@ -1,0 +1,13 @@
+uuid: c4cecd12-b339-45d4-9ad2-dc01931ee2d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pestanas
+_core:
+  default_config_hash: matbuUH1I9G7QadtseZhCtRfProp-t5Hun5iTnHlGac
+id: taxonomy_term.pestanas
+target_entity_type_id: taxonomy_term
+target_bundle: pestanas
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,23 @@
+uuid: 30ccb45d-6c01-41ad-970a-c6d3f78c214c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_destino_enlace
+    - paragraphs.paragraphs_type.imagen_con_vinculo
+  module:
+    - options
+_core:
+  default_config_hash: tzm5BLsGUTPSX8bMfpAY5bUxtlPa_v85TL0oxugW5Fs
+id: paragraph.imagen_con_vinculo.field_destino_enlace
+field_name: field_destino_enlace
+entity_type: paragraph
+bundle: imagen_con_vinculo
+label: 'Destino enlace'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

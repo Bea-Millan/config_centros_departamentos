@@ -1,0 +1,218 @@
+uuid: 9c775a1e-0408-4e22-aed9-3e8906e8cb9c
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4453
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 111'
+description: null
+category: null
+elements: |
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)' 
+    '#description': "Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      825295: 'ABAURREA ECHARRI, SERGIO'
+      840637: 'ACERETE LÓPEZ, TERESA'
+      801934: 'ALQUÉZAR CLAVERÍA, MARÍA'
+      777318: 'ALZUGARAY JORDANA, EMMA'
+      840262: 'ANADÓN MARTÍN, ALBA'
+      776715: 'ANTOLIN ARRUEGO, DAVID JESÚS'
+      784482: 'ANTÓN MAQUEDA, RAQUEL'
+      841858: 'APARICIO GÓMEZ, ISABEL'
+      838859: 'ASENSIO CALVO, ALEJANDRO'
+      816527: 'ASTASIO ANDRÉS, ELVIRA'
+      758669: 'AYALA DÁVILA, ROSA MILENA'
+      820537: 'AZNAR ABAD, LUIS JAVIER'
+      815660: 'AZNAR GONZÁLEZ ARCE, MARCOS'
+      842962: 'BADENAS FERNÁNDEZ, INÉS'
+      798298: 'BALLESTEROS SUBÍAS, JORGE'
+      849800: 'BAÑARES RIAÑO, ANDREA'
+      844004: 'BARRACHINA BARLUENGA, BRUNO'
+      819262: 'BERGES SERRANO, DAVID'
+      818619: 'BERMEJO ORÓÑEZ, ANA'
+      816800: 'BERNAD GONZALVO, JUAN'
+      817961: 'BETRÁN FUERTES, AMAIA'
+      816053: 'BIELSA HERNÁNDEZ, MÓNICA'
+      839634: 'BLASCO MURILLO, DIEGO'
+      839084: 'BLASCO PINILLA, GRETA'
+      858938: 'BORGES ESTERAS, CLAUDIA'
+      800138: 'BUENO CHABUEL, LORENA'
+      820393: 'BURT OSAMBELA, HANNAH MARÍA'
+      799315: 'CALLIZO HERNÁNDEZ, CARLOS'
+      697971: 'CANAS BERNARDOS, MARTA'
+      845997: 'CARBAJAL PELOCHE, JULIETA'
+      795245: 'CASALILLA CALLEJAS, AARÓN'
+      796240: 'CASAS PINA, FRANCISCO JOSÉ'
+      852441: 'CASIMIRO AGUIRRE, PABLO'
+      844285: 'CASTEJÓN GARCÍA-AMORENA, LUIS'
+      844125: 'CENTELLAS CALAVIA, JORGE'
+      839620: 'CITORES DE TARANCO, DANTE IZAN'
+      840622: 'CLAVERÍA PUERTAS, MARÍA'
+      849062: 'CORCHERO RAMÍREZ, ISABEL'
+      826983: 'CORTÉS SÁNCHEZ, LAURA'
+      826690: 'DE GREGORIO HIDALGO, KARINA'
+      817849: 'DEL RÍO SANCHO, ALEJANDRO'
+      800140: 'DOBRAS  , MARIA NICOLINA'
+      844303: 'DOMINGO NERÍN, JOAQUÍN'
+      799576: 'DUMITRU  , IUSTINA GABRIELA'
+      796513: 'DURÁN NAVARRO, FRANCISCO JAVIER'
+      840469: 'EL ALAMI LASSERI, ISMAEL'
+      839348: 'ENGUITA SIERRA, ELSA'
+      844819: 'ESCARIO NADAL, DIEGO'
+      796519: 'ESCOLAR BORJABAD, ÁLVARO'
+      801658: 'ESPINOSA CORBACHO, LAURA'
+      775899: 'ESTREMIANA PINTANEL, LUCAS'
+      805229: 'EYANG ESONO, CRESCENCIA'
+      699898: 'EZQUERRA LONGÁS, SONIA'
+      820136: 'FANLO RUBIO, LORENA PING'
+      840527: 'FERNÁNDEZ PROVENCIO, SERGIO'
+      806831: 'FERNANDEZ ZARANDONA, IRANTZU'
+      842875: 'FOJ PÉREZ, RAÚL'
+      777088: 'FRANCÉS VILLARROYA, GUILLERMO'
+      842707: 'GARCÉS JÚDEZ, ANDREA'
+      845020: 'GARCÍA ACÍN, ALICIA'
+      830817: 'GARCÍA GIMÉNEZ, FERNANDO MIGUEL'
+      762090: 'GARCÍA LÓPEZ, LAURA'
+      818640: 'GARCÍA PASTOR, PABLO'
+      821146: 'GARRIDO MATUREN, INÉS'
+      774652: 'GASCÓN ESPAÑOL, ALEJANDRA'
+      756992: 'GAYARRE SIERRA, MARÍA DEL PILAR'
+      817112: 'GIL CALMACHE, ELENA'
+      843926: 'GIL SIMÓN, PABLO'
+      845341: 'GÓMEZ SIERRA, LUCÍA'
+      826797: 'GONZALEZ CAMPOS, REBECA'
+      842752: 'GONZALVO SAN MIGUEL, HUGO'
+      852869: 'GOÑI MACUA, RAÚL'
+      845022: 'GRACIA CORTAJARENA, UNAI'
+      846119: 'GRACIA DEL PRADO, CLAUDIA'
+      818876: 'GRAU CHAMOCHO, ELISA'
+      815065: 'HEREZA SEPÚLVEDA, JULIO ENRIQUE'
+      684848: 'HERRANDO GREGORIO, JOSE CARLOS'
+      849872: 'IBÁÑEZ GARCÍA, MARÍA'
+      780325: 'IBÁÑEZ JIMÉNEZ, MARTA'
+      815093: 'JIMÉNEZ PAZO, ANA'
+      778418: 'JÚDEZ CASAUS, NURIA DEL CARMEN'
+      839871: 'RODRIGUEZ BONED, NATALIA'
+      823620: 'SANTANA GUZMAM, OMAR'
+      839238: 'URIEL GUINDA, LUCÍA'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,25 @@
+uuid: b086b5e1-a0fd-42a3-8f39-809ebc834ab2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_mostrar_puntos
+    - paragraphs.paragraphs_type.banda_imagenes
+_core:
+  default_config_hash: TgGdrkR6IKrJgxjfLgADtdNwTH4fDdnZlPPx5b5nsKQ
+id: paragraph.banda_imagenes.field_mostrar_puntos
+field_name: field_mostrar_puntos
+entity_type: paragraph
+bundle: banda_imagenes
+label: 'Mostrar puntos'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

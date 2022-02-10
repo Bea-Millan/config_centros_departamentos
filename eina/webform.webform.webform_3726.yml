@@ -1,0 +1,170 @@
+uuid: f5a0505f-d3e3-40df-90ae-b79bd68c7586
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3726
+title: 'Delegados/as y Subdelegados/as Grupo 532'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        721524: 'GALDEANO MONTORI, DANIEL'
+        748599: 'GARCÍA ARRANZ, DAVID'
+        784162: 'GARCÍA ARRANZ, PABLO'
+        737935: 'GARCÍA ARTAL, MARIOLA PILAR'
+        702235: 'GARCÍA BARRENA, ALBA MARÍA'
+        756427: 'GARCÍA DE QUIRÓS GIMÉNEZ, PABLO'
+        718089: 'GARCIA JIMENEZ, ANDRÉS'
+        735554: 'GARCIA MATEO, GABRIEL'
+        738515: 'GARDE SANZ, UGO'
+        740204: 'GASCÓN MALANDÍA, CARLOS'
+        717047: 'GIMÉNEZ CASANOVA, ALBERT'
+        769644: 'GÓMEZ BELENGUER, JUAN ANAT'
+        788380: 'GÓMEZ DE TEJADA ESPINOSA, ANTONIO'
+        735093: 'GÓMEZ GIL, VÍCTOR JOAQUÍN'
+        310813: 'GOMEZ SAMPIETRO, DAVID'
+        702300: 'GÓMEZ SORIANO, PABLO'
+        735031: 'GÓMEZ ZALBA, DANIEL'
+        702095: 'GONZAGA RAMIRO, ALBERTO'
+        704044: 'GONZÁLEZ BAÑERES, BLANCA'
+        716818: 'GONZÁLEZ MUR, ELENA'
+        736492: 'GRACIA CALVO, BERTA'
+        774627: 'GRACIA MOLINA, VÍCTOR'
+        741289: 'GRACIA ROCHE, CÉSAR'
+        783916: 'GUARDIA GRACIA, JUAN'
+        718461: 'GUARDIA MUR, ESTER'
+        779956: 'GUERRERO ARTAJONA, VÍCTOR'
+        718716: 'GUERRERO CEBRIAN, ANA'
+        730272: 'HENCHE JACOB, FRANCISCO JAVIER'
+        752088: 'HÉRIZ HERRERA, PABLO'
+        685942: 'HERNÁNDEZ LEÓN, JUAN PEDRO'
+        776814: 'HERNÁNDEZ MEDRANO, ISMAEL'
+        720767: 'HERNÁNDEZ-MASSOTTI BENITO, JUAN'
+        755953: 'HERRANZ HIJAZO, PABLO'
+        744378: 'HERRANZ MARTÍNEZ, LIDIA'
+        772078: 'IBÁÑEZ AYORA, ADRIÁN'
+        705540: 'IBÁÑEZ JUSUÉ, JORGE'
+        406154: 'IBARRA CHACON, PEDRO ANTONIO DE'
+        717871: 'IBOR CASTEL, SERGIO'
+        757348: 'IZU SEBASTIÁN, DAVID'
+        737297: 'JARIA VILLACAMPA, ALEJANDRO'
+        747892: 'JIMENEZ GARCIA, CARLOS'
+        739695: 'JULIÁN CARPI, JAVIER'
+        774622: 'KEITA KEITA, ADAMA'
+        779906: 'LA ROSA SUÁREZ, PIERO ALONSO'
+        682132: 'LABARTA OLIVA, CÉSAR'
+        697684: 'LABORDA MENOYO, DANIEL'
+        732176: 'LACOMA MARRODÁN, MÓNICA'
+        698391: 'LADAGA MARRO, MANUEL'
+        741300: 'LAFAJA GARCÍA, EDUARDO'
+        760999: 'LAGUNAS LÁZARO, JARA'
+        706329: 'LANCINA OLIVÁN, TOMÁS'
+        739187: 'LARROSA FLORIA, ANDREA'
+        721394: 'LASALA VIDAL, PAULA'
+        736056: 'LASHERAS HERNÁNDEZ, BLANCA'
+        780090: 'LEDO BELASCOAÍN, ALEJANDRO'
+        768782: 'LEIVA GÓMEZ, SAMUEL LEONARD'
+        717535: 'LEON DEL CARMEN, DANIEL'
+        700807: 'LEÓN LEÓN, BORJA'
+        744128: 'LERENA RUBIO, MARÍA'
+        740710: 'LEZCANO REMACHA, ÁNGEL'
+        625372: 'LOPE DÍEZ, DANIEL'
+        735126: 'LÓPEZ BLASCO, IVÁN'
+        759433: 'LÓPEZ CIMORRA, SERGIO'
+        758968: 'LÓPEZ ESTÉVEZ, DAURY JAVIER'
+        757520: 'LÓPEZ LEZCANO, CARLOS'
+        755560: 'LÓPEZ MARÍN, JUAN PABLO'
+        715791: 'LOPEZ USED, JORGE'
+        701084: 'LOPEZ-CORONADO DOMINGO, PATRICIA'
+        742997: 'LORENTE ANDRÉS, RICARDO'
+        779356: 'LORENTE CORTÉS, SERGIO'
+        779548: 'LORENZO PALLARÉS, LUCÍA'
+        778181: 'LUCIENTES ALCONCHEL, LUIS CARLOS'
+        776623: 'LUNA SORBED, JAVIER'
+        716311: 'MACHÍN VIVES, JUAN'
+        719977: 'MAICAS ANDRÉS, RAÚL'
+        721501: 'MALLÉN LARDIÉS, ALEJANDRO'
+        702740: 'MARCO ALDEA, MARIO'
+        775648: 'MARCO COLLADO, LUIS'
+        737793: 'MARCO RIVED, JORGE'
+        701296: 'MARCOS COUTO, EDUARDO NICOLAS'
+        761396: 'MARGELÍ ESPALLARGAS, MARÍA'
+        778634: 'MARTÍNEZ ANGOY, RUBÉN'
+        702616: 'MARTÍNEZ CRESPO, SERGIO'
+        768998: 'MARTÍNEZ DE MARCOS, GONZALO'
+        727987: 'MARTÍNEZ GURRÍA, MARCOS'
+        767394: 'MARTÍNEZ MONTES, LUIS MIGUEL'
+        675844: 'MARTINEZ NAVARRO, ANDRES'
+        740170: 'MARTÍNEZ RUIZ, DANIEL'
+        587769: 'MATEO GALLEGO, JESÚS ANGEL'
+        662301: 'MATEO GARCIA, IVAN'
+        696951: 'MATEO PUEYO, JORGE'
+        716912: 'MAYA FRAILE, SERGIO'
+        696986: 'MEDIEL AZNAR, PAOLO'
+        716902: 'MIGUEL LASO, DIEGO'
+        614581: 'MIGUEL RUIZ, DAVID'
+        701310: 'MILLÁN ARANDA, GABRIEL'
+        774220: 'MIRALLAS GOMEZ, ALEJANDRO'
+        755121: 'MIRANDA MONTORI, DANIEL'
+        760356: 'MONCLÚS RUBIO, ISMAEL'
+        774618: 'MONGE BRANDI, ÁLVARO'
+        779249: 'MONTANER NEFFAR, GABRIEL'
+        755757: 'MONTERDE LÓPEZ, MIGUEL'
+        755923: 'MORALES LORAS, SERGIO'
+        791070: 'MORAO SANTOS, MARIANA'
+        612622: 'MORENO ARGÜELLES, VÍCTOR'
+        715404: 'MORENO LOZANO, CARLOS'
+        779343: 'MORENO MARCÉN, PATRICIA'
+        722123: 'MORTE MORTE, JUAN'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

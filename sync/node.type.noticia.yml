@@ -1,0 +1,20 @@
+uuid: 66d091ee-1101-4783-885e-b19f41dcc496
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: g4FK3hXBuvOsTTD02kC2AySKCzZplY4uCd6zldmGf88
+name: Noticia
+type: noticia
+description: 'Noticias, actualidad o actividades del centro'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

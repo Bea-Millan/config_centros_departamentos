@@ -1,0 +1,68 @@
+uuid: d1ae5f9f-6f0a-4331-9b72-85b1da81fe27
+langcode: es
+status: true
+dependencies:
+  module:
+    - shortcode
+_core:
+  default_config_hash: MtfizTwKhCqPubmDAfHfqC-HlgXoRnuVP-OLmMT6yII
+name: 'Filtered HTML'
+format: filtered_html
+weight: 0
+filters:
+  filter_autop:
+    id: filter_autop
+    provider: filter
+    status: true
+    weight: 2
+    settings: {  }
+  filter_htmlcorrector:
+    id: filter_htmlcorrector
+    provider: filter
+    status: true
+    weight: 10
+    settings: {  }
+  filter_url:
+    id: filter_url
+    provider: filter
+    status: true
+    weight: 0
+    settings:
+      filter_url_length: 72
+  filter_html:
+    id: filter_html
+    provider: filter
+    status: false
+    weight: -10
+    settings:
+      allowed_html: '<a href hreflang> <em> <strong> <cite> <blockquote cite> <code> <ul type> <ol start type> <li> <dl> <dt> <dd> <h2 id> <h3 id> <h4 id> <h5 id> <h6 id> <img src alt data-entity-type data-entity-uuid data-align data-caption> <table> <caption> <tbody> <thead> <tfoot> <th> <td> <tr>'
+      filter_html_help: true
+      filter_html_nofollow: false
+  shortcode:
+    id: shortcode
+    provider: shortcode
+    status: true
+    weight: 0
+    settings:
+      msg_advertencia: '1'
+      direccion: '1'
+      msg_triste: '1'
+      accordion: '1'
+      msg_leer: '1'
+      msg_destacado: '1'
+      msg_correcto: '1'
+      msg_contento: '1'
+      msg_incorrecto: '1'
+      accordions: '1'
+  shortcode_corrector:
+    id: shortcode_corrector
+    provider: shortcode
+    status: true
+    weight: 0
+    settings: {  }
+  filter_align:
+    id: filter_align
+    provider: filter
+    status: true
+    weight: 0
+    settings: {  }

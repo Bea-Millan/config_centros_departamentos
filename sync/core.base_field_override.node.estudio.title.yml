@@ -1,0 +1,23 @@
+uuid: e0056608-0a14-4f6b-a034-f1206022db26
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.estudio
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: hAPMjjfrIPULRqzTgUD-m_wJp4339dtfopEIK_u-pRQ
+id: node.estudio.title
+field_name: title
+entity_type: node
+bundle: estudio
+label: 'Nombre del estudio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

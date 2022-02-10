@@ -1,0 +1,23 @@
+uuid: fd1e13cf-38a5-4ab1-9675-8a04ff446179
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_composicion
+    - paragraphs.paragraphs_type.cubos
+  module:
+    - options
+_core:
+  default_config_hash: v31LDQvXPdDpG6KqSWx8O6jmPPt-BHmvKqnFdfoiH7A
+id: paragraph.cubos.field_composicion
+field_name: field_composicion
+entity_type: paragraph
+bundle: cubos
+label: Composición
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

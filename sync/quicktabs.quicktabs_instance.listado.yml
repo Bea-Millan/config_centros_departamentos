@@ -1,0 +1,65 @@
+uuid: f8e3839d-7ed0-46cd-bd92-ab2a8cd8363e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: bee413URPSybXBMPNFrUr8_6vDvF2IRYslk2N6atfO0
+id: listado
+label: Listado
+renderer: quick_tabs
+options:
+  accordion_tabs:
+    jquery_ui:
+      collapsible: false
+      heightStyle: auto
+  quick_tabs:
+    ajax: false
+hide_empty_tabs: false
+default_tab: 0
+configuration_data:
+  -
+    title: Tab1
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'inline_block:basic'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: pestanas
+          display: block_1
+          args: '1'
+      qtabs_content:
+        options:
+          machine_name: ''
+  -
+    title: Tab2
+    weight: 0
+    type: view_content
+    content:
+      block_content:
+        options:
+          bid: 'inline_block:basic'
+          block_title: ''
+          display_title: false
+      node_content:
+        options:
+          nid: ''
+          view_mode: full
+          hide_title: true
+      view_content:
+        options:
+          vid: pestanas
+          display: block_1
+          args: '2'
+      qtabs_content:
+        options:
+          machine_name: ''

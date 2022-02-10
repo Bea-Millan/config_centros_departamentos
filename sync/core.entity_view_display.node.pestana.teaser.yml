@@ -1,0 +1,28 @@
+uuid: a1bcf1b9-727a-49fd-a79e-a33ceba42047
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pestana.field_configuracion_pestana
+    - field.field.node.pestana.field_enlace_a_la_informacion
+    - node.type.pestana
+  module:
+    - user
+_core:
+  default_config_hash: VOwf1cx79bBoX_hVaI4IaewlM2RKR2bcNmDbaKPL-gM
+id: node.pestana.teaser
+targetEntityType: node
+bundle: pestana
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_configuracion_pestana: true
+  field_enlace_a_la_informacion: true
+  langcode: true

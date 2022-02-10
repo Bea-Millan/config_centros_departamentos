@@ -1,0 +1,31 @@
+uuid: 9be3e0e5-1a66-4cd6-956f-58e7925f656c
+langcode: es
+status: true
+dependencies:
+  config:
+    - image.style.img_cab_pag_basica_460x225
+    - image.style.img_cab_pag_basica_765x245
+  module:
+    - unizar_tipos_contenidos_basicos
+_core:
+  default_config_hash: N9rT6WFIksWkJalwBXf9UlCGyBEkSWw82NBTy564YjY
+id: img_cabecera_pagina_basica_adaptable
+label: 'Img cabecera página básica adaptable'
+image_style_mappings:
+  -
+    breakpoint_id: unizar_tipos_contenidos_basicos.wide
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: img_cab_pag_basica_765x245
+  -
+    breakpoint_id: unizar_tipos_contenidos_basicos.narrow
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: img_cab_pag_basica_765x245
+  -
+    breakpoint_id: unizar_tipos_contenidos_basicos.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: img_cab_pag_basica_460x225
+breakpoint_group: unizar_tipos_contenidos_basicos
+fallback_image_style: img_cab_pag_basica_765x245

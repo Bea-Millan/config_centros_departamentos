@@ -1,0 +1,12 @@
+uuid: 29ef606c-7a8f-42d7-b85b-6280d6c613d3
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4PBct-RNhS8k2-nScNbWyC0dLxHK1c_HN7zhuFQKQGE
+id: imanen_popup
+label: 'Imagen popup'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: 814b1d3b-4d85-4b2d-bffd-549382fd91c0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_bolo
+    - paragraphs.paragraphs_type.cubos_texto
+  module:
+    - link
+_core:
+  default_config_hash: ZI8b_PrVj92emdxniMVx6BfMlwjkZKhkCMUJbr_6Qj0
+id: paragraph.cubos_texto.field_enlace_bolo
+field_name: field_enlace_bolo
+entity_type: paragraph
+bundle: cubos_texto
+label: Enlace
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

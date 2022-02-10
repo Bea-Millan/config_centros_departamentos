@@ -1,0 +1,197 @@
+uuid: e05f0f02-81f4-40e3-b3be-174db4726e32
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3477
+title: 'Adenda a Guía Docente Asignatura 2019-2020'
+description: null
+category: null
+elements: |
+  nombre_profesor:
+    '#type': textfield
+    '#title': 'Nombre del profesor responsable de la guía docente' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico' 
+    '#description': ""
+    '#required': true
+  titulacion_en_la_que_se_imparte_la_asignatura:
+    '#type': select
+    '#options':
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+      MArquitectura: 'Máster Universitario en Arquitectura'
+      MRenovables: 'Máster Universitario en Energías Renovables y Eficiencia Energética'
+      MBiomedica: 'Máster Universitario en Ingeniería Biomédica'
+      MDiseno: 'Máster Universitario en Ingeniería de Diseño de Producto'
+      MTelecomunicacion: 'Máster Universitario en Ingeniería de Telecomunicación'
+      MElectronica: 'Máster Universitario en Ingeniería Electrónica'
+      MIndustrial: 'Máster Universitario en Ingeniería Industrial'
+      MInformatica: 'Máster Universitario en Ingeniería Informática'
+      MMecanica: 'Máster Universitario en Ingeniería Mecánica'
+      MQuimica: 'Máster Universitario en Ingeniería Química'
+    '#title': 'Titulación en la que se imparte la asignatura' 
+    '#description': ""
+    '#required': true
+  coordinador:
+    '#type': textfield
+    '#title': 'Coordinador/a' 
+    '#description': ""
+    '#required': true
+  codigo_plan:
+    '#type': textfield
+    '#title': 'Código del Plan (si se desconoce, déjese en blanco)' 
+    '#description': ""
+  nombre_de_la_asignatura:
+    '#type': textfield
+    '#title': 'Nombre de la Asignatura' 
+    '#description': ""
+    '#required': true
+  codigo_de_la_asignatura:
+    '#type': textfield
+    '#title': 'Código de la Asignatura' 
+    '#description': ""
+    '#required': true
+  adaptaciones_programa:
+    '#type': textarea
+    '#title': '1. Adaptaciones en el programa (revisión y adaptación de los contenidos de la asignatura)' 
+    '#description': ""
+  adaptaciones_metodologia:
+    '#type': textarea
+    '#title': '2. Adaptaciones en la metodología docente (clases online, videos grabados, …..)' 
+    '#description': ""
+  adaptaciones_evaluacion:
+    '#type': textarea
+    '#title': '3. Adaptaciones en la evaluación' 
+    '#description': ""
+  confirmacion:
+    '#type': radios
+    '#options':
+      ConfirmadoInformacion: 'Confirmo que he informado del cambio al coordinador de área/Director de Departamento'
+    '#title_display': invisible
+    '#title': 'Confirmación' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario Modificación Guía Docente'
+      body: |+
+        Con fecha  [webform_submission:date:long], se ha recibido un formulario de Modificación de Guía Docente con los siguiente datos:
+
+        [webform_submission:values]
+
+      excluded_elements:
+        confirmacion: confirmacion
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: direina@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario Modificación Guía Docente'
+      body: |+
+        Con fecha  [webform_submission:date:long], se ha recibido un formulario de Modificación de Guía Docente con los siguiente datos:
+
+        [webform_submission:values]
+
+      excluded_elements:
+        confirmacion: confirmacion
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

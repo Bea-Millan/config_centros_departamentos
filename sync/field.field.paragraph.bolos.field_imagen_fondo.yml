@@ -1,0 +1,47 @@
+uuid: f66aea3a-0c6c-4e10-9c5e-c4948dcbc739
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_fondo
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+_core:
+  default_config_hash: OqkSCN2YUB2BCufe0SH6Rv7Rc1YfCT6zzZBbHl5kabs
+id: paragraph.bolos.field_imagen_fondo
+field_name: field_imagen_fondo
+entity_type: paragraph
+bundle: bolos
+label: 'Imagen fondo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'imagen-fondo/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

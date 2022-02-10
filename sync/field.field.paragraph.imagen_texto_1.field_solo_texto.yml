@@ -1,0 +1,23 @@
+uuid: 2349d10a-0220-4d0b-bb96-6f02a3483fa6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solo_texto
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - text
+_core:
+  default_config_hash: ciVIA9AZq-oUU-neMlEroJKK2uUGoal5UB0QbmVCgBA
+id: paragraph.imagen_texto_1.field_solo_texto
+field_name: field_solo_texto
+entity_type: paragraph
+bundle: imagen_texto_1
+label: Texto
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

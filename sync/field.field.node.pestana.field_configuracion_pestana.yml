@@ -1,0 +1,31 @@
+uuid: ac5a7d82-b80e-40bf-abc7-6c5b2044da0a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_configuracion_pestana
+    - node.type.pestana
+    - taxonomy.vocabulary.pestanas
+_core:
+  default_config_hash: 4sbwuRMJI6wFT0ixn3Gcac25bwNEA3MSJdvZz6beiKc
+id: node.pestana.field_configuracion_pestana
+field_name: field_configuracion_pestana
+entity_type: node
+bundle: pestana
+label: Configuracion_pestaña
+description: 'Si necesita añadir nuevos elementos al desplegable <a href="/admin/structure/taxonomy/manage/pestanas/overview">debe agregar nuevos términos al vocabulario "pestañas"</a>'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pestanas: pestanas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

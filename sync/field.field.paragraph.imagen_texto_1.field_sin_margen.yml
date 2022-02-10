@@ -1,0 +1,25 @@
+uuid: 06587cbb-f9fc-4a9e-bce0-49a5cb55dc70
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sin_margen
+    - paragraphs.paragraphs_type.imagen_texto_1
+_core:
+  default_config_hash: bcWycmzDqFg2mEF2Aar1Tr_CE6AgR54E38hHOrf6HfM
+id: paragraph.imagen_texto_1.field_sin_margen
+field_name: field_sin_margen
+entity_type: paragraph
+bundle: imagen_texto_1
+label: 'Sin margen'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,14 @@
+uuid: 56bdebc5-62b8-4e03-9a70-a0c110d8b848
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+_core:
+  default_config_hash: m8w92jb55DolaQEV5P_yHly6eHguFa6iHjkASX9NWa8
+id: gestor_menus
+label: 'gestor menus'
+weight: 4
+is_admin: null
+permissions:
+  - 'administer menu'

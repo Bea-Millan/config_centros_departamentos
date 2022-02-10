@@ -1,0 +1,23 @@
+uuid: eddaea07-fd36-47cc-8189-ada21f8156c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_columna_lateral
+    - node.type.webform
+  module:
+    - text
+_core:
+  default_config_hash: c6mdN4fbEl9euah_8LWQEIpocBxOqDTYRTVRuSOgZm0
+id: node.webform.field_columna_lateral
+field_name: field_columna_lateral
+entity_type: node
+bundle: webform
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,68 @@
+uuid: ccbb3ab7-a7f9-41a4-a44e-fc4df390c3b9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bolos_texto.field_colorfondo
+    - field.field.paragraph.bolos_texto.field_colortexto
+    - field.field.paragraph.bolos_texto.field_destino_enlace
+    - field.field.paragraph.bolos_texto.field_enlace_bolo
+    - field.field.paragraph.bolos_texto.field_imagen_bolo
+    - field.field.paragraph.bolos_texto.field_texto_bolo
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - link
+    - options
+    - svg_image
+_core:
+  default_config_hash: otmw7Zv02waxBE-sdA5Eh45WGNA7kK_TfgIIKwo4Hpg
+id: paragraph.bolos_texto.default
+targetEntityType: paragraph
+bundle: bolos_texto
+mode: default
+content:
+  field_colortexto:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_destino_enlace:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_enlace_bolo:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_imagen_bolo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_texto_bolo:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_colorfondo: true

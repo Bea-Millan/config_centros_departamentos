@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: kF_Nr6F0ZYVkK5IRM-yqrWEcWSTbAR5QrxD-wn5VrTk
+plugin:
+  url_host: sites/eps
+  host: eps.unizar.es
+langcode: es

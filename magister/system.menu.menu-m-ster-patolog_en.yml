@@ -1,0 +1,8 @@
+uuid: 73e68a8f-333c-44b7-92a3-5c9018b68de2
+langcode: es
+status: true
+dependencies: {  }
+id: menu-m-ster-patolog_en
+label: 'Máster Patología del Lenguaje _en'
+description: 'Menú del Máster Universitario en Estudios Avanzados sobre el Lenguaje, la Comunicación y sus Patologías'
+locked: false

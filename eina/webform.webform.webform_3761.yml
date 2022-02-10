@@ -1,0 +1,78 @@
+uuid: 41a85c82-2265-4ec7-a9e0-f39fdcd217e2
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3761
+title: 'Delegados/as y Subdelegados/as Grupo 873'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        699745: 'BEA BRAGADO, IGNACIO'
+        627147: 'BORRA LENDÍNEZ, PABLO'
+        737403: 'BRAVO MONTANER, DANIEL'
+        592809: 'ESTEBAN PERIS, ALBERTO'
+        720740: 'GUILLÉN LÓPEZ, ALEJANDRO'
+        406154: 'IBARRA CHACON, PEDRO ANTONIO DE'
+        736675: 'LAHOZ HORMIGOS, JOSÉ MIGUEL'
+        699088: 'PARDO CABRERA, LAURA'
+        715948: 'PÉREZ GORRIZ, FRANCISCO JAVIER'
+        627288: 'PÉREZ USÓN, LAURA MARÍA'
+        690816: 'PUERTO MADORRAN, ANDRES'
+        691127: 'RAMÍREZ SÁNCHEZ, ANDRÉS'
+        680465: 'ROYO RUBIO, CARLOS'
+        781696: 'SÁEZ BENITO HORNILLOS, ÓSCAR'
+        719912: 'SEDANO SÁNCHEZ, ALBERTO'
+        679770: 'TORRES HORNERO, MIGUEL'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,40 @@
+uuid: 51d2ce5d-d520-4822-be65-4e6cc7d3e6da
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_bolo
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - image
+_core:
+  default_config_hash: 3lp43FOa1Y9MsUytAGeX8LK0Tghgk_pT63O9bhIRSgQ
+id: paragraph.bolos_texto.field_imagen_bolo
+field_name: field_imagen_bolo
+entity_type: paragraph
+bundle: bolos_texto
+label: Imagen_bolo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

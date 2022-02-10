@@ -1,0 +1,12 @@
+uuid: 540787cb-f077-4c40-907a-134bd67b5532
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VahCPprfhbcexJn_GGZI7Uo6C5GAhanMMv345miuXis
+id: banda_imagenes
+label: 'Banda imágenes'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

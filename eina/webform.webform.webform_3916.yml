@@ -1,0 +1,123 @@
+uuid: c8795330-6d6d-4ba9-8cc9-b1222a088125
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3916
+title: 'Formulario Apoyo Técnico Docencia Aulas'
+description: null
+category: null
+elements: |
+  nip:
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  titulacion:
+    '#type': select
+    '#options':
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+    '#title': 'Titulación' 
+    '#description': ""
+    '#required': true
+  aula:
+    '#type': textfield
+    '#title': 'Aula' 
+    '#description': ""
+    '#required': true
+  asignatura:
+    '#type': textfield
+    '#title': 'Asignatura' 
+    '#description': ""
+    '#required': true
+  fecha:
+    '#type': date
+    '#title': 'Fecha' 
+    '#description': ""
+    '#required': true
+  hora:
+    '#type': textfield
+    '#title': 'Hora' 
+    '#description': ""
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#default_value': 'Sin Incidencias / Sugerencias' 
+    '#title': 'Observaciones' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: subesteina@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Enviado el [webform_submission:completed_date:long]
+        Datos:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

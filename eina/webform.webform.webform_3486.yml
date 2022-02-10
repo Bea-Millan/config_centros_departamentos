@@ -1,0 +1,100 @@
+uuid: 2f87d31b-e56f-4d1c-b7f7-46065780ac34
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3486
+title: 'Formulario Ayuda '
+description: null
+category: null
+elements: |
+  nip:
+    '#min': 000001
+    '#max': 999999
+    '#title': 'NIP' 
+    '#description': ""
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  apellido_1:
+    '#type': textfield
+    '#title': 'Apellido 1' 
+    '#description': ""
+    '#required': true
+  apellido_2:
+    '#type': textfield
+    '#title': 'Apellido 2' 
+    '#description': ""
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': 'Teléfono' 
+    '#description': ""
+    '#required': true
+  direccion:
+    '#type': textfield
+    '#title': 'Dirección' 
+    '#description': ""
+    '#required': true
+  poblacion:
+    '#type': textfield
+    '#title': 'Población' 
+    '#description': ""
+    '#required': true
+  cp:
+    '#max': 99999
+    '#title': 'C.P.' 
+    '#description': ""
+    '#required': true
+  descripcion_del_problema:
+    '#type': textarea
+    '#title': 'Descripción del problema' 
+    '#description': ""
+    '#required': true
+  necesitas_una_tarjeta_sim_para_router:
+    '#type': radios
+    '#options':
+      No: 'No'
+      Si: 'Sí'
+    '#title': '¿Necesitas una tarjeta SIM para router?' 
+    '#description': ""
+    '#required': true
+  necesitas_pc:
+    '#type': radios
+    '#options':
+      No: 'No'
+      Si: 'Sí'
+    '#title': '¿Necesitas un PC o portátil?' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

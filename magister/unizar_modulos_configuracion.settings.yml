@@ -1,0 +1,26 @@
+_core:
+  default_config_hash: f_Iyhv9qHhjLVGycw8_ZsNfTpCjLfJxLtupJsIoSqHM
+logo_path: 'public://centros_logos_web-24.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '202'
+nombre_centro: 'Facultad de Ciencias Humanas y de la Educación'
+dir_centro: 'Valentin Carderera 4. 22003 - Huesca'
+telefono_centro: ' 974 23 93 41'
+mail_centro: infofche@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '3165'
+imagen_segundas: '3166'
+facebook: 'https://www.facebook.com/HuescaFCHE/'
+twitter: 'https://twitter.com/HuescaFCHE'
+youtube: ''
+linkedin: ''
+instagram: ''
+soundcloud: ''
+meta_desc: 'Universidad de Zaragoza, Facultad de Ciencias Humanas y de la Educación, estudios de Magisterio y Máster'
+langcode: es

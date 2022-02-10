@@ -1,0 +1,43 @@
+uuid: c37ed3c0-9b7a-4e03-83a6-5a245c505669
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagen_estudio
+    - taxonomy.vocabulary.tipos_de_estudio
+  module:
+    - image
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: S2ZeOtupJO7Gov6b9htsQsidtwtcB7rspqfdt8F1F8o
+id: taxonomy_term.tipos_de_estudio.field_imagen_estudio
+field_name: field_imagen_estudio
+entity_type: taxonomy_term
+bundle: tipos_de_estudio
+label: 'Imagen estudio'
+description: 'Imagen que aparecerá al lado del listado de estudios asociados'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: img/estudio
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

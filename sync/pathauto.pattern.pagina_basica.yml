@@ -1,0 +1,24 @@
+uuid: 23223a2d-ad15-4ab7-b4e3-bf2509d174c4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: 8pBtCvi2yaq1cWFMSQcbJyJ0iWGrHmvHJ8AH4K4r4Lg
+id: pagina_basica
+label: 'Página básica'
+type: 'canonical_entities:node'
+pattern: '[node:field_seccion]/[node:title]'
+selection_criteria:
+  5bdbd8e9-e31e-44f8-900f-0e495cd706e9:
+    id: node_type
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 5bdbd8e9-e31e-44f8-900f-0e495cd706e9
+selection_logic: and
+weight: -5
+relationships: {  }

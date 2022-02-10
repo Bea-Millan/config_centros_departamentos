@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: 8KiWGynzEvhiM2BSCfRa5-eKiba9t9xroma4bWBN108
+plugin:
+  url_host: sites/derecho
+  host: derecho.unizar.es
+langcode: es

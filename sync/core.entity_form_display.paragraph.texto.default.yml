@@ -1,0 +1,115 @@
+uuid: 35fc3fc5-5ecc-4bed-998d-e3b1483e33d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.texto.field_color_fondo
+    - field.field.paragraph.texto.field_colorfondo
+    - field.field.paragraph.texto.field_colortexto
+    - field.field.paragraph.texto.field_estilo_titulo
+    - field.field.paragraph.texto.field_fondo
+    - field.field.paragraph.texto.field_imagen_fondo
+    - field.field.paragraph.texto.field_imagen_modular
+    - field.field.paragraph.texto.field_justify_text
+    - field.field.paragraph.texto.field_posicion_titulo
+    - field.field.paragraph.texto.field_solo_texto
+    - field.field.paragraph.texto.field_titulo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.texto
+  module:
+    - field_group
+    - svg_image
+    - text
+third_party_settings:
+  field_group:
+    group_opciones_titulo:
+      children:
+        - field_estilo_titulo
+        - field_justify_text
+        - field_colortexto
+      parent_name: ''
+      weight: 1
+      format_type: details
+      region: content
+      format_settings:
+        show_empty_fields: false
+        id: ''
+        classes: ''
+        description: ''
+        open: false
+        required_fields: true
+        element: div
+        show_label: false
+        label_element: h3
+        label_element_classes: ''
+        effect: none
+        speed: fast
+        attributes: ''
+      label: 'Opciones título'
+_core:
+  default_config_hash: CNEfx4QS-o_H-drSbKVy-wr1Tx_nECuKVySRz5fLDu0
+id: paragraph.texto.default
+targetEntityType: paragraph
+bundle: texto
+mode: default
+content:
+  field_colorfondo:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_colortexto:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_estilo_titulo:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_fondo:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_imagen_fondo:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_justify_text:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_solo_texto:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_color_fondo: true
+  field_imagen_modular: true
+  field_posicion_titulo: true
+  status: true

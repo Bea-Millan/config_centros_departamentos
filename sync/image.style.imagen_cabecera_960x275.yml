@@ -1,0 +1,17 @@
+uuid: 9f2b731a-f8da-4134-b7ff-3c12ee731c58
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: b-sxFlnmqgX-rPVZKkGd5Cn8Zta42-QyHZqtz8czuIU
+name: imagen_cabecera_960x275
+label: 'Imagen cabecera 960X275'
+effects:
+  6752368b-29a4-441c-8283-0240d92a3cec:
+    uuid: 6752368b-29a4-441c-8283-0240d92a3cec
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 960
+      height: 275
+      anchor: center-center

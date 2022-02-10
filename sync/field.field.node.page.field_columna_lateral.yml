@@ -1,0 +1,23 @@
+uuid: 1c48e819-e35d-453e-b092-dd3585eb731d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_columna_lateral
+    - node.type.page
+  module:
+    - text
+_core:
+  default_config_hash: Zp2bas1D80ccP7QN9e1XRH34THuYHxvOsnL6UUzPzYc
+id: node.page.field_columna_lateral
+field_name: field_columna_lateral
+entity_type: node
+bundle: page
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

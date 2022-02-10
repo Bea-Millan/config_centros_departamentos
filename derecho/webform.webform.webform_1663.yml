@@ -1,0 +1,159 @@
+uuid: c6a5baae-da7d-46eb-bdfa-44ebb1b22a43
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 179
+template: false
+archive: false
+id: webform_1663
+title: 'Cita previa Secretaría Facultad de Derecho'
+description: null
+category: null
+elements: |
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'DATOS DEL SOLICITANTE' 
+    '#description': ""
+    nombre_1:
+      '#type': textfield
+      '#title': 'Nombre' 
+      '#description': ""
+      '#required': true
+    primer_apellido_1:
+      '#type': textfield
+      '#title': 'Primer apellido' 
+      '#description': ""
+      '#required': true
+    segundo_apellido_1:
+      '#type': textfield
+      '#title': 'Segundo apellido' 
+      '#description': ""
+      '#required': true
+    tipo_de_documentacion_1:
+      '#type': select
+      '#options':
+        1: 'DNI'
+        2: 'NIE'
+        3: 'Pasaporte'
+        4: 'OTROS  (carta de identidad u otro documento...)'
+      '#title': 'Tipo de documento' 
+      '#description': ""
+      '#required': true
+    no_de_documento_1:
+      '#type': textfield
+      '#title': 'Nº de documento' 
+      '#description': ""
+      '#required': true
+    nip_1:
+      '#title': 'NIP' 
+      '#description': ""
+      '#required': true
+    correo_electronico_1:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico' 
+      '#description': ""
+      '#required': true
+    telefono_de_contacto_1:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': false
+      '#title': 'Teléfono de contacto' 
+      '#description': ""
+      '#required': true
+    tipo_de_usuario_1:
+      '#type': radios
+      '#options':
+        1: 'Estudiante'
+        2: 'PDI'
+      '#title': 'Tipo de usuario' 
+      '#description': ""
+      '#required': true
+  fieldset_datos_de_la_cita:
+    '#type': fieldset
+    '#open': true
+    '#title': 'DATOS DE LA CITA' 
+    '#description': ""
+    fecha_11:
+      '#type': date
+      '#title': 'Fecha' 
+      '#description': ""
+      '#required': true
+    hora_11:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora' 
+      '#description': ""
+      '#required': true
+    motivo_de_la_cita_11:
+      '#type': textarea
+      '#title': 'Motivo de la cita' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: lorenacrespo@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Cita previa Secretaría'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,24 @@
+uuid: 5dc70ace-b578-491c-9871-3711a7192e5b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: jsE-iyeBrvsI5Zjf_Bfadj8SbKKWk9HSmiWXdBHlA7U
+id: modular
+label: 'Página modular'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  3bda4eec-be36-4df5-9a53-fd7bab1cdce5:
+    id: node_type
+    bundles:
+      pagina_modular: pagina_modular
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 3bda4eec-be36-4df5-9a53-fd7bab1cdce5
+selection_logic: and
+weight: -5
+relationships: {  }

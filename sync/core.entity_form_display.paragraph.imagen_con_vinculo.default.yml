@@ -1,0 +1,45 @@
+uuid: 3e25d299-9519-4e29-94c4-6053e7a0d742
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_con_vinculo.field_destino_enlace
+    - field.field.paragraph.imagen_con_vinculo.field_enlace_bolo
+    - field.field.paragraph.imagen_con_vinculo.field_imagen_bolo
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.imagen_con_vinculo
+  module:
+    - link
+    - svg_image
+_core:
+  default_config_hash: OcWrGQArDCRxJ7dMxaHdHlNHO9SW7aXuwETKlfot814
+id: paragraph.imagen_con_vinculo.default
+targetEntityType: paragraph
+bundle: imagen_con_vinculo
+mode: default
+content:
+  field_destino_enlace:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_enlace_bolo:
+    weight: 1
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_imagen_bolo:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+hidden:
+  created: true
+  status: true

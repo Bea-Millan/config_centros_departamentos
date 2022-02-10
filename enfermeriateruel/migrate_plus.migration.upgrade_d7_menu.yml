@@ -1,0 +1,44 @@
+uuid: 7dc9c4e5-c613-4cea-80f6-ce3ac2f30238
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: N52HpDQ9FDOrid64kWu95JUQWy6l0yH8SqLFpNGw7xc
+id: upgrade_d7_menu
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+  - Configuration
+migration_group: migrate_drupal_7
+label: Menus
+source:
+  plugin: menu
+process:
+  id:
+    -
+      plugin: static_map
+      bypass: true
+      source: menu_name
+      map:
+        main-menu: main
+        management: admin
+        navigation: tools
+        user-menu: account
+  label:
+    -
+      plugin: get
+      source: title
+  description:
+    -
+      plugin: get
+      source: description
+destination:
+  plugin: 'entity:menu'
+migration_dependencies:
+  required: {  }
+  optional: {  }

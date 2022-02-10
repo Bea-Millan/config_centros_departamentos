@@ -1,0 +1,35 @@
+uuid: 459067fd-b89c-4753-b025-def843ddaeca
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: k8XHwRTs2nMN4jj0--EXRnRCcW-JoBOXk-rEpdZnP8c
+id: paragraph.field_num_bloques
+field_name: field_num_bloques
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: '1 bloque'
+    -
+      value: '2'
+      label: '2 bloques'
+    -
+      value: '3'
+      label: '3 bloques'
+    -
+      value: '4'
+      label: '4 bloques'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

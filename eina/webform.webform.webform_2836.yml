@@ -1,0 +1,59 @@
+uuid: 771cc5d4-b051-4bf3-b9cb-27753984ac8a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_2836
+title: 'Valoración de la atención recibida en secretaría'
+description: null
+category: null
+elements: |
+  valoracion_opciones_seleccion:
+    '#type': radios
+    '#options':
+      Excelente: '<img src="https://eina.unizar.es/sites/eina.unizar.es/files/webform/satisfaccion/ico120exc.png?s9880d1556866435" width="115" height="115"/>'
+      Buena: '<img src="https://eina.unizar.es/sites/eina.unizar.es/files/webform/satisfaccion/ico120bie.png?s10576d1556866435" width="115" height="115"/>'
+      OK: '<img src="https://eina.unizar.es/sites/eina.unizar.es/files/webform/satisfaccion/ico120nor.png?s10229d1556866435" width="115" height="115"/>'
+      Mala: '<img src="https://eina.unizar.es/sites/eina.unizar.es/files/webform/satisfaccion/ico120mal.png?s9621d1556866435" width="115" height="115"/>'
+    '#title_display': invisible
+    '#title': '.' 
+    '#description': ""
+  gracias:
+    '#type': textarea
+    '#default_value': 'Por favor, pulse el botón ENVIAR y su respuesta quedará registrada en 3 segundos.\nMuchas gracias por la respuesta. Nos ayuda a mejorar' 
+    '#title_display': invisible
+    '#title': 'Gracias' 
+    '#description': ""
+    '#states':
+      visible:
+        ':input[name="valoracion_opciones_seleccion"]':
+          filled: false
+          
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: 'ENVIAR VALORACIÓN'
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

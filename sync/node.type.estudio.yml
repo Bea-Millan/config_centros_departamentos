@@ -1,0 +1,23 @@
+uuid: 9c5734ce-caae-4368-9c47-6f8e9952ecad
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_estudios
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+    available_menus:
+      - main
+_core:
+  default_config_hash: _buWl1HMN1ajva3Om5it4HE1_FzUOjdPHf-qwjBvYv0
+name: Estudio
+type: estudio
+description: "Tipo de contenido con el que se completará el bloque \"Estudios\". Puede ofrecer información precargada de los estudios asociados a cada centro a si se lanza la importación desde import/estudios\r\nLa información importada es la que aparece en el sitio estudios.unizar.es"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

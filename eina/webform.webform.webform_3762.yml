@@ -1,0 +1,161 @@
+uuid: ca5d23c7-94ab-4f2f-835d-d0c3d4412dbd
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3762
+title: 'Delegados/as y Subdelegados/as Grupo 881'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        750861: 'AMBROSIO CORREA, ALEJANDRO'
+        630624: 'ANDREU SANCHO, ALBERTO'
+        718148: 'ARANDA RODRÍGUEZ, PABLO DAVID'
+        622974: 'ARCEIZ ARBONIÉS, JUAN'
+        555728: 'ARIZA ORQUÍN, DANIEL'
+        717031: 'ARRAZOLA PUERTA, ELENA'
+        718481: 'ASIN MARZO, SANTIAGO'
+        706183: 'BAILO SANCHEZ, IÑAKI'
+        717023: 'BELLOT VIÑAS, PEDRO'
+        718900: 'BERNAD LANA, NICOLÁS'
+        717684: 'BERNAD PÉREZ, JOSÉ ÁNGEL'
+        699723: 'BERNAD QUÍLEZ, BEATRIZ ARACELI'
+        721324: 'BIELSA BARRABÉS, JOSÉ'
+        718608: 'BORQUE NAVARRO, JULIAN'
+        824180: 'CABANEL  , MARTIN'
+        699840: 'CABRERA ABAD, SERGIO'
+        719712: 'CARMEN BUIL, RAÚL'
+        717010: 'CARNICER SALVO, ANTONIO'
+        701447: 'CASAS AGUIRRE, SILVIA PILAR'
+        718433: 'CATIVIELA DOMINGO, BEATRIZ'
+        719809: 'CEBOLLADA SERRANO, JORGE'
+        181870: 'CHAMARRO PELLEJERO, PEDRO'
+        704724: 'CIGUDOSA ANTOÑANZAS, JUAN'
+        657486: 'CIRAUQUI VILORIA, IÑIGO'
+        679740: 'DELGADO ALMAJANO, JORGE'
+        718621: 'DURO NARVION, JORGE'
+        592809: 'ESTEBAN PERIS, ALBERTO'
+        527119: 'FARINA GARCÍA, GUILLERMO Mª'
+        704711: 'FERNÁNDEZ DOMÍNGUEZ, JAVIER'
+        699734: 'FORMIGO BLASCO, LUCÍA'
+        717947: 'FRANCO CABELLO, PABLO'
+        716191: 'GARCÍA GONZALVO, MANUEL'
+        705710: 'GIL GIL, LUIS'
+        719890: 'GIL PÉREZ, DANIEL'
+        700872: 'GIMÉNEZ ROTA, GUILLERMO'
+        650458: 'GINÉS COSÍN, SERGIO'
+        683735: 'GÓMEZ LUENGO, VIRGINIA'
+        702464: 'GONZÁLEZ CALVO, GUILLERMO'
+        698079: 'GONZÁLEZ GAMBAU, PABLO'
+        738980: 'GRACIA CADARSO, MARCOS'
+        716688: 'GRACIA ROMERO, JOSE ANTONIO'
+        718904: 'GREGORIO ELIZALDE, DIEGO DE'
+        717944: 'GRIMA MONTESA, FERNANDO'
+        720740: 'GUILLÉN LÓPEZ, ALEJANDRO'
+        705565: 'GUTIÉRREZ VIVARACHO, SONIA'
+        698175: 'HEREDIA LACASA, ALFONSO LUIS'
+        697172: 'HERNANDEZ IRANZO, ADRIÁN'
+        702493: 'HERNÁNDEZ SANZ, ANA'
+        684211: 'HÖRNDLER GIL, MARTÍN TEODORO'
+        698333: 'LABARÍAS QUÍLEZ, ALEJANDRO'
+        719376: 'LECHÓN MOLLAT, JUAN FERNANDO'
+        697071: 'LÓPEZ FANLO, ADRIÁN'
+        719032: 'MACARRILLA BASTIDA, JAVIER'
+        719368: 'MARTÍNEZ ROMERO, MARÍA DEL PILAR'
+        715757: 'MASIP CUENCA, PABLO'
+        720724: 'MENGOD SIMÓN, DANIEL'
+        541868: 'MIÑANO GUILLÓ, MARIO'
+        698610: 'MONZÓN MARÍN, JORGE'
+        727585: 'MUÑOZ MORÓN, DAVID'
+        699860: 'MUÑOZ VIDAL, BEATRIZ'
+        702550: 'NAVARRO GARCÍA, MIGUEL'
+        716351: 'NOVA GUERRERO, ALEJANDRO DE'
+        722342: 'NOYA PEREIRA, AGUSTINA'
+        719101: 'ORERA ECHEVERRÍA, JAVIER'
+        699088: 'PARDO CABRERA, LAURA'
+        687850: 'PASCUAL GARCÍA, MARTA'
+        719431: 'PELLICER ZUBELDÍA, DAVID SANTIAGO'
+        722195: 'PÉREZ ALIACAR, MARINA'
+        647292: 'PÉREZ MARTIN, MARTA CRISTINA'
+        716500: 'PÉREZ SALESA, IRENE MARÍA'
+        627288: 'PÉREZ USÓN, LAURA MARÍA'
+        822739: 'PORCELLATO  , TOMMASO'
+        690816: 'PUERTO MADORRAN, ANDRES'
+        691127: 'RAMÍREZ SÁNCHEZ, ANDRÉS'
+        717705: 'REAL RUIZ, BENJAMIN'
+        699876: 'RÍO PALLARÉS, SOFÍA DEL'
+        721741: 'RIVERO GONZÁLEZ, SANTIAGO'
+        718930: 'RODRÍGUEZ CAMBRA, ÁLVARO MANUEL'
+        701492: 'SABIRON PEREZ, ENRIQUE'
+        700260: 'SALCEDO SALINAS, ELENA ISABEL'
+        650582: 'SANCHO TOVAR, JUAN'
+        727328: 'SANTOS VILLAFRANCA, MARIA'
+        717493: 'SANZ BERMEJO, FRANCISCO JAVIER'
+        824150: 'SCHÄFER  , NIKLAS'
+        726917: 'SERRANO PASTOR, ANDRÉS'
+        719950: 'SERRANO SECO, ELOY'
+        700927: 'SUBÍAS RAPÚN, JUAN'
+        698709: 'SUELVES MUR, JORGE LUIS'
+        700868: 'TAMBO GIL, LORENA'
+        716741: 'TIRADO GARÍN, JAVIER'
+        679770: 'TORRES HORNERO, MIGUEL'
+        835835: 'TRENTINI  , STEFANO'
+        701384: 'VALERO HERRERO, DIEGO VICENTE'
+        824042: 'VANGUCHT  , TOM'
+        720693: 'VICENTE NOE, SAMUEL'
+        646802: 'VILLANUEVA BERGES, DAVID'
+        698080: 'VILLARES MALDONADO, JAIME'
+        683475: 'YUS OLMEDA, SERGIO'
+        719381: 'ZALDÍVAR JIMÉNEZ, CRISTINA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

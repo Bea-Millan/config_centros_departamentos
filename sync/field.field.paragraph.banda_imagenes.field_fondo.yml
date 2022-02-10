@@ -1,0 +1,23 @@
+uuid: 41425283-329e-4c8e-af1f-3757367a6ee1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fondo
+    - paragraphs.paragraphs_type.banda_imagenes
+  module:
+    - options
+_core:
+  default_config_hash: 6G5f0GRtMrD7ND7EKtN4BAvswRmaQiry9e5qZ_qLric
+id: paragraph.banda_imagenes.field_fondo
+field_name: field_fondo
+entity_type: paragraph
+bundle: banda_imagenes
+label: Fondo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

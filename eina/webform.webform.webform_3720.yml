@@ -1,0 +1,86 @@
+uuid: 13a65d92-b2fc-4b08-be21-21de34d81622
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3720
+title: 'Delegados/as y Subdelegados/as Grupo 515'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        741093: 'ANDREU SERRANO, NOÉ'
+        718384: 'ARGUEDAS CORTÉS, SILVIA'
+        756887: 'AVENTIN AGUEDA, ELIAS'
+        799290: 'BETRAN HERNANDO, DANIEL'
+        771730: 'CAROT PORCAR, MARIA'
+        756622: 'CEBRIAN URUEÑA, ÁLVARO'
+        764379: 'DE MIGUEL RODRIGUEZ, ALVARO'
+        794008: 'FERRER MARTÍNEZ, ADRIÁN'
+        757890: 'HERNÁNDEZ LORENTE, ANDRÉS PASCUAL'
+        774925: 'LAGRANJA SUPERVIA, CARMEN'
+        715791: 'LOPEZ USED, JORGE'
+        757001: 'MACÍA GALLEL, ANDRÉS'
+        775648: 'MARCO COLLADO, LUIS'
+        776809: 'MARÍN GRACIA, PEDRO ALFONSO'
+        784953: 'NAVARRO LÓPEZ, BEATRIZ'
+        794992: 'PARDO TAPIA, SERGIO'
+        739687: 'PEIRÓN ARA, ÁLVARO'
+        761358: 'PUENTE GÓMEZ, ÁLVARO'
+        774748: 'RAMON DUO, CARLOS'
+        655201: 'RODRÍGUEZ CHÁVEZ, HÉCTOR DAVID'
+        776101: 'ROYO ESTEVE, FRANCISCO JAVIER'
+        696955: 'SIERRA CORTÉS, ÁLVARO'
+        779065: 'SISAMÓN PERAL, SERGIO'
+        779646: 'VICIÉN BECERRA, SANDRA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

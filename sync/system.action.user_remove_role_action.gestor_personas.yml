@@ -1,0 +1,16 @@
+uuid: d37df873-ebcb-4303-9657-2108e73d8cd1
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_personas
+  module:
+    - user
+_core:
+  default_config_hash: vrmo0c0rYMiBskDZptIjkRz0SRpRl4AEQACza8laH3A
+id: user_remove_role_action.gestor_personas
+label: 'Remove the gestor personas role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_personas

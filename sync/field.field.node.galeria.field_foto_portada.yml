@@ -1,0 +1,40 @@
+uuid: d0c09c47-7d0b-4dca-b52f-278f5311ad05
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_foto_portada
+    - node.type.galeria
+  module:
+    - image
+_core:
+  default_config_hash: jqMu5znsHyN7WI5wQ800wmhvlttPNzLnbyLjbAM_GvQ
+id: node.galeria.field_foto_portada
+field_name: field_foto_portada
+entity_type: node
+bundle: galeria
+label: 'Foto portada'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'img/galerias/[current-page:title]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  title_field: true
+  default_image:
+    alt: ''
+    title: ''
+    width: null
+    height: null
+    uuid: ''
+  alt_field_required: true
+  title_field_required: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

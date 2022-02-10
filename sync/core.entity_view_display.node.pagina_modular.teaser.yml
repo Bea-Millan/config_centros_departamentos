@@ -1,0 +1,30 @@
+uuid: f8e4335e-351e-448d-85b6-6bf5ad538108
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_modular.field_color_principal
+    - field.field.node.pagina_modular.field_color_secundario
+    - field.field.node.pagina_modular.field_modular
+    - node.type.pagina_modular
+  module:
+    - user
+_core:
+  default_config_hash: tiWjw58Fm96g_R9RYEdRRLQj3B8MKOzRxG-NFwP4BoA
+id: node.pagina_modular.teaser
+targetEntityType: node
+bundle: pagina_modular
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_color_principal: true
+  field_color_secundario: true
+  field_modular: true
+  langcode: true

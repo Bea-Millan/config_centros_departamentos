@@ -1,0 +1,20 @@
+uuid: 9228a927-68fd-448e-8bbe-7921dfe5667f
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main:'
+    available_menus:
+      - main
+_core:
+  default_config_hash: xo1axJ-8IcOu9FL1o1X9CHqtYDDFakYmsl1dTRlf59A
+name: Galería
+type: galeria
+description: 'Tipo de contenido para crear galerías de imágenes. Las galerías de imágenes que estén publicadas serán visibles en la ruta /galerias-de-imagenes'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,23 @@
+uuid: 4cc7351c-1a45-4695-9a89-6aab092d9e98
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solo_texto
+    - paragraphs.paragraphs_type.bloque_solo_texto
+  module:
+    - text
+_core:
+  default_config_hash: x7KW3kpdrrp74O1w--0Djn_QKlMvbRhKArqgw5cy5UA
+id: paragraph.bloque_solo_texto.field_solo_texto
+field_name: field_solo_texto
+entity_type: paragraph
+bundle: bloque_solo_texto
+label: 'Caja texto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

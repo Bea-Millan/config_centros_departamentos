@@ -1,0 +1,25 @@
+uuid: 8f94a5e7-60a6-4203-b0bc-b8598476654c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_justify_text
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - options
+_core:
+  default_config_hash: nZGbi1ZedNQpphkFN-L_20A-t4ZccOpxKSU8T3MvOAU
+id: paragraph.bolos.field_justify_text
+field_name: field_justify_text
+entity_type: paragraph
+bundle: bolos
+label: 'Posición título'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: p-justify-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

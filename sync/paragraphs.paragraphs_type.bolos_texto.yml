@@ -1,0 +1,12 @@
+uuid: 5b461879-0ace-4644-8825-3ab693cb15ff
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JuFCEtqrdpN0XtHsyz0EB877b2X9rRygqpPVirGPo_Y
+id: bolos_texto
+label: Bolos
+icon_uuid: null
+icon_default: null
+description: 'Bolos con texto e hipervínculo'
+behavior_plugins: {  }

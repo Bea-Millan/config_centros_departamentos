@@ -1,0 +1,89 @@
+uuid: 54df8c30-cfde-403e-b04d-7bb62f8405c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bolos.field_bolos
+    - field.field.paragraph.bolos.field_borde
+    - field.field.paragraph.bolos.field_colorfondo
+    - field.field.paragraph.bolos.field_colortexto
+    - field.field.paragraph.bolos.field_estilo_titulo
+    - field.field.paragraph.bolos.field_fondo
+    - field.field.paragraph.bolos.field_imagen_fondo
+    - field.field.paragraph.bolos.field_justify_text
+    - field.field.paragraph.bolos.field_titulo
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - entity_reference_revisions
+    - options
+    - svg_image
+_core:
+  default_config_hash: DK_bjqwJhpCgBdpxHHVwccL0CE3n5hRnuotMX9yNTmA
+id: paragraph.bolos.default
+targetEntityType: paragraph
+bundle: bolos
+mode: default
+content:
+  field_bolos:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_colorfondo:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_colortexto:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_estilo_titulo:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_fondo:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_imagen_fondo:
+    weight: 11
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_justify_text:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_titulo:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_borde: true

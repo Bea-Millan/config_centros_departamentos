@@ -1,0 +1,25 @@
+uuid: d3feca5a-73ba-4758-b77d-7c9ed200a929
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlace
+    - node.type.slideshow
+  module:
+    - link
+_core:
+  default_config_hash: 7xKf48JBHj5CUZQFORvc01F1j-2H_qA0T53hEii8RK8
+id: node.slideshow.field_enlace
+field_name: field_enlace
+entity_type: node
+bundle: slideshow
+label: Enlace
+description: 'Incluir http.//'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

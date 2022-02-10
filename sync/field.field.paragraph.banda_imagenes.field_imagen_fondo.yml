@@ -1,0 +1,40 @@
+uuid: 8b7ea871-b8df-4964-b3b8-3097a48b5ffa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_fondo
+    - paragraphs.paragraphs_type.banda_imagenes
+  module:
+    - image
+_core:
+  default_config_hash: 1FOBqgXM7lxr7pxWkpJ3e1bpt3r4FS3mixa7__PHkvY
+id: paragraph.banda_imagenes.field_imagen_fondo
+field_name: field_imagen_fondo
+entity_type: paragraph
+bundle: banda_imagenes
+label: 'Imagen fondo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'imagen-fondo/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

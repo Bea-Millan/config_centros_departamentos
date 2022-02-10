@@ -1,0 +1,7 @@
+{
+    "name": "unizar/config_centros_departamentos",
+    "description": "Ficheros de configuración",
+    "version": "1.0",
+    "type": "drupal-config",
+    "minimum-stability": "dev"
+}

@@ -1,0 +1,144 @@
+uuid: d15f2932-f4e5-4b3b-a2be-5b76dfa02731
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3716
+title: 'Delegados/as y Subdelegados/as Grupo 511'
+description: null
+category: null
+elements: |
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#min': 
+      '#max': 
+      '#step': 
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP' 
+      '#description': "La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        798298: 'BALLESTEROS SUBÍAS, JORGE'
+        820228: 'COQUE VIVAS, DANIEL'
+        820744: 'COSTA GUTIERREZ, PABLO'
+        815850: 'EZQUERRA SALVADOR, CRISTIAN'
+        817916: 'FERNÁNDEZ BAQUERO, NICOLÁS'
+        829585: 'FERNÁNDEZ GARCÍA, VÍCTOR MANUEL'
+        796448: 'FERNÁNDEZ KAÑOVA, CARLOS'
+        821085: 'FERNÁNDEZ LECHÓN, MARIO'
+        797817: 'FERNÁNDEZ PLAZA, GUZMÁN'
+        794008: 'FERRER MARTÍNEZ, ADRIÁN'
+        798105: 'FIDALGO TERRADO, LAURA'
+        820187: 'FRAJ TOMÁS, ALEJANDRO'
+        821652: 'FRANCO OBANDO, JUAN CAMILO'
+        799701: 'FUENTEMILLA MARTÍNEZ, ROBERTO'
+        799478: 'FUENTES BRINQUIS, CARLOS'
+        799518: 'GÁLLEGO BIESCAS, VÍCTOR'
+        819580: 'GALVE GONZÁLEZ, VICTOR'
+        779022: 'GAMÓN PÉREZ, LÍZER'
+        796205: 'GAN DIESTE, NOELIA'
+        818838: 'GARCÉS ALIOD, MARÍA'
+        784162: 'GARCÍA ARRANZ, PABLO'
+        819696: 'GARCÍA GIMENO, MIGUEL'
+        802069: 'GARCÍA JIMÉNEZ, GONZALO'
+        815569: 'GARCÍA NAVARRO, JAVIER'
+        780927: 'GARCÍA RODRÍGUEZ, PEDRO'
+        740617: 'GARCÍA SALCEDO, LUCÍA'
+        815233: 'GARCÍA SANMARTÍN, DIEGO'
+        821375: 'GARCÍA YAGÜE ROMEO, DARIO'
+        698900: 'GARCÍA-BELENGUER SANZ, ÁLVARO JESÚS'
+        816530: 'GARULO JUAN, DANIEL'
+        835089: 'GARZON CAJAMARCA, CRISTOFER ALEXANDER'
+        796283: 'GERMÁN CASTILLO, MARCOS'
+        817185: 'GIL BERDÚN, DANIEL'
+        835316: 'GIL TORRES, JHOVANNA VALENTINA'
+        701609: 'GIMÉNEZ BODEGA, ANDRÉS'
+        817288: 'GIMÉNEZ PARRA, JAIME'
+        800474: 'GIMENO BAQUERO, JESÚS'
+        801408: 'GÓMEZ CABEZA, ÁLVARO'
+        818729: 'GÓMEZ CESTER, JORGE'
+        779267: 'GÓMEZ FERNÁNDEZ, JUAN'
+        799572: 'GÓMEZ MAICAS, IVÁN'
+        735251: 'GÓMEZ SANTIBÁÑEZ, DARÍO'
+        835679: 'GONZÁLEZ BLANCO, MARTA'
+        819887: 'GONZÁLEZ ESCARTÍN, DIEGO'
+        821565: 'GONZÁLEZ VICENTE, JAIME'
+        820265: 'GRACIA ROMÁN, JARA'
+        780768: 'GUATO CAIZA, JHON ADALBERTO'
+        760145: 'GUERREIRO LOZANO, JAVIER'
+        819777: 'GUILLÉN SALAS, EDUARDO'
+        796206: 'HADJEB  , MOSTAFA NOUR'
+        821186: 'HERNÁNDEZ ARGUDO, SERGIO'
+        685942: 'HERNÁNDEZ LEÓN, JUAN PEDRO'
+        757890: 'HERNÁNDEZ LORENTE, ANDRÉS PASCUAL'
+        721619: 'HERRANZ CALVO, GONZALO'
+        744378: 'HERRANZ MARTÍNEZ, LIDIA'
+        816065: 'HOYOS MARTÍNEZ, LESLY ALEJANDRA'
+        780099: 'IGLESIAS MENÉS, LUCÍA'
+        817535: 'IRANZO LEBRERO, FERNANDO'
+        801028: 'IZQUIERDO CASTRO, JUAN'
+        800008: 'JARNE CABAÑERO, PATRICIA ITALIA'
+        821928: 'JIMENEZ LOPEZ, DANIEL'
+        821796: 'JIMÉNEZ SESMA, ISMAEL'
+        796673: 'JULIÁN ANDRÉS, ALBERTO'
+        819699: 'JULIÁN TERRÉN, MARINA'
+        762613: 'KAOUKAB BENHANNOUN, TAMOU'
+        774622: 'KEITA KEITA, ADAMA'
+        835258: 'KREISHAN  , HASHEM AHAMAD QASIM'
+        779906: 'LA ROSA SUÁREZ, PIERO ALONSO'
+        835998: 'LACAMBRA SARRABLO, JOSÉ'
+        698391: 'LADAGA MARRO, MANUEL'
+        774925: 'LAGRANJA SUPERVIA, CARMEN'
+        819216: 'LAHOZ EGEA, SILVIA'
+        820416: 'LAHUERTA CASTROSEIROS, JAVIER'
+        760024: 'LAINEZ GRACIA, LUIS'
+        832300: 'LAJUSTICIA LÓPEZ, IINMACULADA'
+        818006: 'LANERO FERNÁNDEZ, MIGUEL'
+        828995: 'LARRÉN NEVES, MIGUEL ANGEL'
+        816356: 'LASHERAS PESO, EDUARDO'
+        815230: 'LASOBRAS ARENAZ, MARCOS'
+        816645: 'LATORRE LÓPEZ, EDUARDO'
+        630579: 'LAZAR BOGOLE, DANIEL'
+        717666: 'LAZARO MAYOR, MARTA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+      '#description': ""
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

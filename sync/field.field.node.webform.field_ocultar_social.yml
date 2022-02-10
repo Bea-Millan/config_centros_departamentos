@@ -1,0 +1,25 @@
+uuid: a46e207d-de29-432f-8f30-251c4181fee9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocultar_social
+    - node.type.webform
+_core:
+  default_config_hash: 3Jwq65XMArwavWu7I6JerhTP3_bwy8Ot7nCowZKNVR4
+id: node.webform.field_ocultar_social
+field_name: field_ocultar_social
+entity_type: node
+bundle: webform
+label: 'Ocultar redes sociales'
+description: 'Activando este campo se deshabilitan los botones de compartir de la redes sociales'
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

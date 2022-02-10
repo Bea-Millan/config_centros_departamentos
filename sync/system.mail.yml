@@ -1,0 +1,5 @@
+_core:
+  default_config_hash: TFI3JRxww3R3uZfKu0SYplE0dQX9UtjdGVl0aOA7q94
+interface:
+  default: SMTPMailSystem
+langcode: es

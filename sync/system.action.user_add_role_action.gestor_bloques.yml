@@ -1,0 +1,16 @@
+uuid: 347dacd6-021a-49fd-b2d5-9b826a53bb8c
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_bloques
+  module:
+    - user
+_core:
+  default_config_hash: AegbYH8Ucu26FNjvbwZyeQMgfCU4oxCllrzl-uzFh1o
+id: user_add_role_action.gestor_bloques
+label: 'Add the gestor bloques role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_bloques

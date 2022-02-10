@@ -1,0 +1,66 @@
+uuid: 9255fb84-265e-4b85-a26a-b3d030f2fe9e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_fullsize
+    - paragraphs.paragraphs_type.banda_imagenes_fullsize
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: dC5dTc2boNwhAgx1piKrmPEJ7dY5Deg5o_kWxzf2DSc
+id: paragraph.banda_imagenes_fullsize.field_imagen_fullsize
+field_name: field_imagen_fullsize
+entity_type: paragraph
+bundle: banda_imagenes_fullsize
+label: Imagen
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      imagen: imagen
+    target_bundles_drag_drop:
+      banda_imagenes:
+        weight: 14
+        enabled: false
+      banda_imagenes_fullsize:
+        weight: 13
+        enabled: false
+      bloque_solo_imagen:
+        weight: 15
+        enabled: false
+      bloque_solo_texto:
+        weight: 16
+        enabled: false
+      bolos:
+        weight: 17
+        enabled: false
+      bolos_texto:
+        weight: 18
+        enabled: false
+      cubos:
+        weight: 19
+        enabled: false
+      cubos_texto:
+        weight: 20
+        enabled: false
+      imagen:
+        enabled: true
+        weight: 21
+      imagen_con_vinculo:
+        weight: 22
+        enabled: false
+      imagen_texto_1:
+        weight: 23
+        enabled: false
+      texto:
+        weight: 24
+        enabled: false
+field_type: entity_reference_revisions

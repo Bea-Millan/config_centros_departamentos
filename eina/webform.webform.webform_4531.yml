@@ -1,0 +1,257 @@
+uuid: b94c320a-6b36-496b-bbdc-c370f867c33d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4531
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 841'
+description: null
+category: null
+elements: |
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)' 
+    '#description': "Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto."
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      759704: 'ABADÍAS PUYUELO, JORGE'
+      776070: 'ABIÓN BUIL, PABLO'
+      775041: 'AGLIO COLÓN, SAMUEL'
+      863390: 'ALICI  , HAZAL GIZEM'
+      865398: 'ALMEIDA  , TEREZA KAREN'
+      780491: 'ARAUZO MAGALLÓN, VÍCTOR'
+      756615: 'ARIZA CÓLERA, CARLOS'
+      863223: 'AYIK  , BEYDA'
+      761913: 'BAIGORRI LÓPEZ, IVÁN'
+      740057: 'BAJÉN GONZALO, JORGE'
+      737005: 'BELDA GUAJARDO, VÍCTOR'
+      759458: 'BENEDÍ MATUTE, IVÁN'
+      862780: 'BLOMQVIST  , EBBA'
+      738549: 'BOURGON PINTOR, LUIS'
+      738548: 'CALVO CHAMARRO, DAVID'
+      763920: 'CALVO VALCARCEL, LUIS'
+      758441: 'CARO SIERRA, DAVID'
+      779288: 'CÁSEDAS LALOYA, ÁLVARO ERIK'
+      716515: 'CASTÁN MALLOR, VICTOR'
+      756957: 'CASTILLEJO GUITART, JORGE'
+      736722: 'CENJOR ANDRÉS, SANTIAGO'
+      756949: 'CLARK CASTÁN, CHRISTOPHER EDMUNDO'
+      759685: 'CLEMENTE BUISÁN, VÍCTOR'
+      611940: 'CONCHA RIVERA, MERCEDES'
+      758567: 'CRISAN  , SERGIU ANDREI'
+      776459: 'CRUZ OLIVER, RAÚL'
+      735565: 'DOSSET CLAVERIA, FELIPE'
+      776265: 'DURÁN SERRANO, MIGUEL ÁNGEL'
+      720124: 'ELVIRO MUÑOZ, ÍÑIGO'
+      739000: 'ESCALONA BALLARÍN, HUGO'
+      755853: 'ESCOLANO VIDALUC, PAUL'
+      728994: 'ESCORZA SÁENZ, MARCOS'
+      761853: 'ESCUDERO BURGA, ANDRÉS'
+      738616: 'FARKHI  , OUMAIMA'
+      780405: 'FERNÁNDEZ BLANC, RUBÉN JOSÉ'
+      739210: 'FERNÁNDEZ SÁNCHEZ, JORGE'
+      721178: 'FRAGO AZNAR, DAVID'
+      777640: 'GARCÍA GASCÓN, MIGUEL ÁNGEL'
+      774767: 'GARCÍA RAMO, JOSUÉ'
+      760149: 'GARCÍA SORIANO, JULIO'
+      735750: 'GARUZ BERNABEU, LUIS'
+      775054: 'GIDOFF LOREN, ALEJANDRO HANS'
+      758804: 'GIMENO RUIZ, ANTONIO'
+      766169: 'GÓMEZ BARRIO, DANIEL'
+      758639: 'GÓMEZ JARRETA, ÁLVARO'
+      774488: 'GÓMEZ MIGUEL, LUCIA'
+      777922: 'GONZÁLEZ BONET, JORGE'
+      774539: 'GONZÁLEZ GIL, SERGIO'
+      778357: 'HERNÁNDEZ ALHAMBRA, ELENA'
+      775281: 'HERRERO RAMBLA, SANTIAGO'
+      850609: 'JARAMILLO JIMÉNEZ, JUAN'
+      865621: 'KOUKOUZELIS  , PARAKSEVAS'
+      775663: 'LABARTA BELLO, JOSÉ IGNACIO'
+      776434: 'LACARTA LÓPEZ, CRISTINA'
+      778253: 'LACASTA CASTERAD, ENRIQUE'
+      740876: 'LACRUZ ALBÁS, ISABEL'
+      774757: 'LARRIBA LLAMAS, JOSÉ'
+      759843: 'LASIERRA CALLAU, ISABEL'
+      774477: 'LAUSÍN OCHOA, ISABEL'
+      862941: 'LERAY  , QUENTIN'
+      760578: 'LÓPEZ PLANA, JULIA'
+      774838: 'LOSCERTALES ESTRADA, ALEJANDRO'
+      757455: 'LOSFABLOS DE CASTRO, JOSE MARIA'
+      725923: 'MADRID MARTÍNEZ, RUBÉN'
+      778246: 'MALDONADO NOVALES, MARÍA'
+      738131: 'MANERO MONTAÑÉS, CLARA MARÍA'
+      739917: 'MARCOS SAAVEDRA, RAQUEL'
+      780462: 'MARECA RIVERO, EDUARDO'
+      776663: 'MARTÍN ORTIZ, BELÉN'
+      774752: 'MARTÍNEZ BETÉS, ARCADIO'
+      777624: 'MARTÍNEZ ROMERO, JUAN'
+      761473: 'MARTÍNEZ RUBALCAVA, DIEGO'
+      756534: 'MEDINA FUENTES, CARLOS RICARDO'
+      777303: 'MIANA PONCE, SOFÍA'
+      775641: 'MORA SORIA, FRANCISCO JAVIER'
+      736470: 'MORALES FUENTE, JAVIER ERNESTO'
+      755367: 'MURILLO JULIÁN, GONZALO'
+      758517: 'MUZÁS ARIZÓN, JAIME'
+      775221: 'NAVAL LABARTA, ALEJANDRO'
+      774530: 'ORTEGA ARMINGOL, ALMUDENA'
+      777469: 'ORTIZ SAINZ, LUIS'
+      755366: 'PALÁ ZAMARBIDE, FRANCISCO JAVIER'
+      722098: 'PALENCIAS CELMA, ÁLVARO'
+      774982: 'PALOS LUZÓN, LUCÍA'
+      775626: 'PEMÁN POZA, FRANCISCO JAVIER'
+      780384: 'PENA SÁNCHEZ, JOSÉ RAMÓN'
+      755554: 'PÉREZ BAZÁN, CRISTINA'
+      778547: 'PÉREZ ORTIZ, ISABEL'
+      774598: 'PÉREZ RIVASÉS, EDUARDO'
+      736936: 'PINA GALINDO, MARÍA'
+      776442: 'POSTIGO OMEÑACA, GONZALO'
+      777628: 'PRADOS PÉREZ, JAVIER'
+      756110: 'RAMOS LASALA, FERNANDO'
+      777627: 'RAZQUIN PLANO, ISMAEL'
+      759541: 'REGUERA CARRERA, PAULA'
+      848290: 'RIVA  , STEFANO'
+      760110: 'ROCHE PALACÍN, SERGIO EMETERIO'
+      767674: 'ROCILLO DE PABLO, SAMUEL'
+      761083: 'RODES OLIVA, IGNACIO'
+      716304: 'RODRÍGUEZ DÍEZ, ÁLVARO'
+      755866: 'ROMEA PASCUAL, ADRIÁN'
+      741368: 'ROMERO GARCÍA, ÁLVARO'
+      758383: 'ROYO ARTAL, MARCOS'
+      787828: 'RUEDA JIMÉNEZ, MARCOS'
+      758607: 'RUIZ MORA, CARLOS'
+      784677: 'SAENZ RODRIGUEZ, CESAR'
+      720840: 'SAMPER ARIAS, CARLOS'
+      777460: 'SÁNCHEZ MARQUÉS, DIEGO'
+      780041: 'SANCHO BELENGUER, DAVID'
+      760547: 'SANCHO TEJEDOR, CÉSAR ANTONIO'
+      761207: 'SARIEGO ANADÓN, JORGE'
+      736847: 'SERRANO CAPAPÉ, ÁLVARO'
+      759176: 'SOLA PRAT, IRENE'
+      774522: 'SOLANAS NAVARRO, JONATAN'
+      755355: 'TENA CALVERA, PABLO'
+      756959: 'TIPÁN SALAZAR, LIZBETH CORALIA'
+      776507: 'TISAIRE PUERTO, LUCÍA'
+      756172: 'URIETA SARASA, JUAN MIGUEL'
+      758529: 'VÁZQUEZ BURRIEL, DIEGO'
+      780997: 'VICENTE MARTÍNEZ, JORGE'
+      787262: 'VILLACAMPA RÍOS, ALEJANDRO'
+      779138: 'VILLUENDAS PUY, ÁLVARO'
+      779137: 'VILLUENDAS ROZAS, JOSÉ ÁNGEL'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar' 
+    '#description': ""
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

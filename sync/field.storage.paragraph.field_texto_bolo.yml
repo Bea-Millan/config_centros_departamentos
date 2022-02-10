@@ -1,0 +1,23 @@
+uuid: aa9080ca-0c99-46ca-8546-4c3e47a49ee1
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: kLV5YbB5gUC-ZxBTlHgkTydmwRjwlcynmmq59gK8CYg
+id: paragraph.field_texto_bolo
+field_name: field_texto_bolo
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

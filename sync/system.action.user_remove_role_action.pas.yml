@@ -1,0 +1,14 @@
+uuid: 6f23e68d-0b38-451a-a2bd-ee35f97aad1e
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pas
+  module:
+    - user
+id: user_remove_role_action.pas
+label: 'Elimina el rol PAS al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pas

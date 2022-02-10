@@ -1,0 +1,16 @@
+uuid: bb12fa4e-c8f5-4339-9e5b-0c59e77d8297
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_modular
+  module:
+    - user
+_core:
+  default_config_hash: CHgbqc4Xo9IgXilL21ZekTLZAWNcfXxiZXh-f4jG5yk
+id: user_remove_role_action.gestor_modular
+label: 'Elimina el rol gestor modular al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_modular

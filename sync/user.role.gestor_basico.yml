@@ -1,0 +1,119 @@
+uuid: e4cda296-6bad-4e33-add5-434f383791d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.elemento_parrilla
+    - node.type.estudio
+    - node.type.galeria
+    - node.type.noticia
+    - node.type.page
+    - node.type.slideshow
+    - node.type.te_interesa
+    - node.type.webform
+  module:
+    - captcha
+    - content_moderation
+    - contextual
+    - language
+    - locale
+    - node
+    - system
+    - toolbar
+_core:
+  default_config_hash: CL5_SfZaz0GAjWOw1Z5dhNeIrUKzxN1-nCfmY3w284M
+id: gestor_basico
+label: 'gestor básico'
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access contextual links'
+  - 'access dashboard'
+  - 'access library reports'
+  - 'access overlay'
+  - 'access own webform results'
+  - 'access site map'
+  - 'access site reports'
+  - 'access toolbar'
+  - 'add terms in 2'
+  - 'add terms in secciones'
+  - 'administer CAPTCHA settings'
+  - 'administer content translations'
+  - 'administer fields'
+  - 'administer languages'
+  - 'administer site configuration'
+  - 'assign access to nodes'
+  - 'assign owner permissions'
+  - 'assign profiles to nodes'
+  - 'create elemento_parilla content'
+  - 'create elemento_parrilla content'
+  - 'create estudio content'
+  - 'create galeria content'
+  - 'create noticia content'
+  - 'create page content'
+  - 'create slideshow content'
+  - 'create te_interesa content'
+  - 'create webform content'
+  - 'delete any elemento_parilla content'
+  - 'delete any estudio content'
+  - 'delete any galeria content'
+  - 'delete any noticia content'
+  - 'delete any page content'
+  - 'delete any slideshow content'
+  - 'delete any te_interesa content'
+  - 'delete any webform content'
+  - 'delete own elemento_parilla content'
+  - 'delete own elemento_parrilla content'
+  - 'delete own estudio content'
+  - 'delete own galeria content'
+  - 'delete own noticia content'
+  - 'delete own page content'
+  - 'delete own slideshow content'
+  - 'delete own te_interesa content'
+  - 'delete own webform content'
+  - 'delete terms in 2'
+  - 'delete terms in 4'
+  - 'edit any elemento_parilla content'
+  - 'edit any estudio content'
+  - 'edit any galeria content'
+  - 'edit any noticia content'
+  - 'edit any page content'
+  - 'edit any slideshow content'
+  - 'edit any te_interesa content'
+  - 'edit any webform content'
+  - 'edit own elemento_parilla content'
+  - 'edit own elemento_parrilla content'
+  - 'edit own estudio content'
+  - 'edit own galeria content'
+  - 'edit own noticia content'
+  - 'edit own page content'
+  - 'edit own slideshow content'
+  - 'edit own te_interesa content'
+  - 'edit own webform content'
+  - 'edit terms in 2'
+  - 'edit terms in 4'
+  - 'publish own elemento_parilla content'
+  - 'publish own estudio content'
+  - 'publish own galeria content'
+  - 'publish own noticia content'
+  - 'publish own page content'
+  - 'publish own slideshow content'
+  - 'publish own te_interesa content'
+  - 'publish own webform content'
+  - 'translate admin strings'
+  - 'translate content'
+  - 'translate interface'
+  - 'translate user-defined strings'
+  - 'unpublish own elemento_parilla content'
+  - 'unpublish own estudio content'
+  - 'unpublish own galeria content'
+  - 'unpublish own noticia content'
+  - 'unpublish own page content'
+  - 'unpublish own slideshow content'
+  - 'unpublish own te_interesa content'
+  - 'unpublish own webform content'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

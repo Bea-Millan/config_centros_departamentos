@@ -1,0 +1,25 @@
+uuid: d0246ff3-0d29-40c7-b164-32b812f903ef
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_auto_play
+    - paragraphs.paragraphs_type.banda_imagenes
+_core:
+  default_config_hash: 3QeodHTzILakg766eRyV7GWFedGy8uKTseXW8JBGMCk
+id: paragraph.banda_imagenes.field_auto_play
+field_name: field_auto_play
+entity_type: paragraph
+bundle: banda_imagenes
+label: 'auto play'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: Siç
+  off_label: 'No'
+field_type: boolean

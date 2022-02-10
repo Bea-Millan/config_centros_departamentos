@@ -1,0 +1,25 @@
+uuid: 71988c6b-3217-4b33-a45c-1f43f4433e7b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fondo
+    - paragraphs.paragraphs_type.cubos
+  module:
+    - options
+_core:
+  default_config_hash: BhvBZVrKrU3mcyosmDnoUS8GVMf0V25qz-m-mcLCo5U
+id: paragraph.cubos.field_fondo
+field_name: field_fondo
+entity_type: paragraph
+bundle: cubos
+label: Fondo
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: nobg
+default_value_callback: ''
+settings: {  }
+field_type: list_string
