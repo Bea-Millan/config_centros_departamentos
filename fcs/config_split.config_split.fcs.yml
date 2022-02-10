@@ -5,7 +5,7 @@ dependencies: {  }
 id: fcs
 label: fcs
 description: ''
-folder: ../config/fcs 
+folder: ../config/sites/fcs 
 module:
   c11n_migrate: 0
 theme: {  }
