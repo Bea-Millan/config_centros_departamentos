@@ -1,0 +1,9 @@
+uuid: 696804ba-8db9-4073-9ca3-f18e69994e55
+langcode: es
+status: true
+dependencies: {  }
+id: pdi
+label: PDI
+weight: 8
+is_admin: null
+permissions: {  }

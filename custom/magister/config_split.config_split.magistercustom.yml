@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies: {  }
+id: magistercustom
+label: "magister custom"
+description: ''
+weight: 0
+folder: ../config/sites/custom/magister/
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.magistercustom
+  - system.action.user_add_role_action.pas
+  - system.action.user_remove_role_action.pas
+  - system.action.user_add_role_action.pdi
+  - system.action.user_remove_role_action.pdi
+  - user.role.pdi
+  - user.role.pas
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
