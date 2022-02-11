@@ -1,0 +1,320 @@
+uuid: 1b00072c-78fc-44b6-a777-18a4e3edf919
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_963
+title: 'Estudiantes: Comunicación de ALTA'
+description: null
+category: null
+elements: |
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer Apellido' 
+    '#description': ""
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo Apellido' 
+    '#description': ""
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre' 
+    '#description': ""
+    '#required': true
+  nip_o_dni:
+    '#type': textfield
+    '#title': 'NIP o DNI' 
+    '#description': ""
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo Electrónico' 
+    '#description': ""
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#size': 20
+    '#min': 
+    '#max': 
+    '#step': 
+    '#unique': false
+    '#title': 'Teléfono de contacto' 
+    '#description': ""
+    '#required': true
+  fecha_reincorporacion:
+    '#type': date
+    '#title': 'Fecha de reincorporación' 
+    '#description': "Indique por favor la fecha a partir de la cual le han autorizado los Servicios Sanitarios a reincorporarse a sus actividades."
+    '#required': true
+  formularios_anteriores:
+    '#type': checkboxes
+    '#options':
+      aislamiento: 'Aislamiento por contacto estrecho'
+      pcr: 'Comunicación de PCR positivo'
+    '#multiple': true
+    '#title': 'Indique los formularios que hubiera podido rellenar anteriormente' 
+    '#description': ""
+  estudios_que_se_cursan:
+    '#type': select
+    '#options':
+      grado_clasicos: 'Grado en Estudio Clásicos'
+      grado_ingleses: 'Grado en Estudios Ingleses'
+      grado_hispanica: 'Grado en Filología Hispánica'
+      grado_filosofia: 'Grado en Filosofía'
+      grado_geografia: 'Grado en Geografía y Ordenación del Territorio'
+      grado_historia: 'Grado en Historia'
+      grado_arte: 'Grado en Historia del Arte'
+      grado_documentacion: 'Grado en Información y Documentación'
+      grado_modernas: 'Grado en Lenguas Modernas'
+      grado_periodismo: 'Grado en Periodismo'
+      master_comunicacion: 'Máster U. en Consultoría de Información y Comunicación Digital'
+      master_arte: 'Máster U. en Estudios Avanzados en Historia del Arte'
+      master_patrimonio: 'Máster U. en Gestión del Patrimonio Cultural'
+      master_contemporanea: 'Máster U. en Historia Contemporánea'
+      master_historia: 'Máster U. en Investigación y Estudios Avanzados en Historia'
+      master_otma: 'Máster U. en Ordenación Territorial y Medioambiental'
+      master_arqueologico: 'Máster U. en Mundo Antiguo y Patrimonio Arqueológico'
+      master_sig: 'Máster U. en Tecnologías de la Información Geográfica para la Ordenación del Territorio: SIG y Teledetección'
+      master_filosofia: 'Máster Interuniversitario en Investigación en Filosofía'
+      propios_protocolo: 'Certificación de Extensión Universitaria en Protocolo, Ceremonial y Organización de Eventos'
+      otros: 'Doctorado, otros cursos y seminarios organizados por la Facultad de Filosofía y Letras'
+    '#title': 'Estudios que se cursan' 
+    '#description': ""
+    '#required': true
+    '#states':
+      optional:
+        ':input[name="formularios_anteriores[aislamiento]"]':
+          checked: true
+          
+  coordinador:
+    '#type': email
+    '#size': 20
+    '#title': 'coordinador' 
+    '#description': ""
+  observaciones:
+    '#type': textarea
+    '#title': 'Observaciones' 
+    '#description': "Indique cualquier información que crea pueda ser de interés."
+  justificante:
+    '#type': managed_file
+    '#max_filesize': '2'
+    '#file_extensions': 'jpg jpeg pdf zip'
+    '#title': 'Justificante' 
+    '#description': "Adjunte aquí los justificantes médicos que acrediten su alta."
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p><span style=\"font-size: 13.008px;\">Desde la Facultad de Filosofía y Letras nos alegramos de su recuperación.</span></p>\r\n<p>Se han enviado sus datos al responsable covid de la Facultad de Filosofía y Letras, al Coordinador/a de su Titulación y a la Unidad de Prevención de Riesgos de la Universidad de Zaragoza.</p>\r\n<p>Le hemos enviado también un correo electrónico a la cuenta que ha consignado en el formulario para que tenga constancia del envío del formulario.</p>\r\n<p>Agradecemos sinceramente su colaboración y le esperamos de nuevo por la Facultad</p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: jefeuprl@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA COVID-19 Facultad de Filosofía y Letras'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- COMUNICACIÓN DE ALTA (Estudiante) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Incidencia COVID-19 registrada: Alta'
+      body: |+
+        <p>Estimado Sr./Estimada Sra.</p>
+        <p>Nos alegramos de su situación y de que haya dejado atrás la enfermedad.</p>
+        <p>Se ha procedido a informar de su alta a la Unidad de Prevención de Riesgos y al Coordinador de sus Estudios.</p>
+        <p>Le agradecemos su cooperación y apoyo en estos momentos de trabajo conjunto para controlar la pandemia.</p>
+        <p>Reciba un atento saludo</p>
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_4:
+    id: email
+    handler_id: email_4
+    label: 'Email 4'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:coordinador:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Alta COVID-19 comunicada a la Facultad de Filosofía y Letras'
+      body: |
+        Estimado/a Coordinador/a
+
+        A través del formulario de comunicación para incidencias COVID-19 para los estudiantes de la Facultad de Filosofía y Letras se ha recogido la siguiente incidencia:
+
+        -- COMUNICACIÓN DE ALTA --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+
+        Dichos datos obran también en poder del Responsable COVID de la Facultad y de la Unidad de Prevención de Riesgos Laborales
+
+        Atentamente.
+      excluded_elements:
+        telefono_de_contacto: telefono_de_contacto
+        formularios_anteriores: formularios_anteriores
+        coordinador: coordinador
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: covidfil@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA COVID-19 (Estudiantes)'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- COMUNICACIÓN DE ALTA (Estudiante) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

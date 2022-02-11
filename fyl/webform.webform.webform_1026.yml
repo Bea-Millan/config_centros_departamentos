@@ -1,0 +1,287 @@
+uuid: ab054ee1-5b91-4c06-8cef-1605095972e8
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_1026
+title: 'Actividades Culturales'
+description: null
+category: null
+elements: |
+  fieldset_responsable_de_la_actividad:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Responsable de la actividad' 
+    '#description': ""
+    nombre_y_apellidos_16:
+      '#type': textfield
+      '#title': 'Nombre y apellidos' 
+      '#description': ""
+      '#required': true
+    correo_electronico_16:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico' 
+      '#description': ""
+      '#required': true
+    departamento_16:
+      '#type': textfield
+      '#title': 'Departamento' 
+      '#description': ""
+      '#required': true
+  fieldset_separador:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la actividad' 
+    '#description': ""
+    titulo_9:
+      '#type': textfield
+      '#title': 'Título' 
+      '#description': "Nombre de la actividad"
+      '#required': true
+    explicativo_9:
+      '#type': textarea
+      '#title': 'Texto explicativo de la actividad' 
+      '#description': "Texto para la difusión de la noticia"
+      '#required': true
+    indicaciones_9:
+      '#type': textarea
+      '#title': 'Indicaciones' 
+      '#description': "Opcional: Haga constar cualquier indicación o comentario adicional que considere oportuno. El texto aquí introducido no será publicado."
+    enlaces_web_9:
+      '#type': textfield
+      '#title': 'Enlaces web' 
+      '#description': "Opcional: Si la actividad posee una web propia o precisa de un link externo para información, inscripciones, etc. indíquelo aquí."
+    fecha_desde_9:
+      '#type': date
+      '#title': 'Fecha desde' 
+      '#description': "Fecha desde la que ha de mostrarse la información"
+      '#required': true
+    fecha_hasta_9:
+      '#type': date
+      '#title': 'Fecha hasta' 
+      '#description': "Fecha hasta la que ha de mostrarse la información"
+      '#required': true
+    difusion_9:
+      '#type': checkboxes
+      '#options':
+        todas: 'Todas las opciones'
+        web: '--- Web'
+        redes: '--- Redes Sociales'
+        iunizar: '--- iUnizar*'
+        pantallas: '--- Todas las pantallas'
+        central0: '--- --- Pantalla Ed. Central planta baja'
+        central3: '--- --- Pantalla Ed. Central planta 3'
+        moliner: '--- --- Pantalla Biblioteca María Moliner'
+        cervantes: '--- --- Pantalla Ed. Cervantes'
+        inter: '--- --- Pantalla Ed. Interfacultades'
+      '#multiple': true
+      '#title': 'Difusión' 
+      '#description': "*La información para iUnizar será remitida a Secretaría para la valoración de su tramitación."
+      '#required': true
+  fieldset_archivos:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Archivos' 
+    '#description': "Puede enviar tres archivos por separado. Si necesita enviar más, comprima todos en formato ZIP y envíelos como un único archivo."
+    archivo1_12:
+      '#type': managed_file
+      '#max_filesize': '10'
+      '#file_extensions': 'jpg jpeg pdf zip'
+      '#title': 'Archivo 1' 
+      '#description': ""
+      '#required': true
+    enviar_archivo_2_12:
+      '#type': radios
+      '#options':
+        archivo2: 'Enviar otro archivo'
+      '#title': 'Enviar un segundo archivo' 
+      '#description': ""
+    archivo2_12:
+      '#type': managed_file
+      '#max_filesize': '10'
+      '#file_extensions': 'jpg jpeg pdf zip'
+      '#title': 'Archivo 2' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="enviar_archivo_2_12[archivo2]"]':
+            value: archivo2
+            
+    enviar_archivo_3_12:
+      '#type': radios
+      '#options':
+        archivo3: 'Enviar otro archivo'
+      '#title': 'Enviar un tercer archivo' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="enviar_archivo_2_12[archivo2]"]':
+            value: archivo2
+            
+    archivo3_12:
+      '#type': managed_file
+      '#max_filesize': '10'
+      '#file_extensions': 'jpg jpeg pdf zip'
+      '#title': 'Archivo 3' 
+      '#description': ""
+      '#states':
+        visible:
+          ':input[name="enviar_archivo_3_12[archivo3]"]':
+            value: archivo3
+            
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>Su información se ha enviado correctamente.</p>\r\n<p>Recibirá un correo de confirmación con los datos enviados.</p>\r\n<p>Gracias por su colaboración.</p>\r\n<p><a href=\"https://fyl.unizar.es\">Facultad de Filosofía y Letras</a></p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: bertolin@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Envío de actividades culturales'
+      body: |
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: osoteo@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Envío de actividades culturales'
+      body: |
+        --Este es un correo automatizado. Por favor, no responda a esta comunicación--
+
+        <b>Se ha registrado su envío de actividades culturales con los siguientes datos:</b>
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+
+        https://fyl.unizar.es
+
+        Gracias por su colaboración.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

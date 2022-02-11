@@ -1,0 +1,60 @@
+uuid: f873c108-07a3-4e43-a672-57e382b819c2
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_987
+title: 'Comunicación COVID'
+description: null
+category: null
+elements: |
+  colectivo:
+    '#type': radios
+    '#options':
+      estudiantes: 'Estudiantes'
+      pdi: 'PDI'
+      pas: 'PAS'
+    '#title': 'Seleccione el colectivo al que pertenece' 
+    '#description': ""
+    '#required': true
+  tipocomunicacion:
+    '#type': radios
+    '#options':
+      contacto: 'Confinamiento por contacto estrecho'
+      positivo: 'Positivo en COVID-19 (PCR o antígenos)'
+      alta: 'Alta'
+    '#title': 'Seleccione el tipo de comunicación' 
+    '#description': ""
+    '#required': true
+  enlace:
+    '#type': textfield
+    '#title': 'enlace' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: '[submission:values:enlace:nolabel]'
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

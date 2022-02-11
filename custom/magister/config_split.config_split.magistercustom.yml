@@ -1,8 +1,9 @@
+uuid: 73d1d4d8-a93d-4c9c-9100-edea84d43569
 langcode: es
 status: true
 dependencies: {  }
 id: magistercustom
-label: "magister custom"
+label: 'magister custom'
 description: ''
 weight: 0
 folder: ../config/sites/custom/magister/
