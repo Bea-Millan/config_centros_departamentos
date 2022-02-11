@@ -21,6 +21,9 @@ blacklist:
   - language.negociation
   - 'language.entity.*'
   - smtp.settings
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
   - shortcut.set.default
   - core.entity_view_mode.shortcut.token
   - asset_injector.css.eps_inyeccion_css

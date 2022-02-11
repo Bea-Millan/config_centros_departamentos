@@ -16,6 +16,9 @@ blacklist:
   - migrate_drupal.settings
   - unizar_admin_menu.settings
   - unizar_modulos_configuracion.settings
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
   - language.types
   - language.negociation
   - 'language.entity.*'

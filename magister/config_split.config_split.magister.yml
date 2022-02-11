@@ -18,6 +18,9 @@ blacklist:
   - migrate_drupal.settings
   - shortcut.set.default
   - smtp.settings
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
   - system.site
   - system.theme
   - unizar_admin_menu.settings

@@ -19,6 +19,9 @@ blacklist:
   - language.types
   - language.negociation
   - 'language.entity.*'
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
   - smtp.settings
   - shortcut.set.default
   - core.entity_view_mode.shortcut.token

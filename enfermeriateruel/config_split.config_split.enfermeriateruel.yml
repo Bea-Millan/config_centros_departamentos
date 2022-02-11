@@ -22,6 +22,9 @@ blacklist:
   - 'language.entity.*'
   - smtp.settings
   - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
   - core.entity_view_mode.shortcut.token
   - asset_injector.css.enfermeriateruel_inyeccion_css
   - core.extension
