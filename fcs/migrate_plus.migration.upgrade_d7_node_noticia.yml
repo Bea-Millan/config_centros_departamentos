@@ -1,4 +1,4 @@
-uuid: b75beac7-d7f9-45ae-a28b-14a96c666f09
+uuid: 2daadcad-8015-42a4-8d82-034b3d7fa62d
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: qIlQLhxXGQKmOSXvqqDl85pUAukP4tl_UQ8aFCLyWvA
+  default_config_hash: drINvAJW6RL8mAM5kRt2ZB7eWf8CClqjEM331mJp0K0
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -127,11 +127,16 @@ process:
       map:
         1: Actualidad
         2: 'Agenda cultural'
+      bypass: true
   field_seccion:
+    -
+      plugin: skip_on_empty
+      source: '@_prepare_tipo_evento'
+      method: process
+      message: 'No eventos.'
     -
       plugin: entity_generate
       entity_type: taxonomy_term
-      source: '@_prepare_tipo_evento'
       value_key: name
       bundle_key: vid
       bundle: secciones

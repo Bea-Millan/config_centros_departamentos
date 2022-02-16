@@ -1,4 +1,4 @@
-uuid: 7736cab7-dcd7-451c-8c04-d0350a24d6de
+uuid: ac201574-2854-4705-bd57-cdd28028c571
 langcode: es
 status: open
 dependencies:
@@ -227,7 +227,7 @@ handlers:
   email_confirmation:
     id: email
     handler_id: email_confirmation
-    label: 'Confirmación por correo electrónico'
+    label: 'Email confirmation'
     notes: ''
     status: true
     conditions: {  }
@@ -264,7 +264,7 @@ handlers:
   email_notification:
     id: email
     handler_id: email_notification
-    label: 'Aviso por correo electrónico'
+    label: 'Email notification'
     notes: ''
     status: true
     conditions: {  }

@@ -1,4 +1,4 @@
-uuid: 17213fe6-8f1b-42ae-821c-38357b586d5c
+uuid: 9bd2f2e8-5b70-4ae5-9e18-300012ac9b8a
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: GlQYsJGG7qHL908rQ2ZMBOYFh8Nsp8gom0WuEqaHYeE
+  default_config_hash: kfYP7t_rl3Oj-KcYgLW8ftjbeIyjTjx1pf2ICWnkW8s
 id: upgrade_d7_custom_block
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -27,14 +27,18 @@ process:
     -
       plugin: get
       source: info
-  body/value:
+  body:
     -
-      plugin: urlhost
+      plugin: sub_process
       source: body
-  body/format:
-    -
-      plugin: default_value
-      default_value: full_html
+      process:
+        value:
+          plugin: urlhost
+          source: value
+          process: null
+        format:
+          plugin: default_value
+          default_value: filtered_html
 destination:
   plugin: 'entity:block_content'
   default_bundle: basic
