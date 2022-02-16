@@ -1,0 +1,325 @@
+uuid: df9e076a-3d3c-4858-8621-03985b95f462
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_330
+title: 'SOLICITUD DE USO Laboratorio Enseñanza-Observación'
+description: null
+category: null
+elements: |
+  fieldset_solicitante:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Solicitante' 
+    '#description': ""
+    responsable_24:
+      '#type': textfield
+      '#title': 'Responsable' 
+      '#description': ""
+      '#required': true
+    cargo_24:
+      '#type': textfield
+      '#title': 'Cargo' 
+      '#description': ""
+      '#required': true
+    departamento_24:
+      '#type': textfield
+      '#title': 'Departamento' 
+      '#description': ""
+      '#required': true
+    email_de_contacto_24:
+      '#type': email
+      '#size': 20
+      '#title': 'Email Institucional' 
+      '#description': ""
+      '#required': true
+    numero_de_asistentes_24:
+      '#type': textfield
+      '#title': 'Número de Asistentes' 
+      '#description': ""
+      '#required': true
+    asignatura_24:
+      '#type': textfield
+      '#title': 'Asignatura' 
+      '#description': ""
+      '#required': true
+  fieldset_necesidades_para_la_sesion_o_sesiones:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Necesidades para la Sesión o Sesiones' 
+    '#description': ""
+    breve_descripcion_de_la_actividad_26:
+      '#type': textfield
+      '#title': 'Breve descripción de la actividad' 
+      '#description': ""
+      '#required': true
+    uso_de_espacios_26:
+      '#type': checkboxes
+      '#options':
+        Clave_segura1: 'Pista Polideportiva'
+        Clave_segura2: 'Sala Cubo'
+        Clave_segura3: 'Tatami'
+        Clave_segura4: 'Pistas Exteriores'
+        Clave_segura5: 'Lab. Observación'
+      '#multiple': true
+      '#title': 'Uso de Espacios' 
+      '#description': ""
+    otros_espacios_26:
+      '#type': textfield
+      '#title': 'Otros Espacios' 
+      '#description': ""
+    necesidades_26:
+      '#type': checkboxes
+      '#options':
+        Clave_segura1: 'Visionado de Vídeo'
+        Clave_segura2: 'Manejo de Equipos Informáticos'
+        Clave_segura3: 'Registro de Vídeo'
+        Clave_segura4: 'Regitro de Audio'
+      '#multiple': true
+      '#title': 'Necesidades técnicas' 
+      '#description': ""
+    otras_necesidades_26:
+      '#type': textarea
+      '#title': 'Otras Necesidades' 
+      '#description': "Si tiene necesidades concretas, especifíquelas aquí."
+  fieldset_datos_de_la_solicitud:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la Solicitud' 
+    '#description': ""
+    tipo_de_uso_25:
+      '#type': radios
+      '#options':
+        Clave_segura1: 'Grado'
+        Clave_segura2: 'Master'
+        Clave_segura3: 'Doctorado'
+        Clave_segura4: 'Investigación'
+        Clave_segura5: 'Otros'
+      '#title': 'Tipo de Uso' 
+      '#description': ""
+      '#required': true
+    duracion_de_la_solicitud_25:
+      '#type': radios
+      '#options':
+        Clave_1: 'Solicitud Puntual'
+        Clave_2: 'Solicitud Cuatrimestral*'
+        Clave_3: 'Solicitud Varios Usos (no cuatrimestral)**'
+      '#title_display': inline
+      '#title': 'Duración de la Solicitud' 
+      '#description': "(*)Si la Solicitud es para uso Cuatrimestral con varios días a la semana que no coinciden entre ellos en el horario, se deberá realizar una solicitud cuatrimestral para cada día específico de la semana.\n\n\n(**)En el caso de 'Solicitud Varios Usos (no cuatrimestral)' indique las fechas y horarios en el apartado 'Otras Necesidades'."
+      '#required': true
+    numero_de_sesiones_25:
+      '#type': select
+      '#options':
+        1: 1
+        2: 2
+        3: 3
+        4: 4
+        5: 5
+        6: 6
+        7: 7
+        8: 8
+        9: 9
+        10: 10
+        11: 11
+        12: 12
+        13: 13
+        14: 14
+        15: 15
+        16: 16
+        17: 17
+        18: 18
+        19: 19
+        20: 20
+        21: 21
+        22: 22
+        23: 23
+        24: 24
+        25: 25
+        26: 26
+        27: 27
+        28: 28
+        29: 29
+        30: 30
+        31: 31
+        32: 32
+        33: 33
+        34: 34
+        35: 35
+        36: 36
+        37: 37
+        38: 38
+        39: 39
+        40: 40
+        41: 41
+        42: 42
+        43: 43
+        44: 44
+        45: 45
+        46: 46
+        47: 47
+        48: 48
+        49: 49
+        50: 50
+        51: 51
+        52: 52
+        53: 53
+        54: 54
+        55: 55
+        56: 56
+        57: 57
+        58: 58
+        59: 59
+        60: 60
+        61: 61
+        62: 62
+        63: 63
+        64: 64
+        65: 65
+        66: 66
+        67: 67
+        68: 68
+        69: 69
+        70: 70
+        71: 71
+        72: 72
+        73: 73
+        74: 74
+        75: 75
+        76: 76
+        77: 77
+        78: 78
+        79: 79
+        80: 80
+        81: 81
+        82: 82
+        83: 83
+        84: 84
+        85: 85
+        86: 86
+        87: 87
+        88: 88
+        89: 89
+        90: 90
+        91: 91
+        92: 92
+        93: 93
+        94: 94
+        95: 95
+        96: 96
+        97: 97
+        98: 98
+        99: 99
+      '#min': 1
+      '#max': 99
+      '#step': 
+      '#unique': false
+      '#default_value': '1' 
+      '#title_display': inline
+      '#title': 'Número_de_Sesiones' 
+      '#description': "Duración total en número de días en que se desarrollará la sesión o sesiones.  "
+      '#required': true
+    dia_de_la_semana_25:
+      '#type': checkboxes
+      '#options':
+        monday: 'Lunes'
+        tuesday: 'Martes'
+        wednesday: 'Miércoles'
+        thursday: 'Jueves'
+        friday: 'Viernes'
+      '#multiple': true
+      '#title': 'Día de la semana (en el caso de Solicitud Cuatrimestral)' 
+      '#description': ""
+      '#required': true
+      '#states':
+        visible:
+          ':input[name="duracion_de_la_solicitud_25"]':
+            value: Clave_2
+            
+    fecha_de_inicio_25:
+      '#type': date
+      '#title': 'Fecha de Inicio' 
+      '#description': ""
+      '#required': true
+    hora_de_inicio_25:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora de Inicio' 
+      '#description': ""
+      '#required': true
+    hora_de_fin_25:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora de Fin' 
+      '#description': ""
+      '#required': true
+    fecha_de_fin_25:
+      '#type': date
+      '#title': 'Fecha de Fin (en el caso de Solicitud Cuatrimestral)' 
+      '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su solicitud se ha enviado correctamente.</p><p>Nos pondremos en contacto con usted para confirmarle la disponibilidad&nbsp; del uso solicitado.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: 'Enviar Solicitud'
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: leo@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:responsable:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:responsable:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

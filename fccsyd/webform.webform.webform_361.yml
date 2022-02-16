@@ -1,0 +1,206 @@
+uuid: f6ca908d-bd36-4653-87ed-6a8d2374b0f6
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_361
+title: 'Solicitud de Préstamo para Uso Docente'
+description: null
+category: null
+elements: |
+  fieldset_solicitante:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Solicitante' 
+    '#description': ""
+    responsable_22:
+      '#type': textfield
+      '#title': 'Responsable' 
+      '#description': ""
+      '#required': true
+    email_de_contacto_22:
+      '#type': email
+      '#size': 20
+      '#title': 'Email Institucional' 
+      '#description': ""
+      '#required': true
+    cargo_22:
+      '#type': textfield
+      '#title': 'Cargo' 
+      '#description': ""
+      '#required': true
+    departamento_22:
+      '#type': textfield
+      '#title': 'Departamento' 
+      '#description': ""
+      '#required': true
+    asignatura_22:
+      '#type': textfield
+      '#title': 'Asignatura' 
+      '#description': ""
+      '#required': true
+  fieldset_equipos_solicitados:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Equipos Solicitados' 
+    '#description': ""
+    equipos_de_video_23:
+      '#type': checkboxes
+      '#options':
+        clave_válida: 'Cámara de vídeo'
+        clave_válida1: 'Trípode (soporte cámara)'
+        clave_válida2: 'Trípode (soporte smartphone)'
+        clave_válida3: 'Micro inalámbrico'
+      '#multiple': true
+      '#title': 'Equipos de Vídeo' 
+      '#description': ""
+    equipo_de_sonido_portatil_23:
+      '#type': checkboxes
+      '#options':
+        clave_válida: 'Altavoz'
+        clave_válida1: 'Micrófonos de Mano'
+        clave_válida2: 'Micrófono de Diadema'
+        clave_válida3: 'Cable de Conexión para equipos externos'
+      '#multiple': true
+      '#title': 'Equipo de Sonido Portátil' 
+      '#description': ""
+    proyector_portatil_23:
+      '#type': checkboxes
+      '#options':
+        clave_válida1: 'Proyector'
+        clave_válida2: 'Carrito para Proyector'
+        clave_válida3: 'Pantalla de Proyección'
+      '#multiple': true
+      '#title': 'Proyector Portátil' 
+      '#description': ""
+    breve_descripcion_del_uso_y_necesidades_23:
+      '#type': textarea
+      '#title': 'Breve descripción del uso y necesidades' 
+      '#description': ""
+      '#required': true
+  fieldset_datos_de_la_solicitud:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la Solicitud' 
+    '#description': ""
+    duracion_de_la_solicitud_24:
+      '#type': radios
+      '#options':
+        Clave_1: 'Solicitud Puntual*'
+        Clave_2: 'Solicitud Cuatrimestral**'
+      '#title': 'Duración de la Solicitud' 
+      '#description': "(*) La 'Solicitud Puntual', se realizará para uno o varios días consecutivos. Se especificará en las fechas de Inicio y Fin de Uso.\n\n(**) La 'Solicitud Cuatrimestral', se realizará para la solicitud repetida de un equipo o equipos uno o varios días semanales que sea constante durante el cuatrimestre."
+      '#required': true
+    fecha_de_inicio_24:
+      '#type': date
+      '#title': 'Fecha de inicio de uso' 
+      '#description': ""
+      '#required': true
+    dia_de_la_semana_24:
+      '#type': checkboxes
+      '#options':
+        monday: 'Lunes'
+        tuesday: 'Martes'
+        wednesday: 'Miércoles'
+        thursday: 'Jueves'
+        friday: 'Viernes'
+        saturday: 'Sábado'
+        sunday: 'Domingo'
+      '#multiple': true
+      '#title': 'Día de la semana (en el caso de Solicitud Cuatrimestral)' 
+      '#description': ""
+      '#required': true
+      '#states':
+        visible:
+          ':input[name="duracion_de_la_solicitud_24"]':
+            value: Clave_2
+            
+    hora_de_inicio_24:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora de inicio' 
+      '#description': ""
+      '#required': true
+    hora_de_fin_24:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora de fin' 
+      '#description': ""
+      '#required': true
+    fecha_fin_de_uso_24:
+      '#type': date
+      '#title': 'Fecha fin de uso' 
+      '#description': ""
+      '#required': true
+    condiciones_de_uso_24:
+      '#type': radios
+      '#options':
+        clave_segura1: 'He leído y acepto condiciones de Uso'
+      '#title': 'Condiciones de Uso' 
+      '#description': "“La utilización del material audiovisual será con fines académicos exclusivamente; se limitará a la actividad autorizada bajo las condiciones declaradas. El usuario autorizado se compromete a devolver el material en el mismo estado en que se le presta, haciéndose responsable de los daños producidos. Si se presenta algún problema respecto al uso y manejo del material, consultar previamente con el responsable del Laboratorio de Medios Audiovisuales antes de su manipulación”\n"
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Ha enviado una Solicitud de material Audiovisual, en el menor tiempo posible nos pondremos en contacto con usted para comunicarle la disponibilidad del equipo solicitado.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: audiovis@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:responsable:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:responsable:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

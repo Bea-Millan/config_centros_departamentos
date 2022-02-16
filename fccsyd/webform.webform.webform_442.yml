@@ -1,0 +1,163 @@
+uuid: ac15e42a-b3c3-4632-b2a9-82cdaa0e87e1
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_442
+title: 'Solicitud de asistencia técnica en relación a los Medios Audiovisuales de la Facultad'
+description: null
+category: null
+elements: |
+  fieldset_datos_de_contacto:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de contacto' 
+    '#description': ""
+    solicitante_12:
+      '#type': textfield
+      '#title': 'Solicitante' 
+      '#description': ""
+      '#required': true
+    email_institucional_12:
+      '#type': email
+      '#size': 20
+      '#title': 'Email institucional' 
+      '#description': ""
+      '#required': true
+    relacion_con_la_facultad_12:
+      '#type': radios
+      '#options':
+        clave_válida1: 'PDI'
+        clave_válida2: 'PAS'
+        clave_válida3: 'ALUMNADO'
+      '#title': 'Relación con la Facultad' 
+      '#description': ""
+      '#required': true
+    departamento_12:
+      '#type': textfield
+      '#title': 'Departamento' 
+      '#description': ""
+    asignatura_12:
+      '#type': textfield
+      '#title': 'Asignatura' 
+      '#description': ""
+      '#required': true
+  fieldset_indique_el_espacio_donde_requiere_la_asistencia:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Indique el espacio en el cual requiere la asistencia' 
+    '#description': ""
+    aula_10:
+      '#type': radios
+      '#options':
+        clave_1: 'Aula I'
+        clave_2: 'Aula II'
+        clave_3: 'Aula III'
+        clave_4: 'Aula IV'
+        clave_5: 'Aula V'
+        clave_6: 'Aula VI'
+        clave_7: 'Aula VII'
+        clave_8: 'Aula VIII'
+        clave_9: 'Aula IX'
+        clave_10: 'Salón de Actos'
+      '#title': 'Aula' 
+      '#description': ""
+      '#required': true
+    edificio_10:
+      '#type': radios
+      '#options':
+        clave_válida1: 'Edificio Plaza Universidad'
+        clave_válida2: 'Pabellón Rio Isuela'
+        clave_válida3: 'Edificio Velódromo'
+        clave_válida4: 'Hospital Universitario San Jorge'
+        clave_válida5: 'Hospital Sagrado Corazón'
+        clave_válida6: 'FEGP'
+      '#title': 'Edificio' 
+      '#description': ""
+      '#required': true
+  fieldset_fecha_y_hora:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Fecha y hora' 
+    '#description': ""
+    fecha_11:
+      '#type': date
+      '#title': 'Fecha' 
+      '#description': ""
+      '#required': true
+    hora_11:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora' 
+      '#description': ""
+      '#required': true
+  breve_descripcion_de_las_necesidades:
+    '#type': textarea
+    '#title': 'Breve descripción de las necesidades' 
+    '#description': "Especifique cuales son sus necesidades de apoyo técnico."
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>El aviso se ha enviado correctamente al Laboratorio de Medios Audiovisuales de la Fac CC Salud y Deporte.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: audiovis@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email_institucional:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:solicitante:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:asignatura:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

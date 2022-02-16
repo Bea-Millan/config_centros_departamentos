@@ -1,0 +1,271 @@
+uuid: 1a9c4072-af00-4d4e-b698-d4d99e5394c4
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_421
+title: 'Aviso de Incidencias con Medios Audiovisuales  FCCSyD'
+description: null
+category: null
+elements: |
+  fieldset_solicitante:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Solicitante' 
+    '#description': ""
+    nombre_17:
+      '#type': textfield
+      '#title': 'Nombre' 
+      '#description': ""
+      '#required': true
+    email_de_contacto_17:
+      '#type': email
+      '#size': 20
+      '#title': 'Email Institucional' 
+      '#description': ""
+      '#required': true
+    colectivo_al_que_pertenece_17:
+      '#type': radios
+      '#options':
+        clave_0: 'PDI'
+        clave_1: 'PAS'
+      '#title': 'Colectivo al que pertenece' 
+      '#description': ""
+      '#required': true
+  fieldset_fecha_y_hora_en_que_ocurrio_la_incidencia:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Fecha y hora en que ocurrió la incidencia' 
+    '#description': ""
+    dia_20:
+      '#type': date
+      '#title': 'Dia' 
+      '#description': ""
+      '#required': true
+    hora_20:
+      '#type': time
+      '#time_format': 'H:i'
+      '#title': 'Hora' 
+      '#description': ""
+      '#required': true
+  fieldset_espacio_incidencia:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Especifique el espacio donde ocurrió de la incidencia' 
+    '#description': ""
+    fieldset_edificio_plz__universidad_13:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Edificio Plaza Universidad' 
+      '#description': ""
+      aula_1:
+        '#type': select
+        '#options':
+          clave_1: 'Aula I'
+          clave_2: 'Aula II'
+          clave_3: 'Aula III'
+          clave_4: 'Aula IV'
+          clave_5: 'Aula V'
+          clave_6: 'Aula VI'
+          clave_7: 'Aula VII'
+          clave_8: 'Aula VIII'
+          clave_9: 'Aula IX'
+        '#title': 'Aula' 
+        '#description': ""
+      laboratorio_1:
+        '#type': select
+        '#options':
+          clave_1: 'Biomedicina'
+          clave_2: 'Bioquímica'
+          clave_3: 'Farmacología'
+          clave_4: 'Fisiología'
+          clave_5: 'Mocrobiología'
+          clave_6: 'Morfológicas'
+          clave_7: 'Sala Microscopios'
+        '#title': 'Laboratorio' 
+        '#description': ""
+      seminario_1:
+        '#type': select
+        '#options':
+          clave_1: 'Seminario I'
+          clave_2: 'Seminario II'
+        '#title': 'Seminario' 
+        '#description': ""
+      otros_espacios_1:
+        '#type': checkboxes
+        '#options':
+          clave_0: 'Unidad de Nutrición'
+          clave_1: 'Sala de Disección'
+          clave_2: 'Sala de Informática'
+        '#multiple': true
+        '#title': 'Otros Espacios' 
+        '#description': ""
+    fieldset_pabellon_rio_isuela_13:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Pabellón Rio Isuela' 
+      '#description': ""
+      espacios_6:
+        '#type': radios
+        '#options':
+          clave_0: 'Aula I'
+          clave_1: 'Seminario II'
+          clave_2: 'Lab. Biomédico'
+          clave_3: 'Lab. Observación'
+          clave_4: 'Sala Cubo'
+          clave_5: 'Tatami'
+        '#title': 'Espacios' 
+        '#description': ""
+    fieldset_edificio_velodromo_13:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Edificio Velódromo' 
+      '#description': ""
+      aula_8:
+        '#type': select
+        '#options':
+          clave_1: 'Aula I'
+          clave_2: 'Aula II'
+          clave_3: 'Aula III'
+          clave_4: 'Aula IV'
+        '#title': 'Aula' 
+        '#description': ""
+      laboratorios_biomedicos_8:
+        '#type': select
+        '#options':
+          clave_0: 'Farmacología'
+          clave_1: 'Microbiología'
+          clave_2: 'Microscopios'
+        '#title': 'Laboratorios Biomédicos' 
+        '#description': ""
+      labs_dentales_8:
+        '#type': select
+        '#options':
+          clave_0: 'Lab. Materiales'
+          clave_1: 'Lab. Preclínica'
+        '#title': 'Labs. Dentales' 
+        '#description': ""
+      otros_espacios_8:
+        '#type': checkboxes
+        '#options':
+          clave_0: 'Sala de Informatica'
+          clave_1: 'Clínica'
+        '#multiple': true
+        '#title': 'Otros Espacios' 
+        '#description': ""
+    fieldset_otros_edificios_13:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Otros Edificios' 
+      '#description': ""
+      espacios_de_uso_de_la_fccsyd_24:
+        '#type': radios
+        '#options':
+          clave_01: 'Aula 2 FEGAP'
+          clave_02: 'Salon de Actos Sagrado Corazón'
+          clave_03: 'Salon de Actos San Jorge'
+        '#title': 'Espacios de uso de la FCCSYD' 
+        '#description': ""
+  fieldset_tipo_de_incidencia:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Tipo de Incidencia ' 
+    '#description': ""
+    problema_con_14:
+      '#type': checkboxes
+      '#options':
+        clave_0: 'Sonido'
+        clave_1: 'Proyección'
+        clave_2: 'Streaming'
+        clave_3: 'Otros'
+      '#multiple': true
+      '#title': 'Equipo que ha generado el problema' 
+      '#description': ""
+      '#required': true
+    descripcion_de_la_incidencia_14:
+      '#type': textarea
+      '#title': 'Descripción de la incidencia' 
+      '#description': ""
+      '#required': true
+      '#states':
+        required:
+          ':input[name="problema_con_14[clave_0]"]':
+            checked: true
+            
+          ':input[name="[]"]':
+            checked: true
+            
+          ':input[name="problema_con_14[clave_1]"]':
+            checked: true
+            
+          ':input[name="problema_con_14[clave_2]"]':
+            checked: true
+            
+          ':input[name="[]"]':
+            checked: true
+            
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>El aviso se ha enviado correctamente al Laboratorio de Medios Audiovisuales de la Fac CC Salud y Deporte.</p><p>&nbsp;</p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: audiovis@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

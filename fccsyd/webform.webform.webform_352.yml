@@ -1,0 +1,220 @@
+uuid: 14aa5ccd-c9b6-4afc-bfe7-aa90f3a2624f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_352
+title: 'Prestamo de Material Medio Natural'
+description: null
+category: null
+elements: |
+  fieldset_datos_solicitane:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos Solicitane' 
+    '#description': ""
+    responsable_14:
+      '#type': textfield
+      '#title': 'Responsable' 
+      '#description': ""
+      '#required': true
+    cargo_14:
+      '#type': textfield
+      '#title': 'Cargo' 
+      '#description': ""
+      '#required': true
+    asignatura_14:
+      '#type': textfield
+      '#title': 'Asignatura' 
+      '#description': ""
+      '#required': true
+    email_14:
+      '#type': email
+      '#size': 20
+      '#title': 'Email Institucional' 
+      '#description': ""
+      '#required': true
+    telefono_de_contacto_14:
+      '#title': 'Teléfono de contacto' 
+      '#description': ""
+      '#required': true
+  fieldset_persona_que_recoge:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Persona que Recoge' 
+    '#description': ""
+    nombre_8:
+      '#type': textfield
+      '#title': 'Nombre' 
+      '#description': ""
+      '#required': true
+    telefono_de_contacto_8:
+      '#type': textfield
+      '#title': 'Teléfono de contacto' 
+      '#description': ""
+      '#required': true
+    email_de_contacto_8:
+      '#type': email
+      '#size': 20
+      '#title': 'Email de Contacto' 
+      '#description': ""
+      '#required': true
+  tipo_de_uso:
+    '#type': radios
+    '#options':
+      Clave_segura1: 'Docente en la instalación'
+      Clave_segura2: 'Docente fuera de la instalación'
+      Clave_segura3: 'Préstamo externo (Imprescindible autorización decanal)'
+    '#title': 'Tipo de Uso' 
+    '#description': ""
+    '#required': true
+  fecha_de_inicio:
+    '#type': date
+    '#title': 'Fecha de Inicio' 
+    '#description': ""
+    '#required': true
+  hora_inicio:
+    '#type': time
+    '#time_format': 'H:i'
+    '#title': 'Hora Inicio' 
+    '#description': ""
+    '#required': true
+  fecha_de_finalizacion:
+    '#type': date
+    '#title': 'Fecha de Finalización' 
+    '#description': ""
+    '#required': true
+  hora_finalizacion:
+    '#type': time
+    '#time_format': 'H:i'
+    '#title': 'Hora Finalización' 
+    '#description': ""
+    '#required': true
+  material_solicitado:
+    '#type': managed_file
+    '#max_filesize': '2'
+    '#file_extensions': 'jpg jpeg pdf doc docx'
+    '#title': 'Material Solicitado, Formulario' 
+    '#description': "Adjunte aquí el archivo con el material solicitado."
+  material_solicitado_campo_de_texto:
+    '#type': textarea
+    '#title': 'Material Solicitado, campo de texto' 
+    '#description': "Especifique aquí el material solicitado"
+  autorizacion_practicas_externas:
+    '#type': managed_file
+    '#max_filesize': '2'
+    '#file_extensions': 'jpg jpeg pdf doc docx'
+    '#title': 'Autorización "Prácticas Externas"' 
+    '#description': "Adjunte aquí el archivo de Autorización si es necesario."
+    '#required': true
+    '#states':
+      required:
+        ':input[name="tipo_de_uso"]':
+          value: Clave_segura3
+          
+  observaciones:
+    '#type': textarea
+    '#title': 'Observaciones:' 
+    '#description': ""
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Hemos recibido su <strong>Solicitud de Material Medio Natural</strong>, en breve nos pondremos en contacto con usted para confirmar la disponibilidad del material solicitado.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: 'Enviar Solicitud'
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: mnatudep@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:Responsable:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:Responsable:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: leo@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:Responsable:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:Responsable:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

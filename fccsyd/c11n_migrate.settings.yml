@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: '-V6NHCmDeGeOLYPafTl-YXHqsTe8MOddjXGOreZKKUk'
+plugin:
+  url_host: sites/fccsyd
+  host: fccsyd.unizar.es
+langcode: es
