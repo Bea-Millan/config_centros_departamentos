@@ -8,29 +8,29 @@ description: ''
 weight: 0
 folder: ../config/sites/fcs
 module:
-  - 0
+  c11n_migrate: 0
 theme: {  }
 blacklist:
+  - config_split.config_split.fcs
+  - core.entity_view_mode.shortcut.token
+  - core.extension
+  - language.types
+  - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
+  - unizar_admin_menu.settings
+  - unizar_base.settings
+  - unizar_centro.settings
+  - unizar_modulos_configuracion.settings
   - 'block.block.*'
   - 'system.menu.*'
   - 'webform.webform.*'
-  - migrate_drupal.settings
-  - unizar_admin_menu.settings
-  - unizar_modulos_configuracion.settings
-  - language.types
   - language.negociation
   - 'language.entity.*'
-  - smtp.settings
   - unizar_departamento.settings
-  - unizar_base.settings
-  - unizar_centro.settings
-  - shortcut.set.default
-  - core.entity_view_mode.shortcut.token
   - asset_injector.css.fcs_inyeccion_css
-  - core.extension
-  - system.theme
-  - system.site
-  - config_split.config_split.fcs
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

@@ -1,5 +1,17 @@
 _core:
   default_config_hash: huyjNxCoJvdO39JNYZZYNlgvBtUSVsLqkmMmRTjZrj8
 langcode: es
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://Facultad Ciencias de la salud_color-01.png'
+  use_default: false
 instagram: www.instagram.es
 dir_centro: 'Pedro Cerbuna, 12 - 50009 Zaragoza'
+logo_footer_path: ''
+logo_footer_upload: {  }
