@@ -1,0 +1,25 @@
+uuid: 34187bad-80a7-4031-9ad5-9c30fd0f3295
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_enlace_bolo
+    - paragraphs.paragraphs_type.imagen_con_vinculo
+  module:
+    - link
+_core:
+  default_config_hash: I5eRGRSj70ml2DK3ghRYOgWyWdxG-qoCmEXx9VEN8JA
+id: paragraph.imagen_con_vinculo.field_enlace_bolo
+field_name: field_enlace_bolo
+entity_type: paragraph
+bundle: imagen_con_vinculo
+label: Enlace
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

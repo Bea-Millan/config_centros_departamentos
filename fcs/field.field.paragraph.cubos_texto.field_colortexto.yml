@@ -1,0 +1,23 @@
+uuid: abe82d9f-fbb8-4df4-8f10-704404fe564c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colortexto
+    - paragraphs.paragraphs_type.cubos_texto
+  module:
+    - options
+_core:
+  default_config_hash: hCif3rl2IPtJlYRXb5o8wAzYcYdVUf41-zrO27gKwOE
+id: paragraph.cubos_texto.field_colortexto
+field_name: field_colortexto
+entity_type: paragraph
+bundle: cubos_texto
+label: 'Color del rótulo'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

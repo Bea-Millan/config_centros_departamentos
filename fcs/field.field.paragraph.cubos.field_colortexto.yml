@@ -1,0 +1,25 @@
+uuid: c5b9a440-38a8-4c83-9cab-754e8df13525
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colortexto
+    - paragraphs.paragraphs_type.cubos
+  module:
+    - options
+_core:
+  default_config_hash: '-1Iq4ZbYz1935g53-fdUTxuJhxRapr6JZT9yyhEV8vU'
+id: paragraph.cubos.field_colortexto
+field_name: field_colortexto
+entity_type: paragraph
+bundle: cubos
+label: 'Color del título'
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: color_3
+default_value_callback: ''
+settings: {  }
+field_type: list_string

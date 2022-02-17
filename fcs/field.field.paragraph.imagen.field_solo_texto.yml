@@ -1,0 +1,23 @@
+uuid: aa73817f-82ce-4a63-9cfc-6d56450ef94b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solo_texto
+    - paragraphs.paragraphs_type.imagen
+  module:
+    - text
+_core:
+  default_config_hash: Ziu_GWVGQADVbEDDylXITH_XiqxFNDmYnR4gYbovCjM
+id: paragraph.imagen.field_solo_texto
+field_name: field_solo_texto
+entity_type: paragraph
+bundle: imagen
+label: 'Texto superpuesto'
+description: 'Completar si desea que se muestre un texto sobre la imagen elegida'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

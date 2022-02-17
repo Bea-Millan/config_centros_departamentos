@@ -1,0 +1,24 @@
+uuid: 294fe67b-ad40-4b5b-9a1b-62d8aa9b9424
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: LGEG51ahYpI3DUT9Pc_L5e1uhlMUr_Gb6gnddNT8uAc
+id: authenticated
+label: 'usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access site map'
+  - 'display EU Cookie Compliance popup'
+  - 'edit webform components'
+  - 'opt-in or out of matomo tracking'
+  - 'search content'
+  - 'use text format filtered_html'

@@ -1,0 +1,13 @@
+uuid: 36b1b90e-8ad1-43c2-b692-6d78ab8ec8b4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.galeria
+_core:
+  default_config_hash: 3IU-pirEKI--OEsixzihR1U6wjXgsdb_-W4G4cqExCA
+id: node.galeria
+target_entity_type_id: node
+target_bundle: galeria
+default_langcode: site_default
+language_alterable: true

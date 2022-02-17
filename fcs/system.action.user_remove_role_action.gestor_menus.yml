@@ -1,0 +1,16 @@
+uuid: f946d7ca-f733-43b9-970e-8ba5aae000ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_menus
+  module:
+    - user
+_core:
+  default_config_hash: HM9Ov4QoAIz-OiU2GMxNmbia48yawgyizpZj0f3T_8U
+id: user_remove_role_action.gestor_menus
+label: 'Remove the gestor menus role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_menus

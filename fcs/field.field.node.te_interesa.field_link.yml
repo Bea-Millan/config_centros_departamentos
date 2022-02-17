@@ -1,0 +1,25 @@
+uuid: e67de647-5023-4be2-8058-45188dce3115
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.te_interesa
+  module:
+    - link
+_core:
+  default_config_hash: FSOA3HkhCnioUKfhbD38OCuYsMC0xaye6_Hb7LYe2Mg
+id: node.te_interesa.field_link
+field_name: field_link
+entity_type: node
+bundle: te_interesa
+label: Enlace
+description: 'Link a la información (Incluir http://)'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

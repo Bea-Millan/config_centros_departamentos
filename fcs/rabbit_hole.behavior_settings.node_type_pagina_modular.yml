@@ -1,0 +1,16 @@
+uuid: 79d7cd11-5099-4a23-9972-7a61af8de8da
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_modular
+_core:
+  default_config_hash: UctHanxd4ezERe5ij5k8a70gk3Nh7_B6rRK7s2ceyPA
+id: node_type_pagina_modular
+entity_type_id: node_type
+entity_id: pagina_modular
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

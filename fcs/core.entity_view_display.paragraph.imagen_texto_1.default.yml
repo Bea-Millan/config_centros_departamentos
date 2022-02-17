@@ -1,0 +1,105 @@
+uuid: c872b867-ea15-474c-b7eb-6ae639cb2047
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.imagen_texto_1.field_align_text
+    - field.field.paragraph.imagen_texto_1.field_color_fondo
+    - field.field.paragraph.imagen_texto_1.field_colorfondo
+    - field.field.paragraph.imagen_texto_1.field_colortexto
+    - field.field.paragraph.imagen_texto_1.field_imagen_modular
+    - field.field.paragraph.imagen_texto_1.field_justify_text
+    - field.field.paragraph.imagen_texto_1.field_posicion
+    - field.field.paragraph.imagen_texto_1.field_sin_margen
+    - field.field.paragraph.imagen_texto_1.field_solo_texto
+    - field.field.paragraph.imagen_texto_1.field_tamano_imagen
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - options
+    - svg_image
+    - text
+_core:
+  default_config_hash: f8XKDEBimBPRfO9jpIbmdWeY5hMxQldprNT4F5PZR30
+id: paragraph.imagen_texto_1.default
+targetEntityType: paragraph
+bundle: imagen_texto_1
+mode: default
+content:
+  field_align_text:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_color_fondo:
+    weight: 8
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_colorfondo:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_colortexto:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_imagen_modular:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_justify_text:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_posicion:
+    type: list_default
+    weight: 2
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_sin_margen:
+    weight: 9
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+  field_solo_texto:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_tamano_imagen:
+    type: list_default
+    weight: 3
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

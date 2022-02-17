@@ -1,0 +1,22 @@
+uuid: 710ba5e9-8d82-4c37-99b7-d22806565f3b
+langcode: es
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+_core:
+  default_config_hash: VpwIGq6aqWMCJxugqz9utW2hnxQlSHon3f-x4XbV_tg
+id: paragraph.field_imagen_fullsize
+field_name: field_imagen_fullsize
+entity_type: paragraph
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

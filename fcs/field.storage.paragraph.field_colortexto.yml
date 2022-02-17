@@ -1,0 +1,38 @@
+uuid: 5e5904ab-c52f-452c-9918-658935eb4563
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: TOuEJqy1W3nYsSX1rC9B-VL30oAeEKftl7c68i9VQxU
+id: paragraph.field_colortexto
+field_name: field_colortexto
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: color_3
+      label: 'Default color'
+    -
+      value: color_1
+      label: 'Color primario'
+    -
+      value: color_2
+      label: 'Color secundario'
+    -
+      value: color_4
+      label: Blanco
+    -
+      value: color_5
+      label: Negro
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

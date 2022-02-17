@@ -5,9 +5,10 @@ dependencies: {  }
 id: fcs
 label: fcs
 description: ''
-folder: ../config/sites/fcs 
+weight: 0
+folder: ../config/sites/fcs
 module:
-  - c11n_migrate: 0
+  - 0
 theme: {  }
 blacklist:
   - 'block.block.*'
@@ -33,4 +34,3 @@ blacklist:
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

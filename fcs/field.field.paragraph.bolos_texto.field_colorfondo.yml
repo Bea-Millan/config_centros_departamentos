@@ -1,0 +1,23 @@
+uuid: b63b1ce4-6622-4c86-9be2-422a4ba70f60
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_colorfondo
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - options
+_core:
+  default_config_hash: jryL4EWAXhh3Mbsa3TMolIbxWgZWtQNR5CaWvVoPOqQ
+id: paragraph.bolos_texto.field_colorfondo
+field_name: field_colorfondo
+entity_type: paragraph
+bundle: bolos_texto
+label: 'Color de fondo texto'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

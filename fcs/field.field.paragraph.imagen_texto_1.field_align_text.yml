@@ -1,0 +1,23 @@
+uuid: cb9462a5-3464-4946-80ab-efbafddefbdf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_align_text
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - options
+_core:
+  default_config_hash: dw8lO-S50I_zjvq7w8DL4h0mIaD8GF6F4aestTEjDpg
+id: paragraph.imagen_texto_1.field_align_text
+field_name: field_align_text
+entity_type: paragraph
+bundle: imagen_texto_1
+label: 'Posición vertical texto'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

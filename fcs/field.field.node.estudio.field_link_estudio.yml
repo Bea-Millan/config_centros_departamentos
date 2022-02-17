@@ -1,0 +1,28 @@
+uuid: a07812eb-ca11-419e-a19e-ccb62d04720c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_estudio
+    - node.type.estudio
+  module:
+    - link
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: jGkOVZK9PUiQz3ULp4NSGMOr00YY7D-6UjGQ8KN7nSs
+id: node.estudio.field_link_estudio
+field_name: field_link_estudio
+entity_type: node
+bundle: estudio
+label: ' Enlace a la información del estudio'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

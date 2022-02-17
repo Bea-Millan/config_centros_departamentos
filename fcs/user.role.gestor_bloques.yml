@@ -1,0 +1,29 @@
+uuid: 7b5f5422-0a97-4b12-afde-f8f324e7f63e
+langcode: es
+status: true
+dependencies:
+  module:
+    - block
+_core:
+  default_config_hash: __NLS01B2zVm3ZNGdU6_NRgfOyVJ0FnNONENWRO6xjk
+id: gestor_bloques
+label: 'gestor bloques'
+weight: 5
+is_admin: null
+permissions:
+  - 'access the block administration page'
+  - 'administer blocks'
+  - 'configure all block body fields'
+  - 'configure all block descriptions'
+  - 'configure all block titles'
+  - 'configure all blocks'
+  - 'configure all page visibility settings'
+  - 'configure all region settings'
+  - 'configure all visibility settings'
+  - 'create blocks'
+  - 'delete all blocks'
+  - 'disable all blocks'
+  - 'display EU Cookie Compliance popup'
+  - 'enable all blocks'
+  - 'move all blocks'
+  - 'view all blocks'

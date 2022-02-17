@@ -1,0 +1,32 @@
+uuid: 7ab1aed6-9c4e-4577-b913-155efc0e0c6a
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: UB0SEqT0w-ekluz8LBNY57rdp6_U8PWAHc4Dz7by7SA
+id: paragraph.field_borde
+field_name: field_borde
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: top
+      label: superior
+    -
+      value: btm
+      label: inferior
+    -
+      value: both
+      label: ambos
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

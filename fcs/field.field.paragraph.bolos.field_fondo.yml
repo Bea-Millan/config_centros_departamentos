@@ -1,0 +1,25 @@
+uuid: 2ddc2f04-21a3-4b8f-ad72-dcf23f823305
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fondo
+    - paragraphs.paragraphs_type.bolos
+  module:
+    - options
+_core:
+  default_config_hash: w2TPSbg_xGo7PQuIQGDCfxQ2cTrLgy-sCLmYWWmNu30
+id: paragraph.bolos.field_fondo
+field_name: field_fondo
+entity_type: paragraph
+bundle: bolos
+label: Fondo
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

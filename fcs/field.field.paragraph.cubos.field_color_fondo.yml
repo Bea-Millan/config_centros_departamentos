@@ -1,0 +1,25 @@
+uuid: 158250db-1ff1-4311-9894-bce47c0070e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color_fondo
+    - paragraphs.paragraphs_type.cubos
+_core:
+  default_config_hash: BbVuOk3w8SBg-1LVUasUdG-zx2PjVbq_TgA6deqWMHU
+id: paragraph.cubos.field_color_fondo
+field_name: field_color_fondo
+entity_type: paragraph
+bundle: cubos
+label: 'Color de fondo'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

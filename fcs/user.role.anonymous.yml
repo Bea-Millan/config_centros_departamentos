@@ -1,0 +1,23 @@
+uuid: b73ba754-d4c4-492f-872b-b647626ac2d5
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site map'
+  - 'display EU Cookie Compliance popup'
+  - 'search content'
+  - 'use text format filtered_html'

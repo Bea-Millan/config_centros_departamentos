@@ -1,0 +1,23 @@
+uuid: 2a993d77-e0c0-4fe5-8025-ba9ee2782a04
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_solo_texto
+    - paragraphs.paragraphs_type.texto
+  module:
+    - text
+_core:
+  default_config_hash: 5nSFTybQjgK5W97SF_VWe3xgK0bFWRQ_unWzoxgYBqE
+id: paragraph.texto.field_solo_texto
+field_name: field_solo_texto
+entity_type: paragraph
+bundle: texto
+label: Texto
+description: 'Permite introducir un texto que ocupará el 100% de la anchura '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

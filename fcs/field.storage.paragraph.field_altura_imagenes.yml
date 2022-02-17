@@ -1,0 +1,22 @@
+uuid: dc69d7aa-b237-49ed-bba0-181597391efc
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: HA7fR6omfi8xp7j5UNZcFz3ZBfgMvTRMlNsZslilUdQ
+id: paragraph.field_altura_imagenes
+field_name: field_altura_imagenes
+entity_type: paragraph
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

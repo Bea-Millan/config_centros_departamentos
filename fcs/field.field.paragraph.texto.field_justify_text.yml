@@ -1,0 +1,25 @@
+uuid: daf18fae-150b-4d47-bb30-201d8d905396
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_justify_text
+    - paragraphs.paragraphs_type.texto
+  module:
+    - options
+_core:
+  default_config_hash: J1BI4d_7thWx3quuPH7qrtMmreaiIIjMiIUeenVDR1s
+id: paragraph.texto.field_justify_text
+field_name: field_justify_text
+entity_type: paragraph
+bundle: texto
+label: 'Posición título'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: p-justify-center
+default_value_callback: ''
+settings: {  }
+field_type: list_string

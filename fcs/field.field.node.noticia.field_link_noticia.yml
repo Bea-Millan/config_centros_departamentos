@@ -1,0 +1,25 @@
+uuid: eec9783c-65a5-45ea-8576-e8aa8405fe27
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_noticia
+    - node.type.noticia
+  module:
+    - link
+_core:
+  default_config_hash: gaQfUQxouGIs5MYJdd4YlN_MQ2vjjYpJ_SWy6YTWVJA
+id: node.noticia.field_link_noticia
+field_name: field_link_noticia
+entity_type: node
+bundle: noticia
+label: 'Enlace a la noticia'
+description: 'Si completa este campo, al clickar en el título de la noticia dirigirá a la dirección en él insertada, por lo que no es necesario completar el campo "Texto de la noticia"'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

@@ -1,0 +1,40 @@
+uuid: e501bd41-1db4-4d45-af2b-8df71940c2bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_imagen_modular
+    - paragraphs.paragraphs_type.imagen_texto_1
+  module:
+    - image
+_core:
+  default_config_hash: uj7Yxb3AJOGCzOZimYtmLsQfE_P1sxiDCFFnMvDE4eU
+id: paragraph.imagen_texto_1.field_imagen_modular
+field_name: field_imagen_modular
+entity_type: paragraph
+bundle: imagen_texto_1
+label: 'Imagen modular'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'imagenes-modulares/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

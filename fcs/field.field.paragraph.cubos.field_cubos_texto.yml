@@ -1,0 +1,73 @@
+uuid: d0f9ed25-02e5-44a9-9acc-2881bbe7af33
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cubos_texto
+    - paragraphs.paragraphs_type.bloque_solo_imagen
+    - paragraphs.paragraphs_type.bloque_solo_texto
+    - paragraphs.paragraphs_type.cubos
+    - paragraphs.paragraphs_type.cubos_texto
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: 5HhJS5omeh2I1gaDm27wB0VmU6ElTI5nkzXATGT5r1E
+id: paragraph.cubos.field_cubos_texto
+field_name: field_cubos_texto
+entity_type: paragraph
+bundle: cubos
+label: Bloques
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cubos_texto: cubos_texto
+      bloque_solo_imagen: bloque_solo_imagen
+      bloque_solo_texto: bloque_solo_texto
+    target_bundles_drag_drop:
+      banda_imagenes:
+        weight: 16
+        enabled: false
+      bloque_solo_imagen:
+        enabled: true
+        weight: 14
+      bloque_solo_texto:
+        enabled: true
+        weight: 15
+      bolos:
+        weight: 10
+        enabled: false
+      bolos_texto:
+        weight: 11
+        enabled: false
+      columnas:
+        weight: 19
+        enabled: false
+      columnas_texto:
+        weight: 20
+        enabled: false
+      cubos:
+        weight: 8
+        enabled: false
+      cubos_texto:
+        enabled: true
+        weight: 11
+      imagen:
+        weight: 12
+        enabled: false
+      imagen_con_vinculo:
+        weight: 24
+        enabled: false
+      imagen_texto_1:
+        weight: 13
+        enabled: false
+      texto:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

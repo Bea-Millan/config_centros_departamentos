@@ -1,0 +1,47 @@
+uuid: 9ad5f9a5-239e-4050-825a-b9c47f6e106e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tipos_de_estudio.field_imagen_estudio
+    - image.style.thumbnail
+    - taxonomy.vocabulary.tipos_de_estudio
+  module:
+    - svg_image
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: a2Fk7-No_cDoy_Rpb1VDUPjeu0fTgme37kuj2dw5laY
+id: taxonomy_term.tipos_de_estudio.default
+targetEntityType: taxonomy_term
+bundle: tipos_de_estudio
+mode: default
+content:
+  field_imagen_estudio:
+    weight: 1
+    type: image_image
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+hidden:
+  description: true
+  langcode: true
+  path: true

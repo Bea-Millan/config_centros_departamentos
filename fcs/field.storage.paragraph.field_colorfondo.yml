@@ -1,0 +1,32 @@
+uuid: 22f4a88d-3d5a-4dc3-8a0c-59dd98936171
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: Jo-V58TeXpmV2g_YMt5cKZmCLnqnnAEgDCMxlsDTWCs
+id: paragraph.field_colorfondo
+field_name: field_colorfondo
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: bg-df-color
+      label: 'Color por defecto'
+    -
+      value: bg-color_1
+      label: 'Color primario'
+    -
+      value: bg-color_2
+      label: 'Color secundario'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,32 @@
+uuid: d437bdf2-b00d-4e4a-b4b2-60a873250d0f
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+_core:
+  default_config_hash: ISdv3P4R9RaTcxr_ZqsyY5EpTnQnwnIV1olp-rG6iog
+id: paragraph.field_tamano_imagen
+field_name: field_tamano_imagen
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: porcentaje25
+      label: 25%
+    -
+      value: porcentaje40
+      label: 40%
+    -
+      value: porcentaje60
+      label: 60%
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

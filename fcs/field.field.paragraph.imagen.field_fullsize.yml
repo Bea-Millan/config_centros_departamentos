@@ -1,0 +1,25 @@
+uuid: d849b5f0-c01b-443c-9704-39797f74c13d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_fullsize
+    - paragraphs.paragraphs_type.imagen
+_core:
+  default_config_hash: SseieopbT5vHwz4ZzLUSqdww8Zl-Ln6zOI-AjsYp68U
+id: paragraph.imagen.field_fullsize
+field_name: field_fullsize
+entity_type: paragraph
+bundle: imagen
+label: 'Tamaño completo'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

@@ -1,0 +1,24 @@
+uuid: 85b608b3-e253-4ecc-a7a1-006dc2977952
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Xz01bqTUlknsPlOzTqt_Zp_CqcoCDJCeDLiIqcswXgQ
+id: noticia
+label: Noticia
+type: 'canonical_entities:node'
+pattern: 'noticia/[node:title]'
+selection_criteria:
+  69de57ba-6195-454a-9933-3e7a4b840be3:
+    id: node_type
+    bundles:
+      noticia: noticia
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 69de57ba-6195-454a-9933-3e7a4b840be3
+selection_logic: and
+weight: -5
+relationships: {  }

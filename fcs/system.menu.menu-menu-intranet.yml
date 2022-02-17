@@ -1,0 +1,8 @@
+uuid: ddfa3dae-e6cb-47c5-af46-2b2ea622cf24
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-intranet
+label: menu-intranet
+description: ''
+locked: false

@@ -1,0 +1,21 @@
+uuid: 7c227d56-7adb-417c-aa79-fdf64e217fc2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subtitulo_noticia
+    - node.type.noticia
+_core:
+  default_config_hash: hkYUVBkUK70tx8Xt7ajLCuki4DzroslGD2EBv5sc4fg
+id: node.noticia.field_subtitulo_noticia
+field_name: field_subtitulo_noticia
+entity_type: node
+bundle: noticia
+label: Subtítulo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

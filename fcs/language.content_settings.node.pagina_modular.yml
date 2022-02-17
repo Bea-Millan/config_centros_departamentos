@@ -1,0 +1,13 @@
+uuid: 179faf95-deae-4a8a-9678-bef83243e2ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_modular
+_core:
+  default_config_hash: QB2rGXHaN_OgNLlJUaPJZMnQ9_EjulEA90TkX4ids1o
+id: node.pagina_modular
+target_entity_type_id: node
+target_bundle: pagina_modular
+default_langcode: site_default
+language_alterable: false

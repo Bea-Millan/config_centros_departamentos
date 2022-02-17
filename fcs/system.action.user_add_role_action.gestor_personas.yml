@@ -1,0 +1,16 @@
+uuid: c83219de-8856-4b8f-9848-18b914338a9f
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_personas
+  module:
+    - user
+_core:
+  default_config_hash: B2-E0bSLmpKrbS8euojUuiKzQqv2-7TjseBw6xeRAS0
+id: user_add_role_action.gestor_personas
+label: 'Add the gestor personas role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_personas

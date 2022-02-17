@@ -1,0 +1,23 @@
+uuid: 830f76f1-6511-4939-94cc-9ab3402f4bd8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_destino_enlace
+    - paragraphs.paragraphs_type.bolos_texto
+  module:
+    - options
+_core:
+  default_config_hash: yCqquiTWO6sbTXKawt8iPguX0_CId0IZ7WgIyZqCgQs
+id: paragraph.bolos_texto.field_destino_enlace
+field_name: field_destino_enlace
+entity_type: paragraph
+bundle: bolos_texto
+label: 'Destino enlace'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

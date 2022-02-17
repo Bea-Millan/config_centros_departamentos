@@ -1,0 +1,25 @@
+uuid: 167eea0d-50fa-4e86-aecf-00555659e323
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_es_carrusel
+    - paragraphs.paragraphs_type.cubos
+_core:
+  default_config_hash: Os7uyNBTKwg3K3ly8xU6JRT_I6-LDFeHyO6qMItex9Q
+id: paragraph.cubos.field_es_carrusel
+field_name: field_es_carrusel
+entity_type: paragraph
+bundle: cubos
+label: Carrusel
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

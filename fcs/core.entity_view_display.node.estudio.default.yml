@@ -1,0 +1,58 @@
+uuid: 72a04a2f-8fa9-4825-a613-892aa2615b2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estudio.field_link_estudio
+    - field.field.node.estudio.field_link_estudio_personalizado
+    - field.field.node.estudio.field_tipo_estudio
+    - node.type.estudio
+  module:
+    - link
+    - user
+  enforced:
+    module:
+      - unizar_estudios
+_core:
+  default_config_hash: 9_k67NVIR7olcbPwcZtN7KAeolDfrTVlz9n4Ptr8hIw
+id: node.estudio.default
+targetEntityType: node
+bundle: estudio
+mode: default
+content:
+  field_link_estudio:
+    weight: 2
+    label: inline
+    settings:
+      trim_length: 255
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_link_estudio_personalizado:
+    weight: 3
+    label: inline
+    settings:
+      trim_length: 255
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_tipo_estudio:
+    label: inline
+    weight: 1
+    type: entity_reference_label
+    settings:
+      link: true
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

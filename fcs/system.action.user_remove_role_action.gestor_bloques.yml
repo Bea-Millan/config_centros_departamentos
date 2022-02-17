@@ -1,0 +1,16 @@
+uuid: 7160b343-dc6c-471e-a585-c239ae74114a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_bloques
+  module:
+    - user
+_core:
+  default_config_hash: gXDSugRHxkQuvADNKHbEzvOEQ_MvlTfFHnExdVhIBFo
+id: user_remove_role_action.gestor_bloques
+label: 'Remove the gestor bloques role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_bloques
