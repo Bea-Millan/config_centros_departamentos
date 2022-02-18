@@ -1,8 +1,0 @@
-uuid: 88da221b-7ec9-4887-a142-dc5643266c4a
-langcode: es
-status: true
-dependencies: {  }
-id: menu-semana-de-la-ingenieria-y-a
-label: 'Semana de la Ingenieria y Arquitectura'
-description: ''
-locked: false

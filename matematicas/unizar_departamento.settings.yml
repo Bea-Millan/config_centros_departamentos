@@ -1,5 +1,17 @@
 _core:
   default_config_hash: Do9D8YaZdtUb5MXYVv9ZlFQeXmcPMs1bH-rywJlvNis
 langcode: es
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://Matemáticas-gris.png'
+  use_default: false
 instagram: www.instagram.es
 dir_departamento: 'Pedro Cerbuna, 12 - 50009 Zaragoza'
+logo_footer_path: ''
+logo_footer_upload: {  }

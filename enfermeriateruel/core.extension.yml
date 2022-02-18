@@ -66,6 +66,7 @@ module:
   login_destination: 0
   media: 0
   media_library: 0
+  memcache: 0
   menu_block: 0
   menu_link_attributes: 0
   menu_link_clone: 0
@@ -93,6 +94,7 @@ module:
   search: 0
   shortcode: 0
   shortcut: 0
+  simple_user_management: 0
   smtp: 0
   statistics: 0
   superfish: 0
