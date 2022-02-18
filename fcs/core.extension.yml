@@ -93,6 +93,7 @@ module:
   search: 0
   shortcode: 0
   shortcut: 0
+  simple_user_management: 0
   smtp: 0
   statistics: 0
   superfish: 0

@@ -1,4 +1,4 @@
-uuid: 2db325d5-d1d4-4eef-8255-94643e874aeb
+uuid: c9f55354-8624-4138-af30-442d624920bb
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_centro_titulodelapagina
 theme: unizar_centro
 region: content
-weight: -5
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
