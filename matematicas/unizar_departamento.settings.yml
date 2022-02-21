@@ -10,7 +10,7 @@ features:
   node_user_picture: true
 logo:
   path: 'public://Matemáticas-gris.png'
-  use_default: false
+  use_default: true
 instagram: www.instagram.es
 dir_departamento: 'Pedro Cerbuna, 12 - 50009 Zaragoza'
 logo_footer_path: ''

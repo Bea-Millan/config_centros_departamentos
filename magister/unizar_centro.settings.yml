@@ -1,7 +1,7 @@
 langcode: es
 favicon:
-  mimetype: image/vnd.microsoft.icon
-  path: 'public://favicon.ico'
+  mimetype: image/png
+  path: profiles/custom/unizar_base_profile/themes/unizar_base/img/btn-spanish2.png
   use_default: false
 features:
   comment_user_picture: true
@@ -9,7 +9,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://logo-unizar_0.png'
+  path: 'public://fche01_0.png'
   use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

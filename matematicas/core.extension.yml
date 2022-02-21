@@ -102,6 +102,7 @@ module:
   tour: 0
   unizar_admin_menu: 0
   unizar_estudios: 0
+  unizar_ficha_personal: 0
   unizar_modulos_configuracion: 0
   unizar_paragraph: 0
   unizar_shortcode: 0
