@@ -1,0 +1,42 @@
+uuid: 7999820b-3d61-4497-b58e-b54be352ccd9
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_470
+title: Prueba
+description: null
+category: null
+elements: |-
+  prueba_correo:
+    '#type': email
+    '#size': 20
+    '#title': 'Prueba correo'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
