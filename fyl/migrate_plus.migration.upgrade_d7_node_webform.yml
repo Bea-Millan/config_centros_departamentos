@@ -1,0 +1,120 @@
+uuid: 157e8fce-5258-4733-bde0-14ca065eea20
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: GOasZ1v8ntMZPci1ICdFt0AzqZciTp3eOOak8SXr_To
+id: upgrade_d7_node_webform
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Formulario)'
+source:
+  plugin: d7_node_complete
+  node_type: webform
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  body:
+    -
+      plugin: sub_process
+      source: body
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_texto_inferior:
+    -
+      plugin: sub_process
+      source: field_texto_inferior
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_seccion:
+    -
+      plugin: sub_process
+      source: field_seccion
+      process:
+        target_id: tid
+  field_columna_lateral:
+    -
+      plugin: sub_process
+      source: field_columna_lateral
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: webform
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance
