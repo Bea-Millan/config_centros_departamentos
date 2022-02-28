@@ -1,0 +1,14 @@
+blacklist: [pathauto.pattern.ficha_personal]
+dependencies: {}
+description: ''
+folder: ../config/global/departamento
+graylist: {}
+graylist_dependents: true
+graylist_skip_equal: true
+id: departamento
+label: departamento
+langcode: es
+module: {unizar_ficha_personal: 0}
+status: true
+theme: {}
+weight: 0
