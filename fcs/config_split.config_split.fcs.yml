@@ -22,15 +22,15 @@ blacklist:
   - unizar_base.settings
   - unizar_departamento.settings
   - smtp.settings
-  - '''language.entity.*'''
   - language.negociation
   - language.types
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - '''webform.webform.*'''
-  - '''system.menu.*'''
-  - '''block.block.*'''
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

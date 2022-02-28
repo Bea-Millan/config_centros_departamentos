@@ -1,0 +1,31 @@
+uuid: 0862009f-4f75-41b0-a027-bc1ec6035b6d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.calendario_noticias
+  module:
+    - block_class
+    - views
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: calendar
+_core:
+  default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
+id: stable_views_block__calendario_noticias_block_1
+theme: stable
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'views_block:calendario_noticias-block_1'
+settings:
+  id: 'views_block:calendario_noticias-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }
