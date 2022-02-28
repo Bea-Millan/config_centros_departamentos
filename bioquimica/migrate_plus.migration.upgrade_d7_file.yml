@@ -1,0 +1,99 @@
+uuid: b5278a06-cffa-4997-8810-7585c0a8fe81
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: wlD99CtnwCturkMDBDrCLoPpBMSIY9BJWO-20ued49w
+id: upgrade_d7_file
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Public files'
+source:
+  constants:
+    profile_base_path: 'public:'
+    source_base_path: 'http://bioquimica.unizar.es/sites/bioquimica.unizar.es'
+  plugin: d7_file
+  scheme: public
+process:
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  created:
+    -
+      plugin: get
+      source: timestamp
+  destination_prepare_path:
+    -
+      plugin: str_replace
+      regex: true
+      replace: ''
+      search: '~<em>Editar Galería<\/em>.+?\/*~'
+      source: uri
+    -
+      plugin: str_replace
+      regex: false
+      replace: ''
+      search: '/Crear Galería'
+  fid:
+    -
+      plugin: get
+      source: fid
+  filemime:
+    -
+      plugin: get
+      source: filemime
+  filename:
+    -
+      plugin: get
+      source: filename
+  prepare_path:
+    -
+      plugin: str_replace
+      regex: false
+      replace: ''
+      search:
+        - sites/bioquimicaunizar.es/
+        - sites/default/
+      source: filepath
+  source_full_path:
+    -
+      delimiter: /
+      plugin: concat
+      source:
+        - constants/source_base_path
+        - '@prepare_path'
+    -
+      plugin: urlencode
+  status:
+    -
+      plugin: get
+      source: status
+  uid:
+    -
+      plugin: get
+      source: uid
+  uri:
+    -
+      plugin: file_copy
+      source:
+        - '@source_full_path'
+        - '@destination_prepare_path'
+    -
+      message: '@source_full_path'
+      method: row
+      plugin: skip_on_404
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  optional: {  }
+  required: {  }

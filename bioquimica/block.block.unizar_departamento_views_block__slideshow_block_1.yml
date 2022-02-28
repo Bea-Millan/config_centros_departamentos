@@ -1,0 +1,36 @@
+uuid: d6bd7a01-6296-4dc3-9831-9418712ac37c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slideshow
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: slide
+_core:
+  default_config_hash: BVQKTyG-td3hqhM3DdjhZLx685SIe_mobSkHoz-N6Fs
+id: unizar_departamento_views_block__slideshow_block_1
+theme: unizar_departamento
+region: imagen_cabecera
+weight: -10
+provider: null
+plugin: 'views_block:slideshow-block_1'
+settings:
+  id: 'views_block:slideshow-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

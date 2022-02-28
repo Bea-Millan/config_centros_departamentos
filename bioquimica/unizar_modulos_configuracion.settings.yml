@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: '-vfKSygUvilJxeD_GohHpBvLsGgcdmMg3owqG5Z9T6o'
+favicon_path: ''
+favicon_upload: ''
+id_centro: '16'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=16&colectivo=TODOS'
+nombre_centro: 'Nombre del centro'
+dir_centro: 'Dirección del centro'
+telefono_centro: '976 76 12 87'
+mail_centro: sed1002@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '7'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es
