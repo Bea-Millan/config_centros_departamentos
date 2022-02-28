@@ -1,6 +1,6 @@
 _core:
-  default_config_hash: a3xhmmJIa-7_LrrH1qqvMasomepG-j5YaebdTGMm7uc
+  default_config_hash: knTc9ZpCrM4zTpC5eQFIXjSpRHOiawyPSO_ziZm5E7k
 plugin:
-  url_host: sites/fcs
   host: fcs.unizar.es
+  url_host: sites/fcs
 langcode: es

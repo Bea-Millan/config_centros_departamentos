@@ -1,4 +1,4 @@
-uuid: 000309f0-7f32-4b5d-8b83-280c91bcc188
+uuid: b4e8d7ac-9a27-46ea-ac45-893b828d4267
 langcode: es
 status: true
 dependencies: {  }
@@ -11,26 +11,26 @@ module:
   c11n_migrate: 0
 theme: {  }
 blacklist:
-  - 'block.block.*'
-  - 'system.menu.*'
-  - 'webform.webform.*'
-  - migrate_drupal.settings
-  - unizar_admin_menu.settings
-  - unizar_modulos_configuracion.settings
-  - language.types
-  - language.negociation
-  - 'language.entity.*'
-  - smtp.settings
-  - unizar_departamento.settings
-  - unizar_base.settings
-  - unizar_centro.settings
-  - shortcut.set.default
-  - core.entity_view_mode.shortcut.token
-  - asset_injector.css.fcs_inyeccion_css
-  - core.extension
-  - system.theme
-  - system.site
   - config_split.config_split.fcs
+  - system.site
+  - system.theme
+  - core.extension
+  - asset_injector.css.fcs_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - '''language.entity.*'''
+  - language.negociation
+  - language.types
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - '''webform.webform.*'''
+  - '''system.menu.*'''
+  - '''block.block.*'''
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

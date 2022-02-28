@@ -1,4 +1,4 @@
-uuid: bc90605c-44b4-47e3-9792-8aa4d8b67d6f
+uuid: dd87f6cf-83e0-4acb-842c-200024b33481
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: _JnOUa2dFdgHtWblLdXm9kZ57dXXZcrdf9awFtcPipc
+  default_config_hash: Qq6I1ar7EcDrhcDZ0uznEEHf2nguN7h8ra5vRn6RmIA
 id: upgrade_d7_node_horarios
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

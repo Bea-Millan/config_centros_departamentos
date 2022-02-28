@@ -1,4 +1,4 @@
-uuid: 3dc10b18-515f-4e11-a7a6-062d9010b09d
+uuid: a0f99462-95c5-4b06-accd-048e82a1332b
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: t0pf_2KT_lfhcq2fHGNpWgZkuEhB2VRnuFRQYBwJW0Y
+  default_config_hash: 9HluH1JUFnfIpClx4rnO40fjsooN916RuXDGIxLpVl4
 id: upgrade_d7_node_examenes_por_departamentos
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

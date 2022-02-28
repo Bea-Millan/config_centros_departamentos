@@ -1,4 +1,4 @@
-uuid: d46e527a-eaeb-4040-bb58-e170e0a7a99e
+uuid: 8e182bde-ff65-4cb6-a18a-6b024c005c28
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: YYLwr6H6590KVxHBArj0B_o7XY9icR-XtLz_lyHxwQM
+  default_config_hash: Phxwfmav2KlTe5sgligEYEJZNAs1y1y7pcqoQ7GOnts
 id: upgrade_d7_taxonomy_term_personal_sector_consejo
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

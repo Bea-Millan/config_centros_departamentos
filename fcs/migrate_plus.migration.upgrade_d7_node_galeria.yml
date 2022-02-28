@@ -1,4 +1,4 @@
-uuid: 1c3d3b01-ebdb-4a36-878d-397b21040795
+uuid: c66443c6-6e6a-4708-9cb4-918e6c9156ce
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: VfZW-RD_bdZQ5MqW_ARr_eHEaEpzEKp4pafus73BBUg
+  default_config_hash: DOafz7lEwkDHI-MG_oa2ZwtWqXdf4IL-q1lIkukVDtQ
 id: upgrade_d7_node_galeria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

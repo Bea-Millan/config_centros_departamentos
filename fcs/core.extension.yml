@@ -66,7 +66,6 @@ module:
   login_destination: 0
   media: 0
   media_library: 0
-  memcache: 0
   menu_block: 0
   menu_link_attributes: 0
   menu_link_clone: 0

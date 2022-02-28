@@ -1,4 +1,4 @@
-uuid: 4d949651-efc8-435c-a09c-2a8456eb32ed
+uuid: ac52c69a-e8cf-42fb-b761-ce43d131f8e0
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: jB6w1eRyIBXNcbagrsMwi6XhFXrxAcXtK1jm1trR_qU
+  default_config_hash: VAy8mpMSixEXRUkWuEL_PEPYB-hCx_5EtQThWavzAB8
 id: upgrade_d7_node_horarios_por_departamentos
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

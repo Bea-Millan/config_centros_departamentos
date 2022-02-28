@@ -1,4 +1,4 @@
-uuid: 8089d1c6-a072-4c26-96af-ba69f3bc31b6
+uuid: dbecb798-1de0-4225-b1bf-078ef310f652
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: BS0BUtP6EuTt9Z5TKsILeklVLjGTS3mLGEcVfBz6paE
+  default_config_hash: WSjnc0uF5k2Rk5pTJDDCXhWhhJWUFnzD9qieCH_MtTs
 id: upgrade_d7_user_role
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Configuration
 migration_group: migrate_drupal_7

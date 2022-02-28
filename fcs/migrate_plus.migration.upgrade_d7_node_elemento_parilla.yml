@@ -1,4 +1,4 @@
-uuid: 52315c2f-b92b-4f7b-b6db-e0f6aae6d952
+uuid: 62b786cd-a33b-49fc-b11c-eecf6cc90874
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: 2DNUKWc8IwyOMx_TXX9nHxTzXCen4fTugac_wIoXU6g
+  default_config_hash: fQjRNLz_5Afa5VYqq-W3SMvzDNSdGYKUubQRHUNAj8E
 id: upgrade_d7_node_elemento_parilla
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

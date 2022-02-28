@@ -1,4 +1,4 @@
-uuid: 5d206592-7f22-4af6-8a80-cd95d05ac09a
+uuid: 5f271ae9-f5dc-443c-9c2b-d72b22fda234
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: gm0IszPnza6TGn46_MVhqWhH8WX14PLo0tAXHCskwUE
+  default_config_hash: AL_4MzBOQhprC290ufQRE66spyHWgd4jpJBzQxWFvi0
 id: upgrade_d7_node_empleo_y_practicas
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
