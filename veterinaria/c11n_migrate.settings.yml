@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: WlTJaVtmv892QTUhUFryB5RqyRZWP9VoK9ya19qSaXo
+plugin:
+  host: veterinaria.unizar.es
+  url_host: sites/veterinaria
+langcode: es

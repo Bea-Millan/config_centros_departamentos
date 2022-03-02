@@ -6,7 +6,7 @@ id: departamento
 label: departamento
 description: ''
 weight: 0
-folder: ../config/global/departamento
+folder: ../config/global/departamento/config
 module:
   unizar_ficha_personal: 0
 theme: {  }

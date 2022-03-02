@@ -1,19 +1,37 @@
-blacklist: [config_split.config_split.bioquimica, system.site, system.theme, core.extension,
-  asset_injector.css.bioquimica_inyeccion_css, core.entity_view_mode.shortcut.token,
-  shortcut.set.default, unizar_centro.settings, unizar_base.settings, unizar_departamento.settings,
-  smtp.settings, language.negociation, language.types, unizar_modulos_configuracion.settings,
-  unizar_admin_menu.settings, migrate_drupal.settings, webform.webform.*, system.menu.*,
-  language.entity.*, block.block.*, config_split.config_split.departamento.yml]
-dependencies: {}
-description: ''
-folder: ../config/sites/bioquimica
-graylist: {}
-graylist_dependents: true
-graylist_skip_equal: true
+uuid: b2725f63-5f20-436a-93a2-88c6ce8365cd
+langcode: es
+status: true
+dependencies: {  }
 id: bioquimica
 label: bioquimica
-langcode: es
-module: {c11n_migrate: 0}
-status: true
-theme: {}
+description: ''
 weight: 0
+folder: ../config/sites/bioquimica
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.bioquimica
+  - system.site
+  - system.theme
+  - core.extension
+  - asset_injector.css.bioquimica_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negociation
+  - language.types
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - config_split.config_split.departamento.yml
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,36 @@
+uuid: 554af463-6bc9-4e80-ba3c-6d1129bcebcc
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - unizar_base
+third_party_settings:
+  block_class:
+    classes: noticias-imagen
+_core:
+  default_config_hash: W3qRJUqTLNrq6fupZnJx_6H9HlddhnvXaiYhnPzwl9s
+id: views_block__noticias_block_3
+theme: unizar_base
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:noticias-block_3'
+settings:
+  id: 'views_block:noticias-block_3'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

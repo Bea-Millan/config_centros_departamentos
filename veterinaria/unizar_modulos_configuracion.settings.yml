@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: izpUXjNZpQ1UWOWvCuSvLKpFMtymdPsAVjRAQFp8vnY
+logo_path: 'public://centros_logos_web-11.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '105'
+nombre_centro: 'Facultad de Veterinaria'
+dir_centro: 'Calle Miguel Servet, 177, 50013 Zaragoza (España)'
+telefono_centro: '+34 976 761 611'
+mail_centro: admvetez@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '3098'
+imagen_segundas: '3099'
+facebook: 'http://facebook.com/FVeterinariaUZ'
+twitter: 'http://twitter.com/FVeterinariaUZ'
+youtube: 'https://www.youtube.com/channel/UCBaUjHQpZL6c3-VlRLs9IZg'
+linkedin: 'https://www.linkedin.com/in/fveterinariauz'
+instagram: 'https://www.instagram.com/fveterinariauz/'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Información sobre organización del Centro, personal, servicios, planes de estudios, horarios, exámenes, calendario, prácticas, etc.'
+langcode: es

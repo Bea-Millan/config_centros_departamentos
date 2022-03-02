@@ -1,0 +1,226 @@
+uuid: 24bd23f6-b489-4cc3-b825-a17c7094255c
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 98
+template: false
+archive: false
+id: webform_315
+title: 'Formulario Acto Graduación Patrón'
+description: null
+category: null
+elements: |-
+  nip:
+    '#title': NIP
+    '#description': 'Número de seis cifras que identifica al alumno, es imprescindible que sea correcto.'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'NIF, PASAPORTE O NIE'
+    '#description': |-
+      El dato que se escriba debe ser obligatoriamente con el que se ha formalizado la matrícula. 
+      Si hay algún error se deberá rellenar y volver a enviar el formulario.
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'CORREO ELECTRONICO'
+    '#description': 'Correo institucional del alumno (NIP@unizar.es), no son válidos correos privados. Debe ser correcto, sino los datos enviados NO serán válidos.'
+    '#required': true
+  titulacion:
+    '#type': radios
+    '#options':
+      V: Veterinaria
+      C: CTA
+    '#title': TITULACIÓN
+    '#required': true
+  curso:
+    '#type': select
+    '#options': {  }
+    1: '1'
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    '#min': '1'
+    '#max': '5'
+    '#title': CURSO
+    '#description': 'Curso más alto en el que se está matriculado (sin contar las Prácticas Externas)'
+    '#required': true
+  sexo:
+    '#type': radios
+    '#options':
+      H: Hombre
+      M: Mujer
+    '#title': SEXO
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': NOMBRE
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': APELLIDOS
+    '#required': true
+  quiere_el_diploma:
+    '#type': radios
+    '#options':
+      SI: SI
+      'NO': 'NO'
+    '#default_value': SI
+    '#title': '¿QUIERE EL DIPLOMA Y LA BANDA?'
+    '#required': true
+  ira_al_acto:
+    '#type': radios
+    '#options':
+      SI: SI
+      'NO': 'NO'
+    '#default_value': SI
+    '#title': '¿IRÁ AL ACTO?'
+    '#required': true
+  no_acompanantes:
+    '#type': select
+    '#options': {  }
+    0: '0'
+    1: 1
+    2: 2
+    3: 3
+    '#max': '3'
+    '#unique': false
+    '#title': 'Nº ACOMPAÑANTES'
+    '#required': true
+  acompanante_adicional:
+    '#type': radios
+    '#options':
+      1: 'Sí, 1 entrada más'
+      0: 'No, ninguna entrada más'
+    '#title': 'ACOMPAÑANTE ADICIONAL'
+    '#description': 'En caso de que puedan habilitarse plazas libres ¿estaría interesado en disponer de una más para otro acompañante?'
+    '#required': true
+  necesidades_especiales:
+    '#type': radios
+    '#options':
+      S: Sí
+      'N': 'No'
+    '#default_value': 'N'
+    '#title': 'NECESIDADES ESPECIALES'
+    '#description': 'Algún acompañante tiene necesidades especiales (silla de ruedas, visión limitada...)'
+    '#required': true
+  tipo_necesidad_especial:
+    '#type': textarea
+    '#title': 'TIPO NECESIDAD ESPECIAL'
+    '#description': 'Indica el tipo de necesidad especial y cuantas personas la tienen.'
+    '#required': true
+    '#states':
+      invisible:
+        - ':input[name="necesidades_especiales"]':
+            value: 'N'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: zarate@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: zarate@unizar.es
+      from_options: {  }
+      from_name: '[webform_submission:values:apellidos:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Comprueba que tus datos sean correctos (es imprescindible que el campo de NIF y NOMBRE Y APELLIDOS sean correctos, si no es así, vuelve a rellenar y enviar el formulario)
+
+        Submitted on [webform_submission:date:long]
+        Submitted by user: [webform_submission:user]
+        Los valores enviados son:
+        [webform_submission:values]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
