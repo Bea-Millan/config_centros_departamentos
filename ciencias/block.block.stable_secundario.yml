@@ -1,0 +1,27 @@
+uuid: 511aeb9e-aadc-47a8-8c86-222c627c6f4c
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-secundario
+  module:
+    - system
+  theme:
+    - stable
+_core:
+  default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
+id: stable_secundario
+theme: stable
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-secundario'
+settings:
+  id: 'system_menu_block:menu-secundario'
+  label: Secundario
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
