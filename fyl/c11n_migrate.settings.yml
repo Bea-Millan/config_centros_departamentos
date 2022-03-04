@@ -1,7 +1,6 @@
 _core:
-  default_config_hash: 6QxYlUC1EDj1JjBSZ84ERy5HGAHJlYRSDrKCkzgbOCA
-0:
-  plugin:
-    host: fyl.unizar.es
-    url_host: sites/fyl
+  default_config_hash: PaxoGTMyxCEzWQsdO_KAcwOJRcLhsIjbIsWT_Vt5Fpw
+plugin:
+  host: fyl.unizar.es
+  url_host: sites/fyl
 langcode: es

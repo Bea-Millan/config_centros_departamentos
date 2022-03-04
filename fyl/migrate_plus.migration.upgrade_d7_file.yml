@@ -1,4 +1,4 @@
-uuid: d549d1d8-86e1-4ae5-884a-a19bc508b80d
+uuid: 86090e60-1cd6-4a24-8d89-3f2b87fec733
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: aJ4ecCNp8V3kA8dxD28cWDalQiVOz26HaMHLDi2J6eE
+  default_config_hash: DvDki8x90YfWuPdgQhOCcHBQ4PEjHq6_80h3fiBz2hc
 id: upgrade_d7_file
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -18,40 +18,16 @@ migration_tags:
 migration_group: migrate_drupal_7
 label: 'Public files'
 source:
-  constants:
-    profile_base_path: 'public:'
-    source_base_path: 'http://fyl.unizar.es/sites/fyl.unizar.es'
   plugin: d7_file
   scheme: public
+  constants:
+    source_base_path: 'http://fyl.unizar.es/sites/fyl.unizar.es'
+    profile_base_path: 'public:'
 process:
-  changed:
-    -
-      plugin: get
-      source: timestamp
-  created:
-    -
-      plugin: get
-      source: timestamp
-  destination_prepare_path:
-    -
-      plugin: str_replace
-      regex: true
-      replace: ''
-      search: '~<em>Editar Galería<\/em>.+?\/*~'
-      source: uri
-    -
-      plugin: str_replace
-      regex: false
-      replace: ''
-      search: '/Crear Galería'
   fid:
     -
       plugin: get
       source: fid
-  filemime:
-    -
-      plugin: get
-      source: filemime
   filename:
     -
       plugin: get
@@ -60,28 +36,32 @@ process:
     -
       plugin: str_replace
       regex: false
-      replace: ''
+      source: filepath
       search:
         - sites/fyl.unizar.es/
         - sites/default/
-      source: filepath
+      replace: ''
   source_full_path:
     -
-      delimiter: /
       plugin: concat
+      delimiter: /
       source:
         - constants/source_base_path
         - '@prepare_path'
     -
       plugin: urlencode
-  status:
+  destination_prepare_path:
     -
-      plugin: get
-      source: status
-  uid:
+      plugin: str_replace
+      regex: true
+      source: uri
+      search: '~<em>Editar Galería<\/em>.+?\/*~'
+      replace: ''
     -
-      plugin: get
-      source: uid
+      plugin: str_replace
+      regex: false
+      search: '/Crear Galería'
+      replace: ''
   uri:
     -
       plugin: file_copy
@@ -89,11 +69,31 @@ process:
         - '@source_full_path'
         - '@destination_prepare_path'
     -
-      message: '@source_full_path'
-      method: row
       plugin: skip_on_404
+      method: row
+      message: '@source_full_path'
+  filemime:
+    -
+      plugin: get
+      source: filemime
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: timestamp
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  uid:
+    -
+      plugin: get
+      source: uid
 destination:
   plugin: 'entity:file'
 migration_dependencies:
-  optional: {  }
   required: {  }
+  optional: {  }
