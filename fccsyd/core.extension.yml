@@ -52,6 +52,7 @@ module:
   image: 0
   imce: 0
   jquery_ui: 0
+  jquery_ui_accordion: 0
   jquery_ui_effects: 0
   language: 0
   layout_builder: 0
@@ -119,6 +120,7 @@ module:
   views_slideshow_cycle: 0
   views_templates: 0
   views_ui: 0
+  viewsreference: 0
   webform: 0
   webform_migrate: 0
   webform_node: 0
