@@ -1,8 +1,0 @@
-uuid: 3e7f77fb-55f8-48f2-bd45-b2847a74603b
-langcode: es
-status: true
-dependencies: {  }
-id: accoun_en
-label: 'User menu_en'
-description: 'The <em>User</em> menu contains links related to the user''s account, as well as the ''Log out'' link.'
-locked: false
