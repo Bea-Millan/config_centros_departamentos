@@ -1,4 +1,4 @@
-uuid: fd1fedfd-e6f2-40ab-92dc-b83586c7b1ca
+uuid: b15ef188-fff3-4309-9b49-3850f7c5abb8
 langcode: es
 status: true
 dependencies: {  }
@@ -7,5 +7,5 @@ _core:
 id: en
 label: English
 direction: ltr
-weight: -9
+weight: 0
 locked: false
