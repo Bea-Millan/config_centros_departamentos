@@ -107,7 +107,13 @@ module:
   toolbar: 0
   tour: 0
   unizar_admin_menu: 0
+  unizar_estudios: 0
+  unizar_modulos_configuracion: 0
+  unizar_paragraph: 0
+  unizar_shortcode: 0
+  unizar_tipos_contenidos_basicos: 0
   unizar_view_tabs: 0
+  update: 0
   user: 0
   views_bulk_operations: 0
   views_slideshow: 0
@@ -127,7 +133,10 @@ module:
   views: 10
   paragraphs: 11
   empty_page: 1000
+  unizar_base_profile: 1000
 theme:
+  seven: 0
+  bartik: 0
   stable: 0
   classy: 0
   unizar_base: 0
