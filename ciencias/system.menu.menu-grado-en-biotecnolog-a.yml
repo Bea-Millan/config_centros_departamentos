@@ -1,0 +1,8 @@
+uuid: 82be6f3e-93ef-4b96-b3b4-2a46c2d0d8ca
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-en-biotecnolog-a
+label: 'Grado en Biotecnología'
+description: ''
+locked: false

@@ -1,0 +1,36 @@
+uuid: 55f94a9f-9bff-4cd0-a4d7-f73cadc47ecb
+langcode: es
+status: true
+dependencies: {  }
+id: ciencias
+label: ciencias
+description: ''
+weight: 0
+folder: ../config/sites/ciencias
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.ciencias
+  - system.site
+  - system.theme
+  - core.extension
+  - asset_injector.css.ciencias_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negociation
+  - language.types
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
