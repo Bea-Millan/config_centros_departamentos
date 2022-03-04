@@ -1,3 +1,15 @@
+uuid: 1b2a34b0-6c8a-4fce-8b47-b35325c043a7
+langcode: es
+status: true
+dependencies: {  }
+id: fcs
+label: fcs
+description: ''
+weight: 0
+folder: ../config/sites/fcs
+module:
+  c11n_migrate: 0
+theme: {  }
 blacklist:
   - config_split.config_split.fcs
   - system.site
@@ -15,21 +27,10 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-dependencies: {}
-description: ''
-folder: ../config/sites/fcs
-graylist: {}
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-id: fcs
-label: fcs
-langcode: es
-module:
-  c11n_migrate: 0
-status: true
-theme: {}
-weight: 0

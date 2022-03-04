@@ -1,0 +1,89 @@
+uuid: 61d2c7bc-6841-49a6-a1d0-64f8951e6253
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: sCyuK5DTuP8mo3WvH4jE60H2u_01Ax-q3s6lwrNgpYA
+id: upgrade_d7_node_te_interesa
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Te interesa)'
+source:
+  plugin: d7_node_complete
+  node_type: te_interesa
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_link/uri:
+    -
+      plugin: CheckUrl
+      source: field_link/0/value
+    -
+      plugin: skip_on_empty
+      method: row
+  field_link/title: title
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: te_interesa
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance
