@@ -1,8 +1,0 @@
-uuid: 31530be5-8c69-44b6-b909-90b09912559b
-langcode: es
-status: true
-dependencies: {  }
-id: main_en
-label: 'Main menu_en'
-description: 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.'
-locked: false
