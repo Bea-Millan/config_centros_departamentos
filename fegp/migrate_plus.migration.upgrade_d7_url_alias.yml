@@ -1,0 +1,86 @@
+uuid: 8485c413-cf97-4730-955d-85088f97121b
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: A7YRKMEXczbLKn8395t9S10mkL2yU6-6jFaUpz1gerg
+id: upgrade_d7_url_alias
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'URL aliases'
+source:
+  plugin: d7_url_alias
+  constants:
+    slash: /
+process:
+  id:
+    -
+      plugin: get
+      source: pid
+  _path:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - source
+  alias:
+    -
+      plugin: concat
+      source:
+        - constants/slash
+        - alias
+  node_translation:
+    -
+      plugin: explode
+      source: source
+      delimiter: /
+    -
+      plugin: extract
+      default: INVALID_NID
+      index:
+        - 1
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_translation_elemento_parilla
+        - upgrade_d7_node_translation_estudio
+        - upgrade_d7_node_translation_galeria
+        - upgrade_d7_node_translation_noticia
+        - upgrade_d7_node_translation_page
+        - upgrade_d7_node_translation_slideshow
+        - upgrade_d7_node_translation_te_interesa
+        - upgrade_d7_node_translation_webform
+  langcode:
+    -
+      plugin: null_coalesce
+      source:
+        - '@node_translation/1'
+        - language
+  path:
+    -
+      plugin: path_set_translated
+      source:
+        - '@_path'
+        - '@node_translation'
+destination:
+  plugin: 'entity:path_alias'
+migration_dependencies:
+  required: {  }
+  optional:
+    - upgrade_d7_node_translation_elemento_parilla
+    - upgrade_d7_node_translation_estudio
+    - upgrade_d7_node_translation_galeria
+    - upgrade_d7_node_translation_noticia
+    - upgrade_d7_node_translation_page
+    - upgrade_d7_node_translation_slideshow
+    - upgrade_d7_node_translation_te_interesa
+    - upgrade_d7_node_translation_webform
