@@ -1,9 +1,0 @@
-uuid: c533522b-040a-4258-90e2-be0ee437bbf0
-langcode: es
-status: true
-dependencies: {  }
-id: zh-hant
-label: 'Chinese, Traditional'
-direction: ltr
-weight: -9
-locked: false
