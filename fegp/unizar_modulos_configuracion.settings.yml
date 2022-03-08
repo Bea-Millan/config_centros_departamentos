@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: uzHESvFbQbQwhJ82L6qjaJTIyOSlf_rXtInMDMHUfG0
+logo_path: 'public://facultad_egp_rgb.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '228'
+nombre_centro: 'Facultad de Empresa y Gestión Pública'
+dir_centro: 'Plaza de la Constitución s/n - 22001 HUESCA'
+telefono_centro: '974 239 373'
+mail_centro: fegp@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '1821'
+imagen_segundas: '1822'
+facebook: 'https://www.facebook.com/FEGPHuesca'
+twitter: 'https://twitter.com/FEGPHuesca'
+youtube: ''
+linkedin: ''
+instagram: 'https://www.instagram.com/fegphuesca'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Estudios universitarios de Administración y Dirección de Empresas, Gestión y administración Pública y Máster en Turismo en la Facultad de Empresa y Gestión Pública de Huesca. Universidad de Zaragoza.'
+langcode: es
