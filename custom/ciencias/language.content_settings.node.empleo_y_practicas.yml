@@ -1,0 +1,16 @@
+uuid: bcbb6266-9f16-483c-b5d9-12addcdabdb5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.empleo_y_practicas
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: 3E2nfRijfdI_npcaHMuwyDybuQnn8ppv2z2eZTTYjw8
+id: node.empleo_y_practicas
+target_entity_type_id: node
+target_bundle: empleo_y_practicas
+default_langcode: site_default
+language_alterable: false

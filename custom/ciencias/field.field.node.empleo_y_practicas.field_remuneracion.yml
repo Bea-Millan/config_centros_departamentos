@@ -1,0 +1,26 @@
+uuid: 9da0086c-b027-485e-9616-875d1ddf6438
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remuneracion
+    - node.type.empleo_y_practicas
+  module:
+    - text
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: UfzSMVGEAG1ZxHLZO_Lfmi1rNs_Hl3kt0u_RhriuLWI
+id: node.empleo_y_practicas.field_remuneracion
+field_name: field_remuneracion
+entity_type: node
+bundle: empleo_y_practicas
+label: Remuneración
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

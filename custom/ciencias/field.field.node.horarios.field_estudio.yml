@@ -1,0 +1,34 @@
+uuid: 86bac25d-8da2-4ed0-8800-1c9936b8a77a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estudio
+    - node.type.estudio
+    - node.type.horarios
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: akBncjR8q6EDNmQefEVpEFJqNrjLHc5B06RkCf6ONTM
+id: node.horarios.field_estudio
+field_name: field_estudio
+entity_type: node
+bundle: horarios
+label: Estudio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      estudio: estudio
+    sort:
+      field: title
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,32 @@
+uuid: bde99e1b-e860-4f05-8623-43e0d82295eb
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: ecWN1Tb7YxMConSe8JJjmDabJrFbGa-UvcjFzfWQQ30
+id: node.field_semestre
+field_name: field_semestre
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: primer_semestre
+      label: 'Primer semestre'
+    -
+      value: segundo_semestre
+      label: 'Segundo semestre'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

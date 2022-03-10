@@ -1,0 +1,24 @@
+uuid: 364d2eaa-9393-43cc-877c-6b4f13e9bbde
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: wmHUqc-k9KYpFwN0uyMaO3QTiB00aDE0AMGQOXdrRnw
+id: node.field_remuneracion
+field_name: field_remuneracion
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

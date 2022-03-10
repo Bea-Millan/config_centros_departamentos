@@ -1,0 +1,35 @@
+uuid: 0e116a8c-3304-4211-8524-5512bed96231
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - node
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: mmBJBtmUKd7g4YvugaqcrqnUZaY97W_YEtFrOHUWON0
+id: node.field_logo_empresa
+field_name: field_logo_empresa
+entity_type: node
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

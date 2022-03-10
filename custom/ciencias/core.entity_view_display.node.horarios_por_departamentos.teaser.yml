@@ -1,0 +1,35 @@
+uuid: 80b7c2bc-c455-4b30-97f2-7d24b3df119b
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.horarios_por_departamentos.field_adjunto_horarios
+    - field.field.node.horarios_por_departamentos.field_curso
+    - field.field.node.horarios_por_departamentos.field_examen_departamento
+    - field.field.node.horarios_por_departamentos.field_semestre
+    - node.type.horarios_por_departamentos
+  module:
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 0E0bOOA19tlaaZKa43UikxUYvROuDLSXY2APjVPSwQE
+id: node.horarios_por_departamentos.teaser
+targetEntityType: node
+bundle: horarios_por_departamentos
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_adjunto_horarios: true
+  field_curso: true
+  field_examen_departamento: true
+  field_semestre: true
+  langcode: true

@@ -1,0 +1,23 @@
+uuid: 7cba7ee2-2336-4ab2-89e8-04cb8ae54b8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.departamento
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: '-_XfsowtWfnnmIc-0rXlHyKt38e6ni7aoBFE0yjkGcM'
+id: node.departamento.title
+field_name: title
+entity_type: node
+bundle: departamento
+label: 'Nombre del departamento'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

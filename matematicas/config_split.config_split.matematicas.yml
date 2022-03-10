@@ -32,6 +32,7 @@ blacklist:
   - 'language.entity.*'
   - unizar_centro.settings
   - asset_injector.css.matematicas_inyeccion_css
+  - matomo.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

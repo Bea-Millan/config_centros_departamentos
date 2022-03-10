@@ -1,0 +1,19 @@
+uuid: b66f3594-8972-46c7-86ba-70da04cb9c6d
+langcode: es
+status: true
+dependencies: {  }
+id: cienciascustom
+label: 'ciencias custom'
+description: ''
+weight: 0
+folder: ../config/sites/custom/ciencias
+module:
+  c11n_migrate: 0
+  unizar_empleo_practicas: 0
+  unizar_horarios_examenes: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.cienciascustom
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

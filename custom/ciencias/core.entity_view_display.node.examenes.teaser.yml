@@ -1,0 +1,35 @@
+uuid: 37ead5df-38a0-46a7-9d04-4e808d8295e8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.examenes.field_adjunto_examenes
+    - field.field.node.examenes.field_convocatoria
+    - field.field.node.examenes.field_curso
+    - field.field.node.examenes.field_estudio
+    - node.type.examenes
+  module:
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: jZvcsmGV6LOcbJGHwBhdx6S5VS2xXnp8iju2wp_npdo
+id: node.examenes.teaser
+targetEntityType: node
+bundle: examenes
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_adjunto_examenes: true
+  field_convocatoria: true
+  field_curso: true
+  field_estudio: true
+  langcode: true

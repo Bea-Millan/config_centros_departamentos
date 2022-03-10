@@ -1,0 +1,26 @@
+uuid: 36fe9285-4ba6-42dc-bc0a-0a09c43bb2e0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_perfil
+    - node.type.empleo_y_practicas
+  module:
+    - text
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: mC5ofHDaoVcJv6UTEJ8NuX6x6vsPFrOQgwk_bLjostM
+id: node.empleo_y_practicas.field_perfil
+field_name: field_perfil
+entity_type: node
+bundle: empleo_y_practicas
+label: Perfil
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

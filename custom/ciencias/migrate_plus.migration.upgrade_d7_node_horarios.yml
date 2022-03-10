@@ -1,13 +1,13 @@
-uuid: 71f65d6f-328e-49c7-bff0-04feae6ed79c
+uuid: e7dbc711-ff00-40f7-8cd7-a61b6c89c9ce
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
-      - c11n_migrate
+      - unizar_horarios_examenes
 _core:
-  default_config_hash: Cai2BzIBIrcfFryiyjTKL95Vzd4kCGrITn7UuLpJKFc
-id: upgrade_d7_node_horarios_por_departamentos
+  default_config_hash: 3lFSbUAVkPjE13V1Aarw97DhFCfIUrVrvc5GPfjGdFE
+id: upgrade_d7_node_horarios
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -16,10 +16,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_horarios_examenes
-label: 'Nodes (Horarios por departamentos)'
+label: 'Nodes (Horarios)'
 source:
   plugin: d7_node_complete
-  node_type: horarios_por_departamentos
+  node_type: horarios
 process:
   nid: tnid
   vid: vid
@@ -68,10 +68,15 @@ process:
     -
       plugin: get
       source: timestamp
-  field_semestre:
+  field_curso:
+    plugin: migration_lookup
+    source: field_curso
+    migration: upgrade_d7_taxonomy_term_curso
+  field_estudio:
     -
-      plugin: get
-      source: field_semestre
+      plugin: migration_lookup
+      source: field_estudio
+      migration: upgrade_d7_node_estudio
   field_adjunto_horarios:
     -
       plugin: sub_process
@@ -80,18 +85,10 @@ process:
         target_id: fid
         display: display
         description: description
-  field_curso:
+  field_semestre:
     -
-      plugin: sub_process
-      source: field_curso
-      process:
-        target_id: tid
-  field_examen_departamento:
-    -
-      plugin: sub_process
-      source: field_examen_departamento
-      process:
-        target_id: tid
+      plugin: get
+      source: field_semestre
   field_metatag:
     -
       plugin: get
@@ -99,13 +96,16 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: horarios_por_departamentos
+  default_bundle: horarios
 migration_dependencies:
+  module:
+    - unizar_horarios_examenes
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
+    - upgrade_language
     - upgrade_d7_taxonomy_term_curso
-    - upgrade_d7_node_departamentos
+    - upgrade_d7_node_estudio
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance

@@ -1,0 +1,25 @@
+uuid: f910d895-22c2-4487-86bc-7691bf8a752d
+langcode: es
+status: true
+dependencies:
+  module:
+    - datetime
+    - node
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: YLNNTDE4HSux2VUIyykGOQGuOVwC1WV9b4pEpnnTQnI
+id: node.field_fecha_limite
+field_name: field_fecha_limite
+entity_type: node
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

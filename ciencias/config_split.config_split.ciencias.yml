@@ -7,30 +7,30 @@ label: ciencias
 description: ''
 weight: 0
 folder: ../config/sites/ciencias
-module:
-  c11n_migrate: 0
+module: {  }
 theme: {  }
 blacklist:
   - config_split.config_split.ciencias
+  - core.entity_view_mode.shortcut.token
+  - core.extension
+  - language.types
+  - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
   - system.site
   - system.theme
-  - core.extension
-  - asset_injector.css.ciencias_inyeccion_css
-  - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
-  - unizar_centro.settings
-  - unizar_base.settings
-  - unizar_departamento.settings
-  - smtp.settings
-  - language.negociation
-  - language.types
-  - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
-  - migrate_drupal.settings
+  - unizar_base.settings
+  - unizar_centro.settings
+  - unizar_modulos_configuracion.settings
+  - asset_injector.css.ciencias_inyeccion_css
+  - unizar_departamento.settings
+  - language.negociation
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
+  - matomo.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

@@ -1,0 +1,77 @@
+uuid: b3c5de2e-78d9-43a8-9877-c9fcd2e64a14
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.horarios.field_adjunto_horarios
+    - field.field.node.horarios.field_curso
+    - field.field.node.horarios.field_estudio
+    - field.field.node.horarios.field_semestre
+    - node.type.horarios
+  module:
+    - file
+    - path
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 8z4MGQh-VP0ImU-qFw1ZpAkttuGiwnPFt2UNpPdBOG8
+id: node.horarios.default
+targetEntityType: node
+bundle: horarios
+mode: default
+content:
+  field_adjunto_horarios:
+    type: file_generic
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_curso:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_estudio:
+    type: entity_reference_autocomplete
+    weight: 2
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_semestre:
+    type: options_select
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

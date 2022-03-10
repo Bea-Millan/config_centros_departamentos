@@ -1,0 +1,138 @@
+uuid: 5572983f-ff14-43c0-be3a-1e5ecaa83e5d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.empleo_y_practicas.field_ampliar_informacion
+    - field.field.node.empleo_y_practicas.field_documentacion_adjunta
+    - field.field.node.empleo_y_practicas.field_empresa
+    - field.field.node.empleo_y_practicas.field_fecha_limite
+    - field.field.node.empleo_y_practicas.field_fecha_publicacion
+    - field.field.node.empleo_y_practicas.field_horario
+    - field.field.node.empleo_y_practicas.field_logo_empresa
+    - field.field.node.empleo_y_practicas.field_perfil
+    - field.field.node.empleo_y_practicas.field_remuneracion
+    - field.field.node.empleo_y_practicas.field_tipo_oferta
+    - node.type.empleo_y_practicas
+  module:
+    - datetime
+    - ds
+    - file
+    - svg_image
+    - text
+    - user
+  enforced:
+    module:
+      - unizar_empleo_practicas
+third_party_settings:
+  ds:
+    layout:
+      id: layout_twocol_section
+      library: layout_builder/twocol_section
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        column_widths: 50-50
+    regions:
+      first:
+        - field_logo_empresa
+        - field_empresa
+      second:
+        - field_perfil
+        - field_tipo_oferta
+        - field_horario
+        - field_remuneracion
+        - field_fecha_publicacion
+        - field_fecha_limite
+        - field_ampliar_informacion
+        - field_documentacion_adjunta
+_core:
+  default_config_hash: EIKv8EUj2a_8UXYc9Y7I3Wy7HXOecj6PexVCcQz4s3Y
+id: node.empleo_y_practicas.default
+targetEntityType: node
+bundle: empleo_y_practicas
+mode: default
+content:
+  field_ampliar_informacion:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+  field_documentacion_adjunta:
+    weight: 9
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: second
+  field_empresa:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: first
+  field_fecha_limite:
+    weight: 7
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: second
+  field_fecha_publicacion:
+    weight: 6
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: second
+  field_horario:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+  field_logo_empresa:
+    weight: 0
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: first
+  field_perfil:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+  field_remuneracion:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+  field_tipo_oferta:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: second
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

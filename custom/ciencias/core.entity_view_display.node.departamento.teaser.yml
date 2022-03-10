@@ -1,0 +1,29 @@
+uuid: be798fa9-bab8-477d-beb6-7c43f272f25f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.departamento.field_link_departamento
+    - node.type.departamento
+  module:
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: baYOLUoN6HLIRCdD_xOk1I5ye06uGxmjfjDYGnm-nOU
+id: node.departamento.teaser
+targetEntityType: node
+bundle: departamento
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_link_departamento: true
+  langcode: true

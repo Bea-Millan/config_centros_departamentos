@@ -1,0 +1,51 @@
+uuid: 8949ad6c-fe99-498d-b274-e12cb21d2aec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adjunto_horarios
+    - node.type.horarios_por_departamentos
+  module:
+    - file
+    - filefield_paths
+  enforced:
+    module:
+      - unizar_horarios_examenes
+third_party_settings:
+  filefield_paths:
+    enabled: true
+    file_path:
+      value: '[date:custom:Y]-[date:custom:m]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
+    file_name:
+      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      options:
+        slashes: false
+        pathauto: false
+        transliterate: false
+_core:
+  default_config_hash: kJRnBcv0xRhs6FZeXXGBCKQxFBoQVKBsUI-IY0z614U
+id: node.horarios_por_departamentos.field_adjunto_horarios
+field_name: field_adjunto_horarios
+entity_type: node
+bundle: horarios_por_departamentos
+label: 'Adjunto horarios'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt pdf'
+  max_filesize: '20 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,32 @@
+uuid: d1438722-54fb-475c-b81c-86a6c80eb4ba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_adjunto_horarios
+    - node.type.horarios
+  module:
+    - file
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: U5ji3IsSa-bmVNmrD8mOP__O0CCPEDvi_j56USyogro
+id: node.horarios.field_adjunto_horarios
+field_name: field_adjunto_horarios
+entity_type: node
+bundle: horarios
+label: 'Adjunto horarios'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: ''
+  file_extensions: 'txt pdf'
+  max_filesize: '20 MB'
+  description_field: true
+field_type: file

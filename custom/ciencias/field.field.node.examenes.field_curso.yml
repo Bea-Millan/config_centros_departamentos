@@ -1,0 +1,34 @@
+uuid: 76373aa6-922b-4eb9-8014-65ac64966651
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_curso
+    - node.type.examenes
+    - taxonomy.vocabulary.curso
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: C8Yo0ZYYDva_a8vikfaQs8q50jdSTvLEM-rH-MxUn6s
+id: node.examenes.field_curso
+field_name: field_curso
+entity_type: node
+bundle: examenes
+label: Curso
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      curso: curso
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

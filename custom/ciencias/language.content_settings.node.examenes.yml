@@ -1,0 +1,16 @@
+uuid: b98fafec-a005-49e6-87c6-1f44a56e88e4
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.examenes
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: Viu3U_bKlA65rrZzA4KEvGLLienq_FkcHcAJZga2cwo
+id: node.examenes
+target_entity_type_id: node
+target_bundle: examenes
+default_langcode: site_default
+language_alterable: false

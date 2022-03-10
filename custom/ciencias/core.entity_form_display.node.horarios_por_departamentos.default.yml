@@ -1,0 +1,77 @@
+uuid: 3b44cd76-e410-452b-b4e7-948b172c0250
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.horarios_por_departamentos.field_adjunto_horarios
+    - field.field.node.horarios_por_departamentos.field_curso
+    - field.field.node.horarios_por_departamentos.field_examen_departamento
+    - field.field.node.horarios_por_departamentos.field_semestre
+    - node.type.horarios_por_departamentos
+  module:
+    - file
+    - path
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: HVT2RsZq1Uw9yH57_aBio8jrRq-ySJNx8KLbnXTEW4M
+id: node.horarios_por_departamentos.default
+targetEntityType: node
+bundle: horarios_por_departamentos
+mode: default
+content:
+  field_adjunto_horarios:
+    weight: 5
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_curso:
+    weight: 4
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_examen_departamento:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_semestre:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  path:
+    type: path
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

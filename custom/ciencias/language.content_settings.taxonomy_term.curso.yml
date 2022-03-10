@@ -1,0 +1,16 @@
+uuid: 230d55a6-09bb-4876-9123-319996645c8d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.curso
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: gdn4w8KmfL4Fqemn1u_uHzyctmiZeR9_yQViCoucVkQ
+id: taxonomy_term.curso
+target_entity_type_id: taxonomy_term
+target_bundle: curso
+default_langcode: es
+language_alterable: false

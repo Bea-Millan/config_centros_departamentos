@@ -1,0 +1,26 @@
+uuid: 3df8ce60-b79c-457c-8cf3-3c24fe39d3bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_horario
+    - node.type.empleo_y_practicas
+  module:
+    - text
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: R9f9ytKRWhzf4k4YE_ACBqQcUuaZoIhSARDPPvfNDqc
+id: node.empleo_y_practicas.field_horario
+field_name: field_horario
+entity_type: node
+bundle: empleo_y_practicas
+label: Horario
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

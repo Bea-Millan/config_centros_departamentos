@@ -31,6 +31,7 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
+  - matomo.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

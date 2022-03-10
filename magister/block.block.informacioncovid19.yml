@@ -1,0 +1,25 @@
+uuid: bc908cb2-11a9-48ce-ac3d-be036d19957a
+langcode: es
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:7c8ff255-d2aa-4aec-bdd2-74f6430b0a4a'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: informacioncovid19
+theme: unizar_centro
+region: columna_lateral
+weight: -2
+provider: null
+plugin: 'block_content:7c8ff255-d2aa-4aec-bdd2-74f6430b0a4a'
+settings:
+  id: 'block_content:7c8ff255-d2aa-4aec-bdd2-74f6430b0a4a'
+  label: 'Información COVID-19'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,28 @@
+uuid: 1d11ff8c-6ac1-4727-893b-4bec89102670
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - node
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: S11wU-Yf5iTCWLxFOb1xHKdXzhWoFGJYmZgPL5yDHZw
+id: node.field_adjunto_horarios
+field_name: field_adjunto_horarios
+entity_type: node
+type: file
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+module: file
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

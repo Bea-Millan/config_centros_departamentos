@@ -1,0 +1,40 @@
+uuid: d5b35740-7ad7-4284-84ab-cc993a7eb304
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.departamento.field_link_departamento
+    - node.type.departamento
+  module:
+    - link
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 2g8yEyB62_Yi7Z3g7s0l9KoegNJ9qfPz9arffVpEtrA
+id: node.departamento.default
+targetEntityType: node
+bundle: departamento
+mode: default
+content:
+  field_link_departamento:
+    weight: 101
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

@@ -1,0 +1,16 @@
+uuid: e3541959-d1fe-4dd3-a2f2-373724a12c27
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.examenes_por_departamentos
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: SVo0cZm3KL4CfGW9_WHGQECiJkW-SzIl_BG7e11t4C4
+id: node.examenes_por_departamentos
+target_entity_type_id: node
+target_bundle: examenes_por_departamentos
+default_langcode: site_default
+language_alterable: false

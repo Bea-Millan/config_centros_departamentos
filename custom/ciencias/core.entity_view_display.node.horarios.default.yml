@@ -1,0 +1,59 @@
+uuid: 0a06dbe3-0e58-4a2f-a010-988a5f6faa5b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.horarios.field_adjunto_horarios
+    - field.field.node.horarios.field_curso
+    - field.field.node.horarios.field_estudio
+    - field.field.node.horarios.field_semestre
+    - node.type.horarios
+  module:
+    - file
+    - options
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: BtE-eUqoqu34tCog8d8-FKj3PHbH5FMTS-eBdmJmCLs
+id: node.horarios.default
+targetEntityType: node
+bundle: horarios
+mode: default
+content:
+  field_adjunto_horarios:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_curso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_estudio:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_semestre:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  langcode: true
+  links: true

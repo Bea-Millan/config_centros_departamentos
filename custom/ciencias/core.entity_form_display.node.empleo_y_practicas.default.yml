@@ -1,0 +1,123 @@
+uuid: 25c44080-0122-46eb-925c-09efab6d2a51
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.empleo_y_practicas.field_ampliar_informacion
+    - field.field.node.empleo_y_practicas.field_documentacion_adjunta
+    - field.field.node.empleo_y_practicas.field_empresa
+    - field.field.node.empleo_y_practicas.field_fecha_limite
+    - field.field.node.empleo_y_practicas.field_fecha_publicacion
+    - field.field.node.empleo_y_practicas.field_horario
+    - field.field.node.empleo_y_practicas.field_logo_empresa
+    - field.field.node.empleo_y_practicas.field_perfil
+    - field.field.node.empleo_y_practicas.field_remuneracion
+    - field.field.node.empleo_y_practicas.field_tipo_oferta
+    - image.style.thumbnail
+    - node.type.empleo_y_practicas
+  module:
+    - datetime
+    - file
+    - svg_image
+    - text
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: vcRsVII3t1lNhx3BEyuS5le40urZXFsrbP2rBLzNyqU
+id: node.empleo_y_practicas.default
+targetEntityType: node
+bundle: empleo_y_practicas
+mode: default
+content:
+  field_ampliar_informacion:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_documentacion_adjunta:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_empresa:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_fecha_limite:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_fecha_publicacion:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_horario:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_logo_empresa:
+    weight: 2
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_perfil:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_remuneracion:
+    weight: 8
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_tipo_oferta:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  status: true
+  sticky: true
+  uid: true

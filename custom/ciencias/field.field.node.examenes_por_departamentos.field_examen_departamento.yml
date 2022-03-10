@@ -1,0 +1,33 @@
+uuid: 79b9937e-f374-443e-a06d-969934dba155
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_examen_departamento
+    - node.type.departamento
+    - node.type.examenes_por_departamentos
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 05jVhtOwQ8Hw5570jqBsvPrh88Pb9u_K3Q4IIhFckAg
+id: node.examenes_por_departamentos.field_examen_departamento
+field_name: field_examen_departamento
+entity_type: node
+bundle: examenes_por_departamentos
+label: Departamento
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      departamento: departamento
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

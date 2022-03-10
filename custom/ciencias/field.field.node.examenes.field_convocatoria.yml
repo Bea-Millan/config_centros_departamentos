@@ -1,0 +1,34 @@
+uuid: 43617693-20c8-453b-a864-1014d51a2dda
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_convocatoria
+    - node.type.examenes
+    - taxonomy.vocabulary.convocatoria
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: Ia_P6YmJxfA9fxuUIEeVQEZgnec-_Fpps9PHQ1UEgC0
+id: node.examenes.field_convocatoria
+field_name: field_convocatoria
+entity_type: node
+bundle: examenes
+label: Convocatoria
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      convocatoria: convocatoria
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,17 @@
+uuid: 33af3764-00d9-4c55-a7b9-ce19ee06f1a5
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: Vbi9OLmr4K7cA2v88VKfE4v10JJ8HmBbIxwAMkhee2o
+id: node_type_empleo_y_practicas
+entity_type_id: null
+entity_id: null
+action: display_page
+allow_override: 0
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: null

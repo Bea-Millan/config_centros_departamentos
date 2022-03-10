@@ -1,0 +1,16 @@
+uuid: c037785d-eac9-4fb2-8c8e-0577e8a2c945
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: XJ6jt96mQo3bdhfYiVo0Gf7XYlUcQC4hePteeqlo4ZU
+id: node.horarios
+target_entity_type_id: node
+target_bundle: horarios
+default_langcode: site_default
+language_alterable: false

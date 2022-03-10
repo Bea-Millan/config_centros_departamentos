@@ -1,0 +1,23 @@
+uuid: 0d482bec-e4b3-44e8-8334-63ac0d0fe012
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_horarios_examenes
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: KRzMUI0tc_u_SkrX8yszX3qaAOFemmr9VjURFRTo1xA
+name: 'Examenes por departamentos'
+type: examenes_por_departamentos
+description: 'Exámenes por departamentos'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

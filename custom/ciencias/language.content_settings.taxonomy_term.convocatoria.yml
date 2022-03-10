@@ -1,0 +1,16 @@
+uuid: cd77a807-7af7-42f1-a679-bd9fe1c2eb8e
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.convocatoria
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: SCC42LejDJhMqZVLmZgVlA_5JdJn-lPuFfywpAc1mWQ
+id: taxonomy_term.convocatoria
+target_entity_type_id: taxonomy_term
+target_bundle: convocatoria
+default_langcode: current_interface
+language_alterable: false

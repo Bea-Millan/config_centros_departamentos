@@ -1,0 +1,28 @@
+uuid: 7bdac10d-fdcd-44b5-b507-1cafe83efcc0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link_departamento
+    - node.type.departamento
+  module:
+    - link
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: FK9siLLlUqPXzj5VEgNh-6APApludHlSw-J56ea5Ytw
+id: node.departamento.field_link_departamento
+field_name: field_link_departamento
+entity_type: node
+bundle: departamento
+label: 'Enlace al página del departamento'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

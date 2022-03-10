@@ -1,0 +1,23 @@
+uuid: e07d27c8-8af5-4fee-8803-70b34635dee3
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_empleo_practicas
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: fa3iQvQziJ_bTS2ZT6fWk2MklSKfNjh_quSig7fStag
+name: 'Empleo y prácticas'
+type: empleo_y_practicas
+description: 'Crea una ficha por cada una de la ofertas de empleo o practicas'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

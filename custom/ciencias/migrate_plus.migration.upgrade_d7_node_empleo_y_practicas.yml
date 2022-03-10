@@ -1,12 +1,12 @@
-uuid: 0d850ad8-225e-462c-b2ab-06e21b3124c0
+uuid: 67bce05d-1fd9-401f-a4e1-51182f7e8353
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
-      - c11n_migrate
+      - unizar_empleo_practicas
 _core:
-  default_config_hash: smRf7MCu_M_YZOsIUwOIrTgCMKzZ94MMK0mBDqyqa4I
+  default_config_hash: MG4fJMokDO7vIVnUdyyGbOuHfWZdfpqgACRGTpqt3js
 id: upgrade_d7_node_empleo_y_practicas
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null

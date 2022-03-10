@@ -1,0 +1,63 @@
+uuid: 0d6b6f97-8e7e-4013-8bd9-95461b8266e0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.examenes.field_adjunto_examenes
+    - field.field.node.examenes.field_convocatoria
+    - field.field.node.examenes.field_curso
+    - field.field.node.examenes.field_estudio
+    - node.type.examenes
+  module:
+    - file
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: MNktcV-Id14o6Pw-WTCsFnHIfX26T0UTem4onIjXbaU
+id: node.examenes.default
+targetEntityType: node
+bundle: examenes
+mode: default
+content:
+  field_adjunto_examenes:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_convocatoria:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_curso:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_estudio:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

@@ -1,0 +1,26 @@
+uuid: 2aba42e8-25e2-4940-ae11-040c51443e11
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_semestre
+    - node.type.horarios
+  module:
+    - options
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 9V6vjrZovX_KddRtRXvp4XXyoh_JIbvoy4PZSpHcCFc
+id: node.horarios.field_semestre
+field_name: field_semestre
+entity_type: node
+bundle: horarios
+label: Semestre
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

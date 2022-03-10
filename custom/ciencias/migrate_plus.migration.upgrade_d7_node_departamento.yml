@@ -1,12 +1,12 @@
-uuid: de56dc25-4d64-43c4-8bf8-a21f9a00e291
+uuid: 4fd07b63-aef3-4e2e-ba5e-66feb5e5004b
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
-      - c11n_migrate
+      - unizar_horarios_examenes
 _core:
-  default_config_hash: MnOrTPRI7z-fhASLuoPcnKrt7pvlSaUA97jVsyVy7Uc
+  default_config_hash: 8ABK7jH7ZmRF5Ty0CmsJ9pj8SrrXHGqNOHnEqGOyd2Q
 id: upgrade_d7_node_departamento
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -77,6 +77,8 @@ destination:
   translations: true
   default_bundle: departamento
 migration_dependencies:
+  module:
+    - unizar_horarios_examenes
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type

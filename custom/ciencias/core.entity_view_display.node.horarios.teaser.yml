@@ -1,0 +1,35 @@
+uuid: 98211b23-c624-452f-9720-a6299ac328c1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.horarios.field_adjunto_horarios
+    - field.field.node.horarios.field_curso
+    - field.field.node.horarios.field_estudio
+    - field.field.node.horarios.field_semestre
+    - node.type.horarios
+  module:
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: 66y2-p7Zd79Jwj0DvYZqbc1zB87r6WH4pLH00zZ8AqQ
+id: node.horarios.teaser
+targetEntityType: node
+bundle: horarios
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_adjunto_horarios: true
+  field_curso: true
+  field_estudio: true
+  field_semestre: true
+  langcode: true

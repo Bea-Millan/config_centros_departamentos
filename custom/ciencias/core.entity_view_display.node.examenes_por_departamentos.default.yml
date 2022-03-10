@@ -1,0 +1,63 @@
+uuid: 99771f6a-d043-40d9-ad06-beb19c2b7adf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.examenes_por_departamentos.field_adjunto_examenes_dpto
+    - field.field.node.examenes_por_departamentos.field_convocatoria
+    - field.field.node.examenes_por_departamentos.field_curso
+    - field.field.node.examenes_por_departamentos.field_examen_departamento
+    - node.type.examenes_por_departamentos
+  module:
+    - file
+    - user
+  enforced:
+    module:
+      - unizar_horarios_examenes
+_core:
+  default_config_hash: F1gtfROqRYPlFADvzXoMP6kyKfCi7ylwjB3RbhaxaXY
+id: node.examenes_por_departamentos.default
+targetEntityType: node
+bundle: examenes_por_departamentos
+mode: default
+content:
+  field_adjunto_examenes_dpto:
+    weight: 104
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_convocatoria:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_curso:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_examen_departamento:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

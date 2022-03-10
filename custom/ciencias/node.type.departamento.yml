@@ -1,0 +1,23 @@
+uuid: 4a6b46c4-98ae-413d-a306-c863766137b3
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_horarios_examenes
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: ubYoq2tT3CxtkiUXKyYquLyldb_mysRKjP1VgmjCMLs
+name: Departamento
+type: departamento
+description: 'Departamento de la Universidad de Zaragoza'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

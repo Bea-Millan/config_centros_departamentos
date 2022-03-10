@@ -1,0 +1,23 @@
+uuid: 8df61e38-37c4-4797-a699-d5fe7633e11b
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_horarios_examenes
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: DqeLZtMIUwGNFZeA2jVGV_lGUugYIrBSyN6mh2gn8JY
+name: 'Horarios por departamentos'
+type: horarios_por_departamentos
+description: 'Horarios por departamentos'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

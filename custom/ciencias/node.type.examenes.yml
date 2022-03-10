@@ -1,0 +1,23 @@
+uuid: 289bd180-8408-4db2-b049-6d1034addb5e
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+  enforced:
+    module:
+      - unizar_horarios_examenes
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: U0sTSNPuJzmrMTJZSuz1Zm6r7f0hhuprrBN0ysNJfHc
+name: Exámenes
+type: examenes
+description: 'Horarios de exámenes de un estudio para un curso y convocatorias determinados.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,26 @@
+uuid: 18f53791-026e-4df6-aafa-feed23c551e5
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha_publicacion
+    - node.type.empleo_y_practicas
+  module:
+    - datetime
+  enforced:
+    module:
+      - unizar_empleo_practicas
+_core:
+  default_config_hash: eVxLwf4TxZg0CgUbL0dkXC38LZpsOo25t_N2V0RoRg8
+id: node.empleo_y_practicas.field_fecha_publicacion
+field_name: field_fecha_publicacion
+entity_type: node
+bundle: empleo_y_practicas
+label: 'Fecha de publicación'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
