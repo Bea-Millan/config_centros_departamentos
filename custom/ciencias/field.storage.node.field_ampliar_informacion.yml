@@ -1,21 +1,16 @@
-uuid: a395cb45-a1a2-45d3-b887-a818518a82af
+uuid: 534caf9a-8f29-47ed-8938-f68a4a6d5ae5
 langcode: es
 status: true
 dependencies:
   module:
+    - link
     - node
-    - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
-_core:
-  default_config_hash: bb5lwt0tfqnvVrfmY4yRwGEICLTCi2oFH0WZorpxTRc
 id: node.field_ampliar_informacion
 field_name: field_ampliar_informacion
 entity_type: node
-type: text_long
+type: link
 settings: {  }
-module: text
+module: link
 locked: false
 cardinality: 1
 translatable: true

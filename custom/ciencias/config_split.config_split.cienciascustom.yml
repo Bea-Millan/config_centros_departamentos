@@ -13,7 +13,10 @@ module:
   unizar_horarios_examenes: 0
 theme: {  }
 blacklist:
+  - block.block.unizar_centro_titulodelapagina
   - config_split.config_split.cienciascustom
+  - field.field.node.empleo_y_practicas.field_ampliar_informacion
+  - field.storage.node.field_ampliar_informacion
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

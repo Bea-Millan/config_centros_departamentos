@@ -1,0 +1,14 @@
+uuid: 9fd4d494-5072-40e0-b01c-d14aed0736ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios
+id: node_type_horarios
+entity_type_id: node_type
+entity_id: horarios
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

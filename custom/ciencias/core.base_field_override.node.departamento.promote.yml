@@ -1,0 +1,22 @@
+uuid: 194a9713-3344-4cac-a6af-ea3d0e679d11
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.departamento
+id: node.departamento.promote
+field_name: promote
+entity_type: node
+bundle: departamento
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

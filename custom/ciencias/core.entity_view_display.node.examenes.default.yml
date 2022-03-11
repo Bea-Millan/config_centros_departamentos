@@ -27,7 +27,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 105
+    weight: 4
     region: content
   field_convocatoria:
     type: entity_reference_label
@@ -35,7 +35,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 104
+    weight: 2
     region: content
   field_curso:
     type: entity_reference_label
@@ -43,20 +43,20 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 102
+    weight: 1
     region: content
   field_estudio:
     type: entity_reference_label
     label: above
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
-    weight: 103
+    weight: 3
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   addtoany: true

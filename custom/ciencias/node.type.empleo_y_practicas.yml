@@ -18,6 +18,6 @@ name: 'Empleo y prácticas'
 type: empleo_y_practicas
 description: 'Crea una ficha por cada una de la ofertas de empleo o practicas'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

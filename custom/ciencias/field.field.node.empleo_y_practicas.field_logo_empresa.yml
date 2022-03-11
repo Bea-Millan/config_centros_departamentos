@@ -20,15 +20,15 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-    redirect: false
-    retroactive_update: false
-    active_updating: false
     file_name:
       value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
       options:
         slashes: false
         pathauto: false
         transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: false
 _core:
   default_config_hash: AoQlq_Ay1bFGvnHPoXDjgnXlX_oH-4iQv6n_AbAxClc
 id: node.empleo_y_practicas.field_logo_empresa
@@ -42,6 +42,8 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: ''
@@ -57,6 +59,4 @@ settings:
     title: ''
     width: null
     height: null
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: image

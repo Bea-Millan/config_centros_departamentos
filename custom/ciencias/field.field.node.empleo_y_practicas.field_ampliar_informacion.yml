@@ -1,4 +1,4 @@
-uuid: cc4c383e-2c5a-4991-870d-3fb5bfbc8727
+uuid: a42ca2ee-783b-4f6c-b19a-45671c2e5099
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,7 @@ dependencies:
     - field.storage.node.field_ampliar_informacion
     - node.type.empleo_y_practicas
   module:
-    - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
-_core:
-  default_config_hash: s2GNNYo2bQXsGGHlLHrEkXzQrgSAH7wjDVArE6dJa-8
+    - link
 id: node.empleo_y_practicas.field_ampliar_informacion
 field_name: field_ampliar_informacion
 entity_type: node
@@ -22,5 +17,7 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
-field_type: text_long
+settings:
+  title: 1
+  link_type: 17
+field_type: link

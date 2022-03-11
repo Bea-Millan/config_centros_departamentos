@@ -1,0 +1,14 @@
+uuid: 6b5b7de2-6c51-4132-90ed-38725524fda1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios_por_departamentos
+id: node_type_horarios_por_departamentos
+entity_type_id: node_type
+entity_id: horarios_por_departamentos
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

@@ -101,8 +101,6 @@ destination:
   translations: true
   default_bundle: horarios_por_departamentos
 migration_dependencies:
-  module:
-    - unizar_horarios_examenes
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
@@ -111,3 +109,5 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
+  module:
+    - unizar_horarios_examenes

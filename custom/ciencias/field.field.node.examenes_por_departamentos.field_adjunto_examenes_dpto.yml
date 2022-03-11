@@ -20,15 +20,15 @@ third_party_settings:
         slashes: false
         pathauto: false
         transliterate: false
-    redirect: false
-    retroactive_update: false
-    active_updating: true
     file_name:
       value: "unizar_titulaciones/[node:field_curso:entity:name]/examenes/[node:field_convocatoria:entity:name]/[file:original:basename]\t.[file:original:extension]\t"
       options:
         slashes: false
         pathauto: false
         transliterate: false
+    redirect: false
+    retroactive_update: false
+    active_updating: true
 _core:
   default_config_hash: LgmJ7UDjNeZlnQeNQt1kakpXV-TzKASdB1A0lemSmqA
 id: node.examenes_por_departamentos.field_adjunto_examenes_dpto
@@ -42,10 +42,10 @@ translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
+  handler: 'default:file'
+  handler_settings: {  }
   file_directory: ''
   file_extensions: 'txt pdf'
   max_filesize: '20 MB'
   description_field: true
-  handler: 'default:file'
-  handler_settings: {  }
 field_type: file

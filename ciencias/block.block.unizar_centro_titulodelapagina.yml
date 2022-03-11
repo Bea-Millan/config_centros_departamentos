@@ -26,7 +26,13 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      departamento: departamento
       elemento_parrilla: elemento_parrilla
+      empleo_y_practicas: empleo_y_practicas
       estudio: estudio
+      examenes: examenes
+      examenes_por_departamentos: examenes_por_departamentos
+      horarios: horarios
+      horarios_por_departamentos: horarios_por_departamentos
       slideshow: slideshow
       te_interesa: te_interesa
