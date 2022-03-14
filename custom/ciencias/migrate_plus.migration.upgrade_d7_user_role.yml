@@ -1,4 +1,4 @@
-uuid: 95ac456a-6f7b-4b9b-864f-afabf6b44748
+uuid: b678fe1d-e940-474a-aeba-b1143b59dfbc
 langcode: es
 status: true
 dependencies:
@@ -57,6 +57,6 @@ process:
 destination:
   plugin: 'entity:user_role'
 migration_dependencies:
-  required: {  }
   optional:
     - upgrade_d7_filter_format
+  required: {  }

@@ -1,4 +1,4 @@
-uuid: 48737368-520e-4f09-a828-fb73a3d9ba60
+uuid: 74b7a8df-ccc4-4f18-b212-b801be1b608e
 langcode: es
 status: true
 dependencies:
@@ -25,13 +25,13 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_link_departamento:
-    type: link_default
     weight: 121
-    region: content
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
+    type: link_default
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -47,24 +47,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
-    region: content
     settings:
       display_label: true
+    weight: 15
+    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
-    region: content
     settings:
       display_label: true
+    weight: 120
+    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
-    region: content
     settings:
       display_label: true
+    weight: 16
+    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -77,11 +77,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden: {  }

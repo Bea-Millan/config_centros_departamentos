@@ -1,4 +1,4 @@
-uuid: 80b7c2bc-c455-4b30-97f2-7d24b3df119b
+uuid: 80524adf-e53a-41c1-b965-accb65d3371c
 langcode: es
 status: true
 dependencies:
@@ -22,9 +22,9 @@ bundle: horarios_por_departamentos
 mode: teaser
 content:
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   addtoany: true

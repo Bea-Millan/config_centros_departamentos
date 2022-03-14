@@ -1,13 +1,13 @@
-uuid: 194a9713-3344-4cac-a6af-ea3d0e679d11
+uuid: d5aabc13-cc37-455d-bd61-642cd15fa0e5
 langcode: es
 status: true
 dependencies:
   config:
-    - node.type.departamento
-id: node.departamento.promote
+    - node.type.examenes_por_departamentos
+id: node.examenes_por_departamentos.promote
 field_name: promote
 entity_type: node
-bundle: departamento
+bundle: examenes_por_departamentos
 label: 'Promocionado a la página principal'
 description: ''
 required: false

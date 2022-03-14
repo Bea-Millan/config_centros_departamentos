@@ -1,4 +1,4 @@
-uuid: be798fa9-bab8-477d-beb6-7c43f272f25f
+uuid: b1d51f95-321f-4464-9bad-c4fd48ec86bc
 langcode: es
 status: true
 dependencies:
@@ -19,9 +19,9 @@ bundle: departamento
 mode: teaser
 content:
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   addtoany: true

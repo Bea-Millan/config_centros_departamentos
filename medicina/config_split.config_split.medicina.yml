@@ -1,0 +1,37 @@
+uuid: 660f4097-4ec8-41d5-ad55-bfb06cbdcf3e
+langcode: es
+status: true
+dependencies: {  }
+id: medicina
+label: medicina
+description: ''
+weight: 0
+folder: ../config/sites/medicina
+module:
+  c11n_migrate: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.medicina
+  - system.site
+  - system.theme
+  - core.extension
+  - asset_injector.css.medicina_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negociation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,4 +1,4 @@
-uuid: 0e020bf9-f2c1-496e-866e-33003180e727
+uuid: 26ed9f01-1131-47bf-b99a-41fd38627b9f
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: yNhT9jKCPlB8jj7HayvOmvQhlZscgBjW5a8qZ5clUbc
+  default_config_hash: EgcTDtK41dxZdX5skrjYVbraiOXii6eRSnqQ-a-BVCM
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -144,8 +144,12 @@ process:
       ignore_case: true
   field_fecha:
     -
+      plugin: null_coalesce
+      source:
+        - field_fecha
+        - field_fecha_evento
+    -
       plugin: sub_process
-      source: field_fecha
       process:
         value:
           plugin: format_date

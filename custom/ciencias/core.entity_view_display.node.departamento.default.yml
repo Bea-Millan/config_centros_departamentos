@@ -1,4 +1,4 @@
-uuid: d5b35740-7ad7-4284-84ab-cc993a7eb304
+uuid: 7a4793aa-05f8-43f1-824c-2dd8dc12ca4f
 langcode: es
 status: true
 dependencies:
@@ -19,7 +19,7 @@ bundle: departamento
 mode: default
 content:
   field_link_departamento:
-    type: link
+    weight: 101
     label: above
     settings:
       trim_length: 80
@@ -28,12 +28,12 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 101
+    type: link
     region: content
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   addtoany: true

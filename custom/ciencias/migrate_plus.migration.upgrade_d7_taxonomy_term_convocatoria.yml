@@ -1,12 +1,12 @@
-uuid: 9d4c7ab9-aae6-4968-95c5-ae600d76d7da
+uuid: ef72d84b-c35a-4921-a0a9-9c439494794e
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
-      - c11n_migrate
+      - unizar_horarios_examenes
 _core:
-  default_config_hash: jwJo6in_uMImNwinoTi5mGVkkFELxXtOnT_9DeIuz4o
+  default_config_hash: W0GRMGo6Oe7M_u9t6AvTB2uzycA01PG4NiPL01CeuZs
 id: upgrade_d7_taxonomy_term_convocatoria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -15,7 +15,7 @@ migration_tags:
   - Final
   - 'Drupal 7'
   - Content
-migration_group: migrate_drupal_7
+migration_group: migrate_drupal_horarios_examenes
 label: 'Taxonomy terms (Convocatoria)'
 source:
   plugin: d7_taxonomy_term

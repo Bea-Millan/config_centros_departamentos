@@ -1,4 +1,4 @@
-uuid: db7304a6-e71c-4d22-8696-fc145d8d7acb
+uuid: af7846a7-1867-4a9d-9c2f-518f19d6658a
 langcode: es
 status: true
 dependencies:
@@ -22,9 +22,9 @@ bundle: examenes_por_departamentos
 mode: teaser
 content:
   links:
+    weight: 100
     settings: {  }
     third_party_settings: {  }
-    weight: 100
     region: content
 hidden:
   addtoany: true

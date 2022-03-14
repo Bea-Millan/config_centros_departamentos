@@ -1,4 +1,4 @@
-uuid: 0d482bec-e4b3-44e8-8334-63ac0d0fe012
+uuid: 4d78f796-4a64-43b8-8340-af4d3d10bd8f
 langcode: es
 status: true
 dependencies:
@@ -18,6 +18,6 @@ name: 'Examenes por departamentos'
 type: examenes_por_departamentos
 description: 'Exámenes por departamentos'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

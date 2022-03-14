@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: QSlGlPiFvxOydhzrJWLAiMQqFqjtzdNZ0MYV5RGyqQ8
+plugin:
+  host: medicina.unizar.es
+  url_host: sites/medicina
+langcode: es

@@ -1,4 +1,4 @@
-uuid: 8949ad6c-fe99-498d-b274-e12cb21d2aec
+uuid: 138c319a-ee4b-40e6-baba-ce50ea39eb14
 langcode: es
 status: true
 dependencies:
@@ -15,13 +15,13 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: '[date:custom:Y]-[date:custom:m]'
+      value: 'horarios_dptos/[node:field_curso:entity:name]/[file:original:name].[file:original:extension]'
       options:
         slashes: false
         pathauto: false
         transliterate: false
     file_name:
-      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      value: ''
       options:
         slashes: false
         pathauto: false

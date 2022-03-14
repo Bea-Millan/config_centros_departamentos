@@ -1,4 +1,4 @@
-uuid: 0a06dbe3-0e58-4a2f-a010-988a5f6faa5b
+uuid: 61a268b0-ef4b-426b-ab8f-5e431d4f8b8b
 langcode: es
 status: true
 dependencies:
@@ -42,7 +42,7 @@ content:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
     weight: 1
     region: content

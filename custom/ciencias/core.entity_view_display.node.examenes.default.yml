@@ -1,4 +1,4 @@
-uuid: 0d6b6f97-8e7e-4013-8bd9-95461b8266e0
+uuid: a45638b1-9f3f-4f0a-9ae6-201f73f57515
 langcode: es
 status: true
 dependencies:
@@ -27,7 +27,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 4
+    weight: 105
     region: content
   field_convocatoria:
     type: entity_reference_label
@@ -35,7 +35,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 104
     region: content
   field_curso:
     type: entity_reference_label
@@ -43,20 +43,20 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 102
     region: content
   field_estudio:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 3
+    weight: 103
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 100
     region: content
 hidden:
   addtoany: true

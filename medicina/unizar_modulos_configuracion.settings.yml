@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: n-EqIW9Jn3kVqT-J_toz_JSLh3AUWeYL-t6W9mkPb74
+logo_path: 'public://medicinacolor.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '104'
+nombre_centro: 'Facultad de Medicina'
+dir_centro: 'C/ Domingo Miral, s/n'
+telefono_centro: '+34 976 761 757'
+mail_centro: secremed@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '1836'
+imagen_segundas: '1837'
+facebook: ''
+twitter: 'https://twitter.com/MedUnizar'
+youtube: ''
+linkedin: ''
+instagram: 'https://www.instagram.com/med_unizar/'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Facultad de Medicina, Universidad de Zaragoza: centro docente e investigador en el que se imparten estudios de Grado en Medicina, Másteres, Doctorado y Estudios Propios'
+langcode: es

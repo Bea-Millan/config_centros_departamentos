@@ -1,4 +1,4 @@
-uuid: 4fd07b63-aef3-4e2e-ba5e-66feb5e5004b
+uuid: ffa56bf9-3eb0-4cb1-8397-e6c62edb46a8
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 8ABK7jH7ZmRF5Ty0CmsJ9pj8SrrXHGqNOHnEqGOyd2Q
+  default_config_hash: NZPrdDFOtl5HgUFqZQMl5SZlRkxRLuON-tcgmpI0BEw
 id: upgrade_d7_node_departamento
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -19,7 +19,7 @@ migration_group: migrate_drupal_horarios_examenes
 label: 'Nodes (departamento)'
 source:
   plugin: d7_node_complete
-  node_type: departamento
+  node_type: departamentos
 process:
   nid: tnid
   vid: vid
@@ -70,8 +70,11 @@ process:
       source: timestamp
   field_link_departamento:
     -
-      plugin: get
+      plugin: sub_process
       source: field_link_departamento
+      process:
+        uri: value
+        title: title
 destination:
   plugin: 'entity_complete:node'
   translations: true
@@ -83,5 +86,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-  module:
-    - unizar_horarios_examenes
