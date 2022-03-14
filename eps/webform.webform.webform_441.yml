@@ -1,0 +1,182 @@
+uuid: 372a5189-7520-4cc0-a7e5-ada682c59668
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 95
+template: false
+archive: false
+id: webform_441
+title: 'Comunicación de noticias'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos_del_la_que_propone_la_noticia:
+    '#type': textfield
+    '#title': 'Nombre y apellidos del/la que propone la noticia'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico para comunicaciones'
+    '#required': true
+  relacion_del_la_proponente_con_la_eps:
+    '#type': radios
+    '#options':
+      PDI: PDI
+      PAS: PAS
+      Estudiante: Estudiante
+      Otro: Otro
+    '#title': 'Relación del/la proponente con la EPS'
+    '#required': true
+  en_caso_de_haber_senalado_otro_indicar_cual:
+    '#type': textfield
+    '#title': 'En caso de haber señalado otro, indicar cuál'
+  dar_difusion__en:
+    '#type': checkboxes
+    '#options':
+      iEPS: 'Boletín semanal iEPS'
+      agendaweb: 'Agenda en la web de la EPS'
+    '#multiple': true
+    '#title': 'Dar difusión  en'
+    '#required': true
+  fecha_de_inicio:
+    '#type': date
+    '#title': 'Fecha de inicio'
+    '#required': true
+  fecha_de_fin:
+    '#type': date
+    '#title': 'Fecha fin'
+  titulo:
+    '#type': textfield
+    '#title': Título
+    '#description': 'Breve título informativo . (En la medida de lo posible, respetar la estructura sujeto, verbo y predicado)'
+    '#required': true
+  subtitulo:
+    '#type': textfield
+    '#title': Subtítulo
+    '#description': |-
+      Información complementaria. 
+      Si es una jornada o actividad concreta, es el lugar idóneo para anunciar día, hora y lugar de celebración. No repetir el título. En este caso es preferible dejar en blanco este campo.
+  texto_de_la_noticia:
+    '#type': textarea
+    '#title': 'Texto de la noticia'
+    '#description': 'Descripción de la noticia. Los mensajes van sin firmar, por lo que es preferible evitar expresiones como “te invitamos”, “te comunicamos”, etc…'
+    '#required': true
+  imagen1:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png'
+    '#title': 'Imagen 1 que acompaña a la noticia'
+  imagen2:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png'
+    '#title': 'Imagen 2 que acompaña a la noticia'
+  imagen3:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png'
+    '#title': 'Imagen 3 que acompaña a la noticia'
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Gracias por enviarnos la noticia. Será publicada según sus indicaciones.&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ccano@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: ieps@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: 3iJqpp5SXX_hgum8LRGXFSxTVlNfTeoDiqPKiZ6svic
+logo_path: 'public://ept-audit-ods.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '201'
+nombre_centro: 'Escuela Politécnica Superior de Huesca'
+dir_centro: 'Ctra. de Cuarte, s/n 22071 HUESCA'
+telefono_centro: '+34 974 23 93 01'
+mail_centro: infoeps@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '4434'
+imagen_segundas: '2805'
+facebook: 'https://www.facebook.com/pages/Escuela-Politécnica-Superior-de-Huesca/101124763368447'
+twitter: 'https://twitter.com/EPSunizar'
+youtube: 'https://www.youtube.com/channel/UC0JrM_eaGQ8qlOHQofQJjEQ'
+linkedin: ' https://www.linkedin.com/school/16269725/'
+instagram: ''
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'La Escuela Politécnica Superior de la Universidad de Zaragoza se encuentra en el Campus de Huesca. En dicho centro se imparte el Grado en Ciencias Ambientales, el Grado en Ingeniería Agroalimentaria y del Medio Rural, con las Menciones en Explotaciones Agropecuarias, Hortofruticultura y Jardinería e Industrias Agroalimentarias. También se imparte el Máster Universitario en Ingeniería Agronómica, el Máster Universitario en Iniciación a la Investigación en Ciencias Agrarias y Ambientales y los Estudios Propios Diploma de Especialización en Protección Vegetal y Máster Propio en Gestión Fluvial Sostenible y Gestión Integrada del Agua. Sede de la UIMP-Sede Pirineos. Laboratorio de Maquinaria Agrícola. Grupos de Investigación: PROVESOS. GESTAR. BIOFLORA. FUEGOSOL. CEDERUL. OTRAC'
+langcode: es

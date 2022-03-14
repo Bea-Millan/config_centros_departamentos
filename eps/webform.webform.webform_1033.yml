@@ -1,0 +1,190 @@
+uuid: 49985d59-8e78-43c2-9276-7c619732b452
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 95
+template: false
+archive: false
+id: webform_1033
+title: 'Ofertas Empleo'
+description: null
+category: null
+elements: |-
+  persona_que_remite_la_oferta:
+    '#type': textfield
+    '#title': 'Persona que remite la oferta'
+    '#required': true
+  empresa:
+    '#type': textfield
+    '#title': 'Empresa / entidad'
+    '#required': true
+  nombre_del_puesto_de_trabajo:
+    '#type': textfield
+    '#title': 'Nombre del puesto de trabajo'
+    '#required': true
+  lugar_de_trabajo:
+    '#type': textfield
+    '#title': 'Lugar de trabajo'
+    '#required': true
+  tareas_a_desarrollar:
+    '#type': textarea
+    '#title': 'Tareas a desarrollar'
+    '#required': true
+  titulacion_es_requeridas:
+    '#type': textfield
+    '#title': 'Titulación/es requeridas'
+    '#required': true
+  requisitos_adicionales:
+    '#type': textarea
+    '#title': 'Requisitos adicionales'
+    '#description': 'Experiencia, idiomas, vehículo...'
+  condiciones_laborales:
+    '#type': textarea
+    '#title': 'Condiciones laborales'
+    '#required': true
+  contacto:
+    '#type': textfield
+    '#title': 'Contacto e indicaciones para los interesados en la oferta'
+    '#required': true
+  si_fuese_necesario_archivo_adjunto:
+    '#type': managed_file
+    '#max_filesize': 1
+    '#file_extensions': 'gif jpg jpeg png pdf'
+    '#title': 'Si fuese necesario, archivo adjunto'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su oferta ha quedado registrada</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: direspsh@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'NUEVA OFERTA DE EMPLEO'
+      body: 'Recibida nueva oferta de empleo'
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: ccano@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'NUEVA OFERTA DE EMPLEO'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: mescar@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'NUEVA OFERTA DE EMPLEO'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
