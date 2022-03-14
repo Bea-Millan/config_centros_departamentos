@@ -1,4 +1,4 @@
-uuid: d55e4666-5bf5-4783-9dcf-e1897f1d14ac
+uuid: d4812b84-a012-4ef1-a6a6-b149b258ca0e
 langcode: es
 status: open
 dependencies:
@@ -14,7 +14,7 @@ uid: null
 template: false
 archive: false
 id: contact
-title: Contact
+title: Contacto
 description: 'Basic email contact webform.'
 category: ''
 elements: |
@@ -147,7 +147,7 @@ settings:
   confirmation_type: url_message
   confirmation_url: '<front>'
   confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_message: 'Su mensaje ha sido enviado.'
   confirmation_attributes: {  }
   confirmation_back: true
   confirmation_back_label: ''

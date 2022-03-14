@@ -2,7 +2,7 @@ _core:
   default_config_hash: u3FhWCj3uBRRFEiOXLcSwIglpwHB4ju12bUBqt-tjP4
 langcode: es
 uuid: dc3fe527-de9a-4486-ba24-b32338e70d61
-name: prueba
+name: eps
 mail: gestweb@unizar.es
 slogan: 'Centro de la Universidad de Zaragoza'
 page:
