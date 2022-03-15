@@ -1,7 +1,7 @@
 uuid: 4fd07b63-aef3-4e2e-ba5e-66feb5e5004b
 langcode: es
 status: true
-dependencies:
+dependencies: null
 _core:
   default_config_hash: 8ABK7jH7ZmRF5Ty0CmsJ9pj8SrrXHGqNOHnEqGOyd2Q
 id: upgrade_d7_node_departamento

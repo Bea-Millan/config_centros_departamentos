@@ -1,7 +1,7 @@
 uuid: e7dbc711-ff00-40f7-8cd7-a61b6c89c9ce
 langcode: es
 status: true
-dependencies:
+dependencies: null
 _core:
   default_config_hash: 3lFSbUAVkPjE13V1Aarw97DhFCfIUrVrvc5GPfjGdFE
 id: upgrade_d7_node_horarios

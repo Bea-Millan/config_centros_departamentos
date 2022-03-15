@@ -1,7 +1,7 @@
 uuid: 354ca275-fd44-43b4-abd9-88af1b31c382
 langcode: es
 status: true
-dependencies:
+dependencies: null
 _core:
   default_config_hash: EyUWgyYrMhgFbe_YYw9gHu4KNd7d0W0JxhC19YhtTNA
 id: upgrade_d7_node_horarios_por_departamentos

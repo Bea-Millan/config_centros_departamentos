@@ -1,7 +1,7 @@
 uuid: db93a83d-6fd5-45c8-8186-8ef8b68b7396
 langcode: es
 status: true
-dependencies:
+dependencies: null
 _core:
   default_config_hash: X3wwEPN_aWZeFOsOSXNs5zzYdQ5lKgEKYHbQZKzfOZs
 id: upgrade_d7_node_examenes

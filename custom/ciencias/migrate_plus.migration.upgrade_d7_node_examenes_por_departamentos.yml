@@ -1,7 +1,7 @@
 uuid: e8714a36-9cc0-46ea-aca0-d995c6a42735
 langcode: es
 status: true
-dependencies:
+dependencies: null
 _core:
   default_config_hash: Mg0Hfd1xldIq8rWUZ1inoI9O5iuTsGSXB22tTznXXzg
 id: upgrade_d7_node_examenes_por_departamentos
