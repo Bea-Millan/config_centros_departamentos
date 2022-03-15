@@ -15,7 +15,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 7PiikVkTUYtc2SldGfYTSlEfbBUYUEaFH2MBKMgNMhw
+  default_config_hash: 66y2-p7Zd79Jwj0DvYZqbc1zB87r6WH4pLH00zZ8AqQ
 id: node.horarios.teaser
 targetEntityType: node
 bundle: horarios

@@ -13,7 +13,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 5Cqht4uFhHJAAj2RIhC14rqXO_xOD9b5QPKBedQags4
+  default_config_hash: f2LNfM7r7K6vN1RjNS_YwkztM7j1kvsJgawJnv8Txbc
 id: departamento_con_examenes
 label: 'Departamento con exámenes'
 module: views

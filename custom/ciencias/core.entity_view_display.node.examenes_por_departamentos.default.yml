@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.examenes_por_departamentos.field_convocatoria
     - field.field.node.examenes_por_departamentos.field_curso
     - field.field.node.examenes_por_departamentos.field_examen_departamento
+    - field.field.node.examenes_por_departamentos.field_ocultar_dato_actualizacion
     - node.type.examenes_por_departamentos
   module:
     - ds
@@ -36,10 +37,10 @@ third_party_settings:
       node_changed_date:
         plugin_id: node_changed_date
         weight: 1
-        label: hidden
+        label: inline
         formatter: ds_post_date_short
 _core:
-  default_config_hash: 9tEncnajbrfkszyEhHmpouiaSCKitqzzUX03pg_7zUs
+  default_config_hash: F1gtfROqRYPlFADvzXoMP6kyKfCi7ylwjB3RbhaxaXY
 id: node.examenes_por_departamentos.default
 targetEntityType: node
 bundle: examenes_por_departamentos
@@ -84,4 +85,5 @@ content:
     region: content
 hidden:
   addtoany: true
+  field_ocultar_dato_actualizacion: true
   langcode: true

@@ -12,7 +12,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: SEC1WGoWekt4_vVwoJ_ek9uQgCkAqBemoDlTZK__z84
+  default_config_hash: baYOLUoN6HLIRCdD_xOk1I5ye06uGxmjfjDYGnm-nOU
 id: node.departamento.teaser
 targetEntityType: node
 bundle: departamento

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.examenes_por_departamentos.field_convocatoria
     - field.field.node.examenes_por_departamentos.field_curso
     - field.field.node.examenes_por_departamentos.field_examen_departamento
+    - field.field.node.examenes_por_departamentos.field_ocultar_dato_actualizacion
     - node.type.examenes_por_departamentos
   module:
     - user
@@ -15,7 +16,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 1xYjH4YdCh9opPNXLFIJrcwEVWfiRGeLzRKMnF8a77Y
+  default_config_hash: NJ43dgEpZyT21Gx-13k_tBhxP2PQTdtqUMvT0MnpEUo
 id: node.examenes_por_departamentos.teaser
 targetEntityType: node
 bundle: examenes_por_departamentos
@@ -32,4 +33,5 @@ hidden:
   field_convocatoria: true
   field_curso: true
   field_examen_departamento: true
+  field_ocultar_dato_actualizacion: true
   langcode: true

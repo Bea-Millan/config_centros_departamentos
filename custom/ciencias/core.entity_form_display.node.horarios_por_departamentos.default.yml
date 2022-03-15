@@ -1,4 +1,4 @@
-uuid: 8d083c45-7971-4f4f-a72b-75881b4eb660
+uuid: 3b44cd76-e410-452b-b4e7-948b172c0250
 langcode: es
 status: true
 dependencies:
@@ -22,38 +22,38 @@ bundle: horarios_por_departamentos
 mode: default
 content:
   field_adjunto_horarios:
+    type: file_generic
     weight: 5
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_curso:
+    type: entity_reference_autocomplete
     weight: 4
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_examen_departamento:
+    type: entity_reference_autocomplete
     weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_semestre:
+    type: options_select
     weight: 3
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   path:
     type: path
     weight: 1

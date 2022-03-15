@@ -1,8 +1,0 @@
-_core:
-  default_config_hash: HL0Svw6hoV03EMojx0Rx-PIFH3rLbka11prZwQOkBp8
-langcode: es
-temp_location: 'public://tmp'
-dependencies:
-  enforced:
-    module:
-      - unizar_horarios_examenes

@@ -1,4 +1,4 @@
-uuid: 09bced22-2a04-4388-86b1-2a5296b78acc
+uuid: 289bd180-8408-4db2-b049-6d1034addb5e
 langcode: es
 status: true
 dependencies:
@@ -18,6 +18,6 @@ name: Exámenes
 type: examenes
 description: 'Horarios de exámenes de un estudio para un curso y convocatorias determinados.'
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
-display_submitted: true
+display_submitted: false

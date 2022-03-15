@@ -1,4 +1,4 @@
-uuid: e396af19-ee18-4a25-b49f-7819f6b2aa09
+uuid: 1debc7ef-f4db-4907-9670-49c965d312d7
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: Phxwfmav2KlTe5sgligEYEJZNAs1y1y7pcqoQ7GOnts
-id: upgrade_d7_taxonomy_term_personal_sector_consejo
+  default_config_hash: jvJISIaR0D8Xz7xa1nSFyeCpPCBYI10v4E4T9l6-fAs
+id: upgrade_d7_taxonomy_term_curso
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -16,10 +16,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Taxonomy terms (personal_sector_consejo )'
+label: 'Taxonomy terms (Curso)'
 source:
   plugin: d7_taxonomy_term
-  bundle: personal_sector_consejo
+  bundle: curso
 process:
   tid:
     -
@@ -44,5 +44,5 @@ process:
       source: format
 destination:
   plugin: 'entity:taxonomy_term'
-  default_bundle: personal_sector_consejo
+  default_bundle: curso
 migration_dependencies: null

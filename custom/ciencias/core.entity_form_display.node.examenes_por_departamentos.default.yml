@@ -1,4 +1,4 @@
-uuid: 028df664-3176-451a-80eb-3f946f977eaa
+uuid: 87ca1ec3-d428-4031-9d4b-de0154c8da96
 langcode: es
 status: true
 dependencies:
@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.examenes_por_departamentos.field_convocatoria
     - field.field.node.examenes_por_departamentos.field_curso
     - field.field.node.examenes_por_departamentos.field_examen_departamento
+    - field.field.node.examenes_por_departamentos.field_ocultar_dato_actualizacion
     - node.type.examenes_por_departamentos
   module:
     - file
@@ -23,80 +24,80 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 10
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
   field_adjunto_examenes_dpto:
-    weight: 124
+    type: file_generic
+    weight: 11
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_convocatoria:
-    weight: 123
+    type: entity_reference_autocomplete
+    weight: 10
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_curso:
-    weight: 122
+    type: entity_reference_autocomplete
+    weight: 9
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_examen_departamento:
-    weight: 121
+    type: options_select
+    weight: 8
+    region: content
     settings: {  }
     third_party_settings: {  }
-    type: options_select
-    region: content
   langcode:
     type: language_select
-    weight: 2
+    weight: 1
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 30
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
+    weight: 4
+    region: content
     settings:
       display_label: true
-    weight: 15
-    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
+    weight: 7
+    region: content
     settings:
       display_label: true
-    weight: 120
-    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
+    weight: 5
+    region: content
     settings:
       display_label: true
-    weight: 16
-    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: -5
+    weight: 0
     region: content
     settings:
       size: 60
@@ -104,12 +105,13 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 5
+    weight: 2
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  field_ocultar_dato_actualizacion: true

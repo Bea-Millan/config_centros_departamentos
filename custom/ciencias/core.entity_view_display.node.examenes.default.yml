@@ -39,7 +39,7 @@ third_party_settings:
         label: hidden
         formatter: ds_post_date_short
 _core:
-  default_config_hash: NUOJdBAIZ3Euap5wjEsm3scS4JeFJ9LxsURg50B2R8U
+  default_config_hash: MNktcV-Id14o6Pw-WTCsFnHIfX26T0UTem4onIjXbaU
 id: node.examenes.default
 targetEntityType: node
 bundle: examenes

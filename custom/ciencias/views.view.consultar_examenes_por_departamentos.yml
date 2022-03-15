@@ -18,7 +18,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: rsuNxAk7RqU8Q7Y0ugjNOA1T0xkgQEiYBhPM_kRtDQc
+  default_config_hash: mxZiUSDrBKeQeaioWbpATmZFPSwjuya7T8-f0rwe02Y
 id: consultar_examenes_por_departamentos
 label: 'Consultar exámenes por departamentos'
 module: views

@@ -1,4 +1,4 @@
-uuid: 760b537d-3291-40fd-b7d6-4d03e4d5de3b
+uuid: 0e020bf9-f2c1-496e-866e-33003180e727
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: iQmq9drMJsfs1wi2rkYr07z5mU_9G9NOqATVMJMr4vw
-id: upgrade_d7_node_entrada_blog
+  default_config_hash: yNhT9jKCPlB8jj7HayvOmvQhlZscgBjW5a8qZ5clUbc
+id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -16,10 +16,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Entrada Blog)'
+label: 'Nodes (Noticia)'
 source:
   plugin: d7_node_complete
-  node_type: entrada_blog
+  node_type: noticia
 process:
   nid: tnid
   vid: vid
@@ -70,14 +70,10 @@ process:
     -
       plugin: get
       source: timestamp
-  field_comment/0/status:
-    -
-      plugin: get
-      source: comment
   body:
     -
       plugin: sub_process
-      source: um_b_body
+      source: body
       process:
         value:
           plugin: urlhost
@@ -85,36 +81,89 @@ process:
         format:
           plugin: default_value
           default_value: filtered_html
-  field_um_b_imagen_entrada_blog:
+  field_fecha_caducidad:
     -
       plugin: sub_process
-      source: um_b_imagen_entrada_blog
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
-  field_um_b_etiquetas:
-    -
-      plugin: sub_process
-      source: um_b_etiquetas
-      process:
-        target_id: tid
-  field_um_b_fecha_insercion:
-    -
-      plugin: sub_process
-      source: um_b_fecha_insercion
+      source: field_fecha_caducidad
       process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_link_noticia:
+    -
+      plugin: sub_process
+      source: field_link_noticia
+      process:
+        uri: value
+  field_agenda_noticias:
+    -
+      plugin: get
+      source: field_agenda_noticias
+  field_destacada:
+    -
+      plugin: get
+      source: field_destacada
+  field_imagen_valid:
+    -
+      plugin: null_coalesce
+      source:
+        - field_imagen_noticia
+        - field_image
+  field_imagen_noticia:
+    -
+      plugin: sub_process
+      source: '@field_imagen_valid'
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  _prepare_tipo_evento:
+    -
+      plugin: static_map
+      source: field_tipo_evento
+      map:
+        1: Actualidad
+        2: 'Agenda cultural'
+      bypass: true
+  field_seccion:
+    -
+      plugin: skip_on_empty
+      source: '@_prepare_tipo_evento'
+      method: process
+      message: 'No eventos.'
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: secciones
+      ignore_case: true
+  field_fecha:
+    -
+      plugin: sub_process
+      source: field_fecha
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+  field_ocultar_lateral:
+    -
+      plugin: get
+      source: field_ocultar_lateral
+  field_ocultar_social:
+    -
+      plugin: get
+      source: field_ocultar_social
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: entrada_blog
+  default_bundle: noticia
 migration_dependencies:
   required:
     - upgrade_d7_user

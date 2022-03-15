@@ -1,0 +1,24 @@
+uuid: 9f357387-4b88-45cb-aa6f-8bbdf90d7797
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.ultimos_agenda_
+  module:
+    - views
+  theme:
+    - unizar_centro
+id: views_block__ultimos_agenda__block_1_2
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'views_block:ultimos_agenda_-block_1'
+settings:
+  id: 'views_block:ultimos_agenda_-block_1'
+  label: Agenda
+  label_display: visible
+  provider: views
+  views_label: Agenda
+  items_per_page: none
+visibility: {  }

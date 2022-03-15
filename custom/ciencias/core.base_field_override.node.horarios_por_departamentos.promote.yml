@@ -1,0 +1,22 @@
+uuid: e80b176c-5959-4d50-ad9c-6c3d424b3ab7
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.horarios_por_departamentos
+id: node.horarios_por_departamentos.promote
+field_name: promote
+entity_type: node
+bundle: horarios_por_departamentos
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

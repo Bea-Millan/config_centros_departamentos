@@ -8,10 +8,8 @@ description: ''
 weight: 0
 folder: ../config/sites/custom/ciencias
 module:
-  c11n_migrate: 0
-  filefield_paths: 0
-  unizar_empleo_practicas: 0
   unizar_horarios_examenes: 0
+  unizar_empleo_practicas: 0
 theme: {  }
 blacklist:
   - block.block.unizar_centro_titulodelapagina

@@ -15,7 +15,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 16JBQpDSdFyn-n3cBJ2FwD5JJbHWRS2lkSmWbdLdosc
+  default_config_hash: hqLsH2tqEvNuOSVNatJBxW3Oxfomc24vFMAkZoO8hNE
 id: consultar_de_horarios
 label: 'Consultar de horarios'
 module: views

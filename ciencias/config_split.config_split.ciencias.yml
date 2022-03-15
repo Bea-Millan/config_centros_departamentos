@@ -1,4 +1,4 @@
-uuid: 293eb8e3-1304-430e-b321-f1d1afe67364
+uuid: 55f94a9f-9bff-4cd0-a4d7-f73cadc47ecb
 langcode: es
 status: true
 dependencies: {  }
@@ -12,22 +12,22 @@ module:
 theme: {  }
 blacklist:
   - config_split.config_split.ciencias
-  - system.site
-  - system.theme
-  - core.extension
-  - asset_injector.css.ciencias_inyeccion_css
   - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
-  - unizar_centro.settings
-  - unizar_base.settings
-  - unizar_departamento.settings
-  - smtp.settings
-  - language.negociation
+  - core.extension
   - language.types
   - matomo.settings
-  - unizar_modulos_configuracion.settings
-  - unizar_admin_menu.settings
   - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
+  - unizar_admin_menu.settings
+  - unizar_base.settings
+  - unizar_centro.settings
+  - unizar_modulos_configuracion.settings
+  - asset_injector.css.ciencias_inyeccion_css
+  - unizar_departamento.settings
+  - language.negociation
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'

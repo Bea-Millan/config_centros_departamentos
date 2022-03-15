@@ -1,0 +1,23 @@
+uuid: b3e8b39b-9eac-44cc-a98d-16385f28614b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocultar_dato_actualizacion
+    - node.type.examenes_por_departamentos
+id: node.examenes_por_departamentos.field_ocultar_dato_actualizacion
+field_name: field_ocultar_dato_actualizacion
+entity_type: node
+bundle: examenes_por_departamentos
+label: 'Ocultar dato actualización'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean
