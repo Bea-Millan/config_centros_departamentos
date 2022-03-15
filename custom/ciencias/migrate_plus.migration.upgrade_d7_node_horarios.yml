@@ -66,14 +66,11 @@ process:
       plugin: get
       source: timestamp
   field_curso:
-    plugin: migration_lookup
-    source: field_curso
-    migration: upgrade_d7_taxonomy_term_curso
-  field_estudio:
     -
-      plugin: migration_lookup
-      source: field_estudio
-      migration: upgrade_d7_node_estudio
+      plugin: sub_process
+      source: field_curso
+      process:
+        target_id: tid
   field_adjunto_horarios:
     -
       plugin: sub_process
@@ -82,6 +79,18 @@ process:
         target_id: fid
         display: display
         description: description
+  field_estudio:
+    -
+      plugin: sub_process
+      source: field_estudio
+      process:
+        target_id: 
+          source: target_id
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle_key: type
+          bundle: estudio
   field_semestre:
     -
       plugin: get
