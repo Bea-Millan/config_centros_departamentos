@@ -1,0 +1,8 @@
+uuid: 7803bfe0-a5f7-48ae-b8be-9b50a9d8f747
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-en-biote_en
+label: 'Grado en Biotecnología_en'
+description: ''
+locked: false
