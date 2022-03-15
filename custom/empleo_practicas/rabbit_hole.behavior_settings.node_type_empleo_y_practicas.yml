@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - node.type.empleo_y_practicas
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: Vbi9OLmr4K7cA2v88VKfE4v10JJ8HmBbIxwAMkhee2o
 id: node_type_empleo_y_practicas

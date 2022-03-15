@@ -7,9 +7,6 @@ dependencies:
     - node.type.empleo_y_practicas
   module:
     - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: mz52ih40W-hlh9CTkBdhwJgmyz7yYhPw0C2juUmIk1k
 id: node.empleo_y_practicas.field_tipo_oferta

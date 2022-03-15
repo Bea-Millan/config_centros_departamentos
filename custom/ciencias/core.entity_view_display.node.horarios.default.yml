@@ -9,12 +9,35 @@ dependencies:
     - field.field.node.horarios.field_semestre
     - node.type.horarios
   module:
+    - ds
     - file
     - options
     - user
   enforced:
     module:
       - unizar_horarios_examenes
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - node_changed_date
+        - field_curso
+        - field_estudio
+        - field_semestre
+        - field_adjunto_horarios
+    fields:
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 0
+        label: hidden
+        formatter: ds_post_date_short
 _core:
   default_config_hash: BtE-eUqoqu34tCog8d8-FKj3PHbH5FMTS-eBdmJmCLs
 id: node.horarios.default
@@ -28,7 +51,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_curso:
     type: entity_reference_label
@@ -36,7 +59,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
   field_estudio:
     type: entity_reference_label
@@ -44,14 +67,14 @@ content:
     settings:
       link: false
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_semestre:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   addtoany: true

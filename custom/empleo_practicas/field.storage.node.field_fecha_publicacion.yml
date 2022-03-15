@@ -5,7 +5,6 @@ dependencies:
   module:
     - datetime
     - node
-
 _core:
   default_config_hash: 9m7IAWkeeTktpZED3UW1sjgROe8lG0TddHcqTTKc61Q
 id: node.field_fecha_publicacion

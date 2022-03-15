@@ -17,9 +17,6 @@ dependencies:
     - node.type.empleo_y_practicas
   module:
     - user
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: 1pjQO5-LpaloiXgXghSd6qHS_PhJIiHff0yf3vfFBfY
 id: node.empleo_y_practicas.teaser

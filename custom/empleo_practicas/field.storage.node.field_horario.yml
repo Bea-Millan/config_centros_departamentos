@@ -1,17 +1,14 @@
-uuid: f9064413-f438-41cc-8a49-aa19988e5b3b
+uuid: 223a9b86-f7ef-45fb-a59b-63988e765113
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
-  default_config_hash: zo2cTzwlszpzBR4NdaGpV69RNbRYHvL9c6SHWQBS3fo
-id: node.field_tipo_oferta
-field_name: field_tipo_oferta
+  default_config_hash: rgXOl-KQGY2WmJXsQnE0DIOHgMOjtBiDZcBbi-M0vuI
+id: node.field_horario
+field_name: field_horario
 entity_type: node
 type: text_long
 settings: {  }

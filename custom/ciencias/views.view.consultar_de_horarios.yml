@@ -239,7 +239,7 @@ display:
           exposed: true
           expose:
             operator_id: field_curso_target_id_op
-            label: 'Curso (field_curso)'
+            label: Curso
             description: ''
             use_operator: false
             operator: field_curso_target_id_op
@@ -258,6 +258,7 @@ display:
               gestor_bloques: '0'
               gestor_personas: '0'
               supergestor: '0'
+              gestor_modular: '0'
             reduce: false
           is_grouped: false
           group_info:

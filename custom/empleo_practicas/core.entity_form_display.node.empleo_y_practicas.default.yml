@@ -21,9 +21,6 @@ dependencies:
     - link
     - svg_image
     - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: vcRsVII3t1lNhx3BEyuS5le40urZXFsrbP2rBLzNyqU
 id: node.empleo_y_practicas.default

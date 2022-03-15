@@ -11,9 +11,6 @@ dependencies:
     - node
     - user
     - views_bulk_operations
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: 84bP2t0Lz5nU2wiHjKHHQkR13rXtkmS2TMF79l5nJwQ
 id: empleo_y_practicas

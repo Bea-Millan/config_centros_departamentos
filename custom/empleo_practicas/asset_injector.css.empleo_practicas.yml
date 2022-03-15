@@ -1,0 +1,53 @@
+uuid: 8051632e-fdfb-4118-972c-9017c0c1c58f
+langcode: es
+status: true
+dependencies: {  }
+id: empleo_practicas
+label: empleo-practicas
+code: |-
+  .page-empleo-y-practicas .views-exposed-form #edit-field-fecha-publicacion-value-wrapper {
+  	float: none;
+  }
+
+  .page-empleo-y-practicas .views-exposed-form #edit-field-fecha-publicacion-value-max-wrapper,
+  .page-empleo-y-practicas .views-exposed-form #edit-field-fecha-publicacion-value-min-wrapper {
+  	float: left;
+  }
+
+  .page-empleo-y-practicas p.fecha-ultima {
+  	display: none;
+  }
+
+  .page-empleo-y-practicas #contenido tr p {
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+  	line-height: 19px;
+  	font-size: 14px;
+  }
+
+  .page-empleo-y-practicas .view-empleo-y-practicas td {
+  	padding: 10px 0;
+  }
+
+  .field.field-name-field-empresa.field-type-text.field-label-inline.clearfix,
+  .field.field-name-field-perfil-candidato.field-type-text-long.field-label-inline.clearfix,
+  .field.field-name-field-tipo-oferta.field-type-text-long.field-label-inline.clearfix,
+  .field.field-name-field-fecha-publicacion.field-type-datetime.field-label-inline.clearfix {
+  	padding-bottom: 4px;
+  }
+
+  .page-empleo-y-practicas .view-empleo-y-practicas td {
+  	padding: 10px 0;
+  }
+
+  .node-type-empleo-y-practicas #contenido p {
+  	margin-top: 0px;
+  	margin-bottom: 0px;
+  	line-height: 19px;
+  	font-size: 14px;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

@@ -1,21 +1,18 @@
-uuid: 8f39870b-dcac-472e-841e-4c57e337c233
+uuid: 3f4ab308-2cb9-4431-aa77-e91a6e8616c7
 langcode: es
 status: true
 dependencies:
   config:
-    - field.storage.node.field_logo_empresa
+    - field.storage.node.field_documentacion_adjunta
     - node.type.empleo_y_practicas
   module:
+    - file
     - filefield_paths
-    - image
-  enforced:
-    module:
-      - unizar_empleo_practicas
 third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: '[date:custom:Y]-[date:custom:m]'
+      value: ofertas-empleo/adjuntos
       options:
         slashes: false
         pathauto: false
@@ -30,12 +27,12 @@ third_party_settings:
     retroactive_update: false
     active_updating: false
 _core:
-  default_config_hash: AoQlq_Ay1bFGvnHPoXDjgnXlX_oH-4iQv6n_AbAxClc
-id: node.empleo_y_practicas.field_logo_empresa
-field_name: field_logo_empresa
+  default_config_hash: 4NIqQJpezhfIWGmcXLUajZHBYOcfxvNADh3F1GD7I3E
+id: node.empleo_y_practicas.field_documentacion_adjunta
+field_name: field_documentacion_adjunta
 entity_type: node
 bundle: empleo_y_practicas
-label: 'Logo empresa'
+label: 'Documentación adjunta'
 description: ''
 required: false
 translatable: false
@@ -45,18 +42,7 @@ settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg'
+  file_extensions: pdf
   max_filesize: ''
-  max_resolution: ''
-  min_resolution: ''
-  alt_field: true
-  alt_field_required: true
-  title_field: false
-  title_field_required: false
-  default_image:
-    uuid: ''
-    alt: ''
-    title: ''
-    width: null
-    height: null
-field_type: image
+  description_field: true
+field_type: file

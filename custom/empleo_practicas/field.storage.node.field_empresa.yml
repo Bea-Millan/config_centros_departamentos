@@ -4,9 +4,6 @@ status: true
 dependencies:
   module:
     - node
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: HPUh_-PfCJQyB-6y5dWhU4ldAqZg6Skn4zZYIayNKMw
 id: node.field_empresa

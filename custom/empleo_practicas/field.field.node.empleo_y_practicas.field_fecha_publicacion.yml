@@ -7,9 +7,6 @@ dependencies:
     - node.type.empleo_y_practicas
   module:
     - datetime
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: eVxLwf4TxZg0CgUbL0dkXC38LZpsOo25t_N2V0RoRg8
 id: node.empleo_y_practicas.field_fecha_publicacion

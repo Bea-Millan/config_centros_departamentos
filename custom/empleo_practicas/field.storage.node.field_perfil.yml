@@ -1,17 +1,14 @@
-uuid: 364d2eaa-9393-43cc-877c-6b4f13e9bbde
+uuid: 8b8ecaef-d2fe-43cf-be3b-cf0b3f0a1c78
 langcode: es
 status: true
 dependencies:
   module:
     - node
     - text
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
-  default_config_hash: wmHUqc-k9KYpFwN0uyMaO3QTiB00aDE0AMGQOXdrRnw
-id: node.field_remuneracion
-field_name: field_remuneracion
+  default_config_hash: S_m3PozP6A8DuqCx2EjgK_fn9fp8ZEf8Hc858w2D9fk
+id: node.field_perfil
+field_name: field_perfil
 entity_type: node
 type: text_long
 settings: {  }

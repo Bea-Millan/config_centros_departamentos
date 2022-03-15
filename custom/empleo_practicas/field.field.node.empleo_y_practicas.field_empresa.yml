@@ -5,9 +5,6 @@ dependencies:
   config:
     - field.storage.node.field_empresa
     - node.type.empleo_y_practicas
-  enforced:
-    module:
-      - unizar_empleo_practicas
 _core:
   default_config_hash: mOv5yFmr8NY5px2xzKbG2ad4R_hr9oJ0UKjuhkaWELA
 id: node.empleo_y_practicas.field_empresa

@@ -1,10 +1,7 @@
 uuid: 67bce05d-1fd9-401f-a4e1-51182f7e8353
 langcode: es
 status: true
-dependencies:
-  enforced:
-    module:
-      - unizar_empleo_practicas
+dependencies: null
 _core:
   default_config_hash: MG4fJMokDO7vIVnUdyyGbOuHfWZdfpqgACRGTpqt3js
 id: upgrade_d7_node_empleo_y_practicas

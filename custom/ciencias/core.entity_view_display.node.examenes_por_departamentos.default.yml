@@ -9,11 +9,35 @@ dependencies:
     - field.field.node.examenes_por_departamentos.field_examen_departamento
     - node.type.examenes_por_departamentos
   module:
+    - ds
     - file
     - user
   enforced:
     module:
       - unizar_horarios_examenes
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - links
+        - node_changed_date
+        - field_curso
+        - field_convocatoria
+        - field_adjunto_examenes_dpto
+        - field_examen_departamento
+    fields:
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 1
+        label: hidden
+        formatter: ds_post_date_short
 _core:
   default_config_hash: F1gtfROqRYPlFADvzXoMP6kyKfCi7ylwjB3RbhaxaXY
 id: node.examenes_por_departamentos.default
@@ -27,7 +51,7 @@ content:
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_convocatoria:
     type: entity_reference_label
@@ -35,7 +59,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_curso:
     type: entity_reference_label
@@ -43,7 +67,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_examen_departamento:
     type: entity_reference_label
@@ -51,7 +75,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 4
+    weight: 5
     region: content
   links:
     settings: {  }
