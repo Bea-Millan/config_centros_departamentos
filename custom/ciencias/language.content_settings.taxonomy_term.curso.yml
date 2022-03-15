@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.curso
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: gdn4w8KmfL4Fqemn1u_uHzyctmiZeR9_yQViCoucVkQ
 id: taxonomy_term.curso

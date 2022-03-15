@@ -11,9 +11,6 @@ dependencies:
     - node.type.examenes
   module:
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: jZvcsmGV6LOcbJGHwBhdx6S5VS2xXnp8iju2wp_npdo
 id: node.examenes.teaser

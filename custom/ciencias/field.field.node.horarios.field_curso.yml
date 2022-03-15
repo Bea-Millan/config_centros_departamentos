@@ -6,9 +6,6 @@ dependencies:
     - field.storage.node.field_curso
     - node.type.horarios
     - taxonomy.vocabulary.curso
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: mDIi-otPBxbpRm56n--Lw-up4ICJSBkMP0Ps8OiarFI
 id: node.horarios.field_curso

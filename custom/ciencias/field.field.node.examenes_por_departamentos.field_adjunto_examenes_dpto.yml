@@ -8,9 +8,6 @@ dependencies:
   module:
     - file
     - filefield_paths
-  enforced:
-    module:
-      - unizar_horarios_examenes
 third_party_settings:
   filefield_paths:
     enabled: true

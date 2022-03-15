@@ -14,9 +14,6 @@ dependencies:
     - options
     - taxonomy
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: Ne1UiSI8vmnwDJXNP85zlzdMGBDvXavKPEVMkQ5WUmk
 id: consultar_horarios_por_departamentos

@@ -7,9 +7,6 @@ dependencies:
     - node.type.horarios
   module:
     - options
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: 9V6vjrZovX_KddRtRXvp4XXyoh_JIbvoy4PZSpHcCFc
 id: node.horarios.field_semestre

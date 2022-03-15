@@ -4,9 +4,6 @@ status: true
 dependencies:
   module:
     - node
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: yPOFCIFF6nkE1BR-WHGGU2sLVXAHoyx7Gt03biIodXs
 id: node.field_examen_departamento

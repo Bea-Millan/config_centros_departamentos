@@ -5,9 +5,6 @@ dependencies:
   module:
     - node
     - taxonomy
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: eyOgjUTBuXSy0b7SUOFOsoG1Bg-io4cS_4Fc7_o3_EI
 id: node.field_curso

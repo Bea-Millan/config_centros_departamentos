@@ -6,9 +6,6 @@ dependencies:
     - field.storage.node.field_convocatoria
     - node.type.examenes_por_departamentos
     - taxonomy.vocabulary.convocatoria
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: zQO7z6tOPjJG8vc4IwcqUsQIplwqLK0PkOe-6-lUw40
 id: node.examenes_por_departamentos.field_convocatoria

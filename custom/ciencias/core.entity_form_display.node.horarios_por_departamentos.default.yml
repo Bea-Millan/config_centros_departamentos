@@ -11,9 +11,6 @@ dependencies:
   module:
     - file
     - path
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: HVT2RsZq1Uw9yH57_aBio8jrRq-ySJNx8KLbnXTEW4M
 id: node.horarios_por_departamentos.default

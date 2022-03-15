@@ -6,9 +6,6 @@ dependencies:
     - field.storage.node.field_examen_departamento
     - node.type.departamento
     - node.type.examenes_por_departamentos
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: 05jVhtOwQ8Hw5570jqBsvPrh88Pb9u_K3Q4IIhFckAg
 id: node.examenes_por_departamentos.field_examen_departamento

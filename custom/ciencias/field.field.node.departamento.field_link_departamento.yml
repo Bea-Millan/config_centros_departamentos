@@ -7,9 +7,6 @@ dependencies:
     - node.type.departamento
   module:
     - link
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: FK9siLLlUqPXzj5VEgNh-6APApludHlSw-J56ea5Ytw
 id: node.departamento.field_link_departamento

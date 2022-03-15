@@ -9,9 +9,6 @@ dependencies:
   module:
     - node
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: f2LNfM7r7K6vN1RjNS_YwkztM7j1kvsJgawJnv8Txbc
 id: departamento_con_examenes

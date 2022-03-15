@@ -5,9 +5,6 @@ dependencies:
   module:
     - file
     - node
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: BGT1fc3xKNYR70-S-XRR2kmuAebt-l4vP8q7pbDkA5I
 id: node.field_adjunto_examenes_dpto

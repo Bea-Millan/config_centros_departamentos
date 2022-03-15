@@ -2,9 +2,6 @@ uuid: f0b9f6c9-f887-4d3a-8a8a-3dd56ed62336
 langcode: es
 status: true
 dependencies:
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: jHROeMWBWJL8-DlBKb_8qHtAzHTeDVKznCVH9zZ0Cz8
 name: Convocatoria

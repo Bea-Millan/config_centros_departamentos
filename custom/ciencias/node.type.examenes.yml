@@ -4,9 +4,6 @@ status: true
 dependencies:
   module:
     - menu_ui
-  enforced:
-    module:
-      - unizar_horarios_examenes
 third_party_settings:
   menu_ui:
     available_menus:

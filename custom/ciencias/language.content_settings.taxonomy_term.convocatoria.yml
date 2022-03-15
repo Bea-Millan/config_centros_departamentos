@@ -4,9 +4,6 @@ status: true
 dependencies:
   config:
     - taxonomy.vocabulary.convocatoria
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: SCC42LejDJhMqZVLmZgVlA_5JdJn-lPuFfywpAc1mWQ
 id: taxonomy_term.convocatoria

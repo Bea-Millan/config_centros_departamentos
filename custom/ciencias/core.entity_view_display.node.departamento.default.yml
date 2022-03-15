@@ -8,9 +8,6 @@ dependencies:
   module:
     - link
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: 2g8yEyB62_Yi7Z3g7s0l9KoegNJ9qfPz9arffVpEtrA
 id: node.departamento.default

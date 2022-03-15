@@ -5,9 +5,6 @@ dependencies:
   module:
     - file
     - node
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: S11wU-Yf5iTCWLxFOb1xHKdXzhWoFGJYmZgPL5yDHZw
 id: node.field_adjunto_horarios

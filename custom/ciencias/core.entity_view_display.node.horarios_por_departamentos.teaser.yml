@@ -11,9 +11,6 @@ dependencies:
     - node.type.horarios_por_departamentos
   module:
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: 0E0bOOA19tlaaZKa43UikxUYvROuDLSXY2APjVPSwQE
 id: node.horarios_por_departamentos.teaser

@@ -2,9 +2,6 @@ uuid: b84f8168-c910-4f60-9e10-eef2a7895797
 langcode: es
 status: true
 dependencies:
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: HdWlSFHPjxYdUxPmgzX8fGIvSfx0bQbfuMs3tig7AUs
 name: Curso

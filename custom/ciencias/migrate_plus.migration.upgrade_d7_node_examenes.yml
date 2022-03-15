@@ -2,9 +2,6 @@ uuid: db93a83d-6fd5-45c8-8186-8ef8b68b7396
 langcode: es
 status: true
 dependencies:
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: X3wwEPN_aWZeFOsOSXNs5zzYdQ5lKgEKYHbQZKzfOZs
 id: upgrade_d7_node_examenes
@@ -108,5 +105,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-  module:
-    - unizar_horarios_examenes

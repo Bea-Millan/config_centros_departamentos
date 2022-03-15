@@ -5,9 +5,6 @@ dependencies:
   module:
     - node
     - taxonomy
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: m7EI-mBS-e4upSIrRjRJLVo2SbUKtMILHz42Gi18Uso
 id: node.field_convocatoria

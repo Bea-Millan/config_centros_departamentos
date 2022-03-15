@@ -6,9 +6,6 @@ dependencies:
     - field.storage.node.field_estudio
     - node.type.estudio
     - node.type.horarios
-  enforced:
-    module:
-      - unizar_horarios_examenes
 _core:
   default_config_hash: akBncjR8q6EDNmQefEVpEFJqNrjLHc5B06RkCf6ONTM
 id: node.horarios.field_estudio

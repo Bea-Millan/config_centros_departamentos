@@ -13,9 +13,6 @@ dependencies:
     - file
     - options
     - user
-  enforced:
-    module:
-      - unizar_horarios_examenes
 third_party_settings:
   ds:
     layout:
