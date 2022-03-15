@@ -67,10 +67,13 @@ process:
       source: timestamp
   field_link_departamento:
     -
-      plugin: get
+      plugin: sub_process
       source: field_link_departamento
+      process:
+        uri: value
+        title: title
 destination:
-  plugin: 'entity_complete:node'
+  plugin: entity_complete:node
   translations: true
   default_bundle: departamento
 migration_dependencies:
