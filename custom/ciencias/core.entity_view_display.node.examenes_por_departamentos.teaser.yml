@@ -1,4 +1,4 @@
-uuid: af7846a7-1867-4a9d-9c2f-518f19d6658a
+uuid: db7304a6-e71c-4d22-8696-fc145d8d7acb
 langcode: es
 status: true
 dependencies:
@@ -15,16 +15,16 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: NJ43dgEpZyT21Gx-13k_tBhxP2PQTdtqUMvT0MnpEUo
+  default_config_hash: 1xYjH4YdCh9opPNXLFIJrcwEVWfiRGeLzRKMnF8a77Y
 id: node.examenes_por_departamentos.teaser
 targetEntityType: node
 bundle: examenes_por_departamentos
 mode: teaser
 content:
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   addtoany: true

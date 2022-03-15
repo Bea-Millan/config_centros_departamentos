@@ -1,4 +1,4 @@
-uuid: cfbff8b2-6f6e-4f77-b8f1-6f501be552d8
+uuid: 128a0733-6612-4db4-be26-a454ca4a966e
 langcode: es
 status: true
 dependencies:
@@ -20,4 +20,4 @@ description: 'Horarios de clases de un estudio para un curso determinado'
 help: ''
 new_revision: false
 preview_mode: 1
-display_submitted: false
+display_submitted: true

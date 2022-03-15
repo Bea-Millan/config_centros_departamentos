@@ -1,4 +1,4 @@
-uuid: c45d9b10-2215-4730-b5ed-4436583535c3
+uuid: 092b9725-6410-4425-95c2-1df6128f2fc0
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: hXf9lmyzsdj66z_sASnBruTSCymZ4E4-KaSq2sbIPs0
+  default_config_hash: r1lRvFA1O2ymS9lR_x6dlRy4iu4bKv11rVsQ5UyyYs8
 id: upgrade_d7_node_examenes
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -85,7 +85,13 @@ process:
       plugin: sub_process
       source: field_estudio
       process:
-        target_id: tid
+        target_id:
+          source: target_id
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle_key: type
+          bundle: estudio
   field_adjunto_examenes:
     -
       plugin: sub_process

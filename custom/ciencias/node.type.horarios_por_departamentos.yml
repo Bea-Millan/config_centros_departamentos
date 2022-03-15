@@ -1,4 +1,4 @@
-uuid: c3bfbf1e-be9a-47ab-9584-903de98ce86e
+uuid: c887ba0e-e094-468d-ad0b-c318c821d038
 langcode: es
 status: true
 dependencies:
@@ -18,6 +18,6 @@ name: 'Horarios por departamentos'
 type: horarios_por_departamentos
 description: 'Horarios por departamentos'
 help: ''
-new_revision: false
+new_revision: true
 preview_mode: 1
-display_submitted: false
+display_submitted: true

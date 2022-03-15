@@ -1,4 +1,4 @@
-uuid: 3f80d47c-3e1d-4e8c-9540-70273ee4301f
+uuid: 98211b23-c624-452f-9720-a6299ac328c1
 langcode: es
 status: true
 dependencies:
@@ -15,7 +15,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: 66y2-p7Zd79Jwj0DvYZqbc1zB87r6WH4pLH00zZ8AqQ
+  default_config_hash: 7PiikVkTUYtc2SldGfYTSlEfbBUYUEaFH2MBKMgNMhw
 id: node.horarios.teaser
 targetEntityType: node
 bundle: horarios

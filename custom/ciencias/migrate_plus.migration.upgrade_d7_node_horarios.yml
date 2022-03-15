@@ -1,4 +1,4 @@
-uuid: 1b73478a-bf9f-43b2-b955-2ea5647a3f77
+uuid: 4d409c98-9980-4c69-8693-a5406d2b7c55
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: asgZGxBHJU84TEBkEibTP2eO2OO_OBpJU419IxlVlBE
+  default_config_hash: USQXjBp8wOaHUJZOmOdbhzsUDNapTPcnV8__7x3DS3I
 id: upgrade_d7_node_horarios
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -69,14 +69,11 @@ process:
       plugin: get
       source: timestamp
   field_curso:
-    plugin: migration_lookup
-    source: field_curso
-    migration: upgrade_d7_taxonomy_term_curso
-  field_estudio:
     -
-      plugin: migration_lookup
-      source: field_estudio
-      migration: upgrade_d7_node_estudio
+      plugin: sub_process
+      source: field_curso
+      process:
+        target_id: tid
   field_adjunto_horarios:
     -
       plugin: sub_process
@@ -85,6 +82,18 @@ process:
         target_id: fid
         display: display
         description: description
+  field_estudio:
+    -
+      plugin: sub_process
+      source: field_estudio
+      process:
+        target_id:
+          source: target_id
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle_key: type
+          bundle: estudio
   field_semestre:
     -
       plugin: get

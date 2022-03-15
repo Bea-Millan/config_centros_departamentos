@@ -1,4 +1,4 @@
-uuid: c2d79a54-3983-4635-aa07-cf6c83014b76
+uuid: 716f89b0-fa88-468a-8af8-a3933c2e29cc
 langcode: es
 status: true
 dependencies:
@@ -9,14 +9,37 @@ dependencies:
     - field.field.node.horarios_por_departamentos.field_semestre
     - node.type.horarios_por_departamentos
   module:
+    - ds
     - file
     - options
     - user
   enforced:
     module:
       - unizar_horarios_examenes
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - node_changed_date
+        - field_semestre
+        - field_adjunto_horarios
+        - field_curso
+        - field_examen_departamento
+    fields:
+      node_changed_date:
+        plugin_id: node_changed_date
+        weight: 0
+        label: hidden
+        formatter: ds_post_date_short
 _core:
-  default_config_hash: '-0JhiemAklr-SuelXVgfzoAUJy9zrE_OwRncBMtn0Rg'
+  default_config_hash: osRk1WTOMNvgTi46YARM4m7-nns9Ge22EfLKDWcGDeI
 id: node.horarios_por_departamentos.default
 targetEntityType: node
 bundle: horarios_por_departamentos
@@ -24,34 +47,34 @@ mode: default
 content:
   field_adjunto_horarios:
     type: file_default
-    label: inline
+    label: above
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    weight: 1
+    weight: 2
     region: content
   field_curso:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_examen_departamento:
     type: entity_reference_label
-    label: inline
+    label: above
     settings:
       link: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_semestre:
     type: list_default
-    label: inline
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 0
+    weight: 1
     region: content
 hidden:
   addtoany: true
