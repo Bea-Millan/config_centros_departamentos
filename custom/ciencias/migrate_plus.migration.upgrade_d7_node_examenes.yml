@@ -82,7 +82,13 @@ process:
       plugin: sub_process
       source: field_estudio
       process:
-        target_id: tid
+        target_id: 
+          source: target_id
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle_key: type
+          bundle: estudio
   field_adjunto_examenes:
     -
       plugin: sub_process
@@ -91,8 +97,9 @@ process:
         target_id: fid
         display: display
         description: description
+  
 destination:
-  plugin: 'entity_complete:node'
+  plugin: entity_complete:node
   translations: true
   default_bundle: examenes
 migration_dependencies:
