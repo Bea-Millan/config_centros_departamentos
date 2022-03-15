@@ -1,4 +1,4 @@
-uuid: 8949ad6c-fe99-498d-b274-e12cb21d2aec
+uuid: 51cfcde1-6fb0-4672-9e4b-29c812e5cceb
 langcode: es
 status: true
 dependencies:
@@ -15,13 +15,7 @@ third_party_settings:
   filefield_paths:
     enabled: true
     file_path:
-      value: '[date:custom:Y]-[date:custom:m]'
-      options:
-        slashes: false
-        pathauto: false
-        transliterate: false
-    file_name:
-      value: '[file:ffp-name-only-original].[file:ffp-extension-original]'
+      value: 'horarios_dptos/[node:field_curso:entity:name]/[file:original:name].[file:original:extension]'
       options:
         slashes: false
         pathauto: false
@@ -30,7 +24,7 @@ third_party_settings:
     retroactive_update: false
     active_updating: false
 _core:
-  default_config_hash: kJRnBcv0xRhs6FZeXXGBCKQxFBoQVKBsUI-IY0z614U
+  default_config_hash: n2QZ9vbiwn1oUKTSyG_RFQHqLhHJTbU95XkbdQ22WQE
 id: node.horarios_por_departamentos.field_adjunto_horarios
 field_name: field_adjunto_horarios
 entity_type: node
@@ -42,10 +36,10 @@ translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:file'
-  handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
   file_extensions: 'txt pdf'
   max_filesize: '20 MB'
   description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
 field_type: file

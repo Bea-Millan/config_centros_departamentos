@@ -1,0 +1,103 @@
+uuid: 607bf8e5-56c4-493f-a00a-5150c7e748e8
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 95
+template: false
+archive: false
+id: webform_210
+title: 'Inscripción Jornadas de Ciencia y Tecnología 2016'
+description: null
+category: null
+elements: |-
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+  ocupacion:
+    '#type': radios
+    '#options':
+      Estudiante: Estudiante
+      Profesional: Profesional
+      Otro: Otro
+    '#title': Ocupación
+  en_su_caso_estudiante_de:
+    '#type': radios
+    '#options':
+      GIAMR: 'Grado en Ingeniería Agroalimentaria y del Medio Rural'
+      CCAA: 'Grado en Ciencias Ambientales'
+      MIA: 'Máster en Ingeniería Agronómica'
+      Otro: Otro
+    '#title': 'En su caso, estudiante de'
+  en_su_caso_empresa:
+    '#type': textfield
+    '#title': 'En su caso, empresa'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su inscripción a las XXVII Jornadas de Ciencia y Tecnología ha sido recibida correctamente.&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ccano@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

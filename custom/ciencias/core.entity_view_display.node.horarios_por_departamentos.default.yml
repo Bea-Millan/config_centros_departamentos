@@ -39,7 +39,7 @@ third_party_settings:
         label: hidden
         formatter: ds_post_date_short
 _core:
-  default_config_hash: '-0JhiemAklr-SuelXVgfzoAUJy9zrE_OwRncBMtn0Rg'
+  default_config_hash: osRk1WTOMNvgTi46YARM4m7-nns9Ge22EfLKDWcGDeI
 id: node.horarios_por_departamentos.default
 targetEntityType: node
 bundle: horarios_por_departamentos

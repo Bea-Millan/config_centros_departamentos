@@ -1,0 +1,143 @@
+uuid: 8b96fb19-bb64-4d96-ab4d-918d0e6a33aa
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 179
+template: false
+archive: false
+id: webform_1663
+title: 'Cita previa Secretaría Facultad de Derecho'
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'DATOS DEL SOLICITANTE'
+    nombre_1:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    primer_apellido_1:
+      '#type': textfield
+      '#title': 'Primer apellido'
+      '#required': true
+    segundo_apellido_1:
+      '#type': textfield
+      '#title': 'Segundo apellido'
+      '#required': true
+    tipo_de_documentacion_1:
+      '#type': select
+      '#options':
+        1: DNI
+        2: NIE
+        3: Pasaporte
+        4: 'OTROS  (carta de identidad u otro documento...)'
+      '#title': 'Tipo de documento'
+      '#required': true
+    no_de_documento_1:
+      '#type': textfield
+      '#title': 'Nº de documento'
+      '#required': true
+    nip_1:
+      '#title': NIP
+      '#required': true
+    correo_electronico_1:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#required': true
+    telefono_de_contacto_1:
+      '#type': textfield
+      '#size': 20
+      '#unique': false
+      '#title': 'Teléfono de contacto'
+      '#required': true
+    tipo_de_usuario_1:
+      '#type': radios
+      '#options':
+        1: Estudiante
+        2: PDI
+      '#title': 'Tipo de usuario'
+      '#required': true
+  fieldset_datos_de_la_cita:
+    '#type': fieldset
+    '#open': true
+    '#title': 'DATOS DE LA CITA'
+    fecha_11:
+      '#type': date
+      '#title': Fecha
+      '#required': true
+    hora_11:
+      '#type': webform_time
+      '#time_format': 'H:i'
+      '#step': 600
+      '#title': Hora
+      '#required': true
+    motivo_de_la_cita_11:
+      '#type': textarea
+      '#title': 'Motivo de la cita'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: lorenacrespo@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: 'Cita previa Secretaría'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

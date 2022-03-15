@@ -1,4 +1,4 @@
-uuid: e8714a36-9cc0-46ea-aca0-d995c6a42735
+uuid: c779a955-b95b-4b23-903c-d06d8fb658b6
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: Mg0Hfd1xldIq8rWUZ1inoI9O5iuTsGSXB22tTznXXzg
+  default_config_hash: PeMX884IruxCXyOBqaeWxpWG---4fxtsMgGsc4SE5AE
 id: upgrade_d7_node_examenes_por_departamentos
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -83,7 +83,13 @@ process:
       plugin: sub_process
       source: field_examen_departamento
       process:
-        target_id: tid
+        target_id:
+          source: target_id
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle_key: type
+          bundle: departamento
   field_adjunto_examenes:
     -
       plugin: sub_process
@@ -106,5 +112,3 @@ migration_dependencies:
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance
-  module:
-    - unizar_horarios_examenes

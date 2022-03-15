@@ -1,0 +1,9 @@
+uuid: df777168-bca8-4667-bd54-d1217b5524a1
+langcode: es
+status: true
+dependencies: {  }
+id: en
+label: English
+direction: ltr
+weight: -9
+locked: false

@@ -1,4 +1,4 @@
-uuid: 87ca1ec3-d428-4031-9d4b-de0154c8da96
+uuid: 028df664-3176-451a-80eb-3f946f977eaa
 langcode: es
 status: true
 dependencies:
@@ -28,38 +28,38 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_adjunto_examenes_dpto:
-    type: file_generic
     weight: 124
-    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
+    type: file_generic
+    region: content
   field_convocatoria:
-    type: entity_reference_autocomplete
     weight: 123
-    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_curso:
     type: entity_reference_autocomplete
-    weight: 122
     region: content
+  field_curso:
+    weight: 122
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_examen_departamento:
-    type: options_select
-    weight: 121
+    type: entity_reference_autocomplete
     region: content
+  field_examen_departamento:
+    weight: 121
     settings: {  }
     third_party_settings: {  }
+    type: options_select
+    region: content
   langcode:
     type: language_select
     weight: 2
@@ -75,24 +75,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 15
-    region: content
     settings:
       display_label: true
+    weight: 15
+    region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 120
-    region: content
     settings:
       display_label: true
+    weight: 120
+    region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 16
-    region: content
     settings:
       display_label: true
+    weight: 16
+    region: content
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -105,11 +105,11 @@ content:
   uid:
     type: entity_reference_autocomplete
     weight: 5
-    region: content
     settings:
       match_operator: CONTAINS
-      match_limit: 10
       size: 60
       placeholder: ''
+      match_limit: 10
+    region: content
     third_party_settings: {  }
 hidden: {  }

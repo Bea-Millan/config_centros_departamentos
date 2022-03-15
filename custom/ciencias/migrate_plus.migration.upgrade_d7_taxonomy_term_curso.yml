@@ -1,12 +1,12 @@
-uuid: 1debc7ef-f4db-4907-9670-49c965d312d7
+uuid: e9dc0a7a-d4bd-4ef3-b84c-bc04951ba9f9
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
-      - c11n_migrate
+      - unizar_horarios_examenes
 _core:
-  default_config_hash: jvJISIaR0D8Xz7xa1nSFyeCpPCBYI10v4E4T9l6-fAs
+  default_config_hash: F_4TBOvADY2zr8R9A3UQPoVPao20w11wZ0VxXwwIFgU
 id: upgrade_d7_taxonomy_term_curso
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -15,7 +15,7 @@ migration_tags:
   - Final
   - 'Drupal 7'
   - Content
-migration_group: migrate_drupal_7
+migration_group: migrate_drupal_horarios_examenes
 label: 'Taxonomy terms (Curso)'
 source:
   plugin: d7_taxonomy_term

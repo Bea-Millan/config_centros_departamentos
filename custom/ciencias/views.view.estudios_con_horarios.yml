@@ -12,7 +12,7 @@ dependencies:
     module:
       - unizar_horarios_examenes
 _core:
-  default_config_hash: Ri5xbUchjObBJKGHwc8oe4qUh7VDCq1ziqcdypg2fqM
+  default_config_hash: hAmJFFfJmPgL6aI7wVNhR7gTrfJOonbRsRwYx97vLP8
 id: estudios_con_horarios
 label: 'Estudios con horarios'
 module: views

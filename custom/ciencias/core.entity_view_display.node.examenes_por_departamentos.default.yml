@@ -39,7 +39,7 @@ third_party_settings:
         label: hidden
         formatter: ds_post_date_short
 _core:
-  default_config_hash: F1gtfROqRYPlFADvzXoMP6kyKfCi7ylwjB3RbhaxaXY
+  default_config_hash: 9tEncnajbrfkszyEhHmpouiaSCKitqzzUX03pg_7zUs
 id: node.examenes_por_departamentos.default
 targetEntityType: node
 bundle: examenes_por_departamentos

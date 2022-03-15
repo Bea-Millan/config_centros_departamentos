@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: 1ERsDzU2WzO0IuZ8Nml4hl5m1pAKCH7GbxLyqFW4Aoo
+plugin:
+  host: ciencias.unizar.es
+  url_host: sites/ciencias
+langcode: es

@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: a88-41U43VQTwSeG9HsD7n3cr8hLboDUp2ddSJYsWwA
+logo_path: 'public://facultad_derecho.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '102'
+nombre_centro: 'Facultad de Derecho'
+dir_centro: 'C/Pedro Cerbuna, 12. 50009 Zaragoza'
+telefono_centro: '(+34) 976 761365'
+mail_centro: derez@unizar.es
+url_mapa: /formulario-de-contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '5080'
+imagen_segundas: '3678'
+facebook: 'https://www.facebook.com/derechounizar/ '
+twitter: 'https://twitter.com/Derecho_Unizar'
+youtube: ''
+linkedin: 'https://www.linkedin.com/company/derechounizar/'
+instagram: 'https://www.instagram.com/derecho_unizar/'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Facultad Derecho. Universidad Zaragoza. Grado Derecho. Máster Abogacia. Doctorado Derecho. Máster Derecho. Programa conjunto Derecho y Administración y Dirección de Empresas. DADE. '
+langcode: es

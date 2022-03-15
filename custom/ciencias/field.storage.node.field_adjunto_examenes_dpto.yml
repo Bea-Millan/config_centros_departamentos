@@ -1,4 +1,4 @@
-uuid: 4f240e82-cc5d-407a-b689-eccf186c1380
+uuid: e9fa4863-50e4-4864-b456-35301335a27f
 langcode: es
 status: true
 dependencies:
@@ -15,10 +15,10 @@ field_name: field_adjunto_examenes_dpto
 entity_type: node
 type: file
 settings:
-  target_type: file
   display_field: true
   display_default: true
   uri_scheme: public
+  target_type: file
 module: file
 locked: false
 cardinality: 1

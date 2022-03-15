@@ -1,0 +1,44 @@
+uuid: 49f866f2-9d5b-4332-b2bc-90dcca1ae0ff
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: Ep6ABwPx_HUX35JlzsxyjYrlB3JEIwc9Tw1KVnQCrP8
+id: upgrade_d7_custom_block
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - 'Drupal 7'
+migration_group: migrate_drupal_7
+label: 'Custom blocks'
+source:
+  plugin: d7_block_custom
+process:
+  id:
+    -
+      plugin: get
+      source: bid
+  info:
+    -
+      plugin: get
+      source: info
+  body/value:
+    -
+      plugin: urlhost
+      source: body
+  body/format:
+    -
+      plugin: default_value
+      default_value: full_html
+destination:
+  plugin: 'entity:block_content'
+  default_bundle: basic
+  no_stub: true
+migration_dependencies:
+  required: {  }
+  optional:
+    - upgrade_d7_filter_format

@@ -1,4 +1,4 @@
-uuid: 10fe420d-3133-4bdc-a7a1-42d3c49e45ec
+uuid: 8d233d14-020d-4e1e-ba26-71b7088c762b
 langcode: es
 status: true
 dependencies:
@@ -26,13 +26,7 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
-      departamento: departamento
       elemento_parrilla: elemento_parrilla
-      empleo_y_practicas: empleo_y_practicas
       estudio: estudio
-      examenes: examenes
-      examenes_por_departamentos: examenes_por_departamentos
-      horarios: horarios
-      horarios_por_departamentos: horarios_por_departamentos
       slideshow: slideshow
       te_interesa: te_interesa
