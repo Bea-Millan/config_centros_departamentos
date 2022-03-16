@@ -9,12 +9,11 @@ weight: 0
 folder: ../config/sites/matematicas
 module:
   c11n_migrate: 0
-theme: {  }
+theme:
+  unizar_departamento: 0
 blacklist:
-  - config_split.config_split.departamento
   - config_split.config_split.matematicas
   - core.entity_view_mode.shortcut.token
-  - core.extension
   - language.types
   - shortcut.set.default
   - smtp.settings

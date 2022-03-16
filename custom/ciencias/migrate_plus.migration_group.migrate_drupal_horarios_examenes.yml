@@ -1,0 +1,10 @@
+uuid: 34078bd3-cae3-4d4e-b3ca-c27123bca6bc
+langcode: es
+status: true
+dependencies: {  }
+id: migrate_drupal_horarios_examenes
+label: migrate_drupal_horarios_examenes
+description: ''
+source_type: null
+module: null
+shared_configuration: null

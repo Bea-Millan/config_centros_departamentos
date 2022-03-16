@@ -1,0 +1,30 @@
+uuid: eaac37e6-6665-48b2-a705-b8600c62cb23
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f8f71ede-33e0-4576-9636-1a957a2e56a2'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: visitavirtual
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:f8f71ede-33e0-4576-9636-1a957a2e56a2'
+settings:
+  id: 'block_content:f8f71ede-33e0-4576-9636-1a957a2e56a2'
+  label: 'Visita virtual'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

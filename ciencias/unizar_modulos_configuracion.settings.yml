@@ -9,10 +9,10 @@ nombre_centro: 'Facultad de Ciencias'
 dir_centro: 'C/ Pedro Cerbuna, 12 - 50009 Zaragoza'
 telefono_centro: '+34 976 761 294'
 mail_centro: seccienz@unizar.es
-url_mapa: 'Balbino Orensanz, 55 casa 3 3ºA'
-dir_centro2: 'Balbino Orensanz, 55 casa 3 3ºA'
-telefono_centro2: '658662482'
-mail_centro2: derecho@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
 url_mapa2: ''
 logo_blanco: '13177'
 imagen_segundas: '13178'
@@ -26,5 +26,3 @@ blog_class: ''
 soundcloud: ''
 meta_desc: 'La Facultad de Ciencias es un centro de la Universidad de Zaragoza dedicado a la docencia y a la investigación en el que se imparten titulaciones oficiales de grado y máster, doctorado y varios estudios propios.'
 langcode: es
-rrs_header: 0
-id: ''

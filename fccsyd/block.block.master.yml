@@ -1,0 +1,30 @@
+uuid: ca54a292-cd58-4d18-9574-650a2e82d3a9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:342bc5e3-45e4-4893-9dbd-f71486a40427'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: master
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:342bc5e3-45e4-4893-9dbd-f71486a40427'
+settings:
+  id: 'block_content:342bc5e3-45e4-4893-9dbd-f71486a40427'
+  label: 'Máster '
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

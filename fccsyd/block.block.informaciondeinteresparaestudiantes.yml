@@ -1,0 +1,30 @@
+uuid: e7a7849d-c176-4a96-b9df-f6585846e679
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9d6e46f6-15d8-4648-b30e-5060514813d6'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: informaciondeinteresparaestudiantes
+theme: unizar_centro
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:9d6e46f6-15d8-4648-b30e-5060514813d6'
+settings:
+  id: 'block_content:9d6e46f6-15d8-4648-b30e-5060514813d6'
+  label: 'INFORMACIÓN DE INTERÉS PARA ESTUDIANTES'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

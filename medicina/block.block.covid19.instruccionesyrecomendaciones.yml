@@ -1,0 +1,30 @@
+uuid: 89c92ecb-6138-426b-bb40-8f5d849db194
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1025174e-1a56-4ca2-a74a-b1b6025beaaf'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: covid19.instruccionesyrecomendaciones
+theme: unizar_centro
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:1025174e-1a56-4ca2-a74a-b1b6025beaaf'
+settings:
+  id: 'block_content:1025174e-1a56-4ca2-a74a-b1b6025beaaf'
+  label: 'COVID-19. Instrucciones y recomendaciones'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

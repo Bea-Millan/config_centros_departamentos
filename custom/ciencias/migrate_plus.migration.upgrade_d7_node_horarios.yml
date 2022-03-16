@@ -84,7 +84,7 @@ process:
       plugin: sub_process
       source: field_estudio
       process:
-        target_id: 
+        target_id:
           source: target_id
           plugin: entity_lookup
           entity_type: node

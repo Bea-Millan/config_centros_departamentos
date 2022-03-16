@@ -1,19 +1,19 @@
-uuid: 55f94a9f-9bff-4cd0-a4d7-f73cadc47ecb
+uuid: 293eb8e3-1304-430e-b321-f1d1afe67364
 langcode: es
 status: true
 dependencies: {  }
 id: ciencias
 label: ciencias
 description: ''
-weight: 0
+weight: 1
 folder: ../config/sites/ciencias
 module:
   c11n_migrate: 0
-theme: {  }
+theme:
+  unizar_centro: 0
 blacklist:
   - config_split.config_split.ciencias
   - core.entity_view_mode.shortcut.token
-  - core.extension
   - language.types
   - matomo.settings
   - migrate_drupal.settings

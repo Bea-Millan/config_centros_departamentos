@@ -88,7 +88,7 @@ process:
       plugin: sub_process
       source: field_examen_departamento
       process:
-        target_id: 
+        target_id:
           source: target_id
           plugin: entity_lookup
           entity_type: node
@@ -100,7 +100,7 @@ process:
       plugin: get
       source: pseudo_metatag_entities
 destination:
-  plugin: entity_complete:node
+  plugin: 'entity_complete:node'
   translations: true
   default_bundle: horarios_por_departamentos
 migration_dependencies:

@@ -1,6 +1,7 @@
+uuid: 5ac41d95-dc01-4a39-a9d8-73ad5d81be13
 langcode: es
 status: true
-dependencies: { }
+dependencies: {  }
 id: upgrade_d7_taxonomy_term_convocatoria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -39,3 +40,4 @@ process:
 destination:
   plugin: 'entity:taxonomy_term'
   default_bundle: convocatoria
+migration_dependencies: null

@@ -9,11 +9,11 @@ weight: 0
 folder: ../config/sites/magister
 module:
   c11n_migrate: 0
-theme: {  }
+theme:
+  unizar_centro: 0
 blacklist:
   - config_split.config_split.magister
   - core.entity_view_mode.shortcut.token
-  - core.extension
   - language.types
   - migrate_drupal.settings
   - shortcut.set.default

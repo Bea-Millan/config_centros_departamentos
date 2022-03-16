@@ -1,6 +1,7 @@
+uuid: 5d66e471-7827-47bc-b85c-f8d62ff3cffa
 langcode: es
 status: true
-dependencies: { }
+dependencies: {  }
 id: upgrade_d7_taxonomy_term_curso
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -39,3 +40,4 @@ process:
 destination:
   plugin: 'entity:taxonomy_term'
   default_bundle: curso
+migration_dependencies: null

@@ -80,7 +80,7 @@ process:
       plugin: sub_process
       source: field_examen_departamento
       process:
-        target_id: 
+        target_id:
           source: target_id
           plugin: entity_lookup
           entity_type: node
@@ -96,7 +96,7 @@ process:
         display: display
         description: description
 destination:
-  plugin: entity_complete:node
+  plugin: 'entity_complete:node'
   translations: true
   default_bundle: examenes_por_departamentos
 migration_dependencies:

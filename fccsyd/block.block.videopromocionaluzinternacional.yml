@@ -1,0 +1,30 @@
+uuid: 28a0067b-e100-4fbb-a565-3b2a84c5f599
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b7f3a951-08f9-4448-8591-e3e1b3396cb7'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: videopromocionaluzinternacional
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:b7f3a951-08f9-4448-8591-e3e1b3396cb7'
+settings:
+  id: 'block_content:b7f3a951-08f9-4448-8591-e3e1b3396cb7'
+  label: 'Get to know us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

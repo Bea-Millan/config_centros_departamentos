@@ -73,7 +73,7 @@ process:
         uri: value
         title: title
 destination:
-  plugin: entity_complete:node
+  plugin: 'entity_complete:node'
   translations: true
   default_bundle: departamento
 migration_dependencies:

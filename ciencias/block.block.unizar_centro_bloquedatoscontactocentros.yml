@@ -1,4 +1,4 @@
-uuid: bd89dc26-1046-4029-a3db-75d84aeadd5c
+uuid: ec98fca7-fcc0-4a26-ab59-4be321eeb025
 langcode: es
 status: true
 dependencies:
@@ -25,9 +25,9 @@ settings:
     telefono_centro: 1
     url_mapa: 0
     sede2:
-      dir_centro2: 1
+      dir_centro2: 0
       mail_centro2: 0
-      telefono_centro2: 1
+      telefono_centro2: 0
       url_mapa2: 0
     contacto_header: null
     id: null

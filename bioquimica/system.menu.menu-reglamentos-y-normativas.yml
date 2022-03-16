@@ -1,8 +1,0 @@
-uuid: 17935ff5-8c3c-40ad-b393-0c71994c0292
-langcode: es
-status: true
-dependencies: {  }
-id: menu-reglamentos-y-normativas
-label: 'Reglamentos y normativas'
-description: ''
-locked: false

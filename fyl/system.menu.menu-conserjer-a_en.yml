@@ -1,8 +1,0 @@
-uuid: cbc645c9-e25b-4ef2-a036-dcf2b5622bb7
-langcode: es
-status: true
-dependencies: {  }
-id: menu-conserjer-a_en
-label: Conserjería_en
-description: 'Enlaces a las distintas páginas y utilidades de ayuda'
-locked: false

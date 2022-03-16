@@ -1,8 +1,0 @@
-uuid: 6f567d3b-5067-4c7b-82ac-eb1530043615
-langcode: es
-status: true
-dependencies: {  }
-id: menu-anillo-digital_en
-label: 'anillo digital docente_en'
-description: 'anillo digital docente'
-locked: false

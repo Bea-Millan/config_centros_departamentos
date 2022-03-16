@@ -1,8 +1,0 @@
-uuid: b8814544-fcf3-4c17-b736-72617f09f71c
-langcode: es
-status: true
-dependencies: {  }
-id: menu-grados
-label: 'menu grados derecha'
-description: ''
-locked: false

@@ -11,7 +11,7 @@ dependencies:
 id: informacioncovid19
 theme: unizar_centro
 region: columna_lateral
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:7c8ff255-d2aa-4aec-bdd2-74f6430b0a4a'
 settings:

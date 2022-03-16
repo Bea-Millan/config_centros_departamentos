@@ -7,7 +7,9 @@ label: 'ciencias custom'
 description: ''
 weight: 0
 folder: ../config/sites/custom/ciencias
-module: {  }
+module:
+  entityreference_filter: 0
+  filefield_paths: 0
 theme: {  }
 blacklist:
   - block.block.unizar_centro_titulodelapagina
@@ -71,6 +73,9 @@ blacklist:
   - migrate_plus.migration.upgrade_d7_node_examenes_por_departamentos
   - migrate_plus.migration.upgrade_d7_node_horarios
   - migrate_plus.migration.upgrade_d7_node_horarios_por_departamentos
+  - migrate_plus.migration.upgrade_d7_taxonomy_term_convocatoria
+  - migrate_plus.migration.upgrade_d7_taxonomy_term_curso
+  - migrate_plus.migration_group.migrate_drupal_horarios_examenes
   - node.type.departamento
   - node.type.examenes
   - node.type.examenes_por_departamentos

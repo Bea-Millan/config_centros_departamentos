@@ -1,8 +1,0 @@
-uuid: a7fdee6f-472a-4095-9791-a5ce79ed81e0
-langcode: es
-status: true
-dependencies: {  }
-id: menu-calidad-grados
-label: 'calidad grados'
-description: ''
-locked: false

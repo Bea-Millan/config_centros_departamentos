@@ -1,0 +1,25 @@
+uuid: e1287342-acc6-469c-879f-ec52b18fc98d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6fbd0f84-a919-4a6f-a0fe-995bf313d92f'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: covid19prueba
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:6fbd0f84-a919-4a6f-a0fe-995bf313d92f'
+settings:
+  id: 'block_content:6fbd0f84-a919-4a6f-a0fe-995bf313d92f'
+  label: COVID-19
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

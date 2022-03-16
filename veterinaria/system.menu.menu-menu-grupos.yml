@@ -1,8 +1,0 @@
-uuid: 19e81856-10a3-4388-895e-6679131352bc
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-grupos
-label: 'Menu Grupos'
-description: ''
-locked: false

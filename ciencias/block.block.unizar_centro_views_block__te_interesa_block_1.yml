@@ -1,4 +1,4 @@
-uuid: 0071ce40-9d92-4007-82e0-ec487364e53e
+uuid: 968452b7-5a17-403d-973d-59f683edd371
 langcode: es
 status: true
 dependencies:
@@ -17,7 +17,7 @@ _core:
 id: unizar_centro_views_block__te_interesa_block_1
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: 0
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:
