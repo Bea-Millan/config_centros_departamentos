@@ -1,0 +1,23 @@
+uuid: 26ef713e-4b96-48e3-af40-5159f9fbda93
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - unizar_base
+_core:
+  default_config_hash: yW_sIb-Uz9sWRP8ETACp1wp53n-A9wITECVBKb7KFCo
+id: unizar_base_formulariodebusqueda
+theme: unizar_base
+region: cabecera_med_derecha
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

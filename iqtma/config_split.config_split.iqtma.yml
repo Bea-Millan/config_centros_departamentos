@@ -1,6 +1,7 @@
+uuid: 61fec5fb-8e11-4008-ac56-3e12d5c049e3
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: iqtma
 label: iqtma
 description: ''
@@ -8,12 +9,12 @@ weight: 0
 folder: ../config/sites/iqtma
 module:
   c11n_migrate: 0
-theme: {}
+theme:
+  unizar_departamento: 0
 blacklist:
   - config_split.config_split.iqtma
   - system.site
   - system.theme
-  - core.extension
   - asset_injector.css.iqtma_inyeccion_css
   - core.entity_view_mode.shortcut.token
   - shortcut.set.default
@@ -27,10 +28,10 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

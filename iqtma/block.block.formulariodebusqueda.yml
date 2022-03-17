@@ -1,0 +1,23 @@
+uuid: 839f40d1-4161-4430-ac8f-e0fa8401b46f
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - unizar_departamento
+_core:
+  default_config_hash: yW_sIb-Uz9sWRP8ETACp1wp53n-A9wITECVBKb7KFCo
+id: formulariodebusqueda
+theme: unizar_departamento
+region: cabecera_med_derecha
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

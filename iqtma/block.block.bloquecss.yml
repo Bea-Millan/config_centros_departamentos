@@ -1,0 +1,25 @@
+uuid: c31d98ef-1240-4994-99d4-383a17f497cf
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3ae8b96d-f9a4-4d1e-bdd4-e1b128ebbe0c'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: bloquecss
+theme: unizar_departamento
+region: cabecera_med_derecha
+weight: -9
+provider: null
+plugin: 'block_content:3ae8b96d-f9a4-4d1e-bdd4-e1b128ebbe0c'
+settings:
+  id: 'block_content:3ae8b96d-f9a4-4d1e-bdd4-e1b128ebbe0c'
+  label: 'Bloque css'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

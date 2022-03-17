@@ -1,0 +1,10 @@
+uuid: ca5d5c7e-56d8-4507-954e-0a888e236f0d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: PUxHj8YUNMBfzd90045AlV4CE3cZb9MvCocJg4XMHuk
+id: menu-secundario
+label: Secundario
+description: 'Menú de links secundarios que aparecerá en la cabecera del sitio'
+locked: false

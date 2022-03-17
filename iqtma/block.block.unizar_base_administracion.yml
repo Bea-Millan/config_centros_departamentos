@@ -1,0 +1,22 @@
+uuid: 30f46097-301f-41ed-8845-2ecaf95672d3
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_admin_menu
+  theme:
+    - unizar_base
+_core:
+  default_config_hash: Y-psfKW35X7C30A7zoWhHit3Rf3OiIZmR4UD3XcGIVo
+id: unizar_base_administracion
+theme: unizar_base
+region: cabecera_sup
+weight: 0
+provider: null
+plugin: administracion
+settings:
+  id: administracion
+  label: Administración
+  label_display: '0'
+  provider: unizar_admin_menu
+visibility: {  }

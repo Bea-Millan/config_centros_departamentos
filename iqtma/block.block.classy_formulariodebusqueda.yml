@@ -1,0 +1,23 @@
+uuid: 8534f122-eba7-49b6-a509-913eb9058c6a
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - classy
+_core:
+  default_config_hash: yW_sIb-Uz9sWRP8ETACp1wp53n-A9wITECVBKb7KFCo
+id: classy_formulariodebusqueda
+theme: classy
+region: sidebar_first
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

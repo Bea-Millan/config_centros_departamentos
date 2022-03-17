@@ -1,0 +1,23 @@
+uuid: 81b1fa24-76f8-4d45-94e6-66b4170afd82
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - stable
+_core:
+  default_config_hash: yW_sIb-Uz9sWRP8ETACp1wp53n-A9wITECVBKb7KFCo
+id: stable_formulariodebusqueda
+theme: stable
+region: sidebar_first
+weight: -3
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  provider: search
+  label_display: '0'
+  page_id: ''
+visibility: {  }

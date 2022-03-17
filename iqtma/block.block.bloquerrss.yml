@@ -1,0 +1,29 @@
+uuid: cf1cb15f-0c5d-42d5-a8d2-4f374abe9374
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_departamento
+id: bloquerrss
+theme: unizar_departamento
+region: footer
+weight: 0
+provider: null
+plugin: bloque_rrss
+settings:
+  id: bloque_rrss
+  label: 'Bloque rrss'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  redes_sociales:
+    rss: 1
+    blog_show: 0
+    instagram_show: 0
+    facebook_show: 1
+    twitter_show: 0
+    youtube_show: 0
+    linkedin_show: 0
+    soundcloud_show: 0
+visibility: {  }

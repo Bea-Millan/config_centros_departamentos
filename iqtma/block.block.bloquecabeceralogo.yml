@@ -1,0 +1,20 @@
+uuid: 5400cf5e-6404-4195-907d-dc06b146cb85
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_departamento
+id: bloquecabeceralogo
+theme: unizar_departamento
+region: cabecera_med_izquierda
+weight: 0
+provider: null
+plugin: bloque_cabecera_logo
+settings:
+  id: bloque_cabecera_logo
+  label: 'Bloque cabecera logo'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+visibility: {  }
