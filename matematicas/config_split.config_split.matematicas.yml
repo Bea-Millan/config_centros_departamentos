@@ -1,6 +1,7 @@
+uuid: 044813c8-8c04-412c-8864-cf826cd62a1a
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: matematicas
 label: matematicas
 description: ''
@@ -8,7 +9,7 @@ weight: 0
 folder: ../config/sites/matematicas
 module:
   c11n_migrate: 0
-theme: {}
+theme: {  }
 blacklist:
   - config_split.config_split.matematicas
   - system.site
@@ -27,11 +28,11 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
   - config_split.config_split.departamento.yml
-graylist: {}
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
