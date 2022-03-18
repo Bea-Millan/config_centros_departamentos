@@ -24,7 +24,7 @@ plugin: 'views_block:noticias-block_2'
 settings:
   id: 'views_block:noticias-block_2'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none
