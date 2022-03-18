@@ -1,0 +1,221 @@
+uuid: b856b741-fd2f-4920-80e5-4097ebab8c99
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_129
+title: 'Formulario inscripción en Actividades Transversales'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#description': 'Por favor, escriba su nombre con MAYÚSCULAS'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#description': 'Por favor, escriba sus apellidos con MAYÚSCULAS'
+    '#required': true
+  nif_nie_num_pasaporte:
+    '#type': textfield
+    '#title': 'NIF, NIE, núm. pasaporte'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': NIA
+    '#description': 'Indique su número de identificación como estudiante de la Universidad de Zaragoza'
+    '#required': true
+  e_mail:
+    '#type': email
+    '#size': 20
+    '#title': E-mail
+    '#required': true
+  programa_doctorado:
+    '#type': select
+    '#options':
+      '477   Ciencias de la Antigüedad': '477   Ciencias de la Antigüedad'
+      '478   Estudios Ingleses': '478   Estudios Ingleses'
+      '480   Filosofía': ' 480   Filosofía'
+      '482   Historia del Arte': '482   Historia del Arte'
+      '481   Historia Contemporánea': ' 481   Historia Contemporánea'
+      '483   Historia, Sociedad y Cultura:Épocas Medieval y Moderna': '483   Historia, Sociedad y Cultura:Épocas Medieval y Moderna'
+      '484   Lingüística Hispánica': ' 484   Lingüística Hispánica'
+      '479   Literaturas Hispánicas': ' 479   Literaturas Hispánicas'
+      '569   Patrimonio, Sociedades y Espacios de Frontera': ' 569   Patrimonio, Sociedades y Espacios de Frontera'
+      '485  Bioquímica y Biología Molecular': ' 485  Bioquímica y Biología Molecular'
+      '486  Calidad, Seguridad y Tecnología de los Alimentos': ' 486  Calidad, Seguridad y Tecnología de los Alimentos'
+      '487  Ciencia Analítica en Química': ' 487  Ciencia Analítica en Química'
+      '488  Física': ' 488  Física'
+      '489  Geología': ' 489  Geología'
+      '490  Matemáticas y Estadística': ' 490  Matemáticas y Estadística'
+      '491  Producción Animal': ' 491  Producción Animal'
+      '492  Química Física': ' 492  Química Física'
+      '493  Química Inorgánica': ' 493  Química Inorgánica'
+      '494  Química Orgánica': ' 494  Química Orgánica'
+      '499  Contabilidad y Finanzas': ' 499  Contabilidad y Finanzas'
+      '500  Derecho': ' 500  Derecho'
+      '501  Derechos Humanos y Libertades Fundamentales': ' 501  Derechos Humanos y Libertades Fundamentales'
+      '502  Economía': ' 502  Economía'
+      '503  Economía y Gestión de las Organizaciones': ' 503  Economía y Gestión de las Organizaciones'
+      '504  Educación': ' 504  Educación'
+      '554  Información y Comunicación': ' 554  Información y Comunicación'
+      '505  Ordenación del Territorio y Medio Ambiente': ' 505  Ordenación del Territorio y Medio Ambiente'
+      '506  Relaciones de Género y Estudios Feministas': ' 506  Relaciones de Género y Estudios Feministas'
+      '507  Sociología de las Políticas Públicas y Sociales': ' 507  Sociología de las Políticas Públicas y Sociales'
+      '495  Ciencias Biomédicas y Biotecnológicas': ' 495  Ciencias Biomédicas y Biotecnológicas'
+      '496  Ciencias de la Salud y del Deporte': ' 496  Ciencias de la Salud y del Deporte'
+      '497  Medicina': ' 497  Medicina'
+      '498  Medicina y Sanidad Animal': ' 498  Medicina y Sanidad Animal'
+      '508  Ciencias Agrarias y del Medio Ambiente': ' 508  Ciencias Agrarias y del Medio Ambiente'
+      '509  Energías Renovables y Eficiencia Energética': ' 509  Energías Renovables y Eficiencia Energética'
+      '510  Ingeniería Biomédica': ' 510  Ingeniería Biomédica'
+      '511  Ingeniería de Diseño y Fabricación': ' 511  Ingeniería de Diseño y Fabricación'
+      '512  Ingeniería de Sistemas e Informática': ' 512  Ingeniería de Sistemas e Informática'
+      '513  Ingeniería Electrónica': ' 513  Ingeniería Electrónica'
+      '514  Ingeniería Mecánica': ' 514  Ingeniería Mecánica'
+      '515  Ingeniería Química y del Medio Ambiente': ' 515  Ingeniería Química y del Medio Ambiente'
+      '516  Mecánica de Fluidos': ' 516  Mecánica de Fluidos'
+      '517  Nuevos Territorios en la Arquitectura': ' 517  Nuevos Territorios en la Arquitectura'
+      '518  Tecnologías de la Información y Comunicaciones en Redes Móviles': ' 518  Tecnologías de la Información y Comunicaciones en Redes Móviles'
+      '575  Logística y Gestión de la Cadena de Suministro': ' 575  Logística y Gestión de la Cadena de Suministro'
+    '#title': 'Programa de Doctorado en que está matriculado'
+    '#required': true
+  tutela_academica_matriculada_en_el_curso_16_17:
+    '#type': select
+    '#options':
+      'Tutela (primer año)': 'Tutela (primer año)'
+      'Tutela (segundo año)': 'Tutela (segundo año)'
+      'Tutela (tercer año)': 'Tutela (tercer año)'
+      'Tutela (cuarto año)': 'Tutela (cuarto año)'
+    '#title': 'Tutela Académica matriculada en el curso 16-17'
+    '#description': 'Seleccione en qué año de tutela académica se ha matriculado en el presente curso, 2016-17.'
+  actividad:
+    '#type': checkbox
+    '#options':
+      MIGRACIONES: 'MIGRACIONES, IDENTIDAD Y CONFLICTOS - 29/3/2017'
+    '#multiple': true
+    '#title': 'Actividad Transversal'
+    '#description': |
+      Selecciones la(s) actividad(es) en que solicita inscribirse. Se indica el LÍMITE del PLAZO para enviar la solicitud de admisión. 
+    '#required': true
+  grupos_ae:
+    '#type': select
+    '#options':
+      Humanidades: 'Inglés Humanidades'
+      Ciencias: 'Inglés Ciencias'
+      Ingeniería: 'Inglés Ingeniería'
+      Biomedicas: 'Inglés Biomédicas'
+      Jurídicas: 'Inglés Ciencias Jurídicas'
+      Sociales: ' Inglés Ciencias Sociales'
+    '#title': 'Elección Grupo Inglés Académico'
+    '#description': 'Elija el grupo en el menú desplegable'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="actividad"]':
+            checked: true
+      required:
+        - ':input[name="actividad"]':
+            checked: true
+  grupo_recursos:
+    '#type': select
+    '#options':
+      'Arte y Human': ' Arte y Humanidades'
+      Ciencias: ' Ciencias'
+      'C. Salud': ' Ciencias Salud'
+      'Derecho, Economía, Sociales': 'Derecho, Economía, Sociales'
+      Educación: Educación
+      'Ingeniería y Arquitectura': 'Ingeniería y Arquitectura'
+    '#title': 'Elección Grupo Recursos y Fuentes'
+    '#description': 'Elija el grupo en el menú desplegable'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="actividad"]':
+            checked: true
+      required:
+        - ':input[name="actividad"]':
+            checked: true
+  sesion_herramientas:
+    '#type': checkboxes
+    '#options':
+      'Sesión 1': ' Sesión 1. MatLab'
+      'Sesión 2': ' Sesión 2. Origin'
+      'Sesión 3': ' Sesión 3. EndNote'
+    '#multiple': true
+    '#title': 'Sesión Herramientas'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="actividad"]':
+            checked: true
+      required:
+        - ':input[name="actividad"]':
+            checked: true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:e_mail:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,254 @@
+uuid: 585d3dad-5407-459f-8090-e6983b7d2f57
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_595
+title: 'Formulario de sugerencias y quejas'
+description: null
+category: null
+elements: |-
+  programa_de_doctorado:
+    '#type': select
+    '#options':
+      477: 'Ciencias de la Antigüedad'
+      478: 'Estudios Ingleses'
+      479: 'Literaturas Hispánicas'
+      480: Filosofía
+      481: 'Historia Contemporánea'
+      482: 'Historia del Arte'
+      483: 'Historia, Sociedad y Cultura: épocas Medieval y Moderna'
+      484: 'Lingüística Hispánica'
+      485: 'Bioquímica y Biología Molecular'
+      486: 'Calidad, Seguridad y Tecnología de los Alimentos'
+      487: 'Ciencia Analítica en Química'
+      488: Física
+      489: Geología
+      490: 'Matemáticas y Estadística'
+      491: 'Producción Animal'
+      492: 'Química Física'
+      493: 'Química Inorgánica'
+      494: 'Química Orgánica'
+      495: 'Ciencias Biomédicas y Biotecnológicas'
+      496: 'Ciencias de la Salud y del Deporte'
+      497: Medicina
+      498: 'Medicina y Sanidad Animal'
+      499: 'Contabilidad y Finanzas'
+      500: Derecho
+      501: 'Derechos humanos y Libertades fundamentales'
+      502: Economía
+      503: 'Economía y Gestión de las organizaciones'
+      504: Educación
+      505: 'Ordenación del territorio y Medio ambiente'
+      506: 'Relaciones de género y Estudios feministas'
+      507: 'Sociología de las políticas públicas y sociales'
+      508: 'Ciencias agrarias y del Medio natural'
+      509: 'Energías renovables y Eficiencia energética'
+      510: 'Ingeniería Biomédica'
+      511: 'Ingeniería de Diseño y Fabricación'
+      512: 'Ingeniería de Sistemas e Informática'
+      513: 'Ingeniería Electrónica'
+      514: 'Ingeniería Mecánica'
+      515: 'Ingeniería Química y del Medio ambiente'
+      516: 'Mecánica de Fluidos'
+      517: 'Nuevos territorios en Arquitectura'
+      518: 'Tecnologías de la información y Comunicaciones en redes móviles'
+      554: 'Información y Documentación'
+      569: 'Patrimonio, Sociedades y Espacios de frontera'
+      575: 'Logística y gestión de la cadena de suministro'
+    '#title': 'Programa de doctorado'
+    '#description': 'programa de doctorado al que se refiere la queja'
+    '#required': true
+  fieldset_datos_del_interesado:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos del interesado'
+    nombre_apellidos_3:
+      '#type': textfield
+      '#title': 'Nombre apellidos'
+      '#description': 'Nombre y apellidos del interesado'
+      '#required': true
+    dni_3:
+      '#type': textfield
+      '#title': DNI
+      '#description': 'Introduzca siempre DNI o NIP'
+    nip_3:
+      '#type': textfield
+      '#title': NIP
+      '#description': 'Introduzca siempre DNI o NIP'
+    telefono_3:
+      '#type': textfield
+      '#title': Teléfono
+    email_3:
+      '#type': email
+      '#size': 20
+      '#title': e.mail
+      '#description': 'Se usará a efecto de notificaciones'
+      '#required': true
+    relacion_con_la_eduz_3:
+      '#type': select
+      '#options':
+        1: Doctorando
+        2: 'Director de tesis'
+        3: 'Tutor de tesis'
+        4: Colaborador
+        5: PAS
+        6: Otra
+      '#title': 'Relación con la EDUZ'
+      '#required': true
+    ano_tutela_3:
+      '#type': textfield
+      '#title': 'Año tutela'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="relacion_con_la_eduz_3"]':
+              value: '1'
+    centro_3:
+      '#type': textfield
+      '#title': Centro
+      '#description': 'Centro al que pertenece'
+      '#required': true
+      '#states':
+        invisible:
+          - ':input[name="relacion_con_la_eduz_3"]':
+              value: '6'
+    especificar_3:
+      '#type': textfield
+      '#title': Especificar
+      '#description': 'Institución a la que pertenece'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="relacion_con_la_eduz_3"]':
+              value: '6'
+  fieldset_objeto_de_la_queja_sugerencia:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Objeto de la queja/sugerencia'
+    texto_16:
+      '#type': textarea
+      '#title': Texto
+      '#description': 'Resuma el objeto de su queja o sugerencia. En caso de incorporarla en un documento adjunto puede poner "Ver documentación adjunta"'
+      '#required': true
+    documentacion_adjunta_16:
+      '#type': managed_file
+      '#max_filesize': !!float 2
+      '#file_extensions': 'jpg jpeg png pdf doc docx xls xlsx'
+      '#title': 'Documentación adjunta'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por enviar este impreso. La Escuela de Doctorado dará traslado de sus comentarios a la Comisión de Doctorado y tendrá en cuenta sus sugerencias o quejas para mejorar los trámites académicos o administrativos.</p><p>Reciba un cordial saludo</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: palomanv@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Su sugerencia/queja ha sido enviada a la Escuela de Doctorado'
+      body: |-
+        Muchas gracias por su colaboración. La Escuela de Doctorado dará traslado de sus comentarios a la Comisión de Doctorado y tendrá en cuenta sus sugerencias o quejas para mejorar los trámites académicos o administrativos.
+
+        Reciba un cordial saludo
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: palomanv@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_apellidos:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Nueva QUEJA en el formulario EDUZ'
+      body: |-
+        Se ha presentado una reclamación por medio del formulario de sugerencias y quejas.
+        Rogamos que sea atendido a la mayor brevedad posible.
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements:
+        dni: dni
+        nip: nip
+        telefono: telefono
+        ano_tutela: ano_tutela
+        centro: centro
+        especificar: especificar
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,32 @@
+uuid: a7cc80d1-4ba6-4305-8c7b-4683a04dfc09
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_base
+_core:
+  default_config_hash: Yg2RTQVe4z0STvDLhKiurK4RoqKAAjv57QQ6dOeVq38
+id: bloquerrss
+theme: unizar_base
+region: cabecera_med_derecha
+weight: -10
+provider: null
+plugin: bloque_rrss
+settings:
+  id: bloque_rrss
+  label: 'Bloque rrss cabecera'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  redes_sociales:
+    rrss_header: null
+    rss_header: null
+    blog: ''
+    instagram: ''
+    facebook: ''
+    twitter: ''
+    youtube: ''
+    linkedin: ''
+    soundcloud: ''
+visibility: {  }

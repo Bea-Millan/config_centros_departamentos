@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: v1jYjpJTPRgCmIGnz4YHpNrQgCSoxQdPwbQ8bNhlRbs
+plugin:
+  host: escueladoctorado.unizar.es
+  url_host: sites/escueladoctorado
+langcode: es

@@ -1,0 +1,124 @@
+uuid: abcf34b4-d448-4aea-8c95-7a38b516c1c0
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: iQmq9drMJsfs1wi2rkYr07z5mU_9G9NOqATVMJMr4vw
+id: upgrade_d7_node_entrada_blog
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Entrada Blog)'
+source:
+  plugin: d7_node_complete
+  node_type: entrada_blog
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: Ctitle
+      source:
+        - title
+        - field_titulo_visible
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_comment/0/status:
+    -
+      plugin: get
+      source: comment
+  body:
+    -
+      plugin: sub_process
+      source: um_b_body
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_um_b_imagen_entrada_blog:
+    -
+      plugin: sub_process
+      source: um_b_imagen_entrada_blog
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_um_b_etiquetas:
+    -
+      plugin: sub_process
+      source: um_b_etiquetas
+      process:
+        target_id: tid
+  field_um_b_fecha_insercion:
+    -
+      plugin: sub_process
+      source: um_b_fecha_insercion
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d H:i:s'
+          to_format: Y-m-d
+          source: value
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: entrada_blog
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

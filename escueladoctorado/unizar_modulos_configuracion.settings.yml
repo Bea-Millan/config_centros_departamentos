@@ -1,0 +1,27 @@
+_core:
+  default_config_hash: PExz7_0jqlTvnx5n1qOIknO_YWa-XQhx44LFCwJYzq4
+logo_path: 'public://escuela-doctorado_0.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: ''
+nombre_centro: 'Escuela de Doctorado'
+dir_centro: 'Pedro Cerbuna 12 (edificio Interfacultades) - 50009 Zaragoza (España)'
+telefono_centro: '+34 876 553 016'
+mail_centro: docto@unizar.es
+url_mapa: 'https://escueladoctorado.unizar.es/es/localizacion'
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '1303'
+facebook: 'https://www.facebook.com/EscuelaUZ'
+twitter: 'https://twitter.com/EscuelaUz'
+youtube: ''
+linkedin: ''
+instagram: ''
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'La Escuela de Doctorado es un centro que tiene la  finalidad de organizar, dentro de su ámbito de gestión, las enseñanzas y actividades propias del doctorado de la Universidad de Zaragoza.'
+langcode: es
