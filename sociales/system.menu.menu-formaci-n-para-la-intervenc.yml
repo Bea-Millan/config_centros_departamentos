@@ -1,0 +1,8 @@
+uuid: fc2e5f58-44d7-447e-8901-d23603a0c86e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-formaci-n-para-la-intervenc
+label: 'Formación para la intervención con personas en situación de discapacidad'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: d5838847-f343-4164-a0d0-9e4903dae2a0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acuerdos-y-des_en
+label: 'Información general y novedades_en'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 014932a9-4532-4258-8b45-13954890af19
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-en-traba_en
+label: 'Grado en Trabajo Social_en'
+description: 'Grado en Trabajo Social'
+locked: false

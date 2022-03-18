@@ -1,0 +1,158 @@
+uuid: 6b8e241e-c6bf-4459-b242-91f2dd275991
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 82
+template: false
+archive: false
+id: webform_143
+title: 'Formulario de solicitud'
+description: null
+category: null
+elements: |-
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+    '#description': 'Seleccione los ficheros y pulse en el botón de la derecha "Subir al servidor". Cuando haya finalizado, pulse el botón inferior "Enviar".'
+  fichero_word_con_la_solicitud:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'txt rtf pdf doc docx'
+    '#title': 'Fichero Word con la solicitud'
+    '#description': 'Recuerde añadir DNI o NIP al nombre del archivo'
+    '#required': true
+  resto_de_documentos:
+    '#type': managed_file
+    '#max_filesize': !!float 10
+    '#file_extensions': 'jpg rtf odf pdf doc docx gz rar tar zip'
+    '#title': 'Resto de documentos'
+    '#description': |-
+      Fichero comprimido con el resto de los documentos requeridos.
+      Recuerde nombrarlo con su DNI o NIP
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su solicitud ha sido remitida. &nbsp;En breve nos pondremos en contacto con Vd.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: acasociz@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:apellidos:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario de solicitud: Curso de Adap. Gr. RLRH'
+      body: |-
+        Submitted on [webform_submission:date:long]
+        Desde: [current-user:ip-address]
+        Los valores enviados son:
+        [webform_submission:values]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: acasociz@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Su solicitud ha sido enviada.  En breve nos pondremos en contacto con Vd.
+
+        Esta es una respuesta automática del sistema.  Por favor, no responda a este mail.
+
+
+        Submitted on [webform_submission:date:long]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

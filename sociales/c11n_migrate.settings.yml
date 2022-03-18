@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: olsh-sTG-0z12deu7OzWNtLMYG2HFFnWhVMrrClw0FM
+plugin:
+  host: sociales.unizar.es
+  url_host: sites/sociales
+langcode: es

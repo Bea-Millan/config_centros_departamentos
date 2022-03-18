@@ -1,0 +1,8 @@
+uuid: c2bc7c7d-da17-468f-b5c2-1e114df26e4e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-master-universitario-en-rel
+label: 'Master Universitario en Relaciones de Género'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 0899b8cb-a149-434f-8321-b19ab360f01b
+langcode: es
+status: true
+dependencies: {  }
+id: menu-revistaais
+label: 'Revista Acciones e Investigaciones Sociales'
+description: ''
+locked: false

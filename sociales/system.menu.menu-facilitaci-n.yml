@@ -1,0 +1,8 @@
+uuid: 4fa4c7d7-119d-49c8-a9fe-8e5ba7685cbc
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facilitaci-n
+label: 'Facilitación de grupos, gestión de conflictos y mediación comunitaria'
+description: ''
+locked: false

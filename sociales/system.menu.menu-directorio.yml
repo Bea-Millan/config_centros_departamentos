@@ -1,0 +1,8 @@
+uuid: c526b2d7-a1c9-4bc8-8737-ecb89c86fcfd
+langcode: es
+status: true
+dependencies: {  }
+id: menu-directorio
+label: Directorio
+description: ''
+locked: false

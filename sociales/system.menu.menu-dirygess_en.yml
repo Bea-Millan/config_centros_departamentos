@@ -1,0 +1,8 @@
+uuid: b88ed597-98c5-4d13-8641-fa869898e201
+langcode: es
+status: true
+dependencies: {  }
+id: menu-dirygess_en
+label: dirygess_en
+description: ''
+locked: false

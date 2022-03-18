@@ -1,0 +1,8 @@
+uuid: 0e457e8b-337b-4aeb-86d2-a02fce9eff36
+langcode: es
+status: true
+dependencies: {  }
+id: menu-m-ster-en-gesti-n-estrat-gi
+label: 'Máster Universitario en Gestión Estratégica de Recursos Humanos'
+description: ''
+locked: false

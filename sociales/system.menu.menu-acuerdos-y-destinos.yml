@@ -1,0 +1,8 @@
+uuid: 5cf1c57c-c13c-498c-844a-4da8ef268319
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acuerdos-y-destinos
+label: 'Información general y novedades'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 0da91a7f-d6d6-4666-ba7d-97948fb83f49
+langcode: es
+status: true
+dependencies: {  }
+id: menu-master-sistemica
+label: 'Máster en Intervención Familiar y Sistémica'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 7bbb9fc6-e0b5-4586-8aa6-e02ab76760cc
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-en-rlrh_en
+label: 'Grado en Relaciones Laborales y Recursos Humanos_en'
+description: 'Grado en Relaciones Laborales y Recursos Humanos'
+locked: false

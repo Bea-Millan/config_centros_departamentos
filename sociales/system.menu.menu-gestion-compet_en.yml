@@ -1,0 +1,8 @@
+uuid: a38093b7-19df-4c25-86ba-4726d0c32048
+langcode: es
+status: true
+dependencies: {  }
+id: menu-gestion-compet_en
+label: 'Experto Universitario en Gestión de las Competencias para la Competitividad y la Empleabilidad_en'
+description: ''
+locked: false

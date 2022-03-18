@@ -1,0 +1,8 @@
+uuid: 950f457d-f5ce-47a2-bafc-2b58da4455c0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-relaciones-institucionales
+label: 'Relaciones Institucionales'
+description: ''
+locked: false

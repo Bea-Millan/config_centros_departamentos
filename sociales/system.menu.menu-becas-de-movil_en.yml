@@ -1,0 +1,8 @@
+uuid: e2326261-5659-4d53-94c8-cf2cd16978f4
+langcode: es
+status: true
+dependencies: {  }
+id: menu-becas-de-movil_en
+label: 'Programas de movilidad para estudiantes_en'
+description: ''
+locked: false

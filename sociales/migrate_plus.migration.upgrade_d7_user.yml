@@ -1,0 +1,119 @@
+uuid: 48b143ee-007d-4617-b975-2bb80f3487b7
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: BHX-Ht0iNPfaCWK4zHGnp6r34uKnMJX_vr2A75DuQag
+id: upgrade_d7_user
+class: Drupal\user\Plugin\migrate\User
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'User accounts'
+source:
+  plugin: d7_user
+process:
+  uid:
+    -
+      plugin: gate_unizar
+      source: uid
+      use_as_key: login
+      valid_keys: 0
+      key_direction: lock
+    -
+      plugin: gate_unizar
+      source: uid
+      use_as_key: name
+      valid_keys: adminwebuz
+      key_direction: lock
+  name:
+    -
+      plugin: skip_on_value
+      method: row
+      source: name
+      value: adminwebuz
+    -
+      plugin: MailToNip
+      source: mail
+    -
+      plugin: skip_on_empty
+      method: row
+  pass:
+    -
+      plugin: get
+      source: pass
+  mail:
+    -
+      plugin: get
+      source: mail
+  created:
+    -
+      plugin: get
+      source: created
+  access:
+    -
+      plugin: get
+      source: access
+  login:
+    -
+      plugin: get
+      source: login
+  status:
+    -
+      plugin: get
+      source: status
+  timezone:
+    -
+      plugin: get
+      source: timezone
+  langcode:
+    -
+      plugin: user_langcode
+      source: entity_language
+      fallback_to_site_default: false
+  preferred_langcode:
+    -
+      plugin: user_langcode
+      source: language
+      fallback_to_site_default: true
+  preferred_admin_langcode:
+    -
+      plugin: user_langcode
+      source: language
+      fallback_to_site_default: true
+  init:
+    -
+      plugin: get
+      source: init
+  roles:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_user_role
+      source: roles
+  user_picture:
+    -
+      plugin: default_value
+      source: picture
+      default_value: null
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_file
+destination:
+  plugin: 'entity:user'
+migration_dependencies:
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_file
+    - upgrade_language
+    - upgrade_default_language
+    - upgrade_user_picture_field_instance
+    - upgrade_user_picture_entity_display
+    - upgrade_user_picture_entity_form_display
+    - upgrade_d7_user_role

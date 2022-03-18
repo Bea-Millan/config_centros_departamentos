@@ -1,0 +1,8 @@
+uuid: f844bc94-e9e2-4f2d-a835-7a0d8dbc2112
+langcode: es
+status: true
+dependencies: {  }
+id: menu-experto-universitario-en-di
+label: 'Experto Universitario en Dirección de Empresas de Economía Social (EUDEES)'
+description: ''
+locked: false
