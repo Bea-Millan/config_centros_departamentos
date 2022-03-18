@@ -1,0 +1,90 @@
+uuid: abf8aa71-01b8-4608-8f9b-249c8d74b022
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_1319
+title: 'Encuesta de satisfacción'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    ha_sido_facil_encontrar_la_pagina_del_buzon:
+      '#type': radios
+      '#options':
+        6: 'Muy Fácil'
+        5: Fácil
+        4: Normal
+        3: Difícil
+        2: 'Muy difícil'
+        1: 'No sabe o no contesta'
+      '#title': '¿Ha sido fácil encontrar la página del buzón?'
+    me_han_respondido_en_el_periodo_acordado:
+      '#type': radios
+      '#options':
+        6: 'Sí, y muy rápidamente'
+        5: 'Sí, dentro del plazo estipulado'
+        4: 'He tenido que esperar, pero la respuesta ha llegado en el plazo estimado'
+        3: 'No, he recibido respuesta pero he tenido que esperar más de lo estipulado'
+        2: 'No, La respuesta se ha demorado en exceso o no se ha recibido'
+        1: 'No sabe o no contesta'
+      '#title': '¿Me han respondido en el periodo acordado?'
+  siguiente_pregunta_2_4:
+    '#type': webform_wizard_page
+    '#title': 'Pregunta 2/4'
+    la_respuesta_ha_sido_clara_y_precisa:
+      '#type': radios
+      '#options':
+        6: 'Totalmente clara y precisa'
+        5: Bastante
+        4: 'Lo suficiente'
+        3: 'No todo lo clara que necesitaba'
+        2: 'La respuesta ha sido totalmente insatisfactoria'
+        1: 'No sabe o no contesta'
+      '#title': '¿La respuesta ha sido clara y precisa?'
+  siguiente_pregunta_3_4:
+    '#type': webform_wizard_page
+    '#title': 'Pregunta 3/4'
+    valoracion_global_respecto_al_sistema_de_quejas_sugerencias:
+      '#type': radios
+      '#options':
+        6: 'Totalmente satisfecho/a'
+        5: Satisfecho/a
+        4: Neutral
+        3: Insatisfecho/a
+        2: 'Totalmente insatisfecho/a'
+        1: 'No sabe o no contesta'
+      '#title': 'Valoración global respecto al sistema de quejas/sugerencias'
+  siguiente_pregunta_4_4:
+    '#type': webform_wizard_page
+    '#title': 'Pregunta 4/4'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

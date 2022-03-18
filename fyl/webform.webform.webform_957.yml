@@ -1,0 +1,322 @@
+uuid: 4f46624c-2641-4fc2-9aa2-a64fb94de9f1
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_957
+title: 'Estudiantes: Comunicación de confinamiento por contacto estrecho'
+description: null
+category: null
+elements: |-
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer Apellido'
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo Apellido'
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  nip_o_dni:
+    '#type': textfield
+    '#title': 'NIP o DNI'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo Electrónico'
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Teléfono de contacto'
+    '#required': true
+  estudios_que_se_cursan:
+    '#type': select
+    '#options':
+      grado_clasicos: 'Grado en Estudio Clásicos'
+      grado_ingleses: 'Grado en Estudios Ingleses'
+      grado_hispanica: 'Grado en Filología Hispánica'
+      grado_filosofia: 'Grado en Filosofía'
+      grado_geografia: 'Grado en Geografía y Ordenación del Territorio'
+      grado_historia: 'Grado en Historia'
+      grado_arte: 'Grado en Historia del Arte'
+      grado_documentacion: 'Grado en Información y Documentación'
+      grado_modernas: 'Grado en Lenguas Modernas'
+      grado_periodismo: 'Grado en Periodismo'
+      master_comunicacion: 'Máster U. en Consultoría de Información y Comunicación Digital'
+      master_arte: 'Máster U. en Estudios Avanzados en Historia del Arte'
+      master_patrimonio: 'Máster U. en Gestión del Patrimonio Cultural'
+      master_contemporanea: 'Máster U. en Historia Contemporánea'
+      master_historia: 'Máster U. en Investigación y Estudios Avanzados en Historia'
+      master_otma: 'Máster U. en Ordenación Territorial y Medioambiental'
+      master_arqueologico: 'Máster U. en Mundo Antiguo y Patrimonio Arqueológico'
+      master_sig: 'Máster U. en Tecnologías de la Información Geográfica para la Ordenación del Territorio: SIG y Teledetección'
+      master_identidades: 'Máster U. en Culturas e Identidades Hispánicas'
+      master_ele: 'Máster U. en Enseñanza del Español como Lengua Extranjera'
+      master_filosofia: 'Máster Interuniversitario en Investigación en Filosofía'
+      propios_protocolo: 'Certificación de Extensión Universitaria en Protocolo, Ceremonial y Organización de Eventos'
+      otros: 'Doctorado, otros cursos y seminarios organizados por la Facultad de Filosofía y Letras'
+    '#title': 'Estudios que se cursan'
+    '#required': true
+  curso:
+    '#type': checkboxes
+    '#options':
+      primero: Primero
+      segundo: Segundo
+      tercero: Tercero
+      cuarto: Cuarto
+      optativas: 'Asignaturas Optativas'
+      otros: 'Otros Cursos, Seminarios o Talleres'
+    '#multiple': true
+    '#title': Curso
+    '#required': true
+  coordinador:
+    '#type': email
+    '#size': 20
+    '#title': coordinador
+  asignaturas_48_horas:
+    '#type': textarea
+    '#title': 'Asignaturas a las que ha asistido en las últimas 48 horas'
+    '#description': 'Consigne las asignaturas a las que ha acudido presencialmente en las últimas 48 horas. Indique por favor si ha hecho uso de los códigos QR FYL-COVID en el caso de disponer el aula de los mismos.'
+    '#required': true
+  biblioteca_48_horas:
+    '#type': textarea
+    '#title': '¿Ha estado en la Biblioteca en las últimas 48 horas?'
+    '#description': 'Consigne si ha visitado la Biblioteca en las últimas 48 horas. Indique por favor las franjas horarias y si ha hecho uso de los códigos QR FYL-COVID'
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+    '#description': 'Indique cualquier información que crea pueda ser de interés.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>Desde la Facultad de Filosofía y Letras le deseamos una evolución favorable.</p>\r\n<p><span>Le hemos enviado un correo electrónico a la cuenta que ha consignado en el formulario que contiene información importante para Vd. Le rogamos lo lea con atención.</span></p>\r\n<p>También se han enviado sus datos al responsable COVID de la Facultad de Filosofía y Letras, al Coordinador/a de su Titulación y a la Unidad de Prevención de Riesgos de la Universidad de Zaragoza.</p>\r\n<p>Le trasladamos nuestros mejores deseos y agradecemos sinceramente su colaboración.</p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: jefeuprl@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19 Facultad de Filosofía y Letras'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO (Estudiantes) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Incidencia COVID-19 registrada e instrucciones'
+      body: |-
+        <p>Estimado Sr./Estimada Sra.</p>
+        <p>Como responsable en temas COVID en la Facultad de Filosofía y Letras, me pongo en contacto con usted, y en primer lugar le agradezco que nos comunique su situación. Su cooperación y sensibilidad ante la pandemia es muy importante para el control de sus efectos.</p>
+        <p>La comunicación de su incidencia se ha enviado también al Coordinador/a de sus Estudios y a la Unidad de Prevención de Riesgos de la Universidad de Zaragoza</p>
+        <p>Como medidas de prevención de contagios, le recomendamos encarecidamente las siguientes:</p>
+        <p>LE AGRADEZCO QUE SE CONFINE Y NO ACUDA A LA UNIVERSIDAD. Mientras esté en confinamiento, le ruego contacte con los profesores de las asignaturas para ver cómo puede recibir la docencia. Si no dispone ya de ellos, puede conocer sus correos institucionales en la página web de la Universidad https://directorio.unizar.es</p>
+        <p>El protocolo relativo a la docencia para esta situación sigue el mismo modelo que cuando un estudiante tiene una enfermedad o dolencia que le impide asistir de manera habitual a las clases. Por ello:</p>
+        <p>- Si la asignatura tiene una presencialidad parcial con docencia online sincrónica a través de plataformas digitales como Google Meet o Team de Microsoft, el alumno puede hacer el seguimiento de las materias de forma no presencial como sus otros compañeros.</p>
+        <p>- Si la asignatura es totalmente presencial, el profesor le proporcionará la documentación y elementos de trabajo (tutorías, reuniones virtuales, acceso a plataformas educativas, o cualquier sistema que considere adecuado para la formación docente, etc.) para un seguimiento de la asignatura reforzado. El docente podría habilitar simultáneamente a su docencia presencial la retransmisión de clase con los estudiantes convalecientes o en situación de riesgo de forma online sincrónica. Pero esto solo si se dan las siguientes circunstancias:</p>
+        <p> > Si el docente no tiene ninguna objeción a retransmitir</p>
+        <p> > Si crea un enlace en las plataformas digitales para este tipo de docencia</p>
+        <p> > Si en el aula existe disponibilidad de los dispositivos electrónicos necesarios.</p>
+        <p>- Si tiene un examen y se encuentra en buen estado seguirá las instrucciones del profesor al respecto</p>
+        <p>SI TIENE INFORMACIÓN SOBRE PCR, LE AGRADECEREMOS CUMPLIMENTE EL FORMULARIO OPORTUNO QUE ENCONTRARÁ EN EL SIGUIENTE ENLACE:</p>
+        <p>https://fyl.unizar.es/comunicacion-covid</p>
+        <p>EN CASO DE EVOLUCIÓN A COVID ROGAMOS SIGA ESCRUPULOSAMENTE LAS INSTRUCCIONES SANITARIAS</p>
+        <p>RECUERDE QUE NO SE PUEDE REINCORPORAR A LA ACTIVIDAD ACADÉMICA NORMAL HASTA QUE LE SEA INDICADO POR LAS AUTORIDADES SANITARIAS</p>
+        <p>Le indico también que para cualquier cuestión puede dirigirse al responsable COVID de la Facultad de Filosofía y Letras en el siguiente correo: covidfil@unizar.es</p>
+        <p>Deseándole una evolución favorable, le saludamos muy atentamente.</p>
+        <p>Responsable COVID - Facultad de Filosofía y Letras</p>
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_4:
+    id: email
+    handler_id: email_4
+    label: 'Email 4'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:coordinador:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicacion de CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19'
+      body: |
+        Estimado/a Coordinador/a
+
+        A través del formulario de comunicación para incidencias COVID-19 para los estudiantes de la Facultad de Filosofía y Letras se ha recogido la siguiente incidencia:
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+
+        Dichos datos obran también en poder del Responsable COVID de la Facultad y de la Unidad de Prevención de Riesgos Laborales
+
+        Atentamente.
+      excluded_elements:
+        coordinador: coordinador
+        asignaturas_48_horas: asignaturas_48_horas
+        biblioteca_48_horas: biblioteca_48_horas
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: covidfil@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación CONFINAMIENTO POR CONTACTO ESTRECHO COVID-19 Facultad de Filosofía y Letras'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- CONFINAMIENTO POR CONTACTO ESTRECHO --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

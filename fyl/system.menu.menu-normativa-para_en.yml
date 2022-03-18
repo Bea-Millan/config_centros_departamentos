@@ -1,0 +1,8 @@
+uuid: 39474edc-e902-44c7-97b4-9bead8b16a70
+langcode: es
+status: true
+dependencies: {  }
+id: menu-normativa-para_en
+label: 'Normativa para la gestión de espacios_en'
+description: ''
+locked: false
