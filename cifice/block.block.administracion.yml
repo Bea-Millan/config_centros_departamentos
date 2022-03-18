@@ -1,0 +1,31 @@
+uuid: baae4b8b-2523-47f2-92e6-a307eb9390a4
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_admin_menu
+    - user
+  theme:
+    - unizar_centro
+_core:
+  default_config_hash: KFn5qooG7aXYQPVBMhVV5nZJE095D_SkzMKazHUzT8s
+id: administracion
+theme: unizar_centro
+region: cabecera_sup
+weight: -9
+provider: null
+plugin: administracion
+settings:
+  id: administracion
+  label: Administración
+  label_display: '0'
+  provider: unizar_admin_menu
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      gestor_basico: gestor_basico

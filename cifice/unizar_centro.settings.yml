@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: huyjNxCoJvdO39JNYZZYNlgvBtUSVsLqkmMmRTjZrj8
+langcode: es
+favicon:
+  use_default: true
+features:
+  favicon: true
+logo:
+  path: 'public://cifice-v2ok-01.png'
+  use_default: false
+instagram: www.instagram.es
+dir_centro: 'Pedro Cerbuna, 12 - 50009 Zaragoza'
+logo_footer_path: ''
+logo_footer_upload: {  }

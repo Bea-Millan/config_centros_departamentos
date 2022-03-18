@@ -1,0 +1,30 @@
+uuid: a20f28a3-676d-4d3e-bf7c-98fb7ac526a0
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.te_interesa
+  module:
+    - block_class
+    - views
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: 'te-interesa ojo'
+_core:
+  default_config_hash: SUxe11DN0xmAyH6vb1TV95L9CUWZ_GseIMnY8WhCnYU
+id: classy_views_block__te_interesa_block_1
+theme: classy
+region: sidebar_first
+weight: null
+provider: null
+plugin: 'views_block:te_interesa-block_1'
+settings:
+  id: 'views_block:te_interesa-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

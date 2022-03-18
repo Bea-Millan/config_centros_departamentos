@@ -1,0 +1,25 @@
+uuid: 04102356-0353-4ed6-a8d3-0732c8ba4a06
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:65fa4de9-b745-4858-a015-135921ca5076'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: ods
+theme: unizar_centro
+region: cabecera_med_izquierda
+weight: 0
+provider: null
+plugin: 'block_content:65fa4de9-b745-4858-a015-135921ca5076'
+settings:
+  id: 'block_content:65fa4de9-b745-4858-a015-135921ca5076'
+  label: ods
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

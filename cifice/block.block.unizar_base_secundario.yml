@@ -1,0 +1,27 @@
+uuid: 9780e70e-f872-46c7-acdb-486a2d9b36e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-secundario
+  module:
+    - system
+  theme:
+    - unizar_base
+_core:
+  default_config_hash: 6kmMoiVso13woKjBU1fWmi3dqU-aG19AXhcVIiflg4Q
+id: unizar_base_secundario
+theme: unizar_base
+region: cabecera_sup
+weight: -14
+provider: null
+plugin: 'system_menu_block:menu-secundario'
+settings:
+  id: 'system_menu_block:menu-secundario'
+  label: Secundario
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

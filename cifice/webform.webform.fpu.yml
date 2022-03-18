@@ -1,0 +1,279 @@
+uuid: e8902b9b-681f-4a2a-95a7-78f0175aaeea
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: fpu
+title: 'Solicitud de Inscripción en un curso del Programa de Formación del Profesorado Novel'
+description: 'Solicitud de Inscripci&oacute;n en un curso del Programa de Formaci&oacute;n del Profesorado Novel'
+category: ''
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': DNI
+    '#input_mask': 99999999A
+    '#required': true
+  mail:
+    '#type': email
+    '#title': 'Correo electrónico'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': Teléfono
+  programadoctorado:
+    '#type': textfield
+    '#title': 'Programa de doctorado'
+  sedeprograma:
+    '#type': textarea
+    '#title': 'Sede administrativa del Programa'
+    '#description': '(si procede y a efectos de env&iacute;o de certificado)'
+  tipobeca:
+    '#type': textfield
+    '#title': 'Si disfruta de una beca, indique el tipo'
+  yearbeca:
+    '#type': textfield
+    '#title': 'Si disfruta de una beca, indique en que año se encuentra'
+    '#description': '(primero, segundo, tercero, cuarto...)'
+  adjunte_una_copia_en_pdf_de_la_notificacion_de_la_concesion_de_l:
+    '#type': webform_document_file
+    '#title': 'Adjunte una copia en pdf de la notificación de la concesión de la beca, en el que se especifique la fecha de su concesión'
+    '#file_extensions': pdf
+    '#sanitize': true
+    '#required': true
+  curso_s_solicitado:
+    '#type': checkboxes
+    '#title': 'Curso/s solicitado/s'
+    '#description': 'Puede solicitar varios cursos en un mismo formulario.'
+    '#options':
+      '2122N01 Criterios para la evaluación de la investigación en la ACPUA': '2122N01 Criterios para la evaluación de la investigación en la ACPUA'
+      '2122N02 El contexto universitario y las funciones del y de la docente': '2122N02 El contexto universitario y las funciones del y de la docente'
+      '2122N03 Soft skills y comunicación efectiva en la docencia universitaria': '2122N03 Soft skills y comunicación efectiva en la docencia universitaria'
+      '2122N04 Uso de gestores bibliográficos: Zotero y Mendeley': '2122N04 Uso de gestores bibliográficos: Zotero y Mendeley'
+      '2122N05 Identidad digital para investigadores': '2122N05 Identidad digital para investigadores'
+      '2122N06 Aspectos básicos de ADD / Moodle': '2122N06 Aspectos básicos de ADD / Moodle'
+      '2122N07 Metodología y evaluación docentes': '2122N07 Metodología y evaluación docentes'
+      '2122N08 La publicación científica (edición Zaragoza)': '2122N08 La publicación científica (edición Zaragoza)'
+      '2122N09 La publicación científica (edición online)': '2122N09 La publicación científica (edición online)'
+    '#required': true
+    '#options__properties': ''
+  protecciondedatos:
+    '#type': webform_message
+    '#message_type': info
+    '#message_message': |-
+      <p style="text-align: justify;">Conforme a lo dispuesto en la legislaci&oacute;n vigente en materia de protecci&oacute;n de datos de car&aacute;cter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasar&aacute;n a ser tratados, como&nbsp;<strong>responsable</strong>, por la&nbsp;<strong>Universidad de Zaragoza&nbsp;</strong>con la finalidad de tramitar la gesti&oacute;n acad&eacute;mica y administrativa de sus estudiantes as&iacute; como su participaci&oacute;n en actividades y servicios universitarios.<br />
+      &nbsp;</p>
+
+      <p style="text-align: justify;">Puede ejercitar sus&nbsp;<strong>derechos de acceso, rectificaci&oacute;n, limitaci&oacute;n, oposici&oacute;n o portabilidad</strong>ante el&nbsp;<strong>Gerente de la Universidad de Zaragoza&nbsp;</strong>(Edificio Paraninfo 1.&ordf; planta, Plaza de Basilio Para&iacute;so n&ordm; 4, 50005- Zaragoza) se&ntilde;alando concretamente la causa de su solicitud y acompa&ntilde;ando copia de su documento acreditativo&nbsp; de&nbsp; identidad.&nbsp; La&nbsp; solicitud&nbsp; podr&aacute;&nbsp; hacerse&nbsp; mediante&nbsp; escrito&nbsp; en&nbsp; formato&nbsp;&nbsp; papel&nbsp;&nbsp; o&nbsp;&nbsp; por&nbsp; medios electr&oacute;nicos. En este enlace puede acceder a los distintos formularios para ejercitar sus derechos:&nbsp;<a href="http://protecciondatos.unizar.es/formularios">http://protecciondatos.unizar.es/formularios</a><br />
+      &nbsp;</p>
+
+      <p style="text-align: justify;">En caso de no haber obtenido satisfacci&oacute;n en el ejercicio de sus derechos, puede dirigirse al Delegado de Protecci&oacute;n de Datos de la Universidad&nbsp;<a href="mailto:dpd@unizar.es">(dpd@unizar.es</a>&nbsp;Tfno. 876 55&nbsp; 36&nbsp; 13)&nbsp; o&nbsp; en&nbsp; reclamaci&oacute;n&nbsp; a&nbsp; la&nbsp; Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos a trav&eacute;s de los formularios que esa entidad tiene habilitados al efecto y que son accesibles desde su&nbsp;<a href="https://sedeagpd.gob.es/">p&aacute;gina web: https://sedeagpd.gob.es</a><br />
+      &nbsp;</p>
+
+      <p style="text-align: justify;"><strong>Puede consultar toda la informaci&oacute;n al respecto en:</strong><br />
+      &nbsp;</p>
+
+      <p style="text-align: justify;"><a href="http://academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf">http://academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf</a></p>
+  acepto_la_politica_de_privacidad_y_los_terminos_y_condiciones_de:
+    '#type': checkbox
+    '#title': 'Acepto la política de privacidad y los términos y condiciones de uso'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: 'Ya ha realizado una solicitud anterior.'
+  previous_submissions_message: 'Ya ha realizado una solicitud anterior.'
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: 'Se ha registrado su solicitud'
+  confirmation_message: "<br />\r\nSe ha registrado su solicitud"
+  confirmation_attributes: {  }
+  confirmation_back: false
+  confirmation_back_label: 'Ver envio'
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles:
+      - gestor_basico
+      - supergestor
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles:
+      - supergestor
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles:
+      - supergestor
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }

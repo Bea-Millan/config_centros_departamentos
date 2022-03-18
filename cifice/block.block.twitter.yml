@@ -1,0 +1,25 @@
+uuid: c7033fd8-4db0-4729-bdd7-3ebba7fcbd88
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e539f810-d3f2-4204-ae67-08c0c91120b4'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: twitter
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:e539f810-d3f2-4204-ae67-08c0c91120b4'
+settings:
+  id: 'block_content:e539f810-d3f2-4204-ae67-08c0c91120b4'
+  label: Twitter
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

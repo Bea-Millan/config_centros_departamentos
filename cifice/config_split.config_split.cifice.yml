@@ -1,36 +1,37 @@
+uuid: 81eb66ab-d277-4aac-b3bd-d0079566e4f0
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: cifice
 label: cifice
 description: ''
 weight: 0
 folder: ../config/sites/cifice
 module:
-  c11n_migrate: 0
-theme: {}
+  asset_injector: 0
+theme:
+  unizar_centro: 0
 blacklist:
-  - config_split.config_split.cifice
-  - system.site
-  - system.theme
-  - core.extension
-  - asset_injector.css.cifice_inyeccion_css
-  - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
+  - 'block.block.*'
+  - 'webform.webform.*'
+  - migrate_drupal.settings
+  - unizar_admin_menu.settings
+  - unizar_modulos_configuracion.settings
+  - language.types
+  - language.negociation
+  - 'language.entity.*'
   - unizar_centro.settings
   - unizar_base.settings
   - unizar_departamento.settings
   - smtp.settings
-  - language.negociation
-  - language.types
+  - shortcut.set.default
+  - core.entity_view_mode.shortcut.token
+  - asset_injector.css.cifice_inyeccion_css
+  - system.theme
+  - system.site
   - matomo.settings
-  - unizar_modulos_configuracion.settings
-  - unizar_admin_menu.settings
-  - migrate_drupal.settings
-  - webform.webform.*
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - config_split.config_split.cifice
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

@@ -1,0 +1,40 @@
+uuid: 03e93300-636d-4b67-bf99-67c54cd81001
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: rrss
+id: bloquerrss_2
+theme: unizar_centro
+region: footer
+weight: 0
+provider: null
+plugin: bloque_rrss
+settings:
+  id: bloque_rrss
+  label: 'Bloque rrss'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  redes_sociales:
+    rss: 0
+    blog: 0
+    instagram: 1
+    facebook: 1
+    twitter: 1
+    youtube: 0
+    linkedin: 0
+    soundcloud: 0
+    blog_show: 0
+    instagram_show: 0
+    facebook_show: 0
+    twitter_show: 1
+    youtube_show: 1
+    linkedin_show: 0
+    soundcloud_show: 0
+visibility: {  }

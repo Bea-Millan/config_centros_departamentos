@@ -1,0 +1,22 @@
+uuid: 39c928f0-45c6-46ed-b285-2383c03f75dd
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - unizar_base
+_core:
+  default_config_hash: uttN3hMYXIPEWsYLhcdoUP8hBE9xSYPHF5qIaHNFAlk
+id: unizar_base_centro_help
+theme: unizar_base
+region: content
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

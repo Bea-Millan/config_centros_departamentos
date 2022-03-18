@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: clvfpuKGJ62edCTzCZSzmp5bc9sEw33z75GKXtGsA6E
+langcode: es
+uuid: dc3fe527-de9a-4486-ba24-b32338e70d61
+name: 'Centro de Innovación, Formación e Investigación en Ciencias de la Educación'
+mail: gestweb@unizar.es
+slogan: 'Centro de la Universidad de Zaragoza'
+page:
+  403: ''
+  404: ''
+  front: /home
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es
