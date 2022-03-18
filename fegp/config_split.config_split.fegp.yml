@@ -1,4 +1,4 @@
-uuid: a0e132a6-ad25-4efd-a790-b2b0ac78dae5
+uuid: ce5e4600-c1f0-4aa9-bc6e-3b1b45483af5
 langcode: es
 status: true
 dependencies: {  }
@@ -9,12 +9,12 @@ weight: 0
 folder: ../config/sites/fegp
 module:
   c11n_migrate: 0
-theme:
-  unizar_centro: 0
+theme: {  }
 blacklist:
   - config_split.config_split.fegp
   - system.site
   - system.theme
+  - core.extension
   - asset_injector.css.fegp_inyeccion_css
   - core.entity_view_mode.shortcut.token
   - shortcut.set.default
@@ -24,6 +24,7 @@ blacklist:
   - smtp.settings
   - language.negociation
   - language.types
+  - matomo.settings
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
@@ -31,7 +32,6 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - matomo.settings
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
