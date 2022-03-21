@@ -521,6 +521,7 @@ display:
           order: DESC
           expose:
             label: ''
+            field_identifier: changed
           exposed: false
           granularity: second
       arguments: {  }

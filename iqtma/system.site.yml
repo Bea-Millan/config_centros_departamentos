@@ -1,3 +1,8 @@
+_core:
+  default_config_hash: 9GyPpnZiJt4j0yJu0wSr7ACGhE2W-0igRO5T8W10Qv8
+langcode: es
+uuid: dc3fe527-de9a-4486-ba24-b32338e70d61
+name: 'Departamento de Ingeniería Química y Tecnología del Medio Ambiente'
 mail: gestweb@unizar.es
 slogan: 'Departamento de la Universidad de Zaragoza'
 page:
@@ -6,9 +11,4 @@ page:
   front: /home
 admin_compact_mode: false
 weight_select_max: 100
-langcode: es
 default_langcode: es
-_core:
-  default_config_hash: 9GyPpnZiJt4j0yJu0wSr7ACGhE2W-0igRO5T8W10Qv8
-uuid: dc3fe527-de9a-4486-ba24-b32338e70d61
-name: 'Departamento de Ingeniería Química y Tecnología del Medio Ambiente'

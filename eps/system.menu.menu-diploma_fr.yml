@@ -1,0 +1,8 @@
+uuid: 06039560-e754-4c58-bcf6-42c84a7002a7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-diploma_fr
+label: diploma_fr
+description: ''
+locked: false

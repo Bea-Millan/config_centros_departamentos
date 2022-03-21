@@ -9,12 +9,12 @@ weight: 0
 folder: ../config/sites/sociales
 module:
   c11n_migrate: 0
-theme: {  }
+theme:
+  unizar_centro: 0
 blacklist:
   - config_split.config_split.sociales
   - system.site
   - system.theme
-  - core.extension
   - asset_injector.css.sociales_inyeccion_css
   - core.entity_view_mode.shortcut.token
   - shortcut.set.default
