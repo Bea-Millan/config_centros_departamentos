@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: KqP72tTiKmE610nXThNSpE4tCv3eu_pDnpLQwj_OLYE
+favicon_path: ''
+favicon_upload: ''
+id_centro: '123'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=123&colectivo=TODOS'
+nombre_centro: 'Departamento de Matemáticas'
+dir_centro: 'Facultad de Ciencias. Edificio B'
+telefono_centro: '976 76 11 11'
+mail_centro: sed2006@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '23'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es

@@ -1,0 +1,22 @@
+uuid: 75011712-7f53-453c-9766-4ce70d7fc21b
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - classy
+_core:
+  default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
+id: classy_centro_help
+theme: classy
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }
