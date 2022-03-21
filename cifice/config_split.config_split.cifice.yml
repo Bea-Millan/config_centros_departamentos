@@ -32,6 +32,7 @@ blacklist:
   - matomo.settings
   - 'system.menu.*'
   - config_split.config_split.cifice
+  - language.negotiation
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

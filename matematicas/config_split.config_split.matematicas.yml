@@ -33,6 +33,7 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - config_split.config_split.departamento.yml
+  - language.negotiation
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

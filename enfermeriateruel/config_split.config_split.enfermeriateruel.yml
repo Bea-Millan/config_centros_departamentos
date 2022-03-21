@@ -32,6 +32,7 @@ blacklist:
   - system.site
   - config_split.config_split.enfermeriateruel
   - matomo.settings
+  - language.negotiation
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

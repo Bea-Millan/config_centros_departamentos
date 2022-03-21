@@ -27,7 +27,7 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - asset_injector.css.ciencias_inyeccion_css
   - unizar_departamento.settings
-  - language.negociation
+  - language.negotiation
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'

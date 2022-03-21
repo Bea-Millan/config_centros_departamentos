@@ -18,7 +18,7 @@ plugin: 'block_content:1d59cd69-52a2-4ca0-8822-d6ce27a6042c'
 settings:
   id: 'block_content:1d59cd69-52a2-4ca0-8822-d6ce27a6042c'
   label: covid19
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

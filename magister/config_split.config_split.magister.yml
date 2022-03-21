@@ -32,6 +32,7 @@ blacklist:
   - asset_injector.css.magister_inyeccion_css
   - 'system.menu.*'
   - matomo.settings
+  - language.negotiation
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

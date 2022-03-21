@@ -32,6 +32,7 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - matomo.settings
+  - language.negotiation
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
