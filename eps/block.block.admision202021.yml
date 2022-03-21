@@ -1,0 +1,30 @@
+uuid: 99b95380-16e8-403e-9e07-0cabcf2a35f8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:18729ebf-caff-4916-bbed-75047a33a683'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: admision202021
+theme: unizar_centro
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:18729ebf-caff-4916-bbed-75047a33a683'
+settings:
+  id: 'block_content:18729ebf-caff-4916-bbed-75047a33a683'
+  label: 'Admisión 2020/21'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

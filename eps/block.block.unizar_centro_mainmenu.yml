@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - language
     - superfish
   theme:
     - unizar_centro
@@ -70,4 +71,11 @@ settings:
   custom_list_class: ''
   custom_item_class: ''
   custom_link_class: ''
-visibility: {  }
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

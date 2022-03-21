@@ -1,0 +1,8 @@
+uuid: 7362ce82-12fd-4eb6-90ee-28cb75556b09
+langcode: es
+status: true
+dependencies: {  }
+id: menu-brown-bag-seminars
+label: 'Brown Bag Seminars'
+description: ''
+locked: false

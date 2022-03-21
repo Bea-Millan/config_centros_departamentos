@@ -1,0 +1,8 @@
+uuid: 838ce10d-6860-42da-9dbd-b2a4937bf732
+langcode: es
+status: true
+dependencies: {  }
+id: menu-dade
+label: DADE
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: 32d2519a-dcdf-44ee-9a69-561177c88d26
+langcode: es
+status: true
+dependencies: {  }
+id: menu-crisis
+label: 'Te interesa'
+description: ''
+locked: false

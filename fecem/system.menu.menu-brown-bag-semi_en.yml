@@ -1,0 +1,8 @@
+uuid: 55477816-e00c-42e8-9260-2f541eb6b025
+langcode: es
+status: true
+dependencies: {  }
+id: menu-brown-bag-semi_en
+label: 'Brown Bag Seminars_en'
+description: ''
+locked: false

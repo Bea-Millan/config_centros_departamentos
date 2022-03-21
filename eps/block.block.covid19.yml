@@ -1,0 +1,30 @@
+uuid: 3af8d1a0-61dc-4a0f-a44d-a2851257bd3e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1d59cd69-52a2-4ca0-8822-d6ce27a6042c'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: covid19
+theme: unizar_centro
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:1d59cd69-52a2-4ca0-8822-d6ce27a6042c'
+settings:
+  id: 'block_content:1d59cd69-52a2-4ca0-8822-d6ce27a6042c'
+  label: covid19
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
