@@ -1,0 +1,269 @@
+uuid: d86caab8-9f07-4766-b3fd-c5328c1fe77f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4944
+title: 'Requisitos matemáticos requeridos para la adquisición de las competencias específicas de la titulación'
+description: null
+category: null
+elements: |-
+  nombre_del_profesor:
+    '#type': textfield
+    '#title': 'Nombre del profesor/a'
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  area_de_conocimiento:
+    '#type': select
+    '#options':
+      ALG: Algebra
+      AM: 'Análisis Matemático'
+      ATC: 'Arquitectura y Tecnología de Computadores'
+      CMIM: 'Ciencia de los Materiales e Ingeniería Metalúrgica'
+      COMA: 'Composición Arquitectónica'
+      CONA: 'Construcciones Arquitectónicas'
+      DA: 'Derecho Administrativo'
+      EIO: 'Estadística e Investigación Operativa'
+      EGA: 'Expresión Gráfica Arquitectónica'
+      EGI: 'Expresión Gráfica de la Ingeniería'
+      FILA: 'Filología Alemana'
+      FILI: 'Filología Inglesa'
+      FA: 'Física Aplicada'
+      FMA: 'Física de la Materia Condensada'
+      FT: 'Física de la Tierra'
+      GT: 'Geometría y Topología'
+      HA: 'Historia del Arte'
+      HC: 'Historia de la Ciencia'
+      IC: 'Ingeniería de la Construcción'
+      IPF: 'Ingeniería de los Procesos de Fabricación'
+      ISA: 'Ingeniería de Sistemas y Automática'
+      IIT: 'Ingeniería e Infraestructura de los Transportes'
+      IE: 'Ingeniería Eléctrica'
+      IM: 'Ingeniería Mecánica'
+      IQ: 'Ingeniería Química'
+      IT: 'Ingenieria Telematica'
+      LSI: 'Lenguajes y Sistemas Informáticos'
+      MMT: 'Máquinas y Motores Térmicos'
+      MA: 'Matemática Aplicada'
+      MF: 'Mecánica de Fluidos'
+      MMCTE: 'Mec. de Medios Contínuos y Teor. de Estructuras'
+      MCEE: 'Métodos Cuantitativos para la Economía y la Empresa'
+      OE: 'Organización de Empresas'
+      PA: 'Proyectos Arquitectónicos'
+      PI: 'Proyectos de Ingeniería'
+      QA: 'Química Analítica'
+      QF: 'Química Física'
+      QI: 'Química Inorgánica'
+      QO: 'Química Orgánica'
+      TE: 'Tecnología Electrónica'
+      TMA: 'Tecnologías del Medio Ambiente'
+      TSC: 'Teoría de la Señal y Comunicaciones'
+      UOT: 'Urbanística y Ordenación del Territorio'
+    '#title': 'Área de Conocimiento'
+    '#required': true
+  codigo_de_la_asignatura:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Código de la Asignatura'
+    '#required': true
+  nombre_asignatura:
+    '#type': textfield
+    '#title': 'Nombre asignatura'
+    '#required': true
+  titulacion:
+    '#type': select
+    '#options':
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+    '#title': Titulación
+    '#required': true
+  curso:
+    '#type': select
+    '#options':
+      1: Primero
+      2: Segundo
+      3: Tercero
+      4: Cuarto
+      5: 'Quinto (Arquitectura)'
+    '#title': Curso
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            filled: false
+  semestre:
+    '#type': select
+    '#options':
+      S1: 'Semestre 1'
+      S2: 'Semestre 2'
+    '#title': Semestre
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            filled: false
+  formacion_matematica_requerida_para_el_adecuado_desarrollo_de_tu_asignatura:
+    '#type': checkboxes
+    '#options':
+      NC: 'Números complejos.'
+      LIMFUN: 'Límites de funciones.'
+      CALDIF: 'Cálculo diferencial.'
+      TAYLOR: 'Polinomio de Taylor.'
+      CALDIFVAR: 'Cálculo diferencial de varias variables.'
+      OPEDIF: 'Operadores diferenciales (gradiente, laplaciano, divergencia, rotacional).'
+      CALINT: 'Cálculo integral de una variable.'
+      INTDOBTR: 'Cálculo integral de varias variables (Integrales dobles y triples).'
+      INTLINE: 'Integrales de línea.'
+      INTESUP: 'Integrales de superficie.'
+      SERNUMPOT: 'Series numéricas y  de potencias.'
+      EDO: 'Ecuaciones y sistemas de ecuaciones diferenciales ordinarias (EDO).'
+      EDP: 'Ecuaciones en derivadas parciales (EDP).'
+      FOURIER: 'Series de Fourier.'
+      TRANSFOU: 'Transformada de Fourier.'
+      LAPÑLACE: 'Transformada de Laplace.'
+      MATR: 'Matrices (propiedades y operaciones).'
+      ECULIN: 'Sistemas de ecuaciones lineales.'
+      ESPVEC: 'Espacios vectoriales (bases y cambios de base).'
+      APLILIN: 'Aplicaciones lineales.'
+      VALVEC: 'Valores y Vectores propios.'
+      FORBICU: 'Formas bilineales y cuadráticas.'
+      ESCALAR: 'Espacios con producto escalar.'
+      ANILLOS: 'Estructuras algebraicas (grupos y anillos).'
+      CURVAS: 'Geometría diferencial de curvas.'
+      INTERP: 'Interpolación (Lagrange, Hermite).'
+      DERNUM: 'Derivación numérica.'
+      INTNUM: 'Integración numérica (fórmulas de cuadratura: punto medio, trapecio, Simpson, etc).'
+      METITERSL: 'Métodos numéricos para la resolución de sistemas lineales (Jacobi, Gauss-Seidel, Relajación, etc)'
+      METNUMRE: 'Métodos numéricos para la resolución de ecuaciones no lineales (bisección, Newton, secante, métodos de punto fijo, etc).'
+      METEDO: 'Métodos numéricos para la resolución de sistemas de EDO (métodos de Euler, Runge-Kutta, etc).'
+      METEDP: 'Métodos numéricos para la resolución de sistemas de EDP (método de elementos finitos, etc).'
+      DISPROB: 'Uso de distribuciones de probabilidad.'
+      ESTAD: 'Análisis estadístico de datos y estimación de modelos.'
+      ONL: 'Optimización no lineal.'
+      OPTIMLIN: 'Optimización lineal con restricciones.'
+      OTROS: 'OTROS CONCEPTOS O HERRAMIENTAS MATEMÁTICAS NO RECOGIDOS EN ESTE LISTADO'
+    '#multiple': true
+    '#title': 'Señala la formación matemática requerida para el adecuado desarrollo de tu asignatura'
+    '#required': true
+  otros_conceptos:
+    '#type': textarea
+    '#title': 'Indica qué otros conceptos o herramientas matemáticas precisa tu asignatura'
+    '#states':
+      visible:
+        - ':input[name="formacion_matematica_requerida_para_el_adecuado_desarrollo_de_tu_asignatura[otros]"]':
+            checked: true
+  existen_carencias:
+    '#type': radios
+    '#options':
+      SI: Sí
+      'NO': 'No'
+    '#title': 'Indica si has detectado carencias en la formación matemática anteriormente señalada en el alumnado de tu asignatura'
+    '#required': true
+  carencias_en__formacion_matematica_detectadas_en_el_alumnado_de_la_asignatura:
+    '#type': textarea
+    '#title': 'Precisa las carencias matemáticas detectadas:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="existen_carencias"]':
+            value: SI
+  dispones_de_ejercicios_sencillos:
+    '#type': radios
+    '#options':
+      SI: Sí
+      'NO': 'No'
+    '#title': '¿Puedes facilitar ejemplos sencillos o simplificados, en el marco de tu asignatura, que requieran la aplicación de alguno de los conceptos matemáticos señalados anteriormente? '
+    '#required': true
+  gracias:
+    '#type': select
+    '#options':
+      .: '-'
+    '#title': '¡Muchas gracias! Nos pondremos en contacto contigo'
+    '#states':
+      visible:
+        - ':input[name="dispones_de_ejercicios_sencillos"]':
+            value: SI
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>La información se ha recibido correctamente.</p><p>&nbsp;</p><p>¡Muchas gracias!</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        La información se ha recibido correctamente. [webform_submission:completed_date:long]
+
+        Datos enviados:
+        [webform_submission:values]
+
+
+        ¡Muchas gracias!
+      excluded_elements:
+        gracias: gracias
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

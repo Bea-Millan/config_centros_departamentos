@@ -1,0 +1,129 @@
+uuid: 6cbc2c89-53dd-497d-9932-6091300d23a4
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3739
+title: 'Delegados/as y Subdelegados/as Grupo 815'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        774550: 'ABAD CUSTARDOY, SILVIA'
+        778111: 'ABBAD GRASA, MARÍA'
+        796560: 'AINAGA CÉSPEDES, JORGE'
+        774730: 'ALBÁCAR PARACUELLOS, PABLO'
+        808281: 'ALCALDE FERNÁNDEZ, GUILLERMO'
+        799444: 'ALDAZ MUÑOZ, RAÚL'
+        799185: 'ALMÁRCEGUI AURÍA, CRISTINA'
+        761467: 'ALONSO PUEYO, CARLOS'
+        776306: 'AZNAR DOMINGO, MIGUEL'
+        779833: 'AZNAR GIMENO, JORGE'
+        799752: 'BARATECH SANCHO, JUAN'
+        798335: 'BARRIO FERNÁNDEZ-URRUTIA, DIEGO'
+        761451: 'BOIX MORT, ÁLVARO'
+        797162: 'BOUIZY GHAZZAL, YASSIN'
+        774791: 'CALONGE ABADÍA, MIGUEL'
+        795328: 'CALVO FORCANO, CRISTINA'
+        798882: 'CAÑAS BGHAIBAGH, DAVID'
+        779804: 'CASANOVA CALVO, GONZALO'
+        800283: 'CASES SOLÁNS, PABLO'
+        804320: 'CASTRO DURANGO, JULIA'
+        798532: 'CERCÓS MUÑOZ, JAVIER'
+        798814: 'COLL RELANCIO, GUILLERMO'
+        775684: 'CUCHI SANZ, FRANCISCO CARLOS'
+        774639: 'DÍAZ TEJERO, JORGE'
+        805432: 'DÍEZ BARTOLOMÉ, MARCOS'
+        784351: 'DOMINGO GIMÉNEZ, MARTA'
+        797249: 'EDO MORENO, IGNACIO'
+        800247: 'ENA GARCÍA, LUCÍA'
+        796128: 'ESTALLO ARNAL, MARTA'
+        779024: 'ESTRADA PLAZA, ÁLVARO'
+        801219: 'GARCIA AGUSTIN, NICOLAS'
+        798518: 'GARCÍA BOILLOS, PABLO'
+        758029: 'GOMARA RUBIO, JORGE JOAQUÍN'
+        800729: 'HERNÁNDEZ URBIETA, PABLO'
+        799624: 'LÁZARO CUBILLO, DANIEL'
+        806548: 'LITAGO BIENZOBAS, ROSARIO'
+        801699: 'MELIVEO ROYO, MARÍA'
+        795251: 'MOHARRIR HAMAM, SOUFIANE'
+        798785: 'OCHOA DE ASPURU MAESTRE, IGNACIO'
+        796162: 'ORERA ECHEVERRÍA, EDUARDO'
+        797596: 'ORTIZ MUÑIO, JOSUÉ'
+        799962: 'OTSMANI SEGHIR, ABDEL DJALIL'
+        778329: 'PALOMERA FERNÁNDEZ, JORGE'
+        809413: 'PARDOS LUESMA, MARTA'
+        778121: 'PEDRÓS MANZANARES, DANIEL'
+        801580: 'PINO JIMÉNEZ, LORENA'
+        791471: 'PLANELLS MARÍ, ÁNGEL'
+        796446: 'PUYUELO ROY, JESÚS'
+        801529: 'RAMAS BLASCO, MARTA'
+        798823: 'RAMOS GONZÁLEZ, PABLO'
+        797737: 'RAMOS HERRERA, MARTA'
+        756110: 'RAMOS LASALA, FERNANDO'
+        801519: 'REDONDO GUERRERO, ANGEL'
+        796174: 'RIVERA CABALLERO, PABLO'
+        801978: 'RODRIGO CARBÓ, FERNANDO'
+        755908: 'RODRIGO YAGO, CARMEN DEL PILAR'
+        775616: 'RODRÍGUEZ BUENO, MANUEL'
+        778314: 'SANJUAN MARÍN, RAÚL'
+        801704: 'SANTAMARÍA ALDEA, GONZALO'
+        805265: 'SEBASTIÁN MILLÁN, TERESA'
+        798894: 'SIERRA VIZCAÍNO, LORIÉN'
+        795886: 'SILES GOLDARACENA, ALEJANDRO'
+        800688: 'TAULÉS ABENIA, ISRAEL'
+        778616: 'TENIAS MORON, CARLOS'
+        797370: 'TORIBIO CASTRO, RENATO FRANCO'
+        775560: 'VALLEJO MATEO, ALEJANDRO'
+        776097: 'VÁZQUEZ GARCÍA, MARCOS'
+        775372: 'VELA GOMEZ, FRANCISCO JAVIER'
+        784356: 'VIGIL CASTRO, FRANCISCO'
+        779138: 'VILLUENDAS PUY, ÁLVARO'
+        796845: 'ZARZA TEJERO, PABLO'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

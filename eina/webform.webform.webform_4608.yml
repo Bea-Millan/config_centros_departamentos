@@ -1,0 +1,87 @@
+uuid: 22426b16-8332-47b7-be50-c9c4e499f1f4
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4608
+title: 'Mi acción por el clima'
+description: null
+category: null
+elements: |-
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'La participación tendrá un obsequio que se entregará en la carpa de la Oficina Verde. Indícanos tu email para poder identificarte el jueves 11.'
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+  accion___propuesta:
+    '#type': textarea
+    '#title': 'Acción / Propuesta'
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': radios
+    '#options':
+      Est: Estudiante
+      PDI: PDI
+      PAS: PAS
+    '#title': 'Colectivo EINA al que perteneces'
+    '#required': true
+  titulacion:
+    '#type': radios
+    '#options':
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+      MUA: 'Máster Universitario en Arquitectura'
+      MUEREE: 'Máster Universitario en Energías Renovables y Eficiencia Energética'
+      MUIB: 'Máster Universitario en Ingeniería Biomédica'
+      MUIT: 'Máster Universitario en Ingeniería de Telecomunicación'
+      MUIDP: 'Máster Universitario en Ingeniería de Diseño de Producto'
+      MUIE: 'Máster Universitario en Ingeniería Electrónica'
+      MUIInd: 'Máster Universitario en Ingeniería Industrial'
+      MUIInf: 'Máster Universitario en Ingeniería Informática'
+      MUIM: 'Máster Universitario en Ingeniería Mecánica'
+      MUIQ: 'Máster Universitario en Ingeniería Química'
+      MURGVC: 'Máster Universitario en Robótica, Gráficos y Visión por Computador'
+    '#title': Titulación
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="colectivo_eina_al_que_perteneces"]':
+            value: Est
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>La propuesta se ha recogido correctamente.</p><p>Gracias por participar.</p><p>Recuerda que el jueves 11 puedes acercarte a la carpa de la Oficina Verde para recoger un obsequio (hasta agotar existencias)</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

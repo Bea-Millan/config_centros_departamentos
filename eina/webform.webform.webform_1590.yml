@@ -1,0 +1,51 @@
+uuid: ff96800c-9be2-445e-91a1-bd1bc216ff9a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 1
+template: false
+archive: false
+id: webform_1590
+title: 'Nuevo formulario'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title_display': invisible
+    '#title': Nombre
+  resguardo:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png pdf'
+    '#title': Resguardo
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

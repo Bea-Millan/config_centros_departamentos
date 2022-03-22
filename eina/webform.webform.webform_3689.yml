@@ -1,0 +1,138 @@
+uuid: 6471a3fb-2a40-4bb0-ad42-deb4c398d269
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3689
+title: 'Delegados/as y Subdelegados/as Grupo 011'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        758135: 'ABAD TORRALBA, DANIEL'
+        800133: 'ACERETE PALACIOS, BEATRIZ'
+        825113: 'AGUADO DIEZ, OLIVIA'
+        808706: 'ALDEA MARCO, MATEO'
+        818866: 'ALMOYNA PIQUER, ADRIÁN'
+        831604: 'AMÉZQUETA ILINCHETA, SOFÍA'
+        825062: 'AMORENA VILLAVA, LEIRE'
+        683360: 'ARAGÜÉS MIANA, HÉCTOR'
+        798556: 'ARENAS MARTÍN, MARÍA'
+        815517: 'ARRUGA GARCÍA, MARCOS'
+        824095: 'ARTAL PARDINILLA, GERARDO'
+        797221: 'AZNAR BERNAL, PATRICIA'
+        819399: 'BAYA MADRID, DANIEL'
+        811493: 'BENEDET MORCATE, PAULA XIAOBI'
+        760487: 'BENITO CRUZ, JORGE'
+        799713: 'BERNAD ARASANZ, SOFÍA'
+        798407: 'BERNAD VIVES, ELVIRA'
+        798981: 'BERNAL GONZÁLEZ, MARÍA ISABEL'
+        828810: 'BROCAL RODRIGO, MANUEL'
+        820041: 'CAJAL PIEDRAFITA, INÉS'
+        817796: 'CALVO ASENSIO, VÍCTOR'
+        798558: 'CAMAÑES GÓMEZ, IRENE'
+        817733: 'CAMBRA RAMOS, GERARDO'
+        795587: 'CAMPOS GAVÍN, BLADIMIRO'
+        815986: 'CARTIEL EMBID, SILVIA'
+        759811: 'CASTEL MORÉ, SOFÍA'
+        800621: 'CEBRIÁN ALDANA, ELENA'
+        818440: 'CHUECA FAURO, MARTA'
+        820808: 'CIUDAD TOBAJAS, CLARA'
+        819607: 'CIVERA ROYO, EVA'
+        795883: 'CODURAS CUARTERO, DANIEL'
+        818206: 'COLÁS ESCRICHE, SARA'
+        797293: 'CORROCHANO ALBAREDA, PABLO LUIS'
+        582001: 'CORTÉS SÁNCHEZ, SANDRA'
+        800814: 'CUENCA MICHANS, ANA'
+        819314: 'CUESTA COLON, MARIA TERESA'
+        764618: 'ECHEITA JALÓN, AINHOA'
+        807707: 'ESCUDERO PEREZ, IKER'
+        799473: 'ESPALLARGAS GOMARIZ, IRIS'
+        697842: 'ESPAÑOL GÜIL, ANA MARIA'
+        817648: 'ESPITIA CRUELLAS, MARINA'
+        816321: 'EZQUERRA MACIPE, DAVID'
+        799541: 'FALCÓN GARCÍA, DANIEL'
+        805954: 'FERNÁNDEZ DE ARROYABE SANTAMARÍA, IRATI'
+        802770: 'FERNANDEZ JEREZ, NAGORE'
+        815763: 'FERNÁNDEZ LÓPEZ DEL MORAL, MANUEL'
+        818014: 'FERNÁNDEZ MIRÓ, DANIEL'
+        799779: 'FIDALGO VALLÉS, DANIEL'
+        805120: 'FUENTELSAZ SOBRINO, SARA'
+        784037: 'FUNCIA JUANGO, FERMÍN'
+        820926: 'GAJATE CABELLO, LAURA'
+        777159: 'GARBAJOSA YUS, ALEJANDRO'
+        821760: 'GARCÉS LABORDA, PATRICIA'
+        820524: 'GARCÉS MORENO, MARCOS'
+        755222: 'GARCÍA CÓLERA, GUILLERMO'
+        680068: 'GARCÍA MARTÍN, ANDREA MARÍA'
+        798716: 'GARCÍA VIAMONTE, MANUEL'
+        680299: 'GARRIDO LAFUENTE, CHRISTIAN'
+        797343: 'GAYARRE CATALAN, ANA'
+        776457: 'GIL DEL RÍO, PEDRO'
+        740785: 'GIMENO LISBONA, BELÉN'
+        829399: 'GOIKOETXEA GARCIA, MARIA YAN'
+        832388: 'GOYA PIÑEIRO, URKO'
+        801471: 'GRACIA COSTA, RAQUEL'
+        817674: 'GRAN LATORRE, ENRIQUE'
+        827316: 'GRIJINCU LAVADO, EMANUEL'
+        815875: 'HORNO MORENO, JULIA'
+        801678: 'IBÁÑEZ NÚÑEZ, CLARA'
+        764343: 'IMAZ MARTINEZ DE ALBENIZ, IRATXE'
+        825074: 'IRURZUN ARMENDÁRIZ, SAIOA'
+        816470: 'JARAUTA ABADÍA, SANDRA'
+        757136: 'JIMÉNEZ ROBRES, ANA COVADONGA'
+        821737: 'LAFUENTE GARCÍA, ALEXIA'
+        779905: 'LALANA ROSSI, IVÁN'
+        825011: 'LARUNBE PÉREZ, OSKIA'
+        805187: 'LETONA BARRIOS, CRISTINA'
+        715637: 'LOPEZ ANDRES, RAÚL'
+        745407: 'LÓPEZ GARCÍA, ANDRÉS'
+        798951: 'LÓPEZ TORRES, BELÉN'
+        819959: 'RUBIO VÁZQUEZ, ALIA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

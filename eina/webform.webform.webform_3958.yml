@@ -1,0 +1,158 @@
+uuid: 858863a8-7990-4d38-a2d3-6820376d157f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3958
+title: 'Preguntas Másteres'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  pregunta_sobre:
+    '#type': select
+    '#options':
+      'Pregunta general': ''
+      General: 'Pregunta de carácter general sobre Másteres de la EINA'
+      'Preguntas específicas sobre un determinado Máster': ''
+      MUA: 'Máster Universitario en Arquitectura'
+      MUEREE: 'Máster Universitario en Energías Renovables y Eficiencia Energética'
+      MUIB: 'Máster Universitario en Ingeniería Biomédica'
+      MUIT: 'Máster Universitario en Ingeniería de Telecomunicación'
+      MUIDP: 'Máster Universitario en Ingeniería de Diseño de Producto'
+      MUIE: 'Máster Universitario en Ingeniería Electrónica'
+      MUIInd: 'Máster Universitario en Ingeniería Industrial'
+      MUIInf: 'Máster Universitario en Ingeniería Informática'
+      MUIM: 'Máster Universitario en Ingeniería Mecánica'
+      MUIQ: 'Máster Universitario en Ingeniería Química'
+      MURGVC: 'Máster Universitario en Robótica, Gráficos y Visión por Computador'
+      Conjuntos: 'Programas Conjuntos de Máster'
+    '#title': 'Pregunta sobre:'
+    '#required': true
+  consulta:
+    '#type': textarea
+    '#title': Consulta
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="pregunta_sobre"]':
+            filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>La pregunta ha quedado registrada correctamente.</p><p>Será respondida durante la Jornada de Másteres de las EINA, el viernes 4 de marzo de 2022.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Ha quedado registrada tu pregunta.
+
+        Será respondida en la Jornada de Másteres (https://www.youtube.com/watch?v=g_QIyT2Ye8I) el viernes 4 de marzo de 2022.
+
+        Información enviada:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:pregunta_sobre:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Se ha recibido una pregunta para la Jornada de Másteres del vieres, 4 de marzo de 2022
+        Los datos de la pregunta son:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

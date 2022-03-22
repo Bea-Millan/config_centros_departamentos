@@ -1,0 +1,142 @@
+uuid: 944ccb6b-b123-4cbb-b886-905bb3a66d11
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4995
+title: 'Votaciones Comisiones JdeE 23/03/22'
+description: null
+category: null
+elements: |-
+  nip:
+    '#type': textfield
+    '#title': NIP
+    '#description': 'Introducir el NIP'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Introducir correo electrónico de @unizar'
+    '#required': true
+  comision_academica_grado_en_estudios_en_arquitectura:
+    '#type': checkboxes
+    '#options':
+      Aranda: "Aranda\_Sanz,\_Jorge (Grado en Ingeniería Informática)"
+      Bermejo: "Bermejo\_Freire,\_Ignacio (Grado en Ingeniería Electrónica y Automática)"
+      Gallego: "Gallego\_Sánchez,\_Nerea (Grado en Ingeniería Informática)"
+      Moreno: "Moreno\_Mancebón,\_Saúl\_(Grado en Ingeniería Química)"
+      Roncal: "Roncal\_Pérez,\_Jaime (Grado en Ingeniería Informática)"
+      VB: 'Voto en blanco       (Si desea votar en blanco, asegúrese de no seleccionar a ningún candidato)'
+    '#multiple': true
+    '#title': 'Comisión de Garantía de la Calidad de los Grados'
+    '#description': 'Votación de 2 REPRESENTANTES'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: 'https://eina.unizar.es/elecciones/confirmacion-para-validar'
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que su voto se registre debe hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:modified_date]
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirme el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrá volver a cumplimentar el formulario
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Su voto ha sido registrado correctamente.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

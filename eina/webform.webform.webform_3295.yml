@@ -1,0 +1,259 @@
+uuid: 33c938d8-be3b-4eee-ab3e-7f650b5f9fdb
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3295
+title: 'Solicitud de acceso a edificios de la EINA'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nombre_y_apellidos_del_pdi_responsable:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Nombre y Apellidos del PDI responsable'
+      '#description': 'Datos de la persona responsable de la solicitud de acceso'
+      '#required': true
+    nip_responsable:
+      '#title_display': inline
+      '#title': 'N.I.P. responsable'
+      '#required': true
+    cargo_del_responsable:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Cargo del responsable'
+      '#required': true
+  datos_persona_autorizada:
+    '#type': webform_wizard_page
+    '#title': 'Persona autorizada'
+    nombre:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    apellidos:
+      '#type': textfield
+      '#title': Apellidos
+      '#required': true
+    dni:
+      '#type': textfield
+      '#title': D.N.I.
+      '#required': true
+    nip:
+      '#title': N.I.P.
+    colectivo:
+      '#type': radios
+      '#options':
+        PDI: PDI
+        PAS: PAS
+        Becario: Becario
+        Otros: Otros
+      '#title': Colectivo
+      '#required': true
+    email:
+      '#type': email
+      '#size': 20
+      '#title': Email
+      '#required': true
+    telefono_de_contacto:
+      '#type': textarea
+      '#title': 'Teléfono de contacto'
+  fechas_y_horarios:
+    '#type': webform_wizard_page
+    '#title': 'Fechas y horarios'
+    horarios_y_dias_de_acceso:
+      '#type': radios
+      '#options':
+        Laboral: 'Laboral: Lunes a viernes de 7:20 a 22:00h.  (No lectivos hasta 14:30h.)'
+        LaboralAmpliado: 'Laboral ampliado: Lunes a viernes de 7:20 a 23:00h.  (Sábados y No lectivos hasta 14:30h.)'
+        LabFest: 'Laboral y festivos: Todos los días de 7:00 a 22:00h.'
+        Estudiantes: 'Estudiantes: Todos los días de 8:00 a 24:00h.'
+      '#title': 'Horarios y días de acceso'
+      '#required': true
+    fecha_de_inicio_de_acceso:
+      '#type': date
+      '#title': 'Fecha de inicio de acceso'
+      '#required': true
+    fecha_fin_de_acceso:
+      '#type': date
+      '#title': 'Fecha fin de acceso'
+      '#required': true
+  edificios:
+    '#type': webform_wizard_page
+    '#title': Edificios
+    puertas_edificio_ada_byron:
+      '#type': checkboxes
+      '#options':
+        PrincipalAB: 'Puerta Exterior Principal AB'
+        '00.300': 'Puerta Exterior Oeste (Autobuses) (00.300)'
+        '00.120': 'Puerta Exterior Este (00.120)'
+        '00.490': 'P0 Asociados (00.490)'
+        '00.180': 'P0 Lab01 (00.180)'
+        '00.230': 'P0 Lab03 (00.230)'
+        '00.280': 'P0 Lab06 (00.280)'
+        Robotica: 'P1 L1.07 (01.270) Robótica'
+        Becarios: 'P1 L1.1 (Sala Becarios)'
+        Salaprofesores: 'P1 Sala de Profesores'
+        Juntas: 'P1 Sala de Juntas'
+        Secretaria: 'P1 Secretaría'
+        Seminario: 'P1 Seminario'
+        '02.240': 'P2 L2.08 (02.240) Arquitect. Computad.'
+      '#multiple': true
+      '#title': 'Puertas Edificio Ada Byron'
+    puertas_edificio_torres_quevedo:
+      '#type': checkboxes
+      '#options':
+        PrincipalTQ: 'Puerta Exterior Principal TQ'
+        CD: 'Puerta Exterior Este (CD)'
+        C2: C2
+        C3: C3
+        C4: C4
+        C5: C5
+        MF3: MF3
+        C5_0_26: C5-0-26
+      '#multiple': true
+      '#title': 'Puertas Edificio Torres Quevedo'
+    puertas_edificio_betancourt:
+      '#type': checkboxes
+      '#options':
+        PrincipalBET: 'Puerta Exterior Principal BET'
+        Repro: 'Puerta Exterior Repro'
+        770: 'Lab. 770'
+        790: 'Lab. 790 Transportes'
+        AOE: 'Área de Organización de Empresas'
+      '#multiple': true
+      '#title': 'Puertas Edificio Betancourt'
+    email_destinatarios_comunicacion_solicitud_acceso:
+      '#type': hidden
+      '#title': 'Email destinatarios comunicacion solicitud acceso'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email_destinatarios_comunicacion_solicitud_acceso:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Notificación de solicitud de acceso a su Edificio'
+      body: |-
+        Notificación:
+
+        Se ha recibido la siguiente solicitud de acceso a las instalaciones de EINA.
+
+        Datos de la persona que solicita el acceso y puertas afectadas:
+
+        [webform_submission:values]
+
+        Ponemos estos datos en su conocimiento ya que afecta a su Departamento.
+        En el caso de que no proceda dicho acceso, por favor, comuníquelo al email: admeina@unizar.es para tomar las medidas oportunas.
+
+        Un cordial saludo,
+
+        Adminstración EINA
+      excluded_elements:
+        nip_responsable: nip_responsable
+        dni: dni
+        nip: nip
+        colectivo: colectivo
+        email: email
+        telefono_de_contacto: telefono_de_contacto
+        edificios: edificios
+        email_destinatarios_comunicacion_solicitud_acceso: email_destinatarios_comunicacion_solicitud_acceso
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: mpsan@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_y_apellidos_del_pdi_responsable:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario de Solicitud de acceso a edificios de la EINA'
+      body: |+
+        Se ha recibido una nueva solicitud de acceso a los edificios de EINA con fecha de solicitud: [webform_submission:date:long]
+
+        Datos de la solicitud:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

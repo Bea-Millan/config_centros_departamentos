@@ -1,0 +1,269 @@
+uuid: 0985f56c-fb41-447a-b694-c105e6bf1983
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_2404
+title: 'Inscripción actividad espacioPRO'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': Email
+    '#required': true
+  como_te_inscribes:
+    '#type': radios
+    '#options':
+      estudiante_uz: 'Estudiante de la Universidad de Zaragoza'
+      profesional_uz: 'Profesional de la Universidad de Zaragoza'
+      individual_externo_uz: 'Individualmente, externo a la Universidad de Zaragoza'
+      representante_empresa: 'En representación de una empresa'
+    '#title': '¿Como te inscribes?'
+    '#required': true
+  nip:
+    '#min': '111111'
+    '#max': '999999'
+    '#title': NIP
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  departamento:
+    '#type': textfield
+    '#title': Departamento
+    '#description': 'Por favor, indica tu departamento'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  estudios:
+    '#type': textfield
+    '#title': Estudios
+    '#description': 'Por favor, indica los estudios que estás cursando'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+  area:
+    '#type': textfield
+    '#title': Área
+    '#description': 'Por favor, indica tu área'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  curso:
+    '#type': select
+    '#options':
+      Grado1: 'Grado. 1er curso'
+      Grado2: 'Grado. 2º curso'
+      Grado3: 'Grado. 3er curso'
+      Grado4: 'Grado. 4º curso'
+      Grado5: 'Grado. 5º curso'
+      Master1: 'Máster. 1er curso'
+      Master2: 'Máster. 2º curso'
+      Doctorado: Doctorado
+      'Estudios propios': 'Estudios propios'
+      Otros: Otros
+    '#title': Curso
+    '#description': 'Por favor, indica el curso principal en el que estás matriculado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+  temas_de_interes:
+    '#type': checkboxes
+    '#options':
+      emprendimiento: Emprendimiento
+      bigdataciberseguridad: 'Big Data / Ciberseguridad'
+      energiasrenov: 'Energías Renovables'
+      tics: 'TICs /IT'
+      industria4: 'Industria 4.0'
+      mujering: 'Mujer e Ingeniería'
+      otras: Otras
+    '#multiple': true
+    '#title': 'Temas de interés'
+    '#description': 'Si eres tan amable de indicar tus temas de interés te enviaremos información de próximas actividades en esos ámbitos... muchas gracias.'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  telefono_de_contacto:
+    '#type': textfield
+    '#title': 'Teléfono de contacto'
+    '#description': 'Opcionalmente, y siempre con tu consentimiento expreso, si indicas tu teléfono móvil podremos enviarte información vía WhatsApp'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  twitter:
+    '#type': textfield
+    '#title': Twitter
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  linkedin:
+    '#type': textfield
+    '#title': LinkedIn
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  facebook:
+    '#type': textfield
+    '#title': Facebook
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  instagram:
+    '#type': textfield
+    '#title': Instagram
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: individual_externo_uz
+        - ':input[name="como_te_inscribes"]':
+            value: estudiante_uz
+        - ':input[name="como_te_inscribes"]':
+            value: profesional_uz
+  cif:
+    '#type': textfield
+    '#title': CIF
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  nombre_de_la_empresa:
+    '#type': textfield
+    '#title': 'Nombre de la empresa'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  cargo_en_la_empresa:
+    '#type': textfield
+    '#title': 'Cargo en la empresa'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  direccion_postal:
+    '#type': textfield
+    '#title': 'Dirección postal'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  codigo_postal:
+    '#type': textfield
+    '#title': 'Código postal'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  localidad:
+    '#type': textfield
+    '#title': Localidad
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  provincia:
+    '#type': textfield
+    '#title': Provincia
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  pais:
+    '#type': textfield
+    '#title': País
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  web_de_la_empresa:
+    '#type': textfield
+    '#title': 'Web de la empresa'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+  twitter_de_la_empresa:
+    '#type': textfield
+    '#title': 'Twitter de la empresa'
+    '#states':
+      visible:
+        - ':input[name="como_te_inscribes"]':
+            value: representante_empresa
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu respuesta se ha recibido correctamente.</p><p>Muchas gracias</p><p>&nbsp;</p><p class="msg-advertencia"><span style="color: #212121; font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif; font-size: 14px; white-space: pre-wrap;">En cumplimiento de la LO 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, le informamos que los datos personales que nos suministre a través de este formulario serán tratados de forma confidencial y pasarán a formar parte del fichero de eventos titularidad de la Universidad de Zaragoza registrado en la AEPD. Utilizaremos sus datos para atender peticiones de información y gestionar los servicios que ofrecemos: además, en su caso, podremos enviarle futuras comunicaciones que pudieran ser de su interés. Puede ejercitar los derechos de acceso, rectificación y cancelación de sus datos contactando con nosotros mediante correo electrónico... gracias</span></p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,142 @@
+uuid: 39da50f1-9d81-44e0-aec2-19bcc3dc9449
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_2639
+title: 'Inscripción actos celebración San José'
+description: null
+category: null
+elements: |-
+  apellidos:
+    '#type': textfield
+    '#title_display': inline
+    '#title': Apellidos
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': Nombre
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title_display': inline
+    '#title': 'Correo electrónico'
+    '#required': true
+  asistencia_visita_cultural_monasterio_canonesas:
+    '#type': radios
+    '#options':
+      Sí: Sí
+      'No': 'No'
+    '#title_display': inline
+    '#title': 'Asistencia visita cultural Monasterio de las Canonesas del Santo Sepulcro'
+    '#required': true
+  preferencia_horario_visita_monasterio_canonesas:
+    '#type': select
+    '#options':
+      1130: '11:30 a 12:45h.'
+      1200: '12:00 a 13:15h.'
+      Indistinta: Indistinta
+    '#title': 'Preferencia horario visita Monasterio de las Canonesas del Santo Sepulcro'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="asistencia_visita_cultural_monasterio_canonesas"]':
+            value: Sí
+  asistencia_a_la_comida:
+    '#type': radios
+    '#options':
+      Si: Sí
+      'No': 'No'
+    '#title_display': inline
+    '#title': 'Asistencia a la comida'
+    '#required': true
+  forma_en_la_que_realizara_el_pago:
+    '#type': radios
+    '#options':
+      Tarjeta: 'Pago mediante tarjeta de crédito (En secretaría de EINA)'
+      Transferencia: 'Transferencia bancaria'
+    '#title': 'Forma en la que realizará el pago'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="asistencia_a_la_comida"]':
+            value: Si
+  observaciones___intolerancias_alimentarias:
+    '#type': textarea
+    '#title': 'Observaciones / Intolerancias alimentarias'
+    '#states':
+      visible:
+        - ':input[name="asistencia_a_la_comida"]':
+            value: Si
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su formulario de inscripción a los actos de celebración de San José, el día 20 de marzo de 2020 se ha recibido correctamente.</p><p>En el caso de que tenga previsto asistir a la comida, no olvide realizar el pago en la secretaria de EINA o remitir el justificante de la transferencia a direina@unizar.es</p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: direina@unizar.es
+      from_options: {  }
+      from_name: 'Escuela de Ingeniería y Arquitectura'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario de Inscripción actos celebración San José enviado correctamente'
+      body: |+
+        Fecha de envío: [webform_submission:date:long]
+
+        Los valores enviados son:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

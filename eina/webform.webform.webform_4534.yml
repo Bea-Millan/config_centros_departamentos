@@ -1,0 +1,198 @@
+uuid: 8c37636b-07c5-471f-953a-868999826823
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4534
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 912'
+description: null
+category: null
+elements: |-
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)'
+    '#description': 'Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      821396: 'ABAD DEL MOLINO, JAVIER'
+      774711: 'AGUILAR CALVETE, CLARA'
+      845732: 'ALBASANZ PINA, ALBERTO NICOLÁS'
+      840771: 'ÁLVAREZ ROYO, ISMAEL'
+      840986: 'AMBROJ MOYA, DANIEL'
+      815999: 'ANDRÉS PÉREZ, DANIEL'
+      819476: 'ARILLA ALAS, HÉCTOR'
+      840654: 'ARRIETA CASAUS, SOFÍA'
+      839668: 'BACILA  , SERGIU'
+      796065: 'BARBERÁN CUBERO, LUCÍA'
+      842553: 'BASOLS BERGES, JORGE'
+      842182: 'BELLO SAINZ, MARIO'
+      843029: 'BERNUÉS YÁÑEZ-BARNUEVO, CRISTINA'
+      795225: 'BERNUÉS YÁÑEZ-BARNUEVO, JORGE'
+      818683: 'BIELSA LLOP, MIGUEL'
+      820590: 'BOUCHET AGUDO, DIEGO'
+      849580: 'BRETÓN MATEO, ADRIANA'
+      839394: 'CALDERÓN JULIÁN, ALEJANDRO'
+      817306: 'CALLEJAS SANZ, MARÍA'
+      841420: 'CALVO LOSTAL, MIGUEL'
+      755861: 'CARRASCOSO AGUDO, JORGE'
+      845782: 'CASTRO BEGUER, ALBERTO'
+      839642: 'CATALA REY, VIJAY'
+      840753: 'CIORDIA MARTÍNEZ, CARLOS'
+      795807: 'CLAVER USED, ISABEL'
+      840754: 'COLÁS MARTÍN, IGNACIO'
+      815165: 'COLÁS SÁNCHEZ, DANIEL'
+      817272: 'CONTRERAS SERRANO, ÁLVARO'
+      815186: 'CORTÉS BURGUETE, PATRICIA'
+      839851: 'COS AZÓN, MARIA CRISTINA DEL'
+      828199: 'DELGADO AYLAGAS, NATALIA'
+      829633: 'DOMINGO GRACIA, IRENE'
+      840987: 'DOMÍNGUEZ LÁZARO, SERGIO'
+      817170: 'ESTRADA PLAZA, MARIO'
+      841923: 'FERRARA ROMÁN, YAGO'
+      845775: 'FRANCÉS GASTÓN, ARTURO'
+      838822: 'GALINDO GABÁS, PABLO'
+      821256: 'GALLARDO PÉREZ, SOFÍA PILAR'
+      843661: 'GARCÍA CUADRADO, ALMUDENA'
+      846499: 'GARCÍA GRACIA, CARLOS'
+      818193: 'GARCÍA HERNÁNDEZ, CARLOS'
+      795750: 'GASCÓN MILIÁN, GABRIEL'
+      815577: 'GIL PELEGRÍN, PEDRO'
+      818356: 'GIMENO FERRER, DIEGO'
+      840277: 'GÓMEZ BLASCO, DANIEL'
+      841441: 'GÓMEZ ESCRICHE, AINHOA'
+      818219: 'GÓMEZ LÓPEZ, ALEX'
+      797578: 'GONZÁLEZ FRANCISCO, FULVIA'
+      840279: 'GONZÁLEZ ROMEA, EDGAR'
+      846118: 'GRACIA ARBUÉS, PABLO'
+      844324: 'GUALLAR ALIAGA, BRUNO'
+      844156: 'GURREA LANUZA, CARLOS'
+      798677: 'HERNÁNDEZ SALAZAR, CARLOS MARTÍN'
+      844312: 'HOMBRADOS ROYO, ADRIÁN'
+      846125: 'HUESO GISBERT, DARÍO'
+      841675: 'INGALATURRE SÁNCHEZ, LUCIA'
+      820539: 'IRANZO GREGORIO-ROCASOLANO, LUCÍA'
+      840759: 'JÁCOME LÓPEZ, HÉCTOR DAVID'
+      819678: 'JARQUE DÍEZ, MARTA'
+      845031: 'LÓPEZ GRACIA, MARCOS'
+      841162: 'MARTÍNEZ MARTÍN, MIGUEL'
+      845355: 'MORENO VIEITEZ, JORGE MIGUEL'
+      840954: 'MUNILLA ZEFERINO, PAULA'
+      798491: 'SANTACRUZ LACAMBRA, JULIA'
+      801650: 'SILVA MELÉNDEZ, JENNIFER RACHEL'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

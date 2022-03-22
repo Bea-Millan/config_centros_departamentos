@@ -1,0 +1,86 @@
+uuid: 5342e966-1bc4-4939-833c-1266abf4b225
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3724
+title: 'Delegados/as y Subdelegados/as Grupo 525'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        717034: 'AGUIRÁN ESQUEJ, JUAN CLEMENTE'
+        756887: 'AVENTIN AGUEDA, ELIAS'
+        758829: 'BARRIENDOS PERDIGUER, ANTONIO'
+        761197: 'BRUN ROLDÁN, DIEGO'
+        779166: 'CUESTA BUZÓN, RUBÉN'
+        760846: 'ESTER ESPAÑOL, MIGUEL JAVIER'
+        759450: 'FALO SORO, ÓSCAR'
+        757890: 'HERNÁNDEZ LORENTE, ANDRÉS PASCUAL'
+        717871: 'IBOR CASTEL, SERGIO'
+        747892: 'JIMENEZ GARCIA, CARLOS'
+        740710: 'LEZCANO REMACHA, ÁNGEL'
+        768998: 'MARTÍNEZ DE MARCOS, GONZALO'
+        755121: 'MIRANDA MONTORI, DANIEL'
+        722123: 'MORTE MORTE, JUAN'
+        759782: 'OLIVAR SALAZAR, JAVIER'
+        701793: 'OTO BIELSA, ALVARO'
+        569797: 'PABLO ASÍN, EDUARDO'
+        739687: 'PEIRÓN ARA, ÁLVARO'
+        739724: 'PÉREZ GASPAR, JAVIER'
+        774614: 'PINA GRACIA, DANIEL'
+        761358: 'PUENTE GÓMEZ, ÁLVARO'
+        759412: 'ROYO LERÍN, DANIEL'
+        734789: 'SEGUÍ ARES, RAFAEL'
+        741432: 'SERRANO PRIETO, PABLO'
+        779065: 'SISAMÓN PERAL, SERGIO'
+        755721: 'TRIS PUEYO, JOSÉ MARÍA'
+        697664: 'USIETO DOTO, CARLOS'
+        779646: 'VICIÉN BECERRA, SANDRA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

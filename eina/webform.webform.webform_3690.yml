@@ -1,0 +1,123 @@
+uuid: 830bb7e0-7515-4955-9490-92dfbcbe9104
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3690
+title: 'Delegados/as y Subdelegados/as Grupo 012'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        835581: 'CHARAI ZITOUNI, IHSSAN'
+        801698: 'MARÍN FELIPE, INÉS'
+        777633: 'MARTÍN GIMÉNEZ, JAIME'
+        817792: 'MARTÍN MEGINO, SANCHO'
+        818475: 'MARTÍN MOLINER, LUCÍA'
+        735389: 'MARTÍN POLO, ADRIANA'
+        796732: 'MARTÍNEZ LEÓN, ELENA'
+        799681: 'MEDRANO BERMEJO, SALVADOR'
+        820855: 'MIGUEL LABORDA, MARÍA'
+        826566: 'MIGUELENA TORREA, REBECA'
+        817307: 'MILLÁN ESCUIN, LUCÍA'
+        818135: 'MONFORTE SANZ, BÁRBARA'
+        818233: 'MONTANER NEFFAR, ADRIÁN'
+        818399: 'MONTAÑÉS MONTAÑÉS, RAQUEL'
+        814995: 'MONTEAGUDO MONTAÑÉS, JORGE'
+        808685: 'MURUAMENDIARAZ MARTINEZ DE MORENTIN, JUNE'
+        801420: 'NAVE MAYOLAS, SARA'
+        776062: 'OLAVE JORDANA, NURIA'
+        816273: 'OLIVA OLIVA, RAÚL'
+        819136: 'OLIVA PRADEL, LEYRE'
+        819073: 'OLIVEROS VIÑAL, MIGUEL'
+        777907: 'ORTIZ MASTRAL, SARAI'
+        799931: 'PALACIOS CENDOYA, JAVIER'
+        816653: 'PELLICER DILOY, ISABEL'
+        795318: 'PEÑA BARCO, ILIA YI'
+        826038: 'PEÑA RUIZ, MONICA'
+        818965: 'PÉREZ MONFERRER, RAQUEL'
+        817981: 'PEYRON PLA, ANTONIO JAVIER'
+        797492: 'PINILLA MENDI, PABLO'
+        820247: 'PIÑEYROA GUTIERREZ, LUCIA'
+        820526: 'POLA CABEZÓN, ARIADNA MARÍA'
+        821555: 'PUÉRTOLAS ANTORRENA, MARÍA REINERIA'
+        824991: 'RAMÓN GARRIDO, MARTA'
+        817776: 'RAMOS LÓPEZ, IRUNE'
+        821438: 'RANDO MATEO, IRENE'
+        821687: 'REDONDO SIMÓN, PAULA'
+        645272: 'RENGEL GALÁN, JAIME'
+        718063: 'RÍOS VISIEDO, JOSÉ IGNACIO'
+        715468: 'RODRIGUEZ GARCÍA, ALEJANDRO'
+        826287: 'RODRÍGUEZ PEDREJÓN, MIGUEL'
+        800391: 'RODRIGUEZ-SIERRA BAYARRI, IÑIGO'
+        775509: 'ROMEA LOREN, LAURA'
+        795463: 'RUBIO MARTÍNEZ, MARÍA'
+        801342: 'SALAFRANCA IGUAZ, LAURA PILAR'
+        681896: 'SALESA DIESTE, IGNACIO'
+        799908: 'SAN ROMÁN OLIVEROS, REBECA'
+        815067: 'SÁNCHEZ ESTEBAN, ELENA'
+        821985: 'SÁNCHEZ GARCÍA, DAVID'
+        815192: 'SÁNCHEZ HERNANDEZ, LOURDES MARÍA'
+        796333: 'SÁNCHEZ MARTÍNEZ, MARIOLA'
+        815483: 'SANTACRUZ OEHLING, BLANCA'
+        736361: 'SARVISÉ BIEC, ALBA'
+        825961: 'SEIJAS RUBIO, NATALIA'
+        797208: 'SERRANO BONDIA, ELENA'
+        816387: 'SERRANO FERNANDO, MARCOS'
+        682925: 'SOLSONA SABROSO, DANIEL'
+        824944: 'SORIA SOBREVILLA, IKER'
+        785616: 'STEHR PÉREZ, MARINA'
+        821510: 'UBIETO LOPEZ, SOFIA'
+        696237: 'VICIÉN SIERRA, CRISTINA'
+        795997: 'VILLACAMPA MUÑOZ, JORGE'
+        683624: 'VIORRETA LOPEZ, SANTIAGO'
+        821784: 'YUBERO ROMANOS, MARÍA'
+        784695: 'ZELLALI VALLÉS, HAKIM'
+        784311: 'ZURBANO SÁNCHEZ, IÑAKI'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

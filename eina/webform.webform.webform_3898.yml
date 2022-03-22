@@ -1,0 +1,1507 @@
+uuid: 2eedbd94-7879-4d41-9787-8869695e747e
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3898
+title: 'Voluntariado de Estudiantes en tareas docentes'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  nip:
+    '#title': NIP
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  titulacion:
+    '#type': select
+    '#options':
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+    '#title': Titulación
+    '#required': true
+  curso_grupo_gdidp:
+    '#type': checkboxes
+    '#options':
+      '011': 'Primer Curso. Mañanas (011)'
+      '012': 'Primer Curso. Tardes (012)'
+      '021': 'Segundo Curso (021)'
+      '031': 'Tercer Curso (031)'
+      '041': 'Cuarto Curso (041)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Diseño Industrial y Desarrollo de Producto'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GDiseno
+  curso_grupo_gea:
+    '#type': checkboxes
+    '#options':
+      111: 'Primer Curso. Mañanas (111)'
+      112: 'Primer Curso. Tardes (112)'
+      121: 'Segundo Curso (121)'
+      131: 'Tercer Curso (131)'
+      141: 'Cuarto Curso (141)'
+      151: 'Quinto Curso (151)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Estudios de Arquitectura'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GArquitectura
+  curso_grupo_gie:
+    '#type': checkboxes
+    '#options':
+      211: 'Primer Curso. Mañanas (211)'
+      212: 'Primer Curso. Tardes (212)'
+      221: 'Segundo Curso (221)'
+      231: 'Tercer Curso (231)'
+      241: 'Cuarto Curso (241)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería Eléctrica'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GElectrico
+  curso_grupo_giea:
+    '#type': checkboxes
+    '#options':
+      311: 'Primer Curso. Mañanas (311)'
+      312: 'Primer Curso. Tardes (312)'
+      321: 'Segundo Curso (321)'
+      331: 'Tercer Curso (331)'
+      341: 'Cuarto Curso (341)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería Electrónica y Automática'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GElectronica
+  curso_grupo_gii:
+    '#type': checkboxes
+    '#options':
+      411: 'Primer Curso. Mañanas (411)'
+      412: 'Primer Curso. Tardes (412)'
+      421: 'Segundo Curso. Mañanas (421)'
+      422: 'Segundo Curso. Tardes (422)'
+      431: 'Tercer Curso (431)'
+      441: 'Cuarto Curso (441)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería Informática'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GInformatica
+  curso_grupo_gim:
+    '#type': select
+    '#options':
+      'Primer Curso': ''
+      511: 'Primer Curso. Mañanas (511)'
+      512: 'Primer Curso. Mañanas (512)'
+      513: 'Primer Curso. Tardes (513)'
+      514: 'Primer Curso. Tardes (514)'
+      'Segundo Curso': ''
+      521: 'Segundo Curso. Mañanas (521)'
+      522: 'Segundo Curso. Tardes (522)'
+      523: 'Segundo Curso. Tardes (523)'
+      'Tercer Curso': ''
+      531: 'Tercer Curso. Mañanas (531)'
+      532: 'Tercer Curso. Mañanas (532)'
+      533: 'Tercer Curso. Tardes (533)'
+      'Cuarto Curso': ''
+      541: 'Cuarto Curso. Mañanas (541)'
+      542: 'Cuarto Curso. Tardes (542)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería Mecánica'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GMecanica
+  curso_grupo_giq:
+    '#type': select
+    '#options':
+      711: 'Primer Curso. Mañanas (711)'
+      712: 'Primer Curso. Tardes (712)'
+      721: 'Segundo Curso (721)'
+      731: 'Tercer Curso (731)'
+      741: 'Cuarto Curso (741)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería Química'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GQuimica
+  curso_grupo_giti:
+    '#type': select
+    '#options':
+      'Primer Curso': ''
+      811: 'Primer Curso. Mañanas (811)'
+      812: 'Primer Curso. Mañanas (812)'
+      813: 'Primer Curso. Tardes (813)'
+      'Segundo Curso': ''
+      821: 'Segundo Curso. Mañanas (821)'
+      822: 'Segundo Curso. Mañanas (822)'
+      823: 'Segundo Curso. Tardes (823)'
+      'Tercer Curso': ''
+      831: 'Tercer Curso. Mañanas (831)'
+      832: 'Tercer Curso. Tardes (832)'
+      833: 'Tercer Curso. Tardes (833)'
+      'Cuarto Curso': ''
+      841: 'Cuarto Curso. Mañanas (841)'
+      842: 'Cuarto Curso. Tardes (842)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería de Tecnologías Industriales'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GTecnologiasIndustriales
+  curso_grupo_gitst:
+    '#type': checkboxes
+    '#options':
+      911: 'Primer Curso. Mañanas (911)'
+      912: 'Primer Curso. Tardes (912)'
+      921: 'Segundo Curso (921)'
+      931: 'Tercer Curso (931)'
+      941: 'Cuarto Curso (941)'
+    '#multiple': true
+    '#title': 'Curso/Grupo Ingeniería de Tecnologías y Servicios de Telecomunicación'
+    '#states':
+      visible:
+        - ':input[name="titulacion"]':
+            value: GTelecomunicacion
+  asignaturas_grupo_111:
+    '#type': checkboxes
+    '#options':
+      30700: 'Física 1'
+      30701: 'Matemáticas 1'
+      30702: 'Expresión gráfica arquitectónica 1 (GD)'
+      30703: 'Expresión gráfica arquitectónica 2 (DA)'
+      30704: 'Composición arquitectónica 1 (INTR)'
+      30705: 'Física 2'
+      30706: 'Matemáticas 2'
+      30707: 'Expresión gráfica arquitectónica 3 (GD + CAD)'
+      30708: 'Expresión gráfica arquitectónica 4 (DA)'
+      30709: 'Análisis de formas arquitectónicas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 111'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[111]"]':
+            checked: true
+  asignaturas_grupo_112:
+    '#type': checkboxes
+    '#options':
+      30700: 'Física 1'
+      30701: 'Matemáticas 1'
+      30702: 'Expresión gráfica arquitectónica 1 (GD)'
+      30703: 'Expresión gráfica arquitectónica 2 (DA)'
+      30704: 'Composición arquitectónica 1 (INTR)'
+      30705: 'Física 2'
+      30706: 'Matemáticas 2'
+      30707: 'Expresión gráfica arquitectónica 3 (GD + CAD)'
+      30708: 'Expresión gráfica arquitectónica 4 (DA)'
+      30709: 'Análisis de formas arquitectónicas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 112'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[112]"]':
+            checked: true
+  asignaturas_grupo_121:
+    '#type': checkboxes
+    '#options':
+      30710: ' Proyectos 1'
+      30711: ' Construcción 1'
+      30712: ' Urbanismo 1'
+      30713: ' Composición arquitectónica 2 (HIS1)'
+      30714: ' Proyectos 2'
+      30715: ' Estructuras 1'
+      30716: ' Expresión gráfica arquitectónica 5 (CAD 3D)'
+      30717: ' Informática'
+      30718: ' Taller integrado de proyectos 1 (PA/EGA)'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 121'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[121]"]':
+            checked: true
+  asignaturas_grupo_131:
+    '#type': checkboxes
+    '#options':
+      30719: 'Proyectos 3'
+      30720: 'Acondicionamiento y servicios 1'
+      30721: 'Urbanismo 2'
+      30722: 'Composición arquitectónica 3'
+      30723: 'Proyectos 4'
+      30724: 'Estructuras 2'
+      30725: 'Organización 1'
+      30726: 'Construcción 2'
+      30727: 'Taller integrado de proyectos 2 (PA/UOT)'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 131'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[131]"]':
+            checked: true
+  asignaturas_grupo_141:
+    '#type': checkboxes
+    '#options':
+      30728: 'Proyectos 5'
+      30729: 'Estructuras 3'
+      30730: 'Construcción 3'
+      30731: 'Composición arquitectónica 4'
+      30732: 'Proyectos 6'
+      30733: 'Estructuras 4'
+      30734: 'Acondicionamiento y servicios 2'
+      30735: 'Urbanismo 3'
+      30736: 'Taller integrado de proyectos  3 (PA/COA)'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 141'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[141]"]':
+            checked: true
+  asignaturas_grupo_151:
+    '#type': radios
+    '#options': {  }
+    '#title': 'Asignaturas Grupo 151'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gea[151]"]':
+            checked: true
+  asignaturas_grupo_011:
+    '#type': checkboxes
+    '#options':
+      25864: 'Estética e Historia del Diseño'
+      25865: 'Expresión Artística I'
+      25866: 'Física I'
+      25867: 'Matemáticas I'
+      25802: Informática
+      25868: 'Expresión Gráfica I'
+      25869: 'Física II'
+      25870: 'Matemáticas II'
+      25871: 'Taller de Diseño I: Fund. y Comunicación de Producto'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 011'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gdidp[011]"]':
+            checked: true
+  asignaturas_grupo_012:
+    '#type': checkboxes
+    '#options':
+      25864: 'Estética e Historia del Diseño'
+      25865: 'Expresión Artística I'
+      25866: 'Física I'
+      25867: 'Matemáticas I'
+      25802: Informática
+      25868: 'Expresión Gráfica I'
+      25869: 'Física II'
+      25870: 'Matemáticas II'
+      25871: 'Taller de Diseño I: Fund. y Comunicación de Producto'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 012'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gdidp[012]"]':
+            checked: true
+  asignaturas_grupo_021:
+    '#type': checkboxes
+    '#options':
+      25872: 'Diseño Asistido por Ordenador I'
+      25873: 'Diseño de Mecanismos'
+      25808: 'Expresión Gráfica II'
+      25874: 'Expresión Artística II'
+      25875: 'Taller de Diseño II: Métodos y Proceso de Diseño'
+      25812: 'Estadística y Fiabilidad de Producto'
+      25813: 'Aspectos Económicos y Empresariales del Diseño'
+      25816: 'Tecnología Eléctrica y Electrónica'
+      25876: 'Diseño Gráfico Aplicado a Producto'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 021'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gdidp[021]"]':
+            checked: true
+  asignaturas_grupo_031:
+    '#type': checkboxes
+    '#options':
+      25878: 'Diseño Asistido por Ordenador II'
+      25879: Ergonomía
+      25880: 'Procesos de Fabricación'
+      25881: 'Resistencia de Materiales'
+      25882: 'Taller de Diseño IV: Desarrollo del Producto'
+      25883: 'Ampliación de Materiales y Procesos'
+      25884: 'Gestión de Mercadotecnia y Aspectos Legales del Diseño'
+      25885: 'Gestión de Proyectos de Diseño'
+      25886: 'Interacción Usuario Producto'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 031'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gdidp[031]"]':
+            checked: true
+  asignaturas_grupo_041:
+    '#type': checkboxes
+    '#options':
+      25821: 'Oficina Técnica'
+      25888: 'Fotografía: composición y edición de imágenes'
+      25889: 'Taller de Diseño VI: práctica profesional'
+      24900: 'Inglés B1'
+      25890: 'Trabajo Fin de Grado'
+      25892: 'Diseño bioinspirado'
+      25893: 'Envase y embalaje'
+      29696: 'Estética e historia del diseño II (B)'
+      25894: 'Análisis técnico de propuestas de diseño'
+      25895: 'Tecnologías avanzadas de prototipado e ing. inversa'
+      29698: 'Diseño con plásticos y materiales compuestos'
+      25896: 'Imagen corporativa'
+      25897: 'Entornos interactivos 3D'
+      29695: 'Sistemas multimedia (B)'
+      25898: 'Gestión de productos'
+      25899: 'Dirección estratégica del diseño y RR.HH.'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 041'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gdidp[041]"]':
+            checked: true
+  asignaturas_grupo_211:
+    '#type': checkboxes
+    '#options':
+      29600: 'Matemáticas I'
+      29601: 'Física I'
+      29602: 'Fundamentos de Administración de Empresas'
+      29603: Informática
+      29604: Química
+      29605: 'Matemáticas II'
+      29606: 'Física II'
+      29607: 'Expresión Gráfica y D.A.O.'
+      29609: 'Ingeniería del Medio Ambiente'
+      29635: 'Fundamentos de Electrotecnia'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 211'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gie[211]"]':
+            checked: true
+  asignaturas_grupo_212:
+    '#type': checkboxes
+    '#options':
+      29600: 'Matemáticas I'
+      29601: 'Física I'
+      29602: 'Fundamentos de Administración de Empresas'
+      29603: Informática
+      29604: Química
+      29605: 'Matemáticas II'
+      29606: 'Física II'
+      29607: 'Expresión Gráfica y D.A.O.'
+      29609: 'Ingeniería del Medio Ambiente'
+      29635: 'Fundamentos de Electrotecnia'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 212'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gie[212]"]':
+            checked: true
+  asignaturas_grupo_221:
+    '#type': checkboxes
+    '#options':
+      29610: 'Matemáticas III'
+      29611: Estadística
+      29612: 'Termodinámica técnica y fundamentos transmisión calor'
+      29613: Mecánica
+      29614: 'Análisis de circuitos eléctricos'
+      29615: 'Fundamentos de electrónica'
+      29616: 'Resistencia de materiales'
+      29617: 'Sistemas automáticos'
+      29618: 'Ingeniería de materiales'
+      29619: 'Máquinas eléctricas I'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 221'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gie[221]"]':
+            checked: true
+  asignaturas_grupo_231:
+    '#type': checkboxes
+    '#options':
+      29620: 'Tecnologías de Fabricación'
+      29621: 'Electrónica de Potencia'
+      29622: 'Instalaciones Eléctricas de Baja Tensión'
+      29623: 'Máquinas Eléctricas II'
+      29624: 'Ingeniería de Control'
+      29625: 'Mecánica de Fluidos'
+      29626: 'Organización y Dirección de Empresas'
+      29627: 'Líneas Eléctricas'
+      29628: 'Instalaciones Eléctricas en Media y Alta Tensión'
+      29629: 'Accionamientos de Máquinas Eléctricas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 231'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gie[231]"]':
+            checked: true
+  asignaturas_grupo_241:
+    '#type': checkboxes
+    '#options':
+      29630: 'Oficina de Proyectos'
+      29631: 'Sistemas Eléctricos de Potencia'
+      29632: 'Centrales Eléctricas'
+      29633: 'Instalaciones de Producción Eléctrica con Energías Renov.'
+      24900: 'Inglés B1'
+      29636: Climatización
+      29637: 'Iluminación y domótica'
+      29638: 'Seguridad de instalaciones y equipos eléctricos'
+      29639: 'Mantenimiento ind. y de instalaciones auxiliares'
+      29640: 'Movilidad eléctrica'
+      29641: 'Sistemas electrónicos digitales'
+      29642: 'Medidas eléctricas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 241'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gie[241]"]':
+            checked: true
+  asignaturas_grupo_311:
+    '#type': checkboxes
+    '#options':
+      29800: 'Matemáticas I'
+      29801: 'Matemáticas II'
+      29802: 'Física I'
+      29803: Química
+      29804: 'Fundamentos de Informática'
+      29805: 'Matemáticas III'
+      29806: 'Expresión Gráfica y D.A.O.'
+      29807: 'Física II'
+      29808: 'Fundamentos de Administración de Empresas'
+      29809: 'Fundamentos de Electrotecnia'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 311'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giea[311]"]':
+            checked: true
+  asignaturas_grupo_312:
+    '#type': checkboxes
+    '#options':
+      29800: 'Matemáticas I'
+      29801: 'Matemáticas II'
+      29802: 'Física I'
+      29803: Química
+      29804: 'Fundamentos de Informática'
+      29805: 'Matemáticas III'
+      29806: 'Expresión Gráfica y D.A.O.'
+      29807: 'Física II'
+      29808: 'Fundamentos de Administración de Empresas'
+      29809: 'Fundamentos de Electrotecnia'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 312'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giea[312]"]':
+            checked: true
+  asignaturas_grupo_321:
+    '#type': checkboxes
+    '#options':
+      29810: 'Ingeniería de materiales'
+      29811: Mecánica
+      29812: 'Fundamentos de electrónica'
+      29813: Electrotecnia
+      29814: 'Señales y sistemas'
+      29815: Estadística
+      29816: 'Termodinámica técnica y fundamentos de transmisión calo'
+      29817: 'Sistemas automáticos'
+      29818: 'Electrónica analógica'
+      29819: 'Electrónica digital'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 321'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giea[321]"]':
+            checked: true
+  asignaturas_grupo_331:
+    '#type': checkboxes
+    '#options':
+      24900: 'Inglés B1'
+      29820: 'Mecánica de Fluidos'
+      29821: 'Resistencia de Materiales'
+      29822: 'Electrónica de Potencia'
+      29823: 'Ingeniería de Control'
+      29824: 'Sistemas Electrónicos Programables'
+      29825: 'Tecnologías de Fabricación'
+      29826: 'Instrumentación Electrónica'
+      29827: 'Robótica Industrial'
+      29828: 'Automatización Industrial'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 331'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giea[331]"]':
+            checked: true
+  asignaturas_grupo_341:
+    '#type': checkboxes
+    '#options':
+      29830: 'Oficina de proyectos'
+      29831: 'Ingeniería del medio ambiente'
+      29832: 'Organización y dirección de empresas'
+      29834: 'Procesado digital de señal'
+      29835: 'Instalaciones eléctricas'
+      29839: 'Laboratorio de diseño electrónico'
+      29841: 'Fuentes de alimentación electrónicas'
+      29851: 'Electrónica industrial'
+      29852: 'Diseño digital y control con FPGA'
+      29842: 'Simulación de sistemas dinámicos'
+      29843: 'Robots autónomos'
+      29844: 'Sistemas de tiempo real'
+      29847: 'Visión por computador'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 341'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giea[341]"]':
+            checked: true
+  asignaturas_grupo_411:
+    '#type': checkboxes
+    '#options':
+      30200: 'Introducción a los computadores'
+      30201: 'Fundamentos administración de empresas'
+      30202: 'Matemáticas I'
+      30203: 'Matemáticas II'
+      30204: 'Programación I'
+      30205: 'Arquitectura y organización de computadores I'
+      30206: 'Física y electrónica'
+      30207: Estadística
+      30208: 'Matemática discreta'
+      30209: 'Programación II'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 411'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[411]"]':
+            checked: true
+  asignaturas_grupo_412:
+    '#type': checkboxes
+    '#options':
+      30200: 'Introducción a los computadores'
+      30201: 'Fundamentos administración de empresas'
+      30202: 'Matemáticas I'
+      30203: 'Matemáticas II'
+      30204: 'Programación I'
+      30205: 'Arquitectura y organización de computadores I'
+      30206: 'Física y electrónica'
+      30207: Estadística
+      30208: 'Matemática discreta'
+      30209: 'Programación II'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 412'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[412]"]':
+            checked: true
+  asignaturas_grupo_421:
+    '#type': checkboxes
+    '#options':
+      30210: 'Sistemas operativos'
+      30211: 'Redes de computadores'
+      30212: 'Programación de sistemas concurrentes y distribuidos'
+      30213: 'Estructuras de datos y algoritmos'
+      30214: 'Teoría de computación'
+      30215: 'Arquitectura y organización de computadores II'
+      30216: 'Administración de sistemas'
+      30217: 'Interacción persona ordenador'
+      30218: 'Tecnología de programación'
+      30219: 'Bases de datos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 421'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[421]"]':
+            checked: true
+  asignaturas_grupo_422:
+    '#type': checkboxes
+    '#options':
+      30210: 'Sistemas operativos'
+      30211: 'Redes de computadores'
+      30212: 'Programación de sistemas concurrentes y distribuidos'
+      30213: 'Estructuras de datos y algoritmos'
+      30214: 'Teoría de computación'
+      30215: 'Arquitectura y organización de computadores II'
+      30216: 'Administración de sistemas'
+      30217: 'Interacción persona ordenador'
+      30218: 'Tecnología de programación'
+      30219: 'Bases de datos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 422'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[422]"]':
+            checked: true
+  asignaturas_grupo_431:
+    '#type': checkboxes
+    '#options':
+      30220: 'Proyectos Hardware'
+      30221: 'Sistemas distribuidos'
+      30222: 'Ingeniería del Software'
+      30223: 'Inteligencia artificial'
+      30224: 'Sistemas de información'
+      30226: 'Proyecto Software'
+      30229: 'Algoritmia básica'
+      30230: 'Procesadores de lenguajes'
+      30231: 'Aprendizaje automático'
+      30235: 'Procesadores comerciales'
+      30236: 'Sistemas empotrados I'
+      30237: Multiprocesadores
+      30243: 'Ingeniería de requisitos'
+      30244: 'Verificación y validación'
+      30245: 'Arquitectura software'
+      30250: 'Bases de datos II'
+      30251: 'Sistemas de información II'
+      30252: 'Tecnologías de la información en la empresa'
+      30257: 'Administración de sistemas II'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 431'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[431]"]':
+            checked: true
+  asignaturas_grupo_441:
+    '#type': checkboxes
+    '#options':
+      30227: 'Seguridad Informática'
+      24900: 'Inglés B1'
+      30232: 'Algoritmia para problemas difíciles'
+      30233: 'Recuperación de información'
+      30234: 'Informática gráfica'
+      30260: 'Bioinformática*'
+      30261: 'Robótica *'
+      30262: 'Videojuegos *'
+      30263: 'Visión por computador *'
+      30238: 'Centros de datos'
+      30239: 'Diseño y administración de redes'
+      30240: 'Sistemas empotrados II'
+      30241: 'Laboratorio de sistemas empotrados'
+      30242: 'Garantía y seguridad'
+      30246: 'Ingeniería web'
+      30248: 'Gestión del proyecto Software'
+      30249: 'Laboratorio de ingeniería del Sotfware'
+      30254: 'Sistemas legados'
+      30256: 'Sistemas y tecnologías Web*'
+      30259: 'Metodologías ágiles y Calidad*'
+      30253: 'Almacenes y minería de datos'
+      30255: 'Sistemas de ayuda a la toma de decisiones'
+      30264: 'Comercio electrónico *'
+      30266: 'Sistemas de información distribuidos*'
+      30258: 'Diseño centrado en el usuario. Diseño para la multimedia'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 441'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gii[441]"]':
+            checked: true
+  asignaturas_grupo_511:
+    '#type': checkboxes
+    '#options':
+      29700: 'Matemáticas I'
+      29701: 'Física  I'
+      29702: 'Fundamentos de Administración de Empresas'
+      29703: 'Expresión Gráfica y D.A.O.'
+      29704: Química
+      29705: 'Matemáticas II'
+      29706: 'Física II'
+      29707: 'Fundamentos de Informática'
+      29708: Estadística
+      29709: 'Ingeniería del Medio Ambiente'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 511'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '511'
+  asignaturas_grupo_512:
+    '#type': checkboxes
+    '#options':
+      29700: 'Matemáticas I'
+      29701: 'Física  I'
+      29702: 'Fundamentos de Administración de Empresas'
+      29703: 'Expresión Gráfica y D.A.O.'
+      29704: Química
+      29705: 'Matemáticas II'
+      29706: 'Física II'
+      29707: 'Fundamentos de Informática'
+      29708: Estadística
+      29709: 'Ingeniería del Medio Ambiente'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 512'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '512'
+  asignaturas_grupo_513:
+    '#type': checkboxes
+    '#options':
+      29700: 'Matemáticas I'
+      29701: 'Física  I'
+      29702: 'Fundamentos de Administración de Empresas'
+      29703: 'Expresión Gráfica y D.A.O.'
+      29704: Química
+      29705: 'Matemáticas II'
+      29706: 'Física II'
+      29707: 'Fundamentos de Informática'
+      29708: Estadística
+      29709: 'Ingeniería del Medio Ambiente'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 513'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '513'
+  asignaturas_grupo_514:
+    '#type': checkboxes
+    '#options':
+      29700: 'Matemáticas I'
+      29701: 'Física  I'
+      29702: 'Fundamentos de Administración de Empresas'
+      29703: 'Expresión Gráfica y D.A.O.'
+      29704: Química
+      29705: 'Matemáticas II'
+      29706: 'Física II'
+      29707: 'Fundamentos de Informática'
+      29708: Estadística
+      29709: 'Ingeniería del Medio Ambiente'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 514'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '514'
+  asignaturas_grupo_521:
+    '#type': checkboxes
+    '#options':
+      29710: 'Matemáticas III'
+      29711: Mecánica
+      29712: 'Fundamentos de ingeniería de materiales'
+      29713: 'Termodinámica técnica y fund. de transmisión de calor'
+      29714: 'Dibujo industrial'
+      29715: 'Fundamentos de electrotecnia'
+      29716: 'Mecánica de fluidos'
+      29717: 'Resistencia de materiales'
+      29718: 'Tecnología de materiales'
+      29719: 'Teoría de mecanismos y máquinas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 521'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '521'
+  asignaturas_grupo_522:
+    '#type': checkboxes
+    '#options':
+      29710: 'Matemáticas III'
+      29711: Mecánica
+      29712: 'Fundamentos de ingeniería de materiales'
+      29713: 'Termodinámica técnica y fund. de transmisión de calor'
+      29714: 'Dibujo industrial'
+      29715: 'Fundamentos de electrotecnia'
+      29716: 'Mecánica de fluidos'
+      29717: 'Resistencia de materiales'
+      29718: 'Tecnología de materiales'
+      29719: 'Teoría de mecanismos y máquinas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 522'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '522'
+  asignaturas_grupo_523:
+    '#type': checkboxes
+    '#options':
+      29710: 'Matemáticas III'
+      29711: Mecánica
+      29712: 'Fundamentos de ingeniería de materiales'
+      29713: 'Termodinámica técnica y fund. de transmisión de calor'
+      29714: 'Dibujo industrial'
+      29715: 'Fundamentos de electrotecnia'
+      29716: 'Mecánica de fluidos'
+      29717: 'Resistencia de materiales'
+      29718: 'Tecnología de materiales'
+      29719: 'Teoría de mecanismos y máquinas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 523'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '523'
+  asignaturas_grupo_531:
+    '#type': checkboxes
+    '#options':
+      29720: 'Tecnologías de Fabricación I'
+      29721: 'Fundamentos de Electrónica'
+      29722: 'Mecánica de Sólidos Deformables'
+      29723: 'Criterios de Diseño de Máquinas'
+      29724: 'Ingeniería Térmica'
+      29725: 'Tecnologías de Fabricación II'
+      29726: 'Sistemas Automáticos'
+      29727: 'Teoría de Estructuras y Construcciones Industriales'
+      29728: 'Máquinas y Motores Térmicos'
+      29729: 'Máquinas e Instalaciones de Fluidos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 531'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '531'
+  asignaturas_grupo_532:
+    '#type': checkboxes
+    '#options':
+      29720: 'Tecnologías de Fabricación I'
+      29721: 'Fundamentos de Electrónica'
+      29722: 'Mecánica de Sólidos Deformables'
+      29723: 'Criterios de Diseño de Máquinas'
+      29724: 'Ingeniería Térmica'
+      29725: 'Tecnologías de Fabricación II'
+      29726: 'Sistemas Automáticos'
+      29727: 'Teoría de Estructuras y Construcciones Industriales'
+      29728: 'Máquinas y Motores Térmicos'
+      29729: 'Máquinas e Instalaciones de Fluidos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 532'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '532'
+  asignaturas_grupo_533:
+    '#type': checkboxes
+    '#options':
+      29720: 'Tecnologías de Fabricación I'
+      29721: 'Fundamentos de Electrónica'
+      29722: 'Mecánica de Sólidos Deformables'
+      29723: 'Criterios de Diseño de Máquinas'
+      29724: 'Ingeniería Térmica'
+      29725: 'Tecnologías de Fabricación II'
+      29726: 'Sistemas Automáticos'
+      29727: 'Teoría de Estructuras y Construcciones Industriales'
+      29728: 'Máquinas y Motores Térmicos'
+      29729: 'Máquinas e Instalaciones de Fluidos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 533'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '533'
+  asignaturas_grupo_541:
+    '#type': checkboxes
+    '#options':
+      29730: 'Oficina de proyectos'
+      29731: 'Organización y dirección de empresas'
+      24900: 'Inglés B1'
+      29733: 'Sistemas térmicos de generación'
+      29734: 'Calor y frío industrial'
+      29736: 'Motores de combustión'
+      29737: 'Diseño de instalaciones de fluidos'
+      29752: 'Hidráulica y neumática industrial'
+      29738: 'Tecnología de la construcción'
+      29739: 'Estructuras metálicas'
+      29740: 'Análisis estructural de instalaciones industriales'
+      29741: 'Estructuras de hormigón'
+      29753: 'Edificación  industrial'
+      29742: 'Materiales industriales avanzados'
+      29743: 'Cálculo y selección de elementos de máquinas'
+      29744: 'Diseño y arquitectura de vehículos'
+      29745: 'Vibraciones y ruido en máquinas'
+      29746: 'Sistemas mecánicos en máquinas y vehículos'
+      29747: 'Producción industrial'
+      29748: 'Calidad industrial'
+      29749: 'Sistemas de fabricación'
+      29750: 'Medición y mantenimiento'
+      29751: 'Fabricación integrada'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 541'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '541'
+  asignaturas_grupo_542:
+    '#type': checkboxes
+    '#options':
+      29730: 'Oficina de proyectos'
+      29731: 'Organización y dirección de empresas'
+      24900: 'Inglés B1'
+      29733: 'Sistemas térmicos de generación'
+      29734: 'Calor y frío industrial'
+      29736: 'Motores de combustión'
+      29737: 'Diseño de instalaciones de fluidos'
+      29752: 'Hidráulica y neumática industrial'
+      29738: 'Tecnología de la construcción'
+      29739: 'Estructuras metálicas'
+      29740: 'Análisis estructural de instalaciones industriales'
+      29741: 'Estructuras de hormigón'
+      29753: 'Edificación  industrial'
+      29742: 'Materiales industriales avanzados'
+      29743: 'Cálculo y selección de elementos de máquinas'
+      29744: 'Diseño y arquitectura de vehículos'
+      29745: 'Vibraciones y ruido en máquinas'
+      29746: 'Sistemas mecánicos en máquinas y vehículos'
+      29747: 'Producción industrial'
+      29748: 'Calidad industrial'
+      29749: 'Sistemas de fabricación'
+      29750: 'Medición y mantenimiento'
+      29751: 'Fabricación integrada'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 542'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gim"]':
+            value: '542'
+  asignaturas_grupo_711:
+    '#type': checkboxes
+    '#options':
+      29900: 'Matemáticas I'
+      29901: 'Física  I'
+      29902: 'Fundamentos de Informática'
+      29903: 'Expresión Gráfica y Diseño Asistido por Ordenador'
+      29904: Química
+      29905: 'Matemáticas II'
+      29906: 'Física II'
+      29907: 'Fundamentos de Administración de empresas'
+      29909: 'Ampliación de Química I'
+      29910: 'Matemáticas III'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 711'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giq"]':
+            value: '711'
+  asignaturas_grupo_712:
+    '#type': checkboxes
+    '#options':
+      29900: 'Matemáticas I'
+      29901: 'Física  I'
+      29902: 'Fundamentos de Informática'
+      29903: 'Expresión Gráfica y Diseño Asistido por Ordenador'
+      29904: Química
+      29905: 'Matemáticas II'
+      29906: 'Física II'
+      29907: 'Fundamentos de Administración de empresas'
+      29909: 'Ampliación de Química I'
+      29910: 'Matemáticas III'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 712'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giq"]':
+            value: '712'
+  asignaturas_grupo_721:
+    '#type': checkboxes
+    '#options':
+      29908: Estadística
+      29911: 'Fund. de Electrotecnia'
+      29912: 'Organización de Empresas'
+      29913: 'Termodinámica técnica y fund. de transmisión de calor'
+      29914: 'Ampliación de química II'
+      29915: 'Experimentación en Química'
+      29916: Mecánica
+      29917: 'Mecánica de fluidos'
+      29918: 'Ingeniería de materiales'
+      29936: 'Sistemas automáticos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 721'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giq"]':
+            value: '721'
+  asignaturas_grupo_731:
+    '#type': checkboxes
+    '#options':
+      29919: 'Fundamentos de electrónica'
+      29920: 'Resistencia de materiales'
+      29921: 'Transferencia de materia'
+      29922: 'Cinética química aplicada'
+      29923: Fluidotecnia
+      29924: 'Tecnologías de fabricación'
+      29925: 'Operaciones de separación'
+      29926: 'Diseño de reactores'
+      29927: Termotecnia
+      29928: 'Experimentación en ingeniería química I'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 731'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giq"]':
+            value: '731'
+  asignaturas_grupo_741:
+    '#type': checkboxes
+    '#options':
+      29929: 'Oficina de proyectos'
+      29930: 'Control de procesos químicos'
+      29931: 'Química industrial'
+      29932: 'Experimentación en ingeniería química II'
+      29933: 'Ingeniería del medio ambiente'
+      24900: 'Inglés B1'
+      29937: 'Gestión de residuos e impacto ambiental'
+      29938: 'Tecnologías de tratamiento de aguas y gases contam.'
+      29939: 'Análisis instrum. para el control de la calidad en ind.'
+      29940: 'Catálisis y procesos catalíticos de interés industrial'
+      29941: 'Reacciones de polimerización'
+      29942: 'Diseño de instalaciones de fluidos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 741'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giq"]':
+            value: '741'
+  asignaturas_grupo_811:
+    '#type': checkboxes
+    '#options':
+      30000: 'Matemáticas I'
+      30001: 'Matemáticas II'
+      30002: 'Física I'
+      30003: 'Expresión gráfica y Diseño asistido por ordenador'
+      30004: Química
+      30005: 'Matemáticas III'
+      30006: 'Física II'
+      30007: 'Fundamentos de Informática'
+      30008: Estadística
+      30009: 'Fundamentos de administración de empresas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 811'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '811'
+  asignaturas_grupo_812:
+    '#type': checkboxes
+    '#options':
+      30000: 'Matemáticas I'
+      30001: 'Matemáticas II'
+      30002: 'Física I'
+      30003: 'Expresión gráfica y Diseño asistido por ordenador'
+      30004: Química
+      30005: 'Matemáticas III'
+      30006: 'Física II'
+      30007: 'Fundamentos de Informática'
+      30008: Estadística
+      30009: 'Fundamentos de administración de empresas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 812'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '812'
+  asignaturas_grupo_813:
+    '#type': checkboxes
+    '#options':
+      30000: 'Matemáticas I'
+      30001: 'Matemáticas II'
+      30002: 'Física I'
+      30003: 'Expresión gráfica y Diseño asistido por ordenador'
+      30004: Química
+      30005: 'Matemáticas III'
+      30006: 'Física II'
+      30007: 'Fundamentos de Informática'
+      30008: Estadística
+      30009: 'Fundamentos de administración de empresas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 813'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '813'
+  asignaturas_grupo_821:
+    '#type': checkboxes
+    '#options':
+      30010: 'Fundamentos de ingeniería de los materiales'
+      30011: Mecánica
+      30012: 'Termodinámica técnica y fundam. de transmisión de calor'
+      30013: 'Mecánica de fluidos'
+      30014: 'Fundamentos de electrotecnia'
+      30015: 'Procesos de fabricación y dibujo industrial'
+      30016: 'Criterios de diseño de máquinas'
+      30017: 'Ingeniería térmica'
+      30018: 'Máquinas e instalaciones de fluidos'
+      30019: 'Máquinas eléctricas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 821'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '821'
+  asignaturas_grupo_822:
+    '#type': checkboxes
+    '#options':
+      30010: 'Fundamentos de ingeniería de los materiales'
+      30011: Mecánica
+      30012: 'Termodinámica técnica y fundam. de transmisión de calor'
+      30013: 'Mecánica de fluidos'
+      30014: 'Fundamentos de electrotecnia'
+      30015: 'Procesos de fabricación y dibujo industrial'
+      30016: 'Criterios de diseño de máquinas'
+      30017: 'Ingeniería térmica'
+      30018: 'Máquinas e instalaciones de fluidos'
+      30019: 'Máquinas eléctricas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 822'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '822'
+  asignaturas_grupo_823:
+    '#type': checkboxes
+    '#options':
+      30010: 'Fundamentos de ingeniería de los materiales'
+      30011: Mecánica
+      30012: 'Termodinámica técnica y fundam. de transmisión de calor'
+      30013: 'Mecánica de fluidos'
+      30014: 'Fundamentos de electrotecnia'
+      30015: 'Procesos de fabricación y dibujo industrial'
+      30016: 'Criterios de diseño de máquinas'
+      30017: 'Ingeniería térmica'
+      30018: 'Máquinas e instalaciones de fluidos'
+      30019: 'Máquinas eléctricas'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 823'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '823'
+  asignaturas_grupo_831:
+    '#type': checkboxes
+    '#options':
+      30020: 'Sistemas automáticos'
+      30021: 'Resistencia de materiales'
+      30022: 'Fundamentos de electrónica'
+      30023: 'Sistemas eléctricos de potencia'
+      30024: 'Tecnología de materiales'
+      30025: 'Ingeniería de control'
+      30026: 'Mecánica de sólidos deformables'
+      30027: 'Procesos químicos industriales'
+      30028: 'Electrónica digital y de potencia'
+      30029: 'Tecnologías de fabricación'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 831'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '831'
+  asignaturas_grupo_832:
+    '#type': checkboxes
+    '#options':
+      30020: 'Sistemas automáticos'
+      30021: 'Resistencia de materiales'
+      30022: 'Fundamentos de electrónica'
+      30023: 'Sistemas eléctricos de potencia'
+      30024: 'Tecnología de materiales'
+      30025: 'Ingeniería de control'
+      30026: 'Mecánica de sólidos deformables'
+      30027: 'Procesos químicos industriales'
+      30028: 'Electrónica digital y de potencia'
+      30029: 'Tecnologías de fabricación'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 832'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '832'
+  asignaturas_grupo_833:
+    '#type': checkboxes
+    '#options':
+      30020: 'Sistemas automáticos'
+      30021: 'Resistencia de materiales'
+      30022: 'Fundamentos de electrónica'
+      30023: 'Sistemas eléctricos de potencia'
+      30024: 'Tecnología de materiales'
+      30025: 'Ingeniería de control'
+      30026: 'Mecánica de sólidos deformables'
+      30027: 'Procesos químicos industriales'
+      30028: 'Electrónica digital y de potencia'
+      30029: 'Tecnologías de fabricación'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 833'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '833'
+  asignaturas_grupo_841:
+    '#type': checkboxes
+    '#options':
+      30030: 'Ingeniería del medio ambiente'
+      30031: 'Oficina de proyectos'
+      30032: 'Organización y dirección de empresas'
+      24900: 'Inglés B1'
+      30034: 'Motores de combustión'
+      30035: 'Energías renovables'
+      30036: 'Tecnología eléctrica'
+      30037: 'Sistemas térmicos de generación'
+      30038: 'Redes eléctricas inteligentes'
+      30039: 'Edificación industrial'
+      30040: 'Calor y frío industrial'
+      30041: 'Análisis estructural de instalaciones industriales'
+      30042: 'Diseño de instalaciones de fluidos'
+      30043: 'Simulación y análisis de sistemas mecán. en Mecatrónica'
+      30044: 'Automatización flexible y robótica'
+      30045: 'Cálculo y selección de elementos de máquinas'
+      30046: 'Sistemas electrónicos digitales'
+      30047: 'Instrumentación electrónica'
+      30048: 'Producción industrial'
+      30049: 'Calidad industrial'
+      30050: 'Fabricación integrada'
+      30051: 'Diseño y arquitectura de vehículos'
+      30052: 'Ferrocarriles y otros vehículos guiados'
+      30053: 'Movilidad eléctrica'
+      30054: 'Sistemas mecánicos en máquinas y vehículos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 841'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '841'
+  asignaturas_grupo_842:
+    '#type': checkboxes
+    '#options':
+      30030: 'Ingeniería del medio ambiente'
+      30031: 'Oficina de proyectos'
+      30032: 'Organización y dirección de empresas'
+      24900: 'Inglés B1'
+      30034: 'Motores de combustión'
+      30035: 'Energías renovables'
+      30036: 'Tecnología eléctrica'
+      30037: 'Sistemas térmicos de generación'
+      30038: 'Redes eléctricas inteligentes'
+      30039: 'Edificación industrial'
+      30040: 'Calor y frío industrial'
+      30041: 'Análisis estructural de instalaciones industriales'
+      30042: 'Diseño de instalaciones de fluidos'
+      30043: 'Simulación y análisis de sistemas mecán. en Mecatrónica'
+      30044: 'Automatización flexible y robótica'
+      30045: 'Cálculo y selección de elementos de máquinas'
+      30046: 'Sistemas electrónicos digitales'
+      30047: 'Instrumentación electrónica'
+      30048: 'Producción industrial'
+      30049: 'Calidad industrial'
+      30050: 'Fabricación integrada'
+      30051: 'Diseño y arquitectura de vehículos'
+      30052: 'Ferrocarriles y otros vehículos guiados'
+      30053: 'Movilidad eléctrica'
+      30054: 'Sistemas mecánicos en máquinas y vehículos'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 842'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_giti"]':
+            value: '842'
+  asignaturas_grupo_911:
+    '#type': checkboxes
+    '#options':
+      30301: 'Fundamentos de física'
+      30302: 'Circuitos y sistemas'
+      30303: 'Fundamentos de informática'
+      30309: 'Fundamentos de administración de empresas'
+      30313: 'Fundamentos de redes'
+      30368: Cálculo
+      30369: Álgebra
+      30370: 'Cálculo vectorial y diferencial'
+      30371: 'Introducción a los computadores'
+      30372: 'Matemáticas para la telecomunicación'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 911'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gitst[911]"]':
+            checked: true
+  asignaturas_grupo_912:
+    '#type': checkboxes
+    '#options':
+      30301: 'Fundamentos de física'
+      30302: 'Circuitos y sistemas'
+      30303: 'Fundamentos de informática'
+      30309: 'Fundamentos de administración de empresas'
+      30313: 'Fundamentos de redes'
+      30368: Cálculo
+      30369: Álgebra
+      30370: 'Cálculo vectorial y diferencial'
+      30371: 'Introducción a los computadores'
+      30372: 'Matemáticas para la telecomunicación'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 912'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gitst[912]"]':
+            checked: true
+  asignaturas_grupo_921:
+    '#type': checkboxes
+    '#options':
+      30305: 'Señales y sistemas'
+      30307: 'Fundamentos de electrónica'
+      30308: 'Probabilidad y procesos'
+      30310: 'Electromagnetismo y ondas'
+      30311: 'Electrónica analógica'
+      30312: 'Procesado digital de señales'
+      30314: 'Teoría de la comunicación'
+      30315: 'Electrónica digital'
+      30322: 'Programación de redes y servicios'
+      30373: 'Interconexión de redes'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 921'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gitst[921]"]':
+            checked: true
+  asignaturas_grupo_931:
+    '#type': checkboxes
+    '#options':
+      30318: 'Comunicaciones digitales'
+      30319: 'Sistemas electrónicos con microprocesadores'
+      30323: 'Gestión de proyectos de telecomunicación'
+      30328: 'Electrónica de comunicaciones'
+      30374: 'Radiación y propagación'
+      30375: 'Análisis y dimensionado de redes'
+      30376: 'Medios de transmisión guiados'
+      30377: 'Tecnologías de red'
+      30378: 'Procesado de audio e imagen'
+      24900: 'Inglés B1'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 931'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gitst[931]"]':
+            checked: true
+  asignaturas_grupo_941:
+    '#type': checkboxes
+    '#options':
+      30323: 'Gestión de proyectos de telecomunicación'
+      24900: 'Inglés B1'
+      30331: 'Sistemas electrónicos de audio y video'
+      30332: 'Sistemas electrónicos en telecomunicaciones'
+      30333: 'Aplicaciones de procesado digital de señal'
+      30335: 'Dispositivos y sistemas de transmisión óptica'
+      30337: 'Servicios y sistemas de telecomunicación'
+      30340: 'Equipos y sistemas de transmisión'
+      30348: 'Ingeniería multimedia e interactividad (Asign. del  itinerario Sonio e Imagen)'
+      30351: 'Gestión de red'
+      30354: 'Redes móviles'
+      30343: 'Producción de audio y video'
+      30357: 'Laboratorio de señal y comunicaciones'
+      30359: 'Fuentes de alimentación electrónica'
+      30339: 'Sistemas de radiocomunicación'
+      30326: 'Laboratorio de diseño electrónico'
+      30329: 'Sistemas electrónicos digitales'
+      30353: 'Seguridad en redes y servicios'
+      30358: 'Laboratorio de comunicaciones ópticas'
+      30355: 'Diseño y evaluación de redes'
+      30366: 'Análisis y diseño de Software'
+      30334: 'Tecnologías de radiofrecuencia'
+      30336: 'Comunicaciones audiovisuales'
+      30360: 'Sistemas de información *'
+      30362: 'Sistemas de información II*'
+    '#multiple': true
+    '#title': 'Asignaturas Grupo 941'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="curso_grupo_gitst[941]"]':
+            checked: true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

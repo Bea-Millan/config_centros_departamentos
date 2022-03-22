@@ -1,0 +1,155 @@
+uuid: ae76f7fd-f283-4bb1-8e4f-30cc8c75f937
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 369
+template: false
+archive: false
+id: webform_4817
+title: 'Inscripciones y Reservas'
+description: null
+category: null
+elements: |-
+  nombre_del_colegio:
+    '#type': textfield
+    '#title': 'Nombre del centro educativo / Grupo de visitantes'
+    '#required': true
+  persona_de_contacto:
+    '#type': textfield
+    '#title': 'Persona de contacto'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': Teléfono
+    '#required': true
+  numero_de_alumnos:
+    '#type': textfield
+    '#title': 'Tamaño del grupo'
+    '#description': 'Grupos de más de 25 personas se dividirán en subgrupos durante la visita'
+    '#required': true
+  curso:
+    '#type': textfield
+    '#title': Curso
+    '#required': true
+  dia_preferido_de_asistencia:
+    '#type': checkboxes
+    '#options':
+      L: Lunes
+      M: Martes
+      X: Miércoles
+      J: Jueves
+      V: Viernes
+      T: 'Cualquier día'
+    '#multiple': true
+    '#title': 'Día preferido de asistencia'
+    '#required': true
+  horario_preferido:
+    '#type': checkboxes
+    '#options':
+      9: 'De 9 a 11:30h.'
+      11: 'De 11 a 13:30h.'
+      12: 'De 12 a 14:00h.'
+      T: 'Horario indiferente'
+    '#multiple': true
+    '#title': 'Horario preferido'
+    '#required': true
+  duracion_maxima_en_caso_de_haber_seleccionado_horario_indiferente:
+    '#type': radios
+    '#options':
+      2: '2 Horas'
+      3: '3 Horas'
+      4: '4 Horas'
+      5: '5 Horas'
+    '#title': 'Duración máxima (en caso de haber seleccionado "Horario indiferente")'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="horario_preferido[t]"]':
+            checked: true
+  numero_de_grupos:
+    '#type': select
+    '#options':
+      1: 'Deseo solicitar la visita sólo para el grupo indicado'
+      2: 'Deseo solicitar visita para un segundo grupo'
+    '#default_value': '1'
+    '#title_display': inline
+    '#title': 'Número de grupos'
+    '#description': |-
+      Indique si desea  solicitar visita para un segundo grupo.
+      Si su Centro desea inscribir más de dos grupos, por favor, rellene una nueva solicitud.
+  numero_de_alumnos2:
+    '#type': textfield
+    '#title': 'Número de alumnos (Segundo grupo)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="numero_de_grupos"]':
+            value: '2'
+  curso2:
+    '#type': textfield
+    '#title': 'Curso (Segundo Grupo)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="numero_de_grupos"]':
+            value: '2'
+  dia_preferido_de_asistencia2:
+    '#type': checkboxes
+    '#options':
+      L: Lunes
+      M: Martes
+      X: Miércoles
+      J: Jueves
+      V: Viernes
+      T: 'Cualquier día'
+    '#multiple': true
+    '#title': 'Día preferido de asistencia (Segundo grupo)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="numero_de_grupos"]':
+            value: '2'
+  horario_preferido2:
+    '#type': checkboxes
+    '#options':
+      10: 'De 10 a 12:30h.'
+      11: 'De 11 a 13:30h.'
+      T: 'Horario indiferente'
+    '#multiple': true
+    '#title': 'Horario preferido (Segundo grupo)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="numero_de_grupos"]':
+            value: '2'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

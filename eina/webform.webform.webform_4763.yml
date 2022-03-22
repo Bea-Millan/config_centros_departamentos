@@ -1,0 +1,466 @@
+uuid: 0a3b5c8f-2cdd-4997-8a58-db1454498fc3
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4763
+title: 'Comunicación de incidencias COVID'
+description: null
+category: null
+elements: |-
+  seleccione_el_tipo_de_comunicacion:
+    '#type': radios
+    '#options':
+      Confinamiento: 'Confinamiento por contacto estrecho'
+      Positivo: 'Positivo en COVID-19 (PCR o antígenos)'
+      Alta: Alta
+    '#title': 'Seleccione el tipo de comunicación'
+    '#description': __________________________________________________________
+    '#required': true
+  seleccione_el_colectivo_al_que_pertenece:
+    '#type': radios
+    '#options':
+      PDI: PDI
+      PAS: PAS
+    '#title': 'Seleccione el colectivo al que pertenece '
+    '#description': __________________________________________________________
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            filled: false
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer apellido'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo apellido'
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  nip:
+    '#type': textfield
+    '#title': NIP
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  telefono_de_contacto:
+    '#type': textfield
+    '#title': 'Teléfono de contacto'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  departamento:
+    '#type': select
+    '#options':
+      'Servicios Generales': ''
+      Generales: 'Servicios Generales'
+      Departamentos: ''
+      Arq: 'Dpto. de Arquitectura'
+      TMF: 'Dpto. de Ciencia y tecnología de materiales y fluidos'
+      OE: 'Dpto. de Dirección y Organización de Empresas'
+      FIA: 'Dpto. de Filología Inglesa y Alemana'
+      FMC: 'Dpto. de Física de la Materia Condensada'
+      FA: 'Dpto. de Física Aplicada'
+      IIS: 'Dpto. de Informática e ingeniería de sistemas'
+      IDF: 'Dpto. de Ingeniería de Diseño y Fabricación'
+      IE: 'Dpto. de Ingeniería eléctrica'
+      IEC: 'Dpto. de Ingeniería Electrónica y Comunicaciones'
+      IM: 'Dpto. de Ingeniería Mecánica'
+      TMA: 'Dpto. de Ingeniería Química y Tecnologías del Medio Ambiente'
+      MA: 'Dpto. de Matemática Aplicada'
+      ME: 'Dpto. de Métodos Estadísticos'
+      QA: 'Dpto. de Química Análítica'
+      QI: 'Dpto. de Química Inorgánica'
+      QO: 'Dpto. de Química Orgánica'
+      QF: 'Dpto. de Química Física'
+    '#title': Departamento
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            filled: false
+  asignaturaspdi:
+    '#type': textarea
+    '#title': 'Asignaturas con exámenes programados'
+    '#description': 'Consigne las asignaturas a su cargo que tienen exámenes programados durante el periodo que debe permanecer confinado.'
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            value: PDI
+        - ':input[name=""]': {  }
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Confinamiento
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Positivo
+        - ':input[name=""]': {  }
+  observacionespdi:
+    '#type': textarea
+    '#title': Observaciones
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            value: PDI
+        - ':input[name=""]': {  }
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Confinamiento
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Positivo
+        - ':input[name=""]': {  }
+  fecha_de_reincorporacion:
+    '#type': date
+    '#title': 'Fecha de reincorporación '
+    '#description': 'Indique por favor la fecha a partir de la cual le han autorizado los Servicios Sanitarios a reincorporarse a sus actividades.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Alta
+  solicitud_administradora:
+    '#type': radios
+    '#options':
+      Teletrabajo: Teletrabajo
+      Baja: 'Baja Laboral'
+    '#title': 'Solicitud administradora'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            value: PAS
+        - ':input[name=""]': {  }
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Confinamiento
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Positivo
+        - ':input[name=""]': {  }
+  titulacion:
+    '#type': select
+    '#options':
+      Grados: ''
+      GArquitectura: 'Grado en Estudios en Arquitectura'
+      GTecnologiasIndustriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      GTelecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      GElectrico: 'Grado en Ingeniería Eléctrica'
+      GElectronica: 'Grado en Ingeniería Electrónica y Automática'
+      GDiseno: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      GInformatica: 'Grado en Ingeniería Informática'
+      GMecanica: 'Grado en Ingeniería Mecánica'
+      GQuimica: 'Grado en Ingeniería Química'
+      GMatInf: 'Doble grado MAT-INF'
+      Másteres: ''
+      MUA: 'Máster Universitario en Arquitectura'
+      MUEREE: 'Máster Universitario en Energías Renovables y Eficiencia Energética'
+      MUIB: 'Máster Universitario en Ingeniería Biomédica'
+      MUIT: 'Máster Universitario en Ingeniería de Telecomunicación'
+      MUIDP: 'Máster Universitario en Ingeniería de Diseño de Producto'
+      MUIE: 'Máster Universitario en Ingeniería Electrónica'
+      MUIInd: 'Máster Universitario en Ingeniería Industrial'
+      MUIInf: 'Máster Universitario en Ingeniería Informática'
+      MUIM: 'Máster Universitario en Ingeniería Mecánica'
+      MUIQ: 'Máster Universitario en Ingeniería Química'
+      MURGVC: 'Máster Universitario en Robótica, Gráficos y Visión por Computador'
+      Conjuntos: 'Programas Conjuntos de Máster'
+    '#title': Titulación
+    '#required': true
+  asignaturas_48_horas:
+    '#type': textarea
+    '#title': 'Asignaturas a las que ha asistido en las últimas 48 horas'
+    '#description': 'Consigne las asignaturas a las que ha acudido presencialmente en las últimas 48 horas.'
+  solicitud_al_departamento:
+    '#type': radios
+    '#options':
+      Sustituto: 'Sustitución de tareas por parte de algún compañero de departamento durante el tiempo de evaluación'
+      Online: 'Excepcionalmente: realizar tareas online (tutorías y revisiones)'
+    '#title': 'Solicitud al Departamento'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seleccione_el_colectivo_al_que_pertenece"]':
+            value: PDI
+        - ':input[name=""]': {  }
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Confinamiento
+        - ':input[name="seleccione_el_tipo_de_comunicacion"]':
+            value: Positivo
+        - ':input[name=""]': {  }
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+    '#description': 'Indique cualquier información que crea pueda ser de interés: visitas a la Biblioteca o cafetería en las últimas 48 horas, franjas horarias, etc.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su formulario se ha enviado satisfactoriamente.</p><p>&nbsp;</p><p>Deseamos tu pronta recuperación</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Se ha recibido correctamente la siguiente información comunicando una incidencia COVID.
+        [webform_submission:values]
+
+        Te deseamos una pronta recuperación.
+
+      excluded_elements:
+        titulacion: titulacion
+        asignaturas_48_horas: asignaturas_48_horas
+        observaciones: observaciones
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:departamento:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Se ha recibido la siguiente comunicación de Incidencia COVID de un miembro de su departamento.
+        [webform_submission:values]
+      excluded_elements:
+        titulacion: titulacion
+        asignaturas_48_horas: asignaturas_48_horas
+        solicitud_al_departamento: solicitud_al_departamento
+        observaciones: observaciones
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:seleccione_el_colectivo_al_que_pertenece:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Se ha recibido esta comunicación COVID
+        [webform_submission:values]
+      excluded_elements:
+        asignaturas_48_horas: asignaturas_48_horas
+        solicitud_al_departamento: solicitud_al_departamento
+        observaciones: observaciones
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_4:
+    id: email
+    handler_id: email_4
+    label: 'Email 4'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: covideina@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Se ha recibido la siguiente comunicación COVID:
+
+        [webform_submission:values]
+
+        [webform_submission:completed_date:long]
+      excluded_elements:
+        asignaturas_48_horas: asignaturas_48_horas
+        solicitud_al_departamento: solicitud_al_departamento
+        observaciones: observaciones
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: jefeuprl@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Se ha recibido esta comunicación COVID de un miembro de la Escuela de Ingeniería y Arquitectura
+        [webform_submission:values]
+
+        Submitted on [webform_submission:completed_date:long]
+      excluded_elements:
+        asignaturaspdi: asignaturaspdi
+        solicitud_administradora: solicitud_administradora
+        titulacion: titulacion
+        asignaturas_48_horas: asignaturas_48_horas
+        solicitud_al_departamento: solicitud_al_departamento
+        observaciones: observaciones
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

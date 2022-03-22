@@ -1,0 +1,108 @@
+uuid: 24add256-a97f-4579-b613-6d944ef0d2d8
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3759
+title: 'Delegados/as y Subdelegados/as Grupo 871'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        718081: 'ÁLVAREZ CASES, DANIEL'
+        750861: 'AMBROSIO CORREA, ALEJANDRO'
+        719443: 'ARENAZ PERALO, ÁLVARO'
+        741314: 'ARGUEDAS JIMÉNEZ, IGNACIO'
+        555728: 'ARIZA ORQUÍN, DANIEL'
+        683538: 'ASIMBAYA ALQUINGA, CRISTIAN ANDRES'
+        706183: 'BAILO SANCHEZ, IÑAKI'
+        699723: 'BERNAD QUÍLEZ, BEATRIZ ARACELI'
+        740391: 'BLASCO GRACIA, JORGE'
+        740531: 'CABEZA MILLÁN, ÁLVARO'
+        699840: 'CABRERA ABAD, SERGIO'
+        478766: 'CANDIAL QUINTANILLA, PABLO'
+        746530: 'CARRO TIERNO, SAMUEL'
+        611986: 'CATALÁN SOLSONA, JUAN ANTONIO'
+        181870: 'CHAMARRO PELLEJERO, PEDRO'
+        823242: 'DOSSI  , MATTEO'
+        699315: 'ESPINO OLIVÁN, VÍCTOR'
+        716322: 'GARASA ARRONDO, GUILLERMO'
+        715326: 'GARCÍA FERNÁNDEZ, LAURA'
+        718890: 'GARCIA SAMPE, ANTONIO'
+        705710: 'GIL GIL, LUIS'
+        719890: 'GIL PÉREZ, DANIEL'
+        700872: 'GIMÉNEZ ROTA, GUILLERMO'
+        683735: 'GÓMEZ LUENGO, VIRGINIA'
+        698079: 'GONZÁLEZ GAMBAU, PABLO'
+        740201: 'GONZÁLEZ PELLEJERO, SERGIO'
+        738980: 'GRACIA CADARSO, MARCOS'
+        717135: 'GUTIÉRREZ HERNÁNDEZ, ANDREA'
+        698175: 'HEREDIA LACASA, ALFONSO LUIS'
+        702493: 'HERNÁNDEZ SANZ, ANA'
+        718086: 'HERRANZ HIJAZO, SERGIO'
+        406154: 'IBARRA CHACON, PEDRO ANTONIO DE'
+        702092: 'JARAUTA ZARZA, ITZIAR'
+        720861: 'LAGUNA HERNÁNDEZ, ROBERTO'
+        740390: 'LARRIBA LLAMAS, EDUARDO'
+        737360: 'LASTANAO MIRO, PABLO'
+        718077: 'LÁZARO GARCÍA, JAIME'
+        697071: 'LÓPEZ FANLO, ADRIÁN'
+        718597: 'LÓPEZ LACASTA, CLAUDIA'
+        699620: 'LORENZ GARCÍA, RUBÉN'
+        736815: 'MARTIN ZALBA, JUAN JOSÉ'
+        736205: 'MARZO GALVE, DIEGO'
+        736784: 'MIGUEL LABORDA, PEDRO'
+        794869: 'MURO FRAGUAS, LAURA'
+        627288: 'PÉREZ USÓN, LAURA MARÍA'
+        822739: 'PORCELLATO  , TOMMASO'
+        690816: 'PUERTO MADORRAN, ANDRES'
+        720341: 'ROBA FERNANDO, ANA MARÍA'
+        794844: 'SANTAMARÍA HOYOS, NATALIA'
+        822257: 'SUÁREZ SARMIENTO, SANDRA'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

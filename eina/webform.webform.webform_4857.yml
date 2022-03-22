@@ -1,0 +1,199 @@
+uuid: 1bbf323d-2aa4-45bf-9058-59f0c9fae913
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4857
+title: 'Votaciones Comisiones JdeE 10/02/22'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#title': NIP
+      '#description': 'Introducir el NIP'
+      '#required': true
+    correo_electronico:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#description': 'Introducir correo electrónico de @unizar'
+      '#required': true
+  comision_academica_arquitectura:
+    '#type': webform_wizard_page
+    '#title': 'CA Arq.'
+    comision_academica_grado_en_estudios_en_arquitectura:
+      '#type': checkboxes
+      '#options':
+        Bambo: ' Bambó Naya, Raimundo (Urbanística y ordenación del territorio)'
+        Cueto: 'Cueto Prendes, Elías (Mecánica de medios continuos y teoría de estructuras)'
+        Espinosa: 'Espinosa Fernández, Almudena (Construcciones arquitectónicas)'
+        Jerez: 'Jerez Abajo, Enrique (Proyectos arquitectónicos)'
+        Perez: 'Pérez Moreno, Lucía Carmen (Composición arquitectónica)'
+        VB: 'Voto en blanco       (Si desea votar en blanco, asegúrese de no seleccionar a ningún candidato)'
+      '#multiple': true
+      '#title': 'Comisión Académica Grado en Estudios en Arquitectura'
+      '#description': 'Votación de 2 REPRESENTANTES'
+  comision_academica_teleco:
+    '#type': webform_wizard_page
+    '#title': 'CA Telec.'
+    comision_academica_telecomucion:
+      '#type': checkboxes
+      '#options':
+        Canales: 'Canales Compés, María (Ingeniería telemática)'
+        Rodriguez: 'Rodríguez Fernández, Ricardo Julio (Informática e ingeniería de sistemas)'
+        Urriza: 'Urriza Parroqué, Isidro (Tecnología electrónica)'
+        VB: 'Voto en blanco       (Si desea votar en blanco, asegúrese de no seleccionar a ningún candidato)'
+      '#multiple': true
+      '#title': 'Comisión Académica Grado en Ing. de Tecnologías y Servicios de Telecomunicación'
+      '#description': 'Votación de 2 REPRESENTANTES'
+  comision_academica_inform:
+    '#type': webform_wizard_page
+    '#title': 'CA Informát.'
+    comision_academica_informatica:
+      '#type': checkboxes
+      '#options':
+        Latre: 'Latre Abadía, Miguel Ángel (Lenguajes y sistemas informáticos)'
+        Palomas: 'Palomas Doña, Sergio (Organización de empresas)'
+        Rodríguez: ' Rodríguez Fernández, Ricardo Julio (Informática e ingeniería de sistemas)'
+        VB: 'Voto en blanco       (Si desea votar en blanco, asegúrese de no seleccionar a ningún candidato)'
+      '#multiple': true
+      '#title': 'Comisión Académica Grado en Ingeniería Informática'
+      '#description': 'Votación de 2 REPRESENTANTES'
+  comision_jde_dan:
+    '#type': webform_wizard_page
+    '#title': 'CJDE Deporte'
+    comision_jde_deporte:
+      '#type': radios
+      '#options':
+        Lopez: 'López-Tejeira Sagües, Fernando'
+        Romeo: 'Romeo Giménez, Luis Miguel'
+        VB: 'Voto en blanco'
+      '#title': 'Comisión de apoyo y seguimiento a los deportistas de alto nivel/rendimiento'
+      '#description': 'Votación de 1 REPRESENTANTE'
+  comision_jde_diversidad:
+    '#type': webform_wizard_page
+    '#title': 'CJDE Igualdad'
+    comision_jde_igualdad:
+      '#type': checkboxes
+      '#options':
+        Lorenzo: 'Lorenzo Bataller, Judith'
+        Perez: 'Pérez Ortíz, Isabel'
+        Prados: 'Prados Pérez, Javier'
+        Serrano: 'Serrano Vicente, Bárbara'
+        VB: 'Voto en blanco       (Si desea votar en blanco, asegúrese de no seleccionar a ningún candidato)'
+      '#multiple': true
+      '#title': 'Comisión de igualdad y atención a la diversidad'
+      '#description': 'Votación de 3 REPRESENTANTES'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: url
+  confirmation_url: 'https://eina.unizar.es/elecciones/confirmacion-para-validar'
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que su voto se registre debe hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:modified_date]
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirme el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrá volver a cumplimentar el formulario
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Su voto ha sido registrado correctamente.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

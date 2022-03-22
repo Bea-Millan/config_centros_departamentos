@@ -1,0 +1,53 @@
+uuid: f2d9864c-8ba1-4fd7-96c3-24179a606474
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3679
+title: 'Delegados/as y Subdelegados/as Grupo 111'
+description: null
+category: null
+elements: |-
+  email:
+    '#unique': true
+    '#title_display': inline
+    '#title': 'Correo electrónico (@unizar.es)'
+    '#description': |-
+      Introduce tu dirección de correo de Unizar (N.I.P.@unizar.es)
+      La aplicación verifica mediante el NIP del correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      C1: 'Candidato Número 1'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

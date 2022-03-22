@@ -1,0 +1,126 @@
+uuid: 30d7e10f-f538-4700-944a-1d43d771c612
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_3747
+title: 'Delegados/as y Subdelegados/as Grupo 842'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nip:
+      '#type': textfield
+      '#size': 20
+      '#unique': true
+      '#title_display': inline
+      '#title': 'Introduce tu NIP'
+      '#description': 'La aplicación verifica mediante tu NIP si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+      '#required': true
+  saltopag:
+    '#type': webform_wizard_page
+    '#title': SaltoPag
+    candidaturas:
+      '#type': radios
+      '#options':
+        759704: 'ABADÍAS PUYUELO, JORGE'
+        758508: 'ADÁN LAGUNA, MARCOS'
+        748041: 'AGUADO GONZÁLEZ, CARLOS'
+        738220: 'ALBERTOS HERNÁNDEZ, ADA'
+        738219: 'ALCALDE SIERRA, DANIEL'
+        757186: 'ALONSO MARTÍN, JULIA'
+        760088: 'ÁLVAREZ GARCÍA, MARINA'
+        756615: 'ARIZA CÓLERA, CARLOS'
+        741086: 'AYUDA PIQUER, PATRICIA'
+        723243: 'BAEZ PIEDROLA, ANE'
+        717025: 'BAEZA MARTÍN-POSADILLO, CRISTINA'
+        735481: 'BÁGUENA GUTIÉRREZ, MARÍA'
+        761913: 'BAIGORRI LÓPEZ, IVÁN'
+        767989: 'BAILÓN GARCÍA, MARIO'
+        740057: 'BAJÉN GONZALO, JORGE'
+        761912: 'BAÑARES SUESCUN, PABLO'
+        741124: 'BARAHONA DE MIGUEL, FRANCISCO'
+        719440: 'BAYARTE CITORES, JORGE'
+        764838: 'BENÉS IRUZUBIETA, ALBERTO'
+        740045: 'CABELLO DÍAZ, PEDRO'
+        755358: 'CALVO BAIGORRI, JAIME'
+        761869: 'CALVO BLASCO, JAVIER'
+        738548: 'CALVO CHAMARRO, DAVID'
+        758441: 'CARO SIERRA, DAVID'
+        761893: 'CARRIZO RUIZ, ISABEL'
+        716515: 'CASTÁN MALLOR, VICTOR'
+        739628: 'CASTÁN RUIZ, VÍCTOR'
+        736722: 'CENJOR ANDRÉS, SANTIAGO'
+        611940: 'CONCHA RIVERA, MERCEDES'
+        738424: 'CONRAT ESTONLLO, PAULA'
+        702780: 'CORONADO HERNÁNDEZ, JOSE IGNACIO'
+        758567: 'CRISAN  , SERGIU ANDREI'
+        724422: 'DE CARLOS PEÑA, RAFAEL'
+        735565: 'DOSSET CLAVERIA, FELIPE'
+        760608: 'ELENA CHAVARRÍA, ARIADNA'
+        720124: 'ELVIRO MUÑOZ, ÍÑIGO'
+        739000: 'ESCALONA BALLARÍN, HUGO'
+        758652: 'ESCOBEDO MORENO, JESÚS JOAQUÍN'
+        757252: 'ESTEBAN ANDALUZ, JORGE'
+        735562: 'ESTEBAN GOTOR, ÁLVARO'
+        738616: 'FARKHI  , OUMAIMA'
+        761428: 'FERNÁNDEZ GARCÍA, PABLO'
+        739210: 'FERNÁNDEZ SÁNCHEZ, JORGE'
+        719891: 'FERNÁNDEZ SUSO, PABLO'
+        761740: 'FERRER LUZON, JORGE'
+        719861: 'FORNOS ROYO, JAVIER'
+        721178: 'FRAGO AZNAR, DAVID'
+        756133: 'FRECHILLA ZABAL, JAVIER'
+        719138: 'FUERTES ROCHE, OSCAR JOSÉ'
+        719363: 'GARCERÁN DEL MONTE, RAFAEL'
+        755380: 'GARCIA GARCIA, EDUARDO JAVIER'
+        727291: 'GARCIA GONZALEZ, CARMEN'
+        761995: 'GARCÍA LAMBÁN, SARA'
+        737087: 'GARCÍA MUÑOZ, FÉLIX'
+        739386: 'GERMÁN ARAUZO, PABLO'
+        758029: 'GOMARA RUBIO, JORGE JOAQUÍN'
+        758639: 'GÓMEZ JARRETA, ÁLVARO'
+        717938: 'GUALLART HUERTAS, JAVIER'
+        760033: 'GÜEMES FERRER, GUILLERMO'
+        740498: 'HERNÁNDEZ AGUSTÍN, LAURA'
+        759465: 'HERNANDO BLASCO, MARCOS'
+        755624: 'HUARTE RUBIO, JAIME'
+        760656: 'HUERGA ARÉVALO, AGUSTÍN'
+        737116: 'IBÁÑEZ PUÉRTOLAS, EDUARDO'
+        757042: 'IGAL FUENTES, INÉS'
+        722300: 'IZQUIERDO GUERRERO, ALBA'
+        735023: 'JARDIEL PÉREZ, VÍCTOR'
+        717630: 'LÁZARO ALONSO, ALEJANDRO'
+        VB: 'Voto en blanco'
+      '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

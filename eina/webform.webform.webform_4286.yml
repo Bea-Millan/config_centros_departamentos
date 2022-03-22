@@ -1,0 +1,57 @@
+uuid: 5e305530-208b-4098-91a9-56af4b8e8721
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_4286
+title: 'Taller comunicación'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  pertenezco_a_la_eina:
+    '#type': select
+    '#options':
+      Si: Sí
+      'No': 'No'
+    '#title': 'Pertenezco a la EINA'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

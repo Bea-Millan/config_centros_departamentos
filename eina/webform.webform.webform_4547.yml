@@ -1,0 +1,165 @@
+uuid: caaf48de-23a6-42e5-ad0a-1201d40e2acf
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_4547
+title: 'Delegados/as y Subdelegados/as. Curso 2021-22. Grupo 571'
+description: null
+category: null
+elements: |-
+  correo_electronico_unizares:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (@unizar.es)'
+    '#description': 'Introduce tu dirección de correo electrónico. La aplicación verifica mediante el NIP indicado en el correo electrónico si estás censado en este grupo. Si no lo estás, no podrás ejercer tu voto.'
+    '#required': true
+  candidaturas:
+    '#type': radios
+    '#options':
+      732550: 'AGUADO MARTÍNEZ, CARLOS'
+      863403: 'ALVES VIEIRA, MARIANA'
+      559355: 'BASELGA CALZADA, MARIO'
+      740474: 'BAZÁN PÉREZ, JUAN IGNACIO'
+      864688: 'BELTRAN SANCHEZ, MARTIN ISRAEL'
+      698572: 'CASALS LUNA, EMILIO'
+      563197: 'CORTÉS RUIZ, ADRIÁN'
+      305087: 'ENGUITA LOMBARDO, ALBERTO TOMAS'
+      544993: 'ESTEBAN GEA, VÍCTOR'
+      718856: 'ESTEBAN LARRAZ, MANUEL'
+      669940: 'FERNÁNDEZ RODRIGO, CARLOS'
+      738980: 'GRACIA CADARSO, MARCOS'
+      682477: 'GUERRA LLAMAS, IGNACIO'
+      698565: 'HORCAS ESTEBAN, SERGIO'
+      761268: 'LABRADOR LABRADOR, JOSÉ MANUEL'
+      822213: 'LANDA VICANDI, IGOR'
+      739187: 'LARROSA FLORIA, ANDREA'
+      758090: 'LARROSA PORTAS, JORGE'
+      680948: 'LÓPEZ GIMENO, EDUARDO'
+      602660: 'MARTÍN GÓMEZ, JESÚS MARCELO'
+      860246: 'MAYAU  , LISA'
+      856649: 'MELILLO  , DOMENICO'
+      518091: 'MORENO BESCÓS, IGNACIO ALEJANDRO'
+      734920: 'MUÑOZ AÑÓN, PABLO'
+      521379: 'NAVARRO CRESPO, JUAN RODRIGO'
+      848488: 'PLAZA SERRANO, RODRIGO'
+      849331: 'PLAZAOLA IGUARAN, AITOR'
+      468673: 'RIVERA SAHUN, JOAQUIN'
+      765069: 'RUIZ SÁENZ DE PIPAÓN, SERGIO'
+      682241: 'SEBASTIAN MOROS, BLANCA'
+      850508: 'URIEL MOLINAT, PABLO'
+      847528: 'ZWIERSKI  , AXEL'
+      VB: 'Voto en blanco'
+    '#title': 'Por favor, vota la candidatura elegida y pulsa Enviar'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu voto se ha registrado correctamente.</p><p>Recuerda que debés confirmarlo mediante el enlace que habrás recibido en tu correo electrónico.</p><p>Gracias</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Para que tu voto se registre debes hacer clic en el siguiente enlace antes de que pasen 60 minutos de la hora de envío: [webform_submission:completed_date:long]
+
+        Enlace de confirmación:
+        [webform_submission:confirm_url]
+
+        En el caso de que no confirmes el envío, mediante el enlace, el voto no se registrará y pasados 60 minutos podrás volver a cumplimentar el formulario.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_unizares:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Tu voto ha sido registrado correctamente de manera definitiva.
+
+        Gracias por participar en esta votación
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,146 @@
+uuid: 67769926-558f-46ca-8b26-4a76f03d6a9b
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3937
+title: 'Ofrecimiento cesión de equipamiento'
+description: null
+category: null
+elements: |-
+  equipamiento_ofrecido:
+    '#type': textfield
+    '#title': 'Equipamiento ofrecido'
+    '#description': 'Breve descripción del equipamiento ofrecido para su reutilización'
+    '#required': true
+  numero_de_inventario:
+    '#type': textfield
+    '#title': 'Número de inventario'
+  ubicacion:
+    '#type': textfield
+    '#title': Ubicación
+  correo_electronico_d:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (D)'
+    '#description': 'Email de contacto. Utilizar direcciones de correo electrónico de @unizar.es'
+    '#required': true
+  comentarios___observaciones:
+    '#type': textarea
+    '#title': 'Comentarios / Observaciones'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su oferta de equipamiento para reutilización ha sido registrada.</p><p>En breve será publicada en la web.</p><p>Si algún miembro de la EINA solicita el equipamiento, usted recibirá un correo electrónico con los datos del solicitante para establecer el contacto con él.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_d:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Ha sido registrada una oferta de equipamiento para su reutilización.
+        Los datos recibidos son:
+        [webform_submission:values]
+
+        En breve será publicada en la web.
+        Si algún miembro de la EINA solicita el equipamiento, usted recibirá un correo electrónico con los datos del solicitante para establecer el contacto con él.
+        Para modificar cualquier información acerca de este ofrecimiento póngase en contacto con einaweb@unizar.es
+
+        Gracias
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: einaweb@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Ha sido registrada una oferta de equipamiento para su reutilización.
+        Los datos recibidos son:
+        [webform_submission:values]
+
+        En breve será publicada en la web.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

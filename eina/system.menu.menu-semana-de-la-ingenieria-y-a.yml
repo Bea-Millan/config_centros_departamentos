@@ -1,0 +1,8 @@
+uuid: a40857aa-1864-4878-b65f-145e8ca3cf36
+langcode: es
+status: true
+dependencies: {  }
+id: menu-semana-de-la-ingenieria-y-a
+label: 'Semana de la Ingenieria y Arquitectura'
+description: ''
+locked: false

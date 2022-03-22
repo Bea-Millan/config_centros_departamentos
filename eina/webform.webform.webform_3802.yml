@@ -1,0 +1,212 @@
+uuid: ddf361dd-36b3-4ce3-bc20-5cd32812027c
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 263
+template: false
+archive: false
+id: webform_3802
+title: 'Tareas Teletrabajo PAS'
+description: null
+category: null
+elements: |-
+  fecha_comienzo_informe:
+    '#type': date
+    '#title': 'Fecha comienzo informe'
+    '#required': true
+  fecha_fin_informe:
+    '#type': date
+    '#title': 'Fecha fin informe'
+    '#required': true
+  nip:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': NIP
+    '#required': true
+  numero_de_jornadas_teletrabajadas:
+    '#title': 'Número de jornadas teletrabajadas'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#states':
+      visible:
+        - ':input[name="nip"]':
+            value:
+              greater: '111111'
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+  correo_electronico_tutor:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico tutor'
+    '#states':
+      visible:
+        - ':input[name="nip"]':
+            value:
+              greater: '111111'
+  funciones_realizadas_durante_el_periodo:
+    '#type': checkboxes
+    '#options':
+      01_Planif_Prog_Org: 'Planificación, programación y organización de actividades.'
+      02_Informes_Estudios: 'Realización, revisión y supervisión de informes, estudios, estadísticas y documentación.'
+      03_Normas_Proced: 'Elaboración de normas internas, instrucciones de funcionamiento y procedimientos de trabajo.'
+      04_Propuestas: 'Elaboración de propuesta de reglamentos, procedimientos y normativas.'
+      05_Informar: 'Informar de normativa a unidades o áreas dependientes.'
+      06_Divulgacion: 'Elaboración de material divulgativo y de difusión e información.'
+      07_Seg_Presupuesto: 'Seguimiento del presupuesto asignado al área de su competencia.'
+      08_Atencion: 'Atención de consultas no presenciales.'
+      09_App_informaticas: 'Diseño de aplicaciones informáticas.'
+      '10_ Ev_informatica': 'Evaluación de sistemas informáticos.'
+      11_Sup_Sistemas: 'Supervisión de sistemas susceptibles de realización de forma remota.'
+      12_Adap_Inf: 'Adaptación de la información al uso de las nuevas tecnologías de la información.'
+      13_Web: 'Diseño y mantenimiento de páginas web.'
+      14_Gest_Presencia: 'Seguimiento y control de sistemas de gestión de presencia.'
+      15_Actualiz: 'Actualizar la información de los diversos elementos, dispositivos y software de su competencia.'
+      16_Datos: 'Grabación de datos en aplicaciones informáticas.'
+      '17_ Diseno': 'Diseño y creación de prototipos, instrumentos, componentes y herramientas de trabajo.'
+      18_Presupuestar: 'Presupuestar y realizar valoraciones económicas de trabajos para su posterior facturación.'
+    '#multiple': true
+    '#title': 'Funciones realizadas durante el periodo'
+    '#description': 'Selecciona las tareas realizadas en este periodo de tiempo'
+  otras_tareas_realizadas:
+    '#type': textarea
+    '#title': 'Otras tareas realizadas'
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Tu informe se ha recibido correctamente.</p><p>Recibirás una copia del mismo en tu correo electrónico.</p><p>No se recibirá respuesta expresa a este informe salvo que el Supervisor, contacte directamente con el trabajador para los efectos que estime oportunos.&nbsp;<br><span style="font-size: 13.008px;">En el resto de los casos, se entenderá que la resolución del Supervisor es favorable.</span></p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_tutor:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Informe de teletrabajo de [webform_submission:values:nombre]
+
+        Periodo del informe correspondiente a [webform_submission:values:numero_de_jornadas_teletrabajadas] jornadas de teletrabajo entre [webform_submission:values:fecha_comienzo_informe] y [webform_submission:values:fecha_fin_informe].
+
+        Tareas:
+
+        [webform_submission:values:funciones_realizadas_durante_el_periodo]
+
+        [webform_submission:values:otras_tareas_realizadas]
+         
+
+        Observaciones:
+
+        [webform_submission:values:observaciones]
+
+         
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Informe de teletrabajo de [webform_submission:values:nombre]
+
+        Periodo del informe correspondiente a [webform_submission:values:numero_de_jornadas_teletrabajadas] jornadas de teletrabajo entre [webform_submission:values:fecha_comienzo_informe] y [webform_submission:values:fecha_fin_informe].
+
+        Tareas:
+
+        [webform_submission:values:funciones_realizadas_durante_el_periodo]
+
+        [webform_submission:values:otras_tareas_realizadas]
+         
+
+        Observaciones:
+
+        [webform_submission:values:observaciones]
+
+         
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

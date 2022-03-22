@@ -1,0 +1,116 @@
+uuid: 325806a2-7b30-4110-9116-cba76dbae83f
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3116
+title: 'Voluntarios Semana Ingenieria y Arquitectura'
+description: null
+category: null
+elements: |-
+  nip:
+    '#min': '111111'
+    '#max': '999999'
+    '#title': NIP
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  grado_en_el_que_estas_matriculado:
+    '#type': select
+    '#options':
+      Arquitectura: 'Grado en Estudios en Arquitectura'
+      Tecnologias_Industriales: 'Grado en Ingeniería de Tecnologías Industriales'
+      Tecnologias_Servicios_Telecomunicacion: 'Grado en Ingeniería de Tecnologías y Servicios de Telecomunicación'
+      Electricidad: 'Grado en Ingeniería Eléctrica'
+      Electronica_Automatica: 'Grado en Ingeniería Electrónica y Automática'
+      Diseno_Industrial_Desarrollo_Producto: 'Grado en Ingeniería en Diseño Industrial y Desarrollo de Producto'
+      Mecanica: 'Grado en Ingeniería Mecánica'
+      Informatica: 'Grado en Ingeniería Informática'
+      Quimica: 'Grado en Ingeniería Química'
+    '#title': 'Grado en el que estás matriculado'
+    '#required': true
+  disponibilidad_de_tiempo:
+    '#type': textarea
+    '#title': 'Disponibilidad de tiempo'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Enviado: [webform_submission:date:long]
+
+        Valores enviados en la solicitud de voluntario/a de la Semana de la Ingeniería y Arquitectura:
+        [webform_submission:values]
+
+        Pasado el periodo de inscripción, se te convocará a una reunión.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

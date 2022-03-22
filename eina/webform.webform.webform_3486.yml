@@ -1,0 +1,89 @@
+uuid: 234843aa-d3de-4fb6-bd01-048bc6c378b6
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_3486
+title: 'Formulario Ayuda '
+description: null
+category: null
+elements: |-
+  nip:
+    '#min': '000001'
+    '#max': '999999'
+    '#title': NIP
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellido_1:
+    '#type': textfield
+    '#title': 'Apellido 1'
+    '#required': true
+  apellido_2:
+    '#type': textfield
+    '#title': 'Apellido 2'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': Teléfono
+    '#required': true
+  direccion:
+    '#type': textfield
+    '#title': Dirección
+    '#required': true
+  poblacion:
+    '#type': textfield
+    '#title': Población
+    '#required': true
+  cp:
+    '#max': '99999'
+    '#title': C.P.
+    '#required': true
+  descripcion_del_problema:
+    '#type': textarea
+    '#title': 'Descripción del problema'
+    '#required': true
+  necesitas_una_tarjeta_sim_para_router:
+    '#type': radios
+    '#options':
+      'No': 'No'
+      Si: Sí
+    '#title': '¿Necesitas una tarjeta SIM para router?'
+    '#required': true
+  necesitas_pc:
+    '#type': radios
+    '#options':
+      'No': 'No'
+      Si: Sí
+    '#title': '¿Necesitas un PC o portátil?'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
