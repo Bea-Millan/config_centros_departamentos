@@ -1,0 +1,740 @@
+uuid: b5e55260-e2b4-485c-87eb-7be398354a31
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 172
+template: false
+archive: false
+id: webform_601
+title: 'Autorización certificado delitos sexuales'
+description: null
+category: null
+elements: |-
+  encabezamiento:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p align="center"><strong>AUTORIZACIÓN </strong><strong>PARA SOLICITAR EL CERTIFICADO RECOGIDO EN EL ARTÍCULO 13.5 DE LA LEY ORGÁNICA 1/1996, DE 15 DE ENERO, DE PROTECCIÓN JURÍDICA DEL MENOR.</strong></p>'
+    '#title': Encabezamiento
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    primer_apellido_18:
+      '#type': textfield
+      '#title': 'Primer apellido'
+      '#required': true
+    segundo_apellido_18:
+      '#type': textfield
+      '#title': 'Segundo apellido'
+      '#required': true
+    nombre_18:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    tipo_de_documento_18:
+      '#type': select
+      '#options':
+        1: DNI
+        2: NIE
+      '#title': 'Tipo de documento'
+      '#required': true
+    nif_o_nie_18:
+      '#type': textfield
+      '#title': 'NIF o NIE'
+      '#required': true
+    fecha_de_nacimiento_18:
+      '#type': date
+      '#title': 'Fecha de nacimiento'
+      '#required': true
+    sexo_18:
+      '#type': select
+      '#options':
+        1: Hombre
+        2: Mujer
+      '#title': Sexo
+      '#required': true
+    localidad_de_nacimiento_18:
+      '#type': textfield
+      '#title': 'Localidad de nacimiento'
+      '#required': true
+    provincia_de_nacimiento_18:
+      '#type': textfield
+      '#title': 'Provincia de nacimiento'
+      '#required': true
+    pais_de_nacimiento_18:
+      '#type': select
+      '#options':
+        ES: España
+        AF: Afganistán
+        AL: Albania
+        DE: Alemania
+        AD: Andorra
+        AO: Angola
+        AI: Anguila
+        AG: 'Antigua y Barbuda'
+        AN: 'Antillas Holandesas'
+        AQ: Antártida
+        SA: 'Arabia Saudí'
+        DZ: Argelia
+        AR: Argentina
+        AM: Armenia
+        AW: Aruba
+        AU: Australia
+        AT: Austria
+        AZ: Azerbaiyán
+        BS: Bahamas
+        BH: Bahrein
+        BD: Bangladesh
+        BB: Barbados
+        BZ: Belice
+        BJ: Benin
+        BM: Bermudas
+        BY: Bielorrusia
+        BO: Bolivia
+        BA: 'Bosnia Herzegovina'
+        BW: Botsuana
+        BR: Brasil
+        BN: Brunei
+        BG: Bulgaria
+        BF: 'Burkina Faso'
+        BI: Burundi
+        BT: Bután
+        BE: Bélgica
+        CV: 'Cabo Verde'
+        KH: Camboya
+        CM: Camerún
+        CA: Canadá
+        BQ: 'Caribbean Netherlands'
+        TD: Chad
+        CL: Chile
+        CN: China
+        CY: Chipre
+        CO: Colombia
+        KM: Comoras
+        CG: 'Congo (Brazzaville)'
+        CD: 'Congo (Kinshasa)'
+        KP: 'Corea del Norte'
+        KR: 'Corea del Sur'
+        CI: 'Costa de Marfil'
+        CR: 'Costa Rica'
+        HR: Croacia
+        CU: Cuba
+        CW: Curazao
+        DK: Dinamarca
+        DM: Dominica
+        EC: Ecuador
+        EG: Egipto
+        LB: 'El Líbano'
+        SV: 'El Salvador'
+        VA: 'El Vaticano'
+        AE: 'Emiratos Árabes Unidos'
+        ER: Eritrea
+        SK: Eslovaquia
+        SI: Eslovenia
+        US: 'Estados Unidos'
+        EE: Estonia
+        ET: Etiopía
+        PH: Filipinas
+        FI: Finlandia
+        FJ: Fiyi
+        FR: Francia
+        GA: Gabón
+        GM: Gambia
+        GE: Georgia
+        GH: Ghana
+        GI: Gibraltar
+        GD: Granada
+        GR: Grecia
+        GL: Groenlandia
+        GP: Guadalupe
+        GU: Guam
+        GT: Guatemala
+        GY: Guayana
+        GF: 'Guayana Francesa'
+        GG: Guernsey
+        GN: Guinea
+        GW: Guinea-Bissau
+        GQ: 'Guinea Ecuatorial'
+        HT: Haití
+        HN: Honduras
+        HU: Hungría
+        ID: Indonesia
+        IQ: Irak
+        IE: Irlanda
+        IR: Irán
+        BV: 'Isla Bouvet'
+        IM: 'Isla de Man'
+        CX: 'Isla de Navidad'
+        NF: 'Isla de Norfolk'
+        IS: Islandia
+        AX: 'Islas Aland'
+        KY: 'Islas Caimán'
+        CC: 'Islas Cocos'
+        CK: 'Islas Cook'
+        FO: 'Islas Feroe'
+        GS: 'Islas Georgias del Sur y Sandwich del Sur'
+        HM: 'Islas Heard y McDonald'
+        FK: 'Islas Malvinas/Falkland'
+        MP: 'Islas Marianas del Norte'
+        MH: 'Islas Marshall'
+        SB: 'Islas Salomón'
+        TC: 'Islas Turcas y Caicos'
+        UM: 'Islas Ultramarinas de Estados Unidos'
+        VG: 'Islas Vírgenes Británicas'
+        VI: 'Islas Vírgenes de los Estados Unidos'
+        IL: Israel
+        IT: Italia
+        JM: Jamaica
+        JP: Japón
+        JE: Jersey
+        JO: Jordania
+        KZ: Kazajastán
+        KE: Kenia
+        KG: Kirguistán
+        KI: Kiribati
+        KW: Kuwait
+        IN: 'La India'
+        MQ: 'La Martinica'
+        LA: Laos
+        LS: Lesotho
+        LV: Letonia
+        LR: Liberia
+        LY: Libia
+        LI: Liechtenstein
+        LT: Lituania
+        LU: Luxemburgo
+        MK: Macedonia
+        MG: Madagascar
+        MY: Malasia
+        MW: Malaui
+        MV: Maldivas
+        ML: Mali
+        MT: Malta
+        MA: Marruecos
+        MU: Mauricio
+        MR: Mauritania
+        YT: Mayotte
+        FM: Micronesia
+        MD: Moldavia
+        MN: Mongolia
+        ME: Montenegro
+        MS: Montserrat
+        MZ: Mozambique
+        MM: Myanmar
+        MX: México
+        MC: Mónaco
+        NA: Namibia
+        NR: Nauru
+        NP: Nepal
+        NI: Nicaragua
+        NG: Nigeria
+        NU: Niue
+        'NO': Noruega
+        NC: 'Nueva Caledonia'
+        NZ: 'Nueva Zelanda'
+        NE: Níger
+        OM: Omán
+        PK: Pakistán
+        PW: Palau
+        PA: Panamá
+        PG: 'Papúa Nueva Guinea'
+        PY: Paraguay
+        NL: 'Países Bajos'
+        PE: Perú
+        PN: Pitcairn
+        PF: 'Polinesia Francesa'
+        PL: Polonia
+        PT: Portugal
+        PR: 'Puerto Rico'
+        QA: Qatar
+        HK: 'R.A.E. de Hong Kong, China'
+        MO: 'R.A.E. de Macao, China'
+        GB: 'Reino Unido'
+        CF: 'República Centroafricana'
+        CZ: 'República Checa'
+        DO: 'República Dominicana'
+        RE: Reunión
+        RW: Ruanda
+        RO: Rumanía
+        RU: Rusia
+        WS: Samoa
+        AS: 'Samoa americana'
+        BL: 'San Bartolomé'
+        KN: 'San Cristóbal y Nieves'
+        SM: 'San Marino'
+        MF: 'San Martín (parte francesa)'
+        PM: 'San Pedro y Miguelón'
+        SH: 'Santa Helena'
+        LC: 'Santa Lucía'
+        ST: 'Santo Tomé y Príncipe'
+        VC: 'San Vicente y las Granadinas'
+        SN: Senegal
+        RS: Serbia
+        SC: Seychelles
+        SL: 'Sierra Leona'
+        SG: Singapur
+        SX: 'Sint Maarten'
+        SY: Siria
+        SO: Somalia
+        SS: 'South Sudan'
+        LK: 'Sri Lanka'
+        SZ: Suazilandia
+        SD: Sudán
+        SE: Suecia
+        CH: Suiza
+        SR: Surinam
+        ZA: Suráfrica
+        SJ: 'Svalbard y Jan Mayen'
+        EH: 'Sáhara Occidental'
+        TH: Tailandia
+        TW: Taiwán
+        TZ: Tanzania
+        TJ: Tayikistán
+        IO: 'Territorio Británico del Océano Índico'
+        PS: 'Territorio Palestino'
+        TF: 'Tierras Australes y Antárticas Francesas'
+        TL: Timor-Leste
+        TG: Togo
+        TK: Tokelau
+        TO: Tonga
+        TT: 'Trinidad y Tobago'
+        TM: Turkmenistán
+        TR: Turquía
+        TV: Tuvalu
+        TN: Túnez
+        UA: Ucrania
+        UG: Uganda
+        UY: Uruguay
+        UZ: Uzbekistán
+        VU: Vanuatu
+        VE: Venezuela
+        VN: Vietnam
+        WF: 'Wallis y Futuna'
+        YE: Yemen
+        DJ: Yibuti
+        ZM: Zambia
+        ZW: Zimbabue
+      '#title': 'País de nacimiento'
+      '#required': true
+    pais_de_nacionalidad_18:
+      '#type': select
+      '#options':
+        ES: España
+        AF: Afganistán
+        AL: Albania
+        DE: Alemania
+        AD: Andorra
+        AO: Angola
+        AI: Anguila
+        AG: 'Antigua y Barbuda'
+        AN: 'Antillas Holandesas'
+        AQ: Antártida
+        SA: 'Arabia Saudí'
+        DZ: Argelia
+        AR: Argentina
+        AM: Armenia
+        AW: Aruba
+        AU: Australia
+        AT: Austria
+        AZ: Azerbaiyán
+        BS: Bahamas
+        BH: Bahrein
+        BD: Bangladesh
+        BB: Barbados
+        BZ: Belice
+        BJ: Benin
+        BM: Bermudas
+        BY: Bielorrusia
+        BO: Bolivia
+        BA: 'Bosnia Herzegovina'
+        BW: Botsuana
+        BR: Brasil
+        BN: Brunei
+        BG: Bulgaria
+        BF: 'Burkina Faso'
+        BI: Burundi
+        BT: Bután
+        BE: Bélgica
+        CV: 'Cabo Verde'
+        KH: Camboya
+        CM: Camerún
+        CA: Canadá
+        BQ: 'Caribbean Netherlands'
+        TD: Chad
+        CL: Chile
+        CN: China
+        CY: Chipre
+        CO: Colombia
+        KM: Comoras
+        CG: 'Congo (Brazzaville)'
+        CD: 'Congo (Kinshasa)'
+        KP: 'Corea del Norte'
+        KR: 'Corea del Sur'
+        CI: 'Costa de Marfil'
+        CR: 'Costa Rica'
+        HR: Croacia
+        CU: Cuba
+        CW: Curazao
+        DK: Dinamarca
+        DM: Dominica
+        EC: Ecuador
+        EG: Egipto
+        LB: 'El Líbano'
+        SV: 'El Salvador'
+        VA: 'El Vaticano'
+        AE: 'Emiratos Árabes Unidos'
+        ER: Eritrea
+        SK: Eslovaquia
+        SI: Eslovenia
+        US: 'Estados Unidos'
+        EE: Estonia
+        ET: Etiopía
+        PH: Filipinas
+        FI: Finlandia
+        FJ: Fiyi
+        FR: Francia
+        GA: Gabón
+        GM: Gambia
+        GE: Georgia
+        GH: Ghana
+        GI: Gibraltar
+        GD: Granada
+        GR: Grecia
+        GL: Groenlandia
+        GP: Guadalupe
+        GU: Guam
+        GT: Guatemala
+        GY: Guayana
+        GF: 'Guayana Francesa'
+        GG: Guernsey
+        GN: Guinea
+        GW: Guinea-Bissau
+        GQ: 'Guinea Ecuatorial'
+        HT: Haití
+        HN: Honduras
+        HU: Hungría
+        ID: Indonesia
+        IQ: Irak
+        IE: Irlanda
+        IR: Irán
+        BV: 'Isla Bouvet'
+        IM: 'Isla de Man'
+        CX: 'Isla de Navidad'
+        NF: 'Isla de Norfolk'
+        IS: Islandia
+        AX: 'Islas Aland'
+        KY: 'Islas Caimán'
+        CC: 'Islas Cocos'
+        CK: 'Islas Cook'
+        FO: 'Islas Feroe'
+        GS: 'Islas Georgias del Sur y Sandwich del Sur'
+        HM: 'Islas Heard y McDonald'
+        FK: 'Islas Malvinas/Falkland'
+        MP: 'Islas Marianas del Norte'
+        MH: 'Islas Marshall'
+        SB: 'Islas Salomón'
+        TC: 'Islas Turcas y Caicos'
+        UM: 'Islas Ultramarinas de Estados Unidos'
+        VG: 'Islas Vírgenes Británicas'
+        VI: 'Islas Vírgenes de los Estados Unidos'
+        IL: Israel
+        IT: Italia
+        JM: Jamaica
+        JP: Japón
+        JE: Jersey
+        JO: Jordania
+        KZ: Kazajastán
+        KE: Kenia
+        KG: Kirguistán
+        KI: Kiribati
+        KW: Kuwait
+        IN: 'La India'
+        MQ: 'La Martinica'
+        LA: Laos
+        LS: Lesotho
+        LV: Letonia
+        LR: Liberia
+        LY: Libia
+        LI: Liechtenstein
+        LT: Lituania
+        LU: Luxemburgo
+        MK: Macedonia
+        MG: Madagascar
+        MY: Malasia
+        MW: Malaui
+        MV: Maldivas
+        ML: Mali
+        MT: Malta
+        MA: Marruecos
+        MU: Mauricio
+        MR: Mauritania
+        YT: Mayotte
+        FM: Micronesia
+        MD: Moldavia
+        MN: Mongolia
+        ME: Montenegro
+        MS: Montserrat
+        MZ: Mozambique
+        MM: Myanmar
+        MX: México
+        MC: Mónaco
+        NA: Namibia
+        NR: Nauru
+        NP: Nepal
+        NI: Nicaragua
+        NG: Nigeria
+        NU: Niue
+        'NO': Noruega
+        NC: 'Nueva Caledonia'
+        NZ: 'Nueva Zelanda'
+        NE: Níger
+        OM: Omán
+        PK: Pakistán
+        PW: Palau
+        PA: Panamá
+        PG: 'Papúa Nueva Guinea'
+        PY: Paraguay
+        NL: 'Países Bajos'
+        PE: Perú
+        PN: Pitcairn
+        PF: 'Polinesia Francesa'
+        PL: Polonia
+        PT: Portugal
+        PR: 'Puerto Rico'
+        QA: Qatar
+        HK: 'R.A.E. de Hong Kong, China'
+        MO: 'R.A.E. de Macao, China'
+        GB: 'Reino Unido'
+        CF: 'República Centroafricana'
+        CZ: 'República Checa'
+        DO: 'República Dominicana'
+        RE: Reunión
+        RW: Ruanda
+        RO: Rumanía
+        RU: Rusia
+        WS: Samoa
+        AS: 'Samoa americana'
+        BL: 'San Bartolomé'
+        KN: 'San Cristóbal y Nieves'
+        SM: 'San Marino'
+        MF: 'San Martín (parte francesa)'
+        PM: 'San Pedro y Miguelón'
+        SH: 'Santa Helena'
+        LC: 'Santa Lucía'
+        ST: 'Santo Tomé y Príncipe'
+        VC: 'San Vicente y las Granadinas'
+        SN: Senegal
+        RS: Serbia
+        SC: Seychelles
+        SL: 'Sierra Leona'
+        SG: Singapur
+        SX: 'Sint Maarten'
+        SY: Siria
+        SO: Somalia
+        SS: 'South Sudan'
+        LK: 'Sri Lanka'
+        SZ: Suazilandia
+        SD: Sudán
+        SE: Suecia
+        CH: Suiza
+        SR: Surinam
+        ZA: Suráfrica
+        SJ: 'Svalbard y Jan Mayen'
+        EH: 'Sáhara Occidental'
+        TH: Tailandia
+        TW: Taiwán
+        TZ: Tanzania
+        TJ: Tayikistán
+        IO: 'Territorio Británico del Océano Índico'
+        PS: 'Territorio Palestino'
+        TF: 'Tierras Australes y Antárticas Francesas'
+        TL: Timor-Leste
+        TG: Togo
+        TK: Tokelau
+        TO: Tonga
+        TT: 'Trinidad y Tobago'
+        TM: Turkmenistán
+        TR: Turquía
+        TV: Tuvalu
+        TN: Túnez
+        UA: Ucrania
+        UG: Uganda
+        UY: Uruguay
+        UZ: Uzbekistán
+        VU: Vanuatu
+        VE: Venezuela
+        VN: Vietnam
+        WF: 'Wallis y Futuna'
+        YE: Yemen
+        DJ: Yibuti
+        ZM: Zambia
+        ZW: Zimbabue
+      '#title': 'País de nacionalidad'
+      '#required': true
+    nombre_del_padre_18:
+      '#type': textfield
+      '#title': 'Nombre del padre'
+      '#required': true
+    nombre_de_la_madre_18:
+      '#type': textfield
+      '#title': 'Nombre de la madre'
+      '#required': true
+    domicilio_18:
+      '#type': textfield
+      '#title': Domicilio
+    localidad_18:
+      '#type': textfield
+      '#title': Localidad
+    codigo_postal_18:
+      '#title': 'Código postal'
+    email_18:
+      '#type': email
+      '#size': 20
+      '#title': email
+      '#required': true
+  fieldset_datos_de_la_titulacion:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la titulación'
+    titulacion_26:
+      '#type': select
+      '#options':
+        1: 'Máster en Profesorado de Secundaria'
+        2: 'Grado en Magisterio en Educación Primaria'
+        3: 'Grado en Magisterio en Educación Infantil'
+      '#title': Titulación
+      '#required': true
+  autorizacion:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p style="text-align: justify;"><strong>Autorizo</strong> a la Universidad de Zaragoza para que, con motivo de la realización de prácticas escolares/prácticum en la Facultad de Educación de la titulación que se indica:</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1º) Solicite en mi nombre el certificado al que se refiere el artículo 13.5 de la Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2º) Con este único objeto y exclusivamente para este procedimiento, a verificar mis datos a través del Sistema de Verificación de Datos de Identidad.</p>'
+    '#title': Autorización
+  forma_presentacion:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>[msg_advertencia]Una vez matriculad@, debe presentar esta autorización: <br> - Preferentemente, a través del registro electrónico de la Universidad de Zaragoza <a href="https://regtel.unizar.es/">https://regtel.unizar.es/</a>, con DNI, NIP y contraseña administrativa (dirigido a la Facultad de Educación), o bien,<br> - En la Secretaría de la Facultad (horario de lunes a viernes de 9 a 14 horas).[/msg_advertencia]</p>'
+    '#title': 'Forma presentación'
+  proteccion_de_datos:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>Conforme a lo dispuesto en la legislación vigente en materia de protección de datos de carácter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasarán a ser tratados, como responsable, por la Universidad de Zaragoza con la finalidad de tramitar la gestión académica y administrativa de sus estudiantes así como su participación en actividades y servicios universitarios. Puede ejercitar sus derechos de acceso, rectificación, limitación, oposición o portabilidad ante el Gerente de la Universidad de Zaragoza (Edificio Paraninfo 1.ª planta, Plaza de Basilio Paraíso nº 4, 50005- Zaragoza) señalando concretamente la causa de su solicitud y acompañando copia de su documento acreditativo de identidad. La solicitud podrá hacerse mediante escrito en formato papel o por medios electrónicos. En caso de no haber obtenido satisfacción en el ejercicio de sus derechos, puede dirigirse a la Delegada de Protección de Datos de la Universidad (dpd@unizar.es Tfno. 876 55 30 13) o en reclamación a la Agencia Española de Protección de Datos a través de los formularios que esa entidad tiene habilitados al efecto y que son accesibles desde su página web: https://sedeagpd.gob.es Puede consultar toda la información al respecto en academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf La Universidad de Zaragoza cuenta con una página en la que incluye legislación, información y modelos a la que puede acceder desde el siguiente enlace: https://protecciondatos.unizar.es/</p>'
+    '#title': 'Protección de datos'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: inline
+  confirmation_url: ''
+  confirmation_message: '<p>Su email se ha enviado correctamente.</p><p>[msg_advertencia]Recuerde que una vez matriculad@, debe presentar esta autorización: <br> - Preferentemente, a través del registro electrónico de la Universidad de Zaragoza <a href="https://regtel.unizar.es/">https://regtel.unizar.es/</a>, con DNI, NIP y contraseña administrativa (dirigido a la Facultad de Educación), o bien,<br> - En la Secretaría de la Facultad (horario de lunes a viernes de 9 a 14 horas).[/msg_advertencia]</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: educacion@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nif_o_nie:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        [webform_submission:date:long]
+
+        Autorizo a la Universidad de Zaragoza para que, con motivo de la realización de prácticas escolares/prácticum en la Facultad de Educación de la titulación que se indica:
+        1º) Solicite en mi nombre el certificado al que se refiere el artículo 13.5 de la Ley Orgánica 1/1996, de 15 de enero, de Protección Jurídica del Menor.
+        2º) Con este único objeto y exclusivamente para este procedimiento, a verificar mis datos a través del Sistema de Verificación de Datos de Identidad.
+
+        [webform_submission:values]
+
+        Conforme a lo dispuesto en la legislación vigente en materia de protección de datos de carácter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasarán a ser tratados, como responsable, por la Universidad de Zaragoza con la finalidad de tramitar la gestión académica y administrativa de sus estudiantes así como su participación en actividades y servicios universitarios. Puede ejercitar sus derechos de acceso, rectificación, limitación, oposición o portabilidad ante el Gerente de la Universidad de Zaragoza (Edificio Paraninfo 1.ª planta, Plaza de Basilio Paraíso nº 4, 50005- Zaragoza) señalando concretamente la causa de su solicitud y acompañando copia de su documento acreditativo de identidad. La solicitud podrá hacerse mediante escrito en formato papel o por medios electrónicos. En caso de no haber obtenido satisfacción en el ejercicio de sus derechos, puede dirigirse a la Delegada de Protección de Datos de la Universidad (dpd@unizar.es Tfno. 876 55 30 13) o en reclamación a la Agencia Española de Protección de Datos a través de los formularios que esa entidad tiene habilitados al efecto y que son accesibles desde su página web: https://sedeagpd.gob.es Puede consultar toda la información al respecto en academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf La Universidad de Zaragoza cuenta con una página en la que incluye legislación, información y modelos a la que puede acceder desde el siguiente enlace: https://protecciondatos.unizar.es/
+
+
+        Firma:
+
+
+        Esta autorización no será válida si no la presenta:
+        - Preferentemente, a través del registro electrónico de la Universidad de Zaragoza https://regtel.unizar.es/, con DNI, NIP y contraseña administrativa (dirigido a la Facultad de Educación), o bien,
+        - En la Secretaría de la Facultad (horario de lunes a viernes de 9 a 14 horas).
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

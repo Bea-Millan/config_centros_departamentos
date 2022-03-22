@@ -1,0 +1,71 @@
+uuid: ea96e9ad-db72-432f-ac7e-deb0d076d991
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 90
+template: false
+archive: false
+id: webform_455
+title: 'Mejoras constructivas ó agradecimientos'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos_si_se_quiere:
+    '#type': textfield
+    '#title': 'Nombre y apellidos (si se quiere)'
+  felicitacion_o_agradecimiento:
+    '#type': processed_text
+    '#format': full_html
+    '#text': ''
+    '#title': 'Felicitación o agradecimiento'
+  sugerencia:
+    '#type': processed_text
+    '#format': full_html
+    '#text': ''
+    '#title': Sugerencia
+  ambito_al_que_se_refiere_titulacion_instalaciones_profesorado_personal_de_administracion:
+    '#type': textfield
+    '#title': 'Ámbito al que se refiere (titulación, instalaciones, profesorado, personal de administración…)'
+    '#required': true
+  descripcion_breve_de_lo_que_se_expone_un_maximo_de_100_palabras:
+    '#type': textfield
+    '#title': 'Descripción breve de lo que se expone (un máximo de 100 palabras)'
+    '#required': true
+  email_de_contacto_si_se_quiere:
+    '#type': email
+    '#size': 20
+    '#title': 'email de contacto (si se quiere)'
+  otra_forma_de_contacto__si_se_quiere:
+    '#type': textfield
+    '#title': 'Otra forma de contacto  (si se quiere)'
+  zaragoza_a:
+    '#type': date
+    '#title_display': inline
+    '#title': 'Zaragoza a'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

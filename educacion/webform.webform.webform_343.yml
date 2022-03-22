@@ -1,0 +1,95 @@
+uuid: 1cd57262-6ee0-46a4-8809-d61a9594ba8a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 94
+template: false
+archive: false
+id: webform_343
+title: 'LISTADO PERSONAS ANEXO II MINISTERIO JUSTICIA'
+description: null
+category: null
+elements: |-
+  primer_apellido:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'PRIMER APELLIDO'
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'SEGUNDO APELLIDO'
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+  nombre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': NOMBRE
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+    '#required': true
+  fecha_de_nacimiento:
+    '#type': date
+    '#title_display': inline
+    '#title': 'FECHA DE NACIMIENTO'
+    '#description': DD/MM/AAAA
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'DNI '
+    '#description': 'Incluir letra al final y no emplear guiones ni separadores.'
+    '#required': true
+  nie_si_es_extranjero:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'NIE - si es extranjero'
+    '#description': 'Letra seguida de cifras y acabado en letra, sin emplear guiones ni separadores.'
+  pais_de_nacimiento:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'PAÍS DE NACIMIENTO'
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+    '#required': true
+  provincia_de_nacimiento_si_es_espanol:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'PROVINCIA DE NACIMIENTO (SI ES ESPAÑOL)'
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+  nombre_del_padre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'NOMBRE DEL PADRE'
+    '#description': 'Sin abreviaturas y sin tildes.'
+    '#required': true
+  nombre_de_la_madre:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'NOMBRE DE LA MADRE'
+    '#description': 'Sin abreviaturas, en mayúsculas y sin tildes.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: 1
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

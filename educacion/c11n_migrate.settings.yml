@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: iwLgBAxN3jaLvVrqYrTwDlnAf8uxpQnw-VDxS6T72Tk
+plugin:
+  host: educacion.unizar.es
+  url_host: sites/educacion
+langcode: es

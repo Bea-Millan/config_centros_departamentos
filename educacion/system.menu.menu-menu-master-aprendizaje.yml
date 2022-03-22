@@ -1,0 +1,8 @@
+uuid: 228c9368-c361-4e7a-a2a9-a3e737e769e9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-master-aprendizaje
+label: 'Menu master aprendizaje'
+description: ''
+locked: false

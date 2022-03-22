@@ -1,0 +1,8 @@
+uuid: 492d8572-816d-46ef-afd9-b529cdf64f2f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-master-profesorado-sec
+label: 'Menu master profesorado secundaria'
+description: ''
+locked: false

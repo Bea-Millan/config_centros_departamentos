@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: AUv3m8g7wmDlcy41DI-A-FSjU4aWa1rnGzQjajeUpH0
+logo_path: 'public://facultad-educacion-pos.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '107'
+nombre_centro: 'Facultad de Educación'
+dir_centro: 'Pedro Cerbuna, 12'
+telefono_centro: '+34 976 761 301'
+mail_centro: educacion@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '3486'
+imagen_segundas: '3487'
+facebook: 'https://www.facebook.com/facultadeducacionuz/'
+twitter: 'https://twitter.com/FacultadEducaUZ'
+youtube: 'https://www.youtube.com/channel/UCMAe38A9QmKr4NJYmxFlX2g'
+linkedin: ''
+instagram: 'https://www.instagram.com/explore/locations/1023050122/spain/zaragoza-spain/facultad-de-educacion-universidad-de-zaragoza/'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Facultad de Educación, Universidad de Zaragoza. Estudios de Grado; Magisterio Educación Infantil;  Magisterio Educación Primaria; Máster Profesorado Secundaria, Máster Aprendizaje, e-learning, doctorado en educación, formación permanente.'
+langcode: es
