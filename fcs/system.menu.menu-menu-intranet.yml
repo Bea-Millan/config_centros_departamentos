@@ -1,0 +1,8 @@
+uuid: ae550553-17b0-4765-ac03-b80288640feb
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-intranet
+label: menu-intranet
+description: ''
+locked: false
