@@ -1,0 +1,104 @@
+uuid: 4bd63cf6-131f-46d6-962c-5c5cf1a3bbc7
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 98
+template: false
+archive: false
+id: webform_442
+title: 'Elección rama para el Prácticum de abasto de 5'
+description: null
+category: null
+elements: |-
+  nip:
+    '#title': NIP
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  rama_o_especialidad_de_abasto:
+    '#type': radios
+    '#options':
+      1: Gallinas
+      2: Pollos
+      3: Conejos
+      4: 'No curso la asignatura de Abasto'
+    '#title': 'Rama o especialidad de abasto'
+    '#description': 'Elige la rama o especialidad que quieres cursar para la asignatura de Prácticum Clínico en Especies de Abasto'
+    '#required': true
+  tiene_intencion_de_ir_al_viaje_de_estudios:
+    '#type': radios
+    '#options':
+      1: Si
+      0: 'No'
+    '#title': 'Tiene intención de ir al Viaje de Estudios'
+    '#description': 'Si tiene intención de ir al viaje de estudios o no está seguro, responda SI.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: zarate@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: zarate@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
