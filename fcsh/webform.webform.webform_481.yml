@@ -1,0 +1,318 @@
+uuid: 696bc154-9ed6-4538-91f4-1020970822c3
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_481
+title: 'Solicitud de Prácticas en Condiciones Especiales'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI/NIE:'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza.'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': 'Teléfono:'
+    '#description': 'Introduce tu número de teléfono o móvil'
+    '#required': true
+  practicas:
+    '#type': select
+    '#options':
+      1: 'Prácticas I'
+      2: 'Prácticas II'
+      3: 'Prácticas III'
+      4: 'Prácticas IV'
+      5: 'Prácticas en Audición y Lenguaje'
+      6: 'Prácticas en Educación Física'
+      7: 'Prácticas en Lengua Inglesa'
+      8: 'Prácticas en Pedagogía Terapéutica'
+      9: 'Prácticas en Atención a la Diversidad'
+      10: 'Prácticas en Educación Bilingüe'
+      11: 'Prácticas III y Prácticas en Audición y Lenguaje'
+      12: 'Prácticas III y Prácticas en Educación Física'
+      13: 'Prácticas III y Prácticas en Lengua Inglesa'
+      14: 'Prácticas III y Prácticas en Pedagogía Terapéutica'
+      15: 'Prácticas III y Prácticas en Atención a la Diversidad'
+      16: 'Prácticas III y Prácticas en Educación Bilingüe'
+      17: 'Prácticas III y Prácticas IV'
+    '#title': 'Tipo de prácticas:'
+    '#description': 'Indica las prácticas para las que solicitas Condiciones Especiales'
+    '#required': true
+  causa:
+    '#type': select
+    '#options':
+      1: 'Por motivos laborales'
+      2: 'Por existir relación laboral con el centro de prácticas'
+      3: 'Por razones de estudio'
+      4: 'Por circunstancias extraordinarias diferentes a las anteriores'
+      5: 'Por cursar una segunda mención'
+    '#title': 'Causa solicitud:'
+    '#description': 'Indica la causa por la que solicitas las Condiciones Especiales'
+    '#required': true
+  solicito:
+    '#type': textarea
+    '#title': 'Solicito:'
+    '#description': 'Describe tus motivos y preferencias para realizar la solicitud'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+        - ':input[name="causa"]':
+            value: '2'
+        - ':input[name="causa"]':
+            value: '3'
+        - ':input[name="causa"]':
+            value: '4'
+  contrato_trabajo:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Contrato de trabajo:'
+    '#description': 'Adjunta el contrato de trabajo o la hoja de servicios si eres funcionario. Recuerda que el contrato debe de tener una antigüedad mínima de 45 días a contar desde la fecha de presentación de esta solicitud.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+        - ':input[name="causa"]':
+            value: '2'
+  matricula:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Matrícula del Centro Escolar:'
+    '#description': 'Adjunta la matrícula del Centro Escolar en donde estés matriculado de estudios oficiales.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '3'
+  vida_laboral:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de vida laboral:'
+    '#description': 'Adjunta el Certificado de vida laboral.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+  certificado_horario:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de horario:'
+    '#description': 'Adjunta un Certificado del horario de trabajo o de clases firmado y sellado por tu empresa o por el centro escolar.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+        - ':input[name="causa"]':
+            value: '2'
+        - ':input[name="causa"]':
+            value: '3'
+  documento1:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 1:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '4'
+  documento2:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 2:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '4'
+  documento3:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 3:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '4'
+  documento4:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 4:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '4'
+  mencion:
+    '#type': select
+    '#options':
+      1: 'Atención a la diversidad'
+      2: 'Audición y lenguaje'
+      3: 'Educación bilingüe'
+      4: 'Educación física'
+      5: 'Lengua inglesa'
+      6: 'Pedagogía terapéutica'
+    '#title': 'Mención a cursar'
+    '#description': 'Indica las prácticas de la segunda mención que solicitas realizar'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '5'
+  calendario:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Calendario de prácticas:'
+    '#description': 'Adjunta un calendario viable para realizar las prácticas según tus preferencias'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+        - ':input[name="causa"]':
+            value: '2'
+        - ':input[name="causa"]':
+            value: '3'
+        - ':input[name="causa"]':
+            value: '4'
+        - ':input[name="causa"]':
+            value: '5'
+  otros_documentos:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Otros documentos:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="causa"]':
+            value: '1'
+        - ':input[name="causa"]':
+            value: '2'
+        - ':input[name="causa"]':
+            value: '3'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        El presente correo acredita la presentación de su solicitud de prácticas en Condiciones Especiales según los siguientes datos:
+
+        Fecha solicitud: [webform_submission:completed_date:long]
+        NIA:[webform_submission:values:nia]
+        Alumno: [webform_submission:values:apellidos], [webform_submission:values:nombre]
+        Grado: [webform_submission:values:grado]
+        Prácticas solicitadas: [webform_submission:values:practicas]
+        Motivos solicitud: [webform_submission:values: causa]
+        Solicitud: [webform_submission:values:solicito]
+
+        En el plazo establecido para ello recibiréis una notificación a través del correo electrónico aceptando o denegando la solicitud de prácticas en Condiciones Especiales.
+
+        Un saludo.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

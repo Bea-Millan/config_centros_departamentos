@@ -1,0 +1,8 @@
+uuid: 9fd35b21-5b7e-45fd-b9fc-400715eb689d
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-psicologia
+label: Menu_Grado_Psicologia
+description: ''
+locked: false

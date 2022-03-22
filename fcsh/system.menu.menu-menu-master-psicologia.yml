@@ -1,0 +1,8 @@
+uuid: 3f3368dd-87a6-4d56-b979-3c9b596194e5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-master-psicologia
+label: Menu_Master_Psicologia
+description: ''
+locked: false

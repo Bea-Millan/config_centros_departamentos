@@ -1,0 +1,231 @@
+uuid: 8e481dda-dfeb-4d12-86bb-10ee57f9ac40
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_419
+title: 'Solicitud de matriculación en: EDUCACIÓN BILINGÜE (Opción_A)'
+description: null
+category: null
+elements: |-
+  mencion:
+    '#type': select
+    '#options':
+      1: 'EDUCACIÓN BILINGÜE'
+    '#title': 'Mención:'
+    '#description': 'Marca la casilla de la mención'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  nota_media:
+    '#type': textfield
+    '#title': 'Nota media:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  creditos_aprobados:
+    '#type': textfield
+    '#title': 'Créditos aprobados:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  practicas_mencion:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': '¿Te vas a matricular de las Prácticas de la mención?'
+    '#description': 'Indica si te vas a matricular en las Prácticas Escolares de la mención en el próximo curso'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="creditos_aprobados"]':
+            filled: false
+  cambio_de_estudios:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Cambio de estudios:'
+    '#description': 'Escribe si vas a realizar cambios de estudio a otra Facultad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="practicas_mencion"]':
+            filled: false
+  lugar_donde_quieres_realizar_tus_estudios:
+    '#type': textfield
+    '#title': 'Lugar dónde quieres realizar tus estudios:'
+    '#description': 'Indica a qué Centro y a qué ciudad quieres cambiarte. Por ejemplo: Facultad de Educación, Zaragoza. '
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="cambio_de_estudios"]':
+            value: '1'
+  movilidad:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Movilidad:'
+    '#description': 'Si has solicitado algún programa de movilidad, por favor, indícalo.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="lugar_donde_quieres_realizar_tus_estudios"]':
+            filled: false
+        - ':input[name="cambio_de_estudios"]':
+            value: '2'
+  programa_de_movilidad:
+    '#type': select
+    '#options':
+      1: Erasmus
+      2: Sicúe-Séneca
+      3: Americampus
+      4: 'Prácticas de Cooperación'
+      5: Otros
+    '#title': 'Programa de movilidad:'
+    '#description': 'Selecciona un programa de movilidad. Si no está entre las opciones marca "Otros" e indica de qué programa se trata.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="movilidad"]':
+            value: '1'
+  otros_programas:
+    '#type': textfield
+    '#title': 'Otros programas:'
+    '#description': 'Indica cuál es el programa de movilidad que has solicitado.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '5'
+  lugar_de_la_movilidad:
+    '#type': textfield
+    '#title': 'Lugar de la movilidad:'
+    '#description': 'Indica la Universidad y la ciudad dónde has realizado la solicitud del programa de movilidad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '1'
+        - ':input[name="programa_de_movilidad"]':
+            value: '2'
+        - ':input[name="programa_de_movilidad"]':
+            value: '3'
+        - ':input[name="programa_de_movilidad"]':
+            value: '4'
+        - ':input[name="otros_programas"]':
+            filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Coordinación de Educación Infantil y Primaria'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Tú solicitud de inscripción en EDUCACIÓN BILINGÜE 2021-2022'
+      body: |-
+        Submitted on [webform_submission:date:long]
+        Submitted by user: [webform_submission:user]
+
+        OPCIÓN A: 5 ASIGNATURAS DE MENCIÓN
+
+        [webform_submission:values]
+
+        Las asignaturas relacionadas a continuación, SON LAS QUE DEBERÁS MATRICULAR en el próximo curso, si eres admitido en la mención. Recuerda que TU ELECCIÓN ES VINCULANTE. Asignaturas de la mención:
+
+        1| 26544-Content and language integrated learning (CLIL)
+        2| 26545-Language and communication in the bilingual classroom
+        3| 26560-Learning and teaching EFL
+        4| 26563-Resources for EFL in infant school
+        5| 26569-English in infant education III
+
+        Si has elegido realizar las prácticas escolares de la mención, recuerda que deberás matricularte en la asignatura: 26575-Prácticas escolares en Educación bilingüe (inglés)
+
+        Si has cumplimentado dos o más formularios, recuerda que LA INSCRIPCIÓN VÁLIDA ES LA ÚLTIMA REALIZADA.
+
+        NOTA: Por favor, no responder a este mensaje ya que sido emitido automáticamente por el formulario "Solicitud de inscripción en la mención" en el que has participado. 
+
+        Universidad de Zaragoza
+        Facultad de Ciencias Sociales y Humanas
+        Administración de Coordinación.
+      excluded_elements:
+        cambio_de_estudios: cambio_de_estudios
+        lugar_donde_quieres_realizar_tus_estudios: lugar_donde_quieres_realizar_tus_estudios
+        movilidad: movilidad
+        programa_de_movilidad: programa_de_movilidad
+        otros_programas: otros_programas
+        lugar_de_la_movilidad: lugar_de_la_movilidad
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,1613 @@
+uuid: 52ddba7a-b823-4dd6-8186-4c07a3ff29d1
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_495
+title: 'Elección plazas 35'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': NIA
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  prelacion:
+    '#type': select
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+      16: '16'
+      17: '17'
+      18: '18'
+      19: '19'
+      20: '20'
+      21: '21'
+      22: '22'
+      23: '23'
+      24: '24'
+      25: '25'
+      26: '26'
+      27: '27'
+      28: '28'
+      29: '29'
+      30: '30'
+      31: '31'
+      32: '32'
+      33: '33'
+      34: '34'
+      35: '35'
+    '#title': 'Nº de prelación'
+    '#description': 'Señala tu número de prelación'
+    '#required': true
+  eleccion_1:
+    '#type': textfield
+    '#title': 'Elección preferida 1'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '1'
+        - ':input[name="prelacion"]':
+            value: '2'
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_2:
+    '#type': textfield
+    '#title': 'Elección preferida 2'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '2'
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_3:
+    '#type': textfield
+    '#title': 'Elección preferida 3'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_4:
+    '#type': textfield
+    '#title': 'Elección preferida 4'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_5:
+    '#type': textfield
+    '#title': 'Elección preferida 5'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_6:
+    '#type': textfield
+    '#title': 'Elección preferida 6'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_7:
+    '#type': textfield
+    '#title': 'Elección preferida 7'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_8:
+    '#type': textfield
+    '#title': 'Elección preferida 8'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_9:
+    '#type': textfield
+    '#title': 'Elección preferida 9'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_10:
+    '#type': textfield
+    '#title': 'Elección preferida 10'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_11:
+    '#type': textfield
+    '#title': 'Elección preferida 11'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_12:
+    '#type': textfield
+    '#title': 'Elección preferida 12'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_13:
+    '#type': textfield
+    '#title': 'Elección preferida 13'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_14:
+    '#type': textfield
+    '#title': 'Elección preferida 14'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_15:
+    '#type': textfield
+    '#title': 'Elección preferida 15'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '15'
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_16:
+    '#type': textfield
+    '#title': 'Elección preferida 16'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '16'
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_17:
+    '#type': textfield
+    '#title': 'Elección preferida 17'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '17'
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_18:
+    '#type': textfield
+    '#title': 'Elección preferida 18'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '18'
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_19:
+    '#type': textfield
+    '#title': 'Elección preferida 19'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '19'
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_20:
+    '#type': textfield
+    '#title': 'Elección preferida 20'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '20'
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_21:
+    '#type': textfield
+    '#title': 'Elección preferida 21'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '21'
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_22:
+    '#type': textfield
+    '#title': 'Elección preferida 22'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '22'
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_23:
+    '#type': textfield
+    '#title': 'Elección preferida 23'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '23'
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_24:
+    '#type': textfield
+    '#title': 'Elección preferida 24'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '24'
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_25:
+    '#type': textfield
+    '#title': 'Elección preferida 25'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '25'
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_26:
+    '#type': textfield
+    '#title': 'Elección preferida 26'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '26'
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_27:
+    '#type': textfield
+    '#title': 'Elección preferida 27'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '27'
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_28:
+    '#type': textfield
+    '#title': 'Elección preferida 28'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '28'
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_29:
+    '#type': textfield
+    '#title': 'Elección preferida 29'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '29'
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_30:
+    '#type': textfield
+    '#title': 'Elección preferida 30'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '30'
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_31:
+    '#type': textfield
+    '#title': 'Elección preferida 31'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '31'
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_32:
+    '#type': textfield
+    '#title': 'Elección preferida 32'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '32'
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_33:
+    '#type': textfield
+    '#title': 'Elección preferida 33'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '33'
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_34:
+    '#type': textfield
+    '#title': 'Elección preferida 34'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '34'
+        - ':input[name="prelacion"]':
+            value: '35'
+  eleccion_35:
+    '#type': textfield
+    '#title': 'Elección preferida 35'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '35'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,338 @@
+uuid: 1e7c839b-42f9-441e-b12a-60a2db91004c
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_657
+title: 'Inscripción Optatividad sin Mención de Infantil'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  nota_media:
+    '#type': textfield
+    '#title': 'Nota media:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  creditos_aprobados:
+    '#type': textfield
+    '#title': 'Créditos aprobados:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  tabla_opt_100:
+    '#type': select
+    '#options':
+      1: '26534 – Atención temprana (AD)'
+      2: '26538 – Innovación en la escuela inclusiva (AD)'
+      3: '26541 – Respuestas educativas a necesidades específicas (AD)'
+      4: '26544 – Content and language integrated learning (EB)'
+      5: '26545 – Language and communication in the bilingual clasroon (EB)'
+      6: '26560 – Learning and teaching EFL (EB)'
+      7: '26563 – Resources for EFL in infant school (EB)'
+      8: '26567 – Psicopatología infantil (AD)'
+      9: '26568 – Trastornos del lenguaje y la comunicación (AD)'
+      10: '26569 – English in infant education III (EB)'
+      11: '26579 – El contexto de la educación en territorios rurales'
+      12: '26580 – El proceso de enseñanza en la escuela multigrado'
+      13: '26581 – Didáctica de la religión católica'
+    '#title': '1ª asignatura:'
+    '#description': 'Elige una asignatura de las disponibles:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="creditos_aprobados"]':
+            filled: false
+  tabla_opt_200:
+    '#type': select
+    '#options':
+      1: '26534 – Atención temprana (AD)'
+      2: '26538 – Innovación en la escuela inclusiva (AD)'
+      3: '26541 – Respuestas educativas a necesidades específicas (AD)'
+      4: '26544 – Content and language integrated learning (EB)'
+      5: '26545 – Language and communication in the bilingual clasroon (EB)'
+      6: '26560 – Learning and teaching EFL (EB)'
+      7: '26563 – Resources for EFL in infant school (EB)'
+      8: '26567 – Psicopatología infantil (AD)'
+      9: '26568 – Trastornos del lenguaje y la comunicación (AD)'
+      10: '26569 – English in infant education III (EB)'
+      11: '26579 – El contexto de la educación en territorios rurales'
+      12: '26580 – El proceso de enseñanza en la escuela multigrado'
+      13: '26581 – Didáctica de la religión católica'
+      14: 'Sin asignatura'
+    '#title': '2ª asignatura:'
+    '#description': 'Elige una asignatura de las disponibles:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_100"]':
+            filled: false
+  tabla_opt_300:
+    '#type': select
+    '#options':
+      1: '26534 – Atención temprana (AD)'
+      2: '26538 – Innovación en la escuela inclusiva (AD)'
+      3: '26541 – Respuestas educativas a necesidades específicas (AD)'
+      4: '26544 – Content and language integrated learning (EB)'
+      5: '26545 – Language and communication in the bilingual clasroon (EB)'
+      6: '26560 – Learning and teaching EFL (EB)'
+      7: '26563 – Resources for EFL in infant school (EB)'
+      8: '26567 – Psicopatología infantil (AD)'
+      9: '26568 – Trastornos del lenguaje y la comunicación (AD)'
+      10: '26569 – English in infant education III (EB)'
+      11: '26579 – El contexto de la educación en territorios rurales'
+      12: '26580 – El proceso de enseñanza en la escuela multigrado'
+      13: '26581 – Didáctica de la religión católica'
+      14: 'Sin asignatura'
+    '#title': '3ª asignatura:'
+    '#description': 'Elige una asignatura de las disponibles:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_200"]':
+            filled: false
+  tabla_opt_400:
+    '#type': select
+    '#options':
+      1: '26534 – Atención temprana (AD)'
+      2: '26538 – Innovación en la escuela inclusiva (AD)'
+      3: '26541 – Respuestas educativas a necesidades específicas (AD)'
+      4: '26544 – Content and language integrated learning (EB)'
+      5: '26545 – Language and communication in the bilingual clasroon (EB)'
+      6: '26560 – Learning and teaching EFL (EB)'
+      7: '26563 – Resources for EFL in infant school (EB)'
+      8: '26567 – Psicopatología infantil (AD)'
+      9: '26568 – Trastornos del lenguaje y la comunicación (AD)'
+      10: '26569 – English in infant education III (EB)'
+      11: '26579 – El contexto de la educación en territorios rurales'
+      12: '26580 – El proceso de enseñanza en la escuela multigrado'
+      13: '26581 – Didáctica de la religión católica'
+      14: 'Sin asignatura'
+    '#title': '4ª asignatura:'
+    '#description': 'Elige una asignatura de las disponibles:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_300"]':
+            filled: false
+  tabla_opt_500:
+    '#type': select
+    '#options':
+      1: '26534 – Atención temprana (AD)'
+      2: '26538 – Innovación en la escuela inclusiva (AD)'
+      3: '26541 – Respuestas educativas a necesidades específicas (AD)'
+      4: '26544 – Content and language integrated learning (EB)'
+      5: '26545 – Language and communication in the bilingual clasroon (EB)'
+      6: '26560 – Learning and teaching EFL (EB)'
+      7: '26563 – Resources for EFL in infant school (EB)'
+      8: '26567 – Psicopatología infantil (AD)'
+      9: '26568 – Trastornos del lenguaje y la comunicación (AD)'
+      10: '26569 – English in infant education III (EB)'
+      11: '26579 – El contexto de la educación en territorios rurales'
+      12: '26580 – El proceso de enseñanza en la escuela multigrado'
+      13: '26581 – Didáctica de la religión católica'
+      14: 'Sin asignatura'
+    '#title': '5ª asignatura:'
+    '#description': 'Elige una asignatura de las disponibles:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_400"]':
+            filled: false
+  practicas_mencion:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': '¿Te vas a matricular de las Prácticas de la mención?'
+    '#description': 'Indica si te vas a matricular en las Prácticas Escolares de la mención en el próximo curso'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_500"]':
+            filled: false
+  cambio_de_estudios:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Cambio de estudios:'
+    '#description': 'Escribe si vas a realizar cambios de estudio a otra Facultad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="practicas_mencion"]':
+            filled: false
+  lugar_donde_quieres_realizar_tus_estudios:
+    '#type': textfield
+    '#title': 'Lugar dónde quieres realizar tus estudios:'
+    '#description': 'Indica a qué Centro y a qué ciudad quieres cambiarte. Por ejemplo: Facultad de Educación, Zaragoza. '
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="cambio_de_estudios"]':
+            value: '1'
+  movilidad:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Movilidad:'
+    '#description': 'Si has solicitado algún programa de movilidad, por favor, indícalo.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="lugar_donde_quieres_realizar_tus_estudios"]':
+            filled: false
+        - ':input[name="cambio_de_estudios"]':
+            value: '2'
+  programa_de_movilidad:
+    '#type': select
+    '#options':
+      1: Erasmus
+      2: Sicúe-Séneca
+      3: Americampus
+      4: 'Prácticas de Cooperación'
+      5: Otros
+    '#title': 'Programa de movilidad:'
+    '#description': 'Selecciona un programa de movilidad. Si no está entre las opciones marca "Otros" e indica de qué programa se trata.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="movilidad"]':
+            value: '1'
+  otros_programas:
+    '#type': textfield
+    '#title': 'Otros programas:'
+    '#description': 'Indica cuál es el programa de movilidad que has solicitado.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '5'
+  lugar_de_la_movilidad:
+    '#type': textfield
+    '#title': 'Lugar de la movilidad:'
+    '#description': 'Indica la Universidad y la ciudad dónde has realizado la solicitud del programa de movilidad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '1'
+        - ':input[name="programa_de_movilidad"]':
+            value: '2'
+        - ':input[name="programa_de_movilidad"]':
+            value: '3'
+        - ':input[name="programa_de_movilidad"]':
+            value: '4'
+        - ':input[name="otros_programas"]':
+            filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Coordinación de Grado en Educación Infantil'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Solicitud de inscripción de Optatividad sin mención  de Infantil'
+      body: |-
+        Buenos días:
+
+        Mediante el presente correo electrónico, te comunicamos que has presentado una "Solicitud de inscripción de Optatividad sin mención de Infantil" según el siguiente detalle:
+
+        Submitted on [webform_submission:date:long]
+        Submitted by user: [webform_submission:user]
+
+        Submitted values are:
+        [webform_submission:values]
+
+        Recuerda que TU ELECCIÓN ES VINCULANTE. Deberás matricularte en las asignaturas en la que hayas sido admitido.
+
+        Si ha cumplimentado dos o más formularios, recordar que LA INSCRIPCIÓN VÁLIDA ES LA ÚLTIMA REALIZADA.
+
+        NOTA: Por favor, no responder a este mensaje ya que sido emitido automáticamente por el formulario en el que has participado. 
+
+        Coordinación de Grado
+        Facultad de Ciencias Sociales y Humanas
+        UNIVERSIDAD DE ZARAGOZA
+      excluded_elements:
+        cambio_de_estudios: cambio_de_estudios
+        lugar_donde_quieres_realizar_tus_estudios: lugar_donde_quieres_realizar_tus_estudios
+        movilidad: movilidad
+        programa_de_movilidad: programa_de_movilidad
+        otros_programas: otros_programas
+        lugar_de_la_movilidad: lugar_de_la_movilidad
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,133 @@
+uuid: a612d336-d513-4a17-bad5-30397408dc3b
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_444
+title: 'Envío Seguro Escolar (Mayores de 28 años)'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': NIA
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  poliza:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'jpg jpeg pdf'
+    '#title': 'Póliza de seguro:'
+    '#description': 'Adjunta la póliza de seguro'
+    '#required': true
+  justificante_pago:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'jpg jpeg pdf'
+    '#title': 'Justificante de pago del seguro:'
+    '#description': 'Adjunta el justificante de pago de la póliza de seguro.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Buenos días, 
+
+        Este correo supone la confirmación del envío del Seguro Escolar para mayores de 28 años según los datos siguientes:
+
+        Fecha envío: [current-date:long]
+        Grado:[webform_submission:values:grado]
+        NIA: [webform_submission:values:nia]
+        Alumno: [webform_submission:values:apellidos], [webform_submission:values:nombre]
+
+        La documentación adjunta que ha enviado será revisada. En caso de no ser válida nos pondremos en contacto con usted para que la subsane con la mayor brevedad posible.
+
+        Reciba un cordial saludo.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,157 @@
+uuid: e6c8fea7-f41d-4a71-aace-e49d016bee26
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_485
+title: 'Solicitud del Certificado de Antecedentes Penales Sexuales negativos'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer apellido:'
+    '#description': 'Introduce tu primer apellido'
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo apellido:'
+    '#description': 'Introduce tu segundo apellido.'
+    '#required': true
+  tipo_documento:
+    '#type': select
+    '#options':
+      1: DNI
+      2: NIE
+    '#title': 'Tipo de documento:'
+    '#description': 'Elige entre DNI o NIE'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI o NIE:'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  fecha_nacimiento:
+    '#type': date
+    '#title': 'Fecha de nacimiento:'
+    '#description': 'Introduce tu fecha de nacimiento.'
+    '#required': true
+  provincia_nacimiento:
+    '#type': textfield
+    '#title': 'Provincia de nacimiento:'
+    '#description': 'Introduce la provincia de tu nacimiento.'
+    '#required': true
+  localidad_nacimiento:
+    '#type': textfield
+    '#title': 'Localidad de nacimiento:'
+    '#description': 'Introduce la localidad de tu nacimiento.'
+    '#required': true
+  nacionalidad:
+    '#type': textfield
+    '#title': 'País de nacionalidad:'
+    '#description': 'Introduce tu país de nacionalidad.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Buenos días, 
+
+        Este correo supone la confirmación del envío del Certificado de Antecedentes Penales Sexuales negativo, según los datos siguientes:
+
+        Fecha envío: [current-date:long]
+        Grado:[webform_submission:values:grado]
+        NIA: [webform_submission:values:nia]
+        Alumno: [webform_submission:values:primer_apellido] [webform_submission:values:segundo_apellido], [webform_submission:values:nombre]
+
+        Adjunto a este correo encontrará copia de la autorización emitida a la Universidad de Zaragoza para que en su nombre solicite certificación de antecedentes penales sexuales. En caso de que los datos facilitados no sean correctos o contengan algún error nos pondremos en contacto con usted mediante esta misma vía para que los subsane con la mayor brevedad posible. La no subsanación, en tiempo y forma, de los errores comunicados supondrá la exclusión de la realización de prácticas escolares.
+
+        Reciba un cordial saludo.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

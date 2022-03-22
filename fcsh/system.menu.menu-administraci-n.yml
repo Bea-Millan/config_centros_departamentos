@@ -1,0 +1,8 @@
+uuid: 0256ff81-d1c7-4b9d-bb86-b54f020d62c9
+langcode: es
+status: true
+dependencies: {  }
+id: menu-administraci-n
+label: Menu_Administracion
+description: 'Menú lateral con el mismo contenido que el de la pestaña Temas administrativos del menú principal'
+locked: false

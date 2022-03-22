@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: lAR91ntc7EH10CkNTYDqIrCXn55JA4Rk_mVxLGe42aQ
+plugin:
+  host: fcsh.unizar.es
+  url_host: sites/fcsh
+langcode: es

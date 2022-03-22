@@ -1,0 +1,101 @@
+uuid: 6910e8f5-90b5-4bad-94c4-a55363563e5a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_282
+title: 'Error detectado en la web'
+description: null
+category: null
+elements: |-
+  fecha_solicitud:
+    '#type': date
+    '#title': 'Fecha solicitud'
+    '#description': 'Fecha de la cumplimentación del formulario.'
+    '#required': true
+  nombre_remitente:
+    '#type': textfield
+    '#title': 'Nombre remitente'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Introduce tu correo electrónico a los solos efectos de comunicación.'
+    '#required': true
+  localizacion_del_error:
+    '#type': textfield
+    '#title': 'Localización del error'
+    '#description': 'Identifica dónde has localizado el error. Copia la url de la página y pégala aquí.'
+    '#required': true
+  describe_el_error:
+    '#type': textarea
+    '#title': 'Describe el error'
+    '#description': 'Explica los más detalladamente posible cuál es el error detectado.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: webfacultadteruel@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_remitente:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

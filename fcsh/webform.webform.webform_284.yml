@@ -1,0 +1,102 @@
+uuid: 231f8ccb-84ac-45e4-ac43-784632cd4eeb
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_284
+title: 'Publicación de temas culturales y sociales'
+description: null
+category: null
+elements: |-
+  nombre_solicitante:
+    '#type': textfield
+    '#title': 'Nombre solicitante'
+    '#description': 'Nombre del solicitante que realiza la solicitud.'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Introduce tu correo electrónico a los solos efectos de comunicación.'
+    '#required': true
+  titulo_de_la_publicacion:
+    '#type': textfield
+    '#title': 'Título de la publicación'
+    '#description': 'Título de la publicación sociocultural solicitada.'
+    '#required': true
+  texto_de_la_publicacion:
+    '#type': textarea
+    '#title': 'Texto de la publicación'
+    '#description': 'Texto a incluir en publicación sociocultural solicitada.'
+    '#required': true
+  archivo_adjunto:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png html pdf doc docx ppt pptx xls xlsx avi mp3'
+    '#title': 'Archivo adjunto'
+    '#description': 'Adjuntar aquí los archivos que se quieren incorporar a la publicación solicitada.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: dircisht@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_solicitante:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

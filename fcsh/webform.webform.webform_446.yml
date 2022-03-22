@@ -1,0 +1,172 @@
+uuid: 02d7691e-3459-4cd9-b4bd-fe7aef47be01
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_446
+title: 'Solicitud para realizar Prácticas Escolares en las provincias de Zaragoza o Huesca'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': 'Grado:'
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  practicas_infantil:
+    '#type': select
+    '#options':
+      1: 'Prácticas I'
+      2: 'Prácticas II'
+      3: 'Prácticas III'
+      4: 'Prácticas IV'
+      5: 'Prácticas en Atención a la diversidad'
+      6: 'Prácticas en Educación bilingüe'
+    '#multiple': true
+    '#title': 'Tipo de prácticas:'
+    '#description': 'Para seleccionar más de un tipo de Prácticas presiona la tecla "Ctrl".'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grado"]':
+            value: '1'
+  practicas_primaria:
+    '#type': select
+    '#options':
+      1: 'Prácticas I'
+      2: 'Prácticas II'
+      3: 'Prácticas III'
+      4: 'Prácticas IV'
+      5: 'Prácticas en Audición y lenguaje'
+      6: 'Prácticas en Educación física'
+      7: 'Prácticas en Lengua inglesa'
+      8: 'Prácticas en Pedagogía terapéutica'
+    '#multiple': true
+    '#title': 'Tipo de prácticas:'
+    '#description': 'Para seleccionar más de un tipo de Prácticas presiona la tecla "Ctrl".'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grado"]':
+            value: '2'
+  provincia:
+    '#type': select
+    '#options':
+      1: HUESCA
+      2: ZARAGOZA
+    '#title': 'Provincia:'
+    '#description': 'Selecciona la provincia dónde quieres realizar las Prácticas.'
+    '#required': true
+  localidad:
+    '#type': textfield
+    '#title': 'Localidad de preferencia:'
+    '#description': 'Selecciona la localidad de tu preferencia para realizar las Prácticas. La plaza concedida será en la misma localidad solicitada o en la más cercana posible.'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        El presente documento acredita la presentación de su solicitud para realizar las prácticas escolares en otra provincia distinta a Teruel, según los siguientes datos:
+
+        Fecha solicitud: [webform_submission:completed_date:long]
+
+        Grado: [webform_submission:values:grado]
+        NIA:[webform_submission:values:nia]
+        Alumno: [webform_submission:values:apellidos], [webform_submission:values:nombre]
+
+        Prácticas solicitadas: [webform_submission:values:practicas_infantil][webform_submission:values:practicas_primaria]
+
+        Provincia: [webform_submission:values:provincia]
+        Localidad de preferencia: [webform_submission:values:localidad]
+
+        En el momento que la Coordinación de Prácticas reciba las plazas vacantes de Zaragoza y Huesca, nos pondremos en contacto con vosotros para realizar la elección de centros escolares.
+
+        Un saludo.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

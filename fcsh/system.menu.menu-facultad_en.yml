@@ -1,0 +1,8 @@
+uuid: ded2068a-8ffe-4f90-920c-694922b20ea5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facultad_en
+label: Menu_Facultad_en
+description: ''
+locked: false

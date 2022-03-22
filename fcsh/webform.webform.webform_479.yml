@@ -1,0 +1,353 @@
+uuid: 95b0f7e6-a6ec-4303-bda7-8d7dc9dc6fcb
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_479
+title: 'Cambio de grupo de docencia'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI/NIE:'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': 'Teléfono:'
+    '#description': 'Introduce tu número de teléfono o móvil'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+  grupo_actual:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia actual:'
+    '#description': 'Indica el grupo de docencia en el que estás matriculado'
+    '#required': true
+  grupo_deseado:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia solicitado:'
+    '#description': 'Indica el grupo de docencia al que quieres cambiar'
+    '#required': true
+  motivo:
+    '#type': select
+    '#options':
+      1: 'Motivos laborales'
+      2: 'Deportista de alto nivel o alto rendimiento'
+      3: 'Enfermedad o discapacidad'
+      4: 'Atención a personas dependientes'
+      5: 'Atención a hijos menores de 12 años'
+      6: 'Otra causa debidamente justificada'
+    '#title': 'Motivo solicitud:'
+    '#description': 'Indica el motivo para solicitar el cambio de grupo de docencia.'
+    '#required': true
+  solicito:
+    '#type': textarea
+    '#title': 'Solicito:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            filled: false
+  contrato_trabajo:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Contrato de trabajo:'
+    '#description': 'Adjunta el contrato de trabajo o la hoja de servicios si eres funcionario según las exigencias de la normativa para el cambio de grupo.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '1'
+  vida_laboral:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de vida laboral:'
+    '#description': 'Adjunta el Certificado de vida laboral.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '1'
+  certificado_deportista:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de deportista de alto nivel o rendimiento:'
+    '#description': 'Adjunta el certificado que te acredite como deportista de alto nivel o alto rendimiento.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '2'
+  horario_entrenos:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de horario de entrenamientos:'
+    '#description': 'Adjunta el certificado que acredite debidamente el horario de los entrenamientos.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '2'
+  certificado_enfermedad:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de enfermedad o discapacidad:'
+    '#description': 'Adjunta el certificado que acredite debidamente la situación de enfermedad o discapacidad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '3'
+  certificado_tratamiento:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado de tratamiento o atención médica:'
+    '#description': 'Adjunta el certificado expedido por la Seguridad Social o entidad de seguro médico del horario y duración del tratamiento asignado, y la expresa mención de la imposibilidad de prestar la atención médica requerida en otro horario.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '3'
+  certificado_dependientes:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Certificado por atención a personas dependientes:'
+    '#description': 'Adjunta el certificado oficial que acredite al alumno como cuidador de la persona dependiente.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '4'
+  libro_familia:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Libro de familia:'
+    '#description': 'Adjunta copia del libro de familia donde se justifique el vínculo familiar.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '5'
+  documento1:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 1:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '6'
+  documento2:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 2:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '6'
+  documento3:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Documento 3:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '6'
+  otros_documentos:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg pdf'
+    '#title': 'Otros documentos:'
+    '#description': 'Adjunta otros documentos que creas relevantes para tu solicitud'
+    '#states':
+      visible:
+        - ':input[name="motivo"]':
+            value: '1'
+        - ':input[name="motivo"]':
+            value: '2'
+        - ':input[name="motivo"]':
+            value: '3'
+        - ':input[name="motivo"]':
+            value: '4'
+        - ':input[name="motivo"]':
+            value: '5'
+        - ':input[name="motivo"]':
+            value: '6'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Le informamos que con fecha [webform_submission:completed_date:long],se ha solicitado el cambio de grupo de docencia, según los datos siguientes:
+
+        Grado alumnos solicitantes: [webform_submission:values:grado]
+
+        ALUMNO SOLICITANTE:
+        Nombre alumno: [webform_submission:values:apellidos],  [webform_submission:values:nombre]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual]
+        Grupo de docencia al que quiere cambiar: [webform_submission:values:grupo_deseado]
+        Motivo de la solicitud:  [webform_submission:values:motivo]
+        Solicito:  [webform_submission:values:solicito]
+
+        Esta solicitud tiene CARÁCTER IRREVOCABLE, es decir, una vez solicitada y aceptada los alumnos no podrán solicitar un nuevo cambio de grupo.
+
+        Administración de Coordinación de Magisterio comunicará a los afectados la resolución favorable o no de esta solicitud, dentro del plazo establecido y dependiendo, en todo caso, de la disponibilidad de cada grupo de docencia.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: albrosan@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Solicitud entrante Cambio de grupo'
+      body: |-
+        Le informamos que con fecha [webform_submission:completed_date:long], se ha solicitado un cambio de grupo de docencia, según los datos siguientes:
+
+        Grado alumnos solicitantes: [webform_submission:values:grado]
+
+        ALUMNO SOLICITANTE:
+        Nombre alumno: [webform_submission:values:apellidos],  [webform_submission:values:nombre]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual]
+        Grupo de docencia al que quiere cambiar: [webform_submission:values:grupo_deseado]
+        Motivo de la solicitud:  [webform_submission:values:motivo]
+        Solicito:  [webform_submission:values:solicito]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

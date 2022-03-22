@@ -1,0 +1,8 @@
+uuid: 47c3719c-cd15-421e-ae30-ec33035a35f1
+langcode: es
+status: true
+dependencies: {  }
+id: menu-la-universidad
+label: Menu_La_Universidad
+description: ''
+locked: false

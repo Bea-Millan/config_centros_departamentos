@@ -1,0 +1,360 @@
+uuid: 20fde134-4009-41c1-b056-e7673e96fa6f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_478
+title: 'Permuta de grupo de docencia2'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  nombre1:
+    '#type': textfield
+    '#title': 'Nombre (Alumno 1):'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos1:
+    '#type': textfield
+    '#title': 'Apellidos (Alumno 1):'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  dni1:
+    '#type': textfield
+    '#title': 'DNI (Alumno 1):'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  nia1:
+    '#type': textfield
+    '#title': 'NIA (Alumno 1):'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  telefono1:
+    '#type': textfield
+    '#title': 'Teléfono (Alumno 1):'
+    '#description': 'Introduce tu número de teléfono o móvil'
+    '#required': true
+  correo_electronico1:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (Alumno 1):'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+  grupo_actual1:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia actual (Alumno 1):'
+    '#description': 'Indica el grupo de docencia en el que estás matriculado'
+    '#required': true
+  grupo_permuta1:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia a permutar (Alumno 1):'
+    '#description': 'Indica el grupo de docencia al que quieres permutar'
+    '#required': true
+  nombre2:
+    '#type': textfield
+    '#title': 'Nombre (Alumno 2):'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  apellidos2:
+    '#type': textfield
+    '#title': 'Apellidos (Alumno 2):'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  dni2:
+    '#type': textfield
+    '#title': 'DNI (Alumno 2):'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  nia2:
+    '#type': textfield
+    '#title': 'NIA (Alumno 2):'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  telefono2:
+    '#type': textfield
+    '#title': 'Teléfono (Alumno 2):'
+    '#description': 'Introduce tu número de teléfono o móvil'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  correo_electronico2:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (Alumno 2):'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  grupo_actual2:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia actual (Alumno 2):'
+    '#description': 'Indica el grupo de docencia en el que estás matriculado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+  grupo_permuta2:
+    '#type': select
+    '#options':
+      1: 'Grupo de mañana'
+      2: 'Grupo de tarde'
+    '#title': 'Grupo de docencia a permutar (Alumno 2):'
+    '#description': 'Indica el grupo de docencia al que quieres permutar'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grupo_permuta1"]':
+            filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico1:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Permuta de grupo de docencia'
+      body: |
+        Le informamos que con fecha [webform_submission:completed_date:long],se ha solicitado la permuta de grupo de docencia, según los datos siguientes:
+
+        Grado alumnos solicitantes: [webform_submission:values:grado]
+
+        ALUMNO SOLICITANTE:
+        Nombre alumno: [webform_submission:values:nombre1] [webform_submission:values:apellidos1]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual1]
+        Grupo de docencia al que quiere permutar: [webform_submission:values:grupo_permuta1]
+
+        ALUMNO CON EL QUE PERMUTA:
+        Nombre alumno: [webform_submission:values:nombre1] [webform_submission:values:apellidos2]
+
+        Al haber cumplimentado el formulario de "Permuta de Grupo de docencia" se presupone que los dos alumnos están de acuerdo con el cambio solicitado. En caso de no haber rellenado este formulario voluntariamente o no estar de acuerdo con el contenido, el alumno afectado deberá ponerse en contacto con la Administración de Coordinación de Magisterio y comunicar su discrepancia.
+
+        Esta solicitud tiene CARÁCTER IRREVOCABLE, es decir, una vez solicitada y aceptada los alumnos no podrán solicitar un nuevo cambio de grupo.
+
+        Administración de Coordinación de Magisterio comunicará a los afectados la resolución favorable o no de esta solicitud, dentro del plazo establecido y dependiendo, en todo caso, de la disponibilidad de cada grupo de docencia.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements:
+        dni1: dni1
+        telefono1: telefono1
+        correo_electronico1: correo_electronico1
+        dni2: dni2
+        telefono2: telefono2
+        correo_electronico2: correo_electronico2
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico2:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Permuta de grupo de docencia'
+      body: |
+        Le informamos que con fecha [webform_submission:completed_date:long],se ha solicitado la permuta de grupo de docencia, según los datos siguientes:
+
+        Grado alumnos solicitantes: [webform_submission:values:grado]
+
+        ALUMNO SOLICITANTE:
+        Nombre alumno: [webform_submission:values:nombre2] [webform_submission:values:apellidos2]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual2]
+        Grupo de docencia al que quiere permutar: [webform_submission:values:grupo_permuta2]
+
+        ALUMNO CON EL QUE PERMUTA:
+        Nombre alumno: [webform_submission:values:nombre1] [webform_submission:values:apellidos1]
+
+        Al haber cumplimentado el formulario de "Permuta de Grupo de docencia" se presupone que los dos alumnos están de acuerdo con el cambio solicitado. En caso de no haber rellenado este formulario voluntariamente o no estar de acuerdo con el contenido, el alumno afectado deberá ponerse en contacto con la Administración de Coordinación de Magisterio y comunicar su discrepancia.
+
+        Esta solicitud tiene CARÁCTER IRREVOCABLE, es decir, una vez solicitada y aceptada los alumnos no podrán solicitar un nuevo cambio de grupo.
+
+        Administración de Coordinación de Magisterio comunicará a los afectados la resolución favorable o no de esta solicitud, dentro del plazo establecido y dependiendo, en todo caso, de la disponibilidad de cada grupo de docencia.
+
+        Administración de Coordinación
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements:
+        dni1: dni1
+        telefono1: telefono1
+        correo_electronico1: correo_electronico1
+        dni2: dni2
+        telefono2: telefono2
+        correo_electronico2: correo_electronico2
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: albrosan@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de permuta de grupo de docencia'
+      body: |-
+        Buenos días,
+
+        Le informamos que los alumnos detallados a continuación han solicitado una permuta de grupo de docencia, la cual ha sido aprobada por la Coordinación de los Grados de Magisterio.
+
+        Rogamos procedan, con la mayor brevedad posible, a realizar los cambios especificados en los expedientes de los alumnos, con el fin de que los alumnos puedan acudir a sus clases en los grupos de docencia correspondientes.
+
+        Fecha solicitud: [webform_submission:completed_date:long]
+
+        Grado: [webform_submission:values:grado]
+
+        ALUMNO 1:
+        NIA: [webform_submission:values:nia]
+        Nombre: [webform_submission:values:apellidos1], [webform_submission:values:nombre1]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual1]
+        Grupo de docencia nuevo: [webform_submission:values:grupo_permuta1]
+
+        ALUMNO 2:
+        NIA: [webform_submission:values:nia]
+        Nombre: [webform_submission:values:apellidos2], [webform_submission:values:nombre2]
+        Grupo de docencia actual: [webform_submission:values:grupo_actual2]
+        Grupo de docencia nuevo: [webform_submission:values:grupo_permuta2]
+
+        Para cualquier duda al respecto ponerse en contacto con la Administración de Coordinación en el correo electrónico: magisterioteruel@unizar.es
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,285 @@
+uuid: 85f7f237-57fa-4134-913f-21cd8d7f57a3
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_468
+title: 'Solicitud de matriculación en: AUDICIÓN Y LENGUAJE (Opción_C)'
+description: null
+category: null
+elements: |-
+  mencion:
+    '#type': select
+    '#options':
+      1: 'AUDICIÓN Y LENGUAJE'
+    '#title': 'Mención:'
+    '#description': 'Marca la casilla de la mención'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  nota_media:
+    '#type': textfield
+    '#title': 'Nota media:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  creditos_aprobados:
+    '#type': textfield
+    '#title': 'Créditos aprobados:'
+    '#description': 'Utilizar una coma para los decimales'
+    '#required': true
+  tabla_opt_100:
+    '#type': select
+    '#options':
+      1: '31102-El proceso de enseñanza en la escuela multigrado'
+      2: '31103-El contexto de la educación en territorios rurales'
+      3: '31105-Didáctica de la Religión Católica'
+    '#title': '1ª Asignatura optativa:'
+    '#description': 'Elige una asignatura optativa de las relacionadas'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="creditos_aprobados"]':
+            filled: false
+  tabla_opt_200:
+    '#type': select
+    '#options':
+      1: '31102-El proceso de enseñanza en la escuela multigrado'
+      2: '31103-El contexto de la educación en territorios rurales'
+    '#title': '2ª Asignatura optativa:'
+    '#description': 'Elige una asignatura optativa de las relacionadas'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_100"]':
+            value: '3'
+  tabla_opt_201:
+    '#type': select
+    '#options':
+      2: '31103-El contexto de la educación en territorios rurales'
+      3: '31105-Didáctica de la Religión Católica'
+    '#title': '2ª Asignatura optativa:'
+    '#description': 'Elige una asignatura optativa de las relacionadas'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_100"]':
+            value: '1'
+  tabla_opt_202:
+    '#type': select
+    '#options':
+      1: '31102-El proceso de enseñanza en la escuela multigrado'
+      3: '31105-Didáctica de la Religión Católica'
+    '#title': '2ª Asignatura optativa:'
+    '#description': 'Elige una asignatura optativa de las relacionadas'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_100"]':
+            value: '2'
+  practicas_mencion:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': '¿Te vas a matricular de las Prácticas de la mención?'
+    '#description': 'Indica si te vas a matricular en las Prácticas Escolares de la mención en el próximo curso'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tabla_opt_200"]':
+            filled: false
+        - ':input[name="tabla_opt_201"]':
+            filled: false
+        - ':input[name="tabla_opt_202"]':
+            filled: false
+  cambio_de_estudios:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Cambio de estudios:'
+    '#description': 'Escribe si vas a realizar cambios de estudio a otra Facultad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="practicas_mencion"]':
+            filled: false
+  lugar_donde_quieres_realizar_tus_estudios:
+    '#type': textfield
+    '#title': 'Lugar dónde quieres realizar tus estudios:'
+    '#description': 'Indica a qué Centro y a qué ciudad quieres cambiarte. Por ejemplo: Facultad de Educación, Zaragoza. '
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="cambio_de_estudios"]':
+            value: '1'
+  movilidad:
+    '#type': radios
+    '#options':
+      1: Sí
+      2: 'No'
+    '#title': 'Movilidad:'
+    '#description': 'Si has solicitado algún programa de movilidad, por favor, indícalo.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="lugar_donde_quieres_realizar_tus_estudios"]':
+            filled: false
+        - ':input[name="cambio_de_estudios"]':
+            value: '2'
+  programa_de_movilidad:
+    '#type': select
+    '#options':
+      1: Erasmus
+      2: Sicúe-Séneca
+      3: Americampus
+      4: 'Prácticas de Cooperación'
+      5: Otros
+    '#title': 'Programa de movilidad:'
+    '#description': 'Selecciona un programa de movilidad. Si no está entre las opciones marca "Otros" e indica de qué programa se trata.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="movilidad"]':
+            value: '1'
+  otros_programas:
+    '#type': textfield
+    '#title': 'Otros programas:'
+    '#description': 'Indica cuál es el programa de movilidad que has solicitado.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '5'
+  lugar_de_la_movilidad:
+    '#type': textfield
+    '#title': 'Lugar de la movilidad:'
+    '#description': 'Indica la Universidad y la ciudad dónde has realizado la solicitud del programa de movilidad.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="programa_de_movilidad"]':
+            value: '1'
+        - ':input[name="programa_de_movilidad"]':
+            value: '2'
+        - ':input[name="programa_de_movilidad"]':
+            value: '3'
+        - ':input[name="programa_de_movilidad"]':
+            value: '4'
+        - ':input[name="otros_programas"]':
+            filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Coordinación de Educación Infantil y Primaria'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Tú solicitud de inscripción en AUDICIÓN Y LENGUAJE 2021-2022'
+      body: |-
+        Submitted on [webform_submission:date:long]
+        Submitted by user: [webform_submission:user]
+
+        OPCIÓN C: 6 ASIGNATURAS DE MENCIÓN + 2 ASIGNATURAS OPTATIVAS
+
+        [webform_submission:values]
+
+        Las asignaturas optativas que has escogido, además de las 6 relacionadas a continuación, SON LAS QUE DEBERÁS MATRICULAR en el próximo curso, si eres admitido en la mención. Recuerda que TU ELECCIÓN ES VINCULANTE. Asignaturas de la mención:
+
+        1|26682-Tratamiento de los trastornos del lenguaje y la audición
+        2|26683-Tratamiento de los trastornos del habla y la voz
+        3|26684-Tratamiento de los trastornos de la lectura y escritura
+        4|31100-Recursos didácticos para el desarrollo lingüístico
+        5|31101-Intervención educativa y diversidad
+        6|31104-Atención temprana en comunicación y lenguaje
+
+        Si has elegido realizar las prácticas escolares de la mención, recuerda que deberás matricularte en la asignatura: 26691-Prácticas escolares en Audición y lenguaje
+
+        Si has cumplimentado dos o más formularios, recuerda que LA INSCRIPCIÓN VÁLIDA ES LA ÚLTIMA REALIZADA.
+
+        NOTA: Por favor, no responder a este mensaje ya que sido emitido automáticamente por el formulario "Solicitud de inscripción en la mención" en el que has participado. 
+
+        Universidad de Zaragoza
+        Facultad de Ciencias Sociales y Humanas
+        Administración de Coordinación.
+      excluded_elements:
+        cambio_de_estudios: cambio_de_estudios
+        lugar_donde_quieres_realizar_tus_estudios: lugar_donde_quieres_realizar_tus_estudios
+        movilidad: movilidad
+        programa_de_movilidad: programa_de_movilidad
+        otros_programas: otros_programas
+        lugar_de_la_movilidad: lugar_de_la_movilidad
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

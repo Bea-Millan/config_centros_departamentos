@@ -1,0 +1,126 @@
+uuid: 227bffec-d8e5-46b5-b5ee-5a95f1399eba
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_285
+title: 'Publicación de asuntos académicos'
+description: null
+category: null
+elements: |-
+  nombre_solicitante:
+    '#type': textfield
+    '#title': 'Nombre solicitante'
+    '#description': 'Introduce tu nombre.'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Introduce tu correo electrónico a los solos efectos de comunicación.'
+    '#required': true
+  seccion_donde_publicar:
+    '#type': select
+    '#options':
+      ADE: 'Grado en Administración y Dirección de Empresas'
+      BBAA: 'Grado en Bellas Artes'
+      INF: 'Grado en Magisterio en Educación Infantil'
+      PRI: 'Grado en Magisterio en Educación Primaria'
+      PSI: 'Grado en Psicología'
+      ESO: 'Máster en Profesorado'
+      MPS: 'Máster en Psicología General Sanitaria'
+      OTR: Otros
+    '#multiple': true
+    '#title': 'Sección dónde publicar'
+    '#description': 'Elige una sección en dónde quieres publicar. Si la sección no aparece, por favor utiliza la opción "Otros" y detalla el lugar exacto en el cuerpo del formulario.'
+    '#required': true
+  otras_secciones:
+    '#type': textfield
+    '#title': 'Otras secciones'
+    '#description': 'Indica la sección dónde quieres publicar. Por ejemplo: Decanato, Temas Administrativos, Servicios, Movilidad, etc.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="seccion_donde_publicar"]':
+            value: OTR
+  pagina_en_donde_publicar:
+    '#type': textfield
+    '#title': 'Página en dónde publicar'
+    '#description': 'Indica el nombre de  página en la que quieres que se publique tu solicitud. Por ejemplo: Prácticas I, Trabajo de Fin de Grado, Calendario y horarios, etc.'
+    '#required': true
+  contenido:
+    '#type': textarea
+    '#title': Contenido
+    '#description': 'Por favor, indica aquellos que necesitas o como quieres que se publique, si hay que adjuntar un documento o una imagen, etc.'
+    '#required': true
+  adjuntar_archivo:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png pdf doc docx ppt pptx xls xlsx avi mp3'
+    '#title': 'Adjuntar archivo'
+    '#description': 'Adjunta el archivo que quieres publicar.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: webfacultadteruel@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_solicitante:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

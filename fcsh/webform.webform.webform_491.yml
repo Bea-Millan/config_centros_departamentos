@@ -1,0 +1,433 @@
+uuid: 01c3d618-308f-4617-bdaa-7176ad2c7651
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_491
+title: 'Elección plazas 15'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Utilizar mayúsculas preferentemente'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce el correo institucional que te ha facilitado la Universidad de Zaragoza. Cualquier otro correo puede no ser compatible con esta plataforma.'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': NIA
+    '#description': 'Introduce los 6 dígitos del NIA'
+    '#required': true
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  prelacion:
+    '#type': select
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+    '#title': 'Nº de prelación'
+    '#description': 'Señala tu número de prelación'
+    '#required': true
+  eleccion_1:
+    '#type': textfield
+    '#title': 'Elección preferida 1'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '1'
+        - ':input[name="prelacion"]':
+            value: '2'
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_2:
+    '#type': textfield
+    '#title': 'Elección preferida 2'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '2'
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_3:
+    '#type': textfield
+    '#title': 'Elección preferida 3'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '3'
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_4:
+    '#type': textfield
+    '#title': 'Elección preferida 4'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '4'
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_5:
+    '#type': textfield
+    '#title': 'Elección preferida 5'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '5'
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_6:
+    '#type': textfield
+    '#title': 'Elección preferida 6'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '6'
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_7:
+    '#type': textfield
+    '#title': 'Elección preferida 7'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '7'
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_8:
+    '#type': textfield
+    '#title': 'Elección preferida 8'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '8'
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_9:
+    '#type': textfield
+    '#title': 'Elección preferida 9'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '9'
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_10:
+    '#type': textfield
+    '#title': 'Elección preferida 10'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '10'
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_11:
+    '#type': textfield
+    '#title': 'Elección preferida 11'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '11'
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_12:
+    '#type': textfield
+    '#title': 'Elección preferida 12'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '12'
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_13:
+    '#type': textfield
+    '#title': 'Elección preferida 13'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '13'
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_14:
+    '#type': textfield
+    '#title': 'Elección preferida 14'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '14'
+        - ':input[name="prelacion"]':
+            value: '15'
+  eleccion_15:
+    '#type': textfield
+    '#title': 'Elección preferida 15'
+    '#description': 'Introduce el número deseado'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="prelacion"]':
+            value: '15'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

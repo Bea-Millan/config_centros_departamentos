@@ -1,0 +1,156 @@
+uuid: 68284b2d-203e-4d07-a225-2c8371827c00
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_519
+title: 'Declaración de compromiso COVID-19'
+description: null
+category: null
+elements: |-
+  grado:
+    '#type': select
+    '#options':
+      1: 'MAGISTERIO EN EDUCACIÓN INFANTIL'
+      2: 'MAGISTERIO EN EDUCACIÓN PRIMARIA'
+    '#title': Grado
+    '#description': 'Elige el Grado que estás cursando'
+    '#required': true
+  tipo_practicas_infantil:
+    '#type': select
+    '#options':
+      1: 'Prácticas I'
+      2: 'Prácticas II'
+      3: 'Prácticas III'
+      4: 'Prácticas en Atención a la Diversidad'
+      5: 'Prácticas en Educación Bilingüe'
+      6: 'Prácticas IV'
+    '#title': 'Tipo de prácticas escolares:'
+    '#description': 'Escoge el tipo de prácticas que vas a cursar:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grado"]':
+            value: '1'
+  tipo_practicas_primaria:
+    '#type': select
+    '#options':
+      1: 'Prácticas I'
+      2: 'Prácticas II'
+      3: 'Prácticas III'
+      4: 'Prácticas en Audición y Lenguaje'
+      5: 'Prácticas en Educación Física'
+      6: 'Prácticas en Lengua Inglesa'
+      7: 'Prácticas en Pedagogía Terapéutica'
+      8: 'Prácticas IV'
+    '#title': 'Tipo de prácticas escolares:'
+    '#description': 'Escoge el tipo de prácticas que vas a cursar:'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="grado"]':
+            value: '2'
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI/NIE:'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title': 'Teléfono:'
+    '#description': 'Introduce tu número de teléfono o móvil'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: magisterioteruel@unizar.es
+      from_options: {  }
+      from_name: 'Administración de Coordinación de Magisterio'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Buenos días,
+
+        Adjunto le remitimos Declaración de Compromiso por la COVID-19 aceptada por usted.
+
+        Reciba un cordial saludo.
+
+        Administración de Coordinación de Prácticas
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

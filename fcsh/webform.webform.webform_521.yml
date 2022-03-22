@@ -1,0 +1,238 @@
+uuid: 42aad61b-ac3a-427a-a9e4-e032446c4365
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_521
+title: 'Justificante desplazamiento por Covid-19 '
+description: null
+category: null
+elements: |-
+  estudios:
+    '#type': select
+    '#options':
+      1: 'GRADO EN ADMINISTRACIÓN Y DIRECCIÓN DE EMPRESAS'
+      2: 'GRADO EN BELLAS ARTES'
+      3: 'GRADO EN MAGISTERIO EN EDUCACIÓN INFANTIL'
+      4: 'GRADO EN MAGISTERIO EN EDUCACIÓN PRIMARIA'
+      5: 'GRADO EN PSICOLOGÍA'
+      6: 'MÁSTER EN PSICOLOGÍA GENERAL SANITARIA'
+      7: 'MÁSTER UNIVERSITARIO EN PROFESORADO DE E.S.O.'
+      8: 'ESTUDIO PROPIO DE EXPERTO UNIVERSITARIO EN EDUCACIÓN EN TERRRITORIOS RURALES'
+      9: 'MÁSTER PROPIO EN DESARROLLO EMPRESARIAL'
+    '#title': Estudios
+    '#description': 'Elige los estudios que estás cursando'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Nombre:'
+    '#description': 'Introduce tu nombre'
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': 'Apellidos:'
+    '#description': 'Introduce tus apellidos'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': 'DNI/NIE:'
+    '#description': 'Introduce tu DNI o NIE'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': 'NIA:'
+    '#description': 'Introduce tu NIA'
+    '#required': true
+  residencia:
+    '#type': textfield
+    '#title': 'Localidad de residencia:'
+    '#description': 'Introduce la localidad de tu residencia'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico:'
+    '#description': 'Introduce tu correo de la Universidad de Zaragoza. (NIA@unizar.es)'
+    '#required': true
+  dia:
+    '#type': select
+    '#options':
+      1: '1'
+      2: '2'
+      3: '3'
+      4: '4'
+      5: '5'
+      6: '6'
+      7: '7'
+      8: '8'
+      9: '9'
+      10: '10'
+      11: '11'
+      12: '12'
+      13: '13'
+      14: '14'
+      15: '15'
+      16: '16'
+      17: '17'
+      18: '18'
+      19: '19'
+      20: '20'
+      21: '21'
+      22: '22'
+      23: '23'
+      24: '24'
+      25: '25'
+      26: '26'
+      27: '27'
+      28: '28'
+      29: '29'
+      30: '30'
+      31: '31'
+    '#title': 'Día:'
+    '#description': 'Elige el día de la fecha de hoy'
+    '#required': true
+  mes:
+    '#type': select
+    '#options':
+      1: enero
+      2: febrero
+      3: marzo
+      4: abril
+      5: mayo
+      6: junio
+      7: julio
+      8: agosto
+      9: septiembre
+      10: octubre
+      11: noviembre
+      12: diciembre
+    '#title': 'Mes:'
+    '#description': 'Introduce el mes actual'
+    '#required': true
+  ano:
+    '#type': select
+    '#options':
+      1: '2020'
+      2: '2021'
+      3: '2022'
+    '#title': 'Año:'
+    '#description': 'Introduce el año'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p><span style="font-size: 13.008px;">Con fecha de [submission:values:dia] de [submission:values:mes] de [submission:values:ano] has solicitado Justificante para desplazamiento por situación de Covid-19 según los siguientes datos:</span></p><p><span style="font-size: 13.008px;">&nbsp;</span></p><p><span style="font-size: 13.008px;">Nombre alumno/a: [submission:values:nombre] [submission:values:apellidos]</span></p><p><span style="font-size: 13.008px;">NIA: [submission:values:nia]&nbsp;</span></p><p><span style="font-size: 13.008px;">DNI/NIE: [submission:values:dni]&nbsp;</span></p><p><span style="font-size: 13.008px;">Estudios: [submission:values:estudios]</span></p><p><span style="font-size: 13.008px;">Localidad de residencia: [submission:values:residencia]</span></p><p><span style="font-size: 13.008px;">Correo electrónico: [submission:values:correo_electronico]</span></p><p><span style="font-size: 13.008px;">&nbsp;</span></p><p><span style="font-size: 13.008px;">Tu solicitud ha sido enviada a la Secretaría de la Facultad de Ciencias Sociales y Humanas para su trámite. Una vez firmada os será enviada a vuestro correo institucional (NIA@unizar.es) con la mayor brevedad posible. Debido a la gran cantidad de solicitudes recibidas rogamos un poco de paciencia y comprensión por vuestra parte. Gracias.</span></p><p><span style="font-size: 13.008px;">&nbsp;</span></p><p><span style="font-size: 13.008px;">Recibid un cordial saludo.</span></p><p><span style="font-size: 13.008px;">&nbsp;</span></p><p><span style="font-size: 13.008px;">Facultad de Ciencias Sociales y Humanas de Teruel</span></p><p><span style="font-size: 13.008px;">Universidad de Zaragoza</span></p><p>&nbsp;</p>'
+  limit_total: null
+  limit_user: 1
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: secreter@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: coordfcshteruel@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        DATOS DEL ALUMNO SOLICITANTE DEL JUSTIFICANTE PARA DESPLAZAMIENTO POR COVID-19
+
+        Nombre alumno/a: [webform_submission:values:nombre] [webform_submission:values:apellidos]
+        NIA: [webform_submission:values:nia] 
+        Correo electrónico: [webform_submission:values:nia]@unizar.es
+
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_4:
+    id: email
+    handler_id: email_4
+    label: 'Email 4'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 4
+    settings:
+      states:
+        - completed
+      to_mail: fcshtcoord@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: coordfcshteruel@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        DATOS DEL ALUMNO SOLICITANTE DEL JUSTIFICANTE PARA DESPLAZAMIENTO POR COVID-19
+
+        Nombre alumno/a: [webform_submission:values:nombre] [webform_submission:values:apellidos]
+        NIA: [webform_submission:values:nia] 
+        Correo electrónico: [webform_submission:values:nia]@unizar.es
+
+        Facultad de Ciencias Sociales y Humanas de Teruel
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

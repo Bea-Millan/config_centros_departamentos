@@ -1,0 +1,8 @@
+uuid: 0ee1828a-fa81-45b4-ae6f-69ebaae024e5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-informaci-n-ac_en
+label: 'Menu_Informacion academica_en'
+description: 'Menú de links que aparecerán en las secciones de Información académica'
+locked: false

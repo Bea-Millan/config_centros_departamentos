@@ -1,0 +1,117 @@
+uuid: abfdec4d-4d19-4d4e-adaa-59c194a7ddf2
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_283
+title: 'Publicación de Noticias y Agenda'
+description: null
+category: null
+elements: |-
+  nombre_solicitante:
+    '#type': textfield
+    '#title': 'Nombre solicitante'
+    '#description': 'Introduce tu nombre.'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Introduce tu correo electrónico a los solos efectos de comunicación.'
+    '#required': true
+  titulo_a_publicar:
+    '#type': textfield
+    '#title': 'Título a publicar'
+    '#description': 'Introduce el titular que quieres que aparezca. Por favor, intenta que sea lo más breve posible.'
+    '#required': true
+  texto_a_publicar:
+    '#type': textarea
+    '#title': 'Texto a publicar'
+    '#description': 'Introduce aquí el texto que suponga el cuerpo de la noticia o agenda.'
+    '#required': true
+  fecha_inicial_evento:
+    '#type': date
+    '#title': 'Fecha inicial evento'
+    '#description': 'Fecha inicial del evento, noticia o agenda.'
+    '#required': true
+  fecha_final_evento:
+    '#type': date
+    '#title': 'Fecha final evento'
+    '#description': 'Fecha final del evento, noticia o agenda.'
+    '#required': true
+  fecha_de_caducidad_del_evento:
+    '#type': date
+    '#title': 'Fecha de caducidad del evento'
+    '#description': 'Cuando la publicación supere esta fecha no se mostrará en el apartado "Actualidad".'
+    '#required': true
+  imagen_adjunta:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png'
+    '#title': 'Imagen adjunta'
+    '#description': 'Adjunta una imagen relacionada con la publicación.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: dircisht@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_solicitante:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
