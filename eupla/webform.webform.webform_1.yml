@@ -1,0 +1,104 @@
+uuid: d9d15c21-126c-4f0f-9a1b-ac0a9adfb90e
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_1
+title: 'Formulario de Contacto'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': Email
+    '#required': true
+  asunto:
+    '#type': textfield
+    '#title': Asunto
+    '#required': true
+  cuerpo:
+    '#type': textarea
+    '#title': Mensaje
+    '#required': true
+  fieldset_politica_de_proteccion_de_datos:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Política de protección de datos'
+    consentimiento_para_el_tratamiento_de_los_datos_introducidos_5:
+      '#type': checkbox
+      '#options':
+        acepto: '(Acepto el tratamiento de los datos introducidos)'
+      '#multiple': true
+      '#title': 'Consentimiento para el tratamiento de los datos introducidos'
+      '#description': '<p>Debe permitir a la EUPLA la utilización de los datos introducidos en el formulario para poder atender su petición, tal y como se indica en el documento "<a href="https://eupla.unizar.es/sites/eupla.unizar.es/files/archivos/audidat/sus_datos_seguros_eupla.pdf" target="_blank">SUS DATOS SEGUROS</a>". Marque el siguiente cuadro:</p>'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: info.eupla@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Mensaje desde el formulario de contacto de la web (página principal)'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

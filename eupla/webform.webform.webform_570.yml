@@ -1,0 +1,124 @@
+uuid: 3546187f-7aac-4f91-970d-8c727be0d99d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_570
+title: 'Servicio Académico de Impresión 3D'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#size': 50
+    '#title_display': inline
+    '#title': 'Nombre del alumno'
+    '#required': true
+  nie:
+    '#min': '000000'
+    '#max': '999999'
+    '#title_display': inline
+    '#title': NIE
+    '#required': true
+  justificacion_academica:
+    '#type': textarea
+    '#title': 'Justificación académica'
+    '#required': true
+  descripcion_tecnica:
+    '#type': textarea
+    '#title': 'Descripción técnica'
+    '#required': true
+  archivo_stl:
+    '#type': managed_file
+    '#max_filesize': !!float 20
+    '#file_extensions': 'zip stl'
+    '#title': 'Archivo .STL (o .ZIP para múltiples archivos)'
+    '#required': true
+  fieldset_politica_de_proteccion_de_datos:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Política de protección de datos'
+    consentimiento_para_el_tratamiento_de_los_datos_introducidos_6:
+      '#type': checkbox
+      '#options':
+        acepto: Acepto
+      '#multiple': true
+      '#title': 'Consentimiento para el tratamiento de los datos introducidos'
+      '#description': '<p>Debe permitir a la EUPLA la utilización de los datos introducidos en el formulario para poder crear la pieza 3D, tal y como se indica en el documento "<a href="https://eupla.unizar.es/sites/eupla.unizar.es/files/archivos/audidat/sus_datos_seguros_eupla.pdf" target="_blank">SUS DATOS SEGUROS</a>"</p>'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por utilizar este servicio. Te enviaremos un emial confirmando la correcta recepción del modelo y un segundo email cuando la pieza este lista para su recogida.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: 'jlvicen@unizar.es,760341@unizar.es,755397@unizar.es,impresion3D@eupla.es'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario Web EUPLA: Servicio Académico de Impresión 3D'
+      body: |-
+        Enviado el [webform_submission:date:long]
+
+        Los valores enviados son:
+        - Nombre del alumno: [webform_submission:values:nombre]
+        - NIE: [webform_submission:values:nie]
+        - Justificación académica:  [webform_submission:values:justificacion_academica]
+        - Descripción Técnica:  [webform_submission:values:descripcion_tecnica]
+        - Archivo STL:  [webform_submission:values:archivo_stl]
+
+        Los resultados de esta petición se pueden consultar también aquí:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

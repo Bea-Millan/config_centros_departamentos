@@ -1,0 +1,32 @@
+uuid: 1140bca9-9d10-4bc6-8ac3-973e688c19dc
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - unizar_centro
+_core:
+  default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
+id: unizar_centro_titulodelapagina
+theme: unizar_centro
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Título de la página'
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      elemento_parrilla: elemento_parrilla
+      estudio: estudio
+      slideshow: slideshow
+      te_interesa: te_interesa

@@ -1,0 +1,131 @@
+uuid: ca472ac5-d333-47ba-bfbd-87f87ba6c2d8
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_135
+title: 'Solicitud de información - IOI Online'
+description: null
+category: null
+elements: |-
+  fieldset_datos_de_contacto:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de contacto'
+    nombre_1:
+      '#type': textfield
+      '#size': 50
+      '#title_display': inline
+      '#title': Nombre
+      '#required': true
+    apellidos_1:
+      '#type': textfield
+      '#size': 50
+      '#title_display': inline
+      '#title': Apellidos
+      '#required': true
+    email_de_contacto_1:
+      '#type': email
+      '#size': 20
+      '#title_display': inline
+      '#title': 'Email de contacto'
+      '#required': true
+    telefono_de_contacto_opcional_1:
+      '#type': textfield
+      '#size': 20
+      '#title_display': inline
+      '#title': 'Teléfono de contacto (opcional)'
+  has_sido_alumno_de_la_eupla:
+    '#type': radios
+    '#options':
+      Sí: Sí
+      'No': 'No'
+    '#title_display': inline
+    '#title': '¿Has sido alumno de la EUPLA?'
+    '#required': true
+  que_estudiaste_en_la_eupla:
+    '#type': checkboxes
+    '#options':
+      ITIM: 'Ingeniería Técnica Industrial Mecánica'
+      ITIE: 'Ingeniería Técnica Industrial Electrónica'
+      ITA: 'Ingeniería Técnica Agrícola'
+      ITIS: 'Ingeniería Técnica Informática de Sistemas'
+      AT: 'Arquitectura Técnica'
+      ITOP: 'Ingeniería Técnica en Obras Públicas'
+      IC: 'Ingeniería Civil'
+      IM: 'Ingeniería Mecatrónica'
+      IOI: 'Ingeniería de Organización Industrial'
+    '#multiple': true
+    '#title': '¿Qué estudiaste en la EUPLA?'
+    '#states':
+      visible:
+        - ':input[name="has_sido_alumno_de_la_eupla"]':
+            value: Sí
+  mensaje_opcional:
+    '#type': textarea
+    '#title': 'Mensaje (opcional)'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por su interés en nuestro Grado de Organización Industrial ONLINE. Recibirás una respuesta lo más pronto posible. Para cualquier duda o pregunta sobre tu solicitud puedes contactar con ioi_semipresencial@eupla.es.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: ioi_semipresencial@eupla.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

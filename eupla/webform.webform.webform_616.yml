@@ -1,0 +1,116 @@
+uuid: 9ac415ac-1e14-4db3-8987-8deb670da347
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_616
+title: Inserción
+description: null
+category: null
+elements: |-
+  nombre_del_remitente:
+    '#type': textfield
+    '#size': 50
+    '#title_display': inline
+    '#title': 'Nombre del remitente'
+    '#required': true
+  fieldset_noticia:
+    '#type': fieldset
+    '#open': true
+    '#title': Noticia
+    titulo_de_la_noticia_4:
+      '#type': textarea
+      '#title': 'Título de la noticia'
+      '#required': true
+    cuerpo_de_la_noticia_4:
+      '#type': textarea
+      '#title': 'Cuerpo de la noticia'
+      '#description': 'Sólo necesitamos los datos concretos, ya haremos nosotros la redacción final'
+      '#required': true
+    archivo_4:
+      '#type': managed_file
+      '#max_filesize': !!float 100
+      '#file_extensions': 'gif jpg jpeg png zip'
+      '#title_display': inline
+      '#title': Archivo
+      '#description': 'Si es más de un archivo, comprimirlo todo en un único archivo ZIP.'
+    publicar_en_4:
+      '#type': checkboxes
+      '#options':
+        web: 'Página WEB'
+        rrss: 'Redes Sociales'
+        whatsapp: Whatsapp
+        blog: Blog
+      '#multiple': true
+      '#title': 'Publicar en'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por su envío, lo publicaremos a la mayor brevedad posible.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: jlvicen@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Nueva inserción de noticia para la WEB'
+      body: |-
+        Los valores enviados son:
+        [webform_submission:values]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

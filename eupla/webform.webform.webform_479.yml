@@ -1,0 +1,154 @@
+uuid: 965d1373-ba8c-4b30-8a3b-6a36d26431ae
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_479
+title: 'Inscripción al Curso Cero (Septiembre 2018)'
+description: null
+category: null
+elements: |-
+  nombre:
+    '#type': textfield
+    '#size': 30
+    '#title_display': inline
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#size': 30
+    '#title_display': inline
+    '#title': Apellidos
+    '#required': true
+  dni:
+    '#type': textfield
+    '#size': 10
+    '#title_display': inline
+    '#title': DNI
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title_display': inline
+    '#title': 'Email:'
+    '#required': true
+  grado_a_cursar:
+    '#type': select
+    '#options':
+      AT: 'Arquitectura Técnica'
+      CIVIL: 'Ingeniería Civil'
+      MEC: 'Ingeniería Mecatrónica'
+      IOI: 'Ingeniería de Organización Industrial'
+    '#title_display': inline
+    '#title': 'Grado a cursar:'
+    '#required': true
+  haras_uso_del_servicio_de_autobus:
+    '#type': select
+    '#options':
+      si: Sí
+      'no': 'No'
+    '#title_display': inline
+    '#title': 'Harás uso del servicio de autobús'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: jlvicen@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Inscripción al Curso Cero (sept 2018)'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: info.eupla@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Inscripción al Curso Cero (sept 2018)'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

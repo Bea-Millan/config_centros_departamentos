@@ -1,0 +1,254 @@
+uuid: a7f745d7-c32e-4919-8942-f981e13db417
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_110
+title: 'Anuncia tu alojamiento'
+description: null
+category: null
+elements: |-
+  fieldset_datos_de_la_vivienda:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la vivienda'
+    direccion_de_la_vivienda_20:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Dirección de la vivienda'
+      '#description': 'Dirección completa de la vivienda a alquilar'
+      '#required': true
+    codigopostal_20:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Código postal y localidad'
+      '#description': 'Si la vivienda está en La Almunia de Doña Godina, puede dejar esta campo en blanco'
+    tipo_de_alquiler_20:
+      '#type': select
+      '#options':
+        compartir: 'Piso a compartir'
+        completo: 'Piso completo'
+        hab_cocina: 'Habitación con derecho a cocina'
+        hab_pension: 'Habitación con derecho a pensión'
+      '#title_display': inline
+      '#title': 'Tipo de alquiler'
+      '#required': true
+    no_de_dormitorios_20:
+      '#type': radios
+      '#options':
+        1: '1'
+        2: '2'
+        3: '3'
+        4: '4'
+        5: '5'
+        6: '6'
+        7: '7'
+        8: '8'
+        9: '9'
+      '#title_display': inline
+      '#title': 'Nº de dormitorios'
+      '#required': true
+    no_de_banos_20:
+      '#type': radios
+      '#options':
+        1: '1'
+        2: '2'
+        3: '3'
+        4: '4'
+        5: '5'
+      '#title_display': inline
+      '#title': 'Nº de baños'
+      '#required': true
+    plazaas_libres_20:
+      '#type': radios
+      '#options':
+        1: '1'
+        2: '2'
+        3: '3'
+        4: '4'
+        5: '5'
+        6: '6'
+        7: '7'
+        8: '8'
+        9: '9'
+      '#title_display': inline
+      '#title': 'Plazas libres'
+      '#required': true
+    tipo_de_inquilinos_20:
+      '#type': radios
+      '#options':
+        chicos: 'Sólo chicos'
+        chicas: 'Sólo chicas'
+        indistinto: Indistinto
+      '#title_display': inline
+      '#title': 'Tipo de inquilinos'
+      '#required': true
+    amueblado_20:
+      '#type': radios
+      '#options':
+        si: Sí
+        'no': 'No'
+      '#title_display': inline
+      '#title': Amueblado
+      '#required': true
+    calefaccion_20:
+      '#type': radios
+      '#options':
+        central: Central
+        'gas individual': 'Gas individual'
+        electrica: Eléctrica
+        gasoil: Gasoil
+        notiene: 'No tiene'
+      '#title_display': inline
+      '#title': Calefacción
+      '#required': true
+    adsl_y_o_wifi_20:
+      '#type': radios
+      '#options':
+        si: Sí
+        'no': 'No'
+      '#title_display': inline
+      '#title': 'ADSL y/o WIFI'
+      '#required': true
+    precio_20:
+      '#type': textfield
+      '#size': 20
+      '#unique': false
+      '#field_suffix': €
+      '#title_display': inline
+      '#title': Precio
+      '#description': 'Precio mensual en euros (€)'
+      '#required': true
+    incluye_comunidad_20:
+      '#type': radios
+      '#options':
+        si: Sí
+        'no': 'No'
+      '#title_display': inline
+      '#title': 'Incluye comunidad'
+      '#required': true
+    gastos_comunidad_20:
+      '#type': textfield
+      '#size': 20
+      '#unique': false
+      '#field_suffix': €
+      '#title_display': inline
+      '#title': 'Gastos comunidad'
+      '#description': 'Precio mensual en euros (€)'
+      '#states':
+        visible:
+          - ':input[name="incluye_comunidad_20"]':
+              value: 'no'
+  fieldset_datos_del_anunciante:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos del anunciante'
+    preguntar_por_21:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Preguntar por'
+      '#required': true
+    telefono_de_contacto_21:
+      '#type': textfield
+      '#size': 20
+      '#title_display': inline
+      '#title': 'Teléfono de contacto'
+      '#required': true
+    email_de_contacto_21:
+      '#type': email
+      '#size': 20
+      '#title_display': inline
+      '#title': 'Email de contacto'
+      '#description': 'Si no tiene correo electrónico, puede dejar este campo en blanco'
+    llamar_preferentemente_21:
+      '#type': radios
+      '#options':
+        mañana: Mañanas
+        tarde: Tardes
+        noche: Noches
+        todo_el_dia: 'Todo el día'
+      '#title_display': inline
+      '#title': 'Llamar preferentemente'
+      '#required': true
+  observaciones:
+    '#type': textarea
+    '#title_display': inline
+    '#title': Observaciones
+    '#description': 'En el siguiente campo puedes incorporar toda aquella información que consideres relevante y que no esté ya especificada en los campos de arriba'
+  fieldset_politica_de_proteccion_de_datos:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Política de protección de datos'
+    consentimiento_para_el_tratamiento_de_los_datos_introducidos_23:
+      '#type': checkbox
+      '#options':
+        acepto: Acepto
+      '#multiple': true
+      '#title': 'Consentimiento para el tratamiento de los datos introducidos'
+      '#description': '<p>Debe permitir a la EUPLA la utilización de los datos introducidos en el formulario para poder publicar su anuncio, tal y como se indica en el documento "<a href="https://eupla.unizar.es/sites/eupla.unizar.es/files/archivos/audidat/sus_datos_seguros_eupla.pdf" target="_blank">SUS DATOS SEGUROS</a>"</p>'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Anuncio insertado correctamente. Muchas gracias por utilizar este servicio. Para cualquier cuestión relacionada con la publicación de este anuncio, por favor, envíe un mensaje a la dirección de correo electrónico <a href="mailto:%20sicpla@eupla.es" target="_blank">sicpla@eupla.es</a>.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: jlvicen@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,132 @@
+uuid: f1d4e66c-c03a-4861-9462-7a5c9610806d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 114
+template: false
+archive: false
+id: webform_803
+title: 'Feria de empresas EUPLA - Marzo 2020 - Envía tu currículum'
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    nombre_3:
+      '#type': textfield
+      '#size': 30
+      '#title_display': inline
+      '#title': 'Nombre:'
+      '#required': true
+    apellidos_3:
+      '#type': textfield
+      '#size': 60
+      '#title_display': inline
+      '#title': 'Apellidos:'
+      '#required': true
+  fieldset_interesado_en:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Estoy interesado en . . . '
+    puedes_selecionar_una_opcion_o_las_dos_8:
+      '#type': checkboxes
+      '#options':
+        practicas: 'Realizar prácticas en empresa'
+        trabajo: 'Acceder a puesto de trabajo'
+      '#multiple': true
+      '#title': 'Puedes selecionar una opción o las dos'
+  fieldset_a_que_empresas_quieres_enviar_tu_curriculum:
+    '#type': fieldset
+    '#open': true
+    '#title': '¿A qué empresas quieres enviar tu currículum?'
+    listado_de_empresas_4:
+      '#type': checkboxes
+      '#options':
+        1: 'Empresa 1'
+        2: 'Empresa 2'
+        3: 'Empresa 3'
+      '#multiple': true
+      '#title_display': inline
+      '#title': 'Listado de empresas (marca todas las que quieras):'
+      '#required': true
+  fieldset_sube_tu_curriculum:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Sube tu currículum (sólo PDF, máx 10MB):'
+    archivo_6:
+      '#type': managed_file
+      '#max_filesize': !!float 10
+      '#file_extensions': pdf
+      '#title_display': inline
+      '#title': 'Archivo:'
+      '#description': 'Una vez seleccionado el archivo, pulsar el botón "Subir al servidor".'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:listado_de_empresas:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        Información enviada desde la Web de la EUPLA el día [webform_submission:date:long]<hr/>
+        [webform_submission:values]
+      excluded_elements:
+        a_que_empresas_quieres_enviar_tu_curriculum: a_que_empresas_quieres_enviar_tu_curriculum
+        listado_de_empresas: listado_de_empresas
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

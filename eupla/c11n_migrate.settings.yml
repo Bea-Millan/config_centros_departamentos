@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: U7wa9HoK4b0xijAtpZ6qpdeCm_LlB04NQ6NiIKgsZ8c
+plugin:
+  host: eupla.unizar.es
+  url_host: sites/eupla
+langcode: es

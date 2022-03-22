@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: SOSGH_plx6YJmf5N8ZyuamuYmoY4YRJn8Z1oKUom1pc
+logo_path: 'public://logo_con_ods_1375x292.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: ''
+nombre_centro: 'Escuela Universitaria Politécnica de La Almunia'
+dir_centro: 'Calle Mayor, 5, 50100 La Almunia de Doña Godina, Zaragoza'
+telefono_centro: '+34 976 600 813'
+mail_centro: info.eupla@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '2385'
+imagen_segundas: '2386'
+facebook: 'https://www.facebook.com/eupla'
+twitter: 'http://twitter.com/eupla_campus'
+youtube: 'http://www.youtube.com/webeupla'
+linkedin: ''
+instagram: 'https://www.instagram.com/eupla'
+blog: ''
+blog_class: ''
+soundcloud: ''
+meta_desc: 'Escuela Universitaria Politécnica de La Almunia. Adscrita a la Universidad de Zaragoza. Arquitectura Técnica, Ingenierías Civil, Mecatrónica y Organización Industrial. Grados. Postgrados. Másteres. Diplomas de Especialización'
+langcode: es
