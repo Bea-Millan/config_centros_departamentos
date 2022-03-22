@@ -22,7 +22,6 @@ blacklist:
   - unizar_base.settings
   - unizar_departamento.settings
   - smtp.settings
-  - language.negociation
   - language.types
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings

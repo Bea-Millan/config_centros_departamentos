@@ -19,7 +19,6 @@ blacklist:
   - unizar_admin_menu.settings
   - unizar_modulos_configuracion.settings
   - language.types
-  - language.negociation
   - 'language.entity.*'
   - smtp.settings
   - shortcut.set.default

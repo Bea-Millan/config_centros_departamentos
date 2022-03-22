@@ -21,7 +21,7 @@ source:
   plugin: d7_file
   scheme: public
   constants:
-    source_base_path: 'http://fecem.unizar.es/sites/fecem.unizar.es'
+    source_base_path: 'http://econz.unizar.es/sites/econz.unizar.es'
     profile_base_path: 'public:'
 process:
   fid:
