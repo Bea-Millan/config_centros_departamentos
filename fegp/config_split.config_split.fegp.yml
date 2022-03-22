@@ -32,6 +32,10 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - language.negotiation
+  - migrate_plus.migration.upgrade_d7_menu_fr
+  - migrate_plus.migration.upgrade_d7_menu_links_fr
+  - migrate_plus.migration.upgrade_d7_menu_links_zh
+  - migrate_plus.migration.upgrade_d7_menu_zh
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
