@@ -1,0 +1,8 @@
+uuid: 0c67ee42-abdb-4e15-b76c-8305341f3eeb
+langcode: es
+status: true
+dependencies: {  }
+id: menu-lateral
+label: 'Accesos directos'
+description: ''
+locked: false

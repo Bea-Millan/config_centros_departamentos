@@ -1,0 +1,8 @@
+uuid: 0102c2aa-3174-49f7-abc9-4f8d942a5411
+langcode: es
+status: true
+dependencies: {  }
+id: menu-ruso
+label: Ruso
+description: 'Menú de ruso.'
+locked: false

@@ -1,6 +1,7 @@
+uuid: a780bcce-e5c3-4923-8d1b-c7779a55046d
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: culm
 label: culm
 description: ''
@@ -27,10 +28,10 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

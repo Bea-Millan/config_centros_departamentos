@@ -1,0 +1,8 @@
+uuid: 791b6e19-d1b6-4207-b237-634ded60c5dc
+langcode: es
+status: true
+dependencies: {  }
+id: menu-italiano
+label: Italiano
+description: 'Menú de italiano.'
+locked: false

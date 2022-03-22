@@ -1,0 +1,8 @@
+uuid: 4993fa46-ba29-48bf-9502-c17f9719bc04
+langcode: es
+status: true
+dependencies: {  }
+id: menu-idioma-chino
+label: Chino
+description: 'Menú de chino'
+locked: false

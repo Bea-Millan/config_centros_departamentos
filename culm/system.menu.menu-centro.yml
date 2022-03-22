@@ -1,0 +1,8 @@
+uuid: 97a97812-9894-471a-ba83-d321d709c6db
+langcode: es
+status: true
+dependencies: {  }
+id: menu-centro
+label: Centro
+description: ''
+locked: false

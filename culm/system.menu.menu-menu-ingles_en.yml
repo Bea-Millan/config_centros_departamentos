@@ -1,0 +1,8 @@
+uuid: f02e958e-63e0-4ce1-928a-349d710f4b43
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-ingles_en
+label: Inglés_en
+description: 'Menú de inglés'
+locked: false

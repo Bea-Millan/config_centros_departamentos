@@ -1,0 +1,8 @@
+uuid: 15d44d6f-3276-496a-8eb7-e330011c7919
+langcode: es
+status: true
+dependencies: {  }
+id: menu-arabe
+label: Árabe
+description: 'Menú de árabe.'
+locked: false

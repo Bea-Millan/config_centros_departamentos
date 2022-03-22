@@ -1,0 +1,8 @@
+uuid: 27367186-cae9-43b6-b5f6-67dc932052f3
+langcode: es
+status: true
+dependencies: {  }
+id: menu-aleman
+label: Alemán
+description: 'Menú de alemán.'
+locked: false

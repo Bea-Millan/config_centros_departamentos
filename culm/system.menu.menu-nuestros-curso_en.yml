@@ -1,0 +1,8 @@
+uuid: 42044df1-0c67-4522-a67e-319f3c39036c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-nuestros-curso_en
+label: 'Información académica_en'
+description: ''
+locked: false

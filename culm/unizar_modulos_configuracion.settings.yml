@@ -1,0 +1,28 @@
+_core:
+  default_config_hash: _Gd9I3TQOZU90dO3nrFJBClwO0ZOSC0JOmgNemxdZ78
+logo_path: 'public://logo_culm_ods_combinado.jpg'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '153'
+nombre_centro: 'Centro Universitario de Lenguas Modernas'
+dir_centro: 'Pedro Cerbuna, 12 - 50009 ZARAGOZA'
+telefono_centro: '976761024  y 876553114'
+mail_centro: culm@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '3374'
+imagen_segundas: '3177'
+facebook: 'https://www.facebook.com/Centro-Universitario-de-Lenguas-Modernas-de-la-Universidad-de-Zaragoza-458347237512348/'
+twitter: 'https://twitter.com/CULMUZ'
+youtube: 'https://www.youtube.com/channel/UCR_xhijGyN5Iu3zuIqWkCQg'
+linkedin: 'https://www.linkedin.com/company/culm-unizar/'
+instagram: 'https://www.instagram.com/culmuz/'
+blog: 'https://t.me/culmuz'
+blog_class: icon-telegram
+soundcloud: ''
+meta_desc: 'El CULM es el centro de la Universidad de Zaragoza destinado a la enseñanza de los idiomas, con caracter instrumental. Ofrece cursos de diez idiomas y está acreditado por ACLES para la certificación de niveles del Marco de Referencia Europeo para la enseñanza de las lenguas.'
+langcode: es

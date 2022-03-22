@@ -1,0 +1,8 @@
+uuid: b2560737-289c-49c1-9419-6f630313f86a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-portugues
+label: Portugués
+description: 'Menú de portugués.'
+locked: false

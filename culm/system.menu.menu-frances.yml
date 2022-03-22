@@ -1,0 +1,8 @@
+uuid: 9c71233e-0db1-40c4-8afd-e146530058be
+langcode: es
+status: true
+dependencies: {  }
+id: menu-frances
+label: Francés
+description: 'Menú de francés.'
+locked: false

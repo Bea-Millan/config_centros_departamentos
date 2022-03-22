@@ -1,0 +1,8 @@
+uuid: 6da2ba73-bfee-4c30-bc27-58b24c60ce2b
+langcode: es
+status: true
+dependencies: {  }
+id: menu-japones
+label: Japonés
+description: 'Menú de japonés.'
+locked: false

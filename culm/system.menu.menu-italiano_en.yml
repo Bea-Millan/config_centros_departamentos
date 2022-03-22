@@ -1,0 +1,8 @@
+uuid: 205650a8-5e46-489f-bda2-c794c9a17a8f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-italiano_en
+label: Italiano_en
+description: 'Menú de italiano.'
+locked: false
