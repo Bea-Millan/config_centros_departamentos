@@ -1,0 +1,30 @@
+uuid: 335815fb-081e-4fbf-90af-6a7d101115fc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c03fa9ca-8658-4988-941b-61b716427050'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: eventos
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:c03fa9ca-8658-4988-941b-61b716427050'
+settings:
+  id: 'block_content:c03fa9ca-8658-4988-941b-61b716427050'
+  label: Eventos
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
