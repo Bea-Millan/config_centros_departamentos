@@ -1,0 +1,19 @@
+uuid: b66f3594-8972-46c7-86ba-70da04cb9c6d
+langcode: es
+status: true
+dependencies: {  }
+id: fylcustom
+label: 'fyl custom'
+description: ''
+weight: 0
+folder: ../config/sites/custom/fyl
+module:
+  entityreference_filter: 0
+  filefield_paths: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.fylcustom
+  - views.view.listado_noticias
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
