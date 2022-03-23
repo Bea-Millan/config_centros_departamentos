@@ -1,0 +1,44 @@
+uuid: 15381398-da74-4b7f-8526-b4422921d594
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grados
+  module:
+    - language
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menugradosderecha
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'menu_block:menu-grados'
+settings:
+  id: 'menu_block:menu-grados'
+  label: 'menu grados derecha'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grados:'
+  suggestion: menu_grados
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
+  request_path:
+    id: request_path
+    negate: false
+    pages: "grado/grado-en-estudios-clasicos\r\ngrado/grado-en-estudios-ingleses\r\ngrado/grado-en-filologia-hispanica\r\ngrado/grado-en-filosofia\r\ngrado/grado-en-geografia-y-ordenacion-del-territorio\r\ngrado/grado-en-historia\r\ngrado/grado-en-historia-del-arte\r\ngrado/grado-en-informacion-y-documentacion\r\ngrado/grado-en-lenguas-modernas\r\ngrado/grado-en-periodismo"

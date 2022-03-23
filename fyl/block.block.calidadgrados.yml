@@ -1,0 +1,36 @@
+uuid: 167ed148-7c2f-4c44-9d4f-bdc738e2304e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-calidad-grados
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: calidadgrados
+theme: unizar_centro
+region: content
+weight: -14
+provider: null
+plugin: 'menu_block:menu-calidad-grados'
+settings:
+  id: 'menu_block:menu-calidad-grados'
+  label: 'calidad grados'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-calidad-grados:'
+  suggestion: menu_calidad_grados
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "calidad/gestion-calidad-grado\r\ncalidad/gc-estudios-clasicos\r\ncalidad/gc-estudios-ingleses\r\ncalidad/gc-filologia-hispanica\r\ncalidad/gc-filosofia\r\ncalidad/gc-geografia\r\ncalidad/gc-historia\r\ncalidad/gc-historia-del-arte\r\ncalidad/gc-informacion-y-documentacion\r\ncalidad/gc-lenguas-modernas\r\ncalidad/gc-periodismo"

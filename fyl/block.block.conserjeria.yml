@@ -1,0 +1,36 @@
+uuid: 718c3943-c206-4de1-85ce-b2821c8d6f37
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-conserjer-a
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: conserjeria
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'menu_block:menu-conserjer-a'
+settings:
+  id: 'menu_block:menu-conserjer-a'
+  label: Conserjería
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-conserjer-a:'
+  suggestion: menu_conserjer_a
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "conserjeria\r\nacceso-tarjeta\r\navisos-de-mantenimiento\r\ncorreo-postal\r\nmaquinas-multifuncion"

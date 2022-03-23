@@ -1,0 +1,8 @@
+uuid: d99ce848-a422-42b1-a957-31e011433dd3
+langcode: es
+status: true
+dependencies: {  }
+id: menu-normativa-y-pr_fr
+label: 'Normativa y procedimientos de la UZ_fr'
+description: ''
+locked: false
