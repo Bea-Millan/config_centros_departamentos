@@ -1,4 +1,4 @@
-uuid: e12b6235-6df0-460a-a23c-e881075f7acb
+uuid: 10fe420d-3133-4bdc-a7a1-42d3c49e45ec
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_centro_titulodelapagina
 theme: unizar_centro
 region: content
-weight: -4
+weight: -7
 provider: null
 plugin: page_title_block
 settings:
@@ -26,7 +26,13 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      departamento: departamento
       elemento_parrilla: elemento_parrilla
+      empleo_y_practicas: empleo_y_practicas
       estudio: estudio
+      examenes: examenes
+      examenes_por_departamentos: examenes_por_departamentos
+      horarios: horarios
+      horarios_por_departamentos: horarios_por_departamentos
       slideshow: slideshow
       te_interesa: te_interesa

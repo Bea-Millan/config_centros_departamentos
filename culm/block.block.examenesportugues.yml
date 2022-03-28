@@ -1,0 +1,30 @@
+uuid: 9ccc43f5-7bf2-400c-a414-0b30d3c28bbe
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:59689da2-bb04-470b-89fb-a381e0097dee'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: examenesportugues
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'block_content:59689da2-bb04-470b-89fb-a381e0097dee'
+settings:
+  id: 'block_content:59689da2-bb04-470b-89fb-a381e0097dee'
+  label: 'examenes portugues'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

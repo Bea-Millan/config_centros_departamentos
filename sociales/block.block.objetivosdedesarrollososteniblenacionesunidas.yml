@@ -1,0 +1,30 @@
+uuid: 8e58e2c8-54a0-4836-973b-03320ae17ea7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8143b0f5-f759-4e92-a1ef-23f82140ceb3'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: objetivosdedesarrollososteniblenacionesunidas
+theme: unizar_centro
+region: columna_lateral
+weight: -11
+provider: null
+plugin: 'block_content:8143b0f5-f759-4e92-a1ef-23f82140ceb3'
+settings:
+  id: 'block_content:8143b0f5-f759-4e92-a1ef-23f82140ceb3'
+  label: 'Objetivos de Desarrollo sostenible (Naciones Unidas)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

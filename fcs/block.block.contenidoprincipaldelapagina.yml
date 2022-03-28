@@ -1,0 +1,20 @@
+uuid: 8d3be033-6927-486c-9a5f-29005d33e29d
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - unizar_centro
+id: contenidoprincipaldelapagina
+theme: unizar_centro
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: '0'
+  provider: system
+visibility: {  }

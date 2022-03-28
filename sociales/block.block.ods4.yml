@@ -1,0 +1,30 @@
+uuid: b3d90eb3-9565-4417-ba4a-765919541293
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b37c1e37-9f0a-409e-a107-85b5833aa099'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: ods4
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:b37c1e37-9f0a-409e-a107-85b5833aa099'
+settings:
+  id: 'block_content:b37c1e37-9f0a-409e-a107-85b5833aa099'
+  label: 'ODS 4'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

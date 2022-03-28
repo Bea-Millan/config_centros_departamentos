@@ -1,0 +1,30 @@
+uuid: f14a2651-ce1f-4ea1-b1e5-dd9d0a7cf39a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e5ef730-a41c-492a-8dc1-bdab9ae52ea2'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: cambridgeprepar
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:2e5ef730-a41c-492a-8dc1-bdab9ae52ea2'
+settings:
+  id: 'block_content:2e5ef730-a41c-492a-8dc1-bdab9ae52ea2'
+  label: 'cambridge prepar'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

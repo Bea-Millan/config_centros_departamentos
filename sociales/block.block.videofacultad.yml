@@ -1,0 +1,30 @@
+uuid: 9c603a28-3845-4f75-9b4e-e327a28afe08
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4bb37a8b-f4f9-4953-a4d4-6c272998974b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: videofacultad
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:4bb37a8b-f4f9-4953-a4d4-6c272998974b'
+settings:
+  id: 'block_content:4bb37a8b-f4f9-4953-a4d4-6c272998974b'
+  label: 'Video Facultad'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

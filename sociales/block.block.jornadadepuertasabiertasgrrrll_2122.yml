@@ -1,0 +1,30 @@
+uuid: 4ed85919-2e4b-4a9a-8f76-a9242d484226
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a7b3a39b-388d-4522-809f-f9b7a358f700'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: jornadadepuertasabiertasgrrrll_2122
+theme: unizar_centro
+region: columna_lateral
+weight: -10
+provider: null
+plugin: 'block_content:a7b3a39b-388d-4522-809f-f9b7a358f700'
+settings:
+  id: 'block_content:a7b3a39b-388d-4522-809f-f9b7a358f700'
+  label: 'Jornada de Puertas Abiertas GrRRLL_21-22'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

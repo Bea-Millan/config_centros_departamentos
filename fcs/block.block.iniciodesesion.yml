@@ -1,0 +1,25 @@
+uuid: 42c3e23c-2c2c-4214-9ecc-286a2788dfe7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - unizar_centro
+id: iniciodesesion
+theme: unizar_centro
+region: content
+weight: -3
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Inicio de sesión'
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "intranet\r\nintranet/*"

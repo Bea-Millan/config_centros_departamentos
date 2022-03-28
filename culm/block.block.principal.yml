@@ -1,0 +1,30 @@
+uuid: 83f3b1e5-9dd3-446a-b907-e1d5dd80e0d2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f98d0044-ec6d-476b-9ec7-92e15b948892'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: principal
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:f98d0044-ec6d-476b-9ec7-92e15b948892'
+settings:
+  id: 'block_content:f98d0044-ec6d-476b-9ec7-92e15b948892'
+  label: principal
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: 7e584421-f625-4380-859d-16fd7161bbc1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3f3f8214-4557-4c49-9c47-4962605b12be'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: cartadeserviciosmejoremosla
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'block_content:3f3f8214-4557-4c49-9c47-4962605b12be'
+settings:
+  id: 'block_content:3f3f8214-4557-4c49-9c47-4962605b12be'
+  label: 'Carta de servicios ¡Mejorémosla!'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

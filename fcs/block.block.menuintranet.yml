@@ -1,0 +1,31 @@
+uuid: d19dc675-bddf-492d-a581-d71e252eb5bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-intranet
+  module:
+    - menu_block
+  theme:
+    - unizar_centro
+id: menuintranet
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-menu-intranet'
+settings:
+  id: 'menu_block:menu-menu-intranet'
+  label: menu-intranet
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-menu-intranet:'
+  suggestion: menu_menu_intranet
+visibility: {  }

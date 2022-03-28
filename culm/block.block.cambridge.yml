@@ -1,0 +1,30 @@
+uuid: 75623ec8-4a4e-4b65-b325-ce7785efaa24
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:aba59766-0e1e-4594-acf1-e75d6f2766f0'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: cambridge
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:aba59766-0e1e-4594-acf1-e75d6f2766f0'
+settings:
+  id: 'block_content:aba59766-0e1e-4594-acf1-e75d6f2766f0'
+  label: cambridge
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

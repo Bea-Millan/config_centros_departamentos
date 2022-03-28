@@ -1,0 +1,30 @@
+uuid: 4e673a6f-f93b-423d-a72a-3d51de42740d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:45b02765-cd6e-4357-bd50-57eba97cd772'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: actividadesculturalesinstagram
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:45b02765-cd6e-4357-bd50-57eba97cd772'
+settings:
+  id: 'block_content:45b02765-cd6e-4357-bd50-57eba97cd772'
+  label: 'Actividades culturales Instagram'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
