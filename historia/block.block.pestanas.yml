@@ -1,15 +1,15 @@
-uuid: 0c0693e2-4360-41ed-97e6-d69440ea6f3a
+uuid: 5fa10606-9b07-4e3d-9668-dc3dc4994ec0
 langcode: es
 status: true
 dependencies:
   theme:
-    - unizar_centro
+    - unizar_base
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
-id: unizar_centro_pestanas
-theme: unizar_centro
+id: pestanas
+theme: unizar_base
 region: content
-weight: -7
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

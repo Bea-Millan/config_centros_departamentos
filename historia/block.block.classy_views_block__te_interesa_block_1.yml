@@ -1,4 +1,4 @@
-uuid: 0af4229d-c9e7-440e-96cc-e76804a2a228
+uuid: b2f5be55-6c1f-4ee5-bf0d-77c933969fda
 langcode: es
 status: true
 dependencies:
@@ -8,16 +8,16 @@ dependencies:
     - block_class
     - views
   theme:
-    - unizar_centro
+    - classy
 third_party_settings:
   block_class:
     classes: 'te-interesa ojo'
 _core:
   default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
-id: unizar_centro_views_block__te_interesa_block_1
-theme: unizar_centro
-region: columna_lateral
-weight: -9
+id: classy_views_block__te_interesa_block_1
+theme: classy
+region: sidebar_first
+weight: 0
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:

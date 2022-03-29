@@ -1,4 +1,4 @@
-uuid: 099ea5be-f2be-46ba-8dcf-9040eccf0bff
+uuid: 3095dfca-9d02-4620-a89f-f0f00e7d3b2b
 langcode: es
 status: true
 dependencies:
@@ -9,20 +9,20 @@ dependencies:
     - system
     - views
   theme:
-    - unizar_centro
+    - classy
 third_party_settings:
   block_class:
-    classes: ndestacadas
+    classes: noticias-imagen
 _core:
-  default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
-id: unizar_centro_views_block__noticias_block_2
-theme: unizar_centro
+  default_config_hash: W3qRJUqTLNrq6fupZnJx_6H9HlddhnvXaiYhnPzwl9s
+id: classy_views_block__noticias_block_3
+theme: classy
 region: content
-weight: -5
+weight: -3
 provider: null
-plugin: 'views_block:noticias-block_2'
+plugin: 'views_block:noticias-block_3'
 settings:
-  id: 'views_block:noticias-block_2'
+  id: 'views_block:noticias-block_3'
   label: ''
   label_display: visible
   provider: views

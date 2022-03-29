@@ -1,4 +1,4 @@
-uuid: 099ea5be-f2be-46ba-8dcf-9040eccf0bff
+uuid: c748a65c-5f39-4016-9466-39004470aff5
 langcode: es
 status: true
 dependencies:
@@ -9,16 +9,16 @@ dependencies:
     - system
     - views
   theme:
-    - unizar_centro
+    - classy
 third_party_settings:
   block_class:
     classes: ndestacadas
 _core:
   default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
-id: unizar_centro_views_block__noticias_block_2
-theme: unizar_centro
+id: classy_views_block__noticias_block_2
+theme: classy
 region: content
-weight: -5
+weight: -4
 provider: null
 plugin: 'views_block:noticias-block_2'
 settings:

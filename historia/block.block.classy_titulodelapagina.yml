@@ -1,17 +1,17 @@
-uuid: bf862424-428e-4858-823e-2f9ea5ed59bd
+uuid: 8fede830-d1de-49a6-8639-26e263ce3a3a
 langcode: es
 status: true
 dependencies:
   module:
     - node
   theme:
-    - unizar_centro
+    - classy
 _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
-id: unizar_centro_titulodelapagina
-theme: unizar_centro
+id: classy_titulodelapagina
+theme: classy
 region: content
-weight: -6
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

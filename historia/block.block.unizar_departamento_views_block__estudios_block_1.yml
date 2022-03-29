@@ -1,28 +1,28 @@
-uuid: 099ea5be-f2be-46ba-8dcf-9040eccf0bff
+uuid: 7eb68a1e-ae15-4a6a-b14b-c2d3cb229617
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.noticias
+    - views.view.estudios
   module:
     - block_class
     - system
     - views
   theme:
-    - unizar_centro
+    - unizar_departamento
 third_party_settings:
   block_class:
-    classes: ndestacadas
+    classes: pestanas
 _core:
-  default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
-id: unizar_centro_views_block__noticias_block_2
-theme: unizar_centro
+  default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
+id: unizar_departamento_views_block__estudios_block_1
+theme: unizar_departamento
 region: content
-weight: -5
+weight: -6
 provider: null
-plugin: 'views_block:noticias-block_2'
+plugin: 'views_block:estudios-block_1'
 settings:
-  id: 'views_block:noticias-block_2'
+  id: 'views_block:estudios-block_1'
   label: ''
   label_display: visible
   provider: views
