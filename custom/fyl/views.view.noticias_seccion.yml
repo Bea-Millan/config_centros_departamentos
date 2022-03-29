@@ -1086,7 +1086,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p class="ver-mas"><a href="/noticias-cuturales">Ver mas</a></p>'
+            value: '<p class="ver-mas"><a href="/noticias-culturales">Ver mas</a></p>'
             format: filtered_html
           tokenize: true
       display_extenders: {  }
