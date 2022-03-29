@@ -1,21 +1,21 @@
-uuid: 6e64eff0-9cc3-44e2-9ca6-0031694f2cc4
+uuid: 4be7dd8d-3ca7-4a31-9687-7258f249d554
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.noticias
+    - views.view.noticias_seccion
   module:
     - views
   theme:
     - unizar_centro
-id: views_block__noticias_block_3_2
+id: views_block__noticias_seccion_block_2
 theme: unizar_centro
 region: columna_lateral
 weight: -15
 provider: null
-plugin: 'views_block:noticias-block_3'
+plugin: 'views_block:noticias_seccion-block_2'
 settings:
-  id: 'views_block:noticias-block_3'
+  id: 'views_block:noticias_seccion-block_2'
   label: 'Agenda cultural'
   label_display: visible
   provider: views

@@ -13,7 +13,7 @@ module:
 theme: {  }
 blacklist:
   - config_split.config_split.fylcustom
-  - views.view.listado_noticias
+  - views.view.noticias_seccion
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

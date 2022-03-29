@@ -18,7 +18,7 @@ _core:
 id: unizar_centro_views_block__estudios_block_1
 theme: unizar_centro
 region: content
-weight: -11
+weight: -13
 provider: null
 plugin: 'views_block:estudios-block_1'
 settings:

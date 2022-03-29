@@ -12,7 +12,7 @@ dependencies:
 id: calidadgrados
 theme: unizar_centro
 region: content
-weight: -14
+weight: -16
 provider: null
 plugin: 'menu_block:menu-calidad-grados'
 settings:
