@@ -1,11 +1,10 @@
-uuid: b8582467-c483-4320-b1d7-cd4f8d83665d
+uuid: 7ca284eb-ede0-4e03-9027-1d99a786d718
 langcode: es
 status: true
 dependencies:
   config:
     - views.view.noticias
   module:
-    - system
     - views
   theme:
     - unizar_centro
@@ -17,13 +16,9 @@ provider: null
 plugin: 'views_block:noticias-block_1'
 settings:
   id: 'views_block:noticias-block_1'
-  label: ''
-  label_display: '0'
+  label: ' Actualidad'
+  label_display: visible
   provider: views
-  views_label: ''
+  views_label: ' Actualidad'
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front> '
+visibility: {  }

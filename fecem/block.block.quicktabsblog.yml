@@ -1,0 +1,20 @@
+uuid: 8a22257c-4a56-4a5d-a9d7-5ea0766165da
+langcode: es
+status: true
+dependencies:
+  module:
+    - quicktabs
+  theme:
+    - unizar_centro
+id: quicktabsblog
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'quicktabs_block:blog'
+settings:
+  id: 'quicktabs_block:blog'
+  label: Blog
+  label_display: visible
+  provider: quicktabs
+visibility: {  }

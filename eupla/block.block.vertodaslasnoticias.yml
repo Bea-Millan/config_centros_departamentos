@@ -1,0 +1,25 @@
+uuid: 078611a6-93eb-4260-8891-0a4f6608b1c2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:feb08b53-4ccb-4e01-bd6c-7c4d2909d14c'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: vertodaslasnoticias
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:feb08b53-4ccb-4e01-bd6c-7c4d2909d14c'
+settings:
+  id: 'block_content:feb08b53-4ccb-4e01-bd6c-7c4d2909d14c'
+  label: 'Ver todas las noticias'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
