@@ -126,8 +126,8 @@ process:
       plugin: static_map
       source: field_tipo_evento
       map:
-        1: Actualidad
-        2: 'Agenda cultural'
+        1: Noticia
+        2: Actividad
       bypass: true
   field_seccion:
     -
