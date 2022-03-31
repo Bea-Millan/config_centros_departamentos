@@ -13,7 +13,7 @@ _core:
 id: unizar_centro_secundario
 theme: unizar_centro
 region: cabecera_sup
-weight: -9
+weight: -10
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

@@ -1,0 +1,30 @@
+uuid: 5d16194b-0ef6-4b6d-bdf0-54e8ef37d908
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e8f202c9-88b5-4def-b8f9-d0c72cac981f'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: iconosdelaparrilla
+theme: unizar_centro
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:e8f202c9-88b5-4def-b8f9-d0c72cac981f'
+settings:
+  id: 'block_content:e8f202c9-88b5-4def-b8f9-d0c72cac981f'
+  label: 'Iconos de la parrilla'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: 8094132a-bc94-4e34-81eb-e977593ddd2e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: perfilescolumna
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
+settings:
+  id: 'block_content:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
+  label: 'Perfiles columna'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

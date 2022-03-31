@@ -1,0 +1,30 @@
+uuid: cda54f7f-0a8e-44de-9b41-adcc5baeee0c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1eba9cdf-3384-441a-bc2e-014c038d57d0'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: hospitalplantapilotoeaeve
+theme: unizar_centro
+region: content
+weight: -3
+provider: null
+plugin: 'block_content:1eba9cdf-3384-441a-bc2e-014c038d57d0'
+settings:
+  id: 'block_content:1eba9cdf-3384-441a-bc2e-014c038d57d0'
+  label: Hospital-PlantaPiloto-EAEVE
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
