@@ -1,0 +1,30 @@
+uuid: 7cf4d784-bbb8-4b0f-bef7-4b6442bdfe0c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:466e8e5a-0726-4807-adc4-29a47810a3a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: boton_impresos_formularios
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:466e8e5a-0726-4807-adc4-29a47810a3a8'
+settings:
+  id: 'block_content:466e8e5a-0726-4807-adc4-29a47810a3a8'
+  label: Boton_Impresos_Formularios
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

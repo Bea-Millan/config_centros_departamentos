@@ -11,7 +11,7 @@ _core:
 id: unizar_centro_bloquerrss_2
 theme: unizar_centro
 region: footer
-weight: 0
+weight: -12
 provider: null
 plugin: bloque_rrss
 settings:

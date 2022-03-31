@@ -1,0 +1,30 @@
+uuid: 94c44061-52f1-4b92-88fb-6d874a763c71
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b4a81ca5-c62f-450a-874d-b8dec0080291'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: matriculacion
+theme: unizar_centro
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:b4a81ca5-c62f-450a-874d-b8dec0080291'
+settings:
+  id: 'block_content:b4a81ca5-c62f-450a-874d-b8dec0080291'
+  label: Matriculación
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

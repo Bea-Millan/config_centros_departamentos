@@ -1,0 +1,25 @@
+uuid: b1d570e3-fb8d-43de-b4e1-a43d61dad4f1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: elcentro
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
+settings:
+  id: 'block_content:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
+  label: 'El centro'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

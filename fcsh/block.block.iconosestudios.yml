@@ -1,0 +1,30 @@
+uuid: 27b789e1-cbe0-49f6-938a-b6d32b4dda80
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5765a2ef-2c2d-4597-8524-c0c70b771865'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: iconosestudios
+theme: unizar_centro
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:5765a2ef-2c2d-4597-8524-c0c70b771865'
+settings:
+  id: 'block_content:5765a2ef-2c2d-4597-8524-c0c70b771865'
+  label: 'Iconos Estudios'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
