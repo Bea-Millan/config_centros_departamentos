@@ -1,0 +1,29 @@
+uuid: 7869c667-e9a4-4d7d-aafc-26a0eb1b3762
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1ba93f10-6681-42c9-b3be-df34c0723e10'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: perfiles
+id: universitarios
+theme: unizar_centro
+region: imagen_cabecera
+weight: 0
+provider: null
+plugin: 'block_content:1ba93f10-6681-42c9-b3be-df34c0723e10'
+settings:
+  id: 'block_content:1ba93f10-6681-42c9-b3be-df34c0723e10'
+  label: Universitarios
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
