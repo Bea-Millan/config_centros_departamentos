@@ -12,7 +12,7 @@ dependencies:
 id: examenesportugues
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: 0
 provider: null
 plugin: 'block_content:59689da2-bb04-470b-89fb-a381e0097dee'
 settings:

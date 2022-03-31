@@ -1,0 +1,36 @@
+uuid: ef2aa7ad-8bb5-4a84-84e6-527eeec16661
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-informacion-administrativa
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: informacionadministrativa
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'menu_block:menu-informacion-administrativa'
+settings:
+  id: 'menu_block:menu-informacion-administrativa'
+  label: 'Información administrativa'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-informacion-administrativa:'
+  suggestion: menu_informacion_administrativa
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: 'administracion/*'

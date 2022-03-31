@@ -1,27 +1,23 @@
-uuid: f2f4c809-8314-4a87-950d-5eda1db88b07
+uuid: 30752d34-2988-4a63-9e04-2b3c5b527784
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-ruso
   module:
-    - block_class
     - menu_block
     - system
   theme:
     - unizar_centro
-third_party_settings:
-  block_class:
-    classes: te-interesa
-id: accesosdirectos
+id: ruso
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: -10
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-ruso'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
+  id: 'menu_block:menu-ruso'
+  label: 'Sección de Ruso'
   label_display: visible
   provider: menu_block
   follow: false
@@ -31,10 +27,10 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  parent: 'menu-ruso:'
+  suggestion: menu_ruso
 visibility:
   request_path:
     id: request_path
-    negate: true
-    pages: "horarios-curso\r\nsecciones/*\r\ncentro/*"
+    negate: false
+    pages: '/secciones/ruso/*'

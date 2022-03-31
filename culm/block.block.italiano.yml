@@ -1,27 +1,23 @@
-uuid: f2f4c809-8314-4a87-950d-5eda1db88b07
+uuid: b9363758-dda5-4364-9bb0-29c0857f7db5
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-italiano
   module:
-    - block_class
     - menu_block
     - system
   theme:
     - unizar_centro
-third_party_settings:
-  block_class:
-    classes: te-interesa
-id: accesosdirectos
+id: italiano
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: -13
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-italiano'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
+  id: 'menu_block:menu-italiano'
+  label: 'Sección de Italiano'
   label_display: visible
   provider: menu_block
   follow: false
@@ -31,10 +27,10 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  parent: 'menu-italiano:'
+  suggestion: menu_italiano
 visibility:
   request_path:
     id: request_path
-    negate: true
-    pages: "horarios-curso\r\nsecciones/*\r\ncentro/*"
+    negate: false
+    pages: '/secciones/italiano/*'

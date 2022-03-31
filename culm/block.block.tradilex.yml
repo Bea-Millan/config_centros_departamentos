@@ -1,0 +1,25 @@
+uuid: 6c136e32-53df-455f-a79b-0a3dc0ffedb6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3748e1ad-ca29-4534-b7c2-4ba5a4e6f2a9'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: tradilex
+theme: unizar_centro
+region: columna_lateral
+weight: 1
+provider: null
+plugin: 'block_content:3748e1ad-ca29-4534-b7c2-4ba5a4e6f2a9'
+settings:
+  id: 'block_content:3748e1ad-ca29-4534-b7c2-4ba5a4e6f2a9'
+  label: tradilex
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

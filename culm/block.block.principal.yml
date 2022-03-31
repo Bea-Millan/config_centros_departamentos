@@ -12,7 +12,7 @@ dependencies:
 id: principal
 theme: unizar_centro
 region: content
-weight: 0
+weight: -15
 provider: null
 plugin: 'block_content:f98d0044-ec6d-476b-9ec7-92e15b948892'
 settings:

@@ -1,23 +1,17 @@
-uuid: 4da5a2e1-e7ed-45a6-b6e3-ec9c36044b85
+uuid: 39d0d0a7-808b-4d32-bdaf-6d0996b81235
 langcode: es
 status: true
 dependencies:
   config:
     - views.view.calendario_noticias
   module:
-    - block_class
     - views
   theme:
     - unizar_centro
-third_party_settings:
-  block_class:
-    classes: calendar
-_core:
-  default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
-id: unizar_centro_views_block__calendario_noticias_block_1
+id: views_block__calendario_noticias_block_1_2
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -8
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:
