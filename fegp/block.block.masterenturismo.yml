@@ -1,0 +1,30 @@
+uuid: c0a6bffe-4d8a-478d-a18a-647cadf89d78
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b15be113-2594-4c5e-a33d-9a1234e942d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: masterenturismo
+theme: unizar_centro
+region: columna_lateral
+weight: -2
+provider: null
+plugin: 'block_content:b15be113-2594-4c5e-a33d-9a1234e942d4'
+settings:
+  id: 'block_content:b15be113-2594-4c5e-a33d-9a1234e942d4'
+  label: 'Máster en Turismo'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "turismoporque\r\nturismosalidas\r\nturismobecas\r\nturismodobletitulo\r\nturismotransfronteriza\r\nturismosalidascampo\r\nturismobiblioteca\r\nturismoweek\r\nturismohorario\r\nturismopracticas\r\nturismofortalezas\r\nturismoacademico\r\nturismoexposiciones\r\nturismoinvestiga"

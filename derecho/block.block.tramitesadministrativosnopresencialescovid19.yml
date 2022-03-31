@@ -1,0 +1,30 @@
+uuid: 79fa4d35-2d23-4956-a386-e9c8d3008eb1
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:781bebad-9443-4f1c-8191-e6585849e971'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: tramitesadministrativosnopresencialescovid19
+theme: unizar_centro
+region: columna_lateral
+weight: -10
+provider: null
+plugin: 'block_content:781bebad-9443-4f1c-8191-e6585849e971'
+settings:
+  id: 'block_content:781bebad-9443-4f1c-8191-e6585849e971'
+  label: 'Trámites administrativos no presenciales COVID-19'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

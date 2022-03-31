@@ -1,0 +1,30 @@
+uuid: 804fcf84-3c53-4a4b-b2e2-28bb01a77247
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2ad95736-4b25-43ef-bb70-3e27fb09280d'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: actividadesacademicascomplementarias
+theme: unizar_centro
+region: columna_lateral
+weight: -15
+provider: null
+plugin: 'block_content:2ad95736-4b25-43ef-bb70-3e27fb09280d'
+settings:
+  id: 'block_content:2ad95736-4b25-43ef-bb70-3e27fb09280d'
+  label: 'Actividades académicas complementarias'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\ngrado-en-gestion-y-administracion-publica-0\r\ngrado-en-administracion-y-direccion-de-empresas-0"

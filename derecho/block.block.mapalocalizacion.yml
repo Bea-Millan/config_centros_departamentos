@@ -1,0 +1,30 @@
+uuid: 3d004ff5-94d5-40f8-beb8-5015e21e5e80
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9cbb2e2d-7863-4ac0-8e6b-32f06289aa3c'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: mapalocalizacion
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:9cbb2e2d-7863-4ac0-8e6b-32f06289aa3c'
+settings:
+  id: 'block_content:9cbb2e2d-7863-4ac0-8e6b-32f06289aa3c'
+  label: 'mapa localización'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

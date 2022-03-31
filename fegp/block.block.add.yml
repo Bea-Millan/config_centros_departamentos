@@ -1,0 +1,30 @@
+uuid: 42fd7667-d0ef-4ff5-b982-34fa438dd103
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d931804f-7008-4e9b-a48f-3b080390ba66'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: add
+theme: unizar_centro
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'block_content:d931804f-7008-4e9b-a48f-3b080390ba66'
+settings:
+  id: 'block_content:d931804f-7008-4e9b-a48f-3b080390ba66'
+  label: ADD
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "Trabajo-fin-de-grado-ADE\r\nTrabajo-fin-de-grado-GAP"

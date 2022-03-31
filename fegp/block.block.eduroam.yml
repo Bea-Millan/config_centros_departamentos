@@ -1,0 +1,30 @@
+uuid: 3f3b8cb0-ba5e-44a2-baf8-2167e5284427
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: eduroam
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
+settings:
+  id: 'block_content:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
+  label: EDUROAM
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

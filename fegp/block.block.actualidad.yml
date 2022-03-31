@@ -1,0 +1,30 @@
+uuid: dffff19a-62b4-4ebe-ba97-3eabe3b1a146
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:863a517e-f33e-4608-bd89-04bb82a01c95'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: actualidad
+theme: unizar_centro
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:863a517e-f33e-4608-bd89-04bb82a01c95'
+settings:
+  id: 'block_content:863a517e-f33e-4608-bd89-04bb82a01c95'
+  label: Actualidad
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

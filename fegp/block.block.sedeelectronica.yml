@@ -1,0 +1,30 @@
+uuid: 3a92b13f-f6b4-48c7-b82a-3fca5896a406
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:abf94d8f-c5db-426d-a722-5cdf9e0f6589'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: sedeelectronica
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:abf94d8f-c5db-426d-a722-5cdf9e0f6589'
+settings:
+  id: 'block_content:abf94d8f-c5db-426d-a722-5cdf9e0f6589'
+  label: 'Sede electrónica'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: secretaria

@@ -1,0 +1,30 @@
+uuid: 91ab5177-383c-4744-89a5-cf587997bea5
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4d1c6ea9-0077-49cd-ae1d-cf5b8c1ee610'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: grados
+theme: unizar_centro
+region: columna_lateral
+weight: -3
+provider: null
+plugin: 'block_content:4d1c6ea9-0077-49cd-ae1d-cf5b8c1ee610'
+settings:
+  id: 'block_content:4d1c6ea9-0077-49cd-ae1d-cf5b8c1ee610'
+  label: Grados
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: matricula-directa-grados

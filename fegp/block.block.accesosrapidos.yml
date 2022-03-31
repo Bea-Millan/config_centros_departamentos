@@ -1,0 +1,30 @@
+uuid: 40dc83c4-9552-462a-ac71-d151facef36b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:726abe09-e02e-4f5c-bac1-939d4abdc6b2'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: accesosrapidos
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:726abe09-e02e-4f5c-bac1-939d4abdc6b2'
+settings:
+  id: 'block_content:726abe09-e02e-4f5c-bac1-939d4abdc6b2'
+  label: 'Accesos rápidos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: grado-en-gestion-y-administracion-publica-distancia
