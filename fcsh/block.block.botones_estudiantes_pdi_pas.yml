@@ -5,9 +5,13 @@ dependencies:
   content:
     - 'block_content:basic:88d6a23c-99a1-41e5-8a7f-22dd110fbc2b'
   module:
+    - block_class
     - block_content
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: perfiles
 id: botones_estudiantes_pdi_pas
 theme: unizar_centro
 region: columna_lateral
