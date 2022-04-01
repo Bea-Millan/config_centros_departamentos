@@ -1,26 +1,24 @@
-uuid: 9b01c484-d02d-4bd4-9936-7549c65b9367
+uuid: 5d9bdec9-1ff7-46ce-88a7-a1a597cbd439
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.main_en
   module:
     - language
     - superfish
   theme:
     - unizar_centro
-_core:
-  default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
-id: unizar_centro_mainmenu
+id: mainmenu_en
 theme: unizar_centro
 region: menu_principal
-weight: -15
+weight: 0
 provider: null
-plugin: 'superfish:main'
+plugin: 'superfish:main_en'
 settings:
-  id: 'superfish:main'
-  label: 'Menu Superfish'
-  label_display: '0'
+  id: 'superfish:main_en'
+  label: 'Main menu_en'
+  label_display: visible
   provider: superfish
   level: '1'
   depth: '0'
@@ -40,7 +38,7 @@ settings:
   touchua: '0'
   touchual: ''
   touchuam: '0'
-  small: '0'
+  small: '2'
   smallbp: '768'
   smallua: '0'
   smallual: ''
@@ -78,4 +76,4 @@ visibility:
     context_mapping:
       language: '@language.current_language_context:language_interface'
     langcodes:
-      es: es
+      en: en
