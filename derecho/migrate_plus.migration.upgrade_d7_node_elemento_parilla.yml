@@ -12,7 +12,7 @@ class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final2
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
