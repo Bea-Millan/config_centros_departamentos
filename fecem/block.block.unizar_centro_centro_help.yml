@@ -11,7 +11,7 @@ _core:
 id: unizar_centro_centro_help
 theme: unizar_centro
 region: content
-weight: -8
+weight: -11
 provider: null
 plugin: help_block
 settings:

@@ -1,0 +1,34 @@
+uuid: ecbaf557-d11e-48d5-97ae-0531a3d0986b
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.parrilla_alternativa
+  module:
+    - system
+    - views
+  theme:
+    - unizar_centro
+id: views_block__parrilla_alternativa_block_1
+theme: unizar_centro
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:parrilla_alternativa-block_1'
+settings:
+  id: 'views_block:parrilla_alternativa-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid
+      value: '329'
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

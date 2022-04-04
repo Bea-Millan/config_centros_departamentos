@@ -1,36 +1,34 @@
-uuid: e7b271be-9c94-4564-8f64-429a9849a0f8
+uuid: 9abf6c20-a38e-41f4-93dc-820d0e61a708
 langcode: es
 status: true
 dependencies:
   config:
     - views.view.parrilla_principal
   module:
-    - block_class
     - system
     - views
   theme:
     - unizar_centro
-third_party_settings:
-  block_class:
-    classes: main-parrilla
-_core:
-  default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
-id: unizar_centro_views_block__parrilla_principal_block_1
+id: views_block__parrilla_principal_block_2
 theme: unizar_centro
 region: content
-weight: -3
+weight: -5
 provider: null
-plugin: 'views_block:parrilla_principal-block_1'
+plugin: 'views_block:parrilla_principal-block_2'
 settings:
-  id: 'views_block:parrilla_principal-block_1'
+  id: 'views_block:parrilla_principal-block_2'
   label: ''
   label_display: '0'
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: '330'
 visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
     pages: '<front>'
