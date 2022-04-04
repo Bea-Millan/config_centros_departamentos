@@ -12,7 +12,7 @@ dependencies:
 id: iconosdelaparrilla
 theme: unizar_centro
 region: content
-weight: -8
+weight: -5
 provider: null
 plugin: 'block_content:e8f202c9-88b5-4def-b8f9-d0c72cac981f'
 settings:

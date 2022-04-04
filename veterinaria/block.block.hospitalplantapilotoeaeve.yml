@@ -12,7 +12,7 @@ dependencies:
 id: hospitalplantapilotoeaeve
 theme: unizar_centro
 region: content
-weight: -3
+weight: -2
 provider: null
 plugin: 'block_content:1eba9cdf-3384-441a-bc2e-014c038d57d0'
 settings:

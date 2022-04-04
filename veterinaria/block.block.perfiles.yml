@@ -15,8 +15,8 @@ third_party_settings:
     classes: perfiles
 id: perfiles
 theme: unizar_centro
-region: imagen_cabecera
-weight: -11
+region: content
+weight: -10
 provider: null
 plugin: 'block_content:2e7bbbb5-03ab-4f10-a718-5fecb2d7eb26'
 settings:

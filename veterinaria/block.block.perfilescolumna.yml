@@ -5,10 +5,14 @@ dependencies:
   content:
     - 'block_content:basic:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: perfiles
 id: perfilescolumna
 theme: unizar_centro
 region: columna_lateral
@@ -18,7 +22,7 @@ plugin: 'block_content:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
 settings:
   id: 'block_content:8bd3babf-0b15-4bb1-b127-593a7648ab1f'
   label: 'Perfiles columna'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

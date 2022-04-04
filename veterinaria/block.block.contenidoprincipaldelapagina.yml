@@ -9,7 +9,7 @@ dependencies:
 id: contenidoprincipaldelapagina
 theme: unizar_centro
 region: content
-weight: -7
+weight: -4
 provider: null
 plugin: system_main_block
 settings:
