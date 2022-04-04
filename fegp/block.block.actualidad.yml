@@ -12,7 +12,7 @@ dependencies:
 id: actualidad
 theme: unizar_centro
 region: content
-weight: -13
+weight: -12
 provider: null
 plugin: 'block_content:863a517e-f33e-4608-bd89-04bb82a01c95'
 settings:

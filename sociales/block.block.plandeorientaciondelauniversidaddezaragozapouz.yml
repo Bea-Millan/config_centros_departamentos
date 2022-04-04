@@ -12,7 +12,7 @@ dependencies:
 id: plandeorientaciondelauniversidaddezaragozapouz
 theme: unizar_centro
 region: content
-weight: -3
+weight: -4
 provider: null
 plugin: 'menu_block:menu-tutormentor'
 settings:

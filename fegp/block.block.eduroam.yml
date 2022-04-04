@@ -12,7 +12,7 @@ dependencies:
 id: eduroam
 theme: unizar_centro
 region: content
-weight: 0
+weight: -9
 provider: null
 plugin: 'block_content:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
 settings:

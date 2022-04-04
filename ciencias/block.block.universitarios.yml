@@ -21,7 +21,7 @@ plugin: 'block_content:1ba93f10-6681-42c9-b3be-df34c0723e10'
 settings:
   id: 'block_content:1ba93f10-6681-42c9-b3be-df34c0723e10'
   label: Universitarios
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''
