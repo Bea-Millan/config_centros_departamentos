@@ -1,0 +1,113 @@
+uuid: 3e55dab2-a8e9-4c06-adf8-30f2e196b56e
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 6
+template: false
+archive: false
+id: webform_2024
+title: 'Valoración Jornada Ciudades más sostenibles'
+description: null
+category: null
+elements: |-
+  programa:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': Programa
+    '#description': 'Valore del 0 al 5 la calidad del programa (0 Pésimo - 5 excelente)'
+    '#required': true
+  contenido:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': Contenido
+    '#description': 'Valore del 0 al 5 la calidad del contenido de las ponencias (0 Pésimo - 5 excelente)'
+    '#required': true
+  ponentes:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': Ponentes
+    '#description': 'Valore del 0 al 5 la calidad de los ponentes -claridad de exposición, etc.- (0 Pésimo - 5 excelente)'
+    '#required': true
+  instalaciones:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': Instalaciones
+    '#description': 'Valore del 0 al 5 la calidad de las instalaciones (0 Pésimo - 5 excelente)'
+    '#required': true
+  recursos:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': Recursos
+    '#description': 'Valore del 0 al 5 la calidad de los recursos utilizados (0 Pésimo - 5 excelente)'
+    '#required': true
+  valoracion_global:
+    '#type': radios
+    '#options':
+      - '0'
+      - '1'
+      - '2'
+      - '3'
+      - '4'
+      - '5'
+    '#title': 'Valoración Global'
+    '#description': 'Valore del 0 al 5 la calidad global de la jornada (0 Pésimo - 5 excelente)'
+    '#required': true
+  comentarios:
+    '#type': textarea
+    '#title': Comentarios
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

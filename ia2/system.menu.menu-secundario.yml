@@ -6,5 +6,5 @@ _core:
   default_config_hash: Rq0BaLTNOz7T9jhVO2b8jE7mT-Mlke_k4j0US9FjJHA
 id: menu-secundario
 label: Secundario
-description: 'Menú de links secundarios que aparecerá en la cabecera del sitio'
+description: 'Menú de links secundarios que aparecerá en la cabecera del sitio.'
 locked: false

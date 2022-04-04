@@ -1,0 +1,162 @@
+uuid: 56c07389-b3d9-4e09-9763-075cc0429f52
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 6
+template: false
+archive: false
+id: webform_1601
+title: 'Jornada IA2 "Herramientas para potenciar la I+D+i en agroalimentación" - Show room de 4 tecnologías disruptoras'
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    '#description': '*Por favor, use mayúsculas únicamente para la primer letra de los apellidos y nombre'
+    apellidos_5:
+      '#type': textfield
+      '#title': Apellidos
+      '#required': true
+    nombre_5:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    correo_electronico_5:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#required': true
+  fieldset_show_room:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Show room'
+    asistencia_a_showroom_8:
+      '#type': select
+      '#options':
+        1: Sí
+        2: 'No'
+      '#title': '¿Asistirá al show room?'
+      '#required': true
+    seleccione_el_pase_8:
+      '#type': radios
+      '#options':
+        1: 'Pase 1 (10:15-11:15)'
+        2: 'Pase 2 (11:15-12:15)'
+      '#title': 'Seleccione el pase'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="asistencia_a_showroom_8"]':
+              value: '1'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<h1><img src=\"/sites/ia2.unizar.es/files/archivos/imagenes/formulario_ok.png\" width=\"800\" height=\"478\"></h1>\r\n<p>&nbsp;</p>\r\n<p>&nbsp;</p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: Enviar
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: comunicacionia2@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: direia2@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements:
+        nombre: nombre
+        asistencia_a_showroom: asistencia_a_showroom
+        seleccione_el_pase: seleccione_el_pase
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: direia2@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Enviado el [webform_submission:date:long]
+        Enviado por el usuario: [webform_submission:user]
+        Submitted values are:
+        [webform_submission:values]
+      excluded_elements:
+        correo_electronico: correo_electronico
+        asistencia_a_showroom: asistencia_a_showroom
+        seleccione_el_pase: seleccione_el_pase
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

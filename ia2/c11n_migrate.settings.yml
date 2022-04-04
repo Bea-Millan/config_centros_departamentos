@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: CBmKMgSEA5SJ5qazuKtSkx0MZgzKYfu-WW2iOgk1p4k
+plugin:
+  host: ia2.unizar.es
+  url_host: sites/ia2
+langcode: es
