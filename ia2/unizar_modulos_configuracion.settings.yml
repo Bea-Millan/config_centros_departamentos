@@ -1,0 +1,18 @@
+_core:
+  default_config_hash: ffnFS2XZAmM82DBskt1LPaBDz45ZdNKq69IfBL_-0rE
+favicon_path: ''
+favicon_upload: ''
+id_centro: '107'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=C107&colectivo=TODOS'
+nombre_centro: 'IUI Mixto Agroalimentario de Aragón - IA2'
+dir_centro: 'Calle Miguel Servet, 177, 50013 Zaragoza (España)'
+telefono_centro: '976 76 28 30'
+mail_centro: adminia2@unizar.es
+url_mapa: 'https://www.google.es/maps/place/Calle+de+Miguel+Servet,+177,+50013+Zaragoza/@41.6344937,-0.8636422,17z/data=!3m1!4b1!4m5!3m4!1s'
+logo_blanco: '7'
+facebook: 'http://www.facebook.com/InstitutoAgroalimentariodeAragonIA2'
+twitter: 'http://www.twitter.com/IA2_UZ_CITA'
+instagram: ''
+youtube: 'https://www.youtube.com/channel/UCBmGyhxVAOT5b5etyvHzysg'
+meta_desc: 'Universidad de Zaragoza"; "Centro de Investigación y Tecnología Agroalimentaria de Aragón (CITA)"; "Investigación"; "Producción de materias primas de origen vegetal"; "Producción de materias primas de origen animal"; "Ciencia y tecnología de los alimentos"; "Economía agroalimentaria y de los recursos naturales'
+langcode: es
