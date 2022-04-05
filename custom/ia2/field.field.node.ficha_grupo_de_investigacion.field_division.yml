@@ -1,0 +1,29 @@
+uuid: fe5dce8f-7db0-4745-ac28-dee23d612bc4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_division
+    - node.type.ficha_division
+    - node.type.ficha_grupo_de_investigacion
+id: node.ficha_grupo_de_investigacion.field_division
+field_name: field_division
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: División
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_division: ficha_division
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

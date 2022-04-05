@@ -1,0 +1,29 @@
+uuid: d4e4ecd1-d3f9-44ba-8770-8d6b51c3d970
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_division
+    - node.type.ficha_division
+    - node.type.ficha_lineas
+id: node.ficha_lineas.field_division
+field_name: field_division
+entity_type: node
+bundle: ficha_lineas
+label: 'División a la que pertenece'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_division: ficha_division
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

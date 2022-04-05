@@ -1,0 +1,21 @@
+uuid: 26fba612-f508-4b02-b731-a164e171fabb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ubicacion
+    - node.type.ficha_infraestructuras_equipos
+  module:
+    - text
+id: node.ficha_infraestructuras_equipos.field_ubicacion
+field_name: field_ubicacion
+entity_type: node
+bundle: ficha_infraestructuras_equipos
+label: Ubicación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

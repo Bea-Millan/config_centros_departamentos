@@ -1,0 +1,11 @@
+uuid: fef39911-79d9-4b09-9a20-9c90ae54a982
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.etiquetas
+id: taxonomy_term.etiquetas
+target_entity_type_id: taxonomy_term
+target_bundle: etiquetas
+default_langcode: site_default
+language_alterable: false

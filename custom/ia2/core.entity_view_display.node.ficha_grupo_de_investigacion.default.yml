@@ -1,0 +1,266 @@
+uuid: 8047b147-c47d-41f4-aade-a0f947466989
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ficha_grupo_de_investigacion.field_codigo
+    - field.field.node.ficha_grupo_de_investigacion.field_contenido_columna_lateral
+    - field.field.node.ficha_grupo_de_investigacion.field_denominacion
+    - field.field.node.ficha_grupo_de_investigacion.field_division
+    - field.field.node.ficha_grupo_de_investigacion.field_enlaces_de_interes
+    - field.field.node.ficha_grupo_de_investigacion.field_foto_galeria
+    - field.field.node.ficha_grupo_de_investigacion.field_imagen
+    - field.field.node.ficha_grupo_de_investigacion.field_infraestructuras
+    - field.field.node.ficha_grupo_de_investigacion.field_institucion
+    - field.field.node.ficha_grupo_de_investigacion.field_ip
+    - field.field.node.ficha_grupo_de_investigacion.field_laboratorios
+    - field.field.node.ficha_grupo_de_investigacion.field_lineas
+    - field.field.node.ficha_grupo_de_investigacion.field_miembros
+    - field.field.node.ficha_grupo_de_investigacion.field_observaciones
+    - field.field.node.ficha_grupo_de_investigacion.field_ocultar_lateral
+    - field.field.node.ficha_grupo_de_investigacion.field_oferta_tecnologica
+    - field.field.node.ficha_grupo_de_investigacion.field_pagina_www
+    - field.field.node.ficha_grupo_de_investigacion.field_presentacion
+    - field.field.node.ficha_grupo_de_investigacion.field_proyectos
+    - field.field.node.ficha_grupo_de_investigacion.field_que_hacemos
+    - field.field.node.ficha_grupo_de_investigacion.field_servicios
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - ds
+    - link
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col_stacked
+      library: ds/ds_2col_stacked
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          header: div
+          left: div
+          right: div
+          footer: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      header:
+        - node_title
+        - body
+        - field_ocultar_lateral
+      left:
+        - field_codigo
+        - field_imagen
+        - field_denominacion
+        - field_ip
+        - field_institucion
+        - field_miembros
+        - field_lineas
+        - field_pagina_www
+        - field_division
+      right:
+        - field_presentacion
+        - field_que_hacemos
+        - field_proyectos
+        - field_oferta_tecnologica
+        - field_observaciones
+        - field_laboratorios
+        - field_infraestructuras
+        - field_servicios
+        - field_enlaces_de_interes
+        - field_foto_galeria
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.ficha_grupo_de_investigacion.default
+targetEntityType: node
+bundle: ficha_grupo_de_investigacion
+mode: default
+content:
+  field_codigo:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: left
+  field_denominacion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: left
+  field_division:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 11
+    region: left
+  field_enlaces_de_interes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 20
+    region: right
+  field_foto_galeria:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 21
+    region: right
+  field_imagen:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 4
+    region: left
+  field_infraestructuras:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 18
+    region: right
+  field_institucion:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 7
+    region: left
+  field_ip:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: left
+  field_laboratorios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 17
+    region: right
+  field_lineas:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 9
+    region: left
+  field_miembros:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 8
+    region: left
+  field_observaciones:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 16
+    region: right
+  field_ocultar_lateral:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 2
+    region: header
+  field_oferta_tecnologica:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 15
+    region: right
+  field_pagina_www:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 10
+    region: left
+  field_presentacion:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 12
+    region: right
+  field_proyectos:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: right
+  field_que_hacemos:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 13
+    region: right
+  field_servicios:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 19
+    region: right
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  langcode: true
+  links: true

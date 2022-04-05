@@ -1,0 +1,40 @@
+uuid: 3035b986-9a44-47bf-ac2b-0c3d1c975bf9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_division.body
+    - field.field.node.ficha_division.field_contenido_columna_lateral
+    - field.field.node.ficha_division.field_jefe_de_division
+    - field.field.node.ficha_division.field_lineas
+    - field.field.node.ficha_division.field_observaciones
+    - node.type.ficha_division
+  module:
+    - text
+    - user
+id: node.ficha_division.teaser
+targetEntityType: node
+bundle: ficha_division
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  field_jefe_de_division: true
+  field_lineas: true
+  field_observaciones: true
+  langcode: true

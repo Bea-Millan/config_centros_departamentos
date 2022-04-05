@@ -1,0 +1,21 @@
+uuid: 1ed55494-2e1f-4bf2-9398-7f08da499135
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observaciones
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_observaciones
+field_name: field_observaciones
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Observaciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

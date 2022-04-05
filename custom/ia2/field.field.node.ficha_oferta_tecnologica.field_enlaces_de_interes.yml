@@ -1,0 +1,21 @@
+uuid: 379cdc80-0336-4e50-b91f-88f28b44d5d8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces_de_interes
+    - node.type.ficha_oferta_tecnologica
+  module:
+    - text
+id: node.ficha_oferta_tecnologica.field_enlaces_de_interes
+field_name: field_enlaces_de_interes
+entity_type: node
+bundle: ficha_oferta_tecnologica
+label: 'Enlaces de interés'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,29 @@
+uuid: d37a0c2e-854f-4182-b7c1-87a99fbbd33d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_medio
+    - node.type.ficha_impacto_medios
+    - taxonomy.vocabulary.medios
+id: node.ficha_impacto_medios.field_medio
+field_name: field_medio
+entity_type: node
+bundle: ficha_impacto_medios
+label: Medio
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      medios: medios
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

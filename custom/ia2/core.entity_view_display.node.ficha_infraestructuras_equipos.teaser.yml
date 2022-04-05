@@ -1,0 +1,42 @@
+uuid: 888ad55b-f4e5-4c46-8c2e-5b56328204f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_infraestructuras_equipos.body
+    - field.field.node.ficha_infraestructuras_equipos.field_contacto
+    - field.field.node.ficha_infraestructuras_equipos.field_contenido_columna_lateral
+    - field.field.node.ficha_infraestructuras_equipos.field_imagen
+    - field.field.node.ficha_infraestructuras_equipos.field_mas_informacion
+    - field.field.node.ficha_infraestructuras_equipos.field_ubicacion
+    - node.type.ficha_infraestructuras_equipos
+  module:
+    - text
+    - user
+id: node.ficha_infraestructuras_equipos.teaser
+targetEntityType: node
+bundle: ficha_infraestructuras_equipos
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_contacto: true
+  field_contenido_columna_lateral: true
+  field_imagen: true
+  field_mas_informacion: true
+  field_ubicacion: true
+  langcode: true

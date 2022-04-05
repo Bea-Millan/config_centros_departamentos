@@ -1,0 +1,11 @@
+uuid: 53bbeebb-b330-4c91-bcac-0e99df961328
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_division
+id: node.ficha_division
+target_entity_type_id: node
+target_bundle: ficha_division
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,29 @@
+uuid: 7ec22294-1996-4c20-bd45-fb195e03b1cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lineas
+    - node.type.ficha_division
+    - node.type.ficha_lineas
+id: node.ficha_division.field_lineas
+field_name: field_lineas
+entity_type: node
+bundle: ficha_division
+label: Líneas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_lineas: ficha_lineas
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,19 @@
+uuid: 5112ecb1-925c-42ff-9086-daef52c28436
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_contacto
+field_name: field_contacto
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

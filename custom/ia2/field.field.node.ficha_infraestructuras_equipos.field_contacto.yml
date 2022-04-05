@@ -1,0 +1,21 @@
+uuid: beba3415-ae39-4bae-99d6-d044416bc7cd
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contacto
+    - node.type.ficha_infraestructuras_equipos
+  module:
+    - text
+id: node.ficha_infraestructuras_equipos.field_contacto
+field_name: field_contacto
+entity_type: node
+bundle: ficha_infraestructuras_equipos
+label: Contacto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

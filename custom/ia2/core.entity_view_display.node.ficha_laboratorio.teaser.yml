@@ -1,0 +1,50 @@
+uuid: 29da2e97-1dd3-439f-8ad8-72f0a8a5622f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_laboratorio.body
+    - field.field.node.ficha_laboratorio.field_contenido_columna_lateral
+    - field.field.node.ficha_laboratorio.field_enlaces_de_interes
+    - field.field.node.ficha_laboratorio.field_foto_galeria
+    - field.field.node.ficha_laboratorio.field_imagen
+    - field.field.node.ficha_laboratorio.field_observaciones
+    - field.field.node.ficha_laboratorio.field_responable_de_laboratorio
+    - field.field.node.ficha_laboratorio.field_tipo_de_laboratorio
+    - field.field.node.ficha_laboratorio.field_ubicacion
+    - field.field.node.ficha_laboratorio.galeria_2
+    - node.type.ficha_laboratorio
+  module:
+    - text
+    - user
+id: node.ficha_laboratorio.teaser
+targetEntityType: node
+bundle: ficha_laboratorio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  field_enlaces_de_interes: true
+  field_foto_galeria: true
+  field_imagen: true
+  field_observaciones: true
+  field_responable_de_laboratorio: true
+  field_tipo_de_laboratorio: true
+  field_ubicacion: true
+  galeria_2: true
+  langcode: true

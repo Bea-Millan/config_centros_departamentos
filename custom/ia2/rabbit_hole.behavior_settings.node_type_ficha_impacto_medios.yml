@@ -1,0 +1,14 @@
+uuid: ca232077-f275-4e80-bd0a-90cfba4e34df
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_impacto_medios
+id: node_type_ficha_impacto_medios
+entity_type_id: node_type
+entity_id: ficha_impacto_medios
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

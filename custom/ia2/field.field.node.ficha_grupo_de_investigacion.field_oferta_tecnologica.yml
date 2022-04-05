@@ -1,0 +1,29 @@
+uuid: 6a157a91-ff82-4817-8d58-d628843179e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_oferta_tecnologica
+    - node.type.ficha_grupo_de_investigacion
+    - node.type.ficha_oferta_tecnologica
+id: node.ficha_grupo_de_investigacion.field_oferta_tecnologica
+field_name: field_oferta_tecnologica
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: 'Oferta tecnológica'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_oferta_tecnologica: ficha_oferta_tecnologica
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

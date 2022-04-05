@@ -1,0 +1,21 @@
+uuid: ebc19812-34dc-48fc-994e-b84ff305c785
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces_de_interes
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_enlaces_de_interes
+field_name: field_enlaces_de_interes
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: 'Enlaces de interés'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

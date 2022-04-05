@@ -1,0 +1,19 @@
+uuid: f04076b8-1dcf-474e-8236-0d58d874a3d4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_contenido_columna_lateral
+field_name: field_contenido_columna_lateral
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

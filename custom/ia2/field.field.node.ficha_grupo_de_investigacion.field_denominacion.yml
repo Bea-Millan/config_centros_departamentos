@@ -1,0 +1,19 @@
+uuid: ceccdb87-1eda-4dd9-858d-00a562ac0a23
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_denominacion
+    - node.type.ficha_grupo_de_investigacion
+id: node.ficha_grupo_de_investigacion.field_denominacion
+field_name: field_denominacion
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Denominación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

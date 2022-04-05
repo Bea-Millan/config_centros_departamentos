@@ -1,0 +1,21 @@
+uuid: 2c24be34-8b12-474e-9bee-f388acb0b8c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.ficha_impacto_medios
+  module:
+    - datetime
+id: node.ficha_impacto_medios.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: ficha_impacto_medios
+label: Fecha
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

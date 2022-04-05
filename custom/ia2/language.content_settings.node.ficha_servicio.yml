@@ -1,0 +1,11 @@
+uuid: 89ca6e63-b38d-4ff4-b312-0f64eaac963c
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_servicio
+id: node.ficha_servicio
+target_entity_type_id: node
+target_bundle: ficha_servicio
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,14 @@
+uuid: ca5bdf5e-86bb-4f67-8c36-0b61c71b4228
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_servicio
+id: node_type_ficha_servicio
+entity_type_id: node_type
+entity_id: ficha_servicio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

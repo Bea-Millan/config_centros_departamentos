@@ -1,0 +1,29 @@
+uuid: f5a1a4eb-6405-49f2-834d-277e8941c44b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_miembros
+    - node.type.ficha_grupo_de_investigacion
+    - node.type.ficha_personal
+id: node.ficha_grupo_de_investigacion.field_miembros
+field_name: field_miembros
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Miembros
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_personal: ficha_personal
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

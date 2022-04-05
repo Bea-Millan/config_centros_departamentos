@@ -1,0 +1,11 @@
+uuid: 256bd207-d7d4-4612-8e59-e306eee68657
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_laboratorio
+id: node.ficha_laboratorio
+target_entity_type_id: node
+target_bundle: ficha_laboratorio
+default_langcode: site_default
+language_alterable: false

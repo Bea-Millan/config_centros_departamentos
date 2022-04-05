@@ -1,0 +1,14 @@
+uuid: b2f24680-8132-4d14-827b-2b320c5ba3c8
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_grupo_de_investigacion
+id: node_type_ficha_grupo_de_investigacion
+entity_type_id: node_type
+entity_id: ficha_grupo_de_investigacion
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

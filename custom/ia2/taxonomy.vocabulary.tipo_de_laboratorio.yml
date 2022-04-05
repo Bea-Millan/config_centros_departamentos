@@ -1,0 +1,8 @@
+uuid: 148fb36e-fbb5-4d1c-b1e3-810f57c838a8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de laboratorio'
+vid: tipo_de_laboratorio
+description: ''
+weight: 0

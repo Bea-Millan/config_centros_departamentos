@@ -1,0 +1,11 @@
+uuid: 7d7d7a43-d275-42d8-8ad6-b120a3824391
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tipo_de_laboratorio
+id: taxonomy_term.tipo_de_laboratorio
+target_entity_type_id: taxonomy_term
+target_bundle: tipo_de_laboratorio
+default_langcode: site_default
+language_alterable: false

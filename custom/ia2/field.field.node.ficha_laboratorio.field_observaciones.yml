@@ -1,0 +1,21 @@
+uuid: be087a88-dcdf-44ce-b3f3-c17f5637d4df
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observaciones
+    - node.type.ficha_laboratorio
+  module:
+    - text
+id: node.ficha_laboratorio.field_observaciones
+field_name: field_observaciones
+entity_type: node
+bundle: ficha_laboratorio
+label: Observaciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

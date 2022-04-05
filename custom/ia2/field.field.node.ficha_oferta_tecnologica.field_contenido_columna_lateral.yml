@@ -1,0 +1,21 @@
+uuid: 9fb60a43-9b75-4507-946d-fda999c0785c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_columna_lateral
+    - node.type.ficha_oferta_tecnologica
+  module:
+    - text
+id: node.ficha_oferta_tecnologica.field_contenido_columna_lateral
+field_name: field_contenido_columna_lateral
+entity_type: node
+bundle: ficha_oferta_tecnologica
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: 0eff9061-44c1-4c73-aa29-1d32cc81db18
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_proyectos
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_proyectos
+field_name: field_proyectos
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: 'Principales proyectos, patentes, etc.'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

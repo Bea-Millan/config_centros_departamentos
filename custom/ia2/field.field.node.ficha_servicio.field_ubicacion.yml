@@ -1,0 +1,21 @@
+uuid: fbf79cc7-1f06-4850-af1f-eebbeb882a9c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ubicacion
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_ubicacion
+field_name: field_ubicacion
+entity_type: node
+bundle: ficha_servicio
+label: Ubicación
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

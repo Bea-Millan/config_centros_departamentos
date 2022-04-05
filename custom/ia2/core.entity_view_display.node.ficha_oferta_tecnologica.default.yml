@@ -1,0 +1,74 @@
+uuid: 04033483-89f3-4201-a5e0-1d04ffa1f12c
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ficha_oferta_tecnologica.body
+    - field.field.node.ficha_oferta_tecnologica.field_contenido_columna_lateral
+    - field.field.node.ficha_oferta_tecnologica.field_enlaces_de_interes
+    - field.field.node.ficha_oferta_tecnologica.field_observaciones
+    - node.type.ficha_oferta_tecnologica
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - node_title
+        - body
+        - field_enlaces_de_interes
+        - field_observaciones
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+id: node.ficha_oferta_tecnologica.default
+targetEntityType: node
+bundle: ficha_oferta_tecnologica
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+  field_enlaces_de_interes:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+  field_observaciones:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: ds_content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  langcode: true
+  links: true

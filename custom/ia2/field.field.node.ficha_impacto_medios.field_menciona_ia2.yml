@@ -1,0 +1,23 @@
+uuid: 24f6e620-2792-4ad6-9aed-c722da3f49ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_menciona_ia2
+    - node.type.ficha_impacto_medios
+id: node.ficha_impacto_medios.field_menciona_ia2
+field_name: field_menciona_ia2
+entity_type: node
+bundle: ficha_impacto_medios
+label: 'Menciona al IA2'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

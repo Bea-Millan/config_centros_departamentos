@@ -1,0 +1,14 @@
+uuid: 0b22f255-2f69-465d-bc3e-4b732537f716
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_laboratorio
+id: node_type_ficha_laboratorio
+entity_type_id: node_type
+entity_id: ficha_laboratorio
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

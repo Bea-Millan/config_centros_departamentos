@@ -1,0 +1,19 @@
+uuid: bab92d13-0c72-46c6-a0ba-4e7de26935f9
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_enlaces_de_interes
+field_name: field_enlaces_de_interes
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

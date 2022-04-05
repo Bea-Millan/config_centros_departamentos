@@ -1,0 +1,18 @@
+uuid: 52f45b1a-a9f3-47dc-b0ed-5f682b17eecf
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Ficha infraestructuras/equipos singulares'
+type: ficha_infraestructuras_equipos
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

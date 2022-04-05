@@ -1,0 +1,21 @@
+uuid: bfb8ad32-5170-4d9d-ba4b-ebc746c41e04
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_columna_lateral
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_contenido_columna_lateral
+field_name: field_contenido_columna_lateral
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

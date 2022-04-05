@@ -1,0 +1,11 @@
+uuid: fea3b6a1-7236-400d-a6bd-e6220c3c665e
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_lineas
+id: node.ficha_lineas
+target_entity_type_id: node
+target_bundle: ficha_lineas
+default_langcode: site_default
+language_alterable: false

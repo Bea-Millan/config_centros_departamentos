@@ -1,0 +1,21 @@
+uuid: 123d64d7-e6fb-4b04-82d5-2e8c059a0b80
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_equipamiento
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_equipamiento
+field_name: field_equipamiento
+entity_type: node
+bundle: ficha_servicio
+label: Equipamiento
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

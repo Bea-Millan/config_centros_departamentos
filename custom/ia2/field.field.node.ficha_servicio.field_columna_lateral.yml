@@ -1,0 +1,21 @@
+uuid: 04b457e8-0b31-430b-8387-3059376eae17
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_columna_lateral
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_columna_lateral
+field_name: field_columna_lateral
+entity_type: node
+bundle: ficha_servicio
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

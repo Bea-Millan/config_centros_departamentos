@@ -1,0 +1,14 @@
+uuid: dd707511-1673-478b-b288-b3cbd5c05fff
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_division
+id: node_type_ficha_division
+entity_type_id: node_type
+entity_id: ficha_division
+action: display_page
+allow_override: 1
+redirect: ''
+redirect_code: 301
+redirect_fallback_action: access_denied

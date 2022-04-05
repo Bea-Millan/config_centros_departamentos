@@ -1,0 +1,21 @@
+uuid: b65c1582-6bc5-4b10-9bd7-063d635ac3f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_prestaciones
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_prestaciones
+field_name: field_prestaciones
+entity_type: node
+bundle: ficha_servicio
+label: Prestaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

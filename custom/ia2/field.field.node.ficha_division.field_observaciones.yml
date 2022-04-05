@@ -1,0 +1,21 @@
+uuid: 68da2214-3bcf-4cc2-957d-92568124d9ab
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observaciones
+    - node.type.ficha_division
+  module:
+    - text
+id: node.ficha_division.field_observaciones
+field_name: field_observaciones
+entity_type: node
+bundle: ficha_division
+label: Observaciones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

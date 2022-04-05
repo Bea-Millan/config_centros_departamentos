@@ -1,0 +1,23 @@
+uuid: 92685592-9c5c-48d2-903d-819c902896fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ficha_oferta_tecnologica
+  module:
+    - text
+id: node.ficha_oferta_tecnologica.body
+field_name: body
+entity_type: node
+bundle: ficha_oferta_tecnologica
+label: Descripcion
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

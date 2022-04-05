@@ -1,0 +1,29 @@
+uuid: 3c7184f7-2e4e-4a27-a6be-9053a1d41a24
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tipo_de_laboratorio
+    - node.type.ficha_laboratorio
+    - taxonomy.vocabulary.tipo_de_laboratorio
+id: node.ficha_laboratorio.field_tipo_de_laboratorio
+field_name: field_tipo_de_laboratorio
+entity_type: node
+bundle: ficha_laboratorio
+label: 'Tipo de laboratorio'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tipo_de_laboratorio: tipo_de_laboratorio
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: ab358f23-f6a3-4dbb-bf17-23ce3f8a60bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces_de_interes
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_enlaces_de_interes
+field_name: field_enlaces_de_interes
+entity_type: node
+bundle: ficha_servicio
+label: 'Enlaces de interés'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

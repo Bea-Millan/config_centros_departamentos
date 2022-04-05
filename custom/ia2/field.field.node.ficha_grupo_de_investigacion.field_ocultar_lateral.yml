@@ -1,0 +1,23 @@
+uuid: 93faa6d2-f8ca-49d2-8061-677d33bd6e41
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_ocultar_lateral
+    - node.type.ficha_grupo_de_investigacion
+id: node.ficha_grupo_de_investigacion.field_ocultar_lateral
+field_name: field_ocultar_lateral
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: 'Ocultar barra lateral'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

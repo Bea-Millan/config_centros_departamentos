@@ -1,0 +1,41 @@
+uuid: 872c2f9d-9cf5-4ac8-9e49-8af7986cc0d4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.ficha_lineas.body
+    - field.field.node.ficha_lineas.field_contenido_columna_lateral
+    - field.field.node.ficha_lineas.field_division
+    - node.type.ficha_lineas
+  module:
+    - text
+    - user
+id: node.ficha_lineas.default
+targetEntityType: node
+bundle: ficha_lineas
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_division:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  langcode: true

@@ -1,0 +1,36 @@
+uuid: b1595eaa-7d85-449c-bee4-dc66f5cbbf91
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_lineas.body
+    - field.field.node.ficha_lineas.field_contenido_columna_lateral
+    - field.field.node.ficha_lineas.field_division
+    - node.type.ficha_lineas
+  module:
+    - text
+    - user
+id: node.ficha_lineas.teaser
+targetEntityType: node
+bundle: ficha_lineas
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  field_division: true
+  langcode: true

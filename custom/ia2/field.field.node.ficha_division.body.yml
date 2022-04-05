@@ -1,0 +1,23 @@
+uuid: b39f2cf6-7eae-4fef-98e0-1cc09a1d36e2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ficha_division
+  module:
+    - text
+id: node.ficha_division.body
+field_name: body
+entity_type: node
+bundle: ficha_division
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

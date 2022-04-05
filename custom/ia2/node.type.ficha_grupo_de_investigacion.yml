@@ -1,0 +1,18 @@
+uuid: 01c3eee6-7081-47e9-84e6-57ff6bab4ca2
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Ficha grupo de investigación'
+type: ficha_grupo_de_investigacion
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,21 @@
+uuid: ae98d82c-96ca-4d75-9775-03e47091eae4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_contenido_columna_lateral
+    - node.type.ficha_infraestructuras_equipos
+  module:
+    - text
+id: node.ficha_infraestructuras_equipos.field_contenido_columna_lateral
+field_name: field_contenido_columna_lateral
+entity_type: node
+bundle: ficha_infraestructuras_equipos
+label: 'Contenido columna lateral'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

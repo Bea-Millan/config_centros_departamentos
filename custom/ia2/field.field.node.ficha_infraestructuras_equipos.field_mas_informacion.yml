@@ -1,0 +1,21 @@
+uuid: 5781af37-7ea3-41d4-9d63-5e600b184a8b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_mas_informacion
+    - node.type.ficha_infraestructuras_equipos
+  module:
+    - text
+id: node.ficha_infraestructuras_equipos.field_mas_informacion
+field_name: field_mas_informacion
+entity_type: node
+bundle: ficha_infraestructuras_equipos
+label: 'Más informacion'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,19 @@
+uuid: 0a9c08d6-e351-4047-834c-16f1c3f7317a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_institucion
+    - node.type.ficha_grupo_de_investigacion
+id: node.ficha_grupo_de_investigacion.field_institucion
+field_name: field_institucion
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Institución
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,21 @@
+uuid: 0ed6b17f-ef7e-4e63-80cb-ea382ec31ad7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_que_hacemos
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_que_hacemos
+field_name: field_que_hacemos
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: '¿Qué hacemos?'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

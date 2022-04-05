@@ -1,0 +1,11 @@
+uuid: 7bfa80bd-66e3-4561-b458-a98f4a70ec15
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_grupo_de_investigacion
+id: node.ficha_grupo_de_investigacion
+target_entity_type_id: node
+target_bundle: ficha_grupo_de_investigacion
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: ed739d8d-4581-40a1-8503-417e294d2ea6
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.medios
+id: taxonomy_term.medios
+target_entity_type_id: taxonomy_term
+target_bundle: medios
+default_langcode: site_default
+language_alterable: false

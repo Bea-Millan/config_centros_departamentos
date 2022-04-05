@@ -1,0 +1,38 @@
+uuid: a24c103c-1bce-4668-9b17-d39df1f27de5
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_oferta_tecnologica.body
+    - field.field.node.ficha_oferta_tecnologica.field_contenido_columna_lateral
+    - field.field.node.ficha_oferta_tecnologica.field_enlaces_de_interes
+    - field.field.node.ficha_oferta_tecnologica.field_observaciones
+    - node.type.ficha_oferta_tecnologica
+  module:
+    - text
+    - user
+id: node.ficha_oferta_tecnologica.teaser
+targetEntityType: node
+bundle: ficha_oferta_tecnologica
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_contenido_columna_lateral: true
+  field_enlaces_de_interes: true
+  field_observaciones: true
+  langcode: true

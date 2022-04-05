@@ -1,0 +1,23 @@
+uuid: 080cdfb1-575b-4aff-bfe8-fc6143247ae3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ficha_laboratorio
+  module:
+    - text
+id: node.ficha_laboratorio.body
+field_name: body
+entity_type: node
+bundle: ficha_laboratorio
+label: Equipamiento
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

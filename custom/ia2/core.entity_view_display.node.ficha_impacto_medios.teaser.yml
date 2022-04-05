@@ -1,0 +1,44 @@
+uuid: e5a2665f-f7b7-4cb3-80df-90f4c9d47bc1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_impacto_medios.body
+    - field.field.node.ficha_impacto_medios.field_archivo
+    - field.field.node.ficha_impacto_medios.field_etiquetas
+    - field.field.node.ficha_impacto_medios.field_fecha
+    - field.field.node.ficha_impacto_medios.field_grupo_s_al_que_se_refiere
+    - field.field.node.ficha_impacto_medios.field_medio
+    - field.field.node.ficha_impacto_medios.field_menciona_ia2
+    - node.type.ficha_impacto_medios
+  module:
+    - text
+    - user
+id: node.ficha_impacto_medios.teaser
+targetEntityType: node
+bundle: ficha_impacto_medios
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_archivo: true
+  field_etiquetas: true
+  field_fecha: true
+  field_grupo_s_al_que_se_refiere: true
+  field_medio: true
+  field_menciona_ia2: true
+  langcode: true

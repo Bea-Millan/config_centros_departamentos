@@ -1,0 +1,52 @@
+uuid: 13077896-45c0-4e31-95ad-70e18c48f2cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_servicio.body
+    - field.field.node.ficha_servicio.field_columna_lateral
+    - field.field.node.ficha_servicio.field_enlaces_de_interes
+    - field.field.node.ficha_servicio.field_equipamiento
+    - field.field.node.ficha_servicio.field_foto_galeria
+    - field.field.node.ficha_servicio.field_imagen
+    - field.field.node.ficha_servicio.field_observaciones
+    - field.field.node.ficha_servicio.field_prestaciones
+    - field.field.node.ficha_servicio.field_responable_del_servicio
+    - field.field.node.ficha_servicio.field_tarifa
+    - field.field.node.ficha_servicio.field_ubicacion
+    - node.type.ficha_servicio
+  module:
+    - text
+    - user
+id: node.ficha_servicio.teaser
+targetEntityType: node
+bundle: ficha_servicio
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_columna_lateral: true
+  field_enlaces_de_interes: true
+  field_equipamiento: true
+  field_foto_galeria: true
+  field_imagen: true
+  field_observaciones: true
+  field_prestaciones: true
+  field_responable_del_servicio: true
+  field_tarifa: true
+  field_ubicacion: true
+  langcode: true

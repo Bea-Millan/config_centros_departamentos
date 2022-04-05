@@ -1,0 +1,21 @@
+uuid: 67d2e262-e934-43b9-b765-7d43534ba5ae
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_enlaces_de_interes
+    - node.type.ficha_laboratorio
+  module:
+    - text
+id: node.ficha_laboratorio.field_enlaces_de_interes
+field_name: field_enlaces_de_interes
+entity_type: node
+bundle: ficha_laboratorio
+label: 'Enlaces de interés'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

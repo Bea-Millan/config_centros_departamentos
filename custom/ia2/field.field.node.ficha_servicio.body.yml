@@ -1,0 +1,23 @@
+uuid: e731b324-7cd2-40b5-8df4-118992978496
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.body
+field_name: body
+entity_type: node
+bundle: ficha_servicio
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

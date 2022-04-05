@@ -1,0 +1,11 @@
+uuid: 3ec2cf7d-877f-49ec-8c40-1fc69bdf6acf
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_impacto_medios
+id: node.ficha_impacto_medios
+target_entity_type_id: node
+target_bundle: ficha_impacto_medios
+default_langcode: site_default
+language_alterable: false

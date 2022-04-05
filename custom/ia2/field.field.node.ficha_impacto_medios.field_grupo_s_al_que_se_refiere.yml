@@ -1,0 +1,29 @@
+uuid: 4d1c9a05-5a58-4e99-b3d2-c950c415b6ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_grupo_s_al_que_se_refiere
+    - node.type.ficha_grupo_de_investigacion
+    - node.type.ficha_impacto_medios
+id: node.ficha_impacto_medios.field_grupo_s_al_que_se_refiere
+field_name: field_grupo_s_al_que_se_refiere
+entity_type: node
+bundle: ficha_impacto_medios
+label: 'Grupo/s al que se refiere'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_grupo_de_investigacion: ficha_grupo_de_investigacion
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

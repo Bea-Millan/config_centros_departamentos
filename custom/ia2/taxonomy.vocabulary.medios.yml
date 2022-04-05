@@ -1,0 +1,8 @@
+uuid: e096c71d-60ce-4ab3-ba35-0d6f601278c5
+langcode: es
+status: true
+dependencies: {  }
+name: Medios
+vid: medios
+description: ''
+weight: 0

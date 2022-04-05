@@ -1,0 +1,64 @@
+uuid: c9375396-5119-40d0-974a-d5549f4bd0b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.ficha_grupo_de_investigacion.field_codigo
+    - field.field.node.ficha_grupo_de_investigacion.field_contenido_columna_lateral
+    - field.field.node.ficha_grupo_de_investigacion.field_denominacion
+    - field.field.node.ficha_grupo_de_investigacion.field_division
+    - field.field.node.ficha_grupo_de_investigacion.field_enlaces_de_interes
+    - field.field.node.ficha_grupo_de_investigacion.field_foto_galeria
+    - field.field.node.ficha_grupo_de_investigacion.field_imagen
+    - field.field.node.ficha_grupo_de_investigacion.field_infraestructuras
+    - field.field.node.ficha_grupo_de_investigacion.field_institucion
+    - field.field.node.ficha_grupo_de_investigacion.field_ip
+    - field.field.node.ficha_grupo_de_investigacion.field_laboratorios
+    - field.field.node.ficha_grupo_de_investigacion.field_lineas
+    - field.field.node.ficha_grupo_de_investigacion.field_miembros
+    - field.field.node.ficha_grupo_de_investigacion.field_observaciones
+    - field.field.node.ficha_grupo_de_investigacion.field_ocultar_lateral
+    - field.field.node.ficha_grupo_de_investigacion.field_oferta_tecnologica
+    - field.field.node.ficha_grupo_de_investigacion.field_pagina_www
+    - field.field.node.ficha_grupo_de_investigacion.field_presentacion
+    - field.field.node.ficha_grupo_de_investigacion.field_proyectos
+    - field.field.node.ficha_grupo_de_investigacion.field_que_hacemos
+    - field.field.node.ficha_grupo_de_investigacion.field_servicios
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - user
+id: node.ficha_grupo_de_investigacion.teaser
+targetEntityType: node
+bundle: ficha_grupo_de_investigacion
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_codigo: true
+  field_contenido_columna_lateral: true
+  field_denominacion: true
+  field_division: true
+  field_enlaces_de_interes: true
+  field_foto_galeria: true
+  field_imagen: true
+  field_infraestructuras: true
+  field_institucion: true
+  field_ip: true
+  field_laboratorios: true
+  field_lineas: true
+  field_miembros: true
+  field_observaciones: true
+  field_ocultar_lateral: true
+  field_oferta_tecnologica: true
+  field_pagina_www: true
+  field_presentacion: true
+  field_proyectos: true
+  field_que_hacemos: true
+  field_servicios: true
+  langcode: true

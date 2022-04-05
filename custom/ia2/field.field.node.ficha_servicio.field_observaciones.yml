@@ -1,0 +1,21 @@
+uuid: 78a48adc-aa44-4eca-a1ca-1b47e595a80f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_observaciones
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_observaciones
+field_name: field_observaciones
+entity_type: node
+bundle: ficha_servicio
+label: Observaciones
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

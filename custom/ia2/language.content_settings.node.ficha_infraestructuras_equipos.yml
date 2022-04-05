@@ -1,0 +1,11 @@
+uuid: 73404f86-f4ff-48bd-ad1f-b81260279d9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_infraestructuras_equipos
+id: node.ficha_infraestructuras_equipos
+target_entity_type_id: node
+target_bundle: ficha_infraestructuras_equipos
+default_langcode: site_default
+language_alterable: false

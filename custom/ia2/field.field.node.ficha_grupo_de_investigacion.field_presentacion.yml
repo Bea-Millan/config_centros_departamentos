@@ -1,0 +1,21 @@
+uuid: 65b33e64-1fe7-41cd-9aed-bf79363171e1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentacion
+    - node.type.ficha_grupo_de_investigacion
+  module:
+    - text
+id: node.ficha_grupo_de_investigacion.field_presentacion
+field_name: field_presentacion
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Presentación
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,21 @@
+uuid: b601bcd3-6dff-4bbb-b164-c07bba9e6f42
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tarifa
+    - node.type.ficha_servicio
+  module:
+    - text
+id: node.ficha_servicio.field_tarifa
+field_name: field_tarifa
+entity_type: node
+bundle: ficha_servicio
+label: Tarifas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 76e85b50-a11b-4cc9-954d-61a29e526f53
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lineas
+field_name: field_lineas
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

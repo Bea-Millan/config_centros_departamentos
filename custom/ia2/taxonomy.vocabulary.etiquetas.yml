@@ -1,0 +1,8 @@
+uuid: c29ecb52-6a80-4129-83c1-2b696598530a
+langcode: es
+status: true
+dependencies: {  }
+name: Etiquetas
+vid: etiquetas
+description: ''
+weight: 0

@@ -1,0 +1,29 @@
+uuid: fd13bcf4-4488-47e3-81c7-afd1c7609392
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_infraestructuras
+    - node.type.ficha_grupo_de_investigacion
+    - node.type.ficha_infraestructuras_equipos
+id: node.ficha_grupo_de_investigacion.field_infraestructuras
+field_name: field_infraestructuras
+entity_type: node
+bundle: ficha_grupo_de_investigacion
+label: Infraestructuras
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      ficha_infraestructuras_equipos: ficha_infraestructuras_equipos
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

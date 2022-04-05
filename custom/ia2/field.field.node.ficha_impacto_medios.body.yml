@@ -1,0 +1,23 @@
+uuid: a52ab399-8996-4455-8ff0-5fc73c9332c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.ficha_impacto_medios
+  module:
+    - text
+id: node.ficha_impacto_medios.body
+field_name: body
+entity_type: node
+bundle: ficha_impacto_medios
+label: Descripción
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+field_type: text_with_summary

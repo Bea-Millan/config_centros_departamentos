@@ -1,0 +1,29 @@
+uuid: d0967fb2-47be-4f62-b177-7b15e8fd1861
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_etiquetas
+    - node.type.ficha_impacto_medios
+    - taxonomy.vocabulary.etiquetas
+id: node.ficha_impacto_medios.field_etiquetas
+field_name: field_etiquetas
+entity_type: node
+bundle: ficha_impacto_medios
+label: Etiquetas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      etiquetas: etiquetas
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
