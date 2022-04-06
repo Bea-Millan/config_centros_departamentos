@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: nOlI9p99KVyCLdch8O7whnDQBkj9Wn40iXHYqZU8HQg
+plugin:
+  host: filologiainglesa.unizar.es
+  url_host: sites/filologiainglesa
+langcode: es

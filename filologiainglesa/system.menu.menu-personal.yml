@@ -1,0 +1,8 @@
+uuid: 022316bc-2559-42d0-aea0-44e1dfed32ef
+langcode: es
+status: true
+dependencies: {  }
+id: menu-personal
+label: PERSONAL
+description: PERSONAL
+locked: false

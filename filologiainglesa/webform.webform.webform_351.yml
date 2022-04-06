@@ -1,0 +1,96 @@
+uuid: 0948a009-5898-4fe5-b838-65d0c2621487
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 3
+template: false
+archive: false
+id: webform_351
+title: 'Oferta para mercadillo'
+description: null
+category: null
+elements: |-
+  fieldset_descripcion_del_objeto:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Descripción del objeto'
+    cpu_torre_de_ordenador_pc_1:
+      '#type': checkbox
+      '#options':
+        clave_segura: 'CPU (torre de PC)'
+      '#multiple': true
+      '#title_display': invisible
+      '#title': 'Elemento (informático)'
+    ordenador_mac_1:
+      '#type': checkbox
+      '#options':
+        «clave_segura: 'Ordenador Mac»'
+      '#multiple': true
+      '#title_display': invisible
+      '#title': 'Elemento (informático)'
+    impresora_1:
+      '#type': checkbox
+      '#options':
+        «clave_segura: Impresora»
+      '#multiple': true
+      '#title_display': invisible
+      '#title': 'Elemento (informático)'
+    monitor_1:
+      '#type': checkbox
+      '#options':
+        «clave_segura: Monitor»
+      '#multiple': true
+      '#title_display': invisible
+      '#title': 'Elemento (informático)'
+    otros_describir_1:
+      '#type': textfield
+      '#title': 'Otros (describir)'
+    marca_1:
+      '#type': textfield
+      '#title': Marca
+    numero_inventario_1:
+      '#type': textfield
+      '#title': 'Número inventario'
+    ubicacion_centro_despacho_1:
+      '#type': textfield
+      '#title': 'Ubicación (Centro, despacho...)'
+      '#required': true
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    apellidos_nombre_8:
+      '#type': textfield
+      '#title': 'Apellido(s), Nombre'
+      '#required': true
+    correo_electronico_8:
+      '#type': email
+      '#size': 20
+      '#title': 'correo electrónico'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Gracias por el mensaje. En breve subiremos la información&nbsp; a la web.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
