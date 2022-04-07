@@ -10,7 +10,7 @@ _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: unizar_departamento_centro_help
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: help_block

@@ -10,7 +10,7 @@ _core:
   default_config_hash: Hveg_TbKr0pKqbVCC5pl9hputahu34GJQO7Nuv26E10
 id: unizar_departamento_bloquecabeceralogocentrosresponsive
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: bloque_cabecera_logo

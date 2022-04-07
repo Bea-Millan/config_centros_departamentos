@@ -8,7 +8,7 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_departamento_pestanas
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: local_tasks_block

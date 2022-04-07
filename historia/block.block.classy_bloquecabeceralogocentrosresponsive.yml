@@ -10,7 +10,7 @@ _core:
   default_config_hash: Hveg_TbKr0pKqbVCC5pl9hputahu34GJQO7Nuv26E10
 id: classy_bloquecabeceralogocentrosresponsive
 theme: classy
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: bloque_cabecera_logo

@@ -10,7 +10,7 @@ _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: titulodelapagina
 theme: unizar_base
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: page_title_block

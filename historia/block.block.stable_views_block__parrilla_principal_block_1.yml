@@ -17,7 +17,7 @@ _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
 id: stable_views_block__parrilla_principal_block_1
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'

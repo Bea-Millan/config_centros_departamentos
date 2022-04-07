@@ -11,7 +11,7 @@ _core:
   default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
 id: unizar_departamento_administracion
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: administracion

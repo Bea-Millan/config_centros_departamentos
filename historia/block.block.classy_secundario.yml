@@ -12,7 +12,7 @@ _core:
   default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
 id: classy_secundario
 theme: classy
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: 'system_menu_block:menu-secundario'

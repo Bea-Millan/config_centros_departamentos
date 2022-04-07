@@ -80,14 +80,10 @@ elements: |-
     '#required': true
   numero_de_viajeros:
     '#type': textfield
-    '#size': 20
-    '#unique': false
     '#title': 'Número de estudiantes'
     '#required': true
   numero_de_profesores_acompanantes:
     '#type': textfield
-    '#size': 20
-    '#unique': false
     '#title': 'Número de profesores acompañantes'
     '#required': true
   se_ofertan_plazas_a_estudiantes_de_nuevo_ingreso:

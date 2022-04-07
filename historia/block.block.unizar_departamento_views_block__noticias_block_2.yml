@@ -17,7 +17,7 @@ _core:
   default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
 id: unizar_departamento_views_block__noticias_block_2
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: 'views_block:noticias-block_2'

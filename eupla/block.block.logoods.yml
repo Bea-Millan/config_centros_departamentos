@@ -6,7 +6,6 @@ dependencies:
     - 'block_content:basic:451f17d6-02e1-49c9-b1b5-6a13493043ef'
   module:
     - block_content
-    - system
   theme:
     - unizar_centro
 id: logoods
@@ -23,8 +22,4 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

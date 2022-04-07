@@ -12,7 +12,7 @@ _core:
   default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
 id: unizar_departamento_secundario
 theme: unizar_departamento
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: 'system_menu_block:menu-secundario'

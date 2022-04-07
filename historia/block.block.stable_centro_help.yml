@@ -10,7 +10,7 @@ _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: stable_centro_help
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: help_block

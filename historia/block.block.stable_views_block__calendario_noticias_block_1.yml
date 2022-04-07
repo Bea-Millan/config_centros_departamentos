@@ -16,7 +16,7 @@ _core:
   default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
 id: stable_views_block__calendario_noticias_block_1
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'

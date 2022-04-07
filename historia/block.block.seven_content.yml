@@ -10,7 +10,7 @@ _core:
   default_config_hash: t7ZWI25VZHzd6D2TEf_Jv4t1IUGKIbs2Ob5dmIzHRko
 id: seven_content
 theme: seven
-region: null
+region: header
 weight: null
 provider: null
 plugin: system_main_block

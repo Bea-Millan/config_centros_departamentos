@@ -12,7 +12,7 @@ _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: stable_mainmenu
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: 'superfish:main'

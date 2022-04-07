@@ -12,7 +12,7 @@ _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: mainmenu
 theme: unizar_base
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: 'superfish:main'
