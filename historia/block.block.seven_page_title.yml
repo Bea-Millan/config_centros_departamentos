@@ -1,6 +1,6 @@
 uuid: d78725e7-3803-4996-b91d-0c0e6993f1f4
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - seven
@@ -8,8 +8,8 @@ _core:
   default_config_hash: vqvPp0kr-9mNl6-uwVwMWOvseY0B_A7q3uhAiRThkcE
 id: seven_page_title
 theme: seven
-region: header
-weight: -30
+region: null
+weight: null
 provider: null
 plugin: page_title_block
 settings:

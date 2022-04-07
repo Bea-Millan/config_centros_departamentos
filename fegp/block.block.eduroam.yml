@@ -18,7 +18,7 @@ plugin: 'block_content:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
 settings:
   id: 'block_content:7e6a4269-9e8f-45d4-9012-fedea7f5aa3a'
   label: EDUROAM
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

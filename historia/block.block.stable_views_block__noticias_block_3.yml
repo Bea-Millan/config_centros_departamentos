@@ -1,6 +1,6 @@
 uuid: a574a017-7131-4672-9ab2-e90d1dc45a33
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.noticias
@@ -17,8 +17,8 @@ _core:
   default_config_hash: W3qRJUqTLNrq6fupZnJx_6H9HlddhnvXaiYhnPzwl9s
 id: stable_views_block__noticias_block_3
 theme: stable
-region: content
-weight: -3
+region: null
+weight: null
 provider: null
 plugin: 'views_block:noticias-block_3'
 settings:

@@ -1,6 +1,6 @@
 uuid: 6b9293ba-271e-4593-ba3b-1a957a0fa7fc
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: T5dKXTKolUI4oKO93bGwtp9onE1T30Vf7d2JK_wl9_A
 id: seven_breadcrumbs
 theme: seven
-region: breadcrumb
-weight: 0
+region: null
+weight: null
 provider: null
 plugin: system_breadcrumb_block
 settings:

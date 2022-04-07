@@ -1,6 +1,6 @@
 uuid: f52a3737-6606-47fd-a027-75e42ff81f58
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - unizar_admin_menu
@@ -11,8 +11,8 @@ _core:
   default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
 id: classy_administracion
 theme: classy
-region: sidebar_first
-weight: -8
+region: null
+weight: null
 provider: null
 plugin: administracion
 settings:

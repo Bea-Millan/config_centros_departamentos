@@ -1,6 +1,6 @@
 uuid: c6cea7c7-5d4d-49d7-9da6-04b3cfae8f23
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: stable_titulodelapagina
 theme: stable
-region: content
-weight: -7
+region: null
+weight: null
 provider: null
 plugin: page_title_block
 settings:

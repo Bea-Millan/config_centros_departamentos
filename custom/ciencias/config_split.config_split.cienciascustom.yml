@@ -94,6 +94,7 @@ blacklist:
   - views.view.departamento_con_examenes
   - views.view.estudios_con_examenes
   - views.view.estudios_con_horarios
+  - views.view.noticias_ciencias_custom
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

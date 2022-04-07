@@ -1,6 +1,6 @@
 uuid: 48452ba3-a2c1-4a56-82cc-e124ff7a9574
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.noticias
@@ -17,8 +17,8 @@ _core:
   default_config_hash: NZS2fm6t-gB39Tye2trEM52KnZ59nQN7iqUyUfLLbyk
 id: views_block__noticias_block_1
 theme: unizar_base
-region: content
-weight: -5
+region: null
+weight: null
 provider: null
 plugin: 'views_block:noticias-block_1'
 settings:
@@ -31,6 +31,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

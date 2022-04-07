@@ -1,6 +1,6 @@
 uuid: f164d638-1818-4783-bf82-4f370110b504
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: titulodelapagina
 theme: unizar_base
-region: content
-weight: -7
+region: null
+weight: null
 provider: null
 plugin: page_title_block
 settings:
@@ -22,11 +22,11 @@ settings:
 visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
     bundles:
       elemento_parrilla: elemento_parrilla
       estudio: estudio
       slideshow: slideshow
       te_interesa: te_interesa
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'

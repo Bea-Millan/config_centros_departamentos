@@ -1,6 +1,6 @@
 uuid: 1f757f52-1bd3-4125-ae2d-a7a8760a4ad1
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: classy_mainmenu
 theme: classy
-region: sidebar_first
-weight: -15
+region: null
+weight: null
 provider: null
 plugin: 'superfish:main'
 settings:

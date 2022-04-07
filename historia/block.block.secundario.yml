@@ -1,6 +1,6 @@
 uuid: 54ca9604-edff-4a9c-afc8-4fdbed17fc40
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.menu-secundario
@@ -12,8 +12,8 @@ _core:
   default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
 id: secundario
 theme: unizar_base
-region: cabecera_sup
-weight: -9
+region: null
+weight: null
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

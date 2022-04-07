@@ -1,6 +1,6 @@
 uuid: 63b638aa-aa39-443d-8bed-ce710fae20eb
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.estudios
@@ -17,8 +17,8 @@ _core:
   default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
 id: stable_views_block__estudios_block_1
 theme: stable
-region: content
-weight: -6
+region: null
+weight: null
 provider: null
 plugin: 'views_block:estudios-block_1'
 settings:

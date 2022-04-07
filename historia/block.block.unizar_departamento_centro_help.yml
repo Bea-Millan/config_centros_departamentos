@@ -1,6 +1,6 @@
 uuid: 0bad320c-1aa0-4b84-9ed5-f89da2a27b0a
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - help
@@ -10,8 +10,8 @@ _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: unizar_departamento_centro_help
 theme: unizar_departamento
-region: content
-weight: -9
+region: null
+weight: null
 provider: null
 plugin: help_block
 settings:

@@ -1,6 +1,6 @@
 uuid: 7eb68a1e-ae15-4a6a-b14b-c2d3cb229617
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.estudios
@@ -17,8 +17,8 @@ _core:
   default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
 id: unizar_departamento_views_block__estudios_block_1
 theme: unizar_departamento
-region: content
-weight: -6
+region: null
+weight: null
 provider: null
 plugin: 'views_block:estudios-block_1'
 settings:

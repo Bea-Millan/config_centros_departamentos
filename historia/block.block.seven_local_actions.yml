@@ -1,6 +1,6 @@
 uuid: 94ea661b-41e9-414d-bd39-7761552fe120
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - seven
@@ -8,8 +8,8 @@ _core:
   default_config_hash: 5trzP-_pQFbuKjPj92Z1pkq9DpnzSGCN_cqLU8HPm_w
 id: seven_local_actions
 theme: seven
-region: content
-weight: -10
+region: null
+weight: null
 provider: null
 plugin: local_actions_block
 settings:

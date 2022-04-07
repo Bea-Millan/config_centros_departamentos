@@ -1,6 +1,6 @@
 uuid: ad830bac-13b8-41b8-853a-0fd5e5cd0137
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.noticias
@@ -17,8 +17,8 @@ _core:
   default_config_hash: W3qRJUqTLNrq6fupZnJx_6H9HlddhnvXaiYhnPzwl9s
 id: unizar_departamento_views_block__noticias_block_3
 theme: unizar_departamento
-region: content
-weight: -3
+region: null
+weight: null
 provider: null
 plugin: 'views_block:noticias-block_3'
 settings:

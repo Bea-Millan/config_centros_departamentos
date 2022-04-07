@@ -1,6 +1,6 @@
 uuid: c9a3e192-d784-40cf-a5e3-abeb927fee57
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - seven
@@ -8,8 +8,8 @@ _core:
   default_config_hash: X5YpMe0npmUGpvkWtqxClIQ9NlgezaCSYrDxDMS_bS8
 id: seven_secondary_local_tasks
 theme: seven
-region: pre_content
-weight: 0
+region: null
+weight: null
 provider: null
 plugin: local_tasks_block
 settings:

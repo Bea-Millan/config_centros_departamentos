@@ -9,7 +9,7 @@ dependencies:
 id: alternadordeidioma
 theme: unizar_centro
 region: cabecera_sup
-weight: 0
+weight: -10
 provider: null
 plugin: 'language_block:language_interface'
 settings:

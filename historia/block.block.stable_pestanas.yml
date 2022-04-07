@@ -1,6 +1,6 @@
 uuid: 1cbceaa3-5c92-4663-a127-6388a286e1d6
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - stable
@@ -8,8 +8,8 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: stable_pestanas
 theme: stable
-region: content
-weight: -8
+region: null
+weight: null
 provider: null
 plugin: local_tasks_block
 settings:
