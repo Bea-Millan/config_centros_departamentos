@@ -1,4 +1,4 @@
-uuid: d86caab8-9f07-4766-b3fd-c5328c1fe77f
+uuid: 13b0a4e3-b6d2-449b-9c8e-bfc289136278
 langcode: es
 status: open
 dependencies: {  }
@@ -121,6 +121,7 @@ elements: |-
   formacion_matematica_requerida_para_el_adecuado_desarrollo_de_tu_asignatura:
     '#type': checkboxes
     '#options':
+      NOMAT: 'En la asignatura NO SE PRECISA formación matemática'
       NC: 'Números complejos.'
       LIMFUN: 'Límites de funciones.'
       CALDIF: 'Cálculo diferencial.'
@@ -175,6 +176,10 @@ elements: |-
       'NO': 'No'
     '#title': 'Indica si has detectado carencias en la formación matemática anteriormente señalada en el alumnado de tu asignatura'
     '#required': true
+    '#states':
+      invisible:
+        - ':input[name="formacion_matematica_requerida_para_el_adecuado_desarrollo_de_tu_asignatura[nomat]"]':
+            checked: true
   carencias_en__formacion_matematica_detectadas_en_el_alumnado_de_la_asignatura:
     '#type': textarea
     '#title': 'Precisa las carencias matemáticas detectadas:'
@@ -190,6 +195,10 @@ elements: |-
       'NO': 'No'
     '#title': '¿Puedes facilitar ejemplos sencillos o simplificados, en el marco de tu asignatura, que requieran la aplicación de alguno de los conceptos matemáticos señalados anteriormente? '
     '#required': true
+    '#states':
+      invisible:
+        - ':input[name="formacion_matematica_requerida_para_el_adecuado_desarrollo_de_tu_asignatura[nomat]"]':
+            checked: true
   gracias:
     '#type': select
     '#options':

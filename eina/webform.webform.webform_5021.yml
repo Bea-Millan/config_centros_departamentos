@@ -1,0 +1,60 @@
+uuid: 4ea83936-86e9-4452-be76-430d8d100c87
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5021
+title: 'Propuesta de mejora'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos'
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': select
+    '#options':
+      PDI: PDI
+      Est: Estudiante
+      PAS: PAS
+    '#title': 'Colectivo EINA al que perteneces'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Utiliza una dirección de correo electrónico de @unizar.es para que podamos contactar contigo si necesitamos más información'
+    '#required': true
+  propuesta_mejora:
+    '#type': textarea
+    '#title': 'Propuesta de mejora'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por tu aportación</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

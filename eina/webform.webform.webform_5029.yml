@@ -1,0 +1,204 @@
+uuid: b67ba9ce-a7df-4a42-828e-5781cd0524f6
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5029
+title: 'Solicitud acceso a edificios de la EINA 2022'
+description: null
+category: null
+elements: |-
+  first_page:
+    '#type': webform_wizard_page
+    '#title': Start
+    nombre:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    apellidos:
+      '#type': textfield
+      '#title': Apellidos
+      '#required': true
+    dni:
+      '#type': textfield
+      '#title': D.N.I.
+      '#required': true
+    nip:
+      '#title': N.I.P.
+    colectivo:
+      '#type': select
+      '#options':
+        PDI: PDI
+        PAS: PAS
+        Becario: Becario
+        Visitante: Externo/Visitante
+        Otros: Otros
+      '#title': Colectivo
+      '#required': true
+    email:
+      '#type': email
+      '#size': 20
+      '#title': Email
+      '#required': true
+    telefono_contacto:
+      '#type': textfield
+      '#title': 'Teléfono de contacto'
+  fechas_y_horarios:
+    '#type': webform_wizard_page
+    '#title': 'Fechas y horarios'
+    periodo_solicitado:
+      '#type': radios
+      '#options':
+        Todo: 'Todo el Curso académico'
+        Temporal: 'Temporal (inferior al curso académico)'
+      '#title': 'Periodo solicitado'
+      '#required': true
+    fecha_de_inicio_de_acceso:
+      '#type': date
+      '#title': 'Fecha de inicio de acceso'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="periodo_solicitado"]':
+              value: Temporal
+    fecha_fin_de_acceso:
+      '#type': date
+      '#title': 'Fecha fin de acceso'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="periodo_solicitado"]':
+              value: Temporal
+    horarios_y_dias_de_acceso_temp:
+      '#type': checkboxes
+      '#options':
+        15: 'Días laborables lectivos de 15h a 21:30h'
+        14: 'Días laborables no lectivos de 14h a 21:30h'
+        fest: 'Sábados y festivos de 8h a 20h'
+      '#multiple': true
+      '#title': 'Horarios y días de acceso'
+      '#required': true
+    puertas_principales:
+      '#type': checkboxes
+      '#options':
+        AB: 'Puerta principal edificio Ada Byron'
+        TQ: 'Puerta principal edificio Torres Quevedo'
+        BT: 'Puerta principal edificio Betancourt'
+      '#multiple': true
+      '#title': 'Puertas principales (Fuera del horario de apertura del centro)'
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Notificación de solicitud de acceso a su Edificio'
+      body: |
+        Notificación:
+
+        Se ha recibido la siguiente solicitud de acceso a las instalaciones de la EINA.
+        Será atendida lo antes posible.
+
+        Datos de la persona que solicita el acceso y puertas afectadas:
+
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: mpsan@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: '1'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario de Solicitud de acceso a edificios de la EINA'
+      body: |+
+        Se ha recibido una nueva solicitud de acceso a los edificios de EINA con fecha de solicitud: [webform_submission:date:long]
+
+        Datos de la solicitud:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

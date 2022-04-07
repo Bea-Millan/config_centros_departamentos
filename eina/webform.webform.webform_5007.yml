@@ -1,0 +1,87 @@
+uuid: fb07fc10-b295-4f72-a4c7-e1645c381a9f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5007
+title: 'Ineficiencias subsanables'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos'
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': select
+    '#options':
+      PDI: PDI
+      Est: Estudiante
+      PAS: PAS
+    '#title': 'Colectivo EINA al que perteneces'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Utiliza una dirección de correo electrónico de @unizar.es para que podamos contactar contigo si necesitamos más información'
+    '#required': true
+  edificio:
+    '#type': select
+    '#options':
+      ADA: 'Ada Byron'
+      TQ: 'Torres Quevedo'
+      BT: 'Agustín de Betancourt'
+    '#title': Edificio
+  localizacion_general:
+    '#type': select
+    '#options':
+      Sot: 'Planta sótano'
+      0: 'Planta Baja'
+      1: 'Planta 1ª'
+      2: 'Panta 2ª'
+      3: 'Planta 3ª'
+    '#title': 'Localización general'
+  zona:
+    '#type': select
+    '#options':
+      DES: Despacho
+      LAB: Laboratorio
+      AUL: Aulario
+      COM: 'Zona común'
+    '#title': Zona
+  localizacion_especifica_del_espacio_afectado:
+    '#type': textfield
+    '#title': 'Localización específica del espacio afectado'
+  ineficiencia_detectada:
+    '#type': textarea
+    '#title': 'Ineficiencia detectada'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por tu aportación</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,4 +1,4 @@
-uuid: c9a39eb6-e89d-47c4-84d6-0cd7fa4ccca3
+uuid: ae8cfc3b-d770-4f1f-abe7-7ec2a36702d2
 langcode: es
 status: open
 dependencies: {  }
@@ -9,13 +9,22 @@ uid: 79
 template: false
 archive: false
 id: webform_4717
-title: 'Celebración Navidad '
+title: 'Celebración Navidad. (Versión 20 de abril) '
 description: null
 category: null
 elements: |-
   nombre:
     '#type': textfield
     '#title': Nombre
+  opcion_preferida_20:
+    '#type': checkboxes
+    '#options':
+      Ada: 'Terraza del Ada Byron (precio 13,5€)'
+      Otro: ' Restaurante alternativo por concretar (p.e. La Garnacha)'
+      'No': 'No asistiré'
+    '#multiple': true
+    '#title': 'Opción preferida 20 de abril'
+    '#required': true
   opcion_preferida:
     '#type': checkboxes
     '#options':
@@ -25,7 +34,10 @@ elements: |-
       'No': 'No asistiré'
     '#multiple': true
     '#title': 'Opción preferida'
-    '#required': true
+    '#states':
+      visible:
+        - ':input[name="nombre"]':
+            value: navidad22
 css: ''
 javascript: ''
 settings:

@@ -1,0 +1,191 @@
+uuid: 3755fd34-196c-4fda-9a03-b12b9ac2125f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5022
+title: 'Información de la ocupación de despachos y laboratorios y laboratorios de los departamentos'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos del interlocutor energético'
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': select
+    '#options':
+      PDI: PDI
+      PAS: PAS
+    '#title': 'Colectivo EINA al que perteneces'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Utiliza una dirección de correo electrónico de @unizar.es para que podamos contactar contigo si necesitamos más información'
+    '#required': true
+  area_de_conocimiento:
+    '#type': select
+    '#options':
+      ALG: Algebra
+      AM: 'Análisis Matemático'
+      ATC: 'Arquitectura y Tecnología de Computadores'
+      CMIM: 'Ciencia de los Materiales e Ingeniería Metalúrgica'
+      COMA: 'Composición Arquitectónica'
+      CONA: 'Construcciones Arquitectónicas'
+      DA: 'Derecho Administrativo'
+      EIO: 'Estadística e Investigación Operativa'
+      EGA: 'Expresión Gráfica Arquitectónica'
+      EGI: 'Expresión Gráfica de la Ingeniería'
+      FILA: 'Filología Alemana'
+      FILI: 'Filología Inglesa'
+      FA: 'Física Aplicada'
+      FMA: 'Física de la Materia Condensada'
+      FT: 'Física de la Tierra'
+      GT: 'Geometría y Topología'
+      HA: 'Historia del Arte'
+      HC: 'Historia de la Ciencia'
+      IC: 'Ingeniería de la Construcción'
+      IPF: 'Ingeniería de los Procesos de Fabricación'
+      ISA: 'Ingeniería de Sistemas y Automática'
+      IIT: 'Ingeniería e Infraestructura de los Transportes'
+      IE: 'Ingeniería Eléctrica'
+      IM: 'Ingeniería Mecánica'
+      IQ: 'Ingeniería Química'
+      IT: 'Ingenieria Telematica'
+      LSI: 'Lenguajes y Sistemas Informáticos'
+      MMT: 'Máquinas y Motores Térmicos'
+      MA: 'Matemática Aplicada'
+      MF: 'Mecánica de Fluidos'
+      MMCTE: 'Mec. de Medios Contínuos y Teor. de Estructuras'
+      MCEE: 'Métodos Cuantitativos para la Economía y la Empresa'
+      OE: 'Organización de Empresas'
+      PA: 'Proyectos Arquitectónicos'
+      PI: 'Proyectos de Ingeniería'
+      QA: 'Química Analítica'
+      QF: 'Química Física'
+      QI: 'Química Inorgánica'
+      QO: 'Química Orgánica'
+      TE: 'Tecnología Electrónica'
+      TMA: 'Tecnologías del Medio Ambiente'
+      TSC: 'Teoría de la Señal y Comunicaciones'
+      UOT: 'Urbanística y Ordenación del Territorio'
+    '#title': 'Área de Conocimiento'
+    '#required': true
+  departamento:
+    '#type': select
+    '#options':
+      ARQ: Arquitectura
+      CTMF: 'Ciencia y tecnología de materiales y fluidos'
+      DOE: 'Dirección y Organización de Empresas'
+      FIA: 'Filología Inglesa y Alemana'
+      FMC: 'Física de la Materia Condensada'
+      FA: 'Física Aplicada'
+      IIS: 'Informática e ingeniería de sistemas'
+      IDF: 'Ingeniería de Diseño y Fabricación'
+      IE: 'Ingeniería Eléctrica'
+      IEC: 'Ingeniería Electrónica y Comunicaciones'
+      IM: 'Ingeniería Mecánica'
+      IQTMA: 'Ingeniería Química y Tecnologías del Medio Ambiente'
+      MA: 'Matemática Aplicada'
+      ME: 'Métodos Estadísticos'
+      QA: 'Química Análítica'
+      QI: 'Química Inorgánica'
+      QO: 'Química Orgánica'
+      QF: 'Química Física'
+    '#title': Departamento
+    '#required': true
+  zona:
+    '#type': radios
+    '#options':
+      DES: Despachos
+      LAB: Laboratorios
+    '#title': Sector
+    '#required': true
+  edificio:
+    '#type': radios
+    '#options':
+      ADA: 'Ada Byron'
+      TQ: 'Torres Quevedo'
+      BT: Betancourt
+    '#title': Edificio
+    '#description': 'Indicar edificio y ubicación específica del laboratorio'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="zona"]':
+            value: LAB
+  localizacion_especifica_del_espacio:
+    '#type': textarea
+    '#title': 'Localización específica del espacio afectado'
+    '#description': 'Indicar código SIGEUZ cuando sea posible (https://sigeuz.unizar.es/)'
+    '#states':
+      visible:
+        - ':input[name="zona"]':
+            value: LAB
+  ocupacion_horario:
+    '#type': webform_likert
+    '#questions':
+      -
+        - 7-10
+        - 'De 07:00 a 10:00h'
+      -
+        - 10-13
+        - 'De 10:00 a 13:00h'
+      -
+        - 13-15
+        - 'De 13:00 a 15:00h'
+      -
+        - 15-18
+        - 'De 15:00 a 18:00h'
+      -
+        - 18-21
+        - 'De 18:00 a 21:00h'
+    '#answers':
+      -
+        - Alta
+        - Alta
+      -
+        - Media
+        - Media
+      -
+        - Baja
+        - Baja
+      -
+        - MB
+        - 'Muy Baja'
+    '#title': Ocupacion-Horario
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias por tu aportación</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

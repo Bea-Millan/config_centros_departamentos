@@ -1,0 +1,109 @@
+uuid: 4d13d814-840f-49ec-9317-545cd0158e04
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5008
+title: 'Solicitud de no desconexión de la red eléctrica (fuera del horario de apertura)'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos'
+    '#required': true
+  colectivo_eina_al_que_perteneces:
+    '#type': select
+    '#options':
+      PDI: PDI
+      Est: Estudiante
+      PAS: PAS
+    '#title': 'Colectivo EINA al que perteneces'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  edificio:
+    '#type': select
+    '#options':
+      ADA: 'Ada Byron'
+      TQ: 'Torres Quevedo'
+      BT: 'Agustín de Betancourt'
+    '#title': 'Edificio '
+    '#required': true
+  localizacion_general:
+    '#type': select
+    '#options':
+      Sot: 'Planta sótano'
+      0: 'Planta Baja'
+      1: 'Planta 1ª'
+      2: 'Panta 2ª'
+      3: 'Planta 3ª'
+    '#title': 'Localización general'
+    '#required': true
+  zona:
+    '#type': select
+    '#options':
+      DES: Despacho
+      LAB: Laboratorio
+      AUL: Aulario
+      COM: 'Zona común'
+    '#title': Zona
+    '#required': true
+  espacio_afectado:
+    '#type': textfield
+    '#title': 'Localización específica del espacio afectado'
+    '#description': 'Indicar código SIGEUZ cuando sea posible (https://sigeuz.unizar.es/)'
+    '#required': true
+  maquina_instalacion_que_requiere_la_no_desconexion_electrica:
+    '#type': textfield
+    '#title': 'Máquina/instalación que requiere la no desconexión eléctrica'
+    '#required': true
+  numero_de_inventario_si_lo_hubiere:
+    '#type': textfield
+    '#title': 'Número de inventario si lo hubiere'
+  observaciones_acerca_de_la_maquina_instalacion:
+    '#type': textarea
+    '#title': 'Observaciones acerca de la Máquina/instalación'
+  horario:
+    '#type': select
+    '#options':
+      LV: 'De Lunes a Viernes de 21:00h a 8:00h'
+      SD: 'Fines de semana y festivos'
+      '00': Permanente
+    '#title': Horario
+    '#required': true
+  necesidad_energetica:
+    '#type': textarea
+    '#title': Justificación
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>En breve nos pondremos en contacto contigo</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
