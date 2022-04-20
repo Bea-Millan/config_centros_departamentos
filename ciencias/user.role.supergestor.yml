@@ -3,7 +3,6 @@ langcode: es
 status: true
 dependencies:
   config:
-    - node.type.empleo_y_practicas
     - node.type.estudio
     - node.type.examenes
     - node.type.examenes_por_departamentos
@@ -28,11 +27,11 @@ weight: 7
 is_admin: null
 permissions:
   - 'access all webform results'
+  - 'assign gestor_empleo_practicas role'
   - 'assign supergestor role'
   - 'delete all webform submissions'
   - 'delete any departamentos content'
   - 'delete any elemento_parilla content'
-  - 'delete any empleo_y_practicas content'
   - 'delete any estudio content'
   - 'delete any examenes content'
   - 'delete any examenes_por_departamentos content'
@@ -50,7 +49,6 @@ permissions:
   - 'edit all webform submissions'
   - 'edit any departamentos content'
   - 'edit any elemento_parilla content'
-  - 'edit any empleo_y_practicas content'
   - 'edit any estudio content'
   - 'edit any examenes content'
   - 'edit any examenes_por_departamentos content'
