@@ -33,6 +33,7 @@ blacklist:
   - 'block.block.*'
   - config_split.config_split.departamento.yml
   - language.negotiation
+  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

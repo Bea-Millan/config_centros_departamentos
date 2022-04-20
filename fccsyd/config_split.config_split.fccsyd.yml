@@ -32,6 +32,7 @@ blacklist:
   - 'block.block.*'
   - matomo.settings
   - language.negotiation
+  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

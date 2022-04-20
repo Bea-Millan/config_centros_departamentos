@@ -36,6 +36,7 @@ blacklist:
   - migrate_plus.migration.upgrade_d7_menu_links_fr
   - migrate_plus.migration.upgrade_d7_menu_links_zh
   - migrate_plus.migration.upgrade_d7_menu_zh
+  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

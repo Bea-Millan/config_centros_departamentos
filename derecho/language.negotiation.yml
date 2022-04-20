@@ -7,8 +7,8 @@ url:
   source: path_prefix
   prefixes:
     es: ''
-    en: en
     '': null
+    en: en
   domains:
     es: ''
     en: ''

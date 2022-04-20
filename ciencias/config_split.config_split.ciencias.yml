@@ -32,6 +32,7 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
+  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
