@@ -5,14 +5,13 @@ dependencies: {  }
 id: cienciascustom
 label: 'ciencias custom'
 description: ''
-weight: 0
+weight: 2
 folder: ../config/sites/custom/ciencias
 module:
   entityreference_filter: 0
   filefield_paths: 0
 theme: {  }
 blacklist:
-  - block.block.unizar_centro_titulodelapagina
   - config_split.config_split.cienciascustom
   - core.base_field_override.node.departamento.promote
   - core.base_field_override.node.departamento.title

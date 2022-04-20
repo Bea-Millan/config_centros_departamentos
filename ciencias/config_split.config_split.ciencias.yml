@@ -5,7 +5,7 @@ dependencies: {  }
 id: ciencias
 label: ciencias
 description: ''
-weight: 1
+weight: 0
 folder: ../config/sites/ciencias
 module:
   c11n_migrate: 0
@@ -14,6 +14,7 @@ theme:
 blacklist:
   - config_split.config_split.ciencias
   - core.entity_view_mode.shortcut.token
+  - language.negotiation
   - language.types
   - matomo.settings
   - migrate_drupal.settings
@@ -25,14 +26,15 @@ blacklist:
   - unizar_base.settings
   - unizar_centro.settings
   - unizar_modulos_configuracion.settings
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
   - asset_injector.css.ciencias_inyeccion_css
   - unizar_departamento.settings
-  - language.negotiation
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

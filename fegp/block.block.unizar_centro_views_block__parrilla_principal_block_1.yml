@@ -1,4 +1,4 @@
-uuid: 817bb680-3e29-425b-91dc-06ee9e9d65e3
+uuid: 7632e99d-e446-4769-be13-2a53b6186a97
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ _core:
 id: unizar_centro_views_block__parrilla_principal_block_1
 theme: unizar_centro
 region: content
-weight: -10
+weight: -2
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
 settings:

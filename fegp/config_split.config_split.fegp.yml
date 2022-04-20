@@ -1,4 +1,4 @@
-uuid: ce5e4600-c1f0-4aa9-bc6e-3b1b45483af5
+uuid: 64f599fc-544c-4cca-aeff-018d2a08e543
 langcode: es
 status: true
 dependencies: {  }
@@ -22,6 +22,7 @@ blacklist:
   - unizar_base.settings
   - unizar_departamento.settings
   - smtp.settings
+  - language.negotiation
   - language.types
   - matomo.settings
   - unizar_modulos_configuracion.settings
@@ -31,12 +32,6 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - language.negotiation
-  - migrate_plus.migration.upgrade_d7_menu_fr
-  - migrate_plus.migration.upgrade_d7_menu_links_fr
-  - migrate_plus.migration.upgrade_d7_menu_links_zh
-  - migrate_plus.migration.upgrade_d7_menu_zh
-  - user.role.supergestor
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

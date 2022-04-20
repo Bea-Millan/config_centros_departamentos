@@ -1,4 +1,4 @@
-uuid: 40012ed6-0d52-434d-892f-55faac3ac27b
+uuid: bfa2450e-03e5-4d21-9fc6-733fc768f6f3
 langcode: es
 status: true
 dependencies: {  }
@@ -7,5 +7,5 @@ _core:
 id: zxx
 label: 'No aplicable'
 direction: ltr
-weight: 4
+weight: 3
 locked: true

@@ -1,4 +1,4 @@
-uuid: d368b919-8232-4963-b8e9-c5bffc9decf5
+uuid: e67bb02e-f529-4ce8-8cdc-8021902a88aa
 langcode: es
 status: true
 dependencies: {  }
@@ -7,5 +7,5 @@ _core:
 id: und
 label: 'Sin especificar'
 direction: ltr
-weight: 3
+weight: 2
 locked: true

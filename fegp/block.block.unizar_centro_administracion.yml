@@ -1,10 +1,9 @@
-uuid: 2b934ac5-3383-47e2-aaaf-9e1e691a5ddf
+uuid: 3c347360-e236-4e05-9ab4-85fa7cb939f5
 langcode: es
 status: true
 dependencies:
   module:
     - unizar_admin_menu
-    - user
   theme:
     - unizar_centro
 _core:
@@ -20,12 +19,4 @@ settings:
   label: Administración
   label_display: '0'
   provider: unizar_admin_menu
-visibility:
-  user_role:
-    id: user_role
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
-    roles:
-      administrator: administrator
-      gestor_basico: gestor_basico
+visibility: {  }

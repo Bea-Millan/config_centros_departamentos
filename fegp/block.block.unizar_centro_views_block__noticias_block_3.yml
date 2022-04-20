@@ -1,4 +1,4 @@
-uuid: b18ed965-0774-4ca8-ba73-345a52acf084
+uuid: 57b1f38a-17ad-4610-ade7-db9caa4cc7b5
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ _core:
 id: unizar_centro_views_block__noticias_block_3
 theme: unizar_centro
 region: content
-weight: -13
+weight: -3
 provider: null
 plugin: 'views_block:noticias-block_3'
 settings:

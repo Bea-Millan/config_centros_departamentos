@@ -1,4 +1,4 @@
-uuid: 8948406d-1aeb-45cb-8f95-30e57397102c
+uuid: 34393be0-ccad-447d-97b9-26c775a22447
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ _core:
 id: unizar_centro_views_block__estudios_block_1
 theme: unizar_centro
 region: content
-weight: -15
+weight: -6
 provider: null
 plugin: 'views_block:estudios-block_1'
 settings:

@@ -33,6 +33,8 @@ blacklist:
   - matomo.settings
   - language.negotiation
   - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

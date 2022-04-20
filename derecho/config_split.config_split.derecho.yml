@@ -13,26 +13,28 @@ theme:
   unizar_centro: 0
 blacklist:
   - config_split.config_split.derecho
-  - system.site
-  - system.theme
-  - asset_injector.css.derecho_inyeccion_css
   - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
-  - unizar_centro.settings
-  - unizar_base.settings
-  - unizar_departamento.settings
-  - smtp.settings
+  - language.negotiation
   - language.types
   - matomo.settings
-  - unizar_modulos_configuracion.settings
-  - unizar_admin_menu.settings
   - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
+  - unizar_admin_menu.settings
+  - unizar_base.settings
+  - unizar_centro.settings
+  - unizar_modulos_configuracion.settings
+  - user.role.supergestor
+  - asset_injector.css.derecho_inyeccion_css
+  - unizar_departamento.settings
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - language.negotiation
-  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
