@@ -27,6 +27,7 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       elemento_parrilla: elemento_parrilla
+      entrada_blog: entrada_blog
       estudio: estudio
       slideshow: slideshow
       te_interesa: te_interesa
