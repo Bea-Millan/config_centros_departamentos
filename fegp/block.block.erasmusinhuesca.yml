@@ -1,0 +1,30 @@
+uuid: 30a71f51-fec2-4788-b114-9631a8f9e9ad
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9943f17c-d53a-4679-bbf9-519681b3a0cd'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: erasmusinhuesca
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'block_content:9943f17c-d53a-4679-bbf9-519681b3a0cd'
+settings:
+  id: 'block_content:9943f17c-d53a-4679-bbf9-519681b3a0cd'
+  label: 'Erasmus in Huesca'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\nerasmus-incoming-students\r\nerasmus-outgoing-students\r\nprogramas-de-movilidad\r\nacademic-information\r\napplication-form\r\nacommodation"

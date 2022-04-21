@@ -82,7 +82,7 @@ handlers:
   email_1:
     id: email
     handler_id: email_1
-    label: 'Email 1'
+    label: marta_lamenca
     notes: ''
     status: true
     conditions: {  }
@@ -96,15 +96,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: 'Solicitud de bienes o servicios'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -119,7 +119,7 @@ handlers:
   email_2:
     id: email
     handler_id: email_2
-    label: 'Email 2'
+    label: administradora
     notes: ''
     status: true
     conditions: {  }
@@ -133,14 +133,14 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
+      subject: 'Solicitud de bienes o servicios'
       body: default
       excluded_elements: {  }
       ignore_access: false
@@ -156,7 +156,7 @@ handlers:
   email_3:
     id: email
     handler_id: email_3
-    label: 'Email 3'
+    label: ccano
     notes: ''
     status: true
     conditions: {  }
@@ -170,15 +170,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: 'Solicitud de bienes o servicios'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -193,7 +193,7 @@ handlers:
   email_4:
     id: email
     handler_id: email_4
-    label: 'Email 4'
+    label: raulcalvo
     notes: ''
     status: true
     conditions: {  }
@@ -207,15 +207,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: 'Solicitud de bienes o servicios'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -230,7 +230,7 @@ handlers:
   email_5:
     id: email
     handler_id: email_5
-    label: 'Email 5'
+    label: tfranco
     notes: ''
     status: true
     conditions: {  }
@@ -244,15 +244,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: 'Solicitud de bienes o servicios'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

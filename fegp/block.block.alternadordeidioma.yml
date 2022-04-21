@@ -1,0 +1,20 @@
+uuid: 2920bea6-c21b-43e6-81cf-084dff9ebf16
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - unizar_centro
+id: alternadordeidioma
+theme: unizar_centro
+region: cabecera_sup
+weight: -12
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+visibility: {  }

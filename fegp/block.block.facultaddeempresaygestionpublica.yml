@@ -1,0 +1,30 @@
+uuid: 07ff3195-fc50-47c9-9b8b-b0601b9f7e30
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:90e288a1-1fbb-4358-8764-69714989080a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: facultaddeempresaygestionpublica
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:90e288a1-1fbb-4358-8764-69714989080a'
+settings:
+  id: 'block_content:90e288a1-1fbb-4358-8764-69714989080a'
+  label: 'Facultad de Empresa  y Gestión Pública'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

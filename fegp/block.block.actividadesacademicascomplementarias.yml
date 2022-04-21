@@ -1,0 +1,30 @@
+uuid: 75c9172b-280c-4671-a96d-0b20dd2e485d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a92e646c-e423-4e4c-8696-275a0e015e10'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: actividadesacademicascomplementarias
+theme: unizar_centro
+region: columna_lateral
+weight: -3
+provider: null
+plugin: 'block_content:a92e646c-e423-4e4c-8696-275a0e015e10'
+settings:
+  id: 'block_content:a92e646c-e423-4e4c-8696-275a0e015e10'
+  label: 'Actividades académicas complementarias'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
