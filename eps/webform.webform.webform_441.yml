@@ -122,14 +122,14 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
+      subject: 'Comunicación de noticias'
       body: default
       excluded_elements: {  }
       ignore_access: false
@@ -159,14 +159,14 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
+      subject: 'Comunicación de noticias'
       body: default
       excluded_elements: {  }
       ignore_access: false

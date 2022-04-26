@@ -1,0 +1,30 @@
+uuid: b1e407bb-6229-4da4-91b7-276b2e7654ab
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:918f06b4-8586-4549-ad44-9056d603fd8f'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: sicue
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:918f06b4-8586-4549-ad44-9056d603fd8f'
+settings:
+  id: 'block_content:918f06b4-8586-4549-ad44-9056d603fd8f'
+  label: SICUE
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /movilidad-nacional

@@ -125,121 +125,10 @@ access:
       - authenticated
     users: {  }
 handlers:
-  email_1:
-    id: email
-    handler_id: email_1
-    label: 'Email 1'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: ccano@unizar.es
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: default
-      body: default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: false
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-  email_2:
-    id: email
-    handler_id: email_2
-    label: 'Email 2'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 2
-    settings:
-      states:
-        - completed
-      to_mail: tfranco@unizar.es
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: default
-      body: default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: false
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-  email_3:
-    id: email
-    handler_id: email_3
-    label: 'Email 3'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 3
-    settings:
-      states:
-        - completed
-      to_mail: admespsh@unizar.es
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: default
-      body: default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: false
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
   email_5:
     id: email
     handler_id: email_5
-    label: 'Email 5'
+    label: emails
     notes: ''
     status: true
     conditions: {  }
@@ -247,94 +136,20 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: mlamenca@unizar.es
+      to_mail: 'mlamenca@unizar.es, tfranco@unizar.es, ccano@unizar.es, admespsh@unizar.es, rcalvomavilla@unizar.es, mescar@unizar.es'
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: infoeps@unizar.es
       from_options: {  }
-      from_name: default
+      from_name: EPS
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: false
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-  email_6:
-    id: email
-    handler_id: email_6
-    label: 'Email 6'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 6
-    settings:
-      states:
-        - completed
-      to_mail: rcalvomavilla@unizar.es
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: default
-      body: default
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      exclude_empty_checkbox: false
-      exclude_attachments: false
-      html: false
-      attachments: false
-      twig: false
-      theme_name: ''
-      parameters: {  }
-      debug: false
-  email_7:
-    id: email
-    handler_id: email_7
-    label: 'Email 7'
-    notes: ''
-    status: true
-    conditions: {  }
-    weight: 7
-    settings:
-      states:
-        - completed
-      to_mail: mescar@unizar.es
-      to_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-      subject: default
+      subject: 'Solicitud viajes de prácticas'
       body: default
       excluded_elements: {  }
       ignore_access: false

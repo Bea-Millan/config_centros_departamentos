@@ -66,6 +66,10 @@ process:
       regex: false
       search: '/Crear Galería'
       replace: ''
+    -
+      plugin: str_replace
+      search: users/zarate/
+      replace: archivos/
   uri:
     -
       plugin: file_copy

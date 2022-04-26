@@ -16,12 +16,15 @@ elements: |-
   nombre:
     '#type': textfield
     '#title': Nombre
+    '#required': true
   apellidos:
     '#type': textfield
     '#title': Apellidos
+    '#required': true
   email:
     '#type': email
     '#title': Email
+    '#required': true
   en_su_caso_estudiante_de:
     '#type': webform_checkboxes_other
     '#title': 'En su caso, estudiante de'
@@ -30,6 +33,17 @@ elements: |-
       'Grado en Ciencias Ambientales': 'Grado en Ciencias Ambientales'
       'Máster Universitario en Ingeniería Agronómica': 'Máster Universitario en Ingeniería Agronómica'
     '#options__properties': ''
+  en_su_caso_empresa:
+    '#type': textfield
+    '#title': 'En su caso, empresa'
+  consentimiento_basico_obligatorio_sepa_que_para_gestionar_correc:
+    '#type': checkbox
+    '#title': 'Consentimiento tratamiento datos'
+    '#description': |-
+      <p>Sepa que para gestionar correctamente su inscripci&oacute;n y mantenerle informado del evento, precisamos enviarle informaci&oacute;n por correo electr&oacute;nico.</p>
+
+      <p>La organizaci&oacute;n le informa que se trata de un acto p&uacute;blico. La Universidad podr&aacute; realizar, o autorizar a terceros, la toma de im&aacute;genes y grabaciones de audio/v&iacute;deo para la difusi&oacute;n del acto tanto en Web como en medios de comunicaci&oacute;n social.</p>
+    '#required': true
 css: ''
 javascript: ''
 settings:
@@ -223,27 +237,27 @@ handlers:
     settings:
       states:
         - completed
-      to_mail: _default
+      to_mail: ccano@unizar.es
       to_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: _default
+      from_mail: infoeps@unizar.es
       from_options: {  }
       from_name: _default
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: _default
+      subject: 'Inscripción Jornadas de ciencia y tecnología'
       body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
       exclude_empty_checkbox: false
       exclude_attachments: false
-      html: true
+      html: false
       attachments: false
       twig: false
       theme_name: ''
