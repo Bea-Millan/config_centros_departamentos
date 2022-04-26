@@ -41,7 +41,6 @@ permissions:
   - 'delete any galeria content'
   - 'delete any noticia content'
   - 'delete any page content'
-  - 'delete any pestana content'
   - 'delete any slideshow content'
   - 'delete any te_interesa content'
   - 'delete any webform'
