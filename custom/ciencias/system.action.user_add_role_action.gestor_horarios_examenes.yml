@@ -1,0 +1,14 @@
+uuid: 0ce6bbd3-6bda-4495-9d51-84cde065bbc8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_horarios_examenes
+  module:
+    - user
+id: user_add_role_action.gestor_horarios_examenes
+label: 'Añade el rol Gestor horarios-exámenes al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_horarios_examenes

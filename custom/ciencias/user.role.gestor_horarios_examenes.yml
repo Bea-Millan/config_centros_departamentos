@@ -1,0 +1,47 @@
+uuid: edde94fe-3117-41a1-8ad9-6ee9d45f5abc
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.departamento
+    - node.type.examenes
+    - node.type.examenes_por_departamentos
+    - node.type.horarios
+    - node.type.horarios_por_departamentos
+    - taxonomy.vocabulary.convocatoria
+    - taxonomy.vocabulary.curso
+  module:
+    - node
+    - publishcontent
+    - taxonomy
+id: gestor_horarios_examenes
+label: 'gestor horarios-exámenes'
+weight: 11
+is_admin: null
+permissions:
+  - 'create departamento content'
+  - 'create examenes content'
+  - 'create examenes_por_departamentos content'
+  - 'create horarios content'
+  - 'create horarios_por_departamentos content'
+  - 'create terms in convocatoria'
+  - 'create terms in curso'
+  - 'delete any departamento content'
+  - 'delete any examenes content'
+  - 'delete any examenes_por_departamentos content'
+  - 'delete any horarios content'
+  - 'delete any horarios_por_departamentos content'
+  - 'delete terms in convocatoria'
+  - 'delete terms in curso'
+  - 'edit any departamento content'
+  - 'edit any examenes content'
+  - 'edit any examenes_por_departamentos content'
+  - 'edit any horarios content'
+  - 'edit any horarios_por_departamentos content'
+  - 'edit terms in convocatoria'
+  - 'edit terms in curso'
+  - 'publish any node type departamento'
+  - 'publish any node type examenes'
+  - 'publish any node type examenes_por_departamentos'
+  - 'publish any node type horarios'
+  - 'publish any node type horarios_por_departamentos'

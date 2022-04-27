@@ -85,6 +85,7 @@ blacklist:
   - rabbit_hole.behavior_settings.node_type_horarios_por_departamentos
   - taxonomy.vocabulary.convocatoria
   - taxonomy.vocabulary.curso
+  - user.role.gestor_horarios_examenes
   - views.view.consultar_de_horarios
   - views.view.consultar_examenes
   - views.view.consultar_examenes_por_departamentos

@@ -1,0 +1,14 @@
+uuid: 635d0e09-d100-4dde-91d6-6fc9276809e9
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_horarios_examenes
+  module:
+    - user
+id: user_remove_role_action.gestor_horarios_examenes
+label: 'Elimina el rol Gestor horarios-exámenes al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_horarios_examenes
