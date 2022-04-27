@@ -10,7 +10,7 @@ _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: bloquerrss_2
 theme: unizar_base
-region: cabecera_sup
+region: null
 weight: null
 provider: null
 plugin: bloque_rrss

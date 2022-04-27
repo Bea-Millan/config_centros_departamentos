@@ -12,7 +12,7 @@ _core:
   default_config_hash: Cw0bJQ0At4smashUawJdnzDtvoT_DzY9NoA-FgNmIU4
 id: views_block__slideshow_block_1_2
 theme: bartik
-region: header
+region: null
 weight: null
 provider: null
 plugin: 'views_block:slideshow-block_1'

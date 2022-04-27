@@ -17,7 +17,7 @@ _core:
   default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
 id: stable_views_block__estudios_block_1
 theme: stable
-region: sidebar_first
+region: null
 weight: null
 provider: null
 plugin: 'views_block:estudios-block_1'

@@ -12,7 +12,7 @@ _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: classy_mainmenu
 theme: classy
-region: sidebar_first
+region: null
 weight: null
 provider: null
 plugin: 'superfish:main'

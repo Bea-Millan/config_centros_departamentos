@@ -14,7 +14,7 @@ _core:
 id: unizar_centro_mainmenu
 theme: unizar_centro
 region: menu_principal
-weight: -15
+weight: -7
 provider: null
 plugin: 'superfish:main'
 settings:

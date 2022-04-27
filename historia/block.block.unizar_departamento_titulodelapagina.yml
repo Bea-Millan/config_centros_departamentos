@@ -1,6 +1,6 @@
 uuid: 01b7e0b4-adf2-48ee-a87a-bef9a0d63d11
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: unizar_departamento_titulodelapagina
 theme: unizar_departamento
-region: cabecera_sup
-weight: null
+region: content
+weight: -4
 provider: null
 plugin: page_title_block
 settings:

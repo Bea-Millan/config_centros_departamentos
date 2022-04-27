@@ -1,6 +1,6 @@
 uuid: 849aad28-7d5e-4543-b4e2-b2eeba8affc7
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.parrilla_principal
@@ -17,8 +17,8 @@ _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
 id: unizar_departamento_views_block__parrilla_principal_block_1
 theme: unizar_departamento
-region: cabecera_sup
-weight: null
+region: content
+weight: 0
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
 settings:

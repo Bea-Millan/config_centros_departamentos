@@ -150,7 +150,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Solicitud viajes de prácticas'
-      body: default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

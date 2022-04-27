@@ -6,10 +6,10 @@ favicon_path: ''
 favicon_upload: ''
 id_centro: '110'
 nombre_centro: 'Escuela de Ingeniería y Arquitectura'
-dir_centro: 'María de Luna, 3 - 50018 Zaragoza'
+dir_centro: '<a href="https://goo.gl/maps/PsR7io5yYkzsDUrg7">María de Luna, 3 - 50018 Zaragoza</a>'
 telefono_centro: '976 761 864'
 mail_centro: eina@unizar.es
-url_mapa: 'https://goo.gl/maps/PsR7io5yYkzsDUrg7'
+url_mapa: ''
 dir_centro2: ''
 telefono_centro2: ''
 mail_centro2: ''
@@ -25,5 +25,3 @@ blog_class: ''
 soundcloud: ''
 meta_desc: 'La Escuela de Ingeniería y Arquitectura de Zaragoza (EINA) desarrolla más del 80% de los estudios en el ámbito de las Ingenierías y de la Arquitectura en Aragón, y es responsable de un porcentaje similar de la actividad de I+D+i en el campo tecnológico a través de todos sus departamentos universitarios, así como mediante los institutos, laboratorios y fundaciones que tienen su sede en ella, lo que repercute en el progreso económico y tecnológico de la sociedad aragonesa. '
 langcode: es
-rrs_header: 0
-id: ''

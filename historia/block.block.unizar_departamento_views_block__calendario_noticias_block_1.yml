@@ -1,6 +1,6 @@
 uuid: 98335269-8ee1-4c7f-8aca-274749f6407b
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.calendario_noticias
@@ -16,8 +16,8 @@ _core:
   default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
 id: unizar_departamento_views_block__calendario_noticias_block_1
 theme: unizar_departamento
-region: cabecera_sup
-weight: null
+region: columna_lateral
+weight: -4
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

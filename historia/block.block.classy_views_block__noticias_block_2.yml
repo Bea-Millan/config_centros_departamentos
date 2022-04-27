@@ -17,7 +17,7 @@ _core:
   default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
 id: classy_views_block__noticias_block_2
 theme: classy
-region: sidebar_first
+region: null
 weight: null
 provider: null
 plugin: 'views_block:noticias-block_2'

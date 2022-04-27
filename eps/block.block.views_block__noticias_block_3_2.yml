@@ -1,0 +1,29 @@
+uuid: a1448eea-5dde-4172-9a78-6abc799ef732
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - system
+    - views
+  theme:
+    - unizar_centro
+id: views_block__noticias_block_3_2
+theme: unizar_centro
+region: content
+weight: -3
+provider: null
+plugin: 'views_block:noticias-block_3'
+settings:
+  id: 'views_block:noticias-block_3'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

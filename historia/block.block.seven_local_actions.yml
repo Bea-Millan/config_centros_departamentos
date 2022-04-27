@@ -8,7 +8,7 @@ _core:
   default_config_hash: 5trzP-_pQFbuKjPj92Z1pkq9DpnzSGCN_cqLU8HPm_w
 id: seven_local_actions
 theme: seven
-region: header
+region: null
 weight: null
 provider: null
 plugin: local_actions_block

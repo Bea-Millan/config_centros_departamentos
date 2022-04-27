@@ -29,8 +29,10 @@ dependencies:
     - search
     - shortcut
     - smtp
+    - statistics
     - system
     - taxonomy
+    - toolbar
     - views_ui
 _core:
   default_config_hash: sy4leADBKi-HbVXrZxxXHB-A5NkagIXX33cTiY7hwow
@@ -39,11 +41,9 @@ label: administrator
 weight: 2
 is_admin: true
 permissions:
-  - 'access administration menu'
   - 'access administration pages'
   - 'access all views'
   - 'access all webform results'
-  - 'access audit files reports'
   - 'access comments'
   - 'access content'
   - 'access content overview'
@@ -51,15 +51,19 @@ permissions:
   - 'access dashboard'
   - 'access draggableviews'
   - 'access library reports'
+  - 'access overlay'
   - 'access own webform results'
   - 'access own webform submissions'
   - 'access site in maintenance mode'
   - 'access site map'
   - 'access site reports'
   - 'access site-wide contact form'
+  - 'access statistics'
   - 'access the block administration page'
+  - 'access toolbar'
   - 'access user contact forms'
   - 'access user profiles'
+  - 'add js snippets for matomo'
   - 'add terms in 1'
   - 'add terms in 2'
   - 'add terms in secciones'
@@ -70,7 +74,6 @@ permissions:
   - admin_view_modes
   - 'administer CAPTCHA settings'
   - 'administer actions'
-  - 'administer audit files'
   - 'administer block access settings'
   - 'administer block classes'
   - 'administer blocks'
@@ -79,6 +82,7 @@ permissions:
   - 'administer content translations'
   - 'administer content types'
   - 'administer contexts'
+  - 'administer dependencies'
   - 'administer features'
   - 'administer feeds'
   - 'administer fieldgroups'
@@ -98,11 +102,14 @@ permissions:
   - 'administer pathauto'
   - 'administer permissions'
   - 'administer quicktabs'
+  - 'administer redirects'
+  - 'administer rh_node'
   - 'administer search'
   - 'administer shortcuts'
   - 'administer site configuration'
   - 'administer smtp module'
   - 'administer software updates'
+  - 'administer statistics'
   - 'administer superfish'
   - 'administer taxonomy'
   - 'administer themes'
@@ -120,6 +127,7 @@ permissions:
   - 'assign profiles to nodes'
   - 'block IP addresses'
   - 'bypass node access'
+  - 'bypass rh_node'
   - 'cancel account'
   - 'change own username'
   - 'clone node'
@@ -156,7 +164,6 @@ permissions:
   - 'delete terms in 3'
   - 'delete terms in 4'
   - 'disable all blocks'
-  - 'display drupal links'
   - 'download original image'
   - 'edit all webform submissions'
   - 'edit any article content'
@@ -171,13 +178,14 @@ permissions:
   - 'edit terms in 2'
   - 'edit terms in 3'
   - 'edit terms in 4'
+  - 'edit webform components'
   - 'enable all blocks'
-  - 'flush caches'
   - 'manage features'
   - 'manage simple access'
   - 'move all blocks'
   - 'notify of path changes'
   - 'opt-in or out of matomo tracking'
+  - 'php redirect rh_node'
   - 'post comments'
   - 'publish any content'
   - 'publish any elemento_parrilla content'
@@ -224,6 +232,7 @@ permissions:
   - 'view all blocks'
   - 'view any unpublished content'
   - 'view any unpublished elemento_parilla content'
+  - 'view any unpublished empleo_y_pr_cticas content'
   - 'view any unpublished estudio content'
   - 'view any unpublished galeria content'
   - 'view any unpublished noticia content'
@@ -233,5 +242,6 @@ permissions:
   - 'view any unpublished webform content'
   - 'view date repeats'
   - 'view own unpublished content'
+  - 'view post access counter'
   - 'view revisions'
   - 'view the administration theme'

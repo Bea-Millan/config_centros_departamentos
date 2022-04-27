@@ -1,6 +1,6 @@
 uuid: 80ab9021-f2cd-40c8-a339-48a3bb4433f4
 langcode: es
-status: false
+status: true
 dependencies:
   theme:
     - unizar_departamento
@@ -8,8 +8,8 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_departamento_pestanas
 theme: unizar_departamento
-region: cabecera_sup
-weight: null
+region: content
+weight: -1
 provider: null
 plugin: local_tasks_block
 settings:

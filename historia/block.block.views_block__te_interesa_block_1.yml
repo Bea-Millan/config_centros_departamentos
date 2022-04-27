@@ -16,7 +16,7 @@ _core:
   default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
 id: views_block__te_interesa_block_1
 theme: unizar_base
-region: cabecera_sup
+region: null
 weight: null
 provider: null
 plugin: 'views_block:te_interesa-block_1'

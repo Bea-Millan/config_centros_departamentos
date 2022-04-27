@@ -10,7 +10,7 @@ _core:
   default_config_hash: R9XOv47XqjtJftFYUNN_NXNWaHD7D2-JIZJerE-SjkI
 id: bloquedatoscontactocentros
 theme: unizar_base
-region: cabecera_sup
+region: null
 weight: null
 provider: null
 plugin: bloque_cabecera_contacto

@@ -12,7 +12,7 @@ dependencies:
 id: views_block__blog_block_4
 theme: unizar_centro
 region: content
-weight: -6
+weight: -3
 provider: null
 plugin: 'views_block:blog-block_4'
 settings:

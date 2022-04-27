@@ -1,6 +1,6 @@
 uuid: e2cbb4c6-8f09-4e94-b979-a65173b02dad
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_admin_menu
@@ -12,7 +12,7 @@ _core:
 id: unizar_departamento_administracion
 theme: unizar_departamento
 region: cabecera_sup
-weight: null
+weight: -10
 provider: null
 plugin: administracion
 settings:

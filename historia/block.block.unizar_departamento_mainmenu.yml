@@ -1,6 +1,6 @@
 uuid: 0cb5de10-86d1-448f-bf4f-ffaf4681546f
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -12,8 +12,8 @@ _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: unizar_departamento_mainmenu
 theme: unizar_departamento
-region: cabecera_sup
-weight: null
+region: menu_principal
+weight: -9
 provider: null
 plugin: 'superfish:main'
 settings:

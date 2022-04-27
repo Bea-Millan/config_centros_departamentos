@@ -10,7 +10,7 @@ _core:
   default_config_hash: T5dKXTKolUI4oKO93bGwtp9onE1T30Vf7d2JK_wl9_A
 id: seven_breadcrumbs
 theme: seven
-region: header
+region: null
 weight: null
 provider: null
 plugin: system_breadcrumb_block

@@ -5,3 +5,13 @@ favicon:
   mimetype: image/vnd.microsoft.icon
   path: ''
   use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: 'public://facultad_ciencias_sociales_y_humanas_teruel_2-01_0.png'
+  use_default: false
+logo_footer_path: ''
+logo_footer_upload: {  }

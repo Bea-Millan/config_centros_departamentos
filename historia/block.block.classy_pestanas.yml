@@ -8,7 +8,7 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: classy_pestanas
 theme: classy
-region: sidebar_first
+region: null
 weight: null
 provider: null
 plugin: local_tasks_block

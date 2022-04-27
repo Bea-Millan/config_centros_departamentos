@@ -12,12 +12,12 @@ dependencies:
 id: admision202021
 theme: unizar_centro
 region: content
-weight: -4
+weight: 1
 provider: null
 plugin: 'block_content:18729ebf-caff-4916-bbed-75047a33a683'
 settings:
   id: 'block_content:18729ebf-caff-4916-bbed-75047a33a683'
-  label: 'Admisión 2020/21'
+  label: 'Admisión 2022/23'
   label_display: '0'
   provider: block_content
   status: true

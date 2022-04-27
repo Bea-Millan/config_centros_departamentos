@@ -12,7 +12,7 @@ dependencies:
 id: mapalocalizacion
 theme: unizar_centro
 region: columna_lateral
-weight: -8
+weight: -5
 provider: null
 plugin: 'block_content:9cbb2e2d-7863-4ac0-8e6b-32f06289aa3c'
 settings:

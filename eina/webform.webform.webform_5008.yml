@@ -1,11 +1,11 @@
-uuid: f5117c25-8c3a-4b68-ba2e-942138c7fdec
+uuid: a6c6e789-2194-4ca9-90a3-495be4112251
 langcode: es
 status: open
 dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 79
+uid: 245
 template: false
 archive: false
 id: webform_5008
@@ -13,22 +13,28 @@ title: 'Solicitud de no desconexión de la red eléctrica (fuera del horario de 
 description: null
 category: null
 elements: |-
-  nombre_y_apellidos:
-    '#type': textfield
-    '#title': 'Nombre y Apellidos'
-    '#required': true
-  colectivo_eina_al_que_perteneces:
+  departamento:
     '#type': select
     '#options':
-      PDI: PDI
-      Est: Estudiante
-      PAS: PAS
-    '#title': 'Colectivo EINA al que perteneces'
-    '#required': true
-  correo_electronico:
-    '#type': email
-    '#size': 20
-    '#title': 'Correo electrónico'
+      ARQ: Arquitectura
+      CTMF: 'Ciencia y tecnología de materiales y fluidos'
+      DOE: 'Dirección y Organización de Empresas'
+      FIA: 'Filología Inglesa y Alemana'
+      FMC: 'Física de la Materia Condensada'
+      FA: 'Física Aplicada'
+      IIS: 'Informática e ingeniería de sistemas'
+      IDF: 'Ingeniería de Diseño y Fabricación'
+      IE: 'Ingeniería Eléctrica'
+      IEC: 'Ingeniería Electrónica y Comunicaciones'
+      IM: 'Ingeniería Mecánica'
+      IQTMA: 'Ingeniería Química y Tecnologías del Medio Ambiente'
+      MA: 'Matemática Aplicada'
+      ME: 'Métodos Estadísticos'
+      QA: 'Química Análítica'
+      QI: 'Química Inorgánica'
+      QO: 'Química Orgánica'
+      QF: 'Química Física'
+    '#title': Departamento
     '#required': true
   edificio:
     '#type': select
@@ -38,6 +44,18 @@ elements: |-
       BT: 'Agustín de Betancourt'
     '#title': 'Edificio '
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
+  contrasena_de_acceso:
+    '#type': textfield
+    '#title': 'Contraseña de acceso'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="departamento"]':
+            filled: false
   localizacion_general:
     '#type': select
     '#options':
@@ -48,6 +66,10 @@ elements: |-
       3: 'Planta 3ª'
     '#title': 'Localización general'
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   zona:
     '#type': select
     '#options':
@@ -57,21 +79,41 @@ elements: |-
       COM: 'Zona común'
     '#title': Zona
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   espacio_afectado:
     '#type': textfield
     '#title': 'Localización específica del espacio afectado'
     '#description': 'Indicar código SIGEUZ cuando sea posible (https://sigeuz.unizar.es/)'
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   maquina_instalacion_que_requiere_la_no_desconexion_electrica:
     '#type': textfield
     '#title': 'Máquina/instalación que requiere la no desconexión eléctrica'
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   numero_de_inventario_si_lo_hubiere:
     '#type': textfield
     '#title': 'Número de inventario si lo hubiere'
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   observaciones_acerca_de_la_maquina_instalacion:
     '#type': textarea
     '#title': 'Observaciones acerca de la Máquina/instalación'
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   horario:
     '#type': select
     '#options':
@@ -80,10 +122,18 @@ elements: |-
       '00': Permanente
     '#title': Horario
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   necesidad_energetica:
     '#type': textarea
     '#title': Justificación
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
 css: ''
 javascript: ''
 settings:

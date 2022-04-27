@@ -1,11 +1,11 @@
-uuid: 32f67cee-7184-4ffa-a92f-c8064f317e24
+uuid: 13ec1c63-db2d-4443-abc9-b11d16604ec6
 langcode: es
 status: open
 dependencies: {  }
 weight: 0
 open: null
 close: null
-uid: 79
+uid: 245
 template: false
 archive: false
 id: webform_5022
@@ -13,71 +13,6 @@ title: 'Información de la ocupación de despachos y laboratorios y laboratorios
 description: null
 category: null
 elements: |-
-  nombre_y_apellidos:
-    '#type': textfield
-    '#title': 'Nombre y Apellidos del interlocutor energético'
-    '#required': true
-  colectivo_eina_al_que_perteneces:
-    '#type': select
-    '#options':
-      PDI: PDI
-      PAS: PAS
-    '#title': 'Colectivo EINA al que perteneces'
-    '#required': true
-  correo_electronico:
-    '#type': email
-    '#size': 20
-    '#title': 'Correo electrónico'
-    '#description': 'Utiliza una dirección de correo electrónico de @unizar.es para que podamos contactar contigo si necesitamos más información'
-    '#required': true
-  area_de_conocimiento:
-    '#type': select
-    '#options':
-      ALG: Algebra
-      AM: 'Análisis Matemático'
-      ATC: 'Arquitectura y Tecnología de Computadores'
-      CMIM: 'Ciencia de los Materiales e Ingeniería Metalúrgica'
-      COMA: 'Composición Arquitectónica'
-      CONA: 'Construcciones Arquitectónicas'
-      DA: 'Derecho Administrativo'
-      EIO: 'Estadística e Investigación Operativa'
-      EGA: 'Expresión Gráfica Arquitectónica'
-      EGI: 'Expresión Gráfica de la Ingeniería'
-      FILA: 'Filología Alemana'
-      FILI: 'Filología Inglesa'
-      FA: 'Física Aplicada'
-      FMA: 'Física de la Materia Condensada'
-      FT: 'Física de la Tierra'
-      GT: 'Geometría y Topología'
-      HA: 'Historia del Arte'
-      HC: 'Historia de la Ciencia'
-      IC: 'Ingeniería de la Construcción'
-      IPF: 'Ingeniería de los Procesos de Fabricación'
-      ISA: 'Ingeniería de Sistemas y Automática'
-      IIT: 'Ingeniería e Infraestructura de los Transportes'
-      IE: 'Ingeniería Eléctrica'
-      IM: 'Ingeniería Mecánica'
-      IQ: 'Ingeniería Química'
-      IT: 'Ingenieria Telematica'
-      LSI: 'Lenguajes y Sistemas Informáticos'
-      MMT: 'Máquinas y Motores Térmicos'
-      MA: 'Matemática Aplicada'
-      MF: 'Mecánica de Fluidos'
-      MMCTE: 'Mec. de Medios Contínuos y Teor. de Estructuras'
-      MCEE: 'Métodos Cuantitativos para la Economía y la Empresa'
-      OE: 'Organización de Empresas'
-      PA: 'Proyectos Arquitectónicos'
-      PI: 'Proyectos de Ingeniería'
-      QA: 'Química Analítica'
-      QF: 'Química Física'
-      QI: 'Química Inorgánica'
-      QO: 'Química Orgánica'
-      TE: 'Tecnología Electrónica'
-      TMA: 'Tecnologías del Medio Ambiente'
-      TSC: 'Teoría de la Señal y Comunicaciones'
-      UOT: 'Urbanística y Ordenación del Territorio'
-    '#title': 'Área de Conocimiento'
-    '#required': true
   departamento:
     '#type': select
     '#options':
@@ -101,6 +36,14 @@ elements: |-
       QF: 'Química Física'
     '#title': Departamento
     '#required': true
+  contrasena_de_acceso:
+    '#type': textfield
+    '#title': 'Contraseña de acceso'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="departamento"]':
+            filled: false
   zona:
     '#type': radios
     '#options':
@@ -108,6 +51,10 @@ elements: |-
       LAB: Laboratorios
     '#title': Sector
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   edificio:
     '#type': radios
     '#options':
@@ -162,10 +109,18 @@ elements: |-
         - 'Muy Baja'
     '#title': Ocupacion-Horario
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
   observaciones:
     '#type': textarea
     '#title': Observaciones
     '#required': true
+    '#states':
+      visible:
+        - ':input[name="contrasena_de_acceso"]':
+            value: DEPARTAMENTOS
 css: ''
 javascript: ''
 settings:
