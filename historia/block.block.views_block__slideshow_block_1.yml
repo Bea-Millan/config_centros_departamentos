@@ -17,7 +17,7 @@ _core:
   default_config_hash: BVQKTyG-td3hqhM3DdjhZLx685SIe_mobSkHoz-N6Fs
 id: views_block__slideshow_block_1
 theme: unizar_base
-region: null
+region: cabecera_sup
 weight: null
 provider: null
 plugin: 'views_block:slideshow-block_1'

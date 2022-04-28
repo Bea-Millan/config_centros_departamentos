@@ -11,7 +11,7 @@ _core:
   default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
 id: stable_administracion
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: administracion

@@ -11,7 +11,7 @@ _core:
   default_config_hash: v7G5vBmfBRYhYzQuH59G5enJAP_Djr13Sn3tLGnzlx0
 id: administracion_2
 theme: seven
-region: null
+region: header
 weight: null
 provider: null
 plugin: administracion

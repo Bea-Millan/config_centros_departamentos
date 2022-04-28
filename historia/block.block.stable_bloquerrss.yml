@@ -10,7 +10,7 @@ _core:
   default_config_hash: Yg2RTQVe4z0STvDLhKiurK4RoqKAAjv57QQ6dOeVq38
 id: stable_bloquerrss
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: bloque_rrss

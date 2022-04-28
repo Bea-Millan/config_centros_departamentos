@@ -10,7 +10,7 @@ _core:
   default_config_hash: nfTWkTykPM8swOh3_xs6dHRFFVdPKku3nzjRQGLhhgY
 id: seven_help
 theme: seven
-region: null
+region: header
 weight: null
 provider: null
 plugin: help_block

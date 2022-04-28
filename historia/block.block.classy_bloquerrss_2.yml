@@ -10,7 +10,7 @@ _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: classy_bloquerrss_2
 theme: classy
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: bloque_rrss

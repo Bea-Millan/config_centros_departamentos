@@ -17,7 +17,7 @@ _core:
   default_config_hash: dhZzTxbE3BLncqaUU_0gUB167Nt3mtyc-bKqCmY5NsY
 id: stable_views_block__noticias_block_2
 theme: stable
-region: null
+region: sidebar_first
 weight: null
 provider: null
 plugin: 'views_block:noticias-block_2'
