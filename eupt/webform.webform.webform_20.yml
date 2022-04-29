@@ -1,0 +1,118 @@
+uuid: 1e2fa6b7-af9d-4d07-8d2f-3dc026fe1f73
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 94
+template: false
+archive: false
+id: webform_20
+title: 'Formulario de inscripción jornadas'
+description: null
+category: null
+elements: |-
+  fieldset_datos:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    apellido_1_7:
+      '#type': textfield
+      '#title': 'Apellido 1'
+      '#required': true
+    apellido_2_7:
+      '#type': textfield
+      '#title': 'Apellido 2'
+      '#required': true
+    nombre_7:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+    correo_electronico_7:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#required': true
+    dni_7:
+      '#type': textfield
+      '#size': 9
+      '#title': NIF
+      '#description': 'Introduzca el valor sin puntos ni guiones. Ejemplo. 99999999A. Está trabajando desde la IP [current-user:ip-address].'
+      '#required': true
+  tipo_de_inscripcion:
+    '#type': radios
+    '#options':
+      Completa: Completa
+      Solo_conferencias: 'Solo conferencias'
+      Solo_talleres: 'Solo talletes'
+    '#title': 'Tipo de inscripción'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Sus datos han sido registrados.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: prueba.eupt@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Incripción Jornada realizada'
+      body: |-
+        Estimado [webform_submission:values:nombre:withlabel]
+        Enviado el [webform_submission:date:long]
+        Enviado por el usuario: [current-user:name]
+        Los valores enviados son:
+        [webform_submission:values]
+
+        The results of this submission may be viewed at:
+        [webform_submission:url]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

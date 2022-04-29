@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: eqr-c82t65ihpeEttvLcSrDHzd6MstszuytfL3Krybk
+plugin:
+  host: eupt.unizar.es
+  url_host: sites/eupt
+langcode: es

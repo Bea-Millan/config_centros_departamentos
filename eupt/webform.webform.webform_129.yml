@@ -1,0 +1,219 @@
+uuid: 0ac92963-c09d-4a88-864d-f202c37b12b2
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 94
+template: false
+archive: false
+id: webform_129
+title: 'Solicitud certificado participación órganos del Centro'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos'
+    '#description': 'Indique su Nombre y Apellidos completos'
+    '#required': true
+  dni:
+    '#type': textfield
+    '#title': DNI
+    '#description': 'Introduzca su DNI con la letra (sin separadores de miles ni entre el número en la letra).'
+    '#required': true
+  e_mail:
+    '#type': email
+    '#size': 20
+    '#title': E-mail
+    '#description': 'Correo electrónico para notificación.'
+    '#required': true
+  fieldset_curso_1:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 1'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_5:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+      '#required': true
+    puesto_5:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+      '#required': true
+  fieldset_curso_2:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 2'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_11:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+    puesto_11:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+  fieldset_curso_3:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 3'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_14:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+    puesto_14:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+  fieldset_curso_4:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 4'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_17:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+    puesto_17:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+  fieldset_curso_5:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 5'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_20:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+    puesto_20:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+  fieldset_curso_6:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Curso 6'
+    '#description': 'Introduzca aquí el curso en el que desempeñó el puesto indicado'
+    curso_23:
+      '#type': textfield
+      '#title': Curso
+      '#description': 'Introduzca el curso en el que ha desempeñado los puestos indicados más abajo. Ejemplo: 2014-2015'
+    puesto_23:
+      '#type': checkboxes
+      '#options':
+        Delegado: Delegado
+        Subdelegado: Subdelegado
+        JC: 'Miembro de Junta de Centro'
+        CGC: 'Miembro de Comisión de Garantía de Calidad'
+        CEC: 'Miembro de Comisión de Evaluación de la Calidad'
+        CP: 'Miembro de Comisión Permanente'
+      '#multiple': true
+      '#title': Puesto
+      '#description': 'Seleccionar una opción (si su opción no está disponible indíquelo enviando un correo a secingtt@unizar.es)'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>El certificado ha sido solicitado con éxito. Recibirá un correo cuando pueda recogerlo.</p>'
+  limit_total: 20
+  limit_user: 2
+  form_submit_label: 'Enviar Solicitud'
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: secingtt@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:e_mail:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:nombre_y_apellidos:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[SC]Solicitud certificado participación órganos del Centro'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
