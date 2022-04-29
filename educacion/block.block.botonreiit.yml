@@ -12,7 +12,7 @@ dependencies:
 id: botonreiit
 theme: unizar_centro
 region: columna_lateral
-weight: -8
+weight: -11
 provider: null
 plugin: 'block_content:1d14c91e-da29-4c46-b835-9050669d66d0'
 settings:

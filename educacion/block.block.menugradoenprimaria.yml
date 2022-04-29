@@ -1,0 +1,36 @@
+uuid: 3d14b2c9-58b3-42b5-961e-926f4e511aab
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-grado-en-primaria
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menugradoenprimaria
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'menu_block:menu-menu-grado-en-primaria'
+settings:
+  id: 'menu_block:menu-menu-grado-en-primaria'
+  label: 'Grado en Magisterio en Educación Primaria'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-menu-grado-en-primaria:'
+  suggestion: menu_menu_grado_en_primaria
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/grado-primaria/*'

@@ -12,7 +12,7 @@ dependencies:
 id: botonieducacion
 theme: unizar_centro
 region: columna_lateral
-weight: -9
+weight: -12
 provider: null
 plugin: 'block_content:66e6cebe-b2f0-48f9-9aca-f5500d2361a2'
 settings:

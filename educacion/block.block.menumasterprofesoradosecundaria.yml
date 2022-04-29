@@ -1,0 +1,36 @@
+uuid: 268fa958-3dd3-4271-9e55-795c37289b8a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-master-profesorado-sec
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menumasterprofesoradosecundaria
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'menu_block:menu-menu-master-profesorado-sec'
+settings:
+  id: 'menu_block:menu-menu-master-profesorado-sec'
+  label: 'Máster en Profesorado de Secundaria'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-menu-master-profesorado-sec:'
+  suggestion: menu_menu_master_profesorado_sec
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/master-profesorado-secundaria/*'
