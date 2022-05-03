@@ -26,14 +26,23 @@ process:
     -
       plugin: get
       source: info
-  body/value:
+  body:
     -
-      plugin: urlhost
+      plugin: sub_process
       source: body
-  body/format:
-    -
-      plugin: default_value
-      default_value: full_html
+      process:
+        value:
+          -
+            plugin: urlhost
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
+        format:
+          plugin: default_value
+          default_value: filtered_html
 destination:
   plugin: 'entity:block_content'
   default_bundle: basic

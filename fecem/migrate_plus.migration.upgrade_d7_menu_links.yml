@@ -58,6 +58,11 @@ process:
     -
       plugin: link_uri
       validate_route: false
+    -
+      plugin: str_replace
+      regex: false
+      search: econz.unizar.es
+      replace: fecem.unizar.es
   link/options:
     -
       plugin: get

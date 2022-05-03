@@ -6,6 +6,7 @@ dependencies:
     - views.view.te_interesa
   module:
     - block_class
+    - system
     - views
   theme:
     - unizar_centro
@@ -31,4 +32,8 @@ settings:
     Sección:
       type: taxonomy_index_tid_depth
       value: '17'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
