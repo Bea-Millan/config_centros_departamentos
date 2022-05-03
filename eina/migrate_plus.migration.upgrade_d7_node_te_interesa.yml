@@ -76,6 +76,12 @@ process:
       plugin: skip_on_empty
       method: row
   field_link/title: title
+  field_seccion:
+    -
+      plugin: sub_process
+      source: field_seccion
+      process:
+        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true
