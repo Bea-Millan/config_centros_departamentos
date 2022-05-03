@@ -1,0 +1,30 @@
+uuid: 455267c5-c6b3-4c29-9524-de420c3fda15
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f6785602-273d-4cad-97a1-6b376f83a493'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: instagram
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:f6785602-273d-4cad-97a1-6b376f83a493'
+settings:
+  id: 'block_content:f6785602-273d-4cad-97a1-6b376f83a493'
+  label: instagram
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

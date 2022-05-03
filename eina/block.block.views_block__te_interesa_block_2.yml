@@ -1,4 +1,4 @@
-uuid: b50f5fed-f16f-48fe-9379-6c599bc0de4d
+uuid: 5a049c74-9e37-442e-bf05-07e5b0bcfc28
 langcode: es
 status: true
 dependencies:
@@ -6,30 +6,29 @@ dependencies:
     - views.view.te_interesa
   module:
     - block_class
-    - system
     - views
   theme:
     - unizar_centro
 third_party_settings:
   block_class:
     classes: 'te-interesa ojo'
-_core:
-  default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
-id: unizar_centro_views_block__te_interesa_block_1
+id: views_block__te_interesa_block_2
 theme: unizar_centro
 region: content
 weight: -6
 provider: null
-plugin: 'views_block:te_interesa-block_1'
+plugin: 'views_block:te_interesa-block_2'
 settings:
-  id: 'views_block:te_interesa-block_1'
+  id: 'views_block:te_interesa-block_2'
   label: ''
   label_display: visible
   provider: views
+  context_mapping:
+    term_node_tid_depth: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: '17'
+visibility: {  }

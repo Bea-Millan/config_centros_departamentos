@@ -14,6 +14,7 @@ dependencies:
     - node
     - publishcontent
     - taxonomy
+    - view_unpublished
 id: gestor_horarios_examenes
 label: 'gestor horarios-exámenes'
 weight: 11
@@ -45,3 +46,8 @@ permissions:
   - 'publish any node type examenes_por_departamentos'
   - 'publish any node type horarios'
   - 'publish any node type horarios_por_departamentos'
+  - 'view any unpublished departamento content'
+  - 'view any unpublished examenes content'
+  - 'view any unpublished examenes_por_departamentos content'
+  - 'view any unpublished horarios content'
+  - 'view any unpublished horarios_por_departamentos content'
