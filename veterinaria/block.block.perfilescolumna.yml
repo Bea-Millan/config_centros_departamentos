@@ -30,5 +30,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: true
+    negate: false
     pages: '<front>'

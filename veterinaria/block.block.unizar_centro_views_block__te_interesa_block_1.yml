@@ -6,6 +6,7 @@ dependencies:
     - views.view.te_interesa
   module:
     - block_class
+    - system
     - views
   theme:
     - unizar_centro
@@ -27,4 +28,8 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
