@@ -1,0 +1,25 @@
+uuid: 27c3a551-f318-47c5-8805-e7498fd0326c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7f9a531d-78fb-4007-a26f-7c0fac789ea5'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: certificadoacpua
+theme: unizar_centro
+region: cabecera_med_izquierda
+weight: 0
+provider: null
+plugin: 'block_content:7f9a531d-78fb-4007-a26f-7c0fac789ea5'
+settings:
+  id: 'block_content:7f9a531d-78fb-4007-a26f-7c0fac789ea5'
+  label: 'Certificado ACPUA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

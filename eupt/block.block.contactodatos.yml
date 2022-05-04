@@ -1,0 +1,30 @@
+uuid: 3925bdb6-cb36-497b-920a-2ebe30c6dce2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:401dc2fb-5590-49fb-8f24-e790d1ae97cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: contactodatos
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:401dc2fb-5590-49fb-8f24-e790d1ae97cb'
+settings:
+  id: 'block_content:401dc2fb-5590-49fb-8f24-e790d1ae97cb'
+  label: contacto-datos
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /contacto

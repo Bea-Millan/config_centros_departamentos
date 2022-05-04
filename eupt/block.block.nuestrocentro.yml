@@ -1,0 +1,30 @@
+uuid: b910ca0d-3e92-4057-aeea-696ef1abc943
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2772fd51-cd3c-40b4-9ec8-e3d7d9416398'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: nuestrocentro
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2772fd51-cd3c-40b4-9ec8-e3d7d9416398'
+settings:
+  id: 'block_content:2772fd51-cd3c-40b4-9ec8-e3d7d9416398'
+  label: 'Nuestro centro'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
