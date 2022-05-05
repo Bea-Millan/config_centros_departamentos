@@ -1,9 +1,8 @@
-uuid: 7fd8177e-c27f-4f7f-b2ab-609a72314ace
+uuid: aedb7886-2a10-4c7d-bb42-7e51e8bf7505
 langcode: es
 status: true
 dependencies:
   module:
-    - system
     - unizar_modulos_configuracion
   theme:
     - unizar_centro
@@ -30,8 +29,4 @@ settings:
       url_mapa2: 0
     contacto_header: null
     id: null
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

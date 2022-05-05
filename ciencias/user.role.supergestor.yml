@@ -3,8 +3,13 @@ langcode: es
 status: true
 dependencies:
   config:
+    - node.type.empleo_y_practicas
     - node.type.estudio
+    - node.type.examenes
+    - node.type.examenes_por_departamentos
     - node.type.galeria
+    - node.type.horarios
+    - node.type.horarios_por_departamentos
     - node.type.noticia
     - node.type.page
     - node.type.slideshow
@@ -23,14 +28,17 @@ weight: 7
 is_admin: null
 permissions:
   - 'access all webform results'
-  - 'assign gestor_empleo_practicas role'
-  - 'assign gestor_horarios_examenes role'
   - 'assign supergestor role'
   - 'delete all webform submissions'
   - 'delete any departamentos content'
   - 'delete any elemento_parilla content'
+  - 'delete any empleo_y_practicas content'
   - 'delete any estudio content'
+  - 'delete any examenes content'
+  - 'delete any examenes_por_departamentos content'
   - 'delete any galeria content'
+  - 'delete any horarios content'
+  - 'delete any horarios_por_departamentos content'
   - 'delete any noticia content'
   - 'delete any page content'
   - 'delete any slideshow content'
@@ -42,8 +50,13 @@ permissions:
   - 'edit all webform submissions'
   - 'edit any departamentos content'
   - 'edit any elemento_parilla content'
+  - 'edit any empleo_y_practicas content'
   - 'edit any estudio content'
+  - 'edit any examenes content'
+  - 'edit any examenes_por_departamentos content'
   - 'edit any galeria content'
+  - 'edit any horarios content'
+  - 'edit any horarios_por_departamentos content'
   - 'edit any noticia content'
   - 'edit any page content'
   - 'edit any slideshow content'
