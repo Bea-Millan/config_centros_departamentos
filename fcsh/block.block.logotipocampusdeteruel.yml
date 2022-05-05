@@ -11,7 +11,7 @@ dependencies:
 id: logotipocampusdeteruel
 theme: unizar_centro
 region: columna_lateral
-weight: -7
+weight: -5
 provider: null
 plugin: 'block_content:fe64d0d5-decf-414b-95a6-e1a05a9991f2'
 settings:

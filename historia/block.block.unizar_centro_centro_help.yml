@@ -1,15 +1,15 @@
-uuid: 0bad320c-1aa0-4b84-9ed5-f89da2a27b0a
+uuid: f181ce85-6d23-4961-ad65-1ee823d05dd8
 langcode: es
 status: true
 dependencies:
   module:
     - help
   theme:
-    - unizar_departamento
+    - unizar_centro
 _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
-id: unizar_departamento_centro_help
-theme: unizar_departamento
+id: unizar_centro_centro_help
+theme: unizar_centro
 region: content
 weight: -8
 provider: null

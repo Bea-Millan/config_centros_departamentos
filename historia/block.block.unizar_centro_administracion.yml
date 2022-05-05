@@ -1,4 +1,4 @@
-uuid: ee0b0ab6-c1ac-49d4-a218-8a6799578e20
+uuid: 8463b4de-0bc1-4b9d-8315-02f5ee4992b0
 langcode: es
 status: true
 dependencies:
@@ -6,19 +6,19 @@ dependencies:
     - unizar_admin_menu
     - user
   theme:
-    - seven
+    - unizar_centro
 _core:
-  default_config_hash: v7G5vBmfBRYhYzQuH59G5enJAP_Djr13Sn3tLGnzlx0
-id: administracion_2
-theme: seven
-region: header
-weight: -4
+  default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
+id: unizar_centro_administracion
+theme: unizar_centro
+region: cabecera_sup
+weight: -10
 provider: null
 plugin: administracion
 settings:
   id: administracion
   label: Administración
-  label_display: visible
+  label_display: '0'
   provider: unizar_admin_menu
 visibility:
   user_role:

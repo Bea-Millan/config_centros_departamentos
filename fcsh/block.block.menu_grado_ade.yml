@@ -1,0 +1,36 @@
+uuid: 04aa8e92-42db-4ffb-8227-69cb753b4dce
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grado-ade
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menu_grado_ade
+theme: unizar_centro
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'menu_block:menu-grado-ade'
+settings:
+  id: 'menu_block:menu-grado-ade'
+  label: Menu_Grado_ADE
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grado-ade:'
+  suggestion: menu_grado_ade
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/ade*'

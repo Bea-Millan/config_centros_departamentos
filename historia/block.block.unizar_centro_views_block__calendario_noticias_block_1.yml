@@ -1,4 +1,4 @@
-uuid: f1671600-8770-47fa-84a1-a2f7b83d3f77
+uuid: c701b754-c093-4565-8e54-ab0e93638549
 langcode: es
 status: true
 dependencies:
@@ -17,7 +17,7 @@ _core:
 id: unizar_centro_views_block__calendario_noticias_block_1
 theme: unizar_centro
 region: columna_lateral
-weight: -9
+weight: -4
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

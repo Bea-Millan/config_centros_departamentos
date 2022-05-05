@@ -1,6 +1,6 @@
 uuid: a02110ec-8252-4724-9685-eba69436baeb
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: O7fWmNPhL_TuxjFTns_rlSh0ODn2YzDPfTXR1CPeXbw
 id: seven_messages
 theme: seven
-region: header
-weight: null
+region: highlighted
+weight: -4
 provider: null
 plugin: system_messages_block
 settings:

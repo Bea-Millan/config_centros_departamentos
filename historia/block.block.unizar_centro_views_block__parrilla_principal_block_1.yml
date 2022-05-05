@@ -1,4 +1,4 @@
-uuid: 849aad28-7d5e-4543-b4e2-b2eeba8affc7
+uuid: 22082880-5cc0-47fa-86f4-fef7ae6bb2fe
 langcode: es
 status: true
 dependencies:
@@ -9,14 +9,14 @@ dependencies:
     - system
     - views
   theme:
-    - unizar_departamento
+    - unizar_centro
 third_party_settings:
   block_class:
     classes: main-parrilla
 _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
-id: unizar_departamento_views_block__parrilla_principal_block_1
-theme: unizar_departamento
+id: unizar_centro_views_block__parrilla_principal_block_1
+theme: unizar_centro
 region: content
 weight: -4
 provider: null

@@ -1,0 +1,32 @@
+uuid: 44b18ca2-55da-4e33-83e0-6bb76cd803be
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_centro
+id: unizar_centro_bloquedatosdecontacto
+theme: unizar_centro
+region: cabecera_med_derecha
+weight: -6
+provider: null
+plugin: bloque_cabecera_contacto
+settings:
+  id: bloque_cabecera_contacto
+  label: 'Bloque datos de contacto'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  datoscentro:
+    dir_centro: 1
+    mail_centro: 1
+    telefono_centro: 1
+    url_mapa: 0
+    sede2:
+      dir_centro2: 0
+      mail_centro2: 0
+      telefono_centro2: 0
+      url_mapa2: 0
+    contacto_header: null
+    id: null
+visibility: {  }

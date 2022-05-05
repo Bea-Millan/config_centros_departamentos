@@ -1,13 +1,13 @@
-uuid: 80ab9021-f2cd-40c8-a339-48a3bb4433f4
+uuid: ea6291f3-d994-4180-98c9-ae9738e8edf0
 langcode: es
 status: true
 dependencies:
   theme:
-    - unizar_departamento
+    - unizar_centro
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
-id: unizar_departamento_pestanas
-theme: unizar_departamento
+id: unizar_centro_pestanas
+theme: unizar_centro
 region: content
 weight: -7
 provider: null

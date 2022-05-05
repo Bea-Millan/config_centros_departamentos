@@ -11,7 +11,7 @@ dependencies:
 id: elcentro
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: -4
 provider: null
 plugin: 'block_content:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
 settings:

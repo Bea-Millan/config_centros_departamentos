@@ -1,0 +1,36 @@
+uuid: 2486ebcb-3ee0-48a2-974a-18f51a812b50
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grado-primaria
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menu_grado_primaria
+theme: unizar_centro
+region: columna_lateral
+weight: -15
+provider: null
+plugin: 'menu_block:menu-grado-primaria'
+settings:
+  id: 'menu_block:menu-grado-primaria'
+  label: Menu_Grado_Primaria
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grado-primaria:'
+  suggestion: menu_grado_primaria
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/primaria*'

@@ -15,7 +15,7 @@ third_party_settings:
 id: botones_estudiantes_pdi_pas
 theme: unizar_centro
 region: columna_lateral
-weight: -12
+weight: -10
 provider: null
 plugin: 'block_content:88d6a23c-99a1-41e5-8a7f-22dd110fbc2b'
 settings:

@@ -1,9 +1,9 @@
-uuid: a47117f5-eefc-43a8-9544-0512fa9635c5
+uuid: 7662a8c9-1f1d-452e-aeed-21dd3b354c32
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.te_interesa
+    - views.view.noticias
   module:
     - block_class
     - system
@@ -12,17 +12,17 @@ dependencies:
     - unizar_centro
 third_party_settings:
   block_class:
-    classes: 'te-interesa ojo'
+    classes: noticias
 _core:
-  default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
-id: unizar_centro_views_block__te_interesa_block_1
+  default_config_hash: NZS2fm6t-gB39Tye2trEM52KnZ59nQN7iqUyUfLLbyk
+id: unizar_centro_views_block__noticias_block_1
 theme: unizar_centro
-region: columna_lateral
-weight: -6
+region: content
+weight: -5
 provider: null
-plugin: 'views_block:te_interesa-block_1'
+plugin: 'views_block:noticias-block_1'
 settings:
-  id: 'views_block:te_interesa-block_1'
+  id: 'views_block:noticias-block_1'
   label: ''
   label_display: visible
   provider: views
@@ -32,4 +32,5 @@ visibility:
   request_path:
     id: request_path
     negate: false
+    context_mapping: {  }
     pages: '<front>'
