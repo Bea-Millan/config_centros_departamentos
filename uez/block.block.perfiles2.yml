@@ -1,0 +1,34 @@
+uuid: 19c7773f-fa91-4582-8362-b4885017db70
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a389021a-f9d4-4b04-87b7-b254d4e0a2bd'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: perfiles
+id: perfiles2
+theme: unizar_centro
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:a389021a-f9d4-4b04-87b7-b254d4e0a2bd'
+settings:
+  id: 'block_content:a389021a-f9d4-4b04-87b7-b254d4e0a2bd'
+  label: 'Perfiles 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
