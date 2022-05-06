@@ -1,0 +1,181 @@
+uuid: aa5f2486-cdc0-4f29-a3aa-0e4eb962d142
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 97
+template: false
+archive: false
+id: webform_360
+title: 'Formulario Preinscripción'
+description: null
+category: null
+elements: |-
+  datos_del_alumno:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">1.-DATOS DEL ALUMNO</span></h3>'
+    '#title': 'DATOS DEL ALUMNO'
+  nombre_completo:
+    '#type': textfield
+    '#title': 'Nombre Completo'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo Electrónico'
+  telefono:
+    '#type': textfield
+    '#title': Teléfono
+    '#required': true
+  sede_en_la_que_esta_matriculado:
+    '#type': select
+    '#options':
+      1: Alagón
+      2: Alcañiz
+      3: Barbastro
+      4: Binéfar
+      5: Calatayud
+      6: 'Ejea de los Caballeros'
+      7: Fraga
+      8: Huesca
+      9: Jaca
+      10: Monzón
+      11: Sabiñánigo
+      12: Teruel
+      13: Utebo
+      14: Zaragoza
+    '#title': 'Sede en la que está matriculado'
+    '#required': true
+  datos_del_alojamiento:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">2.-DATOS DEL ALOJAMIENTO</span></h3>'
+    '#title': 'DATOS DEL ALOJAMIENTO'
+  alojamiento:
+    '#type': select
+    '#options':
+      1: 'SÍ, deseo alojamiento concertado'
+      2: 'NO deseo alojamiento concertado'
+    '#title': '¿Desea alojamiento concertado?'
+    '#required': true
+  habitacion_doble:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">&nbsp; &nbsp;Habitación Doble</span></h3>'
+    '#title': 'Habitación Doble'
+  1habitacion_doble:
+    '#type': select
+    '#options':
+      1: 'Hotel "Ciudad de Ejea" ***'
+      2: 'Hotel "Salvevir" ***'
+      3: 'Hotel "A Corona del Reino" ***'
+    '#title': '1ª Preferencia: Habitación Doble'
+  2habitacion_doble:
+    '#type': select
+    '#options':
+      1: 'Hotel "Ciudad de Ejea" ***'
+      2: 'Hotel "Salvevir" ***'
+      3: 'Hotel "A Corona del Reino" ***'
+    '#title': '2ª Preferencia: Habitación Doble'
+  3habitacion_doble:
+    '#type': select
+    '#options':
+      1: 'Hotel "Ciudad de Ejea" ***'
+      2: 'Hotel "Salvevir" ***'
+      3: 'Hotel "A Corona del Reino" ***'
+    '#title': '3ª Preferencia: Habitación Doble'
+  nombre_acompanant:
+    '#type': textfield
+    '#title': 'Nombre Acompañante'
+  habitacion_triple:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">&nbsp; &nbsp;Habitación Triple</span></h3>'
+    '#title': 'Habitación Triple'
+  1habitacion_triple:
+    '#type': select
+    '#options':
+      1: 'Hotel "Ciudad de Ejea" ***'
+      2: 'Hotel "A Corona del Reino" ***'
+    '#title': '1ª Preferencia: Habitación Triple'
+  2habitacion_triple:
+    '#type': select
+    '#options':
+      1: 'Hotel "Ciudad de Ejea" ***'
+      2: 'Hotel "A Corona del Reino" ***'
+    '#title': '2ª Preferencia: Habitación Triple'
+  nombre_acompanante:
+    '#type': textfield
+    '#title': 'Nombre Acompañantes'
+  quiere_anadir_algun_comentario:
+    '#type': textarea
+    '#title': '¿Quiere añadir algún comentario?'
+  acepto:
+    '#type': select
+    '#options':
+      1: 'Acepto y firmo'
+    '#title': 'ACEPTO las condiciones establecidas por la organización de las jornadas'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: uez@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Preinscripción - V Jornadas Ejea'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

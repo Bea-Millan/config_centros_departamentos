@@ -1,0 +1,23 @@
+uuid: 2b63b185-6c68-49fa-9d6e-d44683b343f2
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site map'
+  - 'download original image'
+  - 'search content'
+  - 'use text format filtered_html'

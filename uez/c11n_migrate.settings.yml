@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: we5P7xvQKCpU5fOpnA9PkvLlLc940PudpUMiWAJpllE
+plugin:
+  host: uez.unizar.es
+  url_host: sites/uez
+langcode: es

@@ -1,0 +1,26 @@
+_core:
+  default_config_hash: akfiFIfUTZLFWGY0cMYCkeH03e9NANplNUs-NKHPLcA
+logo_path: 'public://universidad_experiencia_rgb.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: '000'
+nombre_centro: 'Universidad de la Experiencia de Zaragoza'
+dir_centro: 'Pedro Cerbuna, 12'
+telefono_centro: '876 553 603'
+mail_centro: uez@unizar.es
+url_mapa: /localizacion
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '6444'
+imagen_segundas: '6445'
+facebook: 'https://www.facebook.com/pages/Universidad-de-la-Experiencia-Zaragoza/620410338064758 '
+twitter: ''
+youtube: ''
+linkedin: ''
+instagram: ''
+soundcloud: ''
+meta_desc: 'Universidad de la Experiencia Zaragoza. Programa básico. Curso actualización. Sede. Subsede. Horarios. Apuntes para descargar. Amuez. Tablón de anuncios'
+langcode: es

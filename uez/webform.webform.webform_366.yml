@@ -1,0 +1,156 @@
+uuid: 7077b3f2-9fc2-422f-8cae-add80f95b1d6
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 97
+template: false
+archive: false
+id: webform_366
+title: 'Restaurantes V Jornadas'
+description: null
+category: null
+elements: |-
+  datos_del_aumno:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">1.-DATOS DEL ALUMNO</span></h3>'
+    '#title': 'Datos del Aumno'
+  nombre_completo:
+    '#type': textfield
+    '#title': 'Nombre Completo'
+    '#required': true
+  anadir_algun_comentario:
+    '#type': textfield
+    '#title': 'Añadir algún comentario: (Soy celiaco, vegetariano,...)'
+  restaurantes:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">2.-ELECCIÓN PREVIA DE LOS MENÚS&nbsp;</span></h3>'
+    '#title': 'Elección Restaurantes'
+  salvador:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #800000;">Restaurante El Salvador</span></h3>'
+    '#title': 'El Salvador'
+  comida_dia_19_de_abril:
+    '#type': select
+    '#options':
+      1: 'Alumno de Ejea (No elijo menú)'
+      2: 'Garbanzos estofados y Bacalao a la riojana'
+      3: 'Garbanzos estofados y Pollo asado al horno con patatas a lo pobre'
+    '#title': 'Comida día 19 de abril. Selección de menú'
+    '#required': true
+  cena_dia_20_de_abril:
+    '#type': select
+    '#options':
+      1: 'Alumno de Ejea (No elijo menú)'
+      2: 'Menestra de verduras de la huerta con longaniza de Aragón y Carrillera de cerdo en salsa de champiñón'
+      3: 'Menestra de verduras de la huerta con longaniza de Aragón y Merluza en salsa con salteado de setas'
+    '#title': 'Cena día 19 de abril. Selección de menú'
+    '#required': true
+  cena_dia_21_de_abril:
+    '#type': select
+    '#options':
+      1: 'Alumno de Ejea (No elijo menú)'
+      2: 'Ensalada mixta y consomé, y Ternera estofada a la jardinera'
+      3: 'Ensalada mixta y consomé, y Merluza en salsa con salteado de setas'
+    '#title': 'Cena día 20 de abril. Selección de menú'
+    '#required': true
+  uncastello:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #800000;">Restaurante Uncastello</span></h3>'
+    '#title': Uncastello
+  comida_dia_20_de_abril:
+    '#type': select
+    '#options':
+      1: 'Entrantes y Bacalao ajoarriero'
+      2: 'Entrantes y Ternasco a la chilindrón'
+    '#title': 'Comida día 20 de abril. Selección de menú'
+    '#required': true
+  bolaso:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #800000;">Restaurante Bolaso</span></h3>'
+    '#title': Bolaso
+  comida_dia_21_de_abril:
+    '#type': select
+    '#options':
+      1: 'Paella mixta y Muslo de pollo asado con patatas'
+      2: 'Paella mixta y Gallo con salsa de marisco'
+    '#title': 'Comida día 21 de abril. Selección de menú'
+    '#required': true
+  _______________________________________:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>______________________________________________________________</p>'
+    '#title': _______________________________________
+  acepto_las_condiciones_establecidas_por_la_organizacion_de_las_jornadas:
+    '#type': select
+    '#options':
+      1: 'Acepto y Firmo'
+    '#title': 'ACEPTO las condiciones establecidas por la organización de las jornadas'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: uez@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

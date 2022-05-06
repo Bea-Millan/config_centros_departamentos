@@ -1,0 +1,182 @@
+uuid: 1de7b573-56c9-4d67-bbdd-6c4a30004955
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 97
+template: false
+archive: false
+id: webform_453
+title: 'Solicitud de asignaturas - CA 2021/2022'
+description: null
+category: null
+elements: |-
+  datos_del_alumno:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">DATOS DEL ALUMNO</span></h3>'
+    '#title': 'Datos del alumno'
+  dni_:
+    '#type': textfield
+    '#title': 'DNI (Escriba con letra el DNI sin espacios ni guiones). Este documento podrá exigirse más adelante'
+    '#required': true
+  nombre_completo:
+    '#type': textfield
+    '#title': 'Nombre completo'
+    '#required': true
+  correo_electronico_en_letras_minusculas:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico (en letras minúsculas)'
+    '#required': true
+  movil_y_o_telefono_de_contacto:
+    '#type': textfield
+    '#title': 'Móvil y/o teléfono de contacto'
+    '#required': true
+  sede_de_la_uez:
+    '#type': select
+    '#options':
+      3: '. Teruel'
+      1: '. Zaragoza'
+      2: '. Huesca'
+    '#title': 'Sede de la UEZ'
+    '#required': true
+  codigos_y_denominacion_de_asignaturas_solicitadas:
+    '#type': textfield
+    '#title': 'Códigos, denominación y horario (Mañana/Tarde) de las asignaturas solicitadas'
+  proteccion_de_datos:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p style="text-align: justify;">................................................................................................................................................................................</p><p style="text-align: justify;">Conforme a lo dispuesto en la legislación vigente en materia de protección de datos de carácter personal (Reglamento (UE) 20016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasarán a ser tratados, como responsable, por la Universidad de Zaragoza con la finalidad de tramitar la gestión académica y administrativa de las personas que se matriculen en los programas formativos para personas mayores de la Universidad (Universidad de la Experiencia) así como su participación en actividades y servicios universitarios.</p><p style="text-align: justify;">Puede ejercitar sus&nbsp;<span style="text-decoration: underline;">derechos de acceso, rectificación, limitación, oposición o portabilidad</span>&nbsp;ante el Gerente de la Universidad de Zaragoza (Edificio Paraninfo 1.ª planta, Plaza de Basilio Paraíso n.º 4, 50005-Zaragoza) señalando concretamente la causa de su solicitud y acompañando copia de su documento acreditativo de identidad. La solicitud podrá hacerse mediante escrito en formato papel o por medios electrónicos.</p><p style="text-align: justify;">En caso de no haber obtenido satisfacción en el ejercicio de sus derechos, puede dirigirse a la Delegada de Protección de Datos de la Universidad (dpd@unizar.es Tfno. 876 55 30 13) o en reclamación a la Agencia Española de Protección de Datos a través de los formularios que esa entidad tiene habilitados al efecto y que son accesibles desde su página web:&nbsp;<a href="https://sedeagpd.gob.es/">https://sedeagpd.gob.es</a>.</p><p style="text-align: justify;">La Universidad de Zaragoza cuenta con una página en la que puede consultar toda la información al respecto y a la que puede acceder desde el siguiente enlace:&nbsp;<a href="https://protecciondatos.unizar.es/">https://protecciondatos.unizar.es/</a></p><p style="text-align: justify;">Le recordamos que en cualquier momento puede rectificar estas autorizaciones acudiendo al siguiente enlace:</p><p style="text-align: justify;">https://identidad.unizar.es</p><p style="font-size: 13.008px;">................................................................................................................................................................................</p>'
+    '#title': 'Protección de datos'
+  codigos_y_denominacion_de_asignaturas_solicitadas_texto_ampliado:
+    '#type': textarea
+    '#title': 'Códigos, denominación y horario (Mañana/Tarde) de las asignaturas solicitadas (texto ampliado)'
+  acepto_las_condiciones_establecidas_por_la_direccion_de_la_uez_para_la_admision_de_alumnos:
+    '#type': select
+    '#options':
+      1: 'Acepto y firmo'
+    '#title': 'ACEPTO las condiciones establecidas por la dirección de la UEZ para la admisión de alumnos'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<h2 style="text-align: justify;"><span style="color: #ff0000;"><img src="/sites/uez.unizar.es/files/users/pjulian/Otros/images.jpeg" alt="OK" title="OK" width="219" height="230" style="border: 1px solid black; float: left; margin-left: 10px; margin-right: 10px;" /></span></h2><h3 style="text-align: justify;"><span style="color: #ff0000;"><br class="Apple-interchange-newline" />FORMULARIO DE SOLICITUD DE ASIGNATURAS</span></h3><h3 style="text-align: justify;"><span style="color: #ff0000;">ENVIADO CORRECTAMENTE</span></h3><p style="font-size: 13.008px;"><strong style="font-size: 13.008px;">Revise a continuación la bandeja de entrada de su correo electrónico</strong></p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p><p style="font-size: 13.008px;">&nbsp;</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: provectaetas@gmail.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_en_letras_minusculas:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Estimado/a alumno/a,
+
+        Más abajo, copiamos los datos con los que ha rellenado el formulario de solicitud de asignaturas para que sirva, a su vez, de justificante de presentación.
+
+        Antes del mes de septiembre recibirá un email en esta dirección con instrucciones para llevar a cabo la matrícula.
+
+        IMPORTANTE: La recepción de este correo electrónico no conlleva derecho de matrícula.
+
+        Un saludo
+
+        -- 
+        Universidad de la Experiencia de Zaragoza
+        Centro de Innovación, Formación e Investigación en Ciencias de la Educación
+        Campus Plaza San Francisco
+        Pedro Cerbuna, 12,  50009 ZARAGOZA
+        876-553603/843603
+        uez.unizar.es
+
+        Submitted on [webform_submission:completed_date:long]
+        Submitted by user: [webform_submission:user]
+        Submitted values are:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

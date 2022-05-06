@@ -1,0 +1,140 @@
+uuid: 12d93809-8603-4fa0-b665-ada291537b1e
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 97
+template: false
+archive: false
+id: webform_374
+title: 'Formulario Faltas de Asistencia'
+description: null
+category: null
+elements: |-
+  datos_del_alumno:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">1.-DATOS DEL ALUMNO<br /></span></h3>'
+    '#title': 'Datos del Alumno'
+  apellidosnombre:
+    '#type': textfield
+    '#title': 'Apellidos y Nombre'
+    '#required': true
+  nip:
+    '#type': textfield
+    '#size': 6
+    '#title': NIP
+    '#required': true
+  curso_actual:
+    '#type': select
+    '#options':
+      1: ' Zaragoza - 1.º A'
+      2: ' Zaragoza - 1.º B'
+      3: ' Zaragoza - 2.º A'
+      4: ' Zaragoza - 2.º B'
+      5: ' Zaragoza - 3.º A'
+      6: ' Zaragoza - 3.º B'
+      7: ' Zaragoza - 4.º A'
+      8: ' Zaragoza - 4.º B'
+      9: ' Zaragoza - 5.º A'
+      10: ' Zaragoza - 5.º B'
+      11: ' Zaragoza - 6.º A'
+      12: ' Zaragoza - 6.º B'
+      13: ' Zaragoza - 7.º'
+      14: ' Zaragoza - 8.º'
+      15: ' Alagón'
+      16: ' Alcañiz'
+      17: ' Barbastro'
+      18: ' Binéfar'
+      19: ' Borja'
+      20: ' Calatayud'
+      21: ' Caspe'
+      22: ' Ejea de los Caballeros'
+      23: ' Épila'
+      24: ' Fraga'
+      25: ' Huesca - Grupo A'
+      26: ' Huesca - Grupo B'
+      27: ' Jaca'
+      28: ' La Puebla de Alfindén'
+      29: ' Monzón'
+      30: ' Sabiñánigo'
+      31: ' Tarazona'
+      32: ' Teruel'
+      33: ' Utebo'
+    '#title': Grupo
+    '#required': true
+  causas_y_dias:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<h3><span style="color: #0000ff;">2.-DÍAS Y CAUSAS DE LA FALTA DE ASISTENCIA<br /></span></h3>'
+    '#title': 'Causas y Días'
+  causas:
+    '#type': textfield
+    '#title': Causas
+    '#required': true
+  fecha:
+    '#type': textfield
+    '#title': 'Días lectivos ausente (indicar el mes)'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<h2 style="text-align: justify;">&nbsp;</h2><h2 style="text-align: justify;"><span style="color: #ff0000;"><strong><img src="/sites/uez.unizar.es/files/users/pjulian/Otros/images.jpeg" alt="OK" title="OK" width="219" height="230" style="border: 1px solid black; float: left; margin-left: 10px; margin-right: 10px;" /></strong></span></h2><h2 style="text-align: justify;">&nbsp;</h2><h2 style="text-align: justify;"><span style="color: #ff0000;"><strong>ENVIADO CORRECTAMENTE</strong></span></h2>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: provectaetas@gmail.com
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Faltas Asistencia'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
