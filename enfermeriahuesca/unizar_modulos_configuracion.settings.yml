@@ -6,9 +6,9 @@ favicon_path: ''
 favicon_upload: ''
 id_centro: '127'
 nombre_centro: 'Facultad de Ciencias de la Salud'
-dir_centro: 'C/ Domingo Miral s/n, 50009 - Zaragoza'
-telefono_centro: '+34 976 761 751'
-mail_centro: sfcs@unizar.es
+dir_centro: 'Avda. Martínez de Velasco, 36  22004 Huesca'
+telefono_centro: '+34 974 210 288'
+mail_centro: admenfeh@unizar.es
 url_mapa: /contacto
 dir_centro2: ''
 telefono_centro2: ''
@@ -20,9 +20,11 @@ facebook: ''
 twitter: ''
 youtube: ''
 linkedin: ''
-instagram: 'https://www.instagram.com/fcienciassalud_unizar/'
+instagram: ''
 blog: ''
 blog_class: ''
 soundcloud: ''
 meta_desc: 'Grado en Enfermería, Grado en Fisioterapia y Grado en Terapia Ocupacional. Másteres Oficiales. Facultad de Ciencias de la Salud. Universidad de Zaragoza'
 langcode: es
+rrs_header: 0
+id: ''

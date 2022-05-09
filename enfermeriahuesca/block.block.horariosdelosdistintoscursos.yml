@@ -16,7 +16,7 @@ provider: null
 plugin: 'block_content:9dfab54e-0cd6-4e43-9e8b-77f2339b3e4b'
 settings:
   id: 'block_content:9dfab54e-0cd6-4e43-9e8b-77f2339b3e4b'
-  label: 'Horarios de los distintos cursos'
+  label: 'Horarios curso 2021-2022'
   label_display: visible
   provider: block_content
   status: true

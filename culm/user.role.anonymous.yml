@@ -18,6 +18,5 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site map'
-  - 'diff view changes'
   - 'search content'
   - 'use text format filtered_html'
