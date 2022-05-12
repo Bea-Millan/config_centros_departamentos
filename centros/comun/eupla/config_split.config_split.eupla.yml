@@ -1,0 +1,40 @@
+uuid: fc495348-6189-47a7-b6a3-d0a2836bd4d1
+langcode: es
+status: true
+dependencies: {  }
+id: eupla
+label: eupla
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/eupla
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.eupla
+  - system.site
+  - system.theme
+  - asset_injector.css.eupla_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

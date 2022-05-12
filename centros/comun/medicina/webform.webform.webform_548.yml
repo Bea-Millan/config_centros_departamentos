@@ -1,0 +1,59 @@
+uuid: dade16d7-d8dc-4dd3-900e-62aa2465ea3f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 245
+template: false
+archive: false
+id: webform_548
+title: 'Encuesta de satisfacción'
+description: null
+category: null
+elements: |-
+  te_ha_resultado_util_esta_informacion:
+    '#type': select
+    '#options': {  }
+    1: '1'
+    2: 2
+    3: 3
+    4: 4
+    5: 5
+    '#min': '1'
+    '#max': '5'
+    '#unique': false
+    '#title': '¿Te ha resultado útil esta información?'
+  lo_recomendarias:
+    '#type': select
+    '#options':
+      Sí: Sí
+      'No': 'No'
+    '#title': '¿Lo recomendarías?'
+  observaciones_comentarios:
+    '#type': textarea
+    '#title': Observaciones/Comentarios
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,399 @@
+uuid: 72044a8a-88d0-4711-848d-186789b858df
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_758
+title: 'ACT_TRANSVERSAL encuesta'
+description: null
+category: null
+elements: |-
+  fieldset_indique_la_actividad_transversal:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Actividad transversal'
+    '#description': 'Por favor, seleccione una actividad transversal en el desplegable'
+    fieldset_act_trans_3:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Listado de actividades transversales'
+      curso_academico_4:
+        '#type': select
+        '#options':
+          1: 2021/22
+          2: 2022/23
+          3: 2023/24
+        '#title': 'Curso académico'
+        '#required': true
+      lista_acti_trans_4:
+        '#type': select
+        '#options':
+          1: 'ACADEMIC ENGLISH'
+          10: 'ASPECTOS ÉTICOS Y NORMATIVOS EN LA INVESTIGACIÓN CON SERES HUMANOS. PAPEL DE LOS COMITÉS'
+          12: 'CAMBIO GLOBAL: INVESTIGANDO DESDE EL EXTRANJERO'
+          2: 'CÓMO COMUNICO LOS RESULTADOS DE MI INVESTIGACIÓN'
+          6: 'CÓMO DESARROLLAR UNA CARRERA PROFESIONAL'
+          26: 'CONSTRUCCIÓN DEL DISCURSO, FUENTES Y REFERENCIAS'
+          16: 'CURSO DE INTRODUCCIÓN A R'
+          29: 'EL LENGUAJE INCLUSIVO EN LA INVESTIGACIÓN CIENTÍFICA'
+          8: 'EMPRENDIMIENTO, COMUNICACIÓN Y LIDERAZGO EMOCIONAL CONSCIENTE'
+          28: 'ENTRENAMIENTO EN HABILIDADES DE REGULACIÓN EMOCIONAL PARA DOCTORANDAS/OS'
+          9: 'ÉTICA EN LA INVESTIGACIÓN CIENTÍFICA'
+          5: 'GESTIÓN DE REFERENCIAS BIBLIOGRÁFICAS CON ENDNOTE Y SU APLICACIÓN A LA REDACCIÓN DE ARTÍCULOS CIENTÍFICOS'
+          22: 'HERRAMIENTAS PARA LA ESCRITURA CIENTÍFICA'
+          20: 'IMPUTACIÓN DE DATOS Y ANÁLISIS DE MEDIACIÓN'
+          7: 'INTELIGENCIA EMOCIONAL, PSICOLOGÍA POSITIVA, COACHING DE EQUIPOS,NEUROCIENCIA Y COMUNICACIÓN EFECTIVA PRE Y POST DOCTORALES'
+          23: 'INTRODUCCIÓN A LA PROGRAMACIÓN CIENTÍFICA CON PYTHON'
+          15: 'INTRODUCCIÓN A MATLAB'
+          31: 'INTRODUCCIÓN A R'
+          24: 'INTRODUCCIÓN AL PROCESAMIENTO DEL LENGUAJE NATURAL'
+          14: 'INTRODUCCIÓN AL TRATAMIENTO Y REPRESENTACIÓN DE DATOS CON ORIGIN PRO PARA PUBLICACIONES CIENTÍFICAS'
+          33: 'INTRODUCCIÓN A LAS TÉCNICAS DE REPRESENTACIÓN DE CURVAS Y SUPERFICIES NURBS CON RHINOCEROS'
+          34: 'INTRODUCCIÓN BÁSICA A MAXQDA - SOFTWARE DE ANÁLISIS CUALITATIVO'
+          35: 'INTRODUCCIÓN AVANZADA A MAXQDA - SOFTWARE DE ANÁLISIS CUALITATIVO'
+          19: 'METAANÁLISIS EN CIENCIAS DE LA SALUD'
+          27: 'MINDFULNESS PARA MEJORAR EL BIENESTAR PERSONAL Y AFRONTAR EL ESTRÉS EN ESTUDIANTES DE DOCTORADO'
+          25: 'MODELADO DE NICHO Y DISTRIBUCIÓN DE ESPECIES EN R'
+          18: 'MODELADO ESPACIO-TEMPORAL DE PROCESOS GEOAMBIENTALES EN R'
+          11: 'NEUROCIENCIAS Y SALUD MENTAL'
+          32: 'PLANIFICACIÓN, DISEÑO, PREPARACIÓN Y PUBLICACIÓN DE UNA REVISIÓN SISTEMÁTICA Y META-ANÁLISIS'
+          30: 'PROPIEDAD INTELECTUAL Y DERECHO DE AUTOR'
+          4: 'RECURSOS Y FUENTES DE INFORMACIÓN ACADÉMICA Y CIENTÍFICA. USO, GESTIÓN Y EVALUACIÓN'
+          3: 'TALLER DE ESCRITURA ACADÉMICA'
+          21: 'TRATAMIENTO DE DATOS CON LA HOJA DE CÁLCULO EXCEL'
+          17: 'TRATAMIENTO Y ANÁLISIS EXPLORATORIO DE DATOS ESPACIALES CON R'
+        '#title': 'Lista de actividades'
+        '#required': true
+  fieldset_plan_de_estudios:
+    '#type': fieldset
+    '#open': true
+    '#title': '1. PLAN DE ESTUDIOS'
+    '#description': 'Por favor, conteste las siguientes preguntas seleccionando una opción en el desplegable'
+    valor_1_1_28:
+      '#type': select
+      '#options':
+        1: '1. no fueron definidos'
+        2: '2. de manera vaga'
+        3: '3. suficientemente'
+        4: '4. con bastante precisión'
+        5: '5. con gran precisión'
+      '#title': '1.1. Los objetivos y contenidos del Curso/Seminario han sido definidos al principio del mismo: '
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_1_2_28:
+      '#type': select
+      '#options':
+        1: '1. nada'
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '1.2. ¿En qué manera se han cumplido los objetivos?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_1_3_28:
+      '#type': select
+      '#options':
+        1: '1. muy escasa'
+        2: '2. escasa'
+        3: '3. adecuada'
+        4: '4. amplia'
+        5: '5. muy amplia'
+      '#title': '1.3. La extensión del programa le ha parecido:'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_1_4_28:
+      '#type': select
+      '#options':
+        1: '1. nada útiles'
+        2: '2. poco útiles'
+        3: '3. adecuadas'
+        4: '4. bastante útiles'
+        5: '5. muy útiles'
+      '#title': '1.4. Valore la utilidad de las prácticas realizadas, si las ha habido:'
+      '#description': 'Valoración de 1 a 5'
+  fieldset_organ:
+    '#type': fieldset
+    '#open': true
+    '#title': '2. ORGANIZACIÓN'
+    '#description': 'Por favor, conteste las siguientes preguntas seleccionando una opción en el desplegable'
+    valor_2_1_38:
+      '#type': select
+      '#options':
+        1: '1. muy mala'
+        2: '2. mala'
+        3: '3. correcta'
+        4: '4. buena'
+        5: '5. muy buena'
+      '#title': '2.1. Considera que la organización del Curso/Seminario ha sido:'
+      '#description': '(valoración de 1 a 5)'
+      '#required': true
+    valor_2_2_38:
+      '#type': select
+      '#options':
+        1: '1. muy mala'
+        2: '2. mala'
+        3: '3. correcta'
+        4: '4. buena'
+        5: '5. muy buena'
+      '#title': '2.2. La dirección del Curso/Seminario le ha parecido:'
+      '#description': '(valoración de 1 a 5)'
+      '#required': true
+    valor_2_3_38:
+      '#type': select
+      '#options':
+        1: '1. nada'
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '2.3. El profesorado ¿es eficaz a la hora de transmitir conceptos y promover el aprendizaje?'
+      '#description': '(valoración de 1 a 5)'
+      '#required': true
+    valor_2_4_38:
+      '#type': select
+      '#options':
+        1: '1. nada'
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '2.4. El profesorado ¿muestra interés y entusiasmo por la docencia?'
+      '#description': '(valoración de 1 a 5)'
+      '#required': true
+    valor_2_5_38:
+      '#type': select
+      '#options':
+        1: '1. muy escasa'
+        2: '2. escasa'
+        3: '3. adecuada'
+        4: '4. amplia'
+        5: '5. muy amplia'
+      '#title': '2.5. La documentación y material suministrado ha sido: '
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+  fieldset_evaluacion:
+    '#type': fieldset
+    '#open': true
+    '#title': '3. SISTEMA DE EVALUACIÓN'
+    '#description': 'Por favor, conteste las siguientes preguntas seleccionando una opción en el desplegable'
+    valor_3_1_54:
+      '#type': select
+      '#options':
+        1: 1.nada
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+        6: '6. no procede'
+      '#title': '3.1. ¿Los criterios de evaluación del Curso/Seminario han sido transmitidos al inicio del mismo?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_3_2_54:
+      '#type': select
+      '#options':
+        1: '1. no fueron definidos'
+        2: '2. de manera vaga'
+        3: '3. suficientemente'
+        4: '4. con bastante precisión'
+        5: '5. con gran precisión'
+        6: '6. no procede'
+      '#title': '3.2. Los criterios de evaluación del Curso/Seminario han sido definidos:'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_3_3_54:
+      '#type': select
+      '#options':
+        1: '1. muy deficiente'
+        2: '2. deficiente'
+        3: '3. regular'
+        4: '4. buena'
+        5: '5. excelente'
+        6: '6. no procede'
+      '#title': '3.3. El nivel exigido en la evaluación, con respecto a las materias tratadas, ha sido:'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_3_4_54:
+      '#type': select
+      '#options':
+        1: ' SI'
+        2: ' NO'
+        3: ' no procede'
+      '#title': '3.4. ¿Ha existido un sistema de evaluación continuada para contrastar en cualquier momento el proceso de aprendizaje gracias a un sistema de feedback permanente?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+  fieldset_satisfaccion:
+    '#type': fieldset
+    '#open': true
+    '#title': '4. GRADO DE SATISFACCIÓN'
+    '#description': 'Por favor, conteste las siguientes preguntas seleccionando una opción en el desplegable'
+    valor_4_1_59:
+      '#type': select
+      '#options':
+        1: 1.nada
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '4.1. El Curso/Seminario realizado ha respondido a sus expectativas:'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_4_2_59:
+      '#type': select
+      '#options':
+        1: 1.nada
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '4.2. Considera que la formación recibida puede ser de utilidad para su futuro profesional:'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_4_3_59:
+      '#type': select
+      '#options':
+        1: 1.nada
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '4.3. La relación calidad/precio del Curso/Seminario¿le parece proporcionada?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_4_4_59:
+      '#type': select
+      '#options':
+        1: ' SI'
+        2: ' NO'
+      '#title': '4.4. ¿Recomendaría a otras personas la realización de este Curso/Seminario?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+  fieldset_valoracion:
+    '#type': fieldset
+    '#open': true
+    '#title': '5. VALORACIÓN GLOBAL'
+    '#description': 'Por favor, conteste las siguientes preguntas seleccionando una opción en el desplegable'
+    valor_5_1_64:
+      '#type': select
+      '#options':
+        1: '1.muy poco'
+        2: '2. poco'
+        3: '3. suficiente'
+        4: '4. bastante'
+        5: '5. mucho'
+      '#title': '5.1. Interés del Curso/Seminario'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_5_2_64:
+      '#type': select
+      '#options':
+        1: '1. muy poca'
+        2: '2. poca'
+        3: '3. suficiente'
+        4: '4. bastante'
+        5: '5. mucha'
+      '#title': '5.2. Dificultad'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_5_3_64:
+      '#type': select
+      '#options':
+        1: '1. nada'
+        2: '2. poco'
+        3: '3. bastante'
+        4: '4. mucho'
+        5: '5. totalmente'
+      '#title': '5.3. ¿Es adecuado el enfoque didáctico/pedagógico del Curso/Seminario?'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+    valor_5_4_64:
+      '#type': select
+      '#options':
+        1: ' 1'
+        2: ' 2'
+        3: ' 3'
+        4: ' 4'
+        5: '5'
+      '#title': '5.4. Califique globalmente el Curso/Seminario realizado (siendo 5 la máxima puntuación)'
+      '#description': 'Valoración de 1 a 5'
+      '#required': true
+  observaciones2:
+    '#type': textarea
+    '#title': '6. Observaciones'
+  rama_conocimiento:
+    '#type': select
+    '#options':
+      1: ' Artes y Humanidades'
+      2: ' Ciencias'
+      3: ' Ciencias de la Salud'
+      4: ' Ciencias Sociales y Jurídicas'
+      5: ' Ingeniería y Arquitectura'
+    '#title': 'Rama de conocimiento (con fines estadísticos)'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su formulario ha sido enviado. Muchas gracias.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: palomanv@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Nueva Ficha de Director/Tutor'
+      body: |-
+        Submitted on [webform_submission:completed_date:long]
+        Submitted by user: [webform_submission:user]
+        Se ha cumplimentado una nueva ficha de DIrector/Tutor de tesis
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

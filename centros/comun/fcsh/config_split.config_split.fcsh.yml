@@ -1,0 +1,40 @@
+uuid: 2c49a96d-a15d-43e0-bedc-5e7f7a79aa57
+langcode: es
+status: true
+dependencies: {  }
+id: fcsh
+label: fcsh
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/fcsh
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.fcsh
+  - system.site
+  - system.theme
+  - asset_injector.css.fcsh_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

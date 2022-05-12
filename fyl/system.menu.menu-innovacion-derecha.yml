@@ -1,8 +1,0 @@
-uuid: 71e47fd2-a298-4b2f-9042-fc111fa0da75
-langcode: es
-status: true
-dependencies: {  }
-id: menu-innovacion-derecha
-label: 'Innovación Docente'
-description: ''
-locked: false

@@ -1,0 +1,99 @@
+uuid: b66f3594-8972-46c7-86ba-70da04cb9c6d
+langcode: es
+status: true
+dependencies: {  }
+id: cienciascustom
+label: 'ciencias custom'
+description: ''
+weight: 2
+folder: ../config/sites/centros/custom/ciencias
+module:
+  entityreference_filter: 0
+theme: {  }
+blacklist:
+  - config_split.config_split.cienciascustom
+  - core.base_field_override.node.departamento.promote
+  - core.base_field_override.node.departamento.title
+  - core.base_field_override.node.examenes.promote
+  - core.base_field_override.node.horarios.promote
+  - core.base_field_override.node.horarios_por_departamentos.promote
+  - core.entity_form_display.node.departamento.default
+  - core.entity_form_display.node.examenes.default
+  - core.entity_form_display.node.examenes_por_departamentos.default
+  - core.entity_form_display.node.horarios.default
+  - core.entity_form_display.node.horarios_por_departamentos.default
+  - core.entity_view_display.node.departamento.default
+  - core.entity_view_display.node.departamento.teaser
+  - core.entity_view_display.node.examenes.default
+  - core.entity_view_display.node.examenes.teaser
+  - core.entity_view_display.node.examenes_por_departamentos.default
+  - core.entity_view_display.node.examenes_por_departamentos.teaser
+  - core.entity_view_display.node.horarios.default
+  - core.entity_view_display.node.horarios.teaser
+  - core.entity_view_display.node.horarios_por_departamentos.default
+  - core.entity_view_display.node.horarios_por_departamentos.teaser
+  - field.field.node.departamento.field_link_departamento
+  - field.field.node.examenes.field_adjunto_examenes
+  - field.field.node.examenes.field_convocatoria
+  - field.field.node.examenes.field_curso
+  - field.field.node.examenes.field_estudio
+  - field.field.node.examenes_por_departamentos.field_adjunto_examenes_dpto
+  - field.field.node.examenes_por_departamentos.field_convocatoria
+  - field.field.node.examenes_por_departamentos.field_curso
+  - field.field.node.examenes_por_departamentos.field_examen_departamento
+  - field.field.node.examenes_por_departamentos.field_ocultar_dato_actualizacion
+  - field.field.node.horarios.field_adjunto_horarios
+  - field.field.node.horarios.field_curso
+  - field.field.node.horarios.field_estudio
+  - field.field.node.horarios.field_semestre
+  - field.field.node.horarios_por_departamentos.field_adjunto_horarios
+  - field.field.node.horarios_por_departamentos.field_curso
+  - field.field.node.horarios_por_departamentos.field_examen_departamento
+  - field.field.node.horarios_por_departamentos.field_semestre
+  - field.storage.node.field_adjunto_examenes
+  - field.storage.node.field_adjunto_examenes_dpto
+  - field.storage.node.field_adjunto_horarios
+  - field.storage.node.field_convocatoria
+  - field.storage.node.field_curso
+  - field.storage.node.field_estudio
+  - field.storage.node.field_examen_departamento
+  - field.storage.node.field_link_departamento
+  - field.storage.node.field_semestre
+  - language.content_settings.node.departamento
+  - language.content_settings.node.examenes
+  - language.content_settings.node.examenes_por_departamentos
+  - language.content_settings.node.horarios
+  - language.content_settings.node.horarios_por_departamentos
+  - language.content_settings.taxonomy_term.convocatoria
+  - language.content_settings.taxonomy_term.curso
+  - migrate_plus.migration.upgrade_d7_node_departamento
+  - migrate_plus.migration.upgrade_d7_node_examenes
+  - migrate_plus.migration.upgrade_d7_node_examenes_por_departamentos
+  - migrate_plus.migration.upgrade_d7_node_horarios
+  - migrate_plus.migration.upgrade_d7_node_horarios_por_departamentos
+  - migrate_plus.migration.upgrade_d7_taxonomy_term_convocatoria
+  - migrate_plus.migration.upgrade_d7_taxonomy_term_curso
+  - migrate_plus.migration_group.migrate_drupal_horarios_examenes
+  - node.type.departamento
+  - node.type.examenes
+  - node.type.examenes_por_departamentos
+  - node.type.horarios
+  - node.type.horarios_por_departamentos
+  - rabbit_hole.behavior_settings.node_type_departamento
+  - rabbit_hole.behavior_settings.node_type_examenes
+  - rabbit_hole.behavior_settings.node_type_horarios
+  - rabbit_hole.behavior_settings.node_type_horarios_por_departamentos
+  - taxonomy.vocabulary.convocatoria
+  - taxonomy.vocabulary.curso
+  - user.role.gestor_horarios_examenes
+  - views.view.consultar_de_horarios
+  - views.view.consultar_examenes
+  - views.view.consultar_examenes_por_departamentos
+  - views.view.consultar_horarios_por_departamentos
+  - views.view.departamento_con_examenes
+  - views.view.estudios_con_examenes
+  - views.view.estudios_con_horarios
+  - views.view.noticias_ciencias_custom
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

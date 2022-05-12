@@ -1,0 +1,437 @@
+uuid: ddd05e03-d399-4ba3-910c-37f7ef8486bb
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_1041
+title: 'Directorio FyL'
+description: null
+category: null
+elements: |-
+  fieldset_datos_de_la_persona_que_realiza_la_comunicacion:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Remitente del formulario'
+    '#description': 'Datos de la persona responsable del Departamento o Servicio autorizada para realizar el envío de los datos.'
+    nombre_y_apellidos_1:
+      '#type': textfield
+      '#title': 'Nombre y apellidos'
+      '#required': true
+    departamento_1:
+      '#type': textfield
+      '#title': 'Departamento o Unidad'
+      '#required': true
+    correo_electronico_1:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#required': true
+  fieldset_datos_a_gestionar:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la persona interesada'
+    alta_baja_o_cambio_de_ubicacion_5:
+      '#type': radios
+      '#options':
+        alta: Alta
+        baja: Baja
+        renovacion: 'Renovación de contrato'
+        cambio: 'Cambio de ubicación'
+      '#title': 'Solicitud de alta, baja o cambio de ubicación'
+      '#required': true
+    pdipas_5:
+      '#type': radios
+      '#options':
+        pdi: PDI
+        pas: PAS
+      '#title': 'PDI / PAS'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    duracion_contrato_5:
+      '#type': radios
+      '#options':
+        temporal: Temporal
+        indefinido: Indefinido
+      '#title': 'Duración del contrato'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    tipo_de_contrato_indefinido_5:
+      '#type': select
+      '#options':
+        titular: 'Profesor Titular'
+        catedratico: Catedrático
+        emerito: 'Profesor Emérito'
+        extra: 'Colaborador Extraordinario'
+        otros: Otros
+      '#title': 'Tipo de contrato indefinido'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name="duracion_contrato_5"]':
+              value: indefinido
+        required:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name="duracion_contrato_5"]':
+              value: indefinido
+    tipo_de_contrato_temporal_5:
+      '#type': select
+      '#options':
+        predoc: 'Contratado Predoctoral'
+        postdoc: 'Contratado Postdoctoral'
+        invest: Investigador
+        asoc: 'Profesor Asociado'
+        ayudoc: 'Profesor Ayudante Doctor'
+        contradoc: 'Profesor Contratado Doctor'
+        otros: Otros
+      '#title': 'Tipo de contrato temporal'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name="duracion_contrato_5"]':
+              value: temporal
+        required:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name="duracion_contrato_5"]':
+              value: temporal
+    tipo_de_contrato_otros_5:
+      '#type': textfield
+      '#title': 'Tipo de contrato (especificar)'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name=""]': {  }
+          - ':input[name="tipo_de_contrato_indefinido_5"]':
+              value: otros
+          - ':input[name="tipo_de_contrato_temporal_5"]':
+              value: otros
+          - ':input[name=""]': {  }
+        required:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+          - ':input[name=""]': {  }
+          - ':input[name="tipo_de_contrato_indefinido_5"]':
+              value: otros
+          - ':input[name="tipo_de_contrato_temporal_5"]':
+              value: otros
+          - ':input[name=""]': {  }
+    fecha_de_fin_de_contrato_5:
+      '#type': date
+      '#title': 'Fecha de fin de contrato'
+      '#description': 'No rellenar en caso de no haber una fecha de fin de contrato determinada (sustituciones, etc.).'
+      '#states':
+        visible:
+          - ':input[name="duracion_contrato_5"]':
+              value: temporal
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: renovacion
+    fecha_de_baja_5:
+      '#type': date
+      '#title': 'Fecha de baja'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: baja
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: baja
+    area_de_conocimiento_5:
+      '#type': textfield
+      '#title': 'Área de conocimiento'
+      '#states':
+        visible:
+          - ':input[name="pdipas_5"]':
+              value: pdi
+    categoria_profesional_5:
+      '#type': textfield
+      '#title': 'Área y categoría profesional'
+      '#states':
+        visible:
+          - ':input[name="pdipas_5"]':
+              value: pas
+    permiso_para_acceder_al_edificio_con_tarjeta_5:
+      '#type': radios
+      '#options':
+        si: Sí
+        'no': 'No'
+      '#title': 'Permiso para acceder al edificio con tarjeta'
+      '#description': 'Indicar si se autoriza el acceso con tarjeta (en caso afirmativo no será necesario remitir el formulario en PDF)'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    primer_apellido_5:
+      '#type': textfield
+      '#title': 'Primer apellido'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+    segundo_apellido_5:
+      '#type': textfield
+      '#title': 'Segundo apellido'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+    nombre_5:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+    correo_electronico_interesado_5:
+      '#type': email
+      '#size': 20
+      '#title': 'Correo electrónico'
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    dni_5:
+      '#type': textfield
+      '#title': DNI
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    nip_5:
+      '#type': textfield
+      '#title': NIP
+      '#required': true
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+        required:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    nuevodespacho_5:
+      '#type': textfield
+      '#title': 'Ubicación o ubicaciones propuestas'
+      '#description': 'Si las hubiera, establezca las ubicaciones propuestas (utilice el campo "observaciones" para indicar cualquier información que estime oportuna)'
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: cambio
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    nueva_extension_telefonica_5:
+      '#type': textfield
+      '#title': 'Extensión o extensiones telefónicas propuestas'
+      '#description': 'Tanto para altas como para cambios de despachos, puede indicar aquí las extensiones propuestas y usar el campo "observaciones" para cualquier indicación adicional.'
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: cambio
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              value: alta
+    observaciones_5:
+      '#type': textarea
+      '#title': Observaciones
+      '#states':
+        visible:
+          - ':input[name="alta_baja_o_cambio_de_ubicacion_5"]':
+              filled: false
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>Se ha tramitado la comunicación del cambio en el directorio de la Facultad.</p>\r\n<p>Recibirá un correo de confirmación con los datos enviados.</p>\r\n<p>Gracias por su colaboración.</p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: bertolin@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: csjfiloz@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de cambios en el directorio'
+      body: |-
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: csjfiloz@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |-
+        --Este es un correo automatizado. Por favor, no responda a esta comunicación--
+
+        Se ha cursado el siguiente formulario de cambio en el directorio de la Facultad:
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+
+        Gracias por su colaboración.
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: fylhora@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: csjfiloz@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de cambios en el directorio'
+      body: |-
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

@@ -1,0 +1,24 @@
+uuid: 552b2aac-d927-4022-bf1a-1175c55f5a46
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.filtered_html
+  module:
+    - filter
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access own webform submissions'
+  - 'access site map'
+  - 'edit own webform submissions'
+  - 'search content'
+  - 'use text format filtered_html'

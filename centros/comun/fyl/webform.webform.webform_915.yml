@@ -1,0 +1,252 @@
+uuid: 18f66dcc-dbba-4f87-ad62-89925ca6a573
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_915
+title: 'Cita previa'
+description: null
+category: null
+elements: |-
+  tramite:
+    '#type': select
+    '#options':
+      '"TO_solicitud': 'Solicitud de Títulos Oficiales"'
+      '"TO_recogida': 'Recogida de Títulos Oficiales"'
+      '"CE_recogida': 'Recogida de certificados que se hubieran solicitado antes de la declaración del estado de alarma"'
+      '"DO_presentacion': 'Presentación de documentación original para su cotejo"'
+      '"EL_copia': 'Copia auténtica electrónica"'
+      '"DO_compulsa': 'Compulsa de documentación"'
+    '#title': Trámite
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  nip:
+    '#type': textfield
+    '#title': NIP
+    '#description': 'Para miembros de la Comunidad Universitaria: Estudiantes, PDI y PAS'
+  dni:
+    '#type': textfield
+    '#title': DNI
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#title': 'Teléfono de contacto'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Compruebe que la dirección introducida es correcta. El horario de la cita se enviará a este correo que deberá presentar en conserjería'
+    '#required': true
+  fieldset_solicitud_de_franja_horaria:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Solicitud de franja horaria'
+    '#description': |-
+      Seleccione dos fechas diferentes de lunes a viernes, una principal y una segunda alternativa, y una franja horaria para cada una (la franja horaria puede ser la misma)
+      En función de la disponibilidad se le enviará un correo con el día y la hora asignada.
+  fecha_1:
+    '#type': date
+    '#title': 'Fecha 1'
+    '#description': 'De lunes a viernes. Día y franja horaria en la que principalmente desea obtener la cita.'
+    '#required': true
+  franja_horaria_1:
+    '#type': select
+    '#options':
+      '"hora1': 'Entre las 9 y las 10"'
+      '"hora2': 'Entre las 9,30 y las 10,30"'
+      '"hora3': 'Entre las 10 y las 11"'
+      '"hora4': 'Entre las 10,30 y las 11,30"'
+      '"hora5': 'Entre las 11 y las 12"'
+      '"hora6': 'Entre las 11,30 y las 12,30"'
+      '"hora7': 'Entre las 12 y las 13"'
+      '"hora8': 'Entre las 12,30 y las 13,30"'
+    '#title': 'Franja horaria'
+    '#required': true
+  fecha_2:
+    '#type': date
+    '#title': 'Fecha 2'
+    '#description': 'De lunes a viernes. Fecha y franja horaria alternativa que se usará en caso de no haber hueco en la franja anterior solicitada.'
+    '#required': true
+  franja_horaria_2:
+    '#type': select
+    '#options':
+      '"hora1': 'Entre las 9 y las 10"'
+      '"hora2': 'Entre las 9,30 y las 10,30"'
+      '"hora3': 'Entre las 10 y las 11"'
+      '"hora4': 'Entre las 10,30 y las 11,30"'
+      '"hora5': 'Entre las 11 y las 12"'
+      '"hora6': 'Entre las 11,30 y las 12,30"'
+      '"hora7': 'Entre las 12 y las 13"'
+      '"hora8': 'Entre las 12,30 y las 13,30"'
+    '#title': 'Franja horaria'
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p class="msg-right"><strong>Hemos recibido su solicitud.</strong><br /> Le enviaremos también un correo electrónico de verificación para su constancia.<br /> Gracias por utilizar el formulario.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: bertolin@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: fylcita@unizar.es
+      from_options: {  }
+      from_name: 'Facultad de Filosofía y Letras - Cita Previa'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Datos enviados:
+        [webform_submission:values]
+
+        --------------
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: fylcita@unizar.es
+      from_options: {  }
+      from_name: 'Facultad de Filosofía y Letras - Cita Previa'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Solicitud de Cita Previa - Facultad de Filosofía y Letras'
+      body: |-
+        Estimado/a usuario/a.
+
+        Su solicitud de cita previa se ha recibido correctamente y está siendo procesada. Se le remitirá un correo a esta misma dirección indicando la fecha y hora asignada.
+
+        Por favor, no responda a este mensaje. Es una respuesta automática generada sólo para su constancia de la recepción de su solicitud, Intentaremos responderle a la mayor brevedad posible.
+
+        Gracias por usar el formulario.
+
+        Atentamente.
+
+        =================
+        Servicio de Cita Previa - Facultad de Filosofía y Letras
+        Universidad de Zaragoza
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: fylcita@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: fylcita@unizar.es
+      from_options: {  }
+      from_name: 'Facultad de Filosofía y Letras - Cita Previa'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        Datos enviados:
+        [webform_submission:values]
+
+        --------------
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

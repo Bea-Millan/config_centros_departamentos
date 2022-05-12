@@ -1,0 +1,40 @@
+uuid: 81eb66ab-d277-4aac-b3bd-d0079566e4f0
+langcode: es
+status: true
+dependencies: {  }
+id: cifice
+label: cifice
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/cifice
+module:
+  asset_injector: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - 'block.block.*'
+  - 'webform.webform.*'
+  - migrate_drupal.settings
+  - unizar_admin_menu.settings
+  - unizar_modulos_configuracion.settings
+  - language.types
+  - 'language.entity.*'
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - shortcut.set.default
+  - core.entity_view_mode.shortcut.token
+  - asset_injector.css.cifice_inyeccion_css
+  - system.theme
+  - system.site
+  - matomo.settings
+  - 'system.menu.*'
+  - config_split.config_split.cifice
+  - language.negotiation
+  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,8 +1,0 @@
-uuid: 56f23bac-b69f-4cba-8bc4-8dc9a4d97530
-langcode: es
-status: true
-dependencies: {  }
-id: menu-calidad
-label: 'Sistema de Garantía Interno de la Calidad (SGIC)'
-description: ''
-locked: false

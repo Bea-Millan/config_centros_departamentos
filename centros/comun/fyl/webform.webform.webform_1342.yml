@@ -1,0 +1,262 @@
+uuid: fc94ce5f-c447-4267-a2b3-2a22ac4730ab
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_1342
+title: 'Gestión de correo y paquetería'
+description: null
+category: null
+elements: |-
+  tipo_de_aviso:
+    '#type': radios
+    '#options':
+      nuevo: 'Nuevo envío certificado'
+      recordatorio: 'Recordatorio de envío no retirado comunicado con anterioridad'
+    '#title': 'Tipo de aviso'
+    '#description': 'Indicar si es aviso nuevo o un recordatorio de envío no retirado'
+    '#required': true
+  destinatario:
+    '#type': textfield
+    '#title': Destinatario
+    '#description': 'Destinatario del envío. Formato "Apellido1 Apellido2, Nombre"'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  recordatorio:
+    '#type': textarea
+    '#title': 'Recordatorio de envío no retirado'
+    '#description': 'Copiar y pegar los datos del aviso original'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: recordatorio
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Correo electrónico del destinatario. Se enviará aviso a este correo'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  tipo_de_envio:
+    '#type': radios
+    '#options':
+      certificado: 'Carta Certificada'
+      paquete: Paquete
+      varios_paqs: 'Varios paquetes/cajas'
+      notificacion: 'Notificación (sólo si se autoriza su recepción)'
+    '#title': 'Tipo de envío'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  remitente:
+    '#type': textfield
+    '#title': Remitente
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  autorizado_por:
+    '#type': textfield
+    '#title': 'Autorizado por'
+    '#description': 'Indicar el nombre de la persona que autoriza la recepción de la notificación.'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_envio"]':
+            value: notificacion
+      required:
+        - ':input[name="tipo_de_envio"]':
+            value: notificacion
+  referencia:
+    '#type': textfield
+    '#title': Referencia
+    '#description': 'Número de referencia o código de barras del envío'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  depositado_en:
+    '#type': radios
+    '#options':
+      central: 'Conserjería del Ed. Central'
+      cervantes: 'Conserjería del Ed. Cervantes'
+      moliner: 'Conserjería de la Biblioteca María Moliner'
+      despacho: 'Depositado en despacho'
+    '#title': 'Depositado en'
+    '#description': 'Dónde se ha depositado el envío'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  texto_nuevo_aviso:
+    '#type': hidden
+    '#default_value': 'Se ha recibido un envío certificado con los siguientes datos, pudiendo pasar a recogerlo cuando guste:'
+    '#title': 'Texto nuevo aviso'
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: nuevo
+  texto_recordatorio:
+    '#type': hidden
+    '#default_value': 'Le recordamos que está pendiente de recoger el siguiente envío, pudiendo pasar a recogerlo cuando guste:'
+    '#title': 'Texto recordatorio'
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: recordatorio
+  correo_electronico_recordatorio:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico recordatorio'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="tipo_de_aviso"]':
+            value: recordatorio
+  nuestro_correo:
+    '#type': hidden
+    '#default_value': csjfiloz@unizar.es
+    '#title': 'nuestro correo'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:nuestro_correo:raw]'
+      from_options: {  }
+      from_name: 'Conserjería de la Facultad de Filosofía y Letras'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:tipo_de_aviso:raw]'
+      body: |+
+        Estimado/a Sr./Sra.
+
+        [webform_submission:values:texto_nuevo_aviso]
+
+        Destinatario: [webform_submission:values:destinatario]
+        Tipo de envío: [webform_submission:values:tipo_de_envio]
+        Remitido por: [webform_submission:values:remitente]
+        Referencia: [webform_submission:values:referencia]
+        Fecha: [webform_submission:completed_date:long]
+
+        Se encuentra depositado en: [webform_submission:values:depositado_en]
+
+        Atentamente.
+
+        -Conserjería de la Facultad de Filosofía y Letras-
+        Universidad de Zaragoza
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico_recordatorio:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: csjfiloz@unizar.es
+      from_options: {  }
+      from_name: 'Conserjería de la Facultad de Filosofía y Letras'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:tipo_de_aviso:raw]'
+      body: |-
+        Estimado/a Sr./Sra.
+
+        [webform_submission:values:texto_recordatorio]
+
+        [webform_submission:values:recordatorio]
+
+        Atentamente.
+        -Conserjería de la Facultad de Filosofía y Letras-
+        Universidad de Zaragoza
+
+        ------------------
+        Mensaje enviado en: [webform_submission:completed_date:long]
+        Tramitado por: [webform_submission:user]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

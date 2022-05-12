@@ -1,0 +1,8 @@
+uuid: fe652613-cd5c-427e-8c2d-61ac30b5aabb
+langcode: es
+status: true
+dependencies: {  }
+id: accoun_fr
+label: 'User menu_fr'
+description: 'The <em>User</em> menu contains links related to the user''s account, as well as the ''Log out'' link.'
+locked: false

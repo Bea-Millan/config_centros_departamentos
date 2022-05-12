@@ -1,0 +1,17 @@
+uuid: f8042aa3-7ba3-4774-a54b-158650e2e351
+langcode: es
+status: true
+dependencies: {  }
+id: fcs_custom
+label: 'fcs custom'
+description: ''
+weight: 0
+folder: ../config/sites/centros/custom/fcs
+module: {  }
+theme: {  }
+blacklist:
+  - asset_injector.css.estilos_custom_fcs
+  - config_split.config_split.fcs_custom
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

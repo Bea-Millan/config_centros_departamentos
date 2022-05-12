@@ -1,0 +1,68 @@
+uuid: f764fab2-f780-4a35-a211-a84e8399322f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_313
+title: ' Inscripción en Seminario: Obesidad Infantil y juvenil'
+description: null
+category: null
+elements: |-
+  apellidos_y_nombre:
+    '#type': textfield
+    '#title': 'Apellidos '
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  nif_nie_num_pasaporte:
+    '#type': textfield
+    '#title': 'NIF, NIE, núm. pasaporte'
+    '#required': true
+  nia:
+    '#type': textfield
+    '#title': NIA
+    '#description': 'Introduzca su número de identificación como estudiante de la Universidad de Zaragoza'
+    '#required': true
+  e_mail:
+    '#type': email
+    '#size': 20
+    '#title': E-mail
+  titulo_del_programa_de_doctorado_en_que_esta_matriculado:
+    '#type': textfield
+    '#title': 'Programa de Doctorado en que está matriculado'
+    '#description': 'Si no es todavía estudiante de doctorado, indique en qué Programa va a solicitar admisión para el curso 2016-2017 y/o indique en la casilla inferior en qué estudios está matriculado actualmente.'
+    '#required': true
+  otros_estudios:
+    '#type': textfield
+    '#title': 'Otros estudios '
+    '#description': 'Solamente si no estudiante de doctorado, indique en qué estudios está matriculado (Máster en..., Grado en....)'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,8 +1,0 @@
-uuid: bf241067-55b3-4938-b647-e655031ce683
-langcode: es
-status: true
-dependencies: {  }
-id: menu-doctorado
-label: 'Menú Doctorado'
-description: ''
-locked: false

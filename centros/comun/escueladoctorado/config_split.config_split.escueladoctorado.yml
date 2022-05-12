@@ -1,0 +1,40 @@
+uuid: f6650993-2273-4f45-85a8-0cc1150d8510
+langcode: es
+status: true
+dependencies: {  }
+id: escueladoctorado
+label: escueladoctorado
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/escueladoctorado
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.escueladoctorado
+  - system.site
+  - system.theme
+  - asset_injector.css.escueladoctorado_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - language.negotiation
+  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

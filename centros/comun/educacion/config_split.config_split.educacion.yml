@@ -1,0 +1,40 @@
+uuid: a7297d49-31ab-4d54-81ac-58274898a77d
+langcode: es
+status: true
+dependencies: {  }
+id: educacion
+label: educacion
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/educacion
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.educacion
+  - system.site
+  - system.theme
+  - asset_injector.css.educacion_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - user.role.supergestor
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

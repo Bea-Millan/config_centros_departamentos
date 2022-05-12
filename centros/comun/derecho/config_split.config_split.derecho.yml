@@ -1,0 +1,40 @@
+uuid: 39972b90-d48b-46be-8e9a-77c770fff406
+langcode: es
+status: true
+dependencies: {  }
+id: derecho
+label: derecho
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/derecho
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.derecho
+  - core.entity_view_mode.shortcut.token
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - migrate_drupal.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
+  - unizar_admin_menu.settings
+  - unizar_base.settings
+  - unizar_centro.settings
+  - unizar_modulos_configuracion.settings
+  - user.role.supergestor
+  - asset_injector.css.derecho_inyeccion_css
+  - unizar_departamento.settings
+  - 'webform.webform.*'
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+  - user.role.administrator
+  - user.role.anonymous
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

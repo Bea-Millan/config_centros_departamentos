@@ -1,8 +1,0 @@
-uuid: dca1e5cc-30c1-41e5-993d-d25a89cee17b
-langcode: es
-status: true
-dependencies: {  }
-id: menu-calidad-dcha_fr
-label: 'calidad dcha_fr'
-description: ''
-locked: false

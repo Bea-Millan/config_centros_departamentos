@@ -1,0 +1,15 @@
+uuid: 75f7b23a-0ce7-4a47-94bf-bf8b5715a1e3
+langcode: es
+status: true
+dependencies: {  }
+id: estilos_custom_fcs
+label: 'Estilos custom fcs'
+code: |-
+  .nav .region-menu-principal .sf-menu a, .nav .region-menu-principal .sf-menu li > span {
+      padding: 1rem 0.8rem;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

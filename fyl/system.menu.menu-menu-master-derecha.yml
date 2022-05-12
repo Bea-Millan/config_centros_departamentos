@@ -1,8 +1,0 @@
-uuid: 84620c18-e40f-4b04-b65f-1a0c3fe30587
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-master-derecha
-label: 'menu master derecha'
-description: ''
-locked: false

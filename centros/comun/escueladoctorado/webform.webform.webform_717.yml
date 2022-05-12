@@ -1,0 +1,214 @@
+uuid: db4cf392-9a25-458e-865a-9289045d8a3a
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_717
+title: 'Ficha TUTOR/DIRECTOR'
+description: null
+category: null
+elements: |-
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  mail:
+    '#type': textfield
+    '#title': Mail
+    '#description': 'A efectos de confirmación de la recepción de su ficha'
+    '#required': true
+  fieldset_indique_el_programa_de_doctorado:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Indique el programa de doctorado'
+    '#description': 'Por favor, seleccione un programa de doctorado en el desplegable'
+    fieldset_prog_doct_3:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Programas de doctorado'
+      programa_selec_4:
+        '#type': select
+        '#options':
+          485: 'Bioquímica y Biología Molecular'
+          486: 'Calidad, Seguridad y Tecnología de los Alimentos'
+          487: 'Ciencia Analítica en Química'
+          508: 'Ciencias agrarias y del Medio natural'
+          495: 'Ciencias Biomédicas y Biotecnológicas'
+          477: 'Ciencias de la Antigüedad'
+          496: 'Ciencias de la Salud y del Deporte'
+          499: 'Contabilidad y Finanzas'
+          500: Derecho
+          501: 'Derechos humanos y Libertades fundamentales'
+          502: Economía
+          503: 'Economía y Gestión de las organizaciones'
+          504: Educación
+          509: 'Energías renovables y Eficiencia energética'
+          478: 'Estudios Ingleses'
+          480: Filosofía
+          488: Física
+          489: Geología
+          481: 'Historia Contemporánea'
+          482: 'Historia del Arte'
+          483: 'Historia, Sociedad y Cultura: épocas Medieval y Moderna'
+          554: 'Información y Documentación'
+          510: 'Ingeniería Biomédica'
+          511: 'Ingeniería de Diseño y Fabricación'
+          512: 'Ingeniería de Sistemas e Informática'
+          513: 'Ingeniería Electrónica'
+          514: 'Ingeniería Mecánica'
+          515: 'Ingeniería Química y del Medio ambiente'
+          484: 'Lingüística Hispánica'
+          479: 'Literaturas Hispánicas'
+          575: 'Logística y gestión de la cadena de suministro'
+          490: 'Matemáticas y Estadística'
+          516: 'Mecánica de Fluidos'
+          497: Medicina
+          498: 'Medicina y Sanidad Animal'
+          517: 'Nuevos Territorios en la Arquitectura'
+          505: 'Ordenación del territorio y Medio ambiente'
+          569: 'Patrimonio, Sociedades y Espacios de frontera'
+          491: 'Producción Animal'
+          492: 'Química Física'
+          493: 'Química Inorgánica'
+          494: 'Química Orgánica'
+          506: 'Relaciones de género y Estudios feministas'
+          507: 'Sociología de las políticas públicas y sociales'
+          518: 'Tecnologías de la información y Comunicaciones en redes móviles'
+        '#title': Programa
+        '#required': true
+  linea_de_investigacion:
+    '#type': textfield
+    '#title': 'Línea de investigación'
+    '#description': 'Solo una. Referida al listado de líneas del programa (disponible en la página web del programa en http://estudios.unizar.es)'
+    '#required': true
+  institucion_entidad:
+    '#type': textfield
+    '#title': 'Institución / Entidad'
+    '#description': 'Universidad/Organismo/Institución/Empresa a la que pertenece. En el caso de personal del CSIC (o situaciones similares) aportar también el nombre del centro de investigación al que pertenece.'
+    '#required': true
+  categoria_puesto:
+    '#type': textfield
+    '#title': 'Categoría / Puesto'
+  codigo_orcid:
+    '#type': textfield
+    '#title': 'Código ORCID'
+    '#description': 'Si no dispone de código ORCID puede aportar ScopusID o ResearcherID'
+  no_sexenios:
+    '#type': textfield
+    '#title': 'Nº sexenios (CNEAI / Autonómicos)'
+    '#description': 'Indicar número y, entre paréntesis, si son CNEAI o Autonómicos'
+  ano_de_concesion_del_ultimo_sexenio:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Año de concesión del último sexenio'
+  no_tesis_dirigidas:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Nº tesis dirigidas dentro del programa'
+    '#description': 'Tesis comenzadas en el programa (RD99/2011). Incluye todas: en curso, finalizadas y abandonadas.'
+  no_tesis_defendidas:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Nº tesis defendidas en el programa'
+    '#description': 'Tesis defendidas en el programa (RD99/2011)'
+  no_proyectos_nacionales:
+    '#type': textfield
+    '#title': 'Nº proyectos de investigación competitivos nacionales (2014-2021)'
+    '#description': 'Financiados a cargo de programas u organismos nacionales y vigentes en algún momento del periodo 2014-2021 '
+  no_de_proyectos_de_investigacion_competitivos_internacionales:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Nº de Proyectos de investigación competitivos internacionales (2014-2021)'
+    '#description': 'Financiados a cargo de programas u organismos internacionales y vigentes en algún momento del periodo 2014-2021 '
+  no_publicaciones_indexadas:
+    '#type': textfield
+    '#size': 10
+    '#title': 'Nº publicaciones indexadas (2014-2021)'
+    '#description': 'Número de publicaciones del periodo 2014-2021 en revistas incluidas en catálogos que asignen índices de calidad relativos. Indicar, entre paréntesis catálogo utilizado.'
+    '#required': true
+  no_de_publicaciones_no_indexadas:
+    '#type': textfield
+    '#title': 'Nº de publicaciones no indexadas (2014-2021)'
+    '#description': 'Número de publicaciones del periodo 2014-2021 en revistas no incluidas en catálogos que asignen índices de calidad relativos'
+    '#required': true
+  no_de_patentes:
+    '#type': textfield
+    '#title': 'Nº de patentes en publicación tipo B (2014-2021)'
+    '#description': |+
+      Número de patentes solicitadas en el periodo 2014-2021 y que se encuentran publicadas como tipo B
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Su formulario ha sido enviado. Muchas gracias.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: palomanv@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Nueva Ficha de Director/Tutor'
+      body: |-
+        Submitted on [webform_submission:completed_date:long]
+        Submitted by user: [webform_submission:user]
+        Se ha cumplimentado una nueva ficha de DIrector/Tutor de tesis
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

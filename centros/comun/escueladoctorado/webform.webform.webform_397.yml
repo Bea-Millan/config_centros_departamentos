@@ -1,0 +1,379 @@
+uuid: e0c2e72a-ca10-4c96-865f-7521580f3420
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 35
+template: false
+archive: false
+id: webform_397
+title: 'Propuesta y designación del tribunal de tesis'
+description: null
+category: null
+elements: |-
+  propuesta_y_designacion:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>&nbsp;</p><h2>PROPUESTA Y DESIGNACIÓN DEL TRIBUNAL DE TESIS</h2>'
+    '#title': 'PROPUESTA Y DESIGNACIÓN DEL TRIBUNAL DE TESIS'
+  fieldset_datos_de_la_tesis_doctoral:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos de la tesis doctoral'
+    fila_datos_1_1:
+      '#title': fila_datos_1
+      apellidos_nombre_26:
+        '#type': textfield
+        '#size': 60
+        '#title': 'Apellidos y nombre del doctorando'
+      dni_26:
+        '#type': textfield
+        '#size': 9
+        '#title': 'DNI / Pasaporte'
+    fila_datos_2_1:
+      '#title': fila_datos_2
+      direccion_27:
+        '#type': textfield
+        '#size': 50
+        '#title': Dirección
+      cp_27:
+        '#type': textfield
+        '#size': 5
+        '#title': C.P.
+      localidad_27:
+        '#type': textfield
+        '#size': 20
+        '#title': Localidad
+    fila_datos_3_1:
+      '#title': fila_datos_3
+      telefono_28:
+        '#type': textfield
+        '#size': 13
+        '#title': Teléfono
+      correo_electronico_28:
+        '#type': email
+        '#size': 20
+        '#title': 'Correo electrónico'
+    titulo_tesis_doctoral_1:
+      '#type': textarea
+      '#title': 'Titulo de la tesis doctoral'
+    director_tesis_1:
+      '#type': textfield
+      '#title': 'Director/es de la tesis'
+    departamento_por_el_que_se_leera_la_tesis_1:
+      '#type': textfield
+      '#size': 75
+      '#title': 'Departamento por el que se leerá la tesis'
+  fieldset_propuesta_de_tribunal:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Propuesta de tribunal'
+    fieldset_presidente_21:
+      '#type': fieldset
+      '#open': true
+      '#title': Presidente
+      fila_datos_7_22:
+        '#title': fila_datos_7
+        apellidos_nombre_presidente_46:
+          '#type': textfield
+          '#title': 'Apellidos y nombre'
+        nif_46:
+          '#type': textfield
+          '#size': 9
+          '#title': NIF
+      fila_datos_6_22:
+        '#title': fila_datos_6
+        universidad_centro_de_investigacion_43:
+          '#type': textfield
+          '#title': 'Universidad o centro de investigación al que pertenece'
+        separador2_43:
+          '#type': processed_text
+          '#format': full_html
+          '#text': '<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>'
+          '#title': Separador
+        aceptacion_1_43:
+          '#type': radios
+          '#options':
+            Si: Si
+            'No': 'No'
+          '#title': 'Aceptación por la C.D.'
+    fieldset_secretario_21:
+      '#type': fieldset
+      '#open': true
+      '#title': Secretario
+      fila_datos_8_31:
+        '#title': fila_datos_8
+        apellidos_nombre_secretario_47:
+          '#type': textfield
+          '#title': 'Apellidos y nombre'
+        nif_2_47:
+          '#type': textfield
+          '#size': 9
+          '#title': NIF
+      fila_datos_4_31:
+        '#title': fila_datos_4
+        universidad_procedencia_2_29:
+          '#type': textfield
+          '#title': 'Universidad o centro de investigación al que pertenece'
+        separador_29:
+          '#type': processed_text
+          '#format': full_html
+          '#text': '<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>'
+          '#title': Separador
+        aceptacion_2_29:
+          '#type': radios
+          '#options':
+            Si: Si
+            'No': 'No'
+          '#title': 'Aceptación por la C.D.'
+    fieldset_vocal_1_21:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Vocal 1'
+      fila_datos_9_36:
+        '#title': fila_datos_9
+        apellidos_nombre_vocal_1_50:
+          '#type': textfield
+          '#title': 'Apellidos y nombre'
+        nif_3_50:
+          '#type': textfield
+          '#size': 9
+          '#title': NIF
+      fila_datos_5_36:
+        '#title': fila_datos_5
+        universidad_procedencia_3_38:
+          '#type': textfield
+          '#title': 'Universidad o centro de investigación al que pertenece'
+        separador_38:
+          '#type': processed_text
+          '#format': full_html
+          '#text': '<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>'
+          '#title': Separador
+        aceptacion_3_38:
+          '#type': radios
+          '#options':
+            Si: Si
+            'No': 'No'
+          '#title': 'Aceptación por la C.D.'
+    fieldset_suplente_1_21:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Suplente 1'
+      fila_datos_10_51:
+        '#title': fila_datos_10
+        apellidos_nombre_suplente_1_52:
+          '#type': textfield
+          '#title': 'Apellidos y nombre'
+        nif_4_52:
+          '#type': textfield
+          '#size': 9
+          '#title': NIF
+      fila_datos_5_51:
+        '#title': fila_datos_5
+        universidad_procedencia_4_55:
+          '#type': textfield
+          '#title': 'Universidad o centro de investigación al que pertenece'
+        separador_55:
+          '#type': processed_text
+          '#format': full_html
+          '#text': '<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>'
+          '#title': Separador
+        aceptacion_4_55:
+          '#type': radios
+          '#options':
+            Si: Si
+            'No': 'No'
+          '#title': 'Aceptación por la C.D.'
+    fieldset_suplente_2_21:
+      '#type': fieldset
+      '#open': true
+      '#title': 'Suplente 2'
+      fila_datos_11_59:
+        '#title': fila_datos_11
+        apellidos_nombre_suplente_2_60:
+          '#type': textfield
+          '#title': 'Apellidos y nombre'
+        nif_5_60:
+          '#type': textfield
+          '#size': 9
+          '#title': NIF
+      fila_datos_12_59:
+        '#title': fila_datos_12
+        universidad_procedencia_5_63:
+          '#type': textfield
+          '#title': 'Universidad o centro de investigación al que pertenece'
+        separador_63:
+          '#type': processed_text
+          '#format': full_html
+          '#text': '<p>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>'
+          '#title': Separador
+        aceptacion_5_63:
+          '#type': radios
+          '#options':
+            Si: Si
+            'No': 'No'
+          '#title': 'Aceptación por la C.D.'
+  comision:
+    '#type': textfield
+    '#size': 48
+    '#title_display': inline
+    '#title': 'Comisión Académica / Consejo de Departamento / Instituto de Investigación responsable del programa de doctorado'
+  fecha_sesion:
+    '#type': textfield
+    '#title_display': inline
+    '#title': 'Fecha de la sesión en la que se aprueba proponer a la Comisión de Doctorado este Tribunal de tesis doctoral'
+  informe_sobre_idoneidad_miembros_tribunal_tesis:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>&nbsp;</p><h2><strong>INFORME SOBRE LA IDONEIDAD&nbsp;<span style="font-size: 13.008px;">DE LOS MIEMBROS DEL TRIBUNAL DE TESIS</span></strong></h2>'
+    '#title': 'INFORME SOBRE LA IDONEIDAD DE LOS MIEMBROS DEL TRIBUNAL DE TESIS'
+  fieldset_miembro_propuesto_1:
+    '#type': fieldset
+    '#open': true
+    '#title_display': invisible
+    '#title': 'Miembro propuesto 1'
+    apellidos_nombre_miembro_propuesto_1_74:
+      '#type': textfield
+      '#title': 'Apellidos y nombre del miembro del tribunal propuesto'
+    categoria_academica_1_74:
+      '#type': textfield
+      '#title': 'Categoría Académica en el centro al que pertenece'
+    cargo_para_el_que_se_le_propone_para_el_tribunal_74:
+      '#type': radios
+      '#options':
+        1: Presidente
+        2: Secretario
+        3: Vocal
+        4: 'Suplente 1'
+        5: 'Suplente 2'
+      '#title': 'Cargo para el que se le propone para el tribunal'
+    universidad_expedidora_titulo_doctor_74:
+      '#type': textfield
+      '#title': 'Universidad expedidora título doctor'
+    fecha_expedicion_titulo_doctor_74:
+      '#type': date
+      '#title': 'Fecha expedición título doctor'
+    fecha_lectura_tesis_doctoral_74:
+      '#type': date
+      '#title': 'Fecha lectura tesis doctoral'
+    universidad_centro_de_investigacion_y_facultad__centro_departamento_donde_desarrolla_su_actividad_74:
+      '#type': textfield
+      '#title': 'Universidad/Centro de Investigación y Facultad/ Centro/Departamento donde desarrolla su actividad'
+    direccion_completa_a_efectos_de_notificacion_74:
+      '#type': textfield
+      '#title': 'Dirección completa a efectos de notificación:'
+    linea_datos_1_74:
+      '#title': linea_datos_1
+      localidad_85:
+        '#type': textfield
+        '#size': 40
+        '#title': Localidad
+      cp_85:
+        '#type': textfield
+        '#size': 5
+        '#title': C.P.
+      provincia_85:
+        '#type': textfield
+        '#size': 25
+        '#title': Provincia
+    linea_datos_2_74:
+      '#title': linea_datos_2
+      telefono_86:
+        '#type': textfield
+        '#size': 12
+        '#title': Teléfono
+      correo_electronico_86:
+        '#type': email
+        '#size': 20
+        '#title': 'Correo electrónico'
+    el_dr_dra_arriba_mencionado_74:
+      '#type': checkboxes
+      '#options':
+        1: 'Tiene reconocido al menos un periodo de actividad investigadora por la CNEAI'
+        2: 'Ha sido reconocida la experiencia investigadora previamente por la Comisión de Doctorado'
+        3: 'Solicita a la Comisión de Doctorado el reconocimiento de experiencia investigadora a los únicos efectos de pertenencia a Tribunal de Tesis (véase normativa aplicable al final), para lo que se aducen las contribuciones siguientes:'
+      '#multiple': true
+      '#title': 'El Dr./Dra. arriba mencionado:'
+    contribucion_1_74:
+      '#type': textarea
+      '#title': 'Contribución 1'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    contribucion_2_74:
+      '#type': textarea
+      '#title': 'Contribución 2'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    contribucion_3_74:
+      '#type': textarea
+      '#title': 'Contribución 3'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    contribucion_4_74:
+      '#type': textarea
+      '#title': 'Contribución 4'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    contribucion_5_74:
+      '#type': textarea
+      '#title': 'Contribución 5'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    aporta_74:
+      '#type': processed_text
+      '#format': full_html
+      '#text': '<p>Aporta , al menos, dos publicaciones relacionadas directamente con la materia de la tesis o estrechamente afines:</p>'
+      '#title': Aporta
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    publicacion_1_74:
+      '#type': textarea
+      '#title': 'Publicación 1'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+    publicacion_2_74:
+      '#type': textarea
+      '#title': 'Publicación 2'
+      '#states':
+        visible:
+          - ':input[name="el_dr_dra_arriba_mencionado_74[3]"]':
+              checked: true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

@@ -1,0 +1,8 @@
+uuid: 4cfcd81c-47f5-4f1f-bd2a-ef7c45c4627f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-calidad-master
+label: 'calidad master'
+description: ''
+locked: false

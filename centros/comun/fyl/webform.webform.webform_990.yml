@@ -1,0 +1,282 @@
+uuid: 1e10184f-e8ad-492e-87e3-b5f54ade825d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 148
+template: false
+archive: false
+id: webform_990
+title: 'PDI: Comunicación de ALTA'
+description: null
+category: null
+elements: |-
+  primer_apellido:
+    '#type': textfield
+    '#title': 'Primer Apellido'
+    '#required': true
+  segundo_apellido:
+    '#type': textfield
+    '#title': 'Segundo Apellido'
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  nip_o_dni:
+    '#type': textfield
+    '#title': 'NIP o DNI'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo Electrónico'
+    '#required': true
+  telefono_de_contacto:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': 'Teléfono de contacto'
+    '#required': true
+  departamento:
+    '#type': select
+    '#options':
+      antiguedad: 'Ciencias de la Antigüedad'
+      documentacion: 'Ciencias de la Documentación e Historia de la Ciencia'
+      frances: 'Filología Francesa'
+      ingles: 'Filología Inglesa y Alemana'
+      filosofia: 'Unidad Predepartamental de Filosofía'
+      geografia: 'Geografía y Ordenación del Territorio'
+      arte: 'Historia del Arte'
+      historia: Historia
+      literatura: 'Lingüística y Literatura Hispánicas'
+      periodismo: 'Unidad Predepartamental de Periodismo, Comunicación Audiovisual y Publicidad'
+    '#title': Departamento
+    '#required': true
+  fecha_de_reincorporacion:
+    '#type': date
+    '#title': 'Fecha de reincorporación'
+    '#description': 'Indique por favor la fecha a partir de la cual le han autorizado los Servicios Sanitarios a reincorporarse a sus actividades.'
+    '#required': true
+  pdi_formularios_anteriores:
+    '#type': checkboxes
+    '#options':
+      aislamiento: 'Aislamiento por contacto estrecho'
+      pcr: 'Comunicación de PCR positivo'
+    '#multiple': true
+    '#title': 'Indique los formularios que pudiera haber rellenado anteriormente'
+  director:
+    '#type': email
+    '#size': 20
+    '#title': director
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+    '#description': 'Indique cualquier información que crea pueda ser de interés.'
+  justificante:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'jpg jpeg pdf zip'
+    '#title': Justificante
+    '#description': 'Adjunte aquí los justificantes médicos que acrediten su alta.'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p><span style=\"font-size: 13.008px;\">Desde la Facultad de Filosofía y Letras nos alegramos de su recuperación.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">Se han enviado sus datos al responsable COVID de la Facultad de Filosofía y Letras, a la dirección de su Departamento y a la Unidad de Prevención de Riesgos de la Universidad de Zaragoza.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">Le hemos enviado también un correo electrónico a la cuenta que ha consignado en el formulario para que tenga constancia del envío del formulario.</span></p>\r\n<p><span style=\"font-size: 13.008px;\">Agradecemos sinceramente su colaboración y le esperamos de nuevo por la Facultad</span></p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_3:
+    id: email
+    handler_id: email_3
+    label: 'Email 3'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 3
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA por COVID-19 registrada e instrucciones'
+      body: |-
+        <p>Estimado Sr./Estimada Sra.</p>
+        <p>Nos alegramos de su situación y de que haya dejado atrás la enfermedad.</p>
+        <p>Se ha procedido a informar de su alta a la Unidad de Prevención de Riesgos y a la Dirección de su Departamento, aunque recuerde que esto no exime del trámite habitual de presentación de los pertinentes justificantes de baja laboral.</p>
+        <p>Le agradecemos su cooperación y apoyo en estos momentos de trabajo conjunto para controlar la pandemia.</p>
+        <p>Reciba un atento saludo</p>
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_5:
+    id: email
+    handler_id: email_5
+    label: 'Email 5'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 5
+    settings:
+      states:
+        - completed
+      to_mail: covidfil@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA - COVID-19 (PDI)'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- COMUNICACIÓN DE ALTA COVID-19 (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_6:
+    id: email
+    handler_id: email_6
+    label: 'Email 6'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 6
+    settings:
+      states:
+        - completed
+      to_mail: jefeuprl@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA - COVID-19 (PDI) Facultad de Filosofía y Letras'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- COMUNICACIÓN DE ALTA COVID-19 (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_7:
+    id: email
+    handler_id: email_7
+    label: 'Email 7'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 7
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:director:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: covidfil@unizar.es
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Comunicación de ALTA - COVID-19 (PDI)'
+      body: |-
+        Se ha recibido la siguiente incidencia COVID-19 a través del formulario de la Facultad de Filosofía y Letras
+
+        -- COMUNICACIÓN DE ALTA COVID-19 (PDI) --
+
+        Enviado el [webform_submission:date:custom:l, d \d\e M \d\e Y, \a \l\a\s H\:i]
+
+        Datos enviados:
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
