@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_fecha
     - field.storage.node.field_imagen_noticia
     - field.storage.node.field_link_noticia
+    - image.style.imagen_agenda
     - image.style.imagen_noticia_vista_2
     - node.type.noticia
     - taxonomy.vocabulary.secciones
@@ -732,7 +733,11 @@ display:
           type: image
           settings:
             image_link: content
-            image_style: imagen_noticia_vista_2
+            image_style: imagen_agenda
+            svg_attributes:
+              width: null
+              height: null
+            svg_render_as_image: true
           group_column: ''
           group_columns: {  }
           group_rows: true

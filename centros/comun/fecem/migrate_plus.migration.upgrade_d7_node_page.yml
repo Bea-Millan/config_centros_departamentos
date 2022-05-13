@@ -28,6 +28,10 @@ process:
       plugin: default_value
       source: language
       default_value: und
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   title:
     -
       plugin: Ctitle
@@ -89,6 +93,11 @@ process:
             regex: false
             search: econz.unizar.es
             replace: fecem.unizar.es
+          -
+            plugin: str_replace
+            regex: false
+            search: sites/fecem.unizar.es
+            replace: sites/fecem
         format:
           plugin: default_value
           default_value: filtered_html

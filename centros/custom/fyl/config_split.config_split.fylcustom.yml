@@ -12,6 +12,7 @@ module:
 theme: {  }
 blacklist:
   - config_split.config_split.fylcustom
+  - image.style.imagen_agenda
   - views.view.noticias_seccion
 graylist:
   - views.view.noticias

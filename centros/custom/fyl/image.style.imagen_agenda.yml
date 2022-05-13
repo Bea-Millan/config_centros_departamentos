@@ -1,0 +1,15 @@
+uuid: a3f43581-fb3a-4f00-ae2c-c366b8efe992
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_agenda
+label: 'Imagen agenda'
+effects:
+  20ba33ed-854c-4db2-9f15-f7b15e8fae74:
+    uuid: 20ba33ed-854c-4db2-9f15-f7b15e8fae74
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 70
+      height: 70
+      anchor: center-center

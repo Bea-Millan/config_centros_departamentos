@@ -20,5 +20,6 @@ permissions:
   - 'access content'
   - 'access site map'
   - 'diff view changes'
+  - 'post comments'
   - 'search content'
   - 'use text format filtered_html'
