@@ -22,7 +22,7 @@ plugin: 'views_block:noticias_ciencias_custom-block_1'
 settings:
   id: 'views_block:noticias_ciencias_custom-block_1'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   views_label: ''
   items_per_page: none
@@ -30,4 +30,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: "/prueba\r\n<front>"

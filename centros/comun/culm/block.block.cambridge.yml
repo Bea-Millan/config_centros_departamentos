@@ -12,7 +12,7 @@ dependencies:
 id: cambridge
 theme: unizar_centro
 region: columna_lateral
-weight: -2
+weight: -8
 provider: null
 plugin: 'block_content:aba59766-0e1e-4594-acf1-e75d6f2766f0'
 settings:

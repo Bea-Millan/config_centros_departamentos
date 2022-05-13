@@ -10,8 +10,8 @@ smtp_autotls: true
 smtp_timeout: 30
 smtp_username: gestweb
 smtp_password: 7.Syrox
-smtp_from: medicina
-smtp_fromname: 'Gestión web'
+smtp_from: secremed@unizar.es
+smtp_fromname: 'Facultad de Medicina'
 smtp_client_hostname: ''
 smtp_client_helo: ''
 smtp_allowhtml: '0'

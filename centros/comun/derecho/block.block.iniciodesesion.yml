@@ -10,7 +10,7 @@ dependencies:
 id: iniciodesesion
 theme: unizar_centro
 region: content
-weight: 0
+weight: -5
 provider: null
 plugin: user_login_block
 settings:

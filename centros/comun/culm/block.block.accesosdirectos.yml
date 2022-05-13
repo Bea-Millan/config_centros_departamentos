@@ -1,23 +1,23 @@
-uuid: d19dc675-bddf-492d-a581-d71e252eb5bb
+uuid: fdc5303f-f6bc-4aed-aafe-f6d6721b59e2
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-menu-intranet
+    - system.menu.menu-lateral
   module:
     - menu_block
     - system
   theme:
     - unizar_centro
-id: menuintranet
+id: accesosdirectos
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -11
 provider: null
-plugin: 'menu_block:menu-menu-intranet'
+plugin: 'menu_block:menu-lateral'
 settings:
-  id: 'menu_block:menu-menu-intranet'
-  label: menu-intranet
+  id: 'menu_block:menu-lateral'
+  label: 'Accesos directos'
   label_display: visible
   provider: menu_block
   follow: false
@@ -27,10 +27,10 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-  parent: 'menu-menu-intranet:'
-  suggestion: menu_menu_intranet
+  parent: 'menu-lateral:'
+  suggestion: menu_lateral
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/intranet/*'
+    pages: '<front>'

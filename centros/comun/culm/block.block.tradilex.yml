@@ -11,7 +11,7 @@ dependencies:
 id: tradilex
 theme: unizar_centro
 region: columna_lateral
-weight: 1
+weight: -5
 provider: null
 plugin: 'block_content:3748e1ad-ca29-4534-b7c2-4ba5a4e6f2a9'
 settings:

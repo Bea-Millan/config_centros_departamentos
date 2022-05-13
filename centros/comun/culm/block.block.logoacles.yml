@@ -12,7 +12,7 @@ dependencies:
 id: logoacles
 theme: unizar_centro
 region: columna_lateral
-weight: -3
+weight: -9
 provider: null
 plugin: 'block_content:cb67365f-df30-4f9b-b141-d1cfadc0686c'
 settings:
