@@ -28,7 +28,6 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - user.role.administrator
   - user.role.anonymous
-  - user.role.supergestor
   - asset_injector.css.ciencias_inyeccion_css
   - unizar_departamento.settings
   - 'webform.webform.*'
