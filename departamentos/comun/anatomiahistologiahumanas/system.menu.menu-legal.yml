@@ -1,0 +1,8 @@
+uuid: cfbd62b0-f602-47b7-bab6-dce586171b65
+langcode: es
+status: true
+dependencies: {  }
+id: menu-legal
+label: Legal
+description: 'Menú de links legales que aparecerá en el pie del sitio.'
+locked: false
