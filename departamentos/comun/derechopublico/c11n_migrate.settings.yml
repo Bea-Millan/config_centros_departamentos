@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: S1uaJFGgeBEFCjt490Ar-8ybitshPS-eq_MqTVikXJk
+plugin:
+  host: derechopublico.unizar.es
+  url_host: sites/derechopublico
+langcode: es
