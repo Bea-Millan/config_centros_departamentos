@@ -25,7 +25,6 @@ dependencies:
     - role_delegation
     - search
     - shortcut
-    - smtp
     - system
     - taxonomy
     - toolbar
@@ -100,7 +99,6 @@ permissions:
   - 'administer search'
   - 'administer shortcuts'
   - 'administer site configuration'
-  - 'administer smtp module'
   - 'administer software updates'
   - 'administer superfish'
   - 'administer taxonomy'

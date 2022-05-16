@@ -1,22 +1,19 @@
-uuid: 36c39213-a6dc-424e-ae08-23927aa8388e
+uuid: 35999ca6-4b08-4e25-bd8d-a2b4c75419d1
 langcode: es
 status: true
 dependencies:
-  config:
-    - filter.format.filtered_html
   module:
-    - filter
     - search
     - system
 _core:
   default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
 id: anonymous
-label: 'usuario anónimo'
+label: 'anonymous user'
 weight: 0
 is_admin: false
 permissions:
-  - 'access comments'
   - 'access content'
+  - 'access service links'
   - 'access site map'
+  - 'diff view changes'
   - 'search content'
-  - 'use text format filtered_html'
