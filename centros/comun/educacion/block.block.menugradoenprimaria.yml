@@ -1,4 +1,4 @@
-uuid: 3d14b2c9-58b3-42b5-961e-926f4e511aab
+uuid: c9ea791b-f3dd-4c2a-a2bf-d4e877c52a3d
 langcode: es
 status: true
 dependencies:
@@ -12,13 +12,13 @@ dependencies:
 id: menugradoenprimaria
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: 0
 provider: null
 plugin: 'menu_block:menu-menu-grado-en-primaria'
 settings:
   id: 'menu_block:menu-menu-grado-en-primaria'
-  label: 'Grado en Magisterio en Educación Primaria'
-  label_display: visible
+  label: 'Menu grado en Primaria'
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

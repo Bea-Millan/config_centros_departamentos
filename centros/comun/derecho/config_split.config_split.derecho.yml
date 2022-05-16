@@ -26,7 +26,6 @@ blacklist:
   - unizar_base.settings
   - unizar_centro.settings
   - unizar_modulos_configuracion.settings
-  - user.role.supergestor
   - asset_injector.css.derecho_inyeccion_css
   - unizar_departamento.settings
   - 'webform.webform.*'

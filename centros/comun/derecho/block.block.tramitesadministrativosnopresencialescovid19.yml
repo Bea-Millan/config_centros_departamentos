@@ -12,7 +12,7 @@ dependencies:
 id: tramitesadministrativosnopresencialescovid19
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -2
 provider: null
 plugin: 'block_content:781bebad-9443-4f1c-8191-e6585849e971'
 settings:

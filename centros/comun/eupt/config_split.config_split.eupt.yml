@@ -31,7 +31,6 @@ blacklist:
   - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
-  - user.role.supergestor
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'

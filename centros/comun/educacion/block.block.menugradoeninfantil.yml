@@ -1,4 +1,4 @@
-uuid: f888a923-02f4-4432-b258-347f12b636ef
+uuid: 8ef4d44d-b541-4ce5-bf23-0d94a9039773
 langcode: es
 status: true
 dependencies:
@@ -12,13 +12,13 @@ dependencies:
 id: menugradoeninfantil
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: 0
 provider: null
 plugin: 'menu_block:menu-menu-grado-en-infantil'
 settings:
   id: 'menu_block:menu-menu-grado-en-infantil'
-  label: 'Grado en Magisterio en Educación Infantil'
-  label_display: visible
+  label: 'Menu grado en Infantil'
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

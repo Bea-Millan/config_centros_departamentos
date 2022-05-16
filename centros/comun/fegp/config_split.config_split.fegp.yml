@@ -28,7 +28,6 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - user.role.administrator
   - user.role.anonymous
-  - user.role.supergestor
   - unizar_admin_menu.settings
   - migrate_drupal.settings
   - 'webform.webform.*'

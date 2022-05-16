@@ -12,7 +12,7 @@ dependencies:
 id: views_block__parrilla_principal_block_2
 theme: unizar_centro
 region: content
-weight: -5
+weight: -3
 provider: null
 plugin: 'views_block:parrilla_principal-block_2'
 settings:

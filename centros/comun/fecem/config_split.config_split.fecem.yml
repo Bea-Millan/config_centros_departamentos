@@ -32,7 +32,6 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - language.negotiation
-  - user.role.supergestor
   - user.role.administrator
   - user.role.anonymous
 graylist: {  }

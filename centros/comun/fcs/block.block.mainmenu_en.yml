@@ -18,7 +18,7 @@ plugin: 'superfish:main_en'
 settings:
   id: 'superfish:main_en'
   label: 'Main menu_en'
-  label_display: visible
+  label_display: '0'
   provider: superfish
   level: '1'
   depth: '0'

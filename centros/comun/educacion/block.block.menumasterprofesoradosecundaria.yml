@@ -1,4 +1,4 @@
-uuid: 268fa958-3dd3-4271-9e55-795c37289b8a
+uuid: 17368f54-c0e8-4e35-8ced-f04edbcf5ed7
 langcode: es
 status: true
 dependencies:
@@ -12,13 +12,13 @@ dependencies:
 id: menumasterprofesoradosecundaria
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: 0
 provider: null
 plugin: 'menu_block:menu-menu-master-profesorado-sec'
 settings:
   id: 'menu_block:menu-menu-master-profesorado-sec'
-  label: 'Máster en Profesorado de Secundaria'
-  label_display: visible
+  label: 'Menu master profesorado secundaria'
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

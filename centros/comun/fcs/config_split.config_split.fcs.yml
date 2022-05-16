@@ -32,7 +32,6 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - user.role.supergestor
   - user.role.administrator
   - user.role.anonymous
 graylist: {  }

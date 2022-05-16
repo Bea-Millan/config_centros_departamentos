@@ -1,0 +1,33 @@
+uuid: b3f4caa3-39d5-4d5a-94af-cb50241e7e8c
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - unizar_instituto
+_core:
+  default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
+id: unizar_instituto_bloquerrss_2
+theme: unizar_instituto
+region: footer
+weight: 0
+provider: null
+plugin: bloque_rrss
+settings:
+  id: bloque_rrss
+  label: 'Bloque rrss'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  redes_sociales:
+    rrss_header: null
+    rss_header: null
+    blog: 'http://www.unizar.es'
+    blog_class: 'http://www.unizar.es'
+    instagram: instagram
+    facebook: facebook
+    twitter: twitter
+    youtube: Youtube
+    linkedin: linkedin
+    soundcloud: soundcloud
+visibility: {  }
