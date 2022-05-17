@@ -1,0 +1,145 @@
+uuid: f7d98179-1264-4cba-b720-881420839432
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_79
+title: 'Mi primer formulario'
+description: null
+category: null
+elements: |-
+  apellidos_y_nombre:
+    '#type': textfield
+    '#title': 'Apellidos y Nombre'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title_display': invisible
+    '#title': 'correo electrónico'
+    '#description': ' Short format only: name@example.com'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#title_display': invisible
+    '#title': teléfono
+  colectivo:
+    '#type': checkboxes
+    '#options':
+      pas: PAS
+      pdi: PDI
+      estudiante: ESTUDIANTE
+    '#multiple': true
+    '#title': Colectivo
+    '#required': true
+  fecha_de_alta:
+    '#type': date
+    '#title': 'fecha de alta'
+    '#states':
+      visible:
+        - ':input[name="colectivo[pdi]"]':
+            checked: true
+        - ':input[name="colectivo[estudiante]"]':
+            checked: true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: 1
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: sed4004@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

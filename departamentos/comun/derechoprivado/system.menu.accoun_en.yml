@@ -1,0 +1,8 @@
+uuid: e295b9bf-a815-407d-be54-3246a8fa12e8
+langcode: es
+status: true
+dependencies: {  }
+id: accoun_en
+label: 'User menu_en'
+description: 'El menú <em>Usuario</em> contiene enlaces relacionados con la cuenta del usuario, como el enlace ''Cerrar sesión''.'
+locked: false

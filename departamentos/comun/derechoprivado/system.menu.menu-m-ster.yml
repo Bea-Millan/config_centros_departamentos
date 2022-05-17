@@ -1,0 +1,8 @@
+uuid: 5394bc78-0652-4c5c-ad0a-8786cca7b00f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-m-ster
+label: Máster
+description: ''
+locked: false

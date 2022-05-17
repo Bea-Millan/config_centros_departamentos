@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: W_mxIWgI3uiFl7moIlsMowbseKfPJ1l8CMeVGumtGsI
+plugin:
+  host: derechoprivado.unizar.es
+  url_host: sites/derechoprivado
+langcode: es

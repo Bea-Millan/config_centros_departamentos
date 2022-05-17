@@ -1,0 +1,83 @@
+uuid: 4f8120e1-de3a-4e94-9387-43f8c877b143
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_80
+title: 'formulario guillermo'
+description: null
+category: null
+elements: |-
+  justificacion:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': pdf
+    '#title': Justificación
+  encuesta:
+    '#type': webform_likert
+    '#questions':
+      -
+        - '1'
+        - 'Estado de las instalaciones'
+      -
+        - '2'
+        - 'Temperatura del aula'
+      -
+        - '3'
+        - 'Material entregado'
+      -
+        - '4'
+        - Profesorado
+    '#answers':
+      -
+        - '1'
+        - 'Muy malo'
+      -
+        - '2'
+        - Malo
+      -
+        - '3'
+        - Regular
+      -
+        - '4'
+        - Bueno
+      -
+        - '5'
+        - 'Muy bueno'
+    '#title': Encuesta
+  informacion_cuenta_corriente:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>Aquí el texto informativo</p>'
+    '#title': 'Información cuenta corriente'
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
