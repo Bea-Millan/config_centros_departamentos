@@ -26,9 +26,11 @@ dependencies:
     - search
     - shortcut
     - smtp
+    - statistics
     - system
     - taxonomy
     - toolbar
+    - view_unpublished
     - views_ui
 _core:
   default_config_hash: sy4leADBKi-HbVXrZxxXHB-A5NkagIXX33cTiY7hwow
@@ -53,6 +55,7 @@ permissions:
   - 'access site map'
   - 'access site reports'
   - 'access site-wide contact form'
+  - 'access statistics'
   - 'access the block administration page'
   - 'access toolbar'
   - 'access user contact forms'
@@ -62,28 +65,22 @@ permissions:
   - 'add terms in 2'
   - 'add terms in secciones'
   - 'add terms in tipos_de_estudio'
+  - admin_display_suite
   - 'administer CAPTCHA settings'
   - 'administer actions'
-  - 'administer barra_principal region'
   - 'administer block access settings'
   - 'administer blocks'
-  - 'administer cabecera region'
-  - 'administer cabecera_inf region'
-  - 'administer columna_lateral region'
   - 'administer comments'
   - 'administer contact forms'
-  - 'administer content region'
   - 'administer content translations'
   - 'administer content types'
-  - 'administer dashboard_inactive region'
-  - 'administer dashboard_main region'
-  - 'administer dashboard_sidebar region'
+  - 'administer contexts'
+  - 'administer css injection'
   - 'administer features'
   - 'administer fieldgroups'
   - 'administer fields'
   - 'administer filters'
   - 'administer image styles'
-  - 'administer imagen_cabecera region'
   - 'administer imce'
   - 'administer languages'
   - 'administer lightbox2'
@@ -101,6 +98,7 @@ permissions:
   - 'administer site configuration'
   - 'administer smtp module'
   - 'administer software updates'
+  - 'administer statistics'
   - 'administer superfish'
   - 'administer taxonomy'
   - 'administer themes'
@@ -118,10 +116,11 @@ permissions:
   - 'assign profiles to nodes'
   - 'block IP addresses'
   - 'bypass node access'
-  - 'bypass region control'
   - 'bypass rh_node'
   - 'cancel account'
   - 'change own username'
+  - 'clone node'
+  - 'clone own nodes'
   - 'configure all block body fields'
   - 'configure all block descriptions'
   - 'configure all block titles'
@@ -133,6 +132,7 @@ permissions:
   - 'configure all role visibility settings'
   - 'configure all user visibility settings'
   - 'configure all visibility settings'
+  - 'context ajax block access'
   - 'create article content'
   - 'create blocks'
   - 'create page content'
@@ -228,5 +228,6 @@ permissions:
   - 'view any unpublished webform content'
   - 'view date repeats'
   - 'view own unpublished content'
+  - 'view post access counter'
   - 'view revisions'
   - 'view the administration theme'
