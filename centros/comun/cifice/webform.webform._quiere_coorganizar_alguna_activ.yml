@@ -1,0 +1,345 @@
+uuid: 46ddc0ec-15de-489f-8dc3-d065cb016d9e
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: _quiere_coorganizar_alguna_activ
+title: '¿Quiere coorganizar alguna actividad con el CIFICE?'
+description: ''
+category: ''
+elements: |-
+  info:
+    '#type': webform_message
+    '#message_type': info
+    '#message_message': |-
+      El CIFICE ofrece opciones de colaboraci&oacute;n.&nbsp;<br />
+      Para poder planificar, te solicitamos los datos provisionales de la actividad que quieras realizar.&nbsp;<br />
+      Para cualquier duda o aclaraci&oacute;n puede consultar en congresoscifice@unizar.es&nbsp;<br />
+      Gracias por tu implicaci&oacute;n y participaci&oacute;n.
+  correo_electronico:
+    '#type': email
+    '#title': 'Correo electrónico'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#required': true
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#required': true
+  grupo_al_que_pertenece:
+    '#type': webform_checkboxes_other
+    '#title': 'Grupo al que pertenece'
+    '#options':
+      ARGOS: ARGOS
+      'Beagle. Investigación en Didáctica de Ciencias Naturales': 'Beagle. Investigación en Didáctica de Ciencias Naturales'
+      'Educación Comunicativa y Literaria en la Sociedad de la Información. Literatura Infantil y Juvenil en la Construcción de Identidades (ECOLIJ)': 'Educación Comunicativa y Literaria en la Sociedad de la Información. Literatura Infantil y Juvenil en la Construcción de Identidades (ECOLIJ)'
+      'Educación Física y Promoción de la Actividad Física (EFYPAF)': 'Educación Física y Promoción de la Actividad Física (EFYPAF)'
+      'Educación y Diversidad (EDI)': 'Educación y Diversidad (EDI)'
+      'Educaviva - Educación y Procesos Psicológicos': 'Educaviva - Educación y Procesos Psicológicos'
+      'Emoción, Regulación y Ajuste (ERA)': 'Emoción, Regulación y Ajuste (ERA)'
+      'Entrenamiento, Actividad Física y Rendimiento Deportivo (ENFYRED)': 'Entrenamiento, Actividad Física y Rendimiento Deportivo (ENFYRED)'
+      EtnoEdu: EtnoEdu
+      'Investigación en Educación Matemática': 'Investigación en Educación Matemática'
+      'OPIICS (Observatorio para la investigación e innovación en Ciencias Sociales)': 'OPIICS (Observatorio para la investigación e innovación en Ciencias Sociales)'
+      'EduQTech (Education - Quality - Technology)': 'EduQTech (Education - Quality - Technology)'
+    '#required': true
+    '#options__properties': ''
+  fecha_de_comienzo_del_evento:
+    '#type': date
+    '#title': 'Fecha de comienzo del evento'
+    '#required': true
+  fecha_de_finalizacion_del_evento:
+    '#type': date
+    '#title': 'Fecha de finalización del evento'
+    '#required': true
+  numero_de_horas:
+    '#type': textfield
+    '#title': 'Número de horas'
+  tipo_de_evento:
+    '#type': webform_radios_other
+    '#title': 'Tipo de evento'
+    '#options':
+      Jornada: Jornada
+      Simposio: Simposio
+      Congreso: Congreso
+      'Curso de formación': 'Curso de formación'
+      Reunión: Reunión
+    '#required': true
+    '#options__properties': ''
+  formato:
+    '#type': select
+    '#title': Formato
+    '#options':
+      Presencia: Presencia
+      Online: Online
+      Híbrido: Híbrido
+  ambito:
+    '#type': select
+    '#title': Ámbito
+    '#options':
+      Local: Local
+      Autonómico: Autonómico
+      Nacional: Nacional
+      Internacional: Internacional
+  apoyos_del_cifice:
+    '#type': webform_checkboxes_other
+    '#title': 'Apoyos del CIFICE'
+    '#options':
+      'Gestión de matrícula': 'Gestión de matrícula'
+      'Certificación del CIFICE': 'Certificación del CIFICE'
+      'ntervención a lo largo del evento de alguien del equipo directivo del CIFICE': 'ntervención a lo largo del evento de alguien del equipo directivo del CIFICE'
+    '#options__properties': ''
+  servicios_para_contratar_en_el_cifice:
+    '#type': webform_checkboxes_other
+    '#title': 'Servicios para contratar en el CIFICE'
+    '#options':
+      'Medios audiovisuales (concretar streaming o grabación del acto, etc.)': 'Medios audiovisuales (concretar streaming o grabación del acto, etc.)'
+      'Diseño de página web en eventos.unizar.es': 'Diseño de página web en eventos.unizar.es'
+      'Medios audiovisuales (realizar píldora de vídeo de difusión)': 'Medios audiovisuales (realizar píldora de vídeo de difusión)'
+      'Maquetación del Programa u otros documentos': 'Maquetación del Programa u otros documentos'
+      'Corrección de estilo del Programa u otros documentos': 'Corrección de estilo del Programa u otros documentos'
+    '#options__properties': ''
+  destinatarios:
+    '#type': checkboxes
+    '#title': Destinatarios
+    '#options':
+      'Profesorado universitario': 'Profesorado universitario'
+      'Profesorado no universitario': 'Profesorado no universitario'
+      Alumnado: Alumnado
+      'Asociaciones u otros colectivos': 'Asociaciones u otros colectivos'
+    '#required': true
+    '#options__properties': ''
+  numero_de_personas_que_asistiran_presencialmente:
+    '#type': textfield
+    '#title': 'Número de personas que asistirán presencialmente'
+  numero_de_personas_que_asistiran_online_al_acto:
+    '#type': textfield
+    '#title': 'Número de personas que asistirán ONLINE al acto'
+  aulas_donde_se_desarrollara:
+    '#type': webform_checkboxes_other
+    '#title': 'Aulas donde se desarrollará'
+    '#options':
+      'Salón de actos (175 personas)': 'Salón de actos (175 personas)'
+      'Aula Jardín Coworking (60)': 'Aula Jardín Coworking (60)'
+      'Aula 1 con ordenadores (32)': 'Aula 1 con ordenadores (32)'
+      'Aula 2': 'Aula 2'
+      'Aula 3 con ordenadores (35)': 'Aula 3 con ordenadores (35)'
+      'Aula 4 con videoconferencia (50)': 'Aula 4 con videoconferencia (50)'
+      'Aula 5 (32)': 'Aula 5 (32)'
+      'Aula 6 (45)': 'Aula 6 (45)'
+      'Sala de Juntas 1 con videoconferencia (17)': 'Sala de Juntas 1 con videoconferencia (17)'
+      'Sala de reuniones CIFICE (30)': 'Sala de reuniones CIFICE (30)'
+      'Sala de Juntas 2 (6)': 'Sala de Juntas 2 (6)'
+    '#options__properties': ''
+  entidades_coorganizadoras_y_colaboradoras:
+    '#type': textfield
+    '#title': 'Entidades coorganizadoras y colaboradoras'
+  observaciones:
+    '#type': textfield
+    '#title': Observaciones
+  _acepta_el_tratamiento_de_sus_datos_para_los_fines_exclusivos_de:
+    '#type': checkboxes
+    '#title': '¿Acepta el tratamiento de sus datos para los fines exclusivos de esta actividad?'
+    '#options':
+      SÍ: SÍ
+    '#required': true
+    '#options__properties': ''
+  datospersonales:
+    '#type': webform_message
+    '#message_type': info
+    '#message_message': |-
+      INFORMACI&Oacute;N SOBRE PROTECCION DE DATOS DE CAR&Aacute;CTER PERSONAL<br />
+      <br />
+      Conforme a lo dispuesto en la legislaci&oacute;n vigente en materia de protecci&oacute;n de datos de car&aacute;cter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasar&aacute;n a ser tratados, como responsable, por la Universidad de Zaragoza con la finalidad de gestionar su solicitud.<br />
+      Puede ejercitar sus derechos de acceso, rectificaci&oacute;n, limitaci&oacute;n, oposici&oacute;n o portabilidad ante el Gerente de la Universidad de Zaragoza (Edificio Paraninfo 1&ordf; planta, Plaza de Basilio Para&iacute;so n&ordm; 4, 50005- Zaragoza) se&ntilde;alando concretamente la causa de su solicitud y acompa&ntilde;ando copia de su documento acreditativo de identidad. La solicitud podr&aacute; hacerse mediante escrito en formato papel o por medios electr&oacute;nicos.<br />
+      En caso de no haber obtenido satisfacci&oacute;n en el ejercicio de sus derechos, puede dirigirse al Delegado/a de Protecci&oacute;n de Datos de la Universidad (<a href="mailto:dpd@unizar.es">dpd@unizar.es</a>) o en reclamaci&oacute;n a la Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos a trav&eacute;s de los formularios que tiene habilitados al efecto y que son accesibles desde su p&aacute;gina web: <a href="https://sedeagpd.gob.es/">https://sedeagpd.gob.es</a>&nbsp;
+css: ''
+javascript: ''
+settings:
+  ajax: false
+  ajax_scroll_top: form
+  ajax_progress_type: ''
+  ajax_effect: ''
+  ajax_speed: null
+  page: true
+  page_submit_path: ''
+  page_confirm_path: ''
+  page_theme_name: ''
+  form_title: both
+  form_submit_once: false
+  form_open_message: ''
+  form_close_message: ''
+  form_exception_message: ''
+  form_previous_submissions: true
+  form_confidential: false
+  form_confidential_message: ''
+  form_disable_remote_addr: false
+  form_convert_anonymous: false
+  form_prepopulate: false
+  form_prepopulate_source_entity: false
+  form_prepopulate_source_entity_required: false
+  form_prepopulate_source_entity_type: ''
+  form_unsaved: false
+  form_disable_back: false
+  form_submit_back: false
+  form_disable_autocomplete: false
+  form_novalidate: false
+  form_disable_inline_errors: false
+  form_required: false
+  form_autofocus: false
+  form_details_toggle: false
+  form_reset: false
+  form_access_denied: default
+  form_access_denied_title: ''
+  form_access_denied_message: ''
+  form_access_denied_attributes: {  }
+  form_file_limit: ''
+  form_attributes: {  }
+  form_method: ''
+  form_action: ''
+  share: false
+  share_node: false
+  share_theme_name: ''
+  share_title: true
+  share_page_body_attributes: {  }
+  submission_label: ''
+  submission_exception_message: ''
+  submission_locked_message: ''
+  submission_log: false
+  submission_excluded_elements: {  }
+  submission_exclude_empty: false
+  submission_exclude_empty_checkbox: false
+  submission_views: {  }
+  submission_views_replace: {  }
+  submission_user_columns: {  }
+  submission_user_duplicate: false
+  submission_access_denied: default
+  submission_access_denied_title: ''
+  submission_access_denied_message: ''
+  submission_access_denied_attributes: {  }
+  previous_submission_message: ''
+  previous_submissions_message: ''
+  autofill: false
+  autofill_message: ''
+  autofill_excluded_elements: {  }
+  wizard_progress_bar: true
+  wizard_progress_pages: false
+  wizard_progress_percentage: false
+  wizard_progress_link: false
+  wizard_progress_states: false
+  wizard_start_label: ''
+  wizard_preview_link: false
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_auto_forward: true
+  wizard_auto_forward_hide_next_button: false
+  wizard_keyboard: true
+  wizard_track: ''
+  wizard_prev_button_label: ''
+  wizard_next_button_label: ''
+  wizard_toggle: false
+  wizard_toggle_show_label: ''
+  wizard_toggle_hide_label: ''
+  preview: 0
+  preview_label: ''
+  preview_title: ''
+  preview_message: ''
+  preview_attributes: {  }
+  preview_excluded_elements: {  }
+  preview_exclude_empty: true
+  preview_exclude_empty_checkbox: false
+  draft: none
+  draft_multiple: false
+  draft_auto_save: false
+  draft_saved_message: ''
+  draft_loaded_message: ''
+  draft_pending_single_message: ''
+  draft_pending_multiple_message: ''
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_title: ''
+  confirmation_message: ''
+  confirmation_attributes: {  }
+  confirmation_back: true
+  confirmation_back_label: ''
+  confirmation_back_attributes: {  }
+  confirmation_exclude_query: false
+  confirmation_exclude_token: false
+  confirmation_update: false
+  limit_total: null
+  limit_total_interval: null
+  limit_total_message: ''
+  limit_total_unique: false
+  limit_user: null
+  limit_user_interval: null
+  limit_user_message: ''
+  limit_user_unique: false
+  entity_limit_total: null
+  entity_limit_total_interval: null
+  entity_limit_user: null
+  entity_limit_user_interval: null
+  purge: none
+  purge_days: null
+  results_disabled: false
+  results_disabled_ignore: false
+  results_customize: false
+  token_view: false
+  token_update: false
+  token_delete: false
+  serial_disabled: false
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+    permissions: {  }
+  view_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  purge_any:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  view_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  update_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  delete_own:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  administer:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  test:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+  configuration:
+    roles: {  }
+    users: {  }
+    permissions: {  }
+handlers: {  }
+variants: {  }
