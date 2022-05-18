@@ -1,9 +1,9 @@
-uuid: 69991b41-a828-400f-a73a-0af71a01626e
+uuid: 41e39cf0-0968-4842-b189-867f712f5691
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.estudios
+    - views.view.parrilla_principal
   module:
     - block_class
     - system
@@ -12,19 +12,19 @@ dependencies:
     - unizar_centro
 third_party_settings:
   block_class:
-    classes: pestanas
+    classes: main-parrilla
 _core:
-  default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
-id: unizar_centro_views_block__estudios_block_1
+  default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
+id: unizar_centro_views_block__parrilla_principal_block_1
 theme: unizar_centro
 region: content
-weight: -6
+weight: -2
 provider: null
-plugin: 'views_block:estudios-block_1'
+plugin: 'views_block:parrilla_principal-block_1'
 settings:
-  id: 'views_block:estudios-block_1'
+  id: 'views_block:parrilla_principal-block_1'
   label: ''
-  label_display: visible
+  label_display: '0'
   provider: views
   views_label: ''
   items_per_page: none

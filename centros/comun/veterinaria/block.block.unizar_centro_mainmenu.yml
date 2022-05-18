@@ -1,11 +1,10 @@
-uuid: 1a9a46a1-a052-450f-8f69-93db9ab2ddb6
+uuid: c3a32c3b-e602-46b9-b526-10c7b62bde7b
 langcode: es
 status: true
 dependencies:
   config:
     - system.menu.main
   module:
-    - language
     - superfish
   theme:
     - unizar_centro
@@ -71,11 +70,4 @@ settings:
   custom_list_class: ''
   custom_item_class: ''
   custom_link_class: ''
-visibility:
-  language:
-    id: language
-    negate: false
-    context_mapping:
-      language: '@language.current_language_context:language_interface'
-    langcodes:
-      es: es
+visibility: {  }

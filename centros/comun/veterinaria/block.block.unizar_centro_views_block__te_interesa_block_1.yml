@@ -1,4 +1,4 @@
-uuid: 998f3d19-c096-47cf-96f6-f12ab21e87d1
+uuid: 3736e010-651b-45b7-8d77-b755f727baa1
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,6 @@ dependencies:
     - views.view.te_interesa
   module:
     - block_class
-    - system
     - views
   theme:
     - unizar_centro
@@ -18,7 +17,7 @@ _core:
 id: unizar_centro_views_block__te_interesa_block_1
 theme: unizar_centro
 region: columna_lateral
-weight: -7
+weight: 0
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:
@@ -28,8 +27,4 @@ settings:
   provider: views
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

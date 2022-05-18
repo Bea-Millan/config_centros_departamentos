@@ -1,4 +1,4 @@
-uuid: ad3528f2-50b5-462d-85b5-9b73376d6fcb
+uuid: b0c00f67-1811-4c90-8370-9b8b070c79f3
 langcode: es
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: unizar_centro_secundario
 theme: unizar_centro
 region: cabecera_sup
-weight: -10
+weight: -9
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

@@ -1,15 +1,20 @@
-uuid: 9290b822-edc8-4019-80b1-0e1506471d0d
+uuid: 17507977-8f63-472a-afea-8443ec650d3b
 langcode: es
 status: true
 dependencies:
   config:
     - views.view.calendario_noticias
   module:
-    - system
+    - block_class
     - views
   theme:
     - unizar_centro
-id: views_block__calendario_noticias_block_1_2
+third_party_settings:
+  block_class:
+    classes: calendar
+_core:
+  default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
+id: unizar_centro_views_block__calendario_noticias_block_1
 theme: unizar_centro
 region: columna_lateral
 weight: 0
@@ -18,13 +23,9 @@ plugin: 'views_block:calendario_noticias-block_1'
 settings:
   id: 'views_block:calendario_noticias-block_1'
   label: ''
-  label_display: '0'
+  label_display: visible
   provider: views
   context_mapping: {  }
   views_label: ''
   items_per_page: none
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
+visibility: {  }

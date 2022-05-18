@@ -1,39 +1,40 @@
-blacklist:
-- config_split.config_split.veterinaria
-- system.site
-- system.theme
-- asset_injector.css.veterinaria_inyeccion_css
-- core.entity_view_mode.shortcut.token
-- shortcut.set.default
-- unizar_centro.settings
-- unizar_base.settings
-- unizar_departamento.settings
-- smtp.settings
-- language.negotiation
-- language.types
-- matomo.settings
-- unizar_modulos_configuracion.settings
-- unizar_admin_menu.settings
-- migrate_drupal.settings
-- webform.webform.*
-- system.menu.*
-- language.entity.*
-- block.block.*
-- user.role.administrator
-- user.role.anonymous
-dependencies: {}
-description: ''
-folder: ../config/sites/centros/comun/veterinaria
-graylist: {}
-graylist_dependents: true
-graylist_skip_equal: true
+uuid: 61d4c687-b889-4704-a8a7-4c2e4bcfbe72
+langcode: es
+status: true
+dependencies: {  }
 id: veterinaria
 label: veterinaria
-langcode: es
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/veterinaria
 module:
   c11n_migrate: 0
-status: true
 theme:
   unizar_centro: 0
-uuid: b783e23f-4af7-41ff-8e5f-778ed10a7d23
-weight: 0
+blacklist:
+  - config_split.config_split.veterinaria
+  - system.site
+  - system.theme
+  - asset_injector.css.veterinaria_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
