@@ -1,0 +1,30 @@
+uuid: 09d9498b-f19b-4f35-885c-04992ef4ce2b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:11d3638f-171e-4504-858a-ee65fb0748ae'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: botoncovidpaginaprincipal
+theme: unizar_centro
+region: columna_lateral
+weight: -10
+provider: null
+plugin: 'block_content:11d3638f-171e-4504-858a-ee65fb0748ae'
+settings:
+  id: 'block_content:11d3638f-171e-4504-858a-ee65fb0748ae'
+  label: 'boton covid pagina principal'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

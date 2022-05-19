@@ -12,7 +12,7 @@ dependencies:
 id: tablondeavisosdelafacultad
 theme: unizar_centro
 region: columna_lateral
-weight: -2
+weight: -3
 provider: null
 plugin: 'block_content:cfd24ae7-d33c-4baf-886b-29eff265c0ac'
 settings:

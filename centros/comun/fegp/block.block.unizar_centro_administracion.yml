@@ -4,6 +4,7 @@ status: true
 dependencies:
   module:
     - unizar_admin_menu
+    - user
   theme:
     - unizar_centro
 _core:
@@ -19,4 +20,11 @@ settings:
   label: Administración
   label_display: '0'
   provider: unizar_admin_menu
-visibility: {  }
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated

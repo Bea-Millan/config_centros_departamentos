@@ -1,0 +1,30 @@
+uuid: 018c7a3d-3b7b-4ed0-abdb-c01afc23f29a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3d2fc57b-5c91-4bb4-af21-51096936be15'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: botonieducacion
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:3d2fc57b-5c91-4bb4-af21-51096936be15'
+settings:
+  id: 'block_content:3d2fc57b-5c91-4bb4-af21-51096936be15'
+  label: botonIEDUCACION
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

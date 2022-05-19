@@ -1,4 +1,4 @@
-uuid: 18d8b2cf-9153-4e90-90e9-864596090faf
+uuid: 26127ae5-e9f4-412f-8bad-48e8edb87fb5
 langcode: es
 status: true
 dependencies:
@@ -41,6 +41,10 @@ process:
         - sites/veterinaria.unizar.es/
         - sites/default/
       replace: ''
+    -
+      plugin: str_replace
+      search: users/zarate/
+      replace: archivos/
   source_full_path:
     -
       plugin: concat
@@ -62,6 +66,10 @@ process:
       regex: false
       search: '/Crear Galería'
       replace: ''
+    -
+      plugin: str_replace
+      search: users/zarate/
+      replace: archivos/
   uri:
     -
       plugin: file_copy

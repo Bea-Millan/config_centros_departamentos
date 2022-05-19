@@ -1,0 +1,30 @@
+uuid: 54fafebb-a186-4773-a57c-031b3d67e267
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:703770a9-f6aa-42e3-9489-01bc7b653f2d'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: horariosdelcentro
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:703770a9-f6aa-42e3-9489-01bc7b653f2d'
+settings:
+  id: 'block_content:703770a9-f6aa-42e3-9489-01bc7b653f2d'
+  label: 'El centro'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

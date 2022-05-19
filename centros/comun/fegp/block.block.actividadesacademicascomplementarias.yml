@@ -12,7 +12,7 @@ dependencies:
 id: actividadesacademicascomplementarias
 theme: unizar_centro
 region: columna_lateral
-weight: -3
+weight: -4
 provider: null
 plugin: 'block_content:a92e646c-e423-4e4c-8696-275a0e015e10'
 settings:

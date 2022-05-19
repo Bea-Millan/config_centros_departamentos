@@ -1,0 +1,30 @@
+uuid: 828cd47c-9491-4ab5-80a6-7442e2b73960
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:558a7c07-bf19-4a00-9724-6e99376b393f'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: areapersonalestudiante
+theme: unizar_centro
+region: columna_lateral
+weight: -12
+provider: null
+plugin: 'block_content:558a7c07-bf19-4a00-9724-6e99376b393f'
+settings:
+  id: 'block_content:558a7c07-bf19-4a00-9724-6e99376b393f'
+  label: 'Área Personal Estudiante'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

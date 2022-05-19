@@ -1,6 +1,6 @@
 uuid: 30a71f51-fec2-4788-b114-9631a8f9e9ad
 langcode: es
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:9943f17c-d53a-4679-bbf9-519681b3a0cd'
@@ -12,7 +12,7 @@ dependencies:
 id: erasmusinhuesca
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: -1
 provider: null
 plugin: 'block_content:9943f17c-d53a-4679-bbf9-519681b3a0cd'
 settings:

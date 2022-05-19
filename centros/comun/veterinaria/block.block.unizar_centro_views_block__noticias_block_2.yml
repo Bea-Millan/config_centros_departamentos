@@ -1,4 +1,4 @@
-uuid: ce4f66dd-103f-43a9-8789-380b4a45925b
+uuid: b09d76ad-c8e6-4e81-8319-24d2aa64894a
 langcode: es
 status: true
 dependencies:
@@ -18,15 +18,15 @@ _core:
 id: unizar_centro_views_block__noticias_block_2
 theme: unizar_centro
 region: content
-weight: -4
+weight: -8
 provider: null
 plugin: 'views_block:noticias-block_2'
 settings:
   id: 'views_block:noticias-block_2'
-  label: ''
+  label: 'Noticia destacada'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Noticia destacada'
   items_per_page: none
 visibility:
   request_path:

@@ -12,7 +12,7 @@ dependencies:
 id: mainmenu_2
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -5
 provider: null
 plugin: 'menu_block:main'
 settings:

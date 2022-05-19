@@ -1,4 +1,4 @@
-uuid: 084f425b-551b-43ed-98be-5ecbccbb9d08
+uuid: b783e23f-4af7-41ff-8e5f-778ed10a7d23
 langcode: es
 status: true
 dependencies: {  }
@@ -29,12 +29,11 @@ blacklist:
   - unizar_admin_menu.settings
   - migrate_drupal.settings
   - 'webform.webform.*'
-  - user.role.administrator
-  - user.role.anonymous
-  - user.role.supergestor
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
+  - user.role.administrator
+  - user.role.anonymous
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

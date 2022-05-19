@@ -1,0 +1,30 @@
+uuid: cb66cdb8-59c4-4a8c-845d-f728c8baffa9
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8d61ed60-7712-495e-8128-5a8265b2dff2'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: acreditacioninstitucional
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:8d61ed60-7712-495e-8128-5a8265b2dff2'
+settings:
+  id: 'block_content:8d61ed60-7712-495e-8128-5a8265b2dff2'
+  label: 'Acreditacion Institucional'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

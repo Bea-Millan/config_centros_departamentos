@@ -1,0 +1,36 @@
+uuid: a382d531-ec78-4e4e-83ba-608ef8fd3125
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-master-aprendizaje
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menumasteraprendizaje
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-menu-master-aprendizaje'
+settings:
+  id: 'menu_block:menu-menu-master-aprendizaje'
+  label: 'Menu master aprendizaje'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-menu-master-aprendizaje:'
+  suggestion: menu_menu_master_aprendizaje
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/master-aprendizaje/*'

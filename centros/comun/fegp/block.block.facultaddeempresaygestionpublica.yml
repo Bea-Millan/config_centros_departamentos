@@ -1,6 +1,6 @@
 uuid: 07ff3195-fc50-47c9-9b8b-b0601b9f7e30
 langcode: es
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:90e288a1-1fbb-4358-8764-69714989080a'
@@ -12,7 +12,7 @@ dependencies:
 id: facultaddeempresaygestionpublica
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: 0
 provider: null
 plugin: 'block_content:90e288a1-1fbb-4358-8764-69714989080a'
 settings:

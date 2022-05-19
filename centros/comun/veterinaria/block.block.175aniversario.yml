@@ -1,0 +1,30 @@
+uuid: 387bb837-91b1-40c6-9375-ec7c779918f3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6dd91858-e202-4aaa-b384-7d95cd11ff1d'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: 175aniversario
+theme: unizar_centro
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'block_content:6dd91858-e202-4aaa-b384-7d95cd11ff1d'
+settings:
+  id: 'block_content:6dd91858-e202-4aaa-b384-7d95cd11ff1d'
+  label: '175 aniversario'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

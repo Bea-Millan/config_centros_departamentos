@@ -1,4 +1,4 @@
-uuid: 5efe5e1b-4127-4225-bf4f-e4c0acf640bb
+uuid: 39ef03ab-e2b2-4ae7-a04f-880994619185
 langcode: es
 status: true
 dependencies:
@@ -17,8 +17,8 @@ _core:
   default_config_hash: BVQKTyG-td3hqhM3DdjhZLx685SIe_mobSkHoz-N6Fs
 id: unizar_centro_views_block__slideshow_block_1
 theme: unizar_centro
-region: imagen_cabecera
-weight: -10
+region: content
+weight: -13
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

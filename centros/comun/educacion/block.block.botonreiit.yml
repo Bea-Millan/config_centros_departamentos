@@ -1,0 +1,30 @@
+uuid: a665a674-1752-4470-925d-9f4ca5219a64
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:561a67b7-af6b-44c5-a812-0329fcc817a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: botonreiit
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:561a67b7-af6b-44c5-a812-0329fcc817a8'
+settings:
+  id: 'block_content:561a67b7-af6b-44c5-a812-0329fcc817a8'
+  label: botonREIIT
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

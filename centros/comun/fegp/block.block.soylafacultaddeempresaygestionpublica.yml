@@ -1,0 +1,25 @@
+uuid: dc9276ed-718b-4d50-b6f2-f7e7fe4ccd1f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:edd82c14-1434-410c-97a5-672be20e715d'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: soylafacultaddeempresaygestionpublica
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'block_content:edd82c14-1434-410c-97a5-672be20e715d'
+settings:
+  id: 'block_content:edd82c14-1434-410c-97a5-672be20e715d'
+  label: 'Soy la Facultad de Empresa y Gestión Pública'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
