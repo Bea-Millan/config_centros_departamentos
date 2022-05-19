@@ -1,4 +1,4 @@
-uuid: a1b606e3-7df2-4e86-a64f-ad8a1254c28c
+uuid: a327a32a-c068-470f-abe1-e1d2caa52195
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: fQjRNLz_5Afa5VYqq-W3SMvzDNSdGYKUubQRHUNAj8E
-id: upgrade_d7_node_elemento_parilla
+  default_config_hash: GE_v-nwc7BSmf6ohvb-8aTsdgzHuzC69Bayt7XelYRU
+id: upgrade_d7_node_pestana
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -16,10 +16,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Elemento parilla)'
+label: 'Node (Pestaña)'
 source:
   plugin: d7_node_complete
-  node_type: elemento_parilla
+  node_type: pestana
 process:
   nid: tnid
   vid: vid
@@ -52,10 +52,6 @@ process:
     -
       plugin: get
       source: promote
-  sticky:
-    -
-      plugin: get
-      source: sticky
   revision_uid:
     -
       plugin: get
@@ -68,41 +64,27 @@ process:
     -
       plugin: get
       source: timestamp
-  field_imagen_valid:
-    -
-      plugin: null_coalesce
-      source:
-        - field_imagen_parrilla
-        - field_image
-  field_imagen_parrilla:
-    -
-      plugin: sub_process
-      source: '@field_imagen_valid'
-      process:
-        target_id: fid
-        alt: alt
-        title: title
-        width: width
-        height: height
-  field_enlace:
+  field_enlace_a_la_informacion:
     -
       plugin: sub_process
       source: field_link_noticia
       process:
         uri: value
-        title: title
-  field_orden:
+  field_configuracion_pestana:
     -
-      plugin: get
-      source: field_orden
+      plugin: entity_generate
+      source: field_tipo_estudio
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: pestanas
+      ignore_case: true
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: elemento_parrilla
+  default_bundle: estudio
 migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
-  optional:
-    - upgrade_d7_field_instance
-    - upgrade_d7_comment_field_instance
+    - upgrade_language
