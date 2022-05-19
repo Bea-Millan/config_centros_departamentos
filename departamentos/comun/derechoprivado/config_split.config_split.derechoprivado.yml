@@ -1,4 +1,4 @@
-uuid: 1e5b916a-23b2-4aff-9035-69a6cf97a165
+uuid: 58bed8e3-823c-4f9b-a005-2b8192b4fd86
 langcode: es
 status: true
 dependencies: {  }
@@ -35,7 +35,6 @@ blacklist:
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - config_split.config_split.departamento.yml
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
