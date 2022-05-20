@@ -1,6 +1,6 @@
-uuid: c3e799e8-befd-40f9-994d-25f5db12dc6d
+uuid: 21f1848d-f51b-414d-9462-39b777f97233
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - system.menu.menu-secundario
@@ -13,7 +13,7 @@ _core:
 id: stable_secundario
 theme: stable
 region: sidebar_first
-weight: null
+weight: -9
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

@@ -1,6 +1,6 @@
-uuid: c59f573c-9cb7-4dcb-8e44-45fb9c9064a1
+uuid: 254a1fab-beb4-4afd-9bfb-cfefb8c2cd34
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.slideshow
@@ -18,7 +18,7 @@ _core:
 id: stable_views_block__slideshow_block_1
 theme: stable
 region: sidebar_first
-weight: null
+weight: -10
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

@@ -1,6 +1,6 @@
-uuid: 9c951879-9245-4e67-8776-9aa724a4655b
+uuid: 3f216c6e-1c30-4300-af2a-99fd25ef74bd
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - system.menu.menu-secundario
@@ -13,7 +13,7 @@ _core:
 id: classy_secundario
 theme: classy
 region: sidebar_first
-weight: null
+weight: -9
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

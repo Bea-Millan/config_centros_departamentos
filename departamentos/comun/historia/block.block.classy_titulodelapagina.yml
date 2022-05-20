@@ -1,6 +1,6 @@
-uuid: 8fede830-d1de-49a6-8639-26e263ce3a3a
+uuid: 5a061701-e4be-487c-9118-b0ff711c879c
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - node
@@ -10,8 +10,8 @@ _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: classy_titulodelapagina
 theme: classy
-region: sidebar_first
-weight: null
+region: content
+weight: -7
 provider: null
 plugin: page_title_block
 settings:

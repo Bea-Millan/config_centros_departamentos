@@ -1,6 +1,6 @@
-uuid: 004f2557-30c2-4367-926e-efa07ea51f70
+uuid: 5e43d4db-4aca-4e97-9085-50e76703ae06
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.noticias
@@ -17,8 +17,8 @@ _core:
   default_config_hash: NZS2fm6t-gB39Tye2trEM52KnZ59nQN7iqUyUfLLbyk
 id: classy_views_block__noticias_block_1
 theme: classy
-region: sidebar_first
-weight: null
+region: content
+weight: -5
 provider: null
 plugin: 'views_block:noticias-block_1'
 settings:

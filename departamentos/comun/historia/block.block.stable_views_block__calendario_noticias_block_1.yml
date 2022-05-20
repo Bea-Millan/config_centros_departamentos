@@ -1,6 +1,6 @@
-uuid: c2732783-7e61-42e3-b93c-ff712f5723b4
+uuid: d5d71501-4833-44e0-8890-18107656a27e
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.calendario_noticias
@@ -17,7 +17,7 @@ _core:
 id: stable_views_block__calendario_noticias_block_1
 theme: stable
 region: sidebar_first
-weight: null
+weight: 0
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

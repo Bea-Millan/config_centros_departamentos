@@ -1,6 +1,6 @@
 uuid: 41d8b0d5-fcaf-4762-bb26-4b762bf50c8d
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.slideshow
@@ -17,8 +17,8 @@ _core:
   default_config_hash: BVQKTyG-td3hqhM3DdjhZLx685SIe_mobSkHoz-N6Fs
 id: views_block__slideshow_block_1
 theme: unizar_base
-region: cabecera_sup
-weight: null
+region: imagen_cabecera
+weight: -10
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:
@@ -31,6 +31,6 @@ settings:
 visibility:
   request_path:
     id: request_path
+    pages: '<front>'
     negate: false
     context_mapping: {  }
-    pages: '<front>'

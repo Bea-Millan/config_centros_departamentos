@@ -13,7 +13,7 @@ _core:
 id: views_block__slideshow_block_1_2
 theme: bartik
 region: header
-weight: null
+weight: 0
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

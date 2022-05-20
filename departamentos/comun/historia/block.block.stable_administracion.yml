@@ -1,6 +1,6 @@
-uuid: 77e72b77-a601-4108-a4ce-74577354fc74
+uuid: b7685bc4-1aff-4df5-93eb-bce9fb207010
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_admin_menu
@@ -12,7 +12,7 @@ _core:
 id: stable_administracion
 theme: stable
 region: sidebar_first
-weight: null
+weight: -8
 provider: null
 plugin: administracion
 settings:

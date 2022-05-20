@@ -1,4 +1,4 @@
-uuid: 74ade94b-808d-47e0-a360-95abba553b4b
+uuid: 1dc52f7a-5590-4ed8-a976-afdfb3a24844
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_departamento_bloquerrss_2
 theme: unizar_departamento
 region: footer
-weight: -9
+weight: 0
 provider: null
 plugin: bloque_rrss
 settings:

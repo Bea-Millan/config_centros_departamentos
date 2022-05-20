@@ -1,6 +1,6 @@
-uuid: 150e3ed6-d517-4205-8b5e-33db33e23f70
+uuid: 8dbe99b4-1d4d-4c53-aa83-ff02e5bd7922
 langcode: es
-status: false
+status: true
 dependencies:
   theme:
     - classy
@@ -8,8 +8,8 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: classy_pestanas
 theme: classy
-region: sidebar_first
-weight: null
+region: content
+weight: -8
 provider: null
 plugin: local_tasks_block
 settings:

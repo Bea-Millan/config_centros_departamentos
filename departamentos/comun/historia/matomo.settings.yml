@@ -1,13 +1,19 @@
 _core:
   default_config_hash: mKwnhF-0ryfftZZP6jyqW8q9MEo9glyRkvRzSddrc0k
 langcode: es
-site_id: '89'
-url_http: 'http://webstats.unizar.es/'
-url_https: 'https://webstats.unizar.es/'
+site_id: ''
+url_http: ''
+url_https: ''
 domain_mode: 0
 visibility:
   request_path_mode: 0
-  request_path_pages: "/admin\r\n/admin/*\r\n/batch\r\n/node/add*\r\n/node/*/*\r\n/user/*/*"
+  request_path_pages: |-
+    /admin
+    /admin/*
+    /batch
+    /node/add*
+    /node/*/*
+    /user/*/*
   user_role_mode: 0
   user_role_roles: {  }
   user_account_mode: 1
@@ -23,32 +29,7 @@ privacy:
   donottrack: true
   disablecookies: false
 custom:
-  variable:
-    1:
-      slot: 1
-      name: ''
-      value: ''
-      scope: visit
-    2:
-      slot: 2
-      name: ''
-      value: ''
-      scope: visit
-    3:
-      slot: 3
-      name: ''
-      value: ''
-      scope: visit
-    4:
-      slot: 4
-      name: ''
-      value: ''
-      scope: visit
-    5:
-      slot: 5
-      name: ''
-      value: ''
-      scope: visit
+  variable: {  }
 codesnippet:
   before: ''
   after: ''

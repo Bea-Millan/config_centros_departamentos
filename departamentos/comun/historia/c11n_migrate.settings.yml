@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: Hq6uB4RCT7UKGySbKTceQWfWyWrwEXIE6aIgyYMc3LM
+plugin:
+  host: historia.unizar.es
+  url_host: sites/historia
+langcode: es

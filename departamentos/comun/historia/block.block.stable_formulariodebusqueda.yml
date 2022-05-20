@@ -1,6 +1,6 @@
-uuid: 3409dc43-6d4d-438f-b7df-b343be94040c
+uuid: 5f94c557-1f50-41d2-aab4-b495be1c5dd6
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - search
@@ -11,7 +11,7 @@ _core:
 id: stable_formulariodebusqueda
 theme: stable
 region: sidebar_first
-weight: null
+weight: -9
 provider: null
 plugin: search_form_block
 settings:

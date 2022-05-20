@@ -1,4 +1,4 @@
-uuid: a496cdcb-e5b2-41f4-a05f-823b262fddaf
+uuid: 4312a46e-15eb-4828-b64a-869da3c34657
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_departamento_bloquecabeceralogocentrosresponsive
 theme: unizar_departamento
 region: cabecera_med_izquierda
-weight: -9
+weight: -5
 provider: null
 plugin: bloque_cabecera_logo
 settings:

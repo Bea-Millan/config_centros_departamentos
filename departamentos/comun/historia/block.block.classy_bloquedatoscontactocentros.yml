@@ -1,6 +1,6 @@
-uuid: 408d5802-c744-44e4-bd86-1cf0420cfd15
+uuid: 7b1bf78b-5772-4b4a-b8c8-032b89bde949
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -11,7 +11,7 @@ _core:
 id: classy_bloquedatoscontactocentros
 theme: classy
 region: sidebar_first
-weight: null
+weight: -8
 provider: null
 plugin: bloque_cabecera_contacto
 settings:

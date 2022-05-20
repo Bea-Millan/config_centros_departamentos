@@ -1,6 +1,6 @@
-uuid: 662f5dad-b9bd-4835-b1cc-691d8dc38517
+uuid: 7bb79438-e710-45c2-919b-be0979f26825
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - system.menu.main
@@ -13,7 +13,7 @@ _core:
 id: stable_mainmenu
 theme: stable
 region: sidebar_first
-weight: null
+weight: -15
 provider: null
 plugin: 'superfish:main'
 settings:

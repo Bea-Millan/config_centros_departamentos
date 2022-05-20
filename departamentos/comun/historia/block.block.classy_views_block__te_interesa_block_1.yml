@@ -1,6 +1,6 @@
-uuid: b2f5be55-6c1f-4ee5-bf0d-77c933969fda
+uuid: 06d94112-aef4-448e-8bb5-26f0e891e1ef
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.te_interesa
@@ -17,7 +17,7 @@ _core:
 id: classy_views_block__te_interesa_block_1
 theme: classy
 region: sidebar_first
-weight: null
+weight: 0
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:

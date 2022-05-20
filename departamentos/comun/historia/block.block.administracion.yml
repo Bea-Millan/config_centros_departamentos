@@ -1,6 +1,6 @@
 uuid: a515ba50-b873-49dd-950d-7356cad39d5f
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_admin_menu
@@ -12,7 +12,7 @@ _core:
 id: administracion
 theme: unizar_base
 region: cabecera_sup
-weight: null
+weight: -8
 provider: null
 plugin: administracion
 settings:
@@ -23,9 +23,9 @@ settings:
 visibility:
   user_role:
     id: user_role
-    negate: false
-    context_mapping:
-      user: '@user.current_user_context:current_user'
     roles:
       administrator: administrator
       gestor_basico: gestor_basico
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

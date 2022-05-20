@@ -1,4 +1,4 @@
-uuid: 178d2716-3449-47ae-84a9-baff18671e86
+uuid: dac9fe2d-6922-44c9-a7c1-9eeb0cb3accb
 langcode: es
 status: true
 dependencies:
@@ -18,7 +18,7 @@ _core:
 id: unizar_departamento_views_block__slideshow_block_1
 theme: unizar_departamento
 region: imagen_cabecera
-weight: -9
+weight: -10
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

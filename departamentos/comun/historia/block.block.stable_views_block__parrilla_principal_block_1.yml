@@ -1,6 +1,6 @@
-uuid: 0188fdf5-ae38-4dfa-bbea-43b25c3ed86c
+uuid: 787b7b4f-bcb7-472b-96ea-e535aaad7d5b
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.parrilla_principal
@@ -17,8 +17,8 @@ _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
 id: stable_views_block__parrilla_principal_block_1
 theme: stable
-region: sidebar_first
-weight: null
+region: content
+weight: -2
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
 settings:

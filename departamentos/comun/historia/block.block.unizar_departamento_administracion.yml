@@ -1,4 +1,4 @@
-uuid: e2cbb4c6-8f09-4e94-b979-a65173b02dad
+uuid: b5a8e2f3-21ca-4204-8eb9-baf7b1061b68
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ _core:
 id: unizar_departamento_administracion
 theme: unizar_departamento
 region: cabecera_sup
-weight: -10
+weight: -8
 provider: null
 plugin: administracion
 settings:

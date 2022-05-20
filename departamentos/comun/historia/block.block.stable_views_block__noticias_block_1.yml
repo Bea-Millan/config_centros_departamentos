@@ -1,6 +1,6 @@
-uuid: bb188c28-1501-41ce-ada1-590a37845247
+uuid: d5968f13-cf8f-4e42-a1aa-8a354b7f7611
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.noticias
@@ -17,8 +17,8 @@ _core:
   default_config_hash: NZS2fm6t-gB39Tye2trEM52KnZ59nQN7iqUyUfLLbyk
 id: stable_views_block__noticias_block_1
 theme: stable
-region: sidebar_first
-weight: null
+region: content
+weight: -5
 provider: null
 plugin: 'views_block:noticias-block_1'
 settings:

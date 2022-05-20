@@ -1,6 +1,6 @@
-uuid: 87d6efc9-ef2e-4c51-818d-00c7d9330b8c
+uuid: 44d6328e-336e-491b-9a2b-5fb63465a0d1
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -11,7 +11,7 @@ _core:
 id: classy_bloquecabeceralogocentrosresponsive
 theme: classy
 region: sidebar_first
-weight: null
+weight: -5
 provider: null
 plugin: bloque_cabecera_logo
 settings:

@@ -1,6 +1,6 @@
 uuid: 81a1c16b-5d29-4322-8cc7-ee2b7f30bb9f
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: bloquerrss_2
 theme: unizar_base
-region: cabecera_sup
-weight: null
+region: footer
+weight: 0
 provider: null
 plugin: bloque_rrss
 settings:

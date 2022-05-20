@@ -1,6 +1,6 @@
-uuid: 46c43176-0df3-407b-9981-5bac3c666839
+uuid: cf55290e-04a9-44b4-a2e0-6cfd69dff43f
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: stable_bloquerrss_2
 theme: stable
-region: sidebar_first
-weight: null
+region: footer
+weight: 0
 provider: null
 plugin: bloque_rrss
 settings:

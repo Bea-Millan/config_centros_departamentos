@@ -1,6 +1,6 @@
-uuid: 9c719151-0e37-4a2d-aac8-57cf904be59f
+uuid: 5fa2deaf-df79-476e-b65f-7618de970d83
 langcode: es
-status: false
+status: true
 dependencies:
   module:
     - help
@@ -10,8 +10,8 @@ _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: classy_centro_help
 theme: classy
-region: sidebar_first
-weight: null
+region: content
+weight: -9
 provider: null
 plugin: help_block
 settings:

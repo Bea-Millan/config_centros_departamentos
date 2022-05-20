@@ -1,6 +1,6 @@
-uuid: d03fc62f-fae0-4b41-870f-da9438e8ff09
+uuid: d4d578b1-f841-4ee8-a4db-96d8acb29fe7
 langcode: es
-status: false
+status: true
 dependencies:
   config:
     - views.view.parrilla_principal
@@ -17,8 +17,8 @@ _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
 id: classy_views_block__parrilla_principal_block_1
 theme: classy
-region: sidebar_first
-weight: null
+region: content
+weight: -2
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
 settings:

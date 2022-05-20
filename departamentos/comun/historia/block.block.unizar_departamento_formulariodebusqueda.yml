@@ -1,4 +1,4 @@
-uuid: 8c5b33c1-a9a2-476a-82f4-92149c0ede6f
+uuid: 66eb7eac-d251-41f0-b4b5-0aa4c757dff3
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_departamento_formulariodebusqueda
 theme: unizar_departamento
 region: cabecera_med_derecha
-weight: -8
+weight: -9
 provider: null
 plugin: search_form_block
 settings:
