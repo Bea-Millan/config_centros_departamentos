@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: 9QOXtJNiZeiGaTQtj36lj1WhuVnVxzTfEa37NzNXFVo
+favicon_path: ''
+favicon_upload: ''
+id_centro: '85'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=85&colectivo=TODOS'
+nombre_centro: 'Unidad Predepartamental de Filosofía'
+dir_centro: 'San Juan Bosco 7 - 50009 Zaragoza'
+telefono_centro: '876 554 064'
+mail_centro: sed5012@unizar.es
+url_mapa: ''
+logo_blanco: '350'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: ''
+langcode: es

@@ -1,0 +1,8 @@
+uuid: b4bd9599-2a9b-40a8-90e2-5a1e76531b62
+langcode: es
+status: true
+dependencies: {  }
+id: main_en
+label: 'Menú principal_en'
+description: 'El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.'
+locked: false

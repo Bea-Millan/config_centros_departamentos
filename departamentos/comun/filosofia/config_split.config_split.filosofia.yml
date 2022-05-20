@@ -1,6 +1,7 @@
+uuid: 86b33b7f-8f3c-4318-8551-bff0f2d3cec8
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: filosofia
 label: filosofia
 description: ''
@@ -27,13 +28,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
+  - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

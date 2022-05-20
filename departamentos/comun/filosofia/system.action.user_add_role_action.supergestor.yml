@@ -1,0 +1,16 @@
+uuid: 5d14c226-a039-4151-a187-fb4810197705
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.supergestor
+  module:
+    - user
+_core:
+  default_config_hash: s5B0TAp2AerIwAQ4R3n3QcZS8YXi0W0zCpJiJxc76Gs
+id: user_add_role_action.supergestor
+label: 'Add the supergestor role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: supergestor
