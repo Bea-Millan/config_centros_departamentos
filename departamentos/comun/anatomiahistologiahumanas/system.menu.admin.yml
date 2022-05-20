@@ -1,10 +1,10 @@
-uuid: 169db55c-af7e-48ba-ad30-49108ffd0517
+uuid: aa90a442-b2f2-4af6-ad43-c7add12cb370
 langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: sapEi2YDGoI9yQIT_WgIV2vUdQ6DScH0V3fAyTadAL0
 id: admin
-label: Administración
-description: 'Enlaces de tareas administrativas'
+label: Management
+description: 'El menú <em>Administrar</em> contiene enlaces a tareas administrativas.'
 locked: true
