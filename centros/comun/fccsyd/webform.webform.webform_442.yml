@@ -1,4 +1,4 @@
-uuid: 90e081ea-e183-4d11-bb0e-101f02728d7f
+uuid: fe13eb20-9357-4db6-bafc-8a44f2d88ed4
 langcode: es
 status: open
 dependencies: {  }
@@ -58,6 +58,7 @@ elements: |-
         clave_8: 'Aula VIII'
         clave_9: 'Aula IX'
         clave_10: 'Salón de Actos'
+        clave_11: 'Sala Cubo (Pabellón R. Isuela)'
       '#title': Aula
       '#required': true
     edificio_10:
