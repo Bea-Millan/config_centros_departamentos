@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: XTbBdEl5ebf8hcMOG7CsIA1J4p-ub-DtPURd9ivuL7w
+favicon_path: ''
+favicon_upload: ''
+id_centro: '25'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=25&colectivo=TODOS'
+nombre_centro: 'Departamento de Ciencias Agrarias y del Medio Natural'
+dir_centro: 'Edif. Zootecnia. Miguel Servet, 177 50013-Zaragoza'
+telefono_centro: '976 76 15 95'
+mail_centro: sed5011@unizar.es
+url_mapa: 'https://www.google.es/maps/search/Facultad+de+Veterinaria,+Calle+de+Miguel+Servet,+Zaragoza/@41.6344897,-0.8636422,708m/data=!3m'
+logo_blanco: '7'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: ''
+langcode: es

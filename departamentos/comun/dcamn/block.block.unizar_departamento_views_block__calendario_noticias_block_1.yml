@@ -1,0 +1,31 @@
+uuid: bf50b303-690b-43f6-92e7-b80a1c5ac07c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.calendario_noticias
+  module:
+    - block_class
+    - views
+  theme:
+    - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: calendar
+_core:
+  default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
+id: unizar_departamento_views_block__calendario_noticias_block_1
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'views_block:calendario_noticias-block_1'
+settings:
+  id: 'views_block:calendario_noticias-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }

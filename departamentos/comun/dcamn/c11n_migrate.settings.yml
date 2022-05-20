@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: sd_cy7PgT-wGL1i1PMVgnMlSQYvN7lg6stTN6wxAeJ4
+plugin:
+  host: dcamn.unizar.es
+  url_host: sites/dcamn
+langcode: es
