@@ -1,4 +1,4 @@
-uuid: a1b0bce4-5072-467f-9e07-e229a1532963
+uuid: 31133749-f876-421f-9e1e-5ada6b88e3c3
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: sCyuK5DTuP8mo3WvH4jE60H2u_01Ax-q3s6lwrNgpYA
-id: upgrade_d7_node_te_interesa
+  default_config_hash: _eqrgs_qL24T0OnBykyWEnpEtcX1ddlmSQ1edR6Gs-Y
+id: upgrade_d7_node_complete_estudio_departamento
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -16,10 +16,10 @@ migration_tags:
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Te interesa)'
+label: 'Node (Estudio)'
 source:
   plugin: d7_node_complete
-  node_type: te_interesa
+  node_type: bloque_pestanas
 process:
   nid: tnid
   vid: vid
@@ -52,10 +52,6 @@ process:
     -
       plugin: get
       source: promote
-  sticky:
-    -
-      plugin: get
-      source: sticky
   revision_uid:
     -
       plugin: get
@@ -68,22 +64,26 @@ process:
     -
       plugin: get
       source: timestamp
-  field_link/uri:
+  field_link_estudio_personalizado:
     -
-      plugin: CheckUrl
-      source: field_link/0/value
+      plugin: sub_process
+      source: field_link_noticia
+      process:
+        uri: value
+  field_tipo_estudio:
     -
-      plugin: skip_on_empty
-      method: row
-  field_link/title: title
+      plugin: sub_process
+      source: field_tipo_estudio
+      process:
+        target_id: tid
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: te_interesa
+  default_bundle: estudio
 migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
-  optional:
-    - upgrade_d7_field_instance
-    - upgrade_d7_comment_field_instance
+    - upgrade_language
+    - upgrade_d7_taxonomy_term_tipos_de_estudio
+    - upgrade_d7_taxonomy_term_tipos_de_estudio_departamento

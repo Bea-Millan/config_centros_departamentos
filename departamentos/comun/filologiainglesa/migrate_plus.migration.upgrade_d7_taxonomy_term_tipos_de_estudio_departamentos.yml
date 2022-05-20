@@ -1,4 +1,4 @@
-uuid: 1dd668a8-88cf-4558-8ec0-cc6788b2b74c
+uuid: 55a0f9c6-08d1-453a-8d85-3a1ce967fd3f
 langcode: es
 status: true
 dependencies:
@@ -6,8 +6,8 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: wG8JU3tihvkLbY8qFvXcZLeGVlLc7RL60tBL5-YFqwo
-id: upgrade_d7_taxonomy_term_tipos_de_estudio
+  default_config_hash: 9DKOFOdMmA8EhZNWkuSHN_2AeDpw7vCkbjUMgUJqUlQ
+id: upgrade_d7_taxonomy_term_tipos_de_estudio_departamentos
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
@@ -26,19 +26,16 @@ process:
     plugin: default_value
     default_value: tipos_de_estudio
   name: name
-  weight: weight
+  weight:
+    plugin: default_value
+    source: weight
+    default_value: 1
   description/value: description
   description/format: format
-  field_imagen_valid:
-    -
-      plugin: null_coalesce
-      source:
-        - field_image
-        - field_imagen_estudio
   field_imagen_estudio:
     -
       plugin: sub_process
-      source: '@field_imagen_valid'
+      source: field_image
       process:
         target_id: fid
         alt: alt
