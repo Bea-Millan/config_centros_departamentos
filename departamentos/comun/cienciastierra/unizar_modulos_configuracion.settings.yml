@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: 8uvHgtCIft44Mb0rvvlCDWWWHeGmvwrMvoS3kWrXdeQ
+favicon_path: ''
+favicon_upload: ''
+id_centro: '120'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=120&colectivo=TODOS'
+nombre_centro: 'Departamento de Ciencias de la Tierra'
+dir_centro: 'Edificio de Geológicas. Pedro Cerbuna 12, 50009 Zaragoza'
+telefono_centro: '976 76 11 05'
+mail_centro: cctierra@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '7'
+facebook: 'https://www.facebook.com/GeologiaUZ/'
+twitter: ''
+meta_desc: 'Formado por un numeroso grupo de geólogos, expertos en las principales líneas científicas que estudian la Tierra y encargados de la enseñanza de la geología en la Universidad de Zaragoza. Departamento Ciencias de la Tierra. Universidad de Zaragoza'
+langcode: es

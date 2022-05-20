@@ -1,0 +1,115 @@
+uuid: 6e09395a-c31a-412f-bd2e-603f4098ac20
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: Q_XiHCmQdTHya8jzxlLqmQjVfeFRtj87-GjgxYOArs8
+id: upgrade_d7_menu_links
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Menu links'
+source:
+  plugin: menu_link
+  constants:
+    bundle: menu_link_content
+process:
+  id:
+    -
+      plugin: gate_unizar
+      source: mlid
+      use_as_key: language
+      valid_keys:
+        - es
+        - und
+      key_direction: unlock
+  bundle:
+    -
+      plugin: get
+      source: constants/bundle
+  title:
+    -
+      plugin: get
+      source: link_title
+  description:
+    -
+      plugin: get
+      source: description
+  menu_name:
+    -
+      plugin: migration_lookup
+      migration: upgrade_d7_menu
+      source: menu_name
+    -
+      plugin: skip_on_empty
+      method: row
+  link/uri:
+    -
+      plugin: urlhost
+      source: link_path
+    -
+      plugin: link_uri
+      validate_route: false
+  link/options:
+    -
+      plugin: get
+      source: options
+  route:
+    -
+      plugin: route
+      source:
+        - link_path
+        - options
+  route_name:
+    -
+      plugin: get
+      source: '@route/route_name'
+  route_parameters:
+    -
+      plugin: get
+      source: '@route/route_parameters'
+  url:
+    -
+      plugin: get
+      source: '@route/url'
+  options:
+    -
+      plugin: get
+      source: '@route/options'
+  external: external
+  weight: weight
+  expanded: expanded
+  enabled: enabled
+  parent:
+    plugin: menu_link_parent
+    source:
+      - plid
+      - '@menu_name'
+      - parent_link_path
+  changed: updated
+destination:
+  plugin: 'entity:menu_link_content'
+  no_stub: true
+migration_dependencies:
+  required:
+    - upgrade_d7_menu
+  optional:
+    - upgrade_d7_node_compatibilidad
+    - upgrade_d7_node_elemento_parilla
+    - upgrade_d7_node_estudio
+    - upgrade_d7_node_galeria
+    - upgrade_d7_node_noticia
+    - upgrade_d7_node_page
+    - upgrade_d7_node_poll
+    - upgrade_d7_node_slideshow
+    - upgrade_d7_node_te_interesa
+    - upgrade_d7_node_webform
+    - upgrade_d7_menu

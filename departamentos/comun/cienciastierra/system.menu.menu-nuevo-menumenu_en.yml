@@ -1,0 +1,8 @@
+uuid: 2381f9e6-0b32-4090-9faf-8c717344a984
+langcode: es
+status: true
+dependencies: {  }
+id: menu-nuevo-menumenu_en
+label: 'nuevo menu_en'
+description: 'hola hola'
+locked: false
