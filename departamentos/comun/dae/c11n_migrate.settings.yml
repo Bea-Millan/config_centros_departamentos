@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: '-70SPnQSomch8MxraZN346ePfYYAjOJ4sEP5Rch1YiI'
+plugin:
+  host: dae.unizar.es
+  url_host: sites/dae
+langcode: es

@@ -1,0 +1,88 @@
+uuid: cd5442f6-014c-4690-a733-82c2b9827ad5
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: HCtxHSCudo091398VIGlNcRjW25du7abhy61ZnuiYVI
+id: upgrade_d7_node_complete_estudio
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node (Estudio)'
+source:
+  plugin: d7_node_complete
+  node_type: estudio
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_link_estudio_personalizado:
+    -
+      plugin: sub_process
+      source: field_link_noticia
+      process:
+        uri: value
+  field_tipo_estudio:
+    -
+      plugin: sub_process
+      source: field_tipo_estudio
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: estudio
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
+    - upgrade_d7_taxonomy_term_tipos_de_estudio

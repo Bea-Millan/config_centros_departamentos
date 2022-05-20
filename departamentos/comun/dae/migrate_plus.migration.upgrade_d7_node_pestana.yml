@@ -1,0 +1,90 @@
+uuid: a4502f37-f077-4319-9153-2461dc01163e
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: GE_v-nwc7BSmf6ohvb-8aTsdgzHuzC69Bayt7XelYRU
+id: upgrade_d7_node_pestana
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node (Pestaña)'
+source:
+  plugin: d7_node_complete
+  node_type: pestana
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_enlace_a_la_informacion:
+    -
+      plugin: sub_process
+      source: field_link_noticia
+      process:
+        uri: value
+  field_configuracion_pestana:
+    -
+      plugin: entity_generate
+      source: field_tipo_estudio
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: pestanas
+      ignore_case: true
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: estudio
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
