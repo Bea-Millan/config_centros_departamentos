@@ -1,6 +1,6 @@
 uuid: 4d9b316a-ddd6-4436-abbb-cbdeb4ced57c
 langcode: es
-status: false
+status: true
 dependencies:
   enforced:
     module:
@@ -12,7 +12,7 @@ class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Finalno
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7

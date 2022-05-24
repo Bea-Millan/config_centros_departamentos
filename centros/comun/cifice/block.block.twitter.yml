@@ -11,7 +11,7 @@ dependencies:
 id: twitter
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -2
 provider: null
 plugin: 'block_content:e539f810-d3f2-4204-ae67-08c0c91120b4'
 settings:

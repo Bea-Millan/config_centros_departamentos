@@ -1,23 +1,23 @@
-uuid: cb45123a-0116-4f92-905a-9093153bc2ff
+uuid: 63df7670-abe8-4ecc-aa18-aa8dafe1ebad
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:cb67365f-df30-4f9b-b141-d1cfadc0686c'
+    - 'block_content:basic:5a099e71-a7c0-44ff-a9d5-94942989ff45'
   module:
     - block_content
     - system
   theme:
     - unizar_centro
-id: logoacles
+id: cealmuniversidaddejaen
 theme: unizar_centro
 region: columna_lateral
-weight: -2
+weight: 3
 provider: null
-plugin: 'block_content:cb67365f-df30-4f9b-b141-d1cfadc0686c'
+plugin: 'block_content:5a099e71-a7c0-44ff-a9d5-94942989ff45'
 settings:
-  id: 'block_content:cb67365f-df30-4f9b-b141-d1cfadc0686c'
-  label: 'logo acles'
+  id: 'block_content:5a099e71-a7c0-44ff-a9d5-94942989ff45'
+  label: 'Cealm - Universidad de Jaén'
   label_display: '0'
   provider: block_content
   status: true

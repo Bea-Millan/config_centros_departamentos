@@ -1,23 +1,22 @@
-uuid: 99ca5ebd-fcea-4996-9d8d-39d596995cfb
+uuid: 6c656403-0240-460a-b22b-56bbf12417fb
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.account
+    - system.menu.menu-lateral
   module:
     - menu_block
-    - system
   theme:
     - unizar_centro
-id: usermenu
+id: accesosdirectos
 theme: unizar_centro
 region: columna_lateral
-weight: -3
+weight: -4
 provider: null
-plugin: 'menu_block:account'
+plugin: 'menu_block:menu-lateral'
 settings:
-  id: 'menu_block:account'
-  label: 'User menu'
+  id: 'menu_block:menu-lateral'
+  label: 'Accesos directos'
   label_display: visible
   provider: menu_block
   follow: false
@@ -27,10 +26,6 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-  parent: 'account:'
-  suggestion: account
-visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: 'secciones/*'
+  parent: 'menu-lateral:'
+  suggestion: menu_lateral
+visibility: {  }

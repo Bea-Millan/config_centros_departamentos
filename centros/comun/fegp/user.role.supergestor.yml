@@ -8,16 +8,15 @@ dependencies:
     - node.type.galeria
     - node.type.noticia
     - node.type.page
-    - node.type.pestana
     - node.type.slideshow
     - node.type.te_interesa
     - node.type.webform
   module:
+    - content_access
+    - content_moderation
     - node
     - publishcontent
     - role_delegation
-    - webform
-    - webform_node
 _core:
   default_config_hash: j2KQ4IZQeBq4ZlqRTLG3roeUskYg2ADQzxlCkgazdpI
 id: supergestor
@@ -26,42 +25,39 @@ weight: 7
 is_admin: null
 permissions:
   - 'access all webform results'
-  - 'assign gestor_basico role'
-  - 'assign gestor_bloques role'
-  - 'assign gestor_menus role'
-  - 'assign gestor_personas role'
-  - 'assign intranet role'
   - 'assign supergestor role'
-  - 'clone node'
   - 'delete all webform submissions'
+  - 'delete any departamentos content'
   - 'delete any elemento_parilla content'
-  - 'delete any elemento_parrilla content'
   - 'delete any estudio content'
   - 'delete any galeria content'
   - 'delete any noticia content'
   - 'delete any page content'
-  - 'delete any pestana content'
   - 'delete any slideshow content'
   - 'delete any te_interesa content'
-  - 'delete any webform'
   - 'delete any webform content'
-  - 'delete any webform submission'
-  - 'delete webform submissions any node'
+  - 'delete terms in 3'
+  - 'delete terms in 5'
+  - 'delete terms in 6'
   - 'edit all webform submissions'
+  - 'edit any departamentos content'
   - 'edit any elemento_parilla content'
   - 'edit any elemento_parrilla content'
   - 'edit any estudio content'
   - 'edit any galeria content'
   - 'edit any noticia content'
   - 'edit any page content'
-  - 'edit any pestana content'
   - 'edit any slideshow content'
   - 'edit any te_interesa content'
-  - 'edit any webform'
   - 'edit any webform content'
-  - 'edit any webform submission'
-  - 'edit webform submissions any node'
+  - 'edit terms in 3'
+  - 'edit terms in 5'
+  - 'edit terms in 6'
+  - 'grant content access'
   - 'publish any content'
+  - 'publish any horarios_por_departamentos content'
+  - 'publish editable horarios_por_departamentos content'
   - 'unpublish any content'
-  - 'view any webform submission'
-  - 'view webform submissions any node'
+  - 'unpublish any horarios_por_departamentos content'
+  - 'unpublish editable horarios_por_departamentos content'
+  - 'view any unpublished content'

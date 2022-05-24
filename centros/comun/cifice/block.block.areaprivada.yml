@@ -1,0 +1,33 @@
+uuid: eb96a15d-e8a2-4707-a8ba-1cacd4ac8096
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bd09da88-8f93-4967-8b93-b19778a5b751'
+  module:
+    - block_content
+    - user
+  theme:
+    - unizar_centro
+id: areaprivada
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:bd09da88-8f93-4967-8b93-b19778a5b751'
+settings:
+  id: 'block_content:bd09da88-8f93-4967-8b93-b19778a5b751'
+  label: 'Área Privada'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      intranet: intranet
