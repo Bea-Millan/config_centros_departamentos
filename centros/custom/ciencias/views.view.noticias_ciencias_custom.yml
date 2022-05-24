@@ -1069,7 +1069,20 @@ display:
         filter_groups: false
         footer: false
       display_description: ''
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="ver-mas"><a href="/noticias">Ver más</a></p>'
+            format: filtered_html
+          tokenize: false
       display_extenders: {  }
       allow:
         items_per_page: true
@@ -1667,7 +1680,20 @@ display:
         filter_groups: false
         footer: false
       display_description: ''
-      footer: {  }
+      footer:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: '<p class="ver-mas"><a href="/noticias">Ver más</a></p>'
+            format: filtered_html
+          tokenize: false
       display_extenders: {  }
       allow:
         items_per_page: true
