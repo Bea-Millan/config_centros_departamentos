@@ -2,7 +2,7 @@ _core:
   default_config_hash: d2tWkLDJpbdEPHzzY5Oe_xy6z1WHtnNxwZUSXiflCMU
 favicon_path: ''
 favicon_upload: ''
-id_centro: '101'
+id: '101'
 url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=101&colectivo=TODOS'
 nombre_centro: 'Departamento de Anatomía e Histología Humanas'
 dir_centro: 'Facultad de Medicina. Edificio A. C/Domingo Miral s/n 50009 Zaragoza'
