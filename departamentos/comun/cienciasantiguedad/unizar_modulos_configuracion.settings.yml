@@ -1,0 +1,27 @@
+_core:
+  default_config_hash: QVO43C1TmX92nM--c6JNEeCYbD-0KV1w5kqKM2FWvt4
+logo_path: 'public://economia10.png'
+favicon_path: ''
+favicon_upload: ''
+id: '109'
+nombre_centro: 'Facultad de Economía y Empresa'
+dir_centro: 'Gran Vía, 2 - 50005 Zaragoza'
+telefono_centro: '+34 976 762 131 '
+mail_centro: ''
+url_mapa: 'https://www.google.es/maps/place/Universidad+de+Zargoza:+Facultad+de+Econom%C3%ADa+y+Empresa/@41.6448547,-0.8946987,15z/data=!4m'
+dir_centro2: 'María de Luna, s/n - Edificio "Lorenzo Normante" - 50018 Zaragoza'
+telefono_centro2: '+34 976 762 747'
+mail_centro2: ''
+url_mapa2: /ubicacion-sede-2
+logo_blanco: '4664'
+imagen_segundas: '4665'
+facebook: 'https://www.facebook.com/FECEM.unizar/'
+twitter: 'https://twitter.com/FECEM_unizar'
+youtube: ''
+linkedin: 'https://www.linkedin.com/school/facultad-de-economia-y-empresa-universidad-de-zaragoza/'
+instagram: 'https://www.instagram.com/fecem_unizar/'
+blog: /blog
+blog_class: icon-blog
+soundcloud: ''
+meta_desc: 'La Facultad de Economía y Empresa  imparte los grados en Administración y Dirección de Empresas, Economía, Finanzas y Contabilidad y Marketing e Investigación de Mercados'
+langcode: es
