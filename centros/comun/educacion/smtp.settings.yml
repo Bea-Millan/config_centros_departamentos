@@ -10,7 +10,7 @@ smtp_autotls: true
 smtp_timeout: 30
 smtp_username: gestweb
 smtp_password: 7.Syrox
-smtp_from: educacion
+smtp_from: educacion@unizar.es
 smtp_fromname: 'Gestión web'
 smtp_client_hostname: ''
 smtp_client_helo: ''
