@@ -1,4 +1,4 @@
-uuid: ea1738f6-480f-4608-b674-032527ba710f
+uuid: e8a5abaa-c157-4765-80c0-80b0aad9628b
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: VfZW-RD_bdZQ5MqW_ARr_eHEaEpzEKp4pafus73BBUg
+  default_config_hash: DOafz7lEwkDHI-MG_oa2ZwtWqXdf4IL-q1lIkukVDtQ
 id: upgrade_d7_node_galeria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -73,8 +74,19 @@ process:
       source: body
       process:
         value:
-          plugin: urlhost
-          source: value
+          -
+            plugin: urlhost
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es/sites/econz.unizar.es
+            replace: fecem.unizar.es/sites/fecem
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
         format:
           plugin: default_value
           default_value: filtered_html

@@ -1,4 +1,4 @@
-uuid: 9673ab34-1c17-40db-814c-ffacc1d0f3c1
+uuid: 53a30fd0-f9e2-4af5-91a7-622d7d97df7b
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: M3L9fpvA91Co6ms5zjaAgKrG-H6hVubzneqn4c7LBeg
+  default_config_hash: EgcTDtK41dxZdX5skrjYVbraiOXii6eRSnqQ-a-BVCM
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -33,6 +34,10 @@ process:
       source:
         - title
         - field_titulo_visible
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   uid:
     -
       plugin: MapUid
@@ -75,8 +80,24 @@ process:
       source: body
       process:
         value:
-          plugin: urlhost
-          source: value
+          -
+            plugin: urlhost
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es/sites/econz.unizar.es
+            replace: fecem.unizar.es/sites/fecem
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
+          -
+            plugin: str_replace
+            regex: false
+            search: sites/fecem.unizar.es
+            replace: sites/fecem
         format:
           plugin: default_value
           default_value: filtered_html
@@ -95,7 +116,20 @@ process:
       plugin: sub_process
       source: field_link_noticia
       process:
-        uri: value
+        uri:
+          -
+            plugin: get
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es/sites/econz.unizar.es
+            replace: fecem.unizar.es/sites/fecem
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
   field_agenda_noticias:
     -
       plugin: get
@@ -120,34 +154,35 @@ process:
         title: title
         width: width
         height: height
-  prepare_tipo_evento:
+  _prepare_tipo_evento:
     -
-      plugin: sub_process
+      plugin: static_map
       source: field_tipo_evento
-      process:
-        value:
-          plugin: static_map
-          source: value
-          map:
-            1: Actualidad
-            2: 'Agenda cultural'
+      map:
+        1: Actualidad
+        2: 'Agenda cultural'
+      bypass: true
   field_seccion:
     -
-      plugin: sub_process
+      plugin: skip_on_empty
       source: '@_prepare_tipo_evento'
-      process:
-        target_id:
-          plugin: entity_generate
-          source: value
-          value_key: name
-          bundle_key: vid
-          bundle: secciones
-          entity_type: taxonomy_term
-          ignore_case: true
+      method: process
+      message: 'No eventos.'
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: secciones
+      ignore_case: true
   field_fecha:
     -
+      plugin: null_coalesce
+      source:
+        - field_fecha
+        - field_fecha_evento
+    -
       plugin: sub_process
-      source: field_fecha
       process:
         value:
           plugin: format_date

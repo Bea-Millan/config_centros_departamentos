@@ -1,4 +1,4 @@
-uuid: 480f9be1-8314-4a7d-aac4-96e6f5692347
+uuid: 9ccd752f-7e75-4def-a4e5-5006c72adbc9
 langcode: es
 status: true
 dependencies:
@@ -6,12 +6,13 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: s77aRfdIaQR8jgFfj-XbKAaitfOxmmlkAg-HYUVHNJM
+  default_config_hash: CFnEv6buEEElux67H2EtZKcxNdqohuXtLzLNDPq9ig0
 id: upgrade_d7_node_page
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
+  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -27,6 +28,10 @@ process:
       plugin: default_value
       source: language
       default_value: und
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   title:
     -
       plugin: Ctitle
@@ -75,8 +80,24 @@ process:
       source: body
       process:
         value:
-          plugin: urlhost
-          source: value
+          -
+            plugin: urlhost
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es/sites/econz.unizar.es
+            replace: fecem.unizar.es/sites/fecem
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
+          -
+            plugin: str_replace
+            regex: false
+            search: sites/fecem.unizar.es
+            replace: sites/fecem
         format:
           plugin: default_value
           default_value: filtered_html

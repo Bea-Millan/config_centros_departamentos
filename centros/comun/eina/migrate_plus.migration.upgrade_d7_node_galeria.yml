@@ -1,4 +1,4 @@
-uuid: 2824fd69-bf1e-4994-abef-e315930de8e8
+uuid: e8a5abaa-c157-4765-80c0-80b0aad9628b
 langcode: es
 status: true
 dependencies:
@@ -74,8 +74,19 @@ process:
       source: body
       process:
         value:
-          plugin: urlhost
-          source: value
+          -
+            plugin: urlhost
+            source: value
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es/sites/econz.unizar.es
+            replace: fecem.unizar.es/sites/fecem
+          -
+            plugin: str_replace
+            regex: false
+            search: econz.unizar.es
+            replace: fecem.unizar.es
         format:
           plugin: default_value
           default_value: filtered_html
