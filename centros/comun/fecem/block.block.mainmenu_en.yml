@@ -7,7 +7,6 @@ dependencies:
   module:
     - language
     - superfish
-    - system
   theme:
     - unizar_centro
 id: mainmenu_en
@@ -71,10 +70,6 @@ settings:
   custom_item_class: ''
   custom_link_class: ''
 visibility:
-  request_path:
-    id: request_path
-    negate: false
-    pages: '<front>'
   language:
     id: language
     negate: false

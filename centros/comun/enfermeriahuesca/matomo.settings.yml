@@ -2,8 +2,8 @@ _core:
   default_config_hash: mKwnhF-0ryfftZZP6jyqW8q9MEo9glyRkvRzSddrc0k
 langcode: es
 site_id: '100'
-url_http: 'http://webstats.unizar.es/'
-url_https: 'https://webstats.unizar.es/'
+url_http: 'http://staweb.unizar.es/matomo/'
+url_https: 'https://staweb.unizar.es/matomo/'
 domain_mode: 0
 visibility:
   request_path_mode: 0

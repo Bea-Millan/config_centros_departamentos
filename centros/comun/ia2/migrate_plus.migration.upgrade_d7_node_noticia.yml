@@ -1,4 +1,4 @@
-uuid: 53a30fd0-f9e2-4af5-91a7-622d7d97df7b
+uuid: 1bfeeede-293a-42aa-ae1b-e32bfd42a8de
 langcode: es
 status: true
 dependencies:
@@ -34,10 +34,6 @@ process:
       source:
         - title
         - field_titulo_visible
-  path/pathauto:
-    plugin: default_value
-    default_value: 0
-  path/alias: alias
   uid:
     -
       plugin: MapUid
@@ -80,24 +76,8 @@ process:
       source: body
       process:
         value:
-          -
-            plugin: urlhost
-            source: value
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es/sites/econz.unizar.es
-            replace: fecem.unizar.es/sites/fecem
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es
-            replace: fecem.unizar.es
-          -
-            plugin: str_replace
-            regex: false
-            search: sites/fecem.unizar.es
-            replace: sites/fecem
+          plugin: urlhost
+          source: value
         format:
           plugin: default_value
           default_value: filtered_html
@@ -116,20 +96,7 @@ process:
       plugin: sub_process
       source: field_link_noticia
       process:
-        uri:
-          -
-            plugin: get
-            source: value
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es/sites/econz.unizar.es
-            replace: fecem.unizar.es/sites/fecem
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es
-            replace: fecem.unizar.es
+        uri: value
   field_agenda_noticias:
     -
       plugin: get

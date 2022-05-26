@@ -91,6 +91,11 @@ process:
           -
             plugin: str_replace
             regex: false
+            search: sites/econz.unizar.es
+            replace: sites/fecem
+          -
+            plugin: str_replace
+            regex: false
             search: econz.unizar.es
             replace: fecem.unizar.es
           -

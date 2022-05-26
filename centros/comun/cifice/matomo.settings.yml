@@ -1,6 +1,6 @@
 site_id: '136'
-url_http: 'http://webstats.unizar.es/'
-url_https: 'https://webstats.unizar.es/'
+url_http: 'http://staweb.unizar.es/matomo/'
+url_https: 'https://staweb.unizar.es/matomo/'
 domain_mode: 0
 visibility:
   request_path_mode: null

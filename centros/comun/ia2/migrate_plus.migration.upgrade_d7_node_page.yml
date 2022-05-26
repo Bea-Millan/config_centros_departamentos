@@ -1,4 +1,4 @@
-uuid: 9ccd752f-7e75-4def-a4e5-5006c72adbc9
+uuid: 5a433c26-305a-4353-9489-b9caca98bb97
 langcode: es
 status: true
 dependencies:
@@ -28,10 +28,6 @@ process:
       plugin: default_value
       source: language
       default_value: und
-  path/pathauto:
-    plugin: default_value
-    default_value: 0
-  path/alias: alias
   title:
     -
       plugin: Ctitle
@@ -80,24 +76,8 @@ process:
       source: body
       process:
         value:
-          -
-            plugin: urlhost
-            source: value
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es/sites/econz.unizar.es
-            replace: fecem.unizar.es/sites/fecem
-          -
-            plugin: str_replace
-            regex: false
-            search: econz.unizar.es
-            replace: fecem.unizar.es
-          -
-            plugin: str_replace
-            regex: false
-            search: sites/fecem.unizar.es
-            replace: sites/fecem
+          plugin: urlhost
+          source: value
         format:
           plugin: default_value
           default_value: filtered_html
