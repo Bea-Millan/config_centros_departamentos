@@ -2,9 +2,9 @@ _core:
   default_config_hash: dqouFqVseNJNvEjsoYKxbinFOITuCxYhi4y2OTNQP_8
 langcode: es
 all:
-  - language_interface
   - language_content
   - language_url
+  - language_interface
 configurable:
   - language_interface
 negotiation:

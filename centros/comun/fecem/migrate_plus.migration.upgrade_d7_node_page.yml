@@ -21,7 +21,7 @@ source:
   plugin: d7_node_complete
   node_type: page
 process:
-  nid: nid
+  nid: tnid
   vid: vid
   langcode:
     -

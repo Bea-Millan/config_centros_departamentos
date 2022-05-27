@@ -47,6 +47,36 @@ process:
       migration: upgrade_d7_menu_en
       source: menu_name
       no_stub: true
+  aa:
+    -
+      plugin: explode
+      source: link_path
+      delimiter: /
+    -
+      plugin: extract
+      default: INVALID_NID
+      index:
+        - 1
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_galeria
+        - upgrade_d7_node_noticia
+        - upgrade_d7_node_page
+  id_old:
+    -
+      plugin: extract
+      source: '@aa'
+      default: ''
+      index:
+        - 1
+  id_new:
+    -
+      plugin: extract
+      source: '@aa'
+      defautl: ''
+      index:
+        - 0
   link/uri:
     -
       plugin: urlhost
@@ -59,6 +89,11 @@ process:
       regex: false
       search: econz.unizar.es
       replace: fecem.unizar.es
+    -
+      plugin: str_replace
+      regex: false
+      search: '''@id_old'''
+      replace: '''@id_new'''
   link/options:
     -
       plugin: get
