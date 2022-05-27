@@ -1,0 +1,36 @@
+uuid: 9acfd0fe-bd21-42b2-84da-4493c3653d91
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-becas-de-movilidad-para-est
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: programasdemovilidadparaestudiantes
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'menu_block:menu-becas-de-movilidad-para-est'
+settings:
+  id: 'menu_block:menu-becas-de-movilidad-para-est'
+  label: 'Programas de movilidad para estudiantes'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-becas-de-movilidad-para-est:'
+  suggestion: menu_becas_de_movilidad_para_est
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/movilidad/becas/*'

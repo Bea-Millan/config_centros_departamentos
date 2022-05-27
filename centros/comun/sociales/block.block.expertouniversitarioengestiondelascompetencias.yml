@@ -1,0 +1,36 @@
+uuid: 638ff1f1-f2bc-4619-83d7-2ba06c5abfe7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-gestion-competencias
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: expertouniversitarioengestiondelascompetencias
+theme: unizar_centro
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'menu_block:menu-gestion-competencias'
+settings:
+  id: 'menu_block:menu-gestion-competencias'
+  label: 'Experto Universitario en Gestión de las Competencias para la Competitividad y la Empleabilidad'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-gestion-competencias:'
+  suggestion: menu_gestion_competencias
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/gestion-competencias/*'

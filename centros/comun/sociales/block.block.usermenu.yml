@@ -1,0 +1,36 @@
+uuid: 20126803-6f5a-4209-8764-fdef0e04e3c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: usermenu
+theme: unizar_centro
+region: columna_lateral
+weight: -25
+provider: null
+plugin: 'menu_block:account'
+settings:
+  id: 'menu_block:account'
+  label: 'User menu'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'account:'
+  suggestion: account
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

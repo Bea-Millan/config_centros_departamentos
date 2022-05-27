@@ -1,0 +1,36 @@
+uuid: aef9d696-b040-4eaf-b82f-2f3364a29588
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-directorio
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: directorio
+theme: unizar_centro
+region: columna_lateral
+weight: -19
+provider: null
+plugin: 'menu_block:menu-directorio'
+settings:
+  id: 'menu_block:menu-directorio'
+  label: Directorio
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-directorio:'
+  suggestion: menu_directorio
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/facultad/directorio/*'

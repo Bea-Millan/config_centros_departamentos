@@ -12,7 +12,7 @@ dependencies:
 id: cartadeserviciosmejoremosla
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: 5
 provider: null
 plugin: 'block_content:3f3f8214-4557-4c49-9c47-4962605b12be'
 settings:

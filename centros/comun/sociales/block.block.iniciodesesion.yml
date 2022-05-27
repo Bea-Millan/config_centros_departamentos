@@ -1,0 +1,25 @@
+uuid: 933d1514-443e-457d-8c19-a9df6d6f51bc
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+    - user
+  theme:
+    - unizar_centro
+id: iniciodesesion
+theme: unizar_centro
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Inicio de sesión'
+  label_display: '0'
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /intranet/intranet

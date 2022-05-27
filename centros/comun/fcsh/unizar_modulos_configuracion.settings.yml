@@ -6,3 +6,20 @@ default_favicon: '1'
 favicon_path: ''
 favicon_mimetype: image/vnd.microsoft.icon
 langcode: es
+rrs_header: 0
+blog: ''
+instagram: 'https://www.instagram.com/fcsh_teruel/'
+facebook: 'https://www.facebook.com/Facultad-de-Ciencias-Sociales-y-Humanas-de-Teruel-102652775361589'
+twitter: 'https://twitter.com/fcsh_teruel'
+youtube: ''
+linkedin: ''
+soundcloud: ''
+dir_centro: 'C/ Atarazanas 4, 44003 Teruel'
+id: ''
+mail_centro: dircisht@unizar.es
+url_mapa: 'https://www.google.com/maps/place/Facultad+De+Ciencias+Sociales+Y+Humanas/@40.352208,-1.109712,15z/data=!4m2!3m1!1s0x0:0x8ec1b40'
+telefono_centro: '978618101'
+dir_centro2: ''
+mail_centro2: ''
+telefono_centro2: ''
+url_mapa2: ''

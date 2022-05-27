@@ -1,0 +1,36 @@
+uuid: 88fcf787-0156-48f4-90c8-517ce7623b7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-dirygess
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: dirygess
+theme: unizar_centro
+region: columna_lateral
+weight: -11
+provider: null
+plugin: 'menu_block:menu-dirygess'
+settings:
+  id: 'menu_block:menu-dirygess'
+  label: dirygess
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-dirygess:'
+  suggestion: menu_dirygess
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/dirygess/*'

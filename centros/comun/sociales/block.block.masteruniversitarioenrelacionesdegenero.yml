@@ -1,0 +1,36 @@
+uuid: eb1bb74f-a7a9-4a4e-98ac-db38f5abc701
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-master-universitario-en-rel
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: masteruniversitarioenrelacionesdegenero
+theme: unizar_centro
+region: columna_lateral
+weight: -17
+provider: null
+plugin: 'menu_block:menu-master-universitario-en-rel'
+settings:
+  id: 'menu_block:menu-master-universitario-en-rel'
+  label: 'Master Universitario en Relaciones de Género'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-master-universitario-en-rel:'
+  suggestion: menu_master_universitario_en_rel
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/genero/*'

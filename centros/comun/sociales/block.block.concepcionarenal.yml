@@ -1,0 +1,36 @@
+uuid: 06791a2d-97fd-4906-9de7-eedf5d53e1c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-concepcionarenal
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: concepcionarenal
+theme: unizar_centro
+region: columna_lateral
+weight: -22
+provider: null
+plugin: 'menu_block:menu-concepcionarenal'
+settings:
+  id: 'menu_block:menu-concepcionarenal'
+  label: concepcionarenal
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-concepcionarenal:'
+  suggestion: menu_concepcionarenal
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/concepcionarenal/*'

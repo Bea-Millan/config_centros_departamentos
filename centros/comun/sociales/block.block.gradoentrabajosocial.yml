@@ -1,0 +1,36 @@
+uuid: 6d90fa1a-9868-4b38-b2b1-4e055c9e2b15
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grado-en-trabajo-social
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: gradoentrabajosocial
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'menu_block:menu-grado-en-trabajo-social'
+settings:
+  id: 'menu_block:menu-grado-en-trabajo-social'
+  label: 'Grado en Trabajo Social'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grado-en-trabajo-social:'
+  suggestion: menu_grado_en_trabajo_social
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/trabajo-social/*'

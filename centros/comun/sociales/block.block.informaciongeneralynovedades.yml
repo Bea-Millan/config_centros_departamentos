@@ -1,0 +1,36 @@
+uuid: 138cd734-f829-4a71-9f32-2974253158c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-acuerdos-y-destinos
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: informaciongeneralynovedades
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'menu_block:menu-acuerdos-y-destinos'
+settings:
+  id: 'menu_block:menu-acuerdos-y-destinos'
+  label: 'Información general y novedades'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-acuerdos-y-destinos:'
+  suggestion: menu_acuerdos_y_destinos
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/movillidad/acuerdos/*'

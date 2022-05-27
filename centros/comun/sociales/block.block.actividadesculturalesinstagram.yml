@@ -12,7 +12,7 @@ dependencies:
 id: actividadesculturalesinstagram
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: 4
 provider: null
 plugin: 'block_content:45b02765-cd6e-4357-bd50-57eba97cd772'
 settings:

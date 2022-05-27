@@ -1,0 +1,36 @@
+uuid: acff0e04-f335-4a73-8511-b2630e0b7a4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-estudios-de-master
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: estudiosdemaster
+theme: unizar_centro
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'menu_block:menu-estudios-de-master'
+settings:
+  id: 'menu_block:menu-estudios-de-master'
+  label: 'Estudios de Máster'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-estudios-de-master:'
+  suggestion: menu_estudios_de_master
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/master/*'

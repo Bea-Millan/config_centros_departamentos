@@ -1,0 +1,36 @@
+uuid: acb71a06-0aed-45e2-a9f9-1dd34efe83f5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-master-recursos-humanos
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: masterpropioenrecursoshumanos
+theme: unizar_centro
+region: columna_lateral
+weight: -1
+provider: null
+plugin: 'menu_block:menu-master-recursos-humanos'
+settings:
+  id: 'menu_block:menu-master-recursos-humanos'
+  label: 'Máster Propio en Recursos Humanos'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-master-recursos-humanos:'
+  suggestion: menu_master_recursos_humanos
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/master-recursos-humanos/*'

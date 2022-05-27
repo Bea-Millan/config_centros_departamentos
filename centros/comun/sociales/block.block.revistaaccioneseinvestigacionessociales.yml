@@ -1,0 +1,36 @@
+uuid: d2c84fd2-44a2-490e-ad22-a5e1d2edc4ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-revistaais
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: revistaaccioneseinvestigacionessociales
+theme: unizar_centro
+region: columna_lateral
+weight: -21
+provider: null
+plugin: 'menu_block:menu-revistaais'
+settings:
+  id: 'menu_block:menu-revistaais'
+  label: 'Revista Acciones e Investigaciones Sociales'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-revistaais:'
+  suggestion: menu_revistaais
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/ais/*'

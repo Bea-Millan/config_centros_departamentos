@@ -1,0 +1,36 @@
+uuid: 5868e1c6-be5b-4764-bea8-471d361abb3a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-master-sistemica
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: masterenintervencionfamiliarysistemica
+theme: unizar_centro
+region: columna_lateral
+weight: -15
+provider: null
+plugin: 'menu_block:menu-master-sistemica'
+settings:
+  id: 'menu_block:menu-master-sistemica'
+  label: 'Máster en Intervención Familiar y Sistémica'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-master-sistemica:'
+  suggestion: menu_master_sistemica
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/master-sistemica/*'
