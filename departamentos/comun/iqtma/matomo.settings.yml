@@ -1,3 +1,4 @@
+langcode: es
 site_id: '141'
 url_http: 'http://webstats.unizar.es/'
 url_https: 'https://webstats.unizar.es/'
