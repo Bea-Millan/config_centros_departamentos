@@ -1,6 +1,6 @@
-uuid: b018080d-4aaf-4628-ba0b-8bc6ef0ecd18
+uuid: 50c3e63b-9b1f-4091-8bd6-a7da3746fdaf
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.slideshow
@@ -18,7 +18,7 @@ _core:
 id: classy_views_block__slideshow_block_1
 theme: classy
 region: sidebar_first
-weight: -10
+weight: null
 provider: null
 plugin: 'views_block:slideshow-block_1'
 settings:

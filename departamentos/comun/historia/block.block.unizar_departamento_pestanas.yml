@@ -1,4 +1,4 @@
-uuid: c75b42fb-92dd-48ce-912c-d6db2f265a57
+uuid: 80ab9021-f2cd-40c8-a339-48a3bb4433f4
 langcode: es
 status: true
 dependencies:
@@ -9,7 +9,7 @@ _core:
 id: unizar_departamento_pestanas
 theme: unizar_departamento
 region: content
-weight: -8
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 9409b326-7ff9-41d4-a400-b97f2fbe60ee
+uuid: 69bc500e-c7e7-4648-86ba-311b0c35d162
 langcode: es
 status: true
 dependencies:
@@ -51,19 +51,13 @@ process:
     -
       plugin: migration_lookup
       migration:
-        - upgrade_d7_node_translation_elemento_parilla
-        - upgrade_d7_node_translation_estudio
-        - upgrade_d7_node_translation_galeria
-        - upgrade_d7_node_translation_noticia
-        - upgrade_d7_node_translation_page
-        - upgrade_d7_node_translation_slideshow
-        - upgrade_d7_node_translation_te_interesa
-        - upgrade_d7_node_translation_webform
+        - upgrade_d7_node_galeria
+        - upgrade_d7_node_noticia
+        - upgrade_d7_node_page
   langcode:
     -
-      plugin: null_coalesce
+      plugin: get
       source:
-        - '@node_translation/1'
         - language
   path:
     -

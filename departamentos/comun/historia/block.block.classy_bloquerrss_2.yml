@@ -1,6 +1,6 @@
-uuid: 7d971327-acdc-45fe-9321-e426c3bd97cc
+uuid: e926ea18-6893-4859-8275-a8e52ba522b5
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -10,8 +10,8 @@ _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: classy_bloquerrss_2
 theme: classy
-region: footer
-weight: 0
+region: sidebar_first
+weight: null
 provider: null
 plugin: bloque_rrss
 settings:

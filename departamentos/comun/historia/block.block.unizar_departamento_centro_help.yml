@@ -1,4 +1,4 @@
-uuid: e55caf2c-e915-46ff-ab44-e6f43d56eb0b
+uuid: 0bad320c-1aa0-4b84-9ed5-f89da2a27b0a
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_departamento_centro_help
 theme: unizar_departamento
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: help_block
 settings:

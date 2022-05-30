@@ -1,6 +1,6 @@
 uuid: 5fa10606-9b07-4e3d-9668-dc3dc4994ec0
 langcode: es
-status: true
+status: false
 dependencies:
   theme:
     - unizar_base
@@ -8,8 +8,8 @@ _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: pestanas
 theme: unizar_base
-region: content
-weight: -8
+region: cabecera_sup
+weight: null
 provider: null
 plugin: local_tasks_block
 settings:

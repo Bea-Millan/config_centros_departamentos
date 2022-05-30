@@ -1,6 +1,6 @@
-uuid: 9f548f77-dcfc-403d-bedc-8f6b79974e78
+uuid: 1f757f52-1bd3-4125-ae2d-a7a8760a4ad1
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - system.menu.main
@@ -13,7 +13,7 @@ _core:
 id: classy_mainmenu
 theme: classy
 region: sidebar_first
-weight: -15
+weight: null
 provider: null
 plugin: 'superfish:main'
 settings:

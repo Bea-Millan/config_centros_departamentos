@@ -1,4 +1,4 @@
-uuid: 77979570-8509-4a79-bc5c-0e7cf64c2742
+uuid: 0cb5de10-86d1-448f-bf4f-ffaf4681546f
 langcode: es
 status: true
 dependencies:
@@ -13,7 +13,7 @@ _core:
 id: unizar_departamento_mainmenu
 theme: unizar_departamento
 region: menu_principal
-weight: -15
+weight: -9
 provider: null
 plugin: 'superfish:main'
 settings:

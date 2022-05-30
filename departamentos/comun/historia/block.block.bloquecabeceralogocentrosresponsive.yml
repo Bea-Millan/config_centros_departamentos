@@ -1,6 +1,6 @@
 uuid: b5bafe94-b878-47e4-930a-5a3f96962b98
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -10,8 +10,8 @@ _core:
   default_config_hash: Hveg_TbKr0pKqbVCC5pl9hputahu34GJQO7Nuv26E10
 id: bloquecabeceralogocentrosresponsive
 theme: unizar_base
-region: cabecera_med_izquierda
-weight: -5
+region: cabecera_sup
+weight: null
 provider: null
 plugin: bloque_cabecera_logo
 settings:

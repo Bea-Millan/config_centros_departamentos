@@ -1,4 +1,4 @@
-uuid: 1d9462ec-7b90-49f0-a4de-76ddee791195
+uuid: 01b7e0b4-adf2-48ee-a87a-bef9a0d63d11
 langcode: es
 status: true
 dependencies:
@@ -11,7 +11,7 @@ _core:
 id: unizar_departamento_titulodelapagina
 theme: unizar_departamento
 region: content
-weight: -7
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

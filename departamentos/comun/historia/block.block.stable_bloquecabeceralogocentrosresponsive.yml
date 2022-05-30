@@ -1,6 +1,6 @@
-uuid: 78769a66-7d4d-47e4-a59d-35754ef832a0
+uuid: a1434ca0-f953-4d3b-923f-46a5ca6a12b2
 langcode: es
-status: true
+status: false
 dependencies:
   module:
     - unizar_modulos_configuracion
@@ -11,7 +11,7 @@ _core:
 id: stable_bloquecabeceralogocentrosresponsive
 theme: stable
 region: sidebar_first
-weight: -5
+weight: null
 provider: null
 plugin: bloque_cabecera_logo
 settings:

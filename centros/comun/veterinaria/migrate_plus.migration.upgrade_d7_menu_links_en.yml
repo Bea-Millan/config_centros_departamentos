@@ -1,4 +1,4 @@
-uuid: 5ec96e29-6ebf-4ba7-8d7d-1857ea7b5bc3
+uuid: 7314e42d-928c-4f9a-998e-55db0e0db170
 langcode: es
 status: true
 dependencies:
@@ -47,13 +47,34 @@ process:
       migration: upgrade_d7_menu_en
       source: menu_name
       no_stub: true
-  link/uri:
+  aa:
+    -
+      plugin: explode
+      source: link_path
+      delimiter: /
+    -
+      plugin: extract
+      default: INVALID_NID
+      index:
+        - 1
+    -
+      plugin: migration_lookup
+      migration:
+        - upgrade_d7_node_galeria
+        - upgrade_d7_node_noticia
+        - upgrade_d7_node_page
+  link_aux:
     -
       plugin: urlhost
       source: link_path
     -
       plugin: link_uri
       validate_route: false
+    -
+      plugin: str_replace
+      regex: false
+      search: econz.unizar.es
+      replace: fecem.unizar.es
   link/options:
     -
       plugin: get
@@ -72,6 +93,12 @@ process:
     -
       plugin: get
       source: '@route/route_parameters'
+  link/uri:
+    -
+      plugin: menu_link_set_translated
+      source:
+        - '@link_aux'
+        - '@aa'
   url:
     -
       plugin: get

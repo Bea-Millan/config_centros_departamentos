@@ -1,4 +1,4 @@
-uuid: d3b590b4-9995-4b0e-9433-2ffb82675ca9
+uuid: 98335269-8ee1-4c7f-8aca-274749f6407b
 langcode: es
 status: true
 dependencies:
@@ -17,7 +17,7 @@ _core:
 id: unizar_departamento_views_block__calendario_noticias_block_1
 theme: unizar_departamento
 region: columna_lateral
-weight: 0
+weight: -4
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

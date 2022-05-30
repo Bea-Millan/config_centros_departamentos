@@ -8,7 +8,6 @@ dependencies:
     - node.type.page
   module:
     - block
-    - block_class
     - captcha
     - content_moderation
     - contextual
@@ -30,7 +29,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - view_unpublished
     - views_ui
 _core:
   default_config_hash: sy4leADBKi-HbVXrZxxXHB-A5NkagIXX33cTiY7hwow
@@ -64,32 +62,33 @@ permissions:
   - 'add terms in 2'
   - 'add terms in secciones'
   - 'add terms in tipos_de_estudio'
-  - admin_classes
-  - admin_display_suite
-  - admin_fields
-  - admin_view_modes
   - 'administer CAPTCHA settings'
   - 'administer actions'
+  - 'administer barra_principal region'
   - 'administer block access settings'
-  - 'administer block classes'
   - 'administer blocks'
+  - 'administer cabecera region'
+  - 'administer cabecera_inf region'
+  - 'administer columna_lateral region'
   - 'administer comments'
   - 'administer contact forms'
+  - 'administer content region'
   - 'administer content translations'
   - 'administer content types'
-  - 'administer contexts'
-  - 'administer css injection'
+  - 'administer dashboard_inactive region'
+  - 'administer dashboard_main region'
+  - 'administer dashboard_sidebar region'
   - 'administer features'
   - 'administer fieldgroups'
   - 'administer fields'
   - 'administer filters'
   - 'administer image styles'
+  - 'administer imagen_cabecera region'
   - 'administer imce'
   - 'administer languages'
   - 'administer lightbox2'
   - 'administer matomo'
   - 'administer menu'
-  - 'administer menu attributes'
   - 'administer module filter'
   - 'administer modules'
   - 'administer nodes'
@@ -119,11 +118,10 @@ permissions:
   - 'assign profiles to nodes'
   - 'block IP addresses'
   - 'bypass node access'
+  - 'bypass region control'
   - 'bypass rh_node'
   - 'cancel account'
   - 'change own username'
-  - 'clone node'
-  - 'clone own nodes'
   - 'configure all block body fields'
   - 'configure all block descriptions'
   - 'configure all block titles'
@@ -135,7 +133,6 @@ permissions:
   - 'configure all role visibility settings'
   - 'configure all user visibility settings'
   - 'configure all visibility settings'
-  - 'context ajax block access'
   - 'create article content'
   - 'create blocks'
   - 'create page content'

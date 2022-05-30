@@ -1,4 +1,4 @@
-uuid: 610b693a-2a68-48af-9274-e98055b527f8
+uuid: 67c68b1f-1c1e-46c1-985e-291a9b48ea44
 langcode: es
 status: true
 dependencies:
@@ -10,7 +10,7 @@ _core:
   default_config_hash: R9XOv47XqjtJftFYUNN_NXNWaHD7D2-JIZJerE-SjkI
 id: unizar_departamento_bloquedatoscontactocentros
 theme: unizar_departamento
-region: cabecera_med_derecha
+region: footer
 weight: -8
 provider: null
 plugin: bloque_cabecera_contacto

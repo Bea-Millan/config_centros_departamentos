@@ -63,21 +63,7 @@ process:
         - upgrade_d7_node_galeria
         - upgrade_d7_node_noticia
         - upgrade_d7_node_page
-  id_old:
-    -
-      plugin: extract
-      source: '@aa'
-      default: ''
-      index:
-        - 1
-  id_new:
-    -
-      plugin: extract
-      source: '@aa'
-      defautl: ''
-      index:
-        - 0
-  link/uri:
+  link_aux:
     -
       plugin: urlhost
       source: link_path
@@ -89,11 +75,6 @@ process:
       regex: false
       search: econz.unizar.es
       replace: fecem.unizar.es
-    -
-      plugin: str_replace
-      regex: false
-      search: '''@id_old'''
-      replace: '''@id_new'''
   link/options:
     -
       plugin: get
@@ -112,6 +93,12 @@ process:
     -
       plugin: get
       source: '@route/route_parameters'
+  link/uri:
+    -
+      plugin: menu_link_set_translated
+      source:
+        - '@link_aux'
+        - '@aa'
   url:
     -
       plugin: get

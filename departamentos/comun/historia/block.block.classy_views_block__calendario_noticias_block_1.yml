@@ -1,6 +1,6 @@
-uuid: e6207221-940e-41df-a86f-5c6178356931
+uuid: 40148fd4-7393-4aa9-be7f-ce0fe5e0e9fe
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.calendario_noticias
@@ -17,7 +17,7 @@ _core:
 id: classy_views_block__calendario_noticias_block_1
 theme: classy
 region: sidebar_first
-weight: 0
+weight: null
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

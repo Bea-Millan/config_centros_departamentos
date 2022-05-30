@@ -1,6 +1,6 @@
-uuid: 7514a65a-1d92-4d50-897c-50db6c7f84a5
+uuid: 4e84c4ce-beb2-4ee7-ac94-2bfd6e728bbd
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.te_interesa
@@ -17,7 +17,7 @@ _core:
 id: stable_views_block__te_interesa_block_1
 theme: stable
 region: sidebar_first
-weight: 0
+weight: null
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:

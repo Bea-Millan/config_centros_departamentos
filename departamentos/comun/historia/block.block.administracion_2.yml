@@ -12,7 +12,7 @@ _core:
 id: administracion_2
 theme: seven
 region: header
-weight: 0
+weight: -4
 provider: null
 plugin: administracion
 settings:
@@ -23,9 +23,9 @@ settings:
 visibility:
   user_role:
     id: user_role
-    roles:
-      administrator: administrator
-      gestor_basico: gestor_basico
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      gestor_basico: gestor_basico

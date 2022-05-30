@@ -1,6 +1,6 @@
 uuid: a523b36a-5082-4093-81d6-190c30399e7a
 langcode: es
-status: true
+status: false
 dependencies:
   config:
     - views.view.te_interesa
@@ -16,8 +16,8 @@ _core:
   default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
 id: views_block__te_interesa_block_1
 theme: unizar_base
-region: columna_lateral
-weight: 0
+region: cabecera_sup
+weight: null
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:

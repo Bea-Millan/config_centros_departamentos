@@ -1,4 +1,4 @@
-uuid: 0123c686-a557-4a2a-a4b1-07194a3dff58
+uuid: 552b2aac-d927-4022-bf1a-1175c55f5a46
 langcode: es
 status: true
 dependencies:
@@ -18,5 +18,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site map'
+  - 'diff view changes'
   - 'search content'
   - 'use text format filtered_html'
