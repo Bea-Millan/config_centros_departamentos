@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: Ez-JSYDoyfNmzIEycTb7XDLgQtV5I1QYKIB_EIv7WYg
+plugin:
+  host: hispanicas.unizar.es
+  url_host: sites/hispanicas
+langcode: es
