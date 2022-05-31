@@ -34,6 +34,9 @@ elements: |-
     '#type': textfield
     '#title': 'Relación con la Facultad'
     '#required': true
+  captcha:
+    '#type': captcha
+    '#captcha_type': captcha/Math
 css: ''
 javascript: ''
 settings:

@@ -6,6 +6,7 @@ dependencies:
     - views.view.calendario_noticias
   module:
     - block_class
+    - system
     - views
   theme:
     - unizar_centro
@@ -28,4 +29,8 @@ settings:
   context_mapping: {  }
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

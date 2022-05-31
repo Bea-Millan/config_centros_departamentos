@@ -1,0 +1,36 @@
+uuid: 1c057b6d-406d-4562-a6da-ff88d6a78557
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grado-en-veterinaria
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: gradoenveterinaria
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-grado-en-veterinaria'
+settings:
+  id: 'menu_block:menu-grado-en-veterinaria'
+  label: 'Grado en Veterinaria'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grado-en-veterinaria:'
+  suggestion: menu_grado_en_veterinaria
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/academico/capacitacion-manejo-animales\r\n/academico/practicas-con-animales\r\n/academico/trabajo-fin-de-grado-grado-veterinaria\r\n/academico/practicas-externas-tuteladas-grado-veterinaria\r\n/academico/actividades-universitarias-grado-en-veterinaria\r\n/academico/reconocimientos-academicos-grado-veterinaria\r\n/academico/comision-garantia-calidad-grado-veterinaria\r\n/academico/comision-evaluacion-calidad-grado-veterinaria\r\n/examenesvet\r\n/horarios1vet\r\n/grupos1vet\r\n/academico/normativa-programacion-academica\r\n/academico/coordinadores-asignaturas-veterinaria\r\n/asignatura1vet\r\n/galeria/instalaciones-grado-veterinaria\r\n/academico/plan-estudios-grado-veterinaria"

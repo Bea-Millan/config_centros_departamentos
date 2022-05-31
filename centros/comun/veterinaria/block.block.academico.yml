@@ -1,0 +1,36 @@
+uuid: 86f73bf6-4bec-4487-a3e3-7500461442bd
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-acad-mico
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: academico
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-acad-mico'
+settings:
+  id: 'menu_block:menu-acad-mico'
+  label: Académico
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-acad-mico:'
+  suggestion: menu_acad_mico
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/academico/programas/programas-asignaturas-antiguas\r\n/academico/reconocimiento-creditos\r\n/academico/solicitud-titulo-suplemento\r\n/academico/impresos\r\n/academico/tramites-secretaria"

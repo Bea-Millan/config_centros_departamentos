@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
   module:
     - block_content
+    - system
   theme:
     - unizar_centro
 id: elcentro
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -14
 provider: null
 plugin: 'block_content:cf6ba12b-ef53-43f2-bcdf-c2f062c80dc8'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -33,6 +33,9 @@ elements: |-
       'opción 1': 'opcion 1'
       'opción 2': 'opcion 2'
     '#options__properties': ''
+  suba_un_archivo:
+    '#type': managed_file
+    '#title': 'Suba un archivo'
 css: ''
 javascript: ''
 settings:
@@ -240,7 +243,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Formulario cumplimentado CIFICE'
-      body: "Ha enviado un formuario a traves de cificie.unizar.es con los siguientes datos:\r\n\r\nEnviado el: [webform_submission:created]\r\nPor: [webform_submission:user]\r\n\r\nLos datos suministrados son:\r\n[webform_submission:values]\r\n\r\nGracias por su colaboración\r\n"
+      body: "Ha enviado un formuario a traves de cifice.unizar.es con los siguientes datos:\r\n\r\nEnviado el: [webform_submission:created]\r\nPor: [webform_submission:user]\r\n\r\nLos datos suministrados son:\r\n[webform_submission:values]\r\n\r\nGracias por su colaboración\r\n"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -277,7 +280,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Formulario cumplimentado CIFICE'
-      body: "Ha enviado un formuario a traves de cificie.unizar.es con los siguientes datos:\r\n\r\nEnviado el: [webform_submission:created]\r\nPor: [webform_submission:user]\r\n\r\nLos datos suministrados son:\r\n[webform_submission:values]\r\n\r\nGracias por su colaboración\r\n"
+      body: "Ha enviado un formuario a traves de cifice.unizar.es con los siguientes datos:\r\n\r\nEnviado el: [webform_submission:created]\r\nPor: [webform_submission:user]\r\n\r\nLos datos suministrados son:\r\n[webform_submission:values]\r\n\r\nGracias por su colaboración\r\n"
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

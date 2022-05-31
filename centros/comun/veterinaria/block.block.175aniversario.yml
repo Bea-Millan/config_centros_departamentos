@@ -12,7 +12,7 @@ dependencies:
 id: 175aniversario
 theme: unizar_centro
 region: columna_lateral
-weight: -13
+weight: -14
 provider: null
 plugin: 'block_content:6dd91858-e202-4aaa-b384-7d95cd11ff1d'
 settings:

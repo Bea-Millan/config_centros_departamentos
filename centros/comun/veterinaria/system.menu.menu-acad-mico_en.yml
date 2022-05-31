@@ -1,0 +1,8 @@
+uuid: d683fbb1-8bdb-4b69-ab98-652fc5f25648
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acad-mico_en
+label: Académico_en
+description: ''
+locked: false

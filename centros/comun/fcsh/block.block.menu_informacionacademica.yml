@@ -1,0 +1,36 @@
+uuid: 94e6473f-5a65-41e1-ad9c-f4e753271d82
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-informaci-n-acad-mica
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menu_informacionacademica
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'menu_block:menu-informaci-n-acad-mica'
+settings:
+  id: 'menu_block:menu-informaci-n-acad-mica'
+  label: 'Menu_Informacion academica'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'menu-informaci-n-acad-mica:'
+  suggestion: menu_informaci_n_acad_mica
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/informacion-academica*'

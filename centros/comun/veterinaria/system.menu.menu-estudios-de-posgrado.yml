@@ -1,0 +1,8 @@
+uuid: 9f01109e-dcd2-4629-b3ea-25123d74f7df
+langcode: es
+status: true
+dependencies: {  }
+id: menu-estudios-de-posgrado
+label: 'Estudios de Posgrado'
+description: ''
+locked: false

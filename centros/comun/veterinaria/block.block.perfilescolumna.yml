@@ -1,9 +1,9 @@
-uuid: f81ceea9-71b9-4d31-8893-e4f2f439ce1d
+uuid: 15e86772-ff2c-4858-9c07-ff7fc0636e67
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:88d6a23c-99a1-41e5-8a7f-22dd110fbc2b'
+    - 'block_content:basic:dec1b005-d083-4424-b499-769f2798dc2a'
   module:
     - block_class
     - block_content
@@ -13,15 +13,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: perfiles
-id: botones_estudiantes_pdi_pas
+id: perfilescolumna
 theme: unizar_centro
 region: columna_lateral
-weight: -18
+weight: -13
 provider: null
-plugin: 'block_content:88d6a23c-99a1-41e5-8a7f-22dd110fbc2b'
+plugin: 'block_content:dec1b005-d083-4424-b499-769f2798dc2a'
 settings:
-  id: 'block_content:88d6a23c-99a1-41e5-8a7f-22dd110fbc2b'
-  label: Botones_Estudiantes_PDI_PAS
+  id: 'block_content:dec1b005-d083-4424-b499-769f2798dc2a'
+  label: 'Perfiles columna'
   label_display: '0'
   provider: block_content
   status: true
@@ -30,5 +30,5 @@ settings:
 visibility:
   request_path:
     id: request_path
-    negate: false
+    negate: true
     pages: '<front>'

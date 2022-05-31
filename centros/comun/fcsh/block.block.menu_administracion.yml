@@ -1,24 +1,24 @@
-uuid: 6c656403-0240-460a-b22b-56bbf12417fb
+uuid: ec9b21d2-88e1-41ff-af4b-7af3fab5b9c4
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-administraci-n
   module:
     - menu_block
     - system
   theme:
     - unizar_centro
-id: accesosdirectos
+id: menu_administracion
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -10
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-administraci-n'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
-  label_display: visible
+  id: 'menu_block:menu-administraci-n'
+  label: Menu_Administracion
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child
@@ -26,11 +26,11 @@ settings:
   label_type: block
   level: 1
   depth: 0
-  expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  expand_all_items: true
+  parent: 'menu-administraci-n:'
+  suggestion: menu_administraci_n
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: '/administracion*'

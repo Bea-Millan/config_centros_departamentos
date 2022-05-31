@@ -1,24 +1,24 @@
-uuid: 6c656403-0240-460a-b22b-56bbf12417fb
+uuid: 13f229c1-31a7-4226-8474-b07b9ffe5696
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-grado-primaria
   module:
     - menu_block
     - system
   theme:
     - unizar_centro
-id: accesosdirectos
+id: menu_grado_primaria
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -6
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-grado-primaria'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
-  label_display: visible
+  id: 'menu_block:menu-grado-primaria'
+  label: Menu_Grado_Primaria
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child
@@ -26,11 +26,11 @@ settings:
   label_type: block
   level: 1
   depth: 0
-  expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  expand_all_items: true
+  parent: 'menu-grado-primaria:'
+  suggestion: menu_grado_primaria
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: '/primaria*'

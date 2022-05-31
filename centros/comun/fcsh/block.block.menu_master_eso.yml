@@ -1,24 +1,24 @@
-uuid: 6c656403-0240-460a-b22b-56bbf12417fb
+uuid: eed7e0db-f195-4667-98d3-7b72c6ac438e
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-m-ster-eso
   module:
     - menu_block
     - system
   theme:
     - unizar_centro
-id: accesosdirectos
+id: menu_master_eso
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -3
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-m-ster-eso'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
-  label_display: visible
+  id: 'menu_block:menu-m-ster-eso'
+  label: Menu_Master_ESO
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child
@@ -26,11 +26,11 @@ settings:
   label_type: block
   level: 1
   depth: 0
-  expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  expand_all_items: true
+  parent: 'menu-m-ster-eso:'
+  suggestion: menu_m_ster_eso
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: '/masterprofesorado*'

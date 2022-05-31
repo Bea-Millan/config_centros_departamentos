@@ -259,5 +259,42 @@ access:
       - supergestor
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  correo_electronico:
+    id: email
+    handler_id: correo_electronico
+    label: 'Correo electrónico'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:mail:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Formulario cumplimentado CIFICE'
+      body: "Ha enviado un formuario a traves de cifice.unizar.es con los siguientes datos:\r\n\r\nEnviado el: [webform_submission:created]\r\nPor: [webform_submission:user]\r\n\r\nLos datos suministrados son:\r\n[webform_submission:values]\r\n\r\nGracias por su colaboración\r\n"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: unizar_centro
+      parameters: {  }
+      debug: false
 variants: {  }

@@ -26,11 +26,11 @@ settings:
   label_type: block
   level: 2
   depth: 0
-  expand_all_items: false
+  expand_all_items: true
   parent: 'main:'
   suggestion: main
 visibility:
   request_path:
     id: request_path
     negate: true
-    pages: '<front>'
+    pages: "/academico/*\r\n/horariossaludglobal\r\n/organizacion/comision-evaluacion-calidad-master-salud-global\r\n/examenescta\r\n/gruposcta\r\n/horarios1cta\r\n/galeria/instalaciones-grado-cta\r\n/examenesvet\r\n/horarios1vet\r\n/grupos1vet\r\n/asignatura1vet\r\n/galeria/instalaciones-grado-veterinaria"

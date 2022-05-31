@@ -1,0 +1,8 @@
+uuid: 9440236d-4e43-4803-8fa6-49fe56ffb231
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grado-en-veterinaria
+label: 'Grado en Veterinaria'
+description: ''
+locked: false

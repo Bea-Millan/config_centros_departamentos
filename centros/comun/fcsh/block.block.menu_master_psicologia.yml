@@ -1,0 +1,36 @@
+uuid: 10f8e1aa-0aad-4731-a6c7-c87e45fdeb2d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-master-psicologia
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menu_master_psicologia
+theme: unizar_centro
+region: columna_lateral
+weight: -2
+provider: null
+plugin: 'menu_block:menu-menu-master-psicologia'
+settings:
+  id: 'menu_block:menu-menu-master-psicologia'
+  label: Menu_Master_Psicologia
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'menu-menu-master-psicologia:'
+  suggestion: menu_menu_master_psicologia
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/masterpsicologia*'

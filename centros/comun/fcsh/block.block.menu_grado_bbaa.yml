@@ -1,24 +1,24 @@
-uuid: 6c656403-0240-460a-b22b-56bbf12417fb
+uuid: 5de8cb9a-86d6-4467-9405-4993dd8b27dd
 langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.menu-lateral
+    - system.menu.menu-grado-bbaa
   module:
     - menu_block
     - system
   theme:
     - unizar_centro
-id: accesosdirectos
+id: menu_grado_bbaa
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: -7
 provider: null
-plugin: 'menu_block:menu-lateral'
+plugin: 'menu_block:menu-grado-bbaa'
 settings:
-  id: 'menu_block:menu-lateral'
-  label: 'Accesos directos'
-  label_display: visible
+  id: 'menu_block:menu-grado-bbaa'
+  label: Menu_Grado_BBAA
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child
@@ -26,11 +26,11 @@ settings:
   label_type: block
   level: 1
   depth: 0
-  expand_all_items: false
-  parent: 'menu-lateral:'
-  suggestion: menu_lateral
+  expand_all_items: true
+  parent: 'menu-grado-bbaa:'
+  suggestion: menu_grado_bbaa
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: '/bellasartes*'

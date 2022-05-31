@@ -1,0 +1,36 @@
+uuid: c525b3a1-2936-4ca9-81f9-e86c5546de43
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-grado-en-cta
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: gradoencta
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-grado-en-cta'
+settings:
+  id: 'menu_block:menu-grado-en-cta'
+  label: 'Grado en CTA'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-grado-en-cta:'
+  suggestion: menu_grado_en_cta
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/academico/trabajo-fin-de-grado-grado-cta\r\n/academico/practicas-externas-grado-cta\r\n/academico/actividades-universitarias-grado-en-cta\r\n/academico/reconocimientos-academicos-grado-cta\r\n/academico/comision-garantia-calidad-grado-cta\r\n/academico/comision-evaluacion-calidad-grado-cta\r\n/examenescta\r\n/gruposcta\r\n/academico/normativa-programacion-academica-0\r\n/academico/calendario-actividades-evaluacion-cta\r\n/horarios1cta\r\n/academico/coordinadores-asignaturas-cta\r\n/academico/informacion-sobre-asignaturas\r\n/galeria/instalaciones-grado-cta\r\n/academico/plan-estudios-grado-cta"

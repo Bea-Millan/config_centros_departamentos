@@ -6,12 +6,13 @@ dependencies:
     - 'block_content:basic:fe64d0d5-decf-414b-95a6-e1a05a9991f2'
   module:
     - block_content
+    - system
   theme:
     - unizar_centro
 id: logotipocampusdeteruel
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: -11
 provider: null
 plugin: 'block_content:fe64d0d5-decf-414b-95a6-e1a05a9991f2'
 settings:
@@ -22,4 +23,8 @@ settings:
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

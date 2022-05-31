@@ -1,0 +1,36 @@
+uuid: 778ddbea-d7a3-4f2d-9532-f5c4a6949c4b
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-estudios-de-posgrado
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: estudiosdeposgrado
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-estudios-de-posgrado'
+settings:
+  id: 'menu_block:menu-estudios-de-posgrado'
+  label: 'Estudios de Posgrado'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-estudios-de-posgrado:'
+  suggestion: menu_estudios_de_posgrado
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/academico/masteres-oficiales\r\n/academico/comision-garantia-calidad-master\r\n/academico/master-cta-2015\r\n/academico/asignatura1master\r\n/academico/coordinadores-asignaturas-master-csta\r\n/academico/horarios1master\r\n/academico/trabajo-fin-master-csta-nuevo\r\n/academico/comision-evaluacion-calidad-master-csta\r\n/academico/mastersanidadproduccionporcina\r\n/academico/comision-evaluacion-calidad-master-sanidad-porcina\r\n/academico/master-nutricion-animal\r\n/academico/trabajo-fin-de-master-nutricion-animal\r\n/academico/comision-evaluacion-calidad-master-nutricion\r\n/academico/master-salud-global\r\n/horariossaludglobal\r\n/organizacion/comision-evaluacion-calidad-master-salud-global\r\n/academico/coordinadores-asignaturas-master-salud-global\r\n/academico/trabajo-fin-master\r\n/academico/estudios-propios\r\n"

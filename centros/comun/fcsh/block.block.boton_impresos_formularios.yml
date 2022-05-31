@@ -12,7 +12,7 @@ dependencies:
 id: boton_impresos_formularios
 theme: unizar_centro
 region: columna_lateral
-weight: -7
+weight: -15
 provider: null
 plugin: 'block_content:466e8e5a-0726-4807-adc4-29a47810a3a8'
 settings:
