@@ -1,6 +1,7 @@
+uuid: 22952b9e-d206-4508-b0c7-a5c134a09471
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: fteorica
 label: fteorica
 description: ''
@@ -27,13 +28,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
+  - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

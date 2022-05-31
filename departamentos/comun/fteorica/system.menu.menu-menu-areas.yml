@@ -1,0 +1,8 @@
+uuid: 42604f87-1991-4ce0-b901-722885fbe432
+langcode: es
+status: true
+dependencies: {  }
+id: menu-menu-areas
+label: menu-areas
+description: Áreas
+locked: false

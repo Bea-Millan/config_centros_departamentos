@@ -1,0 +1,19 @@
+uuid: cc3d9c93-6bcd-4886-bb3c-f6fb416c77d9
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access service links'
+  - 'access site map'
+  - 'diff view changes'
+  - 'search content'

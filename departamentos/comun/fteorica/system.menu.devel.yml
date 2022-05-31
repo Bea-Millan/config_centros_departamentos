@@ -1,0 +1,8 @@
+uuid: fbd17f78-b504-44b8-b6c0-a7fa984190e6
+langcode: es
+status: true
+dependencies: {  }
+id: devel
+label: Desarrollo
+description: 'Development link'
+locked: false
