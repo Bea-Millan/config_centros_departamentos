@@ -152,6 +152,7 @@ process:
       source:
         - field_fecha
         - field_fecha_evento
+        - field_um_noticias_fecha
     -
       plugin: sub_process
       process:
