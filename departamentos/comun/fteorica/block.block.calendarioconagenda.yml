@@ -1,0 +1,30 @@
+uuid: c2194eb4-c1ce-4511-bba9-3f84ea9d7074
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ebcc0623-f99c-407e-a69b-ae2d06c9ea2b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: calendarioconagenda
+theme: unizar_departamento
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:ebcc0623-f99c-407e-a69b-ae2d06c9ea2b'
+settings:
+  id: 'block_content:ebcc0623-f99c-407e-a69b-ae2d06c9ea2b'
+  label: 'Calendario con agenda'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/listado-personal\r\n/listado-pdi\r\n/listado-pas\r\n/equipo-direccion\r\n/consejo-departamento"

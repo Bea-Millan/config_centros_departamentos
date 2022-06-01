@@ -1,0 +1,30 @@
+uuid: 5c93a6e8-9db7-4a41-bd16-81123efb49b6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:379d0a64-2c82-41db-accf-32117fc2da04'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: avisos
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:379d0a64-2c82-41db-accf-32117fc2da04'
+settings:
+  id: 'block_content:379d0a64-2c82-41db-accf-32117fc2da04'
+  label: Avisos
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
