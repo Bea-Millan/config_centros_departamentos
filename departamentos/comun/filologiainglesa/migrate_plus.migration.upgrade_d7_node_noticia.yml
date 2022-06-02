@@ -1,4 +1,4 @@
-uuid: 93aeb24e-57ef-4087-900f-df08b20e53f8
+uuid: 56bd8b5d-2ebe-4906-a5f6-3bcd5b1fe235
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: EgcTDtK41dxZdX5skrjYVbraiOXii6eRSnqQ-a-BVCM
+  default_config_hash: JKTEvoE7CRnjexnNYFRsJU3b7TTuWPuUj6lFbFFcBHk
 id: upgrade_d7_node_noticia
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -34,6 +34,10 @@ process:
       source:
         - title
         - field_titulo_visible
+  path/pathauto:
+    plugin: default_value
+    default_value: 0
+  path/alias: alias
   uid:
     -
       plugin: MapUid
@@ -148,6 +152,7 @@ process:
       source:
         - field_fecha
         - field_fecha_evento
+        - field_um_noticias_fecha
     -
       plugin: sub_process
       process:

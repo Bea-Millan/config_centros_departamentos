@@ -1,0 +1,25 @@
+uuid: 0546f4e4-6c3c-40fe-9a71-a2c5def24fb3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:10af2418-533b-4282-a412-886f37ec6435'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: logosods
+theme: unizar_centro
+region: cabecera_med_izquierda
+weight: 0
+provider: null
+plugin: 'block_content:10af2418-533b-4282-a412-886f37ec6435'
+settings:
+  id: 'block_content:10af2418-533b-4282-a412-886f37ec6435'
+  label: 'Logos ODS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

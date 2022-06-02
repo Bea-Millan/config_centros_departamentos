@@ -1,0 +1,30 @@
+uuid: b0c66ce3-e685-4e18-8868-0d774148f227
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8e0b0515-abe2-42f8-9ce4-e34e3ed007d4'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: logoacreditacion
+theme: unizar_centro
+region: columna_lateral
+weight: -11
+provider: null
+plugin: 'block_content:8e0b0515-abe2-42f8-9ce4-e34e3ed007d4'
+settings:
+  id: 'block_content:8e0b0515-abe2-42f8-9ce4-e34e3ed007d4'
+  label: 'Logo acreditación'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

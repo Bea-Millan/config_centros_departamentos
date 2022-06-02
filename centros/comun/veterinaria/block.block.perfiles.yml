@@ -16,7 +16,7 @@ third_party_settings:
 id: perfiles
 theme: unizar_centro
 region: content
-weight: -12
+weight: -8
 provider: null
 plugin: 'block_content:7fd43661-7a36-40a8-af24-c0542489198b'
 settings:

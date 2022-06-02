@@ -77,7 +77,7 @@ elements: |-
     '#type': select
     '#title': Formato
     '#options':
-      Presencia: Presencia
+      Presencial: Presencial
       Online: Online
       Híbrido: Híbrido
   ambito:

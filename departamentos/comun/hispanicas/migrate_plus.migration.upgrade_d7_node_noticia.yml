@@ -1,4 +1,4 @@
-uuid: 352e115d-c66d-4a39-8558-4b75b5f24d63
+uuid: 56bd8b5d-2ebe-4906-a5f6-3bcd5b1fe235
 langcode: es
 status: true
 dependencies:
@@ -152,6 +152,7 @@ process:
       source:
         - field_fecha
         - field_fecha_evento
+        - field_um_noticias_fecha
     -
       plugin: sub_process
       process:

@@ -1,9 +1,9 @@
-uuid: a7030301-e306-43c4-9977-6ab7d1685456
+uuid: fff13188-be88-46f5-9b5f-5daeabf6f440
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.estudios
+    - views.view.noticias_ciencias_custom
   module:
     - block_class
     - system
@@ -13,16 +13,14 @@ dependencies:
 third_party_settings:
   block_class:
     classes: pestanas
-_core:
-  default_config_hash: YxGOmYaKrnjyYqNeUR92luKsak74JUup5_7bEimmczg
-id: unizar_centro_views_block__estudios_block_1
+id: views_block__noticias_ciencias_custom_block_1
 theme: unizar_centro
 region: content
-weight: -6
+weight: 0
 provider: null
-plugin: 'views_block:estudios-block_1'
+plugin: 'views_block:noticias_ciencias_custom-block_1'
 settings:
-  id: 'views_block:estudios-block_1'
+  id: 'views_block:noticias_ciencias_custom-block_1'
   label: ''
   label_display: visible
   provider: views
@@ -32,5 +30,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
-    pages: '<front>'
+    pages: "/prueba\r\n<front>"
