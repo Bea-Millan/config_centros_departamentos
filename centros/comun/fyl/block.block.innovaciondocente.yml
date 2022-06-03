@@ -1,0 +1,36 @@
+uuid: 2f12b761-0d74-4bc2-af80-296456c9166e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-innovacion-derecha
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: innovaciondocente
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-innovacion-derecha'
+settings:
+  id: 'menu_block:menu-innovacion-derecha'
+  label: 'Innovación Docente'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-innovacion-derecha:'
+  suggestion: menu_innovacion_derecha
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/innovacion/*'

@@ -1,0 +1,31 @@
+uuid: 846d9cee-f3f9-4841-a19d-3bb152ed828d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-te-interesa
+  module:
+    - menu_block
+  theme:
+    - unizar_departamento
+id: teinteresa
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-te-interesa'
+settings:
+  id: 'menu_block:menu-te-interesa'
+  label: 'Enlaces rápidos'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-te-interesa:'
+  suggestion: menu_te_interesa
+visibility: {  }

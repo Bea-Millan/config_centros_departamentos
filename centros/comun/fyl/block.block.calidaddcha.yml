@@ -1,0 +1,36 @@
+uuid: b2b41a52-c6e7-4429-b14f-0bc370c7e797
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-calidad-dcha
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: calidaddcha
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-calidad-dcha'
+settings:
+  id: 'menu_block:menu-calidad-dcha'
+  label: 'calidad dcha'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-calidad-dcha:'
+  suggestion: menu_calidad_dcha
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/calidad/calidad\r\n/calidad/informes-gestion\r\n/calidad/calidad-normativa-procedimientos\r\n/calidad/acreditacion-institucional\r\n/calidad/carta-de-servicios\r\n/lineas-actuacion\r\n/calidad/lineas-actuacion-16-19\r\n/calidad/lineas-actuacion-19-20"

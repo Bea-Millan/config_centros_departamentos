@@ -11,7 +11,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://facultad_derecho01.png'
+  path: 'public://logo-svg/fderecho.svg'
   use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

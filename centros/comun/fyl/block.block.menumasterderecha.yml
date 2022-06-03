@@ -1,0 +1,36 @@
+uuid: 35b52713-924a-4630-9351-4cb78aa6d5e0
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-menu-master-derecha
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: menumasterderecha
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-menu-master-derecha'
+settings:
+  id: 'menu_block:menu-menu-master-derecha'
+  label: 'menu master derecha'
+  label_display: '0'
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-menu-master-derecha:'
+  suggestion: menu_menu_master_derecha
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/master/master-en-consultoria-de-informacion-y-comunicacion\r\n/master/master-en-estudios-avanzados-en-historia-del-arte\r\n/master/master-en-gestion-del-patrimonio-cultural\r\n/master/master-en-historia-contemporanea\r\n/master/master-en-investigacion-y-estudios-avanzados-en-historia\r\n/master-universitario-en-mundo-antiguo-y-patrimonio-arqueologico-0\r\n/master/master-en-ordenacion\r\n/master/master-en-tigs\r\n/master/master-inter-investigacion-en-filosofia\r\n/master/master-culturas-identidades-hispanicas\r\n/master/master-ensenanza-ele"

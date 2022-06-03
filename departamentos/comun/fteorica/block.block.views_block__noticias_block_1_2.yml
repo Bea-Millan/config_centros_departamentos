@@ -1,36 +1,29 @@
-uuid: 5422dd37-0283-4128-9d1e-55c1fe7a434e
+uuid: 05d45187-7b64-4960-ae41-291b45902c98
 langcode: es
 status: true
 dependencies:
   config:
     - views.view.noticias
   module:
-    - block_class
     - system
     - views
   theme:
-    - unizar_centro
-third_party_settings:
-  block_class:
-    classes: noticias
-_core:
-  default_config_hash: NZS2fm6t-gB39Tye2trEM52KnZ59nQN7iqUyUfLLbyk
-id: unizar_centro_views_block__noticias_block_1
-theme: unizar_centro
-region: columna_lateral
-weight: -3
+    - unizar_departamento
+id: views_block__noticias_block_1_2
+theme: unizar_departamento
+region: content
+weight: -7
 provider: null
 plugin: 'views_block:noticias-block_1'
 settings:
   id: 'views_block:noticias-block_1'
-  label: ''
+  label: Seminarios
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: Seminarios
   items_per_page: none
 visibility:
   request_path:
     id: request_path
     negate: false
-    context_mapping: {  }
     pages: '<front>'

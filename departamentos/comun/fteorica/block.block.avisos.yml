@@ -18,7 +18,7 @@ plugin: 'block_content:379d0a64-2c82-41db-accf-32117fc2da04'
 settings:
   id: 'block_content:379d0a64-2c82-41db-accf-32117fc2da04'
   label: Avisos
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''

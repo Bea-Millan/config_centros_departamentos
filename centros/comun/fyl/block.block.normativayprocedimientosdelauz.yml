@@ -1,0 +1,36 @@
+uuid: ac7182d5-0152-4305-8de4-b15094fde8ce
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-normativa-y-procedimientos-
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: normativayprocedimientosdelauz
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-normativa-y-procedimientos-'
+settings:
+  id: 'menu_block:menu-normativa-y-procedimientos-'
+  label: 'Normativa y procedimientos de la UZ'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-normativa-y-procedimientos-:'
+  suggestion: menu_normativa_y_procedimientos_
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /calidad/normativa-y-procedimientos

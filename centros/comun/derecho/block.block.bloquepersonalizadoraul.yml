@@ -1,23 +1,23 @@
-uuid: 79fa4d35-2d23-4956-a386-e9c8d3008eb1
+uuid: a637fb72-81aa-42ac-92f9-a4894d185d49
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:781bebad-9443-4f1c-8191-e6585849e971'
+    - 'block_content:basic:fbcb60dd-e873-477a-837c-c642b5c317ba'
   module:
     - block_content
     - system
   theme:
     - unizar_centro
-id: tramitesadministrativosnopresencialescovid19
+id: bloquepersonalizadoraul
 theme: unizar_centro
 region: columna_lateral
-weight: -1
+weight: -5
 provider: null
-plugin: 'block_content:781bebad-9443-4f1c-8191-e6585849e971'
+plugin: 'block_content:fbcb60dd-e873-477a-837c-c642b5c317ba'
 settings:
-  id: 'block_content:781bebad-9443-4f1c-8191-e6585849e971'
-  label: 'Trámites administrativos no presenciales COVID-19'
+  id: 'block_content:fbcb60dd-e873-477a-837c-c642b5c317ba'
+  label: 'HORARIOS DE APERTURA Y CIERRE DEL CENTRO'
   label_display: '0'
   provider: block_content
   status: true

@@ -5,13 +5,14 @@ dependencies:
   config:
     - views.view.noticias_seccion
   module:
+    - system
     - views
   theme:
     - unizar_centro
 id: views_block__noticias_seccion_block_2
 theme: unizar_centro
 region: columna_lateral
-weight: -15
+weight: -9
 provider: null
 plugin: 'views_block:noticias_seccion-block_2'
 settings:
@@ -21,4 +22,8 @@ settings:
   provider: views
   views_label: 'Agenda cultural'
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,34 @@
+uuid: fb00e047-fade-4822-94ca-0d771a2b1f80
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - system
+    - views
+  theme:
+    - unizar_departamento
+id: views_block__noticias_block_5
+theme: unizar_departamento
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:noticias-block_5'
+settings:
+  id: 'views_block:noticias-block_5'
+  label: Visitantes
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: Visitantes
+  items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
