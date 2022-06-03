@@ -26,11 +26,6 @@ weight: 7
 is_admin: null
 permissions:
   - 'access all webform results'
-  - 'assign gestor_basico role'
-  - 'assign gestor_bloques role'
-  - 'assign gestor_menus role'
-  - 'assign gestor_personas role'
-  - 'assign intranet role'
   - 'assign supergestor role'
   - 'clone node'
   - 'delete all webform submissions'

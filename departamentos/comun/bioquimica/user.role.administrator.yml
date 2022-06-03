@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - node.type.ficha_personal
     - node.type.noticia
     - node.type.page
     - node.type.slideshow
@@ -69,6 +70,7 @@ permissions:
   - admin_view_modes
   - 'administer CAPTCHA settings'
   - 'administer actions'
+  - 'administer all i18n menu overview'
   - 'administer barra_principal region'
   - 'administer block classes'
   - 'administer blocks'
@@ -91,9 +93,17 @@ permissions:
   - 'administer languages'
   - 'administer lightbox2'
   - 'administer linkit'
+  - 'administer main-menu_en'
+  - 'administer main-menu_es'
   - 'administer matomo'
   - 'administer menu'
   - 'administer menu attributes'
+  - 'administer menu-legal_en'
+  - 'administer menu-legal_es'
+  - 'administer menu-secundario_en'
+  - 'administer menu-secundario_es'
+  - 'administer menu-te-interesa_en'
+  - 'administer menu-te-interesa_es'
   - 'administer module filter'
   - 'administer modules'
   - 'administer nodes'
@@ -217,6 +227,7 @@ permissions:
   - 'skip CAPTCHA'
   - 'switch users'
   - 'translate admin strings'
+  - 'translate blocks'
   - 'translate content'
   - 'translate interface'
   - 'translate user-defined strings'
