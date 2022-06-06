@@ -1,0 +1,22 @@
+uuid: 80ac95b5-2979-457d-b0d7-263be958d32e
+langcode: es
+status: true
+dependencies:
+  theme:
+    - unizar_instituto
+_core:
+  default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
+id: unizar_instituto_pestanas
+theme: unizar_instituto
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
