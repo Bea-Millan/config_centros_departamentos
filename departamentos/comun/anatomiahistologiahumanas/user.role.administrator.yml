@@ -21,7 +21,6 @@ dependencies:
     - imce
     - language
     - locale
-    - matomo
     - node
     - path
     - pathauto
@@ -58,7 +57,6 @@ permissions:
   - 'access site map'
   - 'access site reports'
   - 'access user profiles'
-  - 'add js snippets for matomo'
   - 'add terms in colectivo'
   - 'add terms in personal_cargo'
   - 'add terms in personal_categoria'
@@ -70,7 +68,6 @@ permissions:
   - admin_view_modes
   - 'administer CAPTCHA settings'
   - 'administer actions'
-  - 'administer all i18n menu overview'
   - 'administer barra_principal region'
   - 'administer block classes'
   - 'administer blocks'
@@ -93,17 +90,8 @@ permissions:
   - 'administer languages'
   - 'administer lightbox2'
   - 'administer linkit'
-  - 'administer main-menu_en'
-  - 'administer main-menu_es'
-  - 'administer matomo'
   - 'administer menu'
   - 'administer menu attributes'
-  - 'administer menu-legal_en'
-  - 'administer menu-legal_es'
-  - 'administer menu-secundario_en'
-  - 'administer menu-secundario_es'
-  - 'administer menu-te-interesa_en'
-  - 'administer menu-te-interesa_es'
   - 'administer module filter'
   - 'administer modules'
   - 'administer nodes'
@@ -215,7 +203,6 @@ permissions:
   - 'manage simple access'
   - 'migration information'
   - 'notify of path changes'
-  - 'opt-in or out of matomo tracking'
   - 'php redirect rh_node'
   - 'php redirect rh_taxonomy'
   - 'publish any content'
@@ -227,7 +214,6 @@ permissions:
   - 'skip CAPTCHA'
   - 'switch users'
   - 'translate admin strings'
-  - 'translate blocks'
   - 'translate content'
   - 'translate interface'
   - 'translate user-defined strings'
@@ -239,7 +225,6 @@ permissions:
   - 'use advanced search'
   - 'use ctools import'
   - 'use hooked menu'
-  - 'use php for matomo tracking visibility'
   - 'use text format ds_code'
   - 'use text format full_html'
   - 'use text format php_code'

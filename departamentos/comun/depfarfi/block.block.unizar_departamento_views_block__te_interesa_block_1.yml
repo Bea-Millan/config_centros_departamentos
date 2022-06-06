@@ -1,0 +1,30 @@
+uuid: 81db4c07-ed41-46df-a954-a8ab9d67375a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.te_interesa
+  module:
+    - block_class
+    - views
+  theme:
+    - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: 'te-interesa ojo'
+_core:
+  default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
+id: unizar_departamento_views_block__te_interesa_block_1
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'views_block:te_interesa-block_1'
+settings:
+  id: 'views_block:te_interesa-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

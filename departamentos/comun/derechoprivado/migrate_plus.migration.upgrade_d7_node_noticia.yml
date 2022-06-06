@@ -28,12 +28,18 @@ process:
       plugin: default_value
       source: language
       default_value: und
+  title_visible:
+    -
+      plugin: null_coalesce
+      source:
+        - field_titulo_visible
+        - field_um_noticias_titulo_visible
   title:
     -
       plugin: Ctitle
       source:
         - title
-        - field_titulo_visible
+        - '@title_visible'
   path/pathauto:
     plugin: default_value
     default_value: 0
