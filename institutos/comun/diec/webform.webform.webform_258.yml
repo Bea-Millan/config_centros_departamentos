@@ -1,0 +1,131 @@
+uuid: 8b3e4aeb-31de-4562-b1e3-1af6e651bbba
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 8
+template: false
+archive: false
+id: webform_258
+title: 'Autorización de uso de recinto'
+description: null
+category: null
+elements: |-
+  autorizador:
+    '#type': textfield
+    '#title': 'Profesor que autoriza (Apellidos, Nombre)'
+    '#description': 'Nombre de profesor que desea autorizar el uso de un recinto'
+    '#required': true
+  email_autorizador:
+    '#type': email
+    '#size': 20
+    '#title': 'Email del profesor que Autoriza'
+    '#required': true
+  autorizado:
+    '#type': textfield
+    '#title': 'Persona Autorizada (Apellidos, Nombre)'
+    '#description': 'Nombre de la persona que desea usar un recinto'
+    '#required': true
+  email_autorizado:
+    '#type': email
+    '#size': 20
+    '#title': 'Email de la persona autorizada'
+    '#required': true
+  nip:
+    '#max': '999999'
+    '#title': 'NIP de la persona autorizada'
+    '#description': NIP
+    '#required': true
+  recinto:
+    '#type': select
+    '#options':
+      '"L0': 'Lab. Walqa, - Torres Quevedo'
+      '"L22': 'Lab. 2.02 - Ada Byron'
+      '"L23': 'Lab. 2.03 - Ada Byron'
+      '"L24': 'Lab. 2.04 - Ada Byron'
+      '"L25': 'Lab. 2.05 - Ada Byron'
+    '#title': Recinto
+    '#description': 'Recinto al que se autoriza su ocupación'
+    '#required': true
+  fecha:
+    '#type': date
+    '#title': 'Hasta: (Fecha)'
+    '#description': 'Fecha hasta la que se autoriza el uso del recinto.'
+    '#required': true
+  motivo:
+    '#type': select
+    '#options':
+      '"1': PFC
+      '"2': TFG
+      '"3': TFM
+      '"4': Tesis
+      '"5': 'Contratado no DIEC'
+      '"6': Otros
+    '#title': Motivo
+    '#description': |+
+
+
+
+    '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: sed5008@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
