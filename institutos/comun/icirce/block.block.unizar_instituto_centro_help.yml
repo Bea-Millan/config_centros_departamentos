@@ -1,0 +1,22 @@
+uuid: 1bb57736-7b70-4468-b461-c2a09847ab77
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - unizar_instituto
+_core:
+  default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
+id: unizar_instituto_centro_help
+theme: unizar_instituto
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

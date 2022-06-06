@@ -1,15 +1,16 @@
+uuid: e006caf5-1dc4-45d5-ac39-e7bdb700392c
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: icirce
 label: icirce
 description: ''
 weight: 0
-folder: ../config/sites/servicios/comun/icirce
+folder: ../config/sites/institutos/comun/icirce
 module:
   c11n_migrate: 0
 theme:
-  unizar_centro: 0
+  unizar_instituto: 0
 blacklist:
   - config_split.config_split.icirce
   - system.site
@@ -27,13 +28,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
+  - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
