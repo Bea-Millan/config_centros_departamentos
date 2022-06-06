@@ -1,27 +1,19 @@
 _core:
-  default_config_hash: aPCEm4iYLeKCbTaD0DL48TX-JzGB97d6Rx9R3jpQZqs
-logo_path: 'public://logo-eupt-pace_0.png'
-favicon_path: ''
+  default_config_hash: WEQgYKJY57uwvOMUtfGDQJEE1T885wd3opya-C9qtV0
+favicon_path: 'public://icirce.ico'
 favicon_upload: ''
-id: '326'
-nombre_centro: 'Escuela Universitaria Politécnica de Teruel'
-dir_centro: 'C/Atarazana, nº2, 44003 Teruel'
-telefono_centro: '+34 978 618 102'
-mail_centro: diringtt@unizar.es
-url_mapa: /contacto
-dir_centro2: ''
-telefono_centro2: ''
-mail_centro2: ''
-url_mapa2: ''
-logo_blanco: '2589'
-imagen_segundas: '1622'
-facebook: ''
-twitter: ''
-youtube: ''
-linkedin: ''
+id: C109
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=C109&colectivo=TODOS'
+nombre_centro: 'Instituto Universitario de Investigación Mixto CIRCE'
+dir_centro: 'Edificio CIRCE - Mariano Esquillor Gómez, 15'
+telefono_centro: '976762145 - 976762978'
+mail_centro: icirce@unizar.es
+url_mapa: 'https://goo.gl/maps/DsLN32ygLRaiA4Gh7'
+logo_blanco: '357'
+facebook: 'https://www.facebook.com/pages/category/Education-Website/Instituto-CIRCE-2341788526065946/'
+twitter: 'https://twitter.com/InstitutoCIRCE'
 instagram: ''
-blog: ''
-blog_class: ''
-soundcloud: ''
-meta_desc: ''
+youtube: ''
+meta_desc: 'Instituto Universitario Investigación CIRCE Universidad Zaragoza Máster Europeo Energías Renovables Eficiencia Energética Sostenibilidad Formación icirce'
+favicon_mimetype: image/vnd.microsoft.icon
 langcode: es
