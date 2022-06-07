@@ -6,6 +6,7 @@ dependencies:
     - system.menu.main
   module:
     - menu_block
+    - system
   theme:
     - unizar_centro
 id: mainmenu_2
@@ -28,4 +29,8 @@ settings:
   expand_all_items: false
   parent: 'main:'
   suggestion: main
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /contacto

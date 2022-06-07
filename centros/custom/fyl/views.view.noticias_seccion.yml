@@ -6,8 +6,8 @@ dependencies:
     - field.storage.node.field_fecha
     - field.storage.node.field_imagen_noticia
     - field.storage.node.field_link_noticia
+    - image.style.imagen_actividades_culturales
     - image.style.imagen_agenda
-    - image.style.imagen_noticia_vista_2
     - node.type.noticia
     - taxonomy.vocabulary.secciones
   content:
@@ -1091,7 +1091,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<p class="ver-mas"><a href="/noticias-culturales">Ver mas</a></p>'
+            value: '<p class="ver-mas"><a href="/noticias-culturales">Ver más</a></p>'
             format: filtered_html
           tokenize: true
       display_extenders: {  }
@@ -1287,7 +1287,7 @@ display:
           type: image
           settings:
             image_link: ''
-            image_style: imagen_noticia_vista_2
+            image_style: imagen_actividades_culturales
             svg_attributes:
               width: null
               height: null

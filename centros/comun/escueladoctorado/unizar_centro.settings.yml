@@ -11,7 +11,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://edrgb.png'
+  path: 'public://logo-svg/edoctorado.svg'
   use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

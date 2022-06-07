@@ -16,7 +16,7 @@ third_party_settings:
 id: views_block__te_interesa_block_2
 theme: unizar_centro
 region: content
-weight: -6
+weight: -5
 provider: null
 plugin: 'views_block:te_interesa-block_2'
 settings:

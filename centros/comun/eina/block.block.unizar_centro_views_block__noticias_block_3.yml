@@ -18,15 +18,15 @@ _core:
 id: unizar_centro_views_block__noticias_block_3
 theme: unizar_centro
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: 'views_block:noticias-block_3'
 settings:
   id: 'views_block:noticias-block_3'
-  label: ''
+  label: 'No te lo pierdas'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'No te lo pierdas'
   items_per_page: none
 visibility:
   request_path:

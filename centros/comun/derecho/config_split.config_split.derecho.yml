@@ -12,6 +12,7 @@ module:
 theme:
   unizar_centro: 0
 blacklist:
+  - asset_injector.css.estilos_custom_derecho
   - config_split.config_split.derecho
   - core.entity_view_mode.shortcut.token
   - language.negotiation
@@ -26,14 +27,14 @@ blacklist:
   - unizar_base.settings
   - unizar_centro.settings
   - unizar_modulos_configuracion.settings
+  - user.role.administrator
+  - user.role.anonymous
   - asset_injector.css.derecho_inyeccion_css
   - unizar_departamento.settings
   - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'
-  - user.role.administrator
-  - user.role.anonymous
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

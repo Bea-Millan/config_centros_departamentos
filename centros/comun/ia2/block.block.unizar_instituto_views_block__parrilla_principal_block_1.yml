@@ -17,7 +17,7 @@ _core:
   default_config_hash: egsqr21S_RzfPvsSaY4ZiojznBxwkdgNeQLFHyjCCt4
 id: unizar_instituto_views_block__parrilla_principal_block_1
 theme: unizar_instituto
-region: content
+region: banda_superior
 weight: -2
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
