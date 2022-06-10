@@ -1,0 +1,8 @@
+uuid: 9745e639-533b-4e80-8b47-61bd8489d384
+langcode: es
+status: true
+dependencies: {  }
+id: mainen
+label: 'Menú principal_en'
+description: 'El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.'
+locked: false

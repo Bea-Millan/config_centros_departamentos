@@ -1,0 +1,27 @@
+uuid: 76d0d656-3040-43a0-b4ef-10dcbf92d802
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-secundario
+  module:
+    - system
+  theme:
+    - classy
+_core:
+  default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
+id: classy_secundario
+theme: classy
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:menu-secundario'
+settings:
+  id: 'system_menu_block:menu-secundario'
+  label: Secundario
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

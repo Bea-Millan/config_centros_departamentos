@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: I6UdH4p87_X8I6mZ6zM3cmT0a_7mi71yRr650Cjnipk
+favicon_path: ''
+favicon_upload: ''
+id: '70'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=70&colectivo=TODOS'
+nombre_centro: 'Departamento de Arquitectura'
+dir_centro: 'Campus Río Ebro, C/María de Luna, 3. 50018 Zaragoza'
+telefono_centro: '876 555 095'
+mail_centro: arquitectura@unizar.es
+url_mapa: 'https://www.google.es/maps/@41.6835101,-0.8888944,205m/data=!3m1!1e3'
+logo_blanco: '105'
+facebook: 'https://www.facebook.com/Arquitectura-Unizar-1962910370674810/'
+twitter: 'https://twitter.com/Arquitectura_UZ'
+instagram: 'https://www.instagram.com/arquitectura_unizar/'
+meta_desc: 'Sitio web del departamento de Arquitectura de la Universidad de Zaragoza, con información sobre profesorado, docencia, investigación, actividades culturales y otras noticias'
+langcode: es
