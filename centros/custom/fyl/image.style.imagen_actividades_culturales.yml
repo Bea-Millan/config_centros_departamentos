@@ -1,0 +1,15 @@
+uuid: d5b7e4e2-998f-49b4-915a-ebaad7bf0744
+langcode: es
+status: true
+dependencies: {  }
+name: imagen_actividades_culturales
+label: 'Imagen actividades culturales'
+effects:
+  577b071a-6a8e-4a0f-8da7-afad0663b7f3:
+    uuid: 577b071a-6a8e-4a0f-8da7-afad0663b7f3
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 150
+      height: 150
+      anchor: center-center

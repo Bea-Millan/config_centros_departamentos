@@ -5,33 +5,34 @@ dependencies: {  }
 id: icirce
 label: icirce
 description: ''
-weight: 0
+weight: 1
 folder: ../config/sites/institutos/comun/icirce
 module:
   c11n_migrate: 0
 theme:
   unizar_instituto: 0
 blacklist:
+  - asset_injector.css.circe_inyeccion_css
   - config_split.config_split.icirce
-  - system.site
-  - system.theme
-  - asset_injector.css.icirce_inyeccion_css
   - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
-  - unizar_centro.settings
-  - unizar_base.settings
-  - unizar_departamento.settings
-  - smtp.settings
   - language.negotiation
   - language.types
   - matomo.settings
-  - unizar_modulos_configuracion.settings
+  - shortcut.set.default
+  - smtp.settings
+  - system.site
+  - system.theme
   - unizar_admin_menu.settings
-  - migrate_drupal.settings
-  - 'webform.webform.*'
+  - unizar_base.settings
+  - unizar_modulos_configuracion.settings
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
+  - asset_injector.css.icirce_inyeccion_css
+  - unizar_centro.settings
+  - unizar_departamento.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
   - 'system.menu.*'
   - 'language.entity.*'
   - 'block.block.*'

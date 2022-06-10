@@ -12,7 +12,7 @@ class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
+  - Final_no
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -29,6 +29,7 @@ process:
       use_as_key: language
       valid_keys: en
       key_direction: unlock
+      delimiter: ''
   langcode:
     -
       plugin: get

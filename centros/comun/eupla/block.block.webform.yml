@@ -1,0 +1,30 @@
+uuid: 7f6e03fc-2223-4f21-9191-8051fba1530f
+langcode: es
+status: true
+dependencies:
+  config:
+    - webform.webform.webform_1
+  module:
+    - system
+    - webform
+  theme:
+    - unizar_centro
+id: webform
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Formulario de contacto'
+  label_display: visible
+  provider: webform
+  webform_id: webform_1
+  default_data: ''
+  redirect: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

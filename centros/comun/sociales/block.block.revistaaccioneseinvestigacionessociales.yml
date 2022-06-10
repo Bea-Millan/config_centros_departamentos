@@ -1,4 +1,4 @@
-uuid: d2c84fd2-44a2-490e-ad22-a5e1d2edc4ed
+uuid: 45cc6441-54d3-4250-a486-fb9210d90758
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: revistaaccioneseinvestigacionessociales
 theme: unizar_centro
 region: columna_lateral
-weight: -21
+weight: 12
 provider: null
 plugin: 'menu_block:menu-revistaais'
 settings:

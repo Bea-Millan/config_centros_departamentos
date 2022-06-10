@@ -1,8 +1,0 @@
-uuid: 6c77ade4-1ad2-43a9-9817-32c241bd71d7
-langcode: es
-status: true
-dependencies: {  }
-id: menu-italiano_en
-label: Italiano_en
-description: 'Menú de italiano.'
-locked: false

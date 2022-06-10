@@ -39,7 +39,7 @@ process:
   id:
     -
       plugin: concat
-      delimiter: _
+      delimiter: ''
       source:
         - '@name'
         - constants/langcode

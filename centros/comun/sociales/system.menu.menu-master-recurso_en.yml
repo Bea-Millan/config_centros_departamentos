@@ -1,8 +1,0 @@
-uuid: 26623061-347f-4a78-99f6-8c0e50ff5152
-langcode: es
-status: true
-dependencies: {  }
-id: menu-master-recurso_en
-label: 'Máster Propio en Recursos Humanos_en'
-description: ''
-locked: false

@@ -1,4 +1,4 @@
-uuid: 638ff1f1-f2bc-4619-83d7-2ba06c5abfe7
+uuid: c951ff3c-bc44-435f-92a2-aa348c499d8c
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: expertouniversitarioengestiondelascompetencias
 theme: unizar_centro
 region: columna_lateral
-weight: -13
+weight: -3
 provider: null
 plugin: 'menu_block:menu-gestion-competencias'
 settings:

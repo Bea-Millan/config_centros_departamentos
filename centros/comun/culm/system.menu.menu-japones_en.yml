@@ -1,8 +1,0 @@
-uuid: c8dea283-70d5-4cb7-95de-26423f042538
-langcode: es
-status: true
-dependencies: {  }
-id: menu-japones_en
-label: Japonés_en
-description: 'Menú de japonés.'
-locked: false

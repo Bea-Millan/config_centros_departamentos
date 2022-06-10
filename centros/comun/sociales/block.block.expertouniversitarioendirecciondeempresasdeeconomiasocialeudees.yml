@@ -1,4 +1,4 @@
-uuid: 501492b8-5120-40ac-afe9-4f32fab24c10
+uuid: 10bf8e5d-19aa-48da-97d7-5e7bc4c2c489
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: expertouniversitarioendirecciondeempresasdeeconomiasocialeudees
 theme: unizar_centro
 region: columna_lateral
-weight: -14
+weight: -4
 provider: null
 plugin: 'menu_block:menu-experto-universitario-en-di'
 settings:

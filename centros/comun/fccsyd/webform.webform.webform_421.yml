@@ -217,15 +217,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: default
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:nombre:raw]'
+      from_name: '[webform_submission:values:nombre_17:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: default
-      body: default
+      subject: 'Aviso Incidencia Medios Audiovisuales'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

@@ -1,4 +1,4 @@
-uuid: 06791a2d-97fd-4906-9de7-eedf5d53e1c4
+uuid: cf3fe9f6-adf2-4f74-95cc-cbaace77b87a
 langcode: es
 status: true
 dependencies:
@@ -12,13 +12,13 @@ dependencies:
 id: concepcionarenal
 theme: unizar_centro
 region: columna_lateral
-weight: -22
+weight: 15
 provider: null
 plugin: 'menu_block:menu-concepcionarenal'
 settings:
   id: 'menu_block:menu-concepcionarenal'
   label: concepcionarenal
-  label_display: visible
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

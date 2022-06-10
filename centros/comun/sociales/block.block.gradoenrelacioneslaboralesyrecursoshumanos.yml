@@ -1,4 +1,4 @@
-uuid: 962c4b88-7c19-4a47-8d21-a628a840c0db
+uuid: 3b4ad6cc-4e2d-4f01-b8e4-6130cb0b655c
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: gradoenrelacioneslaboralesyrecursoshumanos
 theme: unizar_centro
 region: columna_lateral
-weight: -3
+weight: 3
 provider: null
 plugin: 'menu_block:menu-grado-en-rlrh'
 settings:
@@ -33,4 +33,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/RLRH/*'
+    pages: '/rlrh/*'

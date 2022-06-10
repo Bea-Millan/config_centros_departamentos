@@ -1,0 +1,36 @@
+uuid: 658bb979-6022-4f0d-b51d-c3eafb74465e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-italiano
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: italiano
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-italiano'
+settings:
+  id: 'menu_block:menu-italiano'
+  label: Italiano
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-italiano:'
+  suggestion: menu_italiano
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/italiano/seccion-de-italiano

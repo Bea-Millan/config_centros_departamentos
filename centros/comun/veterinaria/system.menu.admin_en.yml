@@ -1,8 +1,0 @@
-uuid: 78fc880f-31a2-4be1-9c93-12d77b04b1f2
-langcode: es
-status: true
-dependencies: {  }
-id: admin_en
-label: Management_en
-description: 'The <em>Management</em> menu contains links for administrative tasks.'
-locked: false

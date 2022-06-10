@@ -17,8 +17,8 @@ _core:
   default_config_hash: W3qRJUqTLNrq6fupZnJx_6H9HlddhnvXaiYhnPzwl9s
 id: unizar_instituto_views_block__noticias_block_3
 theme: unizar_instituto
-region: content
-weight: -3
+region: banda_superior
+weight: -7
 provider: null
 plugin: 'views_block:noticias-block_3'
 settings:

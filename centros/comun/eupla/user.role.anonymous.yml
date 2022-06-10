@@ -18,6 +18,6 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site map'
-  - 'diff view changes'
+  - 'display EU Cookie Compliance popup'
   - 'search content'
   - 'use text format filtered_html'

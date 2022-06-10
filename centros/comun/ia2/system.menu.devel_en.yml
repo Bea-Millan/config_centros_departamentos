@@ -1,8 +1,0 @@
-uuid: e35fe9ab-0ae5-4c3d-b5e8-86f10578a938
-langcode: es
-status: true
-dependencies: {  }
-id: devel_en
-label: Development_en
-description: 'Development link'
-locked: false

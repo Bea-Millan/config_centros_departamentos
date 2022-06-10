@@ -1,9 +1,9 @@
-uuid: dc8b2a50-d1bb-463e-bdb1-fed22ac8aa26
-langcode: en
+uuid: ca42f902-4e52-4226-a38b-a27973231e83
+langcode: es
 status: true
 dependencies:
   config:
-    - system.menu.main_en
+    - system.menu.mainen
   module:
     - language
     - superfish
@@ -12,11 +12,11 @@ dependencies:
 id: mainmenu_en
 theme: unizar_centro
 region: menu_principal
-weight: -6
+weight: 0
 provider: null
-plugin: 'superfish:main_en'
+plugin: 'superfish:mainen'
 settings:
-  id: 'superfish:main_en'
+  id: 'superfish:mainen'
   label: 'Main menu_en'
   label_display: '0'
   provider: superfish

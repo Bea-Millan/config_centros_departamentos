@@ -1,4 +1,4 @@
-uuid: 62310f37-3205-425a-97ba-bf9e60c69229
+uuid: 26d0a14d-c559-4fea-96fc-de8ac787c71c
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: deportes
 theme: unizar_centro
 region: columna_lateral
-weight: -8
+weight: -7
 provider: null
 plugin: 'menu_block:menu-deportes'
 settings:

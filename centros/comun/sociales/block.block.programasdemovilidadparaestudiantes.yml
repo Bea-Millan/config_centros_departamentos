@@ -1,4 +1,4 @@
-uuid: 9acfd0fe-bd21-42b2-84da-4493c3653d91
+uuid: 5e0e919b-7d0d-41ec-8764-d4b3434cf039
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: programasdemovilidadparaestudiantes
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: 11
 provider: null
 plugin: 'menu_block:menu-becas-de-movilidad-para-est'
 settings:

@@ -1,0 +1,36 @@
+uuid: deb8adff-4aef-4bba-8f90-72f0e168f5a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-aleman
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: aleman
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-aleman'
+settings:
+  id: 'menu_block:menu-aleman'
+  label: Alemán
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-aleman:'
+  suggestion: menu_aleman
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/aleman/seccion-de-aleman

@@ -1,0 +1,36 @@
+uuid: cc571872-a406-4220-87cd-a397fe512501
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-formaci-n-para-la-intervenc
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: formacionparalaintervencionpersonasdiscapacidad
+theme: unizar_centro
+region: columna_lateral
+weight: 1
+provider: null
+plugin: 'menu_block:menu-formaci-n-para-la-intervenc'
+settings:
+  id: 'menu_block:menu-formaci-n-para-la-intervenc'
+  label: 'Formación para la intervención con personas en situación de discapacidad'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-formaci-n-para-la-intervenc:'
+  suggestion: menu_formaci_n_para_la_intervenc
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/estudios-propios/discapacidad/*'

@@ -1,8 +1,0 @@
-uuid: 29a53d08-6407-460d-92de-097e26cd3a6d
-langcode: es
-status: true
-dependencies: {  }
-id: menu-informacion-ad_en
-label: 'Información administrativa_en'
-description: ''
-locked: false

@@ -1,8 +1,0 @@
-uuid: 16a2d8ad-b5b6-4172-ac32-5479763f91f8
-langcode: es
-status: true
-dependencies: {  }
-id: menu-griego_en
-label: Griego_en
-description: 'Menú de griego.'
-locked: false

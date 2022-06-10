@@ -1,0 +1,31 @@
+uuid: 38de19a7-9f81-49cd-874a-a50fab1ab3ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.mainen
+  module:
+    - menu_block
+  theme:
+    - unizar_centro
+id: mainmenu_en_2
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:mainen'
+settings:
+  id: 'menu_block:mainen'
+  label: 'Main menu_en'
+  label_display: visible
+  provider: menu_block
+  follow: true
+  follow_parent: active
+  label_link: false
+  label_type: active_item
+  level: 2
+  depth: 0
+  expand_all_items: true
+  parent: 'mainen:'
+  suggestion: mainen
+visibility: {  }

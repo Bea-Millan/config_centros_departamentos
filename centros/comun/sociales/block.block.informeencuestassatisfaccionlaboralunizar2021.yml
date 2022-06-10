@@ -1,0 +1,30 @@
+uuid: a5e86ea5-ce07-42c6-8c97-ed7aa52a8c6a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2e1ab48d-6c32-4240-8041-3f8a9e3bbc83'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: informeencuestassatisfaccionlaboralunizar2021
+theme: unizar_centro
+region: columna_lateral
+weight: -16
+provider: null
+plugin: 'block_content:2e1ab48d-6c32-4240-8041-3f8a9e3bbc83'
+settings:
+  id: 'block_content:2e1ab48d-6c32-4240-8041-3f8a9e3bbc83'
+  label: 'Informe encuestas satisfaccion laboral Unizar 2021'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

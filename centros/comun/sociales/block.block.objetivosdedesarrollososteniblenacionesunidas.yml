@@ -12,7 +12,7 @@ dependencies:
 id: objetivosdedesarrollososteniblenacionesunidas
 theme: unizar_centro
 region: columna_lateral
-weight: 1
+weight: -15
 provider: null
 plugin: 'block_content:8143b0f5-f759-4e92-a1ef-23f82140ceb3'
 settings:

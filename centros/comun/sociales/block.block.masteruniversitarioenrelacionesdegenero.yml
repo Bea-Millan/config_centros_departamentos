@@ -1,4 +1,4 @@
-uuid: eb1bb74f-a7a9-4a4e-98ac-db38f5abc701
+uuid: 2a2fa26a-5d07-4950-8ca4-be39d1eacb30
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: masteruniversitarioenrelacionesdegenero
 theme: unizar_centro
 region: columna_lateral
-weight: -17
+weight: -10
 provider: null
 plugin: 'menu_block:menu-master-universitario-en-rel'
 settings:

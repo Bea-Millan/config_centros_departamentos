@@ -1,8 +1,0 @@
-uuid: 824d7b41-3282-4596-b89e-854b9e7b54d7
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-lateral_en
-label: 'Magisterio en Educación Infantil_en'
-description: 'bloque de menu lateral que aparecerá a la derecha en primer lugar de las páginas de Educación Infantil'
-locked: false

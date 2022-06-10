@@ -1,8 +1,0 @@
-uuid: c361c671-4abd-4c56-9b28-422aa3e4edb2
-langcode: es
-status: true
-dependencies: {  }
-id: menu-arabe_en
-label: Árabe_en
-description: 'Menú de árabe.'
-locked: false

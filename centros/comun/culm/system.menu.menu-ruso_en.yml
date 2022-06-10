@@ -1,8 +1,0 @@
-uuid: 2d9a3f28-6cca-4832-819f-e4292d1edca6
-langcode: es
-status: true
-dependencies: {  }
-id: menu-ruso_en
-label: Ruso_en
-description: 'Menú de ruso.'
-locked: false

@@ -1,0 +1,36 @@
+uuid: db41e267-6728-4509-9657-5a3658a589ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-portugues
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: portugues
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-portugues'
+settings:
+  id: 'menu_block:menu-portugues'
+  label: Portugués
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-portugues:'
+  suggestion: menu_portugues
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/portugues/seccion-de-portugues

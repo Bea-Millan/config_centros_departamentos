@@ -1,0 +1,185 @@
+uuid: 5cf5da8f-c22a-4365-a042-41673e8ad2f1
+langcode: es
+status: closed
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 6
+template: false
+archive: false
+id: webform_1970
+title: 'Inscripción Webinario Presentación propuestas ERC Advanced'
+description: null
+category: null
+elements: |-
+  apellidos:
+    '#type': textfield
+    '#title': Apellidos
+    '#description': 'Usar mayúsculas solo para la primera letra del apellido.'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': Nombre
+    '#description': 'Usar mayúsculas solo para la primera letra del nombre.'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  grupo_de_investigacion:
+    '#type': select
+    '#options':
+      1: A01_20R-Bioflora
+      2: 'A03_20R-Nuevas tecnologías de procesado de los alimentos'
+      3: 'A04_20R-Calidad y tecnología de la carne'
+      4: 'A05_20R-Enfermedades priónicas, vectoriales y zoonosis emergentes'
+      5: 'A06_20R-Análisis y evaluación de la seguridad alimentaria (AESA)'
+      6: 'A08_20R-Genética, genómica, biotecnología y mejora de cultivos'
+      7: 'A09_20R-Función de genes, proteínas y metabolitos de plantas'
+      8: 'A10_20R-Riego, agronomía y medio ambiente (RAMA)'
+      9: 'A11_20R-Producción Vegetal Sostenible (PROVESOS)'
+      10: 'A12_20R-Fruticultura. Caracterización, adaptación y mejora genética'
+      11: 'A14_20R-Sistemas agroganaderos alimentarios sostenibles (SAGAS)'
+      12: 'A15_20R-Bienestar y patología en los pequeños rumiantes'
+      13: 'A16_20R-Zoonosis y enfermedades emergentes de interés en salud pública'
+      14: 'A17_20R-RAySA: Reproducción asistida y sanidad animal'
+      15: 'A18_20R-Tecnología y genética porcina'
+      16: A19_20R-LAGENBIO
+      17: 'A20_20R-El efecto del Procesado Tecnológico de los Alimentos en las Patologías Digestivas y Alérgicas (ALIPAT)'
+      18: 'A21_20R-Zoonosis Bacterianas: Brucelosis, Salmonelosis y Estreptocócicas'
+      19: 'A22_20R-Alimentos de Origen Vegetal (GIAOVE)'
+      20: 'B16_20R-Dieta mediterránea y su potencial nutracéutico'
+      21: 'B29_20R-Inmunoterapia, Citotoxicidad, Inflamación y Cáncer (IC2)'
+      22: 'B31_20R-Inmunidad, cáncer y células madre'
+      23: 'B34_20R-Growth, Exercise, Nutrition and Development (GENUD)'
+      24: 'B36_20R-Grupo de Investigación en Técnicas Mínimamente Invasivas (GITMI)'
+      25: 'B44_20D-Phyto-Pharm: Principios vegetales bioactivos y ciencias farmacéuticas'
+      26: 'B45_20D-Sistema cardiovascular, metabolismo y diagnóstico precoz'
+      27: 'E02_20R-Procesos geoambientales y cambio global'
+      28: 'E03_20R-Conservación de ecosistemas naturales'
+      29: E31_20R-Platón
+      30: 'E37_20R-Catálisis heterogénea en síntesis orgánicas selectivas'
+      31: E39_20R-GATHERS
+      32: 'E40_20R-Restauración Ecológica'
+      33: 'H09_20R-Clima, agua, cambio global y sistemas naturales'
+      34: 'S01_20R-Economía Agroalimentaria y de los Recursos Naturales'
+      35: 'S02_20R-Economía del medio ambiente y de los recursos naturales (ECONATURA)'
+      36: '36'
+      37: 'S40_20R-Crecimiento, Demanda y Recursos Naturales (CREDENAT)'
+      38: 'S52_17R-COMPETE: Análisis empresarial y competitividad'
+      39: 'S55_20R-Economía agroalimentaria, globalización, desarrollo económico y medio ambiente (siglos XIX-XXI)'
+      40: 'T19_20R-VEHIVIAL (Nuevas Tecnologías en Vehículos y Seguridad Vial)'
+      41: 'T29_20R-Laboratorio de Análisis de Aroma y Enología (LAAE)'
+      42: 'OTRO (especificar)'
+    '#title': 'Grupo de investigación'
+    '#required': true
+  especificar:
+    '#type': textfield
+    '#title': Especificar
+    '#states':
+      visible:
+        - ':input[name="grupo_de_investigacion"]':
+            value: '42'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p><img src="/sites/ia2.unizar.es/files/archivos/imagenes/formulario_ok.png" width="822" height="491"></p>'
+  limit_total: null
+  limit_user: 1
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: comunicacionia2@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: 'Inscripción correcta a webinario Presentación propuestas ERC Advanced'
+      body: |
+        <p>Submitted on [webform_submission:completed_date:long]</p>
+        <p>Enviado por el usuario: [webform_submission:user]</p>
+        <p>Submitted values are:</p>
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

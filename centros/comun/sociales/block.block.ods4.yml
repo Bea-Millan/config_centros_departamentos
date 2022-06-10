@@ -12,7 +12,7 @@ dependencies:
 id: ods4
 theme: unizar_centro
 region: columna_lateral
-weight: 2
+weight: -14
 provider: null
 plugin: 'block_content:b37c1e37-9f0a-409e-a107-85b5833aa099'
 settings:

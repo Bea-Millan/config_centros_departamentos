@@ -1,4 +1,4 @@
-uuid: 5facd812-1876-4e03-8dba-adc88aa4ff78
+uuid: 33274804-180f-4638-89cb-760962784548
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: plandeorientaciondelauniversidaddezaragozapouz
 theme: unizar_centro
 region: columna_lateral
-weight: -23
+weight: 10
 provider: null
 plugin: 'menu_block:menu-tutormentor'
 settings:

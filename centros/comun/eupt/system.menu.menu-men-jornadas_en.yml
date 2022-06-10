@@ -1,8 +1,0 @@
-uuid: ec8bc5c8-7669-4f83-9cac-c749dc727b41
-langcode: es
-status: true
-dependencies: {  }
-id: menu-men-jornadas_en
-label: 'Menú jornadas_en'
-description: ''
-locked: false

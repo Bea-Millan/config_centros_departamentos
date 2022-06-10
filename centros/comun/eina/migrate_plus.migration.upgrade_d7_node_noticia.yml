@@ -154,27 +154,16 @@ process:
         title: title
         width: width
         height: height
-  _prepare_tipo_evento:
+  field_etiquetas_noticias:
     -
-      plugin: static_map
-      source: field_tipo_evento
-      map:
-        1: Actualidad
-        2: 'Agenda cultural'
-      bypass: true
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_term_etiquetado_noticias
+      source: field_etiquetas_noticias
   field_seccion:
     -
-      plugin: skip_on_empty
-      source: '@_prepare_tipo_evento'
-      method: process
-      message: 'No eventos.'
-    -
-      plugin: entity_generate
-      entity_type: taxonomy_term
-      value_key: name
-      bundle_key: vid
-      bundle: secciones
-      ignore_case: true
+      source: field_seccion
+      plugin: migration_lookup
+      migration: upgrade_d7_taxonomy_term_secciones
   field_fecha:
     -
       plugin: null_coalesce

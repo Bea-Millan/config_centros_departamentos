@@ -1,0 +1,99 @@
+uuid: ad6a5360-4329-4f54-8d41-feda0b85d5bc
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 6
+template: false
+archive: false
+id: webform_1868
+title: 'Encuesta sobre seminarios de formación del IA2 2021'
+description: null
+category: null
+elements: |-
+  tipo_de_seminarios:
+    '#type': checkboxes
+    '#options':
+      1: 'Seminarios de temas técnicos'
+      2: 'Seminarios de habilidades transversales'
+      3: 'Seminarios sobre convocatorias concretas de ayuda a la investigación'
+      4: 'Seminarios sobre buenas prácticas o proyectos de éxito de colaboración público privada'
+      5: 'Seminarios sobre demandas concretas de empresas agroalimentarias'
+    '#multiple': true
+    '#title': '1 - ¿Qué tipo de seminarios te gustaría que se ofertasen en el IA2?'
+    '#required': true
+  sugerencia_tema_concreto:
+    '#type': textfield
+    '#title': '2 - ¿Puedes sugerirnos algún tema en concreto que podríamos abordar en el 2021?'
+  sugerencia_ponente:
+    '#type': textfield
+    '#title': '3 - ¿Puedes sugerirnos algún ponente que pudiera ser de interés para el IA2?'
+  comentarios_sugerencias:
+    '#type': textfield
+    '#title': '4 - ¿Quieres hacernos llegar algún otro comentario o sugerencia?'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p><img src="/sites/ia2.unizar.es/files/archivos/imagenes/formulario_ok.png" width="822" height="491"></p>'
+  limit_total: null
+  limit_user: 1
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: comunicacionia2@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |
+        <p>Submitted on [webform_submission:completed_date:long]</p>
+        <p>Enviado por el usuario: [webform_submission:user]</p>
+        <p>Submitted values are:</p>
+        [webform_submission:values]
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

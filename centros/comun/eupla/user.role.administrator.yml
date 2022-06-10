@@ -11,6 +11,7 @@ dependencies:
     - captcha
     - content_moderation
     - contextual
+    - feeds
     - filter
     - image
     - imce
@@ -29,6 +30,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - view_unpublished
     - views_ui
 _core:
   default_config_hash: sy4leADBKi-HbVXrZxxXHB-A5NkagIXX33cTiY7hwow
@@ -40,6 +42,7 @@ permissions:
   - 'access administration pages'
   - 'access all views'
   - 'access all webform results'
+  - 'access audit files reports'
   - 'access comments'
   - 'access content'
   - 'access content overview'
@@ -63,39 +66,33 @@ permissions:
   - 'add terms in secciones'
   - 'add terms in tipos_de_estudio'
   - 'administer CAPTCHA settings'
+  - 'administer EU Cookie Compliance popup'
   - 'administer actions'
-  - 'administer barra_principal region'
+  - 'administer audit files'
   - 'administer block access settings'
   - 'administer blocks'
-  - 'administer cabecera region'
-  - 'administer cabecera_inf region'
-  - 'administer columna_lateral region'
   - 'administer comments'
   - 'administer contact forms'
-  - 'administer content region'
   - 'administer content translations'
   - 'administer content types'
-  - 'administer dashboard_inactive region'
-  - 'administer dashboard_main region'
-  - 'administer dashboard_sidebar region'
   - 'administer features'
+  - 'administer feeds'
   - 'administer fieldgroups'
   - 'administer fields'
   - 'administer filters'
   - 'administer image styles'
-  - 'administer imagen_cabecera region'
   - 'administer imce'
   - 'administer languages'
   - 'administer lightbox2'
   - 'administer matomo'
   - 'administer menu'
+  - 'administer menu attributes'
   - 'administer module filter'
   - 'administer modules'
   - 'administer nodes'
   - 'administer pathauto'
   - 'administer permissions'
   - 'administer quicktabs'
-  - 'administer rh_node'
   - 'administer search'
   - 'administer shortcuts'
   - 'administer site configuration'
@@ -106,7 +103,6 @@ permissions:
   - 'administer themes'
   - 'administer url aliases'
   - 'administer users'
-  - 'administer uuid'
   - 'administer views'
   - 'assign access to nodes'
   - 'assign all roles'
@@ -118,8 +114,6 @@ permissions:
   - 'assign profiles to nodes'
   - 'block IP addresses'
   - 'bypass node access'
-  - 'bypass region control'
-  - 'bypass rh_node'
   - 'cancel account'
   - 'change own username'
   - 'configure all block body fields'
@@ -153,6 +147,7 @@ permissions:
   - 'delete terms in 3'
   - 'delete terms in 4'
   - 'disable all blocks'
+  - 'display EU Cookie Compliance popup'
   - 'download original image'
   - 'edit all webform submissions'
   - 'edit any article content'
@@ -173,7 +168,6 @@ permissions:
   - 'move all blocks'
   - 'notify of path changes'
   - 'opt-in or out of matomo tracking'
-  - 'php redirect rh_node'
   - 'post comments'
   - 'publish any content'
   - 'publish any elemento_parrilla content'

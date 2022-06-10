@@ -1,0 +1,142 @@
+uuid: 5b48d755-499a-4b74-84ab-e5defabbb58f
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 6
+template: false
+archive: false
+id: webform_1621
+title: 'Solicitud Servicio PCR Digital'
+description: null
+category: null
+elements: |-
+  apellidos_nombre:
+    '#type': textfield
+    '#title': 'Apellido(s), Nombre'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#required': true
+  telefono:
+    '#type': textfield
+    '#size': 20
+    '#unique': false
+    '#title': Teléfono
+  asunto:
+    '#type': textfield
+    '#title': Asunto
+  mensaje:
+    '#type': textarea
+    '#title': Mensaje
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<h2><img src="/sites/ia2.unizar.es/files/archivos/imagenes/formulario_ok.png" width="822" height="491"></h2>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: Enviar
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: rodellar@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:correo_electronico:raw]'
+      from_options: {  }
+      from_name: '[webform_submission:values:apellidos_nombre:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        <p>Submitted on [webform_submission:completed_date:long]</p>
+        <p>Enviado por el usuario: [webform_submission:user]</p>
+        <p>Submitted values are:</p>
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        <p>Submitted on [webform_submission:completed_date:long]</p>
+        <p>Enviado por el usuario: [webform_submission:user]</p>
+        <p>Submitted values are:</p>
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

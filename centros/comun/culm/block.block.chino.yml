@@ -1,0 +1,36 @@
+uuid: e1271ed3-ba32-47e6-b179-ed89f9906e22
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-idioma-chino
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: chino
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-idioma-chino'
+settings:
+  id: 'menu_block:menu-idioma-chino'
+  label: Chino
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-idioma-chino:'
+  suggestion: menu_idioma_chino
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/chino/seccion-de-chino

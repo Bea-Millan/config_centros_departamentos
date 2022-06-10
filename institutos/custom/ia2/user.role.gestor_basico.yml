@@ -1,0 +1,146 @@
+uuid: e4cda296-6bad-4e33-add5-434f383791d3
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.full_html
+    - node.type.ficha_division
+    - node.type.ficha_impacto_medios
+    - node.type.ficha_infraestructuras_equipos
+    - node.type.ficha_laboratorio
+    - node.type.ficha_lineas
+    - node.type.ficha_oferta_tecnologica
+    - node.type.ficha_personal
+    - node.type.ficha_servicio
+    - node.type.noticia
+    - node.type.page
+    - node.type.slideshow
+    - node.type.webform
+  module:
+    - content_moderation
+    - draggableviews
+    - filter
+    - node
+    - search
+    - system
+_core:
+  default_config_hash: CL5_SfZaz0GAjWOw1Z5dhNeIrUKzxN1-nCfmY3w284M
+id: gestor_basico
+label: 'gestor básico'
+weight: 2
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access draggableviews'
+  - 'access library reports'
+  - 'access own webform results'
+  - 'access service links'
+  - 'access site map'
+  - 'access site reports'
+  - 'add terms in colectivo'
+  - 'add terms in personal_cargo'
+  - 'add terms in personal_categoria'
+  - 'add terms in personal_sector_consejo'
+  - 'add terms in secciones'
+  - 'add terms in tipo_de_laboratorio'
+  - 'assign access to nodes'
+  - 'assign owner permissions'
+  - 'assign profiles to nodes'
+  - 'clone own nodes'
+  - 'create bloque_pestanas content'
+  - 'create elemento_parilla content'
+  - 'create ficha_divisi_n content'
+  - 'create ficha_division content'
+  - 'create ficha_grupo_investigacion content'
+  - 'create ficha_impacto_medios content'
+  - 'create ficha_infraestructuras_equipos content'
+  - 'create ficha_laboratorio content'
+  - 'create ficha_lineas content'
+  - 'create ficha_oferta_tecnologica content'
+  - 'create ficha_personal content'
+  - 'create ficha_servicio content'
+  - 'create noticia content'
+  - 'create page content'
+  - 'create slideshow content'
+  - 'create ubicacion content'
+  - 'create webform content'
+  - 'delete own bloque_pestanas content'
+  - 'delete own elemento_parilla content'
+  - 'delete own ficha_divisi_n content'
+  - 'delete own ficha_division content'
+  - 'delete own ficha_grupo_investigacion content'
+  - 'delete own ficha_impacto_medios content'
+  - 'delete own ficha_infraestructuras_equipos content'
+  - 'delete own ficha_laboratorio content'
+  - 'delete own ficha_lineas content'
+  - 'delete own ficha_oferta_tecnologica content'
+  - 'delete own ficha_personal content'
+  - 'delete own ficha_servicio content'
+  - 'delete own noticia content'
+  - 'delete own page content'
+  - 'delete own slideshow content'
+  - 'delete own ubicacion content'
+  - 'delete own webform content'
+  - 'delete terms in 1'
+  - 'delete terms in 3'
+  - 'delete terms in 4'
+  - 'delete terms in 5'
+  - 'delete terms in 6'
+  - 'delete terms in 9'
+  - 'edit own bloque_pestanas content'
+  - 'edit own elemento_parilla content'
+  - 'edit own ficha_divisi_n content'
+  - 'edit own ficha_division content'
+  - 'edit own ficha_grupo_investigacion content'
+  - 'edit own ficha_impacto_medios content'
+  - 'edit own ficha_infraestructuras_equipos content'
+  - 'edit own ficha_laboratorio content'
+  - 'edit own ficha_lineas content'
+  - 'edit own ficha_oferta_tecnologica content'
+  - 'edit own ficha_personal content'
+  - 'edit own ficha_servicio content'
+  - 'edit own noticia content'
+  - 'edit own page content'
+  - 'edit own slideshow content'
+  - 'edit own ubicacion content'
+  - 'edit own webform content'
+  - 'edit terms in 1'
+  - 'edit terms in 3'
+  - 'edit terms in 4'
+  - 'edit terms in 5'
+  - 'edit terms in 6'
+  - 'edit terms in 9'
+  - 'publish own bloque_pestanas content'
+  - 'publish own elemento_parilla content'
+  - 'publish own ficha_impacto_medios content'
+  - 'publish own ficha_laboratorio content'
+  - 'publish own ficha_lineas content'
+  - 'publish own ficha_oferta_tecnologica content'
+  - 'publish own ficha_personal content'
+  - 'publish own ficha_servicio content'
+  - 'publish own noticia content'
+  - 'publish own page content'
+  - 'publish own slideshow content'
+  - 'publish own ubicacion content'
+  - 'publish own webform content'
+  - 'search content'
+  - 'translate content'
+  - 'unpublish own bloque_pestanas content'
+  - 'unpublish own elemento_parilla content'
+  - 'unpublish own ficha_impacto_medios content'
+  - 'unpublish own ficha_laboratorio content'
+  - 'unpublish own ficha_lineas content'
+  - 'unpublish own ficha_oferta_tecnologica content'
+  - 'unpublish own ficha_personal content'
+  - 'unpublish own ficha_servicio content'
+  - 'unpublish own noticia content'
+  - 'unpublish own page content'
+  - 'unpublish own slideshow content'
+  - 'unpublish own ubicacion content'
+  - 'unpublish own webform content'
+  - 'use hooked menu'
+  - 'use text format full_html'
+  - 'view any unpublished content'
+  - 'view own unpublished content'
+  - 'view the administration theme'

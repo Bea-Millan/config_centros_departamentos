@@ -1,4 +1,4 @@
-uuid: 138cd734-f829-4a71-9f32-2974253158c9
+uuid: c426a5ec-6a9e-4be1-8a20-8525d9d6cb8d
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: informaciongeneralynovedades
 theme: unizar_centro
 region: columna_lateral
-weight: -7
+weight: 5
 provider: null
 plugin: 'menu_block:menu-acuerdos-y-destinos'
 settings:
@@ -33,4 +33,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/movillidad/acuerdos/*'
+    pages: '/movilidad/acuerdos/*'

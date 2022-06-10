@@ -1,4 +1,4 @@
-uuid: 88fcf787-0156-48f4-90c8-517ce7623b7a
+uuid: de74e3ff-8686-4fcb-942f-feaf6c427244
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: dirygess
 theme: unizar_centro
 region: columna_lateral
-weight: -11
+weight: 16
 provider: null
 plugin: 'menu_block:menu-dirygess'
 settings:

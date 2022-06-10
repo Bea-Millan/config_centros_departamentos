@@ -66,8 +66,12 @@ process:
       source: timestamp
   field_link_estudio_personalizado:
     -
+      plugin: null_coalesce
+      source:
+        - field_link_noticia
+        - field_link_titulacion
+    -
       plugin: sub_process
-      source: field_link_noticia
       process:
         uri: value
   field_tipo_estudio:

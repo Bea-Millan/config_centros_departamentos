@@ -1,8 +1,0 @@
-uuid: 06f99253-097b-4cc1-89b9-439ba460bc7d
-langcode: es
-status: true
-dependencies: {  }
-id: menu-frances_en
-label: Francés_en
-description: 'Menú de francés.'
-locked: false

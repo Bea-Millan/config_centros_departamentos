@@ -1,0 +1,141 @@
+uuid: 06a7df60-49e3-46ba-b851-07367ba39612
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+id: upgrade_d7_node_ficha_impacto_medios
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: 'Null'
+cck_plugin_method: 'Null'
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_ia2
+label: '''Nodes(ficha_impacto_medios)'''
+source:
+  plugin: d7_node_complete
+  node_type: ficha_impacto_medios
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: Ctitle
+      source:
+        - title
+        - field_titulo_visible
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: revision_log
+  revision_timestamp:
+    -
+      plugin: get
+      source: revision_timestamp
+  body:
+    -
+      plugin: sub_process
+      source: body
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_archivo:
+    -
+      plugin: sub_process
+      source: field_archivo
+      process:
+        target_id: fid
+        display: display
+        description: description
+        width: width
+        height: height
+  field_menciona_ia2:
+    -
+      plugin: get
+      source: field
+  field_fecha:
+    -
+      plugin: sub_process
+      source: field_fecha
+      process:
+        value:
+          plugin: format_date
+          from_format: 'Y-m-d\TH:i:s'
+          to_format: Y-m-d
+          source: value
+  field_etiquetas:
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: etiquetas
+      ignore_case: true
+  field_grupo_s_al_que_se_refiere:
+    -
+      plugin: sub_process
+      source: field_grupo_s_al_que_se_refiere
+      process:
+        nid:
+          source: nid
+          plugin: entity_lookup
+          entity_type: node
+          value_key: nid
+          bundle: ficha_grupo_de_investigacion
+  field_medio:
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: medios
+      ignore_case: true
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: ficha_impacto_medios
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_d7_node_ficha_grupo_de_investigacion

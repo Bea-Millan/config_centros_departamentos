@@ -1,0 +1,8 @@
+uuid: 767ccbef-b008-4c5d-914f-9b95f9a6d4b2
+langcode: es
+status: true
+dependencies: {  }
+id: menu-men-investigaci-n
+label: 'Menú investigación'
+description: 'Menú para las páginas principales de la sección de investigación'
+locked: false

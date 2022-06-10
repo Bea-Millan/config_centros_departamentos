@@ -23,9 +23,12 @@ elements: |-
       '#required': true
     email_de_contacto_7:
       '#type': email
-      '#size': 20
       '#title': 'Email Institucional'
-      '#required': true
+      '#size': 20
+      '#states':
+        required:
+          ':input[name="email_de_contacto_7"]':
+            '!value': '@unizar.es'
     tipo_de_prestamo_7:
       '#type': radios
       '#options':
@@ -40,7 +43,6 @@ elements: |-
     nia_prestamo_individial_7:
       '#type': textfield
       '#title': 'NIA Préstamo Individial'
-      '#required': true
       '#states':
         required:
           - ':input[name="tipo_de_prestamo_7"]':
@@ -48,7 +50,6 @@ elements: |-
     nia_prestamo_compartido_7:
       '#type': textfield
       '#title': 'NIA Prestamo Compartido'
-      '#required': true
       '#states':
         required:
           - ':input[name="tipo_de_prestamo_7"]':
@@ -118,15 +119,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '13'
+      from_name: '[webform_submission:values:email_de_contacto_7:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '13'
-      body: default
+      subject: 'Solicitud Préstamo Alumnado'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -143,7 +144,7 @@ handlers:
     handler_id: email_2
     label: 'Email 2'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 2
     settings:
@@ -157,25 +158,13 @@ handlers:
       cc_options: {  }
       from_mail: audiovis@unizar.es
       from_options: {  }
-      from_name: Audiovis_FCCSYD
+      from_name: '[webform_submission:values:asignatura_7:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: 'Laboratorio Medios Audiovisuales FCCSYD'
-      body: |
-        Hemos recibido su Solicitud de Préstamo de Material Audiovisual.
-
-        Le informamos de que la recepción del material y su devolución se realizará en:
-
-        Laboratorio de Medios Audiovisuales, Plaza Universidad 3, 2ª planta. 
-
-        Horario:
-
-        •    Recepción del material: 12:00h a 14:30h.
-        •    Devolución del material prestado:  8:30h a 10:00h
-
-        Por favor, NO RESPONDA a este mensaje, es un envío automático.
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

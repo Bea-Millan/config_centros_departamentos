@@ -12,7 +12,7 @@ dependencies:
 id: videofacultad
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -18
 provider: null
 plugin: 'block_content:4bb37a8b-f4f9-4953-a4d4-6c272998974b'
 settings:

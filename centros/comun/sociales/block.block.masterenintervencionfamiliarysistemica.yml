@@ -1,4 +1,4 @@
-uuid: 5868e1c6-be5b-4764-bea8-471d361abb3a
+uuid: 3fbf86fc-17b6-4f06-a73a-f1453e78f6f2
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: masterenintervencionfamiliarysistemica
 theme: unizar_centro
 region: columna_lateral
-weight: -15
+weight: 9
 provider: null
 plugin: 'menu_block:menu-master-sistemica'
 settings:

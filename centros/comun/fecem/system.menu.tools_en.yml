@@ -1,8 +1,0 @@
-uuid: e9ad5182-98aa-4f4e-9bb5-5be0e97b624a
-langcode: es
-status: true
-dependencies: {  }
-id: tools_en
-label: Navigation_en
-description: 'The <em>Navigation</em> menu contains links intended for site visitors. Links are added to the <em>Navigation</em> menu automatically by some modules.'
-locked: false

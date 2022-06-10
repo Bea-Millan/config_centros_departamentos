@@ -1,0 +1,15 @@
+uuid: f40b78e5-5e67-4eaa-8b4d-14d97e91db5b
+langcode: es
+status: true
+dependencies: {  }
+id: estilos_custom_derecho
+label: 'Estilos custom derecho'
+code: |-
+  .nav .region-menu-principal .sf-menu a, .nav .region-menu-principal .sf-menu li > span {
+  padding: 1rem 1.2rem;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

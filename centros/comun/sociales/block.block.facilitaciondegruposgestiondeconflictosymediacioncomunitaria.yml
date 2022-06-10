@@ -1,4 +1,4 @@
-uuid: 7ea27a6e-d4ef-4e5a-9151-d8c00261bd3d
+uuid: 7cccaeb3-b4db-4f30-a0d2-62561293fb34
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: facilitaciondegruposgestiondeconflictosymediacioncomunitaria
 theme: unizar_centro
 region: columna_lateral
-weight: -10
+weight: -1
 provider: null
 plugin: 'menu_block:menu-facilitaci-n'
 settings:

@@ -1,0 +1,30 @@
+uuid: 47ed0f0e-4281-4076-9e63-bf36ab168dd8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a7b6448e-aaf2-45e7-b1ef-0e282343cfac'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: certificadodeimplantaciondelsgicacpua
+theme: unizar_centro
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:a7b6448e-aaf2-45e7-b1ef-0e282343cfac'
+settings:
+  id: 'block_content:a7b6448e-aaf2-45e7-b1ef-0e282343cfac'
+  label: 'Certificado de Implantación del SGIC - ACPUA'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/garantia-de-la-calidad\r\n/garantia-de-la-calidad/*\r\n/procedimiento-propios-de-calidad"

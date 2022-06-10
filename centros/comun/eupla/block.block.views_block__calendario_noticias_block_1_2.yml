@@ -12,7 +12,7 @@ dependencies:
 id: views_block__calendario_noticias_block_1_2
 theme: unizar_centro
 region: columna_lateral
-weight: -11
+weight: -12
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

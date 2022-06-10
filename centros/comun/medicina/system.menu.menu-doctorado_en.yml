@@ -1,8 +1,0 @@
-uuid: bc2c8bcc-67cc-4eb3-aaf0-b2da218129db
-langcode: es
-status: true
-dependencies: {  }
-id: menu-doctorado_en
-label: 'Menú Doctorado_en'
-description: ''
-locked: false

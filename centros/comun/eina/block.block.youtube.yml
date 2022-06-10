@@ -1,0 +1,30 @@
+uuid: 0a3334fe-6180-45b4-aa3d-92ace167fd3d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:eb2f9579-be5f-4bc0-afc6-cb86d3a178b7'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: youtube
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:eb2f9579-be5f-4bc0-afc6-cb86d3a178b7'
+settings:
+  id: 'block_content:eb2f9579-be5f-4bc0-afc6-cb86d3a178b7'
+  label: youtube
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

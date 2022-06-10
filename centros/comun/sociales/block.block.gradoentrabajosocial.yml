@@ -1,4 +1,4 @@
-uuid: 6d90fa1a-9868-4b38-b2b1-4e055c9e2b15
+uuid: 88f40dc9-916a-4947-9626-18bad36c5f89
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: gradoentrabajosocial
 theme: unizar_centro
 region: columna_lateral
-weight: -4
+weight: 4
 provider: null
 plugin: 'menu_block:menu-grado-en-trabajo-social'
 settings:

@@ -1,0 +1,175 @@
+uuid: f0cea180-758e-41e7-bcc3-69d9d1c4aaeb
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+id: upgrade_d7_node_ficha_laboratorio
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: 'Null'
+cck_plugin_method: 'Null'
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_ia2
+label: '''Nodes(ficha_laboratorio)'''
+source:
+  plugin: d7_node_complete
+  node_type: ficha_laboratorio
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: Ctitle
+      source:
+        - title
+        - field_titulo_visible
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: revision_log
+  revision_timestamp:
+    -
+      plugin: get
+      source: revision_timestamp
+  field_ubicacion:
+    -
+      plugin: sub_process
+      source: field_ubicacion
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_tipo_de_laboratorio:
+    -
+      plugin: entity_generate
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: tipo_de_laboratorio
+      ignore_case: true
+  field_observaciones:
+    -
+      plugin: sub_process
+      source: field_observaciones
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_imagen:
+    -
+      plugin: sub_process
+      source: field_imagen
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_foto_galeria:
+    -
+      plugin: sub_process
+      source: field_foto_galeria
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_enlaces_de_interes:
+    -
+      plugin: sub_process
+      source: field_enlaces_de_interes
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  field_responable_de_laboratorio:
+    -
+      plugin: get
+      source: field_responable_de_laboratorio
+  body:
+    -
+      plugin: sub_process
+      source: body
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+  galeria_2:
+    -
+      plugin: sub_process
+      source: galeria_2
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_contenido_columna_lateral:
+    -
+      plugin: sub_process
+      source: field_contenido_columna_lateral
+      process:
+        value:
+          plugin: urlhost
+          source: value
+        format:
+          plugin: default_value
+          default_value: filtered_html
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: ficha_laboratorio
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type

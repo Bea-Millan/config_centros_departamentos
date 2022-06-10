@@ -1,8 +1,0 @@
-uuid: 740ce5b1-3619-4b03-a15b-41b94da89ec8
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-master-ap_en
-label: 'Menu master aprendizaje_en'
-description: ''
-locked: false

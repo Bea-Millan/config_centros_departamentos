@@ -1,8 +1,0 @@
-uuid: bcb5764c-ce4d-4475-a82a-f9d67aa9b197
-langcode: es
-status: true
-dependencies: {  }
-id: menu-men-investigac_en
-label: 'Menú investigación_en'
-description: 'Menú para las páginas principales de la sección de investigación'
-locked: false

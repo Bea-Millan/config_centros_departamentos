@@ -1,0 +1,19 @@
+uuid: bb4d102e-bf7b-42e6-85ea-093e3a82748d
+langcode: es
+status: true
+dependencies: {  }
+id: fyl_inyeccion_css
+label: 'fyl inyeccion css'
+code: |-
+  .listado-noticias-n li > a {
+      min-width: 150px;
+  }
+
+  .listado-noticias-n li > a img {
+      width: auto;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

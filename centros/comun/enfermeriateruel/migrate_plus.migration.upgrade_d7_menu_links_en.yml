@@ -28,6 +28,7 @@ process:
       use_as_key: language
       valid_keys: en
       key_direction: unlock
+      delimiter: ''
   langcode:
     -
       plugin: get

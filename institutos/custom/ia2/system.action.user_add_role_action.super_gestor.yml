@@ -1,0 +1,14 @@
+uuid: dcdf2e92-60a4-4a08-bae0-5d08cf57e1f8
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.super_gestor
+  module:
+    - user
+id: user_add_role_action.super_gestor
+label: 'Añade el rol super gestor al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: super_gestor

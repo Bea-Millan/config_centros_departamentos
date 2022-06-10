@@ -1,0 +1,14 @@
+uuid: b9dc78a6-ab69-4a3d-8337-794d2c3f4913
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.super_gestor
+  module:
+    - user
+id: user_remove_role_action.super_gestor
+label: 'Elimina el rol super gestor al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: super_gestor

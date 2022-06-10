@@ -79,7 +79,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Consulta enviada desde la web'
-      body: default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

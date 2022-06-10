@@ -1,8 +1,0 @@
-uuid: 1d7b52de-05a7-4102-8e6b-67cd3d41539e
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-curso-ada_en
-label: 'Curso adaptación a grado_en'
-description: ''
-locked: false

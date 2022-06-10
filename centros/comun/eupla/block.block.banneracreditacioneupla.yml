@@ -1,0 +1,30 @@
+uuid: 468e8b4e-508d-411c-9b5f-d8f0695946d7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ab94f56e-3924-4a12-b347-39a10f5f078a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: banneracreditacioneupla
+theme: unizar_centro
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:ab94f56e-3924-4a12-b347-39a10f5f078a'
+settings:
+  id: 'block_content:ab94f56e-3924-4a12-b347-39a10f5f078a'
+  label: 'Banner Acreditación EUPLA'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /garantia-de-la-calidad

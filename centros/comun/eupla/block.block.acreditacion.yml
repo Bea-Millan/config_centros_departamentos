@@ -1,0 +1,30 @@
+uuid: 4bfc4122-6b70-46c7-a6ac-1ca33c53ed39
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9d9bd16b-80c5-4544-8807-cc33669b527c'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: acreditacion
+theme: unizar_centro
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'block_content:9d9bd16b-80c5-4544-8807-cc33669b527c'
+settings:
+  id: 'block_content:9d9bd16b-80c5-4544-8807-cc33669b527c'
+  label: Acreditación
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

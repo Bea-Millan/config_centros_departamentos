@@ -1,8 +1,0 @@
-uuid: 065f94e7-dce2-495a-a695-97ba2572bc15
-langcode: es
-status: true
-dependencies: {  }
-id: menu-calidad_en
-label: Calidad_en
-description: 'Información sobre Gestión de la Calidad'
-locked: false

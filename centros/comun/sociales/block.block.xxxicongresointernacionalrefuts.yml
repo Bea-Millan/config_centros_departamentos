@@ -1,0 +1,30 @@
+uuid: 79465bd3-26c2-41a1-a0ec-edb2f581549f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b93eb84-1ac6-447e-a85e-8b4ab61c0269'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: xxxicongresointernacionalrefuts
+theme: unizar_centro
+region: content
+weight: -15
+provider: null
+plugin: 'block_content:9b93eb84-1ac6-447e-a85e-8b4ab61c0269'
+settings:
+  id: 'block_content:9b93eb84-1ac6-447e-a85e-8b4ab61c0269'
+  label: 'XXXI Congreso Internacional REFUTS'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: dcf19cf1-afdd-4c35-a419-793c8dfe14bd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d1fb2898-a80c-47d4-9acb-76a6ee2df69b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_instituto
+id: bajoparrilla
+theme: unizar_instituto
+region: banda_superior
+weight: -6
+provider: null
+plugin: 'block_content:d1fb2898-a80c-47d4-9acb-76a6ee2df69b'
+settings:
+  id: 'block_content:d1fb2898-a80c-47d4-9acb-76a6ee2df69b'
+  label: 'Bajo parrilla'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -12,9 +12,9 @@ module:
 theme: {  }
 blacklist:
   - config_split.config_split.fylcustom
+  - image.style.imagen_actividades_culturales
   - image.style.imagen_agenda
   - views.view.noticias_seccion
-graylist:
-  - views.view.noticias
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

@@ -1,0 +1,33 @@
+uuid: bae2c27f-dfdc-4b7a-b484-85e9c1e8d2ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.te_interesa
+  module:
+    - block_class
+    - system
+    - views
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: te-interesa
+id: views_block__te_interesa_block_1_2
+theme: unizar_centro
+region: columna_lateral
+weight: 17
+provider: null
+plugin: 'views_block:te_interesa-block_1'
+settings:
+  id: 'views_block:te_interesa-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: /calidad

@@ -1,0 +1,36 @@
+uuid: 0aeb61a0-ae4f-4231-9de7-69c1124f5f4d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-ruso
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: ruso
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-ruso'
+settings:
+  id: 'menu_block:menu-ruso'
+  label: Ruso
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-ruso:'
+  suggestion: menu_ruso
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/ruso/seccion-de-ruso

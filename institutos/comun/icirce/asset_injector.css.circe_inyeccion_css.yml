@@ -1,0 +1,15 @@
+uuid: ddd7d48e-df5a-49b4-ab9a-4012f8b87d9a
+langcode: es
+status: true
+dependencies: {  }
+id: circe_inyeccion_css
+label: 'Circe inyeccion css'
+code: |-
+  :root{
+    --color-custom1: #e53c2e;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

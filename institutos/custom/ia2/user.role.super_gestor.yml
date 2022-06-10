@@ -1,0 +1,81 @@
+uuid: 0ea9e532-d497-4230-834f-998010022d12
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.ficha_division
+    - node.type.ficha_impacto_medios
+    - node.type.ficha_infraestructuras_equipos
+    - node.type.ficha_laboratorio
+    - node.type.ficha_lineas
+    - node.type.ficha_oferta_tecnologica
+    - node.type.ficha_personal
+    - node.type.ficha_servicio
+    - node.type.noticia
+    - node.type.page
+    - node.type.slideshow
+    - node.type.webform
+  module:
+    - node
+    - search
+    - system
+id: super_gestor
+label: 'super gestor'
+weight: 6
+is_admin: null
+permissions:
+  - 'access all webform results'
+  - 'access content'
+  - 'access content overview'
+  - 'access own webform results'
+  - 'access own webform submissions'
+  - 'access service links'
+  - 'access site map'
+  - 'administer fields'
+  - 'administer nodes'
+  - 'administer site configuration'
+  - 'administer themes'
+  - 'assign super gestor role'
+  - 'bypass node access'
+  - 'clone node'
+  - 'delete all webform submissions'
+  - 'delete any bloque_pestanas content'
+  - 'delete any elemento_parilla content'
+  - 'delete any ficha_divisi_n content'
+  - 'delete any ficha_division content'
+  - 'delete any ficha_grupo_investigacion content'
+  - 'delete any ficha_impacto_medios content'
+  - 'delete any ficha_infraestructuras_equipos content'
+  - 'delete any ficha_laboratorio content'
+  - 'delete any ficha_lineas content'
+  - 'delete any ficha_oferta_tecnologica content'
+  - 'delete any ficha_personal content'
+  - 'delete any ficha_servicio content'
+  - 'delete any noticia content'
+  - 'delete any page content'
+  - 'delete any slideshow content'
+  - 'delete any ubicacion content'
+  - 'delete any webform content'
+  - 'delete own webform submissions'
+  - 'edit all webform submissions'
+  - 'edit any bloque_pestanas content'
+  - 'edit any elemento_parilla content'
+  - 'edit any ficha_divisi_n content'
+  - 'edit any ficha_division content'
+  - 'edit any ficha_grupo_investigacion content'
+  - 'edit any ficha_impacto_medios content'
+  - 'edit any ficha_infraestructuras_equipos content'
+  - 'edit any ficha_laboratorio content'
+  - 'edit any ficha_lineas content'
+  - 'edit any ficha_oferta_tecnologica content'
+  - 'edit any ficha_personal content'
+  - 'edit any ficha_servicio content'
+  - 'edit any noticia content'
+  - 'edit any page content'
+  - 'edit any slideshow content'
+  - 'edit any ubicacion content'
+  - 'edit any webform content'
+  - 'edit own webform submissions'
+  - 'edit webform components'
+  - 'search content'
+  - 'view own unpublished content'

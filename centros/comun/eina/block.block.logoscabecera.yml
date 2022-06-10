@@ -1,0 +1,25 @@
+uuid: 3ec0fd15-1ba0-48f3-ab8d-5c986100d74f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:791710d6-2a52-46c0-a2e7-82af4183e79d'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: logoscabecera
+theme: unizar_centro
+region: cabecera_med_izquierda
+weight: 0
+provider: null
+plugin: 'block_content:791710d6-2a52-46c0-a2e7-82af4183e79d'
+settings:
+  id: 'block_content:791710d6-2a52-46c0-a2e7-82af4183e79d'
+  label: 'Logos cabecera'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,8 @@
+uuid: 9a9a3806-6a4b-4d23-9253-35ce7288a774
+langcode: es
+status: true
+dependencies: {  }
+id: mainen
+label: 'Main menu_en'
+description: 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.'
+locked: false

@@ -18,7 +18,7 @@ _core:
 id: unizar_centro_views_block__estudios_block_1
 theme: unizar_centro
 region: columna_lateral
-weight: 7
+weight: -19
 provider: null
 plugin: 'views_block:estudios-block_1'
 settings:
@@ -33,4 +33,4 @@ visibility:
     id: request_path
     negate: false
     context_mapping: {  }
-    pages: '<front>'
+    pages: "<front>\r\n/comun/*\r\n/facultad/*\r\n/administracion/*\r\n/estudios-propios/*"

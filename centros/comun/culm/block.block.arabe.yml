@@ -1,0 +1,36 @@
+uuid: 4e354ab2-f25e-452a-b5a2-48c7bee51518
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-arabe
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: arabe
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-arabe'
+settings:
+  id: 'menu_block:menu-arabe'
+  label: Árabe
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-arabe:'
+  suggestion: menu_arabe
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /secciones/arabe/seccion-de-arabe

@@ -1,4 +1,4 @@
-uuid: acb71a06-0aed-45e2-a9f9-1dd34efe83f5
+uuid: e39a7f9e-c71c-4a32-9855-ec3c69948df7
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: masterpropioenrecursoshumanos
 theme: unizar_centro
 region: columna_lateral
-weight: -1
+weight: 8
 provider: null
 plugin: 'menu_block:menu-master-recursos-humanos'
 settings:

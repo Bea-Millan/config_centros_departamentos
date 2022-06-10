@@ -173,13 +173,13 @@ handlers:
       cc_options: {  }
       from_mail: '[webform_submission:values:email_de_contacto:raw]'
       from_options: {  }
-      from_name: '[webform_submission:values:responsable:raw]'
+      from_name: '[webform_submission:values:responsable_22:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:responsable:raw]'
-      body: default
+      subject: 'Solicitud Préstamo Docente'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

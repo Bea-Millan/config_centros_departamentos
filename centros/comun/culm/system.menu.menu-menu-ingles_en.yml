@@ -1,8 +1,0 @@
-uuid: a5beaf48-9592-4df1-b41c-c172539b4655
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-ingles_en
-label: Inglés_en
-description: 'Menú de inglés'
-locked: false

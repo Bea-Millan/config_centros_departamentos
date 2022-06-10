@@ -1,4 +1,4 @@
-uuid: 1bf68dce-43f6-4848-9847-bf941ff1d996
+uuid: f19683b4-1ea5-40d5-9d28-559940f1faa4
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: formacionparalaintervencionconpersonasensituaciondediscapacidad
 theme: unizar_centro
 region: columna_lateral
-weight: -9
+weight: 0
 provider: null
 plugin: 'menu_block:menu-formaci-n-para-la-intervenc'
 settings:

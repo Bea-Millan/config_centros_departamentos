@@ -130,15 +130,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email_institucional:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:solicitante:raw]'
+      from_name: '[webform_submission:values:solicitante_12:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:asignatura:raw]'
-      body: default
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

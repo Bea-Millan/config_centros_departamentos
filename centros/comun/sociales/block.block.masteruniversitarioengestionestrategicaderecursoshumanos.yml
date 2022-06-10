@@ -1,4 +1,4 @@
-uuid: 0000f410-641a-4b5b-ac06-63cd9b4ce616
+uuid: e7327c2d-e8fb-49d4-8591-e633d978d97b
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: masteruniversitarioengestionestrategicaderecursoshumanos
 theme: unizar_centro
 region: columna_lateral
-weight: -24
+weight: -9
 provider: null
 plugin: 'menu_block:menu-m-ster-en-gesti-n-estrat-gi'
 settings:
@@ -33,4 +33,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '/gestion-estrategica-de-RRHH/*'
+    pages: '/gestion-estrategica-de-rrhh/*'

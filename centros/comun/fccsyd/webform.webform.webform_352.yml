@@ -145,15 +145,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:responsable:raw]'
-      reply_to: ''
+      from_name: '[webform_submission:values:responsable_14:raw]'
+      reply_to: '[webform_submission:values:responsable_14:raw]'
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:responsable:raw]'
-      body: default
+      subject: 'Solicitud Material Medio Natural'
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -170,7 +170,7 @@ handlers:
     handler_id: email_2
     label: 'Email 2'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 2
     settings:
@@ -182,15 +182,15 @@ handlers:
       bcc_options: {  }
       cc_mail: ''
       cc_options: {  }
-      from_mail: '[webform_submission:values:email_de_contacto:raw]'
+      from_mail: _default
       from_options: {  }
-      from_name: '[webform_submission:values:responsable:raw]'
+      from_name: '[webform_submission:values:responsable_14:raw]'
       reply_to: ''
       return_path: ''
       sender_mail: ''
       sender_name: ''
-      subject: '[webform_submission:values:responsable:raw]'
-      body: default
+      subject: _default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

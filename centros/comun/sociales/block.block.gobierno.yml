@@ -1,4 +1,4 @@
-uuid: ac27dc81-78ff-4202-8a93-f71076dfaf0f
+uuid: a3c36a77-c957-4565-bfbb-5a14cf4e6312
 langcode: es
 status: true
 dependencies:
@@ -12,13 +12,13 @@ dependencies:
 id: gobierno
 theme: unizar_centro
 region: columna_lateral
-weight: -20
+weight: 2
 provider: null
 plugin: 'menu_block:menu-gobierno'
 settings:
   id: 'menu_block:menu-gobierno'
   label: Gobierno
-  label_display: visible
+  label_display: '0'
   provider: menu_block
   follow: false
   follow_parent: child

@@ -12,7 +12,7 @@ dependencies:
 id: usermenu
 theme: unizar_centro
 region: columna_lateral
-weight: -25
+weight: -20
 provider: null
 plugin: 'menu_block:account'
 settings:

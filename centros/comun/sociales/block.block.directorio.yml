@@ -1,4 +1,4 @@
-uuid: aef9d696-b040-4eaf-b82f-2f3364a29588
+uuid: 9ee2e7a6-532f-4fb9-9e29-14b2f06af199
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: directorio
 theme: unizar_centro
 region: columna_lateral
-weight: -19
+weight: -6
 provider: null
 plugin: 'menu_block:menu-directorio'
 settings:

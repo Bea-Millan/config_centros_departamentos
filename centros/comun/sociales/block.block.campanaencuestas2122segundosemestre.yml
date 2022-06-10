@@ -1,0 +1,30 @@
+uuid: 5ca5bc53-e543-42a5-819b-ab452ae0d053
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9e263e78-3ab6-4266-9f4f-d654e27cba0a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: campanaencuestas2122segundosemestre
+theme: unizar_centro
+region: columna_lateral
+weight: -17
+provider: null
+plugin: 'block_content:9e263e78-3ab6-4266-9f4f-d654e27cba0a'
+settings:
+  id: 'block_content:9e263e78-3ab6-4266-9f4f-d654e27cba0a'
+  label: 'Campaña Encuestas 21-22 (Segundo Semestre)'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,8 +1,0 @@
-uuid: 12d3b3f0-f3fd-4a83-aacb-90dc964949d0
-langcode: es
-status: true
-dependencies: {  }
-id: menu-aac_en
-label: aac_en
-description: 'menú actividades académicas complementarias'
-locked: false

@@ -1,4 +1,4 @@
-uuid: d3cdb99e-f94e-4537-a8ef-78872bd18345
+uuid: 6b425291-0156-4bd5-95f3-3a85f7bd02a9
 langcode: es
 status: true
 dependencies:
@@ -12,7 +12,7 @@ dependencies:
 id: expertouniversitarioenmediacion
 theme: unizar_centro
 region: columna_lateral
-weight: -12
+weight: -2
 provider: null
 plugin: 'menu_block:menu-experto-concursal'
 settings:
