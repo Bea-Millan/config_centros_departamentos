@@ -1,0 +1,8 @@
+uuid: fae972f9-7d27-4f3b-bdef-c68d7c458b61
+langcode: es
+status: true
+dependencies: {  }
+id: menu-tabl-n-de-anunen
+label: 'TABLÓN DE ANUNCIOS_en'
+description: ''
+locked: false

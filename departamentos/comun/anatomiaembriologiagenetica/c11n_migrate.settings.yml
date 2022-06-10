@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: n5bSFM03FguV0rm6kZGHgVPsEdQO0fyLA3YxcaXmKcw
+plugin:
+  host: anatomiaembriologiagenetica.unizar.es
+  url_host: sites/anatomiaembriologiagenetica
+langcode: es

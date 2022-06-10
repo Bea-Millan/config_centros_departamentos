@@ -1,0 +1,8 @@
+uuid: d392b180-b694-471f-ad46-91baa41ea6f0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-tabl-n-de-anuncios
+label: 'TABLÓN DE ANUNCIOS'
+description: ''
+locked: false
