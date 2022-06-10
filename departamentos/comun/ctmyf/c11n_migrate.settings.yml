@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: X8BO34nBKIvX5eYgyubbKIIvVGID6CgXSt6IAacYII4
+plugin:
+  host: ctmyf.unizar.es
+  url_host: sites/ctmyf
+langcode: es

@@ -1,0 +1,8 @@
+uuid: 45022593-4305-4d13-beab-8ea6c054dce6
+langcode: es
+status: true
+dependencies: {  }
+id: menu-personal-de-los-laboratorio
+label: 'Personal de los Laboratorios'
+description: 'Personal del laboratorio en el área CMIM'
+locked: false

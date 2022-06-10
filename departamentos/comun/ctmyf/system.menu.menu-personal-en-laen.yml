@@ -1,0 +1,8 @@
+uuid: 9bfa3b1c-59ed-4bbe-9ebc-01ce20dbc85a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-personal-en-laen
+label: 'Personal de los Laboratorios_en'
+description: 'Personal del Laboratorio en el área Mec. de Fluidos'
+locked: false

@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: jIaettNQOA2qgIbOg_WHmbN0EOdOfMBfniS3L79-PRA
+favicon_path: ''
+favicon_upload: ''
+id: '99'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=99&colectivo=TODOS'
+nombre_centro: 'Departamento de Ciencia y Tecnología de Materiales y Fluídos'
+dir_centro: Ubicación
+telefono_centro: '+ 34 976 76 19 58'
+mail_centro: 'María de Luna, 3 (Edificio Torres Quevedo). 50018 - ZARAGOZA'
+url_mapa: 'https://www.google.es/maps/place/Universidad+Zaragoza:+Campus+R%C3%ADo+Ebro/@41.6831109,-0.8895483,1436m/data=!3m1!1e3!4m2!3m1!1'
+logo_blanco: '30'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es
