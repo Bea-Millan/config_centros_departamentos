@@ -1,0 +1,68 @@
+uuid: 32115a8a-007e-47bb-bc7d-ea77a371a108
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_149
+title: 'Formulario Cañon de Vídeo'
+description: null
+category: null
+elements: |-
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]'
+    '#title': 'correo electrónico'
+    '#required': true
+  canon_de_video:
+    '#type': select
+    '#options':
+      1: 'Cañón de Vídeo'
+    '#title': 'cañón de vídeo'
+    '#required': true
+  fecha_inicio:
+    '#type': date
+    '#title': 'fecha inicio'
+    '#required': true
+  fecha_final:
+    '#type': date
+    '#title': 'fecha final'
+    '#required': true
+  hora_inicio:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 1800
+    '#title': 'hora inicio'
+  hora_final:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 1800
+    '#title': 'hora final'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

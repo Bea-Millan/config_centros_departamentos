@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: nvHD77G9wXUl6ilQxECJjzldtkR2lpUf_dRUgOJDkmo
+plugin:
+  host: contabilidadyfinanzas.unizar.es
+  url_host: sites/contabilidadyfinanzas
+langcode: es

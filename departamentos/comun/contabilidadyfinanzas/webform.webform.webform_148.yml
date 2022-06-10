@@ -1,0 +1,115 @@
+uuid: cd954053-18eb-4d88-a5ba-3866b357f990
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_148
+title: 'Formulario reserva equipos grandes'
+description: null
+category: null
+elements: |-
+  email:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]'
+    '#title_display': invisible
+    '#title': email
+    '#required': true
+  reserva_equipos_grandes:
+    '#type': select
+    '#options':
+      1: 'ACER TravelMatex-1, i7 8GB 14"'
+      2: 'ACER TravelMatex-2, i7 8GB 14"'
+      3: 'ACER TravelMateX-3, i7 8GB 14"'
+      4: 'HP Elite book plata 1, i5 8GB 14"'
+      5: 'HP Elite book plata 2, i5 8GB 14"'
+      6: 'TOSHIBA Satellite 2 Blanco, i5'
+      7: 'HP Smart 2, i7 17"'
+    '#title': 'reserva equipos grandes'
+    '#description': 'Equipo que deseas reservar'
+    '#required': true
+  fecha_inicio:
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha inicio'
+    '#required': true
+  fecha_final:
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha final'
+    '#required': true
+  hora_inicio:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 900
+    '#title': 'hora inicio'
+  hora_final:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 900
+    '#title': 'hora final'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>¡Ya has solicitado tu reserva!</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: sed4002@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

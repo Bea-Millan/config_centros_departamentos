@@ -1,0 +1,8 @@
+uuid: 3640286f-5afe-4eb9-9699-e168ebef81c3
+langcode: es
+status: true
+dependencies: {  }
+id: menu-te-interesaen
+label: 'Te interesa_en'
+description: 'Menú de links de interés que aparecerá en la barra lateral del sitio.'
+locked: false

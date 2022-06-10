@@ -1,0 +1,116 @@
+uuid: 95fe878b-99ba-40fa-ba15-173bd341d717
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_147
+title: 'Formulario reserva equipos pequeños <14"'
+description: null
+category: null
+elements: |-
+  email:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]'
+    '#title_display': invisible
+    '#title': email
+    '#required': true
+  reserva_equipos_peq:
+    '#type': select
+    '#options':
+      1: ACERAspireBlanco_1
+      2: ACERAspireBlanco_2
+      3: Dell1
+      4: Dell2
+      5: Netbook1
+      6: Netbook2
+      7: Netbook3
+      8: Netbook4
+    '#title': 'reserva equipos pequeños'
+    '#description': 'Equipo que deseas reservar:'
+    '#required': true
+  'fecha inicio':
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha inicio'
+    '#required': true
+  'fecha final':
+    '#type': date
+    '#title_display': inline
+    '#title': 'Fecha final'
+    '#required': true
+  hora_inicio:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 900
+    '#title': 'Hora inicio'
+  hora_final:
+    '#type': webform_time
+    '#time_format': 'H:i'
+    '#step': 900
+    '#title': 'Hora final'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>¡Ya has solicitado tu reserva!</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: sed4002@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:email:raw]'
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
