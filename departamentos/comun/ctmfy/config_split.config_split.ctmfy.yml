@@ -1,21 +1,20 @@
-uuid: d89a4c3c-742b-4779-99b7-8964182b51ff
 langcode: es
 status: true
-dependencies: {  }
-id: ctmyf
-label: ctmyf
+dependencies: {}
+id: ctmfy
+label: ctmfy
 description: ''
 weight: 0
-folder: ../config/sites/departamentos/comun/ctmyf
+folder: ../config/sites/departamentos/comun/ctmfy
 module:
   c11n_migrate: 0
 theme:
   unizar_departamento: 0
 blacklist:
-  - config_split.config_split.ctmyf
+  - config_split.config_split.ctmfy
   - system.site
   - system.theme
-  - asset_injector.css.ctmyf_inyeccion_css
+  - asset_injector.css.ctmfy_inyeccion_css
   - core.entity_view_mode.shortcut.token
   - shortcut.set.default
   - unizar_centro.settings
@@ -28,13 +27,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - 'webform.webform.*'
+  - webform.webform.*
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - 'system.menu.*'
-  - 'language.entity.*'
-  - 'block.block.*'
-graylist: {  }
+  - system.menu.*
+  - language.entity.*
+  - block.block.*
+graylist: {}
 graylist_dependents: true
 graylist_skip_equal: true

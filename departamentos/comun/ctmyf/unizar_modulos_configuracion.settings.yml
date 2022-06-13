@@ -1,8 +1,8 @@
 _core:
-  default_config_hash: jIaettNQOA2qgIbOg_WHmbN0EOdOfMBfniS3L79-PRA
+  default_config_hash: ClMQ-fNZOcMy2I8rdg5ZXk-AMw-ZyaNUn3lHp2UYGrs
 favicon_path: ''
 favicon_upload: ''
-id: '99'
+id_centro: '99'
 url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=99&colectivo=TODOS'
 nombre_centro: 'Departamento de Ciencia y Tecnología de Materiales y Fluídos'
 dir_centro: Ubicación
