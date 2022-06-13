@@ -1,10 +1,10 @@
-uuid: a963d7be-3198-4b0f-bb01-ce109f52c97a
+uuid: 46210237-21d4-4359-b130-37f33166bb34
 langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
 id: main
-label: 'Navegación principal'
-description: 'Enlaces de secciones del sitio'
+label: 'Menú principal'
+description: 'El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.'
 locked: true

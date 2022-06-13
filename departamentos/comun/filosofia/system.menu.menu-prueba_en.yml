@@ -1,8 +1,0 @@
-uuid: 9e1c5811-8399-4c91-9ccd-9dfe7c73dd5a
-langcode: es
-status: true
-dependencies: {  }
-id: menu-prueba_en
-label: Prueba_en
-description: Prueba
-locked: false

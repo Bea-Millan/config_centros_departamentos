@@ -1,0 +1,31 @@
+uuid: f2690376-469a-4ad4-a79c-0b426828c2eb
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - menu_block
+  theme:
+    - unizar_departamento
+id: menuprincipal
+theme: unizar_departamento
+region: menu_principal
+weight: 0
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Menú principal'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: true
+  parent: 'main:'
+  suggestion: main
+visibility: {  }

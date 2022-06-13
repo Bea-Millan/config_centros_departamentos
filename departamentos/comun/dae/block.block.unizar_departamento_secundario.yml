@@ -13,7 +13,7 @@ _core:
 id: unizar_departamento_secundario
 theme: unizar_departamento
 region: cabecera_sup
-weight: -9
+weight: -7
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:
@@ -24,4 +24,8 @@ settings:
   level: 1
   depth: 0
   expand_all_items: false
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

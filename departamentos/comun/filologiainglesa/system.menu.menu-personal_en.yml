@@ -1,8 +1,0 @@
-uuid: 1083cc72-cdae-4f30-8eb4-0ca2cb59bb99
-langcode: es
-status: true
-dependencies: {  }
-id: menu-personal_en
-label: PERSONAL_en
-description: PERSONAL
-locked: false

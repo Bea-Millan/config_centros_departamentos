@@ -1,8 +1,0 @@
-uuid: 4e5b6489-ea9e-4002-92c5-010846a115f4
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-areas_en
-label: menu-areas_en
-description: Áreas
-locked: false

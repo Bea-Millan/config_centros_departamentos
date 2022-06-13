@@ -1,10 +1,10 @@
-uuid: 097320a6-6cdd-4e61-aa34-c115e793f145
+uuid: ca5ad588-7ae9-48ab-a80d-ff05d15a941f
 langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: M_Bh81osDyUQ4wV0GgU_NdBNqkzM87sLxjaCdFj9mnw
 id: account
-label: 'Menú de cuenta de usuario'
-description: 'Enlaces relacionados con la cuenta del usuario activo'
+label: 'User menu'
+description: 'El menú <em>Usuario</em> contiene enlaces relacionados con la cuenta del usuario, como el enlace ''Cerrar sesión''.'
 locked: true

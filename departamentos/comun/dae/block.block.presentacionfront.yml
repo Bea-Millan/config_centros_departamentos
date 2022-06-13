@@ -1,0 +1,30 @@
+uuid: 875664ca-17bb-4700-b835-f39c8fdee71a
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:36f3a128-cc56-4e66-83b5-a8a8c6bdf41a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: presentacionfront
+theme: unizar_departamento
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:36f3a128-cc56-4e66-83b5-a8a8c6bdf41a'
+settings:
+  id: 'block_content:36f3a128-cc56-4e66-83b5-a8a8c6bdf41a'
+  label: 'Presentación front'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

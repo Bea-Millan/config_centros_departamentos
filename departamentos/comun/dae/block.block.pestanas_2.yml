@@ -1,0 +1,20 @@
+uuid: c8945779-53e0-48bd-9cb5-38bd5632095e
+langcode: es
+status: true
+dependencies:
+  theme:
+    - unizar_departamento
+id: pestanas_2
+theme: unizar_departamento
+region: content
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

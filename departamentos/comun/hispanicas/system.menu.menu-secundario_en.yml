@@ -1,8 +1,0 @@
-uuid: 12a8d799-8bff-4c41-a19b-396e84e1e556
-langcode: es
-status: true
-dependencies: {  }
-id: menu-secundario_en
-label: Secundario_en
-description: 'Menú de links secundarios que aparecerá en la cabecera del sitio.'
-locked: false

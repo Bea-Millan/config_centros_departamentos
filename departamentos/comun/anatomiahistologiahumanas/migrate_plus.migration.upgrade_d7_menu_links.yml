@@ -29,6 +29,7 @@ process:
       use_as_key: language
       valid_keys:
         - es
+        - ''
         - und
       key_direction: unlock
   bundle:

@@ -1,0 +1,30 @@
+uuid: 9d5022ae-fa3d-4e0c-b5ec-bb746c658164
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b8ea7962-1e25-420a-8efc-bc493c1121bc'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: informacionparaelalumnado
+theme: unizar_departamento
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:b8ea7962-1e25-420a-8efc-bc493c1121bc'
+settings:
+  id: 'block_content:b8ea7962-1e25-420a-8efc-bc493c1121bc'
+  label: 'Información para el alumnado'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

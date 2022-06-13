@@ -1,10 +1,10 @@
-uuid: 2b4d4b87-7c7d-44b0-9b1e-9995d1b7521b
+uuid: 60085b00-019b-4222-865f-9107b97761cd
 langcode: es
 status: true
 dependencies: {  }
 _core:
   default_config_hash: BCM-vV1zzRaLHN18dqAR_CuGOj8AFJvTx7BKl_8Gcxc
 id: tools
-label: Herramientas
-description: 'Enlaces de herramientas de usuario. Los suelen añadir los módulos'
+label: Navegación
+description: 'El menú de <em>Navegación</em> contiene enlaces para los visitantes al sitio. Algunos módulos agregan enlaces al menú de <em>Navegación</em> automáticamente.'
 locked: true

@@ -1,0 +1,20 @@
+uuid: 690bc91d-4c65-4a5f-b36a-3a0a0a2e77e4
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - unizar_departamento
+id: contenidoprincipaldelapagina
+theme: unizar_departamento
+region: content
+weight: -9
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Contenido principal de la página'
+  label_display: visible
+  provider: system
+visibility: {  }

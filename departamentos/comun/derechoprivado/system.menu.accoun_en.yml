@@ -1,8 +1,0 @@
-uuid: 2e171c21-1a7e-4206-b719-dd3e84ce0504
-langcode: es
-status: true
-dependencies: {  }
-id: accoun_en
-label: 'User menu_en'
-description: 'El menú <em>Usuario</em> contiene enlaces relacionados con la cuenta del usuario, como el enlace ''Cerrar sesión''.'
-locked: false

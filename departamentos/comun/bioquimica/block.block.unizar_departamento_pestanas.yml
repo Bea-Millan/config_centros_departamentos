@@ -2,6 +2,8 @@ uuid: ecbdc4b0-8c2c-46af-bc94-cc3c29129a98
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - unizar_departamento
 _core:
@@ -19,4 +21,8 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

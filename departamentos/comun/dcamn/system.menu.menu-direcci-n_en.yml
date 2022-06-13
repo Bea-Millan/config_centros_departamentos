@@ -1,8 +1,0 @@
-uuid: 52726c06-4887-47cb-85cc-7f905918aa96
-langcode: es
-status: true
-dependencies: {  }
-id: menu-direcci-n_en
-label: Dirección_en
-description: "Teléfono exterior: \r\n974239323\r\nCorreo electrónico: \r\nmauson@unizar.es\r\nExtensión: \r\n851323"
-locked: false
