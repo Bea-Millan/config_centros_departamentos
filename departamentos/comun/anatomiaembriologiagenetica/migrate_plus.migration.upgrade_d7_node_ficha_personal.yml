@@ -1,4 +1,4 @@
-uuid: 5c4c76e1-3cae-42fe-b17f-b09be6186e67
+uuid: 839bf5dc-c073-45e7-ace6-58fec2d40d6e
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: rtKo4ppeZFB8KKnNaN83XCdGtxH_ckXfDI3-sERfmvY
+  default_config_hash: 0U1QPyChbl2sQ069wuP_f003I9NySR9WGH-Y7hMB-78
 id: upgrade_d7_node_ficha_personal
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -30,11 +30,6 @@ process:
       value_key: field_nip
       bundle_key: type
       bundle: ficha_personal
-  langcode:
-    -
-      plugin: default_value
-      source: language
-      default_value: und
   title:
     -
       plugin: get
