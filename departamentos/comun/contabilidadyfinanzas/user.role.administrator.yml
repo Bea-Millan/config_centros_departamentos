@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.full_html
+    - node.type.ficha_personal
     - node.type.noticia
     - node.type.page
     - node.type.slideshow

@@ -1,8 +1,8 @@
 _core:
-  default_config_hash: L5F_kGT4a31WxHqraFUAoD9YeSI-dd99o1Y1iqB8PYo
+  default_config_hash: US-lBLCBn_H3fGXTJfOEvqIL9BgA0aTH0S1pL1pesdI
 favicon_path: ''
 favicon_upload: ''
-id: '118'
+id_centro: '118'
 url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=118&colectivo=TODOS'
 nombre_centro: 'Departamento de Contabilidad y Finanzas'
 dir_centro: 'Facultad de Economía y Empresa, Gran Vía 2, Zaragoza'
