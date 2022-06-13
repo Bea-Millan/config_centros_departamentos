@@ -1,8 +1,8 @@
 _core:
-  default_config_hash: GlnHDdl9YlPRe_sc697b7jf2AekTKfjOJecBBrMff44
+  default_config_hash: YQ1cDki0jtx6qu1T_nuI1Hnl1XRf0npTFUG3CVRqgjY
 favicon_path: ''
 favicon_upload: ''
-id: '32'
+id_centro: '32'
 url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=32&colectivo=TODOS'
 nombre_centro: 'Departamento de Ciencias de la Educación'
 dir_centro: 'C/ Pedro Cerbuna, 12 - 50009 Zaragoza'
