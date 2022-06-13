@@ -1,4 +1,4 @@
-uuid: f0fd84ae-b57d-4881-9dbe-bbb5ab994823
+uuid: 970b26c8-6356-478b-b4f9-8c7c3a7c8a7b
 langcode: es
 status: true
 dependencies:
@@ -29,7 +29,6 @@ process:
       use_as_key: language
       valid_keys:
         - es
-        - ''
         - und
       key_direction: unlock
   bundle:
