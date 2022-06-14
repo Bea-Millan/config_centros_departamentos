@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: ln-PlOrb5u6PObddu4p9fdcOPQyJgqmzXaM-No_2j4o
+plugin:
+  host: mpd.unizar.es
+  url_host: sites/mpd
+langcode: es

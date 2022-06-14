@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: oB2p-05Ppb7ZooqxnZmqrlCz2xNPK5k2pX5zLTDcZl8
+favicon_path: ''
+favicon_upload: ''
+id_centro: '19'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=19&colectivo=TODOS'
+nombre_centro: 'Departamento de Medicina, Psiquiatría y Dermatología'
+dir_centro: 'C/ Domingo Miral s/n, 50009, Zaragoza'
+telefono_centro: '976 76 17 15 / 976 76 17 18   Fax: 976 76 17 12'
+mail_centro: sed1007@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '30'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es

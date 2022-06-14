@@ -1,0 +1,19 @@
+uuid: dca5a130-79fe-496e-902e-fdee836095bf
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+    - system
+_core:
+  default_config_hash: GWmnBvjl88wieQbvRzOxUaWN86Bk-E5AH4DJObOjxSY
+id: anonymous
+label: 'anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access service links'
+  - 'access site map'
+  - 'diff view changes'
+  - 'search content'
