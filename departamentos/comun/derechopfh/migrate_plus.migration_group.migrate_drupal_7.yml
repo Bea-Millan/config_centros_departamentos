@@ -1,0 +1,17 @@
+uuid: 4d636b60-d425-4fa0-af68-b9a169d01529
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: guRpsJne9TeVPT035OT2ODEbg5UD8PlN-0FMayE5SjU
+id: migrate_drupal_7
+label: 'Import from Drupal 7'
+description: 'Migrations originally generated from drush migrate-upgrade --configure-only'
+source_type: 'Drupal 7'
+module: null
+shared_configuration:
+  source:
+    key: migrate

@@ -1,0 +1,99 @@
+uuid: 693ac4ba-6e3b-4470-93d9-a75a076904ca
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: yy0w8CPp44lLVPg2xgZM7NMATTcqGQXXewa_kLXLGdk
+id: upgrade_d7_file
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Public files'
+source:
+  plugin: d7_file
+  scheme: public
+  constants:
+    source_base_path: 'http://derechoempresa.unizar.es/sites/derechoempresa.unizar.es'
+    profile_base_path: 'public:'
+process:
+  fid:
+    -
+      plugin: get
+      source: fid
+  filename:
+    -
+      plugin: get
+      source: filename
+  prepare_path:
+    -
+      plugin: str_replace
+      regex: false
+      source: filepath
+      search:
+        - sites/derechoempresa.unizar.es/
+        - sites/default/
+      replace: ''
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - '@prepare_path'
+    -
+      plugin: urlencode
+  destination_prepare_path:
+    -
+      plugin: str_replace
+      regex: true
+      source: uri
+      search: '~<em>Editar Galería<\/em>.+?\/*~'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: false
+      search: '/Crear Galería'
+      replace: ''
+  uri:
+    -
+      plugin: file_copy
+      source:
+        - '@source_full_path'
+        - '@destination_prepare_path'
+    -
+      plugin: skip_on_404
+      method: row
+      message: '@source_full_path'
+  filemime:
+    -
+      plugin: get
+      source: filemime
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: timestamp
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  uid:
+    -
+      plugin: get
+      source: uid
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }

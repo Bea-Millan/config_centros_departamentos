@@ -1,0 +1,8 @@
+uuid: ef9f8ac7-6ef7-4af1-a106-c56f7cb8b511
+langcode: es
+status: true
+dependencies: {  }
+id: menu-perfilesen
+label: Perfiles_en
+description: 'Acceso a la página web de la universidad a las páginas principales de cada sector'
+locked: false

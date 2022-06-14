@@ -1,0 +1,160 @@
+uuid: decaee0f-f389-4dd0-9310-9b42c6b92b64
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 8
+template: false
+archive: false
+id: webform_141
+title: 'Formulario de contacto'
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    apellidos_4:
+      '#type': textfield
+      '#title': Apellidos
+      '#required': true
+    nombre_4:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+  relacion_con_la_universidad:
+    '#type': radios
+    '#options':
+      estudiantes: Estudiante
+      pdi: 'Personal Docente e Investigador'
+      pas: 'Personal de Administración y Servicios'
+    '#title': 'Relación con la Universidad'
+    '#required': true
+  estudio_en_curso:
+    '#type': textfield
+    '#title': 'Estudio en curso'
+    '#required': true
+  email:
+    '#type': email
+    '#size': 20
+    '#title': Email
+    '#required': true
+  comentarios:
+    '#type': textarea
+    '#title': Comentarios
+    '#required': true
+  centrocal_que_perteneces:
+    '#type': textfield
+    '#title': 'Centrocal que perteneces'
+    '#required': true
+  localidad_de_destino:
+    '#type': select
+    '#options':
+      hu: 'huesca la capital mundial'
+      ter: 'Teruel también existe'
+      zgz: 'Aragón es un monstruo'
+    '#title': 'Localidad de destino'
+    '#required': true
+  incorporacion:
+    '#type': textfield
+    '#title': Incorporación
+    '#required': true
+  fecha_incorporacion:
+    '#type': date
+    '#title': 'Fecha incorporación'
+    '#required': true
+  adjuntar_documentacion:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg png pdf'
+    '#title': 'Adjuntar documentación'
+  referencia:
+    '#type': hidden
+    '#default_value': RF2015CongresoX
+    '#title': 'Referencia '
+  danos_tu_opicion:
+    '#type': webform_likert
+    '#questions':
+      -
+        - accesibilidad
+        - 'Acerca de la accesibilidad'
+      -
+        - contenidos
+        - 'Acerca de los contenidos'
+      -
+        - gráficamente
+        - Visualmente
+    '#answers':
+      -
+        - bien
+        - Bien
+      -
+        - regular
+        - Regular
+      -
+        - mal
+        - Mal
+    '#title': 'Danos tu opición'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: vmesa@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

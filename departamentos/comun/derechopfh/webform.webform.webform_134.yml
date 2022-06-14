@@ -1,0 +1,160 @@
+uuid: 95881e27-106a-4504-becd-25bae42a3934
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 3
+template: false
+archive: false
+id: webform_134
+title: formulario
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales:
+    '#type': fieldset
+    '#open': true
+    '#title': 'datos personales'
+    apellidos_4:
+      '#type': textfield
+      '#title': apellidos
+      '#required': true
+    nombre_4:
+      '#type': textfield
+      '#title': nombre
+      '#required': true
+    relacion_con_la_uz_4:
+      '#type': radios
+      '#options':
+        estudiante: Estudiante
+        pdi: 'personal docente e investigador'
+        pas: 'personal de administracion y servicios'
+      '#title': 'relacion con la uz'
+      '#required': true
+  estudios_en_curso:
+    '#type': textfield
+    '#title': 'estudios en curso'
+    '#required': true
+  centro:
+    '#type': textfield
+    '#title': centro
+    '#required': true
+  correo:
+    '#type': email
+    '#size': 20
+    '#title': correo
+    '#required': true
+  comentarios:
+    '#type': textarea
+    '#title': comentarios
+    '#required': true
+  localidad_de_destino:
+    '#type': select
+    '#options':
+      hu: Huesca
+      te: Teruel
+      Zgz: zaragozaaaa
+    '#title': 'localidad de destino'
+    '#required': true
+  incorporacion:
+    '#type': textfield
+    '#title': incorporacion
+    '#required': true
+  fecha_de_incorporacion:
+    '#type': date
+    '#title': 'fecha de incorporacion'
+    '#required': true
+  adjuntar_documentacion:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg png pdf doc docx'
+    '#title': 'adjuntar documentacion'
+  referencia:
+    '#type': hidden
+    '#default_value': 'Congreso frances 2015'
+    '#title': referencia
+  danos_tu_opinion:
+    '#type': webform_likert
+    '#questions':
+      -
+        - accesibilidad
+        - 'Acerca de la accesibilidad'
+      -
+        - contenidos
+        - 'Acerca de los contenidos'
+      -
+        - graficamente
+        - Visualmente
+    '#answers':
+      -
+        - bien
+        - Bien
+      -
+        - regular
+        - Regular
+      -
+        - mal
+        - Mal
+    '#title': 'danos tu opinion'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: jgalve@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: '[webform_submission:values:apellidos:raw]'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

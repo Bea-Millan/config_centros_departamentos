@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: ey8Vh2LkzGd8JD7QazdU-EP7hR8O442mPoYLLs2bkRg
+plugin:
+  host: derechoempresa.unizar.es
+  url_host: sites/derechoempresa
+langcode: es

@@ -1,0 +1,40 @@
+uuid: f832eee7-feec-4d7e-8684-cd2eadcc7ab2
+langcode: es
+status: true
+dependencies: {  }
+id: derechopfh
+label: derechopfh
+description: ''
+weight: 0
+folder: ../config/sites/departamentos/comun/derechopfh
+module:
+  c11n_migrate: 0
+theme:
+  unizar_departamento: 0
+blacklist:
+  - config_split.config_split.derechopfh
+  - system.site
+  - system.theme
+  - asset_injector.css.derechopfh_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
