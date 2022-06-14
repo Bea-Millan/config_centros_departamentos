@@ -1,0 +1,8 @@
+uuid: a4f57ec3-2c4b-4109-a6ee-3076cefbf6dc
+langcode: es
+status: true
+dependencies: {  }
+id: menu-actas-del-consejo-de-depart
+label: 'ACTAS DEL CONSEJO DE DEPARTAMENTO'
+description: ''
+locked: false

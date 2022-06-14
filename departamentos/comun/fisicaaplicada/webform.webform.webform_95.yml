@@ -1,0 +1,82 @@
+uuid: f8fe7a83-b4db-4f57-9de0-75fa0888bfc1
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 12
+template: false
+archive: false
+id: webform_95
+title: 'Otro formulario más'
+description: null
+category: null
+elements: |-
+  justificacion:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': pdf
+    '#title': Justificación
+    '#description': 'Información sobre el documento solicitado'
+  informacion_cuenta_corriente:
+    '#type': processed_text
+    '#format': full_html
+    '#text': '<p>Aquí va el texto informativo (Marcado)</p>'
+    '#title': 'Información cuenta corriente'
+  encuesta:
+    '#type': webform_likert
+    '#questions':
+      -
+        - '1'
+        - 'Estado de las instalaciones'
+      -
+        - '2'
+        - 'Temperatura del aula'
+      -
+        - '3'
+        - 'Material entregado'
+    '#answers':
+      -
+        - '1'
+        - 'Muy malo'
+      -
+        - '2'
+        - Malo
+      -
+        - '3'
+        - Regular
+      -
+        - '4'
+        - Bueno
+      -
+        - '5'
+        - 'Muy bueno'
+    '#title': Encuesta
+    '#required': true
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

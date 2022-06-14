@@ -1,0 +1,8 @@
+uuid: 47fea40d-6a95-4cd2-9bb5-83bc45bbe60f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-grupo-de-tecnolog-a-optica-
+label: 'MENU GRUPO DE TECNOLOGÍA OPTICA LÁSER (TOL)'
+description: ''
+locked: false

@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: OEEUfzTZuNbjzv1xTK3CYpFj__VqG9r7jc9qofxqu5Q
+favicon_path: ''
+favicon_upload: ''
+id_centro: '88'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=88&colectivo=TODOS'
+nombre_centro: 'Departamento de Física Aplicada'
+dir_centro: 'Pedro Cerbuna, 12. 50009 ZARAGOZA (España)'
+telefono_centro: '976 76 12 32'
+mail_centro: dfauz@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"30.1%22N+0%C2%B054"00.8%22W/@41.641709,-0.9024057,574m/data=!3m2!1e3!4b1!4m2!3m1!1s0'
+logo_blanco: '7'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es

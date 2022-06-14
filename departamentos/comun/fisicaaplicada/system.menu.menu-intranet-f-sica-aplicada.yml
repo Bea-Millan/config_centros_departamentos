@@ -1,0 +1,8 @@
+uuid: e78fd9a8-940d-4081-ac11-f9f181a2649d
+langcode: es
+status: true
+dependencies: {  }
+id: menu-intranet-f-sica-aplicada
+label: 'Intranet Física Aplicada'
+description: ''
+locked: false
