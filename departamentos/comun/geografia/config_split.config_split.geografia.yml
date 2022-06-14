@@ -1,0 +1,40 @@
+uuid: 2897580b-e0dd-4d61-99a0-e5196826353b
+langcode: es
+status: true
+dependencies: {  }
+id: geografia
+label: geografia
+description: ''
+weight: 0
+folder: ../config/sites/departamentos/comun/geografia
+module:
+  c11n_migrate: 0
+theme:
+  unizar_departamento: 0
+blacklist:
+  - config_split.config_split.geografia
+  - system.site
+  - system.theme
+  - asset_injector.css.geografia_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: iYxNk3MNB_SjDXL4P8ApccT6RZtj792zBJr49Yeup80
+favicon_path: ''
+favicon_upload: ''
+id_centro: '4'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=4&colectivo=TODOS'
+nombre_centro: 'Facultad de Filosofía y Letras'
+dir_centro: 'Pedro Cerbuna 12, 50009, Zaragoza'
+telefono_centro: '(+34) 976 762 060'
+mail_centro: sed3006@unizar.es
+url_mapa: 'https://goo.gl/maps/hdPXbriSGgtMFyY58'
+logo_blanco: '10'
+facebook: 'https://www.facebook.com/Geograf%C3%ADa-y-Ordenaci%C3%B3n-del-Territorio-Universidad-Zaragoza-274812829603371'
+twitter: 'https://twitter.com/Geografia_UZ'
+instagram: ''
+meta_desc: ''
+langcode: es

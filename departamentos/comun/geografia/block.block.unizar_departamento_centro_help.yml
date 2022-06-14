@@ -1,0 +1,22 @@
+uuid: 82445fab-6035-4531-aa09-cbe2809592a3
+langcode: es
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - unizar_departamento
+_core:
+  default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
+id: unizar_departamento_centro_help
+theme: unizar_departamento
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }
