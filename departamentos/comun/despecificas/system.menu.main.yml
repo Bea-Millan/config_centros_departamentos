@@ -1,0 +1,10 @@
+uuid: f06c752a-7ee5-4ec6-ab85-d956eba3cb0e
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Q2Ra3jfoIVk0f3SjxJX61byRQFVBAbpzYDQOiY-kno8
+id: main
+label: 'Menú principal'
+description: 'El menú <em>Principal</em> se usa en muchos sitios web para mostrar las secciones principales del sitio, generalmente en una barra de navegación superior.'
+locked: true
