@@ -1,0 +1,8 @@
+uuid: 41b97dcf-0309-47e8-9dfb-ac5f2e4a7bec
+langcode: es
+status: true
+dependencies: {  }
+id: menu-departamento
+label: DEPARTAMENTO
+description: ''
+locked: false

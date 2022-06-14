@@ -1,0 +1,8 @@
+uuid: 1a895410-6fcd-4bf5-98c6-3712f248bc80
+langcode: es
+status: true
+dependencies: {  }
+id: menu-escuela-de-ingenier-a-y-arq
+label: 'ESCUELA DE INGENIERÍA Y ARQUITECTURA'
+description: ''
+locked: false

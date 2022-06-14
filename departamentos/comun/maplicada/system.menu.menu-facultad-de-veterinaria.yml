@@ -1,0 +1,8 @@
+uuid: 3e473f93-fce4-40d6-a130-c813e29c5017
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facultad-de-veterinaria
+label: 'FACULTAD DE VETERINARIA'
+description: ''
+locked: false

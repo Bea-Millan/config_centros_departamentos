@@ -1,0 +1,8 @@
+uuid: ea7e07d2-89d8-4275-9b31-822e741cb89a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facultad-de-ciencias
+label: 'FACULTAD DE CIENCIAS'
+description: ''
+locked: false

@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: C-JlbGuvz3qlP6QFkAP0u9icPkh2TQ5Bwf-BTEFTKxw
+plugin:
+  host: maplicada.unizar.es
+  url_host: sites/maplicada
+langcode: es
