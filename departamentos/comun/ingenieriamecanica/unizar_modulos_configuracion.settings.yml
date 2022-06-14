@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: WRAkPesWzxatIaL63uTI0DzF9WrvRi_IbGIWortH6X8
+favicon_path: ''
+favicon_upload: ''
+id_centro: '18'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=18&colectivo=TODOS'
+nombre_centro: 'Departamento Ingeniería Mecánica'
+dir_centro: 'Edif. Agustín de Betancourt, María de Luna, s/n, 50018 Zaragoza '
+telefono_centro: '976 76 19 13'
+mail_centro: sed5004@unizar.es
+url_mapa: 'https://www.google.es/maps/place/Escuela+de+Ingenier%C3%ADa+y+Arquitectura+de+la+Universidad+de+Zaragoza/@41.6830536,-0.8900262,'
+logo_blanco: '17'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: ''
+langcode: es

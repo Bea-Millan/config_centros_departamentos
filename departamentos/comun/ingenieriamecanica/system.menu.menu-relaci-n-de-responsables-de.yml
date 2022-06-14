@@ -1,0 +1,8 @@
+uuid: 45bbc82a-a830-4e99-a3d1-599efd58e7e8
+langcode: es
+status: true
+dependencies: {  }
+id: menu-relaci-n-de-responsables-de
+label: 'Relación de responsables del Departamento de Ingeniería Mecánica desde su creación'
+description: ''
+locked: false

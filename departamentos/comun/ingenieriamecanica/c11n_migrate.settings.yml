@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: J2k6jEcDlcwdd5ZHUzyekLRZGHpj5tgCi4g733tBFm0
+plugin:
+  host: ingenieriamecanica.unizar.es
+  url_host: sites/ingenieriamecanica
+langcode: es
