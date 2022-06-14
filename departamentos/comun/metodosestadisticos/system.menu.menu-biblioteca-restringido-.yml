@@ -1,0 +1,8 @@
+uuid: e9fff707-3f3a-4001-8905-95f5374223e3
+langcode: es
+status: true
+dependencies: {  }
+id: menu-biblioteca-restringido-
+label: Biblioteca
+description: 'Biblioteca (restringido)'
+locked: false

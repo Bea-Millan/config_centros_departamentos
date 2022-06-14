@@ -1,0 +1,8 @@
+uuid: 1f546017-a41e-4b9a-9fbc-f1a3c7733567
+langcode: es
+status: true
+dependencies: {  }
+id: menu-men-de-prueba
+label: 'Menú de prueba'
+description: 'Este es un menú de prueba creado por JA'
+locked: false

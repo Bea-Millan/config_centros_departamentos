@@ -1,0 +1,31 @@
+uuid: 3916794d-5d84-45e1-beb4-4d81ad1d7445
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_admin_menu
+    - user
+  theme:
+    - classy
+_core:
+  default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
+id: classy_administracion
+theme: classy
+region: sidebar_first
+weight: -8
+provider: null
+plugin: administracion
+settings:
+  id: administracion
+  label: Administración
+  label_display: '0'
+  provider: unizar_admin_menu
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      gestor_basico: gestor_basico

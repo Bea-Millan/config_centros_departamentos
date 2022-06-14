@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: WegFvhknauwHIAPxZCSIdHzT7Ww8gxGDwcBkCJn6E7Q
+favicon_path: ''
+favicon_upload: ''
+id_centro: '124'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=124&colectivo=TODOS'
+nombre_centro: DepartamentodMétodosEstadísticos
+dir_centro: '3ª planta del Edificio de Matemáticas. Pedro Cerbuna, 12. 50008-Zaragoza'
+telefono_centro: '976 76 11 16'
+mail_centro: sed2007@unizar.es
+url_mapa: 'https://www.google.es/maps/place/Universidad+de+Zaragoza:+Edificio+Matem%C3%A1ticas/@41.6428167,-0.8997904,19z/data=!3m1!4b1!4m5'
+logo_blanco: '14'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: DepartamentodeMétodosEstadísticos
+langcode: es
