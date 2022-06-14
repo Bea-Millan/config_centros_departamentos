@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: KZoP1b3aREgQzb9ITNYuQ5qynmhq05XGe7_0cdExUaY
+plugin:
+  host: fisiatria_enfermeria.unizar.es
+  url_host: sites/fisiatria_enfermeria
+langcode: es

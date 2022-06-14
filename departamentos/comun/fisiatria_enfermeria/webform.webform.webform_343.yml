@@ -1,0 +1,118 @@
+uuid: f83d3fde-f6ab-4443-bed0-fbbd967af28c
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 11
+template: false
+archive: false
+id: webform_343
+title: 'mi primer formulario'
+description: null
+category: null
+elements: |-
+  nombre_y_apellidos:
+    '#type': textfield
+    '#title': 'Nombre y Apellidos'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title_display': invisible
+    '#title': 'Correo electronico'
+    '#required': true
+  numero_de_telefono:
+    '#type': textfield
+    '#title_display': invisible
+    '#title': 'Número de teléfono'
+    '#required': true
+  colectivo:
+    '#type': select
+    '#options':
+      1: PAS
+      2: PDI
+      3: ESTUDIANTES
+    '#multiple': true
+    '#title': Colectivo
+    '#required': true
+  fecha_solicitud:
+    '#type': date
+    '#title': 'Fecha solicitud'
+    '#required': true
+    '#states':
+      visible:
+        - ':input[name="colectivo"]':
+            value: '2'
+        - ':input[name="colectivo"]':
+            value: '3'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Enviado el [webform_submission:date:long]
+        Gracias por cumplimentar el formulario
+        Los valores enviados son:
+        [webform_submission:values]
+
+      excluded_elements:
+        nombre_y_apellidos: nombre_y_apellidos
+        correo_electronico: correo_electronico
+        numero_de_telefono: numero_de_telefono
+        fecha_solicitud: fecha_solicitud
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

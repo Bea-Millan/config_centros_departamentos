@@ -1,0 +1,8 @@
+uuid: a19a074f-6e2a-4462-9dab-417936d44b81
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acceso-intranet
+label: 'acceso intranet'
+description: intranet/actas
+locked: false

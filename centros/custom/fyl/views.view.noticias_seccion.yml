@@ -1095,6 +1095,7 @@ display:
             format: filtered_html
           tokenize: true
       display_extenders: {  }
+      block_hide_empty: true
     cache_metadata:
       max-age: -1
       contexts:

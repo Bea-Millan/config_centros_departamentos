@@ -1,0 +1,160 @@
+uuid: 83340110-e73b-4767-9ccc-d5c9d8fe29e8
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 5
+template: false
+archive: false
+id: webform_339
+title: 'Formulario de contacto'
+description: null
+category: null
+elements: |-
+  fieldset_identidad:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales'
+    apellidos_nombre_4:
+      '#type': textfield
+      '#title': Apellidos
+      '#required': true
+    nombre_4:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+  relacion_con_la_universidad:
+    '#type': radios
+    '#options':
+      estudiante: Estudiante
+      PDI: 'Personal Docente e Investigador'
+      PAS: 'Personal de Administración y Servicios'
+    '#title': 'relación con la universidad'
+    '#required': true
+  estudio_en_curso:
+    '#type': textfield
+    '#title': 'Estudio en curso'
+    '#required': true
+  ccentro_al_que_perteneces:
+    '#type': textfield
+    '#title': 'ccentro al que perteneces'
+  email:
+    '#type': email
+    '#size': 20
+    '#title': email
+    '#required': true
+  comentario:
+    '#type': textarea
+    '#title': Comentario
+    '#required': true
+  localidad_de_destino:
+    '#type': select
+    '#options':
+      HU: Huesca
+      ZA: Zaragoza
+      TE: Teruel
+    '#title': 'Localidad de destino'
+    '#required': true
+  incorporacion:
+    '#type': textarea
+    '#title': Incorporación
+    '#required': true
+  fecha_de_incorporacion:
+    '#type': date
+    '#title': 'Fecha de incorporación'
+    '#required': true
+  adjuntar_documentacion:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg png pdf'
+    '#title': 'Adjuntar documentación'
+  referencia:
+    '#type': hidden
+    '#default_value': 'RF2015Congreso TO'
+    '#title': Referencia
+  danos_tu_opiniion:
+    '#type': webform_likert
+    '#questions':
+      -
+        - accesibilidad
+        - 'Acerca de la accesibilidad'
+      -
+        - contenido
+        - 'Acerca de los contenidos'
+      -
+        - gráficamente
+        - Visualmente
+    '#answers':
+      -
+        - bien
+        - Bien
+      -
+        - regular
+        - Regular
+      -
+        - mal
+        - Mal
+        - ''
+    '#title': 'Danos tu opiniión'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: mrosamar@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: '[webform_submission:values:relacion_con_la_universidad:raw]'
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
