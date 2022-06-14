@@ -1,0 +1,40 @@
+uuid: 67e92b41-07c6-45a7-8376-505c89bb43c2
+langcode: es
+status: true
+dependencies: {  }
+id: didyf
+label: didyf
+description: ''
+weight: 0
+folder: ../config/sites/departamentos/comun/didyf
+module:
+  c11n_migrate: 0
+theme:
+  unizar_departamento: 0
+blacklist:
+  - config_split.config_split.didyf
+  - system.site
+  - system.theme
+  - asset_injector.css.didyf_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

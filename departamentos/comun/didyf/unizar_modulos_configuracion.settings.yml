@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: ij503rnXFZYg24tvPH0tJRfjkjNp6ahMCV6eixDSIBw
+favicon_path: ''
+favicon_upload: ''
+id_centro: '39'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=39&colectivo=TODOS'
+nombre_centro: 'Departamento de Ingeniería de Diseño y Fabricación'
+dir_centro: 'María Luna 3 (Edificio Torres Quevedo), 50018 (Zaragoza)'
+telefono_centro: '976 76 19 00'
+mail_centro: didyf@unizar.es
+url_mapa: 'https://www.google.es/maps/place/Edificio+Torres+Quevedo,+Mar%C3%ADa+de+Luna,+3,+50018+Zaragoza/@41.6833622,-0.8895432,17z/data='
+logo_blanco: '25'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es
