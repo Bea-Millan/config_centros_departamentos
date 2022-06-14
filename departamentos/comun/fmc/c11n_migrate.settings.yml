@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: UtLMvXzudoxrjOUN9JKBlXtRbRHr7YmvMPfW3TemK38
+plugin:
+  host: fmc.unizar.es
+  url_host: sites/fmc
+langcode: es

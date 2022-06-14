@@ -1,0 +1,8 @@
+uuid: eff26ec0-756b-4f89-a070-979cb5d43b50
+langcode: es
+status: true
+dependencies: {  }
+id: menu-contenido-intranet
+label: contenido_intranet
+description: ''
+locked: false

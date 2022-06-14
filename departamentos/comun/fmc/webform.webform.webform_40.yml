@@ -1,0 +1,156 @@
+uuid: 2cc41f3e-80b0-4780-b404-0fd3ecd05a04
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_40
+title: 'Formulario Visitantes'
+description: null
+category: null
+elements: |-
+  fieldset_datos_personales_personal_information:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos personales/Personal Information:'
+    apellidos_9:
+      '#type': textfield
+      '#title': 'Apellidos/Surname:'
+      '#required': true
+    nombre_9:
+      '#type': textfield
+      '#title': 'Nombre/Name:'
+      '#required': true
+    dni_9:
+      '#type': textfield
+      '#title': 'DNI/NIE/Pasaporte/Passport:'
+      '#required': true
+    nacionalidad_9:
+      '#type': textfield
+      '#title': 'Nacionalidad/Nationality:'
+      '#required': true
+  fieldset_telefono:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Teléfono/Telephone number:'
+    telefono_externo_17:
+      '#type': textfield
+      '#title': 'Teléfono externo/Telephone number:'
+      '#required': true
+    extension_17:
+      '#type': textfield
+      '#title': 'Extensión/Internal telephone:'
+  email:
+    '#type': email
+    '#size': 20
+    '#default_value': '[current-user:mail]'
+    '#title': 'Correo electrónico/e-mail:'
+    '#required': true
+  correo_unizar_e_mail_unizar:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo unizar/E-mail unizar:'
+  universidad_de_origen_home_university:
+    '#type': textfield
+    '#title': 'Universidad de origen/Home University:'
+    '#required': true
+  fieldset_informacion_sobre_la_estancia_visit_information:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Información sobre la estancia/Visit information:'
+    organismo_16:
+      '#type': radios
+      '#options':
+        1: 'Universidad de Zaragoza'
+        2: CSIC
+      '#default_value': '1'
+      '#title': 'Organismo/Institution:'
+      '#required': true
+    centro_16:
+      '#type': checkboxes
+      '#options':
+        1: Ciencias
+        2: EINA
+      '#multiple': true
+      '#default_value': '1'
+      '#title': 'Centro/Centre:'
+      '#required': true
+    host_16:
+      '#type': textfield
+      '#title': 'Investigador responsable/Host:'
+      '#required': true
+    motivo_16:
+      '#type': textarea
+      '#title': 'Motivo de la estancia/Purpose of the visit:'
+      '#required': true
+    fecha_incorporacion_16:
+      '#type': date
+      '#title': 'Fecha de incorporación/Date of entry:'
+      '#required': true
+    fecha_finalizacion_16:
+      '#type': date
+      '#title': 'Fecha de finalización/End date:'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '1'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: "<p>Los datos están guardados. Muchas gracias por su colaboración.</p>\r\n<p>Thank you for your help.</p>"
+  limit_total: null
+  limit_user: null
+  form_submit_label: 'ENVIAR / SAVE'
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - authenticated
+      - visitante
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: mlramon@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '[webform_submission:values:apellidos:raw]'
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

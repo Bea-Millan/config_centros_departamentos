@@ -1,0 +1,8 @@
+uuid: f3b8ed94-3987-43d8-be51-4f9fb5c64842
+langcode: es
+status: true
+dependencies: {  }
+id: menu-l-neas-de-investigaci-n
+label: 'Líneas de investigación'
+description: ''
+locked: false

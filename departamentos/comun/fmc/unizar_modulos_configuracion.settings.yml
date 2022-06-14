@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: lCZSQh5QpyKirUyqj1JUSGGbuopQuOorMKpHo7EvZmM
+favicon_path: ''
+favicon_upload: ''
+id_centro: '37'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=37&colectivo=TODOS'
+nombre_centro: 'Departamento de Física de la Materia Condesada'
+dir_centro: 'Facultad de Ciencias, C/ Pedro Cerbuna 12, 50009, Zaragoza (ESPAÑA)'
+telefono_centro: '976 761 230'
+mail_centro: sed2003@unizar.es
+url_mapa: 'https://www.google.es/maps/dir//F%C3%ADsica+de+la+Materia+Condensada,+50009+Zaragoza/@41.6424101,-0.9343065,13z/data=!3m1!4b1!4m'
+logo_blanco: '26'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: 'Departamento de Física de la Materia Condensada de la Universidad de Zaragoza. Docencia en la Facultad de Ciencias y Escuela de Ingeniería y Arquitectura.'
+langcode: es

@@ -1,0 +1,50 @@
+uuid: 81930a60-55e5-43ff-8e80-3106a8a3e61a
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: wG8JU3tihvkLbY8qFvXcZLeGVlLc7RL60tBL5-YFqwo
+id: upgrade_d7_taxonomy_term_tipos_de_estudio
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (Tipos de estudio)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: tipos_de_estudio
+process:
+  tid: tid
+  vid:
+    plugin: default_value
+    default_value: tipos_de_estudio
+  name: name
+  weight: weight
+  description/value: description
+  description/format: format
+  field_imagen_valid:
+    -
+      plugin: null_coalesce
+      source:
+        - field_image
+        - field_imagen_estudio
+  field_imagen_estudio:
+    -
+      plugin: sub_process
+      source: '@field_imagen_valid'
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null
