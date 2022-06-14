@@ -1,0 +1,8 @@
+uuid: 933176f6-67a0-48d4-a8a2-8958d5b94004
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facultad-de-econom-a-y-empr
+label: 'Facultad de Economía y Empresa'
+description: ''
+locked: false

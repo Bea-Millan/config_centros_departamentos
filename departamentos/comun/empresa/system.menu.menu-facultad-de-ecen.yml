@@ -1,0 +1,8 @@
+uuid: abca1c11-05bb-4fd1-9cc7-2554a7b35779
+langcode: es
+status: true
+dependencies: {  }
+id: menu-facultad-de-ecen
+label: 'Facultad de Economía y Empresa_en'
+description: ''
+locked: false
