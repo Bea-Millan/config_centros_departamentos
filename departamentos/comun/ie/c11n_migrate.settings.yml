@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: lj3jHJxlrgWDbEnzEGWAme0BGNn0mgMGdm-P8RrpiHg
+plugin:
+  host: ie.unizar.es
+  url_host: sites/ie
+langcode: es

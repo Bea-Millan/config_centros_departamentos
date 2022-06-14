@@ -1,0 +1,8 @@
+uuid: 05e83ce5-78bf-40c1-ba16-a02ed8e1cc2e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-conexion-empresa
+label: 'CONEXION EMPRESA'
+description: ''
+locked: false

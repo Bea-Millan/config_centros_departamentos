@@ -1,0 +1,22 @@
+uuid: a45c8ab5-29da-474c-87e2-5eb95cf0a569
+langcode: es
+status: true
+dependencies:
+  theme:
+    - stable
+_core:
+  default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
+id: stable_pestanas
+theme: stable
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
