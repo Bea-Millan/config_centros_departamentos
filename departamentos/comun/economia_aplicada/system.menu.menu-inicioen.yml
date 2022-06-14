@@ -1,0 +1,8 @@
+uuid: a0e4a025-f641-4672-8f2b-b77d842c9479
+langcode: es
+status: true
+dependencies: {  }
+id: menu-inicioen
+label: Inicio_en
+description: 'El Departamento de Economía Aplicada, es la confluencia de 3 áreas de conocimiento'
+locked: false

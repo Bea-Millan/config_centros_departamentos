@@ -1,0 +1,8 @@
+uuid: a0836a3d-d576-42ef-a95d-aa7d233c7cb7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-manual-departamentos
+label: 'Manual departamentos'
+description: ''
+locked: false

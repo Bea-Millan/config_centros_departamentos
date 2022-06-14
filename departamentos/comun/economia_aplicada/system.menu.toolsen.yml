@@ -1,0 +1,8 @@
+uuid: dc9d94f2-dd7f-44e5-93b8-c4024020b08d
+langcode: es
+status: true
+dependencies: {  }
+id: toolsen
+label: Navegación_en
+description: 'El menú de <em>Navegación</em> contiene enlaces para los visitantes al sitio. Algunos módulos agregan enlaces al menú de <em>Navegación</em> automáticamente.'
+locked: false

@@ -1,0 +1,8 @@
+uuid: d21af2df-d441-4761-9aeb-f6a1459bfbeb
+langcode: es
+status: true
+dependencies: {  }
+id: menu-localizaci-nen
+label: Localización_en
+description: ''
+locked: false

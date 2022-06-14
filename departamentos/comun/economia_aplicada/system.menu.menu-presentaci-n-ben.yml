@@ -1,0 +1,8 @@
+uuid: c895b066-b1e7-4d8b-bbf2-6ee05e2c1258
+langcode: es
+status: true
+dependencies: {  }
+id: menu-presentaci-n-ben
+label: Presentación_bienvenida_en
+description: 'bienvenida al departamentos'
+locked: false

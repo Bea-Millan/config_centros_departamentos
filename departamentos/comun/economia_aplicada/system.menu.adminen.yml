@@ -1,0 +1,8 @@
+uuid: 607856d1-c3bc-48ef-9ba0-ba9738a09955
+langcode: es
+status: true
+dependencies: {  }
+id: adminen
+label: Management_en
+description: 'El menú <em>Administrar</em> contiene enlaces a tareas administrativas.'
+locked: false

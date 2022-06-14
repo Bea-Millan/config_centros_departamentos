@@ -1,0 +1,8 @@
+uuid: 5b45e78b-4239-4f45-9bd2-c7b59770291f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-consejo-de-depen
+label: 'Consejo de Departamento_en'
+description: ''
+locked: false

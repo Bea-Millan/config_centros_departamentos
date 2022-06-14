@@ -1,0 +1,8 @@
+uuid: 5097ef02-0e1b-4b1f-8886-f1abda850ce7
+langcode: es
+status: true
+dependencies: {  }
+id: menu-personal-del-departamento
+label: 'Personal del Departamento'
+description: ''
+locked: false

@@ -1,0 +1,8 @@
+uuid: cfa7a4ab-9c3d-4610-862c-be472437f61e
+langcode: es
+status: true
+dependencies: {  }
+id: menu-localizaci-n
+label: Localización
+description: ''
+locked: false

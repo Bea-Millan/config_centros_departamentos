@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: ONBnejqjF71PqlUY2xNjz31cm3DBVHb4u-MA5HSi4Ac
+plugin:
+  host: economia_aplicada.unizar.es
+  url_host: sites/economia_aplicada
+langcode: es

@@ -1,0 +1,8 @@
+uuid: d46996bb-06b4-4829-91dd-bf5992bf2c42
+langcode: es
+status: true
+dependencies: {  }
+id: menu-equipo-de-direen
+label: 'Equipo de dirección_en'
+description: ''
+locked: false

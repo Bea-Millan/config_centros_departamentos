@@ -1,0 +1,8 @@
+uuid: a796eb9b-db16-4526-9de2-c1091bed3ff0
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acceso-rapido
+label: 'Acceso rapido'
+description: ''
+locked: false
