@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: 7gVanwSZ2qM9fC2qT43HsTpkX3KmYH8mas-s1c3nnLM
+favicon_path: ''
+favicon_upload: ''
+id_centro: '56'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=56&colectivo=TODOS'
+nombre_centro: 'Departamento de Química Analítica'
+dir_centro: 'Facultad de Ciencias (Edificio D, 1ª planta)'
+telefono_centro: '976 761 290'
+mail_centro: quiman@unizar.es
+url_mapa: 'https://www.google.com/maps/place/Universidad+de+Zaragoza:+Edificio+Qu%C3%ADmicas/@41.6423677,-0.9026643,17z/data=!3m1!4b1!4m5!3'
+logo_blanco: '7'
+facebook: ''
+twitter: ''
+meta_desc: 'Departamento de Química Analítica. Área de Química Analítica. Universidad de Zaragoza.'
+langcode: es
