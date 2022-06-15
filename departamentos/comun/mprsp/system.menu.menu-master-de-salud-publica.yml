@@ -1,0 +1,8 @@
+uuid: e8e187df-fb62-4ebe-b4ae-d159611ad58c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-master-de-salud-publica
+label: 'MASTER DE SALUD PUBLICA'
+description: ''
+locked: false

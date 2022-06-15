@@ -1,0 +1,17 @@
+_core:
+  default_config_hash: nKB_1gETVI8E-XyE44GLjFPDmHMb06OgenBGofNmc2c
+favicon_path: ''
+favicon_upload: ''
+id_centro: '250'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=250&colectivo=TODOS'
+nombre_centro: 'Departamento de Microbiología, Medicina Preventiva y Salud Pública'
+dir_centro: 'Facultad de Medicina. C/Domingo Miral, s/n. 50009 Zaragoza'
+telefono_centro: '+34 976 761 691 / + 34 876 554 395'
+mail_centro: sed1011@unizar.es
+url_mapa: 'https://www.google.es/maps/place/Universidad+de+Zaragoza:+Facultad+de+Medicina/@41.6417,-0.9051473,18z/data=!4m5!3m4!1s0xd5914d4'
+logo_blanco: '48'
+facebook: ''
+twitter: ''
+instagram: ''
+meta_desc: ''
+langcode: es

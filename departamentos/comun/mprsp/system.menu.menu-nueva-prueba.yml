@@ -1,0 +1,8 @@
+uuid: d4931188-ea54-4ed7-8d7a-f63ef4af042b
+langcode: es
+status: true
+dependencies: {  }
+id: menu-nueva-prueba
+label: 'NUEVA PRUEBA'
+description: 'NUEVA PRUEBA'
+locked: false

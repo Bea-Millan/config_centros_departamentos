@@ -1,0 +1,8 @@
+uuid: fd8892fe-71fd-4ff6-9fec-6b30da4a7109
+langcode: es
+status: true
+dependencies: {  }
+id: menu-acceso-intranet
+label: 'ACCESO INTRANET'
+description: ''
+locked: false

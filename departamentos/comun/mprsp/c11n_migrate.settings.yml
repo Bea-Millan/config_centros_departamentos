@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: c9AObGnnOUiKYIX4Z6wistiIAkqnpuSfI_EvWkoI-Ck
+plugin:
+  host: mprsp.unizar.es
+  url_host: sites/mprsp
+langcode: es
