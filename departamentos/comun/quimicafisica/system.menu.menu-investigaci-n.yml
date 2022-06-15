@@ -1,0 +1,8 @@
+uuid: 31ae31bc-f631-4d0f-9d33-e03e8404091a
+langcode: es
+status: true
+dependencies: {  }
+id: menu-investigaci-n
+label: INVESTIGACIÓN
+description: ''
+locked: false

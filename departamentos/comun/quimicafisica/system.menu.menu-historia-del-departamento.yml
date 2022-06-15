@@ -1,0 +1,8 @@
+uuid: 407014ca-a4f1-4a5f-8edc-fc6b3fa4f51c
+langcode: es
+status: true
+dependencies: {  }
+id: menu-historia-del-departamento
+label: 'HISTORIA DEL DEPARTAMENTO'
+description: ''
+locked: false

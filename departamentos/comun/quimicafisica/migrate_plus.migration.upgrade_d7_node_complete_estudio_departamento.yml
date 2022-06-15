@@ -1,0 +1,89 @@
+uuid: 36368171-09ac-4b3b-9923-43b7d6da752c
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: _eqrgs_qL24T0OnBykyWEnpEtcX1ddlmSQ1edR6Gs-Y
+id: upgrade_d7_node_complete_estudio_departamento
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Node (Estudio)'
+source:
+  plugin: d7_node_complete
+  node_type: bloque_pestanas
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: MapUid
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_link_estudio_personalizado:
+    -
+      plugin: sub_process
+      source: field_link_noticia
+      process:
+        uri: value
+  field_tipo_estudio:
+    -
+      plugin: sub_process
+      source: field_tipo_estudio
+      process:
+        target_id: tid
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: estudio
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+    - upgrade_language
+    - upgrade_d7_taxonomy_term_tipos_de_estudio
+    - upgrade_d7_taxonomy_term_tipos_de_estudio_departamento

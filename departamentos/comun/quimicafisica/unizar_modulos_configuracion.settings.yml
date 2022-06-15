@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: E5vpiE-ULg4oLH9Z--VPxhByJYPgZmsK8_d39hbvGII
+favicon_path: ''
+favicon_upload: ''
+id_centro: '90'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=90&colectivo=TODOS'
+nombre_centro: 'Departamento de Química Física'
+dir_centro: 'Facultad de Ciencias'
+telefono_centro: '976 76 12 03'
+mail_centro: sed2012@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '18'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es

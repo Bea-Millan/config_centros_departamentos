@@ -1,0 +1,23 @@
+uuid: 4f0c0ae3-e985-43c4-a6ad-8b696400a8b2
+langcode: es
+status: true
+dependencies:
+  module:
+    - unizar_modulos_configuracion
+  theme:
+    - classy
+_core:
+  default_config_hash: Hveg_TbKr0pKqbVCC5pl9hputahu34GJQO7Nuv26E10
+id: classy_bloquecabeceralogocentrosresponsive
+theme: classy
+region: sidebar_first
+weight: -5
+provider: null
+plugin: bloque_cabecera_logo
+settings:
+  id: bloque_cabecera_logo
+  label: 'Bloque cabecera logo centros responsive'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  nombre_centro: 'Facultad de Ciencias de la Salud'
+visibility: {  }
