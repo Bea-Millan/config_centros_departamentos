@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: D6H-08qCrp4PSUacmagzoQHJ6NeElXkFc4gRIkbAEW0
+plugin:
+  host: patologiaanimal.unizar.es
+  url_host: sites/patologiaanimal
+langcode: es

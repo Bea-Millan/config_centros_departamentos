@@ -1,0 +1,22 @@
+uuid: 3eeb2d3a-b548-4770-8b9d-9d9391ee2cde
+langcode: es
+status: true
+dependencies:
+  theme:
+    - classy
+_core:
+  default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
+id: classy_pestanas
+theme: classy
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

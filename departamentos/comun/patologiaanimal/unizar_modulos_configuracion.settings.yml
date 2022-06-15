@@ -1,0 +1,16 @@
+_core:
+  default_config_hash: WAscvWZWthH46G84y1lALNmYD6-B1beNgLH0tvA5JnQ
+favicon_path: ''
+favicon_upload: ''
+id_centro: '20'
+url_personal: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=20&colectivo=TODOS'
+nombre_centro: 'Departamento de Patología Animal'
+dir_centro: 'Primera Planta del Edificio Clínicas. Facultad de Veterinaria'
+telefono_centro: '976 761544'
+mail_centro: sdpata@unizar.es
+url_mapa: 'https://www.google.es/maps/place/41%C2%B038"44.4%22N+0%C2%B053"45.2%22W/@41.645653,-0.895882,930m/data=!3m2!1e3!4b1!4m2!3m1!1s0x'
+logo_blanco: '11'
+facebook: ''
+twitter: ''
+meta_desc: ''
+langcode: es
