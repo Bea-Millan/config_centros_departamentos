@@ -1,0 +1,8 @@
+uuid: 355093c6-d09b-4e50-93d1-73a5e94b9839
+langcode: es
+status: true
+dependencies: {  }
+id: menu-estudios-de-grado
+label: 'Estudios de grado'
+description: ''
+locked: false

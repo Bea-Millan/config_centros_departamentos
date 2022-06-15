@@ -1,0 +1,8 @@
+uuid: 4df9091f-b6b6-4604-b9e2-46d255ac2168
+langcode: es
+status: true
+dependencies: {  }
+id: menu-convocatorias-para-la-selec
+label: 'Convocatorias para la selección y contratación de profesorado'
+description: ''
+locked: false

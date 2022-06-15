@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: fnY6sD5XPNjJpQC7aKZk4YaSMNXBzQsdZ5niAFabHRQ
+plugin:
+  host: psicosocio.unizar.es
+  url_host: sites/psicosocio
+langcode: es
