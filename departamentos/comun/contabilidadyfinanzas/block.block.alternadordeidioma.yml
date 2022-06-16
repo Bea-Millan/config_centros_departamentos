@@ -1,0 +1,20 @@
+uuid: ef2e18e2-74ff-4d99-986b-91707c088a04
+langcode: es
+status: true
+dependencies:
+  module:
+    - language
+  theme:
+    - unizar_departamento
+id: alternadordeidioma
+theme: unizar_departamento
+region: cabecera_sup
+weight: -9
+provider: null
+plugin: 'language_block:language_interface'
+settings:
+  id: 'language_block:language_interface'
+  label: 'Alternador de idioma'
+  label_display: '0'
+  provider: language
+visibility: {  }

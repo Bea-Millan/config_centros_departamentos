@@ -1,0 +1,30 @@
+uuid: 7185a5e6-de90-4003-b7e0-9c51c4d0253e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c18e53f6-e2ec-406a-8f1c-6455c883dd18'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: enlacesdeinteresestudiosdemaster
+theme: unizar_departamento
+region: columna_lateral
+weight: -2
+provider: null
+plugin: 'block_content:c18e53f6-e2ec-406a-8f1c-6455c883dd18'
+settings:
+  id: 'block_content:c18e53f6-e2ec-406a-8f1c-6455c883dd18'
+  label: 'Enlaces de interés (Estudios de Máster)'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

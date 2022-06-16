@@ -1,0 +1,30 @@
+uuid: 1389ea28-22ed-4dc3-99de-d7fe71331d90
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:56f3845f-2ba2-4528-9247-a827fdc36ee0'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacioninnovaciondocente
+theme: unizar_departamento
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:56f3845f-2ba2-4528-9247-a827fdc36ee0'
+settings:
+  id: 'block_content:56f3845f-2ba2-4528-9247-a827fdc36ee0'
+  label: 'Bloque navegación innovación docente'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/113\r\n/node/114\r\n/node/344\r\n/node/466\r\n/node/476\r\n/node/489"

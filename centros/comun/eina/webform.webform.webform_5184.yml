@@ -1,0 +1,188 @@
+uuid: 42ce9571-2dd7-4dc5-b1dc-8f9c1a184869
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 79
+template: false
+archive: false
+id: webform_5184
+title: 'Info EINA - Solicitud de publicación'
+description: null
+category: null
+elements: |-
+  nombre_del_solicitante:
+    '#type': textfield
+    '#title': 'Nombre del solicitante'
+    '#required': true
+  nombre:
+    '#type': textfield
+    '#title': 'Unidad / Departamento / Servicio'
+    '#required': true
+  correo_electronico:
+    '#type': email
+    '#size': 20
+    '#title': 'Correo electrónico'
+    '#description': 'Utilizar una dirección de correo electrónico de @unizar.es'
+    '#required': true
+  fecha:
+    '#type': date
+    '#title': Fecha
+    '#description': 'Fecha en la que desearía su publicación'
+    '#required': true
+  titulo_de_la_informacion:
+    '#type': textfield
+    '#title': 'Título de la información'
+    '#required': true
+  url_del_evento:
+    '#type': textfield
+    '#title': 'URL del evento'
+    '#description': 'Si la información del evento se encuentra alojada en una web externa, indique la url correspondiente.'
+  colectivo_al_que_va_dirigida_la_informacion:
+    '#type': checkboxes
+    '#options':
+      Todos: 'Todos los colectivos'
+      PDI: PDI
+      PAS: PAS
+      EST: Estudiantes
+    '#multiple': true
+    '#title': 'Colectivo al que va dirigida la información'
+    '#description': 'Indique a qué coletivo/s va dirigida la información'
+    '#required': true
+  entradilla:
+    '#type': textarea
+    '#title': 'Entradilla / Resumen'
+    '#description': 'Opcionalmente puede indicar un breve texto introductorio'
+    '#states':
+      invisible:
+        - ':input[name="url_del_evento"]':
+            filled: false
+  contenido_de_la_noticia:
+    '#type': textarea
+    '#title': 'Contenido de la noticia'
+    '#required': true
+    '#states':
+      invisible:
+        - ':input[name="url_del_evento"]':
+            filled: false
+  imagen_de_la_noticia:
+    '#type': managed_file
+    '#max_filesize': !!float 2
+    '#file_extensions': 'gif jpg jpeg png'
+    '#title': 'Imagen de la noticia'
+    '#description': 'Se recomienda incluir una imagen para ilustrar la noticia en la web de la EINA  [Proporciones 18x10  (ancho x alto)]'
+    '#states':
+      invisible:
+        - ':input[name="url_del_evento"]':
+            filled: false
+  observaciones:
+    '#type': textarea
+    '#title': Observaciones
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: einarrss@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Enviado [webform_submission:completed_date:long]
+
+        Solicitud:
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_2:
+    id: email
+    handler_id: email_2
+    label: 'Email 2'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:correo_electronico:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: |+
+        Se ha recibido la siguiente información para su publicación en Info EINA.
+        Una vez aprobada, se procederá a su publicación.
+        [webform_submission:values]
+
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }

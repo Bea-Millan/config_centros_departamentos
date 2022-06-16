@@ -1,0 +1,36 @@
+uuid: 3caa2cd2-e9da-4044-be9d-c20a87daf513
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-te-interesa
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_departamento
+id: teinteresa
+theme: unizar_departamento
+region: columna_lateral
+weight: -18
+provider: null
+plugin: 'menu_block:menu-te-interesa'
+settings:
+  id: 'menu_block:menu-te-interesa'
+  label: 'Enlaces de interés '
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-te-interesa:'
+  suggestion: menu_te_interesa
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

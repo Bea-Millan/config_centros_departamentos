@@ -1,0 +1,30 @@
+uuid: a2968f08-c4d4-470b-a902-d919caa59f91
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0119c1fb-0432-4fce-a0e0-e49483641b4a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacioncongresos
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:0119c1fb-0432-4fce-a0e0-e49483641b4a'
+settings:
+  id: 'block_content:0119c1fb-0432-4fce-a0e0-e49483641b4a'
+  label: 'Bloque navegación congresos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/342\r\n/node/523\r\n/node/391\r\n/node/453\r\n/node/496\r\n/node/497\r\n/node/500\r\n/node/526\r\n/node/531\r\n/node/541\r\n/node/560\r\n/node/567\r\n/node/586\r\n/node/589"

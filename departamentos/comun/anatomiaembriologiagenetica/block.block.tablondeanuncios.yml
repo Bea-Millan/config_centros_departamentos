@@ -1,0 +1,31 @@
+uuid: 180b2d11-24a6-46d9-9480-636d90ef80fe
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-tabl-n-de-anuncios
+  module:
+    - menu_block
+  theme:
+    - unizar_departamento
+id: tablondeanuncios
+theme: unizar_departamento
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'menu_block:menu-tabl-n-de-anuncios'
+settings:
+  id: 'menu_block:menu-tabl-n-de-anuncios'
+  label: 'TABLÓN DE ANUNCIOS'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-tabl-n-de-anuncios:'
+  suggestion: menu_tabl_n_de_anuncios
+visibility: {  }

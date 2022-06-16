@@ -1,0 +1,30 @@
+uuid: 3e4af732-0df5-4845-b7a0-940c07b4113c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:63154853-6776-4d64-9843-afbc488f74b3'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: qualitysealforexcellence
+theme: unizar_departamento
+region: columna_lateral
+weight: 1
+provider: null
+plugin: 'block_content:63154853-6776-4d64-9843-afbc488f74b3'
+settings:
+  id: 'block_content:63154853-6776-4d64-9843-afbc488f74b3'
+  label: 'Quality Seal for Excellence'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/111\r\n/node/418"

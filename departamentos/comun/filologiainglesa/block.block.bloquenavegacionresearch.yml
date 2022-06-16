@@ -1,0 +1,30 @@
+uuid: 9054a1c4-e618-4f26-9e1e-4bc11e816a35
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d74454c3-1972-4eef-aa33-a1fbe384a055'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacionresearch
+theme: unizar_departamento
+region: columna_lateral
+weight: -14
+provider: null
+plugin: 'block_content:d74454c3-1972-4eef-aa33-a1fbe384a055'
+settings:
+  id: 'block_content:d74454c3-1972-4eef-aa33-a1fbe384a055'
+  label: Research
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/416\r\n/node/417\r\n/node/418"

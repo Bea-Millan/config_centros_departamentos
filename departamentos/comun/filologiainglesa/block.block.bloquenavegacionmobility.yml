@@ -1,0 +1,30 @@
+uuid: 6ffad795-352b-467e-9b68-980b9b6a06ca
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7066d21-783a-4942-9b35-8ffd385645ec'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacionmobility
+theme: unizar_departamento
+region: columna_lateral
+weight: -3
+provider: null
+plugin: 'block_content:c7066d21-783a-4942-9b35-8ffd385645ec'
+settings:
+  id: 'block_content:c7066d21-783a-4942-9b35-8ffd385645ec'
+  label: 'Bloque navegación mobility'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/423\r\n/node/427"

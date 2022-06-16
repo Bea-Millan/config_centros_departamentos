@@ -1,0 +1,30 @@
+uuid: 85b634db-4f67-4697-aace-22200a27c643
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6bdbc2ce-dee4-499a-912f-6bad5c2a6d8b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: magisterio
+theme: unizar_departamento
+region: columna_lateral
+weight: -10
+provider: null
+plugin: 'block_content:6bdbc2ce-dee4-499a-912f-6bad5c2a6d8b'
+settings:
+  id: 'block_content:6bdbc2ce-dee4-499a-912f-6bad5c2a6d8b'
+  label: '175 años de Magisterio en Zaragoza'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

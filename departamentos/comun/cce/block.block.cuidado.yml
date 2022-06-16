@@ -1,0 +1,30 @@
+uuid: 1f965b31-2322-49c7-a19c-16a47eb11d80
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:346a6506-beca-4b79-a2ae-e0a4e7295bff'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: cuidado
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:346a6506-beca-4b79-a2ae-e0a4e7295bff'
+settings:
+  id: 'block_content:346a6506-beca-4b79-a2ae-e0a4e7295bff'
+  label: 'Cuidado Educativo Integral'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

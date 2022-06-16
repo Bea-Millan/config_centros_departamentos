@@ -1,0 +1,30 @@
+uuid: b549a3d0-a330-4bf4-b2cf-a387cc48bf41
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c04546af-80f5-43b8-9c9d-196eb70ed890'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: direcciondedepartamento
+theme: unizar_departamento
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:c04546af-80f5-43b8-9c9d-196eb70ed890'
+settings:
+  id: 'block_content:c04546af-80f5-43b8-9c9d-196eb70ed890'
+  label: 'Dirección de Departamento'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

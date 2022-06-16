@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: qBV_8XxSb51d-5ZiTDlaAbYsJC7ybOeSMoHR2aQVMAM
+plugin:
+  host: inorganica.unizar.es
+  url_host: sites/inorganica
+langcode: es

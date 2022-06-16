@@ -1,0 +1,30 @@
+uuid: 9c6fd49e-ab31-4367-b116-5e5b422c3178
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b804892-8daf-4527-8e91-b40b921f0794'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacionestudiosavanzados
+theme: unizar_departamento
+region: columna_lateral
+weight: -13
+provider: null
+plugin: 'block_content:9b804892-8daf-4527-8e91-b40b921f0794'
+settings:
+  id: 'block_content:9b804892-8daf-4527-8e91-b40b921f0794'
+  label: 'Bloque navegación Estudios Avanzados'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/306\r\n/node/307\r\n/node/308\r\n/node/309\r\n/node/310\r\n/node/311\r\n/node/315\r\n/node/312\r\n/node/313\r\n/node/314\r\n/node/316\r\n/node/317"

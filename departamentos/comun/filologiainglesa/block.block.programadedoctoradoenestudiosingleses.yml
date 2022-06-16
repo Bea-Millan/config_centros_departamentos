@@ -1,0 +1,30 @@
+uuid: 3f64cd98-b923-4d61-8637-78e09673c93d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:27c283fa-ea54-4380-a3e9-98ea06449bbb'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: programadedoctoradoenestudiosingleses
+theme: unizar_departamento
+region: columna_lateral
+weight: -12
+provider: null
+plugin: 'block_content:27c283fa-ea54-4380-a3e9-98ea06449bbb'
+settings:
+  id: 'block_content:27c283fa-ea54-4380-a3e9-98ea06449bbb'
+  label: 'Programa de Doctorado en Estudios Ingleses'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: ''

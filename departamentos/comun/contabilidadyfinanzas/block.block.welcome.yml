@@ -1,0 +1,33 @@
+uuid: 3637578e-eabc-41b6-ae9b-7def5936cbf2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f7807d37-f253-4168-9300-cd1639abf976'
+  module:
+    - block_content
+    - language
+  theme:
+    - unizar_departamento
+id: welcome
+theme: unizar_departamento
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:f7807d37-f253-4168-9300-cd1639abf976'
+settings:
+  id: 'block_content:f7807d37-f253-4168-9300-cd1639abf976'
+  label: Welcome
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

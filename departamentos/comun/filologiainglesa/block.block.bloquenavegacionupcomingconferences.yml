@@ -1,0 +1,30 @@
+uuid: fcc7979a-7ee5-4c4c-8937-13497897baee
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:22a57f27-8940-4dd8-b821-3bbf3560f181'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacionupcomingconferences
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:22a57f27-8940-4dd8-b821-3bbf3560f181'
+settings:
+  id: 'block_content:22a57f27-8940-4dd8-b821-3bbf3560f181'
+  label: 'Bloque navegación Upcoming conferences'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/498\r\n/node/499\r\n/node/521\r\n/node/524\r\n/node/532"

@@ -1,0 +1,30 @@
+uuid: 0b0b1430-dadc-487a-aa32-302acdf9e3f7
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bbd85559-7542-438b-bcaa-ae035f897fc7'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: actasdelconsejodeldepartamento
+theme: unizar_departamento
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:bbd85559-7542-438b-bcaa-ae035f897fc7'
+settings:
+  id: 'block_content:bbd85559-7542-438b-bcaa-ae035f897fc7'
+  label: 'ACTAS DEL CONSEJO DEL DEPARTAMENTO'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

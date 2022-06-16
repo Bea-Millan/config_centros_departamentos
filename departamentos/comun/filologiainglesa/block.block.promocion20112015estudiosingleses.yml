@@ -1,0 +1,30 @@
+uuid: 8484c9fa-afce-4801-8126-490037cfa2b8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d9a51f15-2808-4b43-a857-7e919375ffba'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: promocion20112015estudiosingleses
+theme: unizar_departamento
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:d9a51f15-2808-4b43-a857-7e919375ffba'
+settings:
+  id: 'block_content:d9a51f15-2808-4b43-a857-7e919375ffba'
+  label: 'Promoción 2011-2015 Estudios Ingleses'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/563

@@ -1,0 +1,30 @@
+uuid: ebdbcfcb-3342-4dea-8d93-bfb46cf726fc
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b486be9a-37db-45e7-bb15-11505131e3c0'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: doctoradoenlauniversidaddezaragoza
+theme: unizar_centro
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:b486be9a-37db-45e7-bb15-11505131e3c0'
+settings:
+  id: 'block_content:b486be9a-37db-45e7-bb15-11505131e3c0'
+  label: 'Doctorado en la Universidad de Zaragoza en cifras'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: 00d1238d-24e9-4c00-a82a-074c06496a97
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2067e2ce-127c-4285-8b1b-564ade192e4e'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegacionmovilidad
+theme: unizar_departamento
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:2067e2ce-127c-4285-8b1b-564ade192e4e'
+settings:
+  id: 'block_content:2067e2ce-127c-4285-8b1b-564ade192e4e'
+  label: 'Bloque navegación Movilidad'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/38\r\n/node/39\r\n/node/103\r\n/node/104\r\n/node/105\r\n/node/106\r\n/node/107\r\n/node/112\r\n/node/318\r\n/node/319\r\n/node/330\r\n/node/347\r\n/node/389\r\n/node/425\r\n/node/426\r\n/node/463\r\n/node/480"

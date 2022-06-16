@@ -1,0 +1,30 @@
+uuid: 0b318207-4977-4b68-a0f2-275763c74270
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:17e56dd0-9550-495b-965b-037815ca0d7a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bloquenavegaciongrados
+theme: unizar_departamento
+region: columna_lateral
+weight: -16
+provider: null
+plugin: 'block_content:17e56dd0-9550-495b-965b-037815ca0d7a'
+settings:
+  id: 'block_content:17e56dd0-9550-495b-965b-037815ca0d7a'
+  label: 'Bloque navegación Grados'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/node/19\r\n/node/21\r\n/node/96\r\n/node/97\r\n/node/99\r\n/node/100\r\n/node/249\r\n/node/101\r\n/node/102\r\n/node/212\r\n/node/213\r\n/node/214\r\n/node/215\r\n/node/216\r\n/node/217\r\n/node/218\r\n/node/221\r\n/node/224\r\n/node/225\r\n/node/229\r\n/node/230\r\n/node/248\r\n/node/250\r\n/node/251\r\n/node/252\r\n/node/253\r\n/node/254\r\n/node/255\r\n/node/256\r\n/node/257\r\n/node/259\r\n/node/260\r\n/node/265\r\n/node/266\r\n/node/269\r\n/node/270\r\n/node/275\r\n/node/276\r\n/node/280\r\n/node/281\r\n/node/283\r\n/node/284\r\n/node/285\r\n/node/286\r\n/node/287\r\n/node/288\r\n/node/289\r\n/node/290\r\n/node/291\r\n/node/292\r\n/node/293\r\n/node/294\r\n/node/387"
