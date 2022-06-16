@@ -1,8 +1,0 @@
-uuid: 2e26a85f-724b-473b-83a3-b7052233dee0
-langcode: es
-status: true
-dependencies: {  }
-id: menu-menu-areasen
-label: menu-areas_en
-description: Áreas
-locked: false

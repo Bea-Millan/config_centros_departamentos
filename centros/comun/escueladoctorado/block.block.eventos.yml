@@ -1,6 +1,6 @@
 uuid: 335815fb-081e-4fbf-90af-6a7d101115fc
 langcode: es
-status: true
+status: false
 dependencies:
   content:
     - 'block_content:basic:c03fa9ca-8658-4988-941b-61b716427050'
@@ -12,7 +12,7 @@ dependencies:
 id: eventos
 theme: unizar_centro
 region: columna_lateral
-weight: -7
+weight: -1
 provider: null
 plugin: 'block_content:c03fa9ca-8658-4988-941b-61b716427050'
 settings:

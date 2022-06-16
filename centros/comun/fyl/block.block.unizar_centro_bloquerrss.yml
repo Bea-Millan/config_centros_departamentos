@@ -29,4 +29,12 @@ settings:
     youtube: ''
     linkedin: ''
     soundcloud: ''
+    rss: 1
+    blog_show: 0
+    instagram_show: 1
+    facebook_show: 1
+    twitter_show: 1
+    youtube_show: 1
+    linkedin_show: 0
+    soundcloud_show: 0
 visibility: {  }

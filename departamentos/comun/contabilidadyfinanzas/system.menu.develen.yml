@@ -1,8 +1,0 @@
-uuid: 4e7fd5bd-c571-45cc-bff4-51de735822ab
-langcode: es
-status: true
-dependencies: {  }
-id: develen
-label: Desarrollo_en
-description: 'Development link'
-locked: false

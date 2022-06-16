@@ -1,6 +1,6 @@
 uuid: 26ac5609-b3f1-4619-ac2d-263f8b8fe38a
 langcode: es
-status: true
+status: false
 dependencies:
   enforced:
     module:

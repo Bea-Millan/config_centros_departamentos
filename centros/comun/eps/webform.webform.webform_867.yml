@@ -141,7 +141,7 @@ handlers:
       sender_mail: ''
       sender_name: ''
       subject: 'Solicitud de bienes o servicios'
-      body: default
+      body: _default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true

@@ -17,7 +17,7 @@ _core:
 id: unizar_departamento_views_block__calendario_noticias_block_1
 theme: unizar_departamento
 region: columna_lateral
-weight: 0
+weight: -10
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

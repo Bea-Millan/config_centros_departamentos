@@ -1,8 +1,0 @@
-uuid: 8d8cead6-d122-47fb-ac2e-a4c8f34f3f53
-langcode: es
-status: true
-dependencies: {  }
-id: menu-intraneten
-label: Intranet_en
-description: ''
-locked: false

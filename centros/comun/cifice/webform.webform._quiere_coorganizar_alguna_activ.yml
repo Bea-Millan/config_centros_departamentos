@@ -94,7 +94,7 @@ elements: |-
     '#options':
       'Gestión de matrícula': 'Gestión de matrícula'
       'Certificación del CIFICE': 'Certificación del CIFICE'
-      'ntervención a lo largo del evento de alguien del equipo directivo del CIFICE': 'ntervención a lo largo del evento de alguien del equipo directivo del CIFICE'
+      'Intervención a lo largo del evento de alguien del equipo directivo del CIFICE': 'Intervención a lo largo del evento de alguien del equipo directivo del CIFICE'
     '#options__properties': ''
   servicios_para_contratar_en_el_cifice:
     '#type': webform_checkboxes_other
@@ -144,22 +144,27 @@ elements: |-
   observaciones:
     '#type': textfield
     '#title': Observaciones
-  _acepta_el_tratamiento_de_sus_datos_para_los_fines_exclusivos_de:
-    '#type': checkboxes
-    '#title': '¿Acepta el tratamiento de sus datos para los fines exclusivos de esta actividad?'
-    '#options':
-      SÍ: SÍ
-    '#required': true
-    '#options__properties': ''
   datospersonales:
     '#type': webform_message
     '#message_type': info
     '#message_message': |-
-      INFORMACI&Oacute;N SOBRE PROTECCION DE DATOS DE CAR&Aacute;CTER PERSONAL<br />
-      <br />
-      Conforme a lo dispuesto en la legislaci&oacute;n vigente en materia de protecci&oacute;n de datos de car&aacute;cter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasar&aacute;n a ser tratados, como responsable, por la Universidad de Zaragoza con la finalidad de gestionar su solicitud.<br />
-      Puede ejercitar sus derechos de acceso, rectificaci&oacute;n, limitaci&oacute;n, oposici&oacute;n o portabilidad ante el Gerente de la Universidad de Zaragoza (Edificio Paraninfo 1&ordf; planta, Plaza de Basilio Para&iacute;so n&ordm; 4, 50005- Zaragoza) se&ntilde;alando concretamente la causa de su solicitud y acompa&ntilde;ando copia de su documento acreditativo de identidad. La solicitud podr&aacute; hacerse mediante escrito en formato papel o por medios electr&oacute;nicos.<br />
-      En caso de no haber obtenido satisfacci&oacute;n en el ejercicio de sus derechos, puede dirigirse al Delegado/a de Protecci&oacute;n de Datos de la Universidad (<a href="mailto:dpd@unizar.es">dpd@unizar.es</a>) o en reclamaci&oacute;n a la Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos a trav&eacute;s de los formularios que tiene habilitados al efecto y que son accesibles desde su p&aacute;gina web: <a href="https://sedeagpd.gob.es/">https://sedeagpd.gob.es</a>&nbsp;
+      <p>Conforme a lo dispuesto en la legislaci&oacute;n vigente en materia de protecci&oacute;n de datos de car&aacute;cter personal (Reglamento (UE) 2016/679, de 27 de abril) le informamos que los datos personales que nos ha facilitado pasar&aacute;n a ser tratados, como&nbsp;<strong>responsable</strong>, por la&nbsp;<strong>Universidad de Zaragoza&nbsp;</strong>con la finalidad de tramitar la gesti&oacute;n acad&eacute;mica y administrativa de sus estudiantes as&iacute; como su participaci&oacute;n en actividades y servicios universitarios.<br />
+      &nbsp;</p>
+
+      <p>Puede ejercitar sus&nbsp;<strong>derechos de acceso, rectificaci&oacute;n, limitaci&oacute;n, oposici&oacute;n o portabilidad</strong>ante el&nbsp;<strong>Gerente de la Universidad de Zaragoza&nbsp;</strong>(Edificio Paraninfo 1.&ordf; planta, Plaza de Basilio Para&iacute;so n&ordm; 4, 50005- Zaragoza) se&ntilde;alando concretamente la causa de su solicitud y acompa&ntilde;ando copia de su documento acreditativo&nbsp; de&nbsp; identidad.&nbsp; La&nbsp; solicitud&nbsp; podr&aacute;&nbsp; hacerse&nbsp; mediante&nbsp; escrito&nbsp; en&nbsp; formato&nbsp;&nbsp; papel&nbsp;&nbsp; o&nbsp;&nbsp; por&nbsp; medios electr&oacute;nicos. En este enlace puede acceder a los distintos formularios para ejercitar sus derechos:&nbsp;<a href="http://protecciondatos.unizar.es/formularios">http://protecciondatos.unizar.es/formularios</a><br />
+      &nbsp;</p>
+
+      <p>En caso de no haber obtenido satisfacci&oacute;n en el ejercicio de sus derechos, puede dirigirse al Delegado de Protecci&oacute;n de Datos de la Universidad&nbsp;<a href="mailto:dpd@unizar.es">(dpd@unizar.es</a>&nbsp;Tfno. 876 55&nbsp; 36&nbsp; 13)&nbsp; o&nbsp; en&nbsp; reclamaci&oacute;n&nbsp; a&nbsp; la&nbsp; Agencia Espa&ntilde;ola de Protecci&oacute;n de Datos a trav&eacute;s de los formularios que esa entidad tiene habilitados al efecto y que son accesibles desde su&nbsp;<a href="https://sedeagpd.gob.es/">p&aacute;gina web: https://sedeagpd.gob.es</a><br />
+      &nbsp;</p>
+
+      <p><strong>Puede consultar toda la informaci&oacute;n al respecto en:</strong><br />
+      &nbsp;</p>
+
+      <p><a href="http://academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf">http://academico.unizar.es/sites/academico.unizar.es/files/archivos/vgacad/pdatos.pdf</a></p>
+  acepto_la_politica_de_privacidad_y_los_terminos_y_condiciones_de:
+    '#type': checkbox
+    '#title': 'Acepto la política de privacidad y los términos y condiciones de uso'
+    '#required': true
 css: ''
 javascript: ''
 settings:

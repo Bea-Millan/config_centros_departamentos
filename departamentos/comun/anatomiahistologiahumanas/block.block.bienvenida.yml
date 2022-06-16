@@ -12,7 +12,7 @@ dependencies:
 id: bienvenida
 theme: unizar_departamento
 region: content
-weight: -9
+weight: -8
 provider: null
 plugin: 'block_content:6de1b507-fb5d-41ea-999d-84e4cf8dd6b0'
 settings:

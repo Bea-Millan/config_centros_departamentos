@@ -1,8 +1,0 @@
-uuid: 8fd59f58-d249-4d20-b283-d8638bdedc4f
-langcode: es
-status: true
-dependencies: {  }
-id: menu-nuevo-menu-tir_en
-label: 'Enlaces de interés_en'
-description: 'Enlaces de interés para PDI y PAS'
-locked: false

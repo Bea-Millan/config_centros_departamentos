@@ -18,7 +18,7 @@ plugin: 'block_content:06af8e4a-0f22-492a-8bdd-08831ec31bf7'
 settings:
   id: 'block_content:06af8e4a-0f22-492a-8bdd-08831ec31bf7'
   label: 'Presentación departamento'
-  label_display: visible
+  label_display: '0'
   provider: block_content
   status: true
   info: ''
