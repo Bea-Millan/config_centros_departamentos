@@ -1,0 +1,9 @@
+uuid: fed796ed-f0ee-496c-bbc4-643a418371d2
+langcode: es
+status: true
+dependencies: {  }
+id: en
+label: English
+direction: ltr
+weight: 1
+locked: false

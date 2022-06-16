@@ -1,0 +1,99 @@
+uuid: 4f7d81a4-424a-42ee-9342-3702e1b8cfe8
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: 4U3opXL6dY3nMrGlzbELRB6rD7nMy-gtxtruymy0MMI
+id: upgrade_d7_file
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Public files'
+source:
+  plugin: d7_file
+  scheme: public
+  constants:
+    source_base_path: 'http://quimicaorganica.unizar.es/sites/quimicaorganica.unizar.es'
+    profile_base_path: 'public:'
+process:
+  fid:
+    -
+      plugin: get
+      source: fid
+  filename:
+    -
+      plugin: get
+      source: filename
+  prepare_path:
+    -
+      plugin: str_replace
+      regex: false
+      source: filepath
+      search:
+        - sites/quimicaorganica.unizar.es/
+        - sites/default/
+      replace: ''
+  source_full_path:
+    -
+      plugin: concat
+      delimiter: /
+      source:
+        - constants/source_base_path
+        - '@prepare_path'
+    -
+      plugin: urlencode
+  destination_prepare_path:
+    -
+      plugin: str_replace
+      regex: true
+      source: uri
+      search: '~<em>Editar Galería<\/em>.+?\/*~'
+      replace: ''
+    -
+      plugin: str_replace
+      regex: false
+      search: '/Crear Galería'
+      replace: ''
+  uri:
+    -
+      plugin: file_copy
+      source:
+        - '@source_full_path'
+        - '@destination_prepare_path'
+    -
+      plugin: skip_on_404
+      method: row
+      message: '@source_full_path'
+  filemime:
+    -
+      plugin: get
+      source: filemime
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: timestamp
+  changed:
+    -
+      plugin: get
+      source: timestamp
+  uid:
+    -
+      plugin: get
+      source: uid
+destination:
+  plugin: 'entity:file'
+migration_dependencies:
+  required: {  }
+  optional: {  }

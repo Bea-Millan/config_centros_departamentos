@@ -1,0 +1,8 @@
+uuid: 65cfadb9-6d30-4245-b0d8-0babea20a471
+langcode: es
+status: true
+dependencies: {  }
+id: menu-vistas-personal
+label: 'Vistas Personal'
+description: 'KListado del personal en función de la categoría y del Organismo'
+locked: false

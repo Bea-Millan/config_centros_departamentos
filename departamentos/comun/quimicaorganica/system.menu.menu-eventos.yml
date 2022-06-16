@@ -1,0 +1,8 @@
+uuid: 8bd3f3fd-a564-44aa-9f5f-2b38c7eee60f
+langcode: es
+status: true
+dependencies: {  }
+id: menu-eventos
+label: Eventos
+description: 'Noticias y Actividades'
+locked: false

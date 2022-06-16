@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: 2Q19dPYyNJxGB9DRpmRhk7TyReo98BozQeO0Upnw3lk
+plugin:
+  host: quimicaorganica.unizar.es
+  url_host: sites/quimicaorganica
+langcode: es
