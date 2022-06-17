@@ -1,0 +1,8 @@
+uuid: 331d1c40-7e01-4e60-9964-2876dd3619f5
+langcode: es
+status: true
+dependencies: {  }
+id: menu-crisisen
+label: 'Te interesa_en'
+description: ''
+locked: false
