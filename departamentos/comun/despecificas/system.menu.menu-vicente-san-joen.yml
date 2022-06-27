@@ -1,8 +1,0 @@
-uuid: a233dec6-cc82-4da6-a679-e41ecb2606fc
-langcode: es
-status: true
-dependencies: {  }
-id: menu-vicente-san-joen
-label: 'Vicente San José_en'
-description: 'https://dcexperimentales.unizar.es/sites/dcexperimentales.unizar.es/files/archivos/41_vsanjose.pdf'
-locked: false
