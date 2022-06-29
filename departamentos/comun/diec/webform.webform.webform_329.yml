@@ -1,0 +1,213 @@
+uuid: 2f308598-9c3e-4074-a852-270931e0d38d
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 4
+template: false
+archive: false
+id: webform_329
+title: 'Direccion de trabajos fin de estudio'
+description: null
+category: null
+elements: |-
+  fieldset_datos_del_tutor:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos tutor'
+    fieldset_director_1:
+      '#type': fieldset
+      '#open': true
+      '#title': DIRECTOR
+      nip_director_15:
+        '#title': NIP
+        '#required': true
+      nombre_director_15:
+        '#type': textfield
+        '#title': Nombre
+        '#required': true
+      centro_director_15:
+        '#type': select
+        '#options':
+          EINA: EINA
+          FC: CIENCIAS
+          EUPT: EUPT
+        '#title': Centro
+        '#required': true
+      area_director_15:
+        '#type': select
+        '#options':
+          E: Electrónica
+          IT: 'Ingeniería telemática'
+          TE: 'Tecnología electrónica'
+          TSC: 'Teoría de la señal y comunicaciones'
+        '#title': Area
+        '#required': true
+    fieldset_codirector_1:
+      '#type': fieldset
+      '#open': true
+      '#title': CODIRECTOR
+      nip_codirector_17:
+        '#type': textfield
+        '#size': 20
+        '#unique': false
+        '#title': NIP
+      nombre_codirector_17:
+        '#type': textfield
+        '#title': Nombre
+      centro_codirector_17:
+        '#type': select
+        '#options':
+          EINA: EINA
+          FC: CIENCIAS
+          EUPT: EUPT
+        '#title': Centro
+      area_codirector_17:
+        '#type': select
+        '#options':
+          E: Electrónica
+          IT: 'Ingeniería telemática'
+          TE: 'Tecnología electrónica'
+          TSC: 'Teoría de la señal y comunicaciones'
+        '#title': Area
+    fieldset_ponente_1:
+      '#type': fieldset
+      '#open': true
+      '#title': PONENTE
+      nip_ponente_23:
+        '#type': textfield
+        '#size': 20
+        '#unique': false
+        '#title': NIP
+      nombre_ponente_23:
+        '#type': textfield
+        '#title': Nombre
+      centro_ponente_23:
+        '#type': select
+        '#options':
+          EINA: EINA
+          FC: CIENCIAS
+          EUPT: EUPT
+        '#title': Centro
+      area_ponente_23:
+        '#type': select
+        '#options':
+          E: Electrónica
+          IT: 'Ingeniería telemática'
+          TE: 'Tecnología electrónica'
+          TSC: 'Teoría de la señal y comunicaciones'
+        '#title': Area
+  fieldset_datos_del_alumno:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos del alumno'
+    nip_alumno_4:
+      '#type': textfield
+      '#size': 20
+      '#unique': false
+      '#title': NIP
+      '#required': true
+    nombre_alumno_4:
+      '#type': textfield
+      '#title': Nombre
+      '#required': true
+  fieldset_datos_de_la_tesis:
+    '#type': fieldset
+    '#open': true
+    '#title': 'Datos del trabajo'
+    curso_academico_8:
+      '#type': select
+      '#options':
+        2018-2019: 2018-2019
+      '#title': 'Curso Academico'
+      '#required': true
+    centro_trabajo_8:
+      '#type': select
+      '#options':
+        EINA: EINA
+        FC: CIENCIAS
+        EUPT: EUPT
+      '#title': Centro
+      '#required': true
+    area_trabajo_8:
+      '#type': select
+      '#options':
+        E: Electrónica
+        IT: 'Ingeniería telemática'
+        TE: 'Tecnología electrónica'
+        TSC: 'Teoría de la señal y comunicaciones'
+      '#title': Area
+      '#required': true
+    titulacion_8:
+      '#type': select
+      '#options':
+        447: '447-Grado en física'
+        430: '430-Grado en ingeniería eléctrica'
+        440: '440-Grado en ingeniería electrónica y automática(EINA)'
+        444: '444-Grado en ingeniería electrónica y automática(EUPT)'
+        436: '436-Grado en ingeniería de tecnologías industriales'
+        439: '439-Grado en ingeniería informática(EINA)'
+        443: '443-Grado en ingeniería informática(EUPT)'
+        438: '438-Grado en ingeniería de tecnologias y servicios de telecomunicación'
+        532: '532-Máster universitario en ingeniería industrial'
+        533: '533-Máster universitario en ingeniería de telecomunicación'
+        534: '534-Máster universitario en ingeniería Informatica'
+        562: '562-Máster universitario en ingeniería de producto'
+        536: '536-Máster universitario en ingeniería mecanica'
+        527: '527-Máster universitario en ingeniería electronica'
+        547: '547-Máster universitario en ingeniería biomédica'
+      '#title': Titulacion
+      '#required': true
+    titulo_previsto_8:
+      '#type': textfield
+      '#title': 'Titulo previsto'
+      '#required': true
+    asignatura_8:
+      '#type': select
+      '#options':
+        26931: '26931-TFG Grado en física'
+        29634: '29634-TFG Grado en ingeniería eléctrica'
+        29833: '29833-TFG Grado en ingeniería electrónica y automática'
+        30033: '30033-TFG Grado en ingeniería de tecnologías industriales'
+        30269: '30269-TFG Grado en ingeniería informática(EINA)'
+        30271: '30271-TFG Grado en ingeniería informática(Sistemas de informacion)'
+        30272: '30272-TFG Grado en ingeniería informática(Tecnologias de la informacion)'
+        30363: '30363-TFG Grado en ingeniería de telecomunicación (Sistemas Electronicos)'
+        30364: '30364-TFG Grado en ingeniería de telecomunicación (Sistemas de Telecomunicacion)'
+        30365: '30365-TFG Grado en ingeniería de telecomunicación (Telematica)'
+        60844: '60844-TFM Máster universitario en ingeniería industrial'
+        60847: '60847-TFM Máster universitario en ingeniería industrial(Sistemas electronicos)'
+        60934: '60934-TFM Máster universitario en ingeniería de telecomunicación'
+        62233: '62233-TFM Máster universitario en ingeniería Informatica'
+        62945: '62945-TFM Máster universitario en ingeniería de producto'
+        66435: '66435-TFM Máster universitario en ingeniería mecanica'
+        67200: '67200-TFM Máster universitario en ingeniería electronica'
+        69330: '69330-TFM Máster universitario en ingeniería biomédica(Tecnologías de la información)'
+        69331: '69331-TFM Máster universitario en ingeniería biomédica(sin especialidad)'
+      '#title': Asignatura
+      '#required': true
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Muchas gracias, sus datos han sido almacenados.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }

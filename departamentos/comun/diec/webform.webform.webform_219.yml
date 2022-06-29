@@ -1,0 +1,53 @@
+uuid: caaf0878-f50e-4a6e-8512-2b6ee09557a5
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 8
+template: false
+archive: false
+id: webform_219
+title: 'Prueba de cuestionario'
+description: null
+category: null
+elements: |-
+  componente1:
+    '#type': textfield
+    '#title': Componente1
+  componente_2:
+    '#type': webform_likert
+    '#questions':
+      -
+        - ''
+    '#answers':
+      -
+        - ''
+    '#title': 'Componente 2'
+  fecha:
+    '#type': date
+    '#title': Fecha
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: ''
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers: {  }
+variants: {  }
