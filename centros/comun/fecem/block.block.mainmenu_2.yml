@@ -1,0 +1,39 @@
+uuid: 203e0857-7adb-4b71-8a19-e0c3e6cb1754
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - language
+    - menu_block
+  theme:
+    - unizar_centro
+id: mainmenu_2
+theme: unizar_centro
+region: columna_lateral
+weight: -12
+provider: null
+plugin: 'menu_block:main'
+settings:
+  id: 'menu_block:main'
+  label: 'Main menu'
+  label_display: visible
+  provider: menu_block
+  follow: true
+  follow_parent: active
+  label_link: false
+  label_type: parent
+  level: 2
+  depth: 0
+  expand_all_items: true
+  parent: 'main:'
+  suggestion: main
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es

@@ -1,0 +1,36 @@
+uuid: 1c06c698-f317-4d8a-a295-1c1564fae0b5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-iv-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: ivolimpiada
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-iv-olimpiada'
+settings:
+  id: 'menu_block:menu-iv-olimpiada'
+  label: 'IV Olimpiada'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-iv-olimpiada:'
+  suggestion: menu_iv_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/iv-olimpiada/*'

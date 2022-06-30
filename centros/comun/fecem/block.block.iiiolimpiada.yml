@@ -1,0 +1,36 @@
+uuid: a063ee89-d8b6-4f3a-be48-0336bc0bb81a
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-iii-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: iiiolimpiada
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-iii-olimpiada'
+settings:
+  id: 'menu_block:menu-iii-olimpiada'
+  label: 'III Olimpiada'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-iii-olimpiada:'
+  suggestion: menu_iii_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/iii-olimpiada/*'

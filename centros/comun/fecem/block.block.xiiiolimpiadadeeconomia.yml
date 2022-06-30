@@ -1,0 +1,36 @@
+uuid: 3c68d7a2-e78f-43d4-9c5e-bb29c32b57a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-xiii-olimpiada-de-econom-a
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: xiiiolimpiadadeeconomia
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-xiii-olimpiada-de-econom-a'
+settings:
+  id: 'menu_block:menu-xiii-olimpiada-de-econom-a'
+  label: 'XIII Olimpiada de Economía'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-xiii-olimpiada-de-econom-a:'
+  suggestion: menu_xiii_olimpiada_de_econom_a
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/xiii-olimpiada/*'

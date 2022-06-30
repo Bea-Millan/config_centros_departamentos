@@ -1,0 +1,36 @@
+uuid: 0c4f5af4-fcba-462e-bafe-001b920145a7
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-v-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: volimpiada
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-v-olimpiada'
+settings:
+  id: 'menu_block:menu-v-olimpiada'
+  label: 'V Olimpiada'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-v-olimpiada:'
+  suggestion: menu_v_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/v-olimpiada/*'

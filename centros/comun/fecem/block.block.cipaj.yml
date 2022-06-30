@@ -1,0 +1,25 @@
+uuid: 35b19df5-4f70-4224-8213-62834aa27bfd
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:70ee80f9-b48f-4bd4-bfff-7fbbc44beb97'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: cipaj
+theme: unizar_centro
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:70ee80f9-b48f-4bd4-bfff-7fbbc44beb97'
+settings:
+  id: 'block_content:70ee80f9-b48f-4bd4-bfff-7fbbc44beb97'
+  label: CIPAJ
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

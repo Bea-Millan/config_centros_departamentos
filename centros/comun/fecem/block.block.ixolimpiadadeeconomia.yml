@@ -1,0 +1,36 @@
+uuid: 16febe7d-96b6-406b-8e62-10c2f4b79fd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-ix-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: ixolimpiadadeeconomia
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-ix-olimpiada'
+settings:
+  id: 'menu_block:menu-ix-olimpiada'
+  label: 'IX Olimpiada de Economía'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-ix-olimpiada:'
+  suggestion: menu_ix_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/ix-olimpiada/*'

@@ -5,13 +5,14 @@ dependencies:
   config:
     - views.view.noticias
   module:
+    - system
     - views
   theme:
     - unizar_centro
 id: views_block__noticias_block_1_2
 theme: unizar_centro
 region: columna_lateral
-weight: -8
+weight: -9
 provider: null
 plugin: 'views_block:noticias-block_1'
 settings:
@@ -19,6 +20,15 @@ settings:
   label: ' Actualidad'
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ' Actualidad'
   items_per_page: none
-visibility: {  }
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

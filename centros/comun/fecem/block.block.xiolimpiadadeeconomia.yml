@@ -1,0 +1,36 @@
+uuid: 87de3097-9fb8-4b83-a6bc-2983a39c8b20
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-xi-olimpiada-presentaci-n
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: xiolimpiadadeeconomia
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-xi-olimpiada-presentaci-n'
+settings:
+  id: 'menu_block:menu-xi-olimpiada-presentaci-n'
+  label: 'XI Olimpiada de Economía'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-xi-olimpiada-presentaci-n:'
+  suggestion: menu_xi_olimpiada_presentaci_n
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/xi-olimpiada/*'

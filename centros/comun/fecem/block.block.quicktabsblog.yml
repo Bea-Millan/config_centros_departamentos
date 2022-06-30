@@ -4,12 +4,13 @@ status: true
 dependencies:
   module:
     - quicktabs
+    - system
   theme:
     - unizar_centro
 id: quicktabsblog
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -5
 provider: null
 plugin: 'quicktabs_block:blog'
 settings:
@@ -17,4 +18,8 @@ settings:
   label: Blog
   label_display: visible
   provider: quicktabs
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

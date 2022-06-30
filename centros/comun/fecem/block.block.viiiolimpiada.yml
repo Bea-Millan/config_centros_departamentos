@@ -1,0 +1,36 @@
+uuid: f28de873-fcf8-456a-863a-cb588646b56f
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-viii-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: viiiolimpiada
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-viii-olimpiada'
+settings:
+  id: 'menu_block:menu-viii-olimpiada'
+  label: 'VIII Olimpiada'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-viii-olimpiada:'
+  suggestion: menu_viii_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/viii-olimpiada/*'

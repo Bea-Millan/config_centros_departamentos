@@ -1,32 +1,32 @@
-uuid: 9abf6c20-a38e-41f4-93dc-820d0e61a708
+uuid: a440a206-86c6-4a35-a8c7-72dc5e3d8ecf
 langcode: es
 status: true
 dependencies:
   config:
-    - views.view.parrilla_principal
+    - views.view.noticias
   module:
     - system
     - views
   theme:
     - unizar_centro
-id: views_block__parrilla_principal_block_2
+id: views_block__noticias_block_2_2
 theme: unizar_centro
 region: content
-weight: -3
+weight: -18
 provider: null
-plugin: 'views_block:parrilla_principal-block_2'
+plugin: 'views_block:noticias-block_2'
 settings:
-  id: 'views_block:parrilla_principal-block_2'
-  label: ''
-  label_display: '0'
+  id: 'views_block:noticias-block_2'
+  label: 'Noticias destacadas'
+  label_display: visible
   provider: views
   context_mapping: {  }
-  views_label: ''
+  views_label: 'Noticias destacadas'
   items_per_page: none
   arguments:
     Sección:
       type: taxonomy_index_tid_depth
-      value: '330'
+      value: ''
 visibility:
   request_path:
     id: request_path

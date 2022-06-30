@@ -1,0 +1,36 @@
+uuid: fd42c1ea-aa8f-4a74-a71a-252e0cc7836e
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-i-olimpiada
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: iolimpiada
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-i-olimpiada'
+settings:
+  id: 'menu_block:menu-i-olimpiada'
+  label: 'I Olimpiada'
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-i-olimpiada:'
+  suggestion: menu_i_olimpiada
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/olimpiada/i-olimpiada/*'

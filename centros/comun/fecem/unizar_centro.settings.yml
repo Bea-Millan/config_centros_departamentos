@@ -11,7 +11,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://img/logo-svg/fecem10-01.svg'
+  path: 'public://img/logo-svg/fecem-01.svg'
   use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

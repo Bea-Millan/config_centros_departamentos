@@ -1,0 +1,25 @@
+uuid: b48aefa4-4134-4fa0-9aa4-3f4473dfd644
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0ef8515d-f1f7-477e-a683-444eca806fe0'
+  module:
+    - block_content
+  theme:
+    - unizar_centro
+id: facebookrelacionesinternacionales
+theme: unizar_centro
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:0ef8515d-f1f7-477e-a683-444eca806fe0'
+settings:
+  id: 'block_content:0ef8515d-f1f7-477e-a683-444eca806fe0'
+  label: 'Facebook Relaciones Internacionales'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
