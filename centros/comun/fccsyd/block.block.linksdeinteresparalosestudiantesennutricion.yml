@@ -1,0 +1,30 @@
+uuid: 09073cb7-b127-46ab-8221-e5a42722f425
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5bc5ac4b-b3fc-4f83-8230-5ea793cccf00'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksdeinteresparalosestudiantesennutricion
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:5bc5ac4b-b3fc-4f83-8230-5ea793cccf00'
+settings:
+  id: 'block_content:5bc5ac4b-b3fc-4f83-8230-5ea793cccf00'
+  label: 'Links de interés para los estudiantes en Nutrición'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/nutricion/*'

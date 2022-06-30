@@ -1,0 +1,30 @@
+uuid: 9fe71a60-89d0-4249-81ff-81f0565f0af3
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f24ddc19-7b08-4256-b607-c9842b238100'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: videopromocionalcafyd
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:f24ddc19-7b08-4256-b607-c9842b238100'
+settings:
+  id: 'block_content:f24ddc19-7b08-4256-b607-c9842b238100'
+  label: 'Vídeo promocional CAFYD'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /deporte/grado-en-ciencias-de-la-actividad-fisica-y-del-deporte

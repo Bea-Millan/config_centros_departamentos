@@ -1,0 +1,30 @@
+uuid: 40ea4f2d-a996-439f-8dd5-9a0283c5d217
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1df962e0-55c5-4c09-97b7-f2b1f65dd603'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: mapaubicacion
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:1df962e0-55c5-4c09-97b7-f2b1f65dd603'
+settings:
+  id: 'block_content:1df962e0-55c5-4c09-97b7-f2b1f65dd603'
+  label: Ubicación
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/institucional/*\r\n/deportes/*\r\n/medicina/*\r\n/nutricion/*\r\n/odontologia/*\r\n/nhydycafyd/*\r\n/deporte/*"

@@ -1,9 +1,9 @@
-uuid: 76ed8c08-c42b-461d-aa2b-1b3f8b4e1ed2
-langcode: es
+uuid: e6d1c7bf-e66a-46eb-b8af-d67e3487cb3b
+langcode: fr
 status: true
 dependencies:
   config:
-    - system.menu.main_fr
+    - system.menu.mainfr
   module:
     - language
     - superfish
@@ -14,9 +14,9 @@ theme: unizar_centro
 region: menu_principal
 weight: 0
 provider: null
-plugin: 'superfish:main_fr'
+plugin: 'superfish:mainfr'
 settings:
-  id: 'superfish:main_fr'
+  id: 'superfish:mainfr'
   label: 'Main menu_fr'
   label_display: '0'
   provider: superfish

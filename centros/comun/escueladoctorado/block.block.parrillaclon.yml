@@ -18,7 +18,7 @@ _core:
 id: parrillaclon
 theme: unizar_centro
 region: content
-weight: -5
+weight: 0
 provider: null
 plugin: 'views_block:parrilla_principal-block_1'
 settings:

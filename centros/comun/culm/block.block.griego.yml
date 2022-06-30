@@ -1,0 +1,36 @@
+uuid: ac89db2a-e234-416f-a2d6-404b3c3d36ca
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.menu-griego
+  module:
+    - menu_block
+    - system
+  theme:
+    - unizar_centro
+id: griego
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'menu_block:menu-griego'
+settings:
+  id: 'menu_block:menu-griego'
+  label: Griego
+  label_display: visible
+  provider: menu_block
+  follow: false
+  follow_parent: child
+  label_link: false
+  label_type: block
+  level: 1
+  depth: 0
+  expand_all_items: false
+  parent: 'menu-griego:'
+  suggestion: menu_griego
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/secciones/griego/*\r\n/griego/*"

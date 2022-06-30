@@ -1,0 +1,30 @@
+uuid: b4094757-12f6-4664-90c7-1d01b0324c6f
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:09401621-72b0-4423-a225-0a5053cb377a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksdeinteresparalosestudiantesenmedicina
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:09401621-72b0-4423-a225-0a5053cb377a'
+settings:
+  id: 'block_content:09401621-72b0-4423-a225-0a5053cb377a'
+  label: 'Links de interés para los estudiantes en Medicina'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/medicina/*'

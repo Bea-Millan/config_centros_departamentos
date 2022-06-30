@@ -1,4 +1,4 @@
-uuid: fdd26676-98f8-4682-a610-383efac73af2
+uuid: 45359467-467b-495b-a9bb-6f92e1f07962
 langcode: es
 status: false
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: DYfgcPdoJumj5YNT8aT1aQ68G-4WZeRIOorryI6Aa0Y
+  default_config_hash: azuomN6KEw8iUv8YBIHIpq3kIx7CUmxqb4Q3Du2-8Qo
 id: upgrade_d7_menu_en
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -39,6 +39,7 @@ process:
   id:
     -
       plugin: concat
+      delimiter: _
       source:
         - '@name'
         - constants/langcode

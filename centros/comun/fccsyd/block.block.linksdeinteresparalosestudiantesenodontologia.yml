@@ -1,0 +1,30 @@
+uuid: 6925ce1e-be65-4f7b-8495-008b8057b701
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:95271ce6-8570-4d57-afad-39f8dab51996'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksdeinteresparalosestudiantesenodontologia
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:95271ce6-8570-4d57-afad-39f8dab51996'
+settings:
+  id: 'block_content:95271ce6-8570-4d57-afad-39f8dab51996'
+  label: 'Links de interés para los estudiantes en Odontologia'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/odontologia/*'

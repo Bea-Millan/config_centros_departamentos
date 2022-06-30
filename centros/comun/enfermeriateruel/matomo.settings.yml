@@ -1,3 +1,4 @@
+langcode: es
 site_id: '146'
 url_http: 'http://staweb.unizar.es/matomo/'
 url_https: 'https://staweb.unizar.es/matomo/'

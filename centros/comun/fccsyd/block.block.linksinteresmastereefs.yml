@@ -1,0 +1,30 @@
+uuid: 23573b2a-eb98-4789-b44f-e712a9d0dc25
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:47c9345a-9242-453f-b065-16852eed75f6'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksinteresmastereefs
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:47c9345a-9242-453f-b065-16852eed75f6'
+settings:
+  id: 'block_content:47c9345a-9242-453f-b065-16852eed75f6'
+  label: 'Links Interés Master EEFS'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/masterdeportesalud/*'

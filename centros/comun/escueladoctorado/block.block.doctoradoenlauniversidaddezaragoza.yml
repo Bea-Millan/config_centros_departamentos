@@ -12,7 +12,7 @@ dependencies:
 id: doctoradoenlauniversidaddezaragoza
 theme: unizar_centro
 region: content
-weight: -7
+weight: -2
 provider: null
 plugin: 'block_content:b486be9a-37db-45e7-bb15-11505131e3c0'
 settings:

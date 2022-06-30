@@ -1,0 +1,30 @@
+uuid: 97ba1679-4e46-41e0-b15b-9d20641bbd7c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:16e824d4-44ad-40ad-a017-a938d689ee0b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: organizacioninstitucionaldelcentro
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:16e824d4-44ad-40ad-a017-a938d689ee0b'
+settings:
+  id: 'block_content:16e824d4-44ad-40ad-a017-a938d689ee0b'
+  label: 'Organización Institucional del Centro'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/organizacion/*'

@@ -1,0 +1,30 @@
+uuid: 9d76b324-5294-45f3-8dd4-0bcab0e6d838
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:98a206f7-7059-46e3-9036-bb16a0d94474'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksdeinteresparalosestudiantesendeporte_2
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:98a206f7-7059-46e3-9036-bb16a0d94474'
+settings:
+  id: 'block_content:98a206f7-7059-46e3-9036-bb16a0d94474'
+  label: 'Links de interés para los estudiantes en Deporte'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/deporte/*'

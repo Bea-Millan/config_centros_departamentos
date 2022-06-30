@@ -1,0 +1,30 @@
+uuid: 8899e685-c40e-4f66-a40e-d03bb6137869
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:37e9ab4f-7d4a-4e9b-a1e1-b3121d2e243a'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: linksdeinteresprogramaconjuntonhydycafyd
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:37e9ab4f-7d4a-4e9b-a1e1-b3121d2e243a'
+settings:
+  id: 'block_content:37e9ab4f-7d4a-4e9b-a1e1-b3121d2e243a'
+  label: 'Links de Interés Programa Conjunto NHYD y CAFYD'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/nhydycafyd/*'

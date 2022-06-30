@@ -1,0 +1,30 @@
+uuid: 491488a4-96c5-49df-ac1b-ee663863d512
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6aa627b3-0f6b-4872-9b3d-4a6ccf1099e0'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: direcciondelserviciodepracticasodontologicas
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:6aa627b3-0f6b-4872-9b3d-4a6ccf1099e0'
+settings:
+  id: 'block_content:6aa627b3-0f6b-4872-9b3d-4a6ccf1099e0'
+  label: 'Dirección del Servicio de Prácticas Odontológicas'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /servicios/servicio-de-practicas-odontologicas

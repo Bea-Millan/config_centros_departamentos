@@ -30,6 +30,7 @@ dependencies:
     - system
     - taxonomy
     - toolbar
+    - view_unpublished
     - views_ui
 _core:
   default_config_hash: sy4leADBKi-HbVXrZxxXHB-A5NkagIXX33cTiY7hwow

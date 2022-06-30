@@ -1,0 +1,30 @@
+uuid: 0f530566-2dc0-4ee6-967e-2ab3d0276422
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d8f89c6e-3ba5-4afc-9ad3-b1027dd46d94'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_centro
+id: masterodontologia
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:d8f89c6e-3ba5-4afc-9ad3-b1027dd46d94'
+settings:
+  id: 'block_content:d8f89c6e-3ba5-4afc-9ad3-b1027dd46d94'
+  label: 'Links Máster propio en periodoncia e implantología oral'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/masterodontologia/*'

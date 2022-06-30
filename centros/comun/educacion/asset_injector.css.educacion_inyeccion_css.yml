@@ -1,0 +1,19 @@
+uuid: cffbd912-9643-4915-be72-6abb6b599448
+langcode: es
+status: true
+dependencies: {  }
+id: educacion_inyeccion_css
+label: 'educacion inyección css'
+code: |-
+  .nav .region-menu-principal .sf-menu a, .nav .region-menu-principal .sf-menu li > span {
+      padding: 1rem 1rem;
+  }
+
+  .accordion-content {
+      margin: 0!important;
+  }
+media: all
+preprocess: true
+conditions: {  }
+contexts: {  }
+conditions_require_all: true

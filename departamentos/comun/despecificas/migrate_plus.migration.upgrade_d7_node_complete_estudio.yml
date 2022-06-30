@@ -1,4 +1,4 @@
-uuid: 96f788eb-fbbe-43eb-a0dc-42430cfbf5e0
+uuid: 86c25863-1154-448f-a84d-cc6a3b72d34f
 langcode: es
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: n7bhQTA1BlrrJFneBmC8ezVkfPw9I9pQORiYGOLtMI8
+  default_config_hash: HCtxHSCudo091398VIGlNcRjW25du7abhy61ZnuiYVI
 id: upgrade_d7_node_complete_estudio
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -66,12 +66,8 @@ process:
       source: timestamp
   field_link_estudio_personalizado:
     -
-      plugin: null_coalesce
-      source:
-        - field_link_noticia
-        - field_link_titulacion
-    -
       plugin: sub_process
+      source: field_link_noticia
       process:
         uri: value
   field_tipo_estudio:
