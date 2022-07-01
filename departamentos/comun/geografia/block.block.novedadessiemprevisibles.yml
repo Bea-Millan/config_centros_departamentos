@@ -1,0 +1,30 @@
+uuid: 460d41d7-f41d-4786-b4ea-eccf3ab40d45
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e3e13cd7-44b9-4f80-b64d-f6821c277f19'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: novedadessiemprevisibles
+theme: unizar_departamento
+region: columna_lateral
+weight: -7
+provider: null
+plugin: 'block_content:e3e13cd7-44b9-4f80-b64d-f6821c277f19'
+settings:
+  id: 'block_content:e3e13cd7-44b9-4f80-b64d-f6821c277f19'
+  label: 'Te puede interesar...'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

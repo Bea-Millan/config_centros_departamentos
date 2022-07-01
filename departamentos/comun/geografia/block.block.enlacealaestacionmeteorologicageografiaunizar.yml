@@ -1,0 +1,30 @@
+uuid: 00e3b7d6-6aea-4b32-b364-5fb1eb1f6148
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:71740106-d377-4a17-b00c-c8bf0c87b44b'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: enlacealaestacionmeteorologicageografiaunizar
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:71740106-d377-4a17-b00c-c8bf0c87b44b'
+settings:
+  id: 'block_content:71740106-d377-4a17-b00c-c8bf0c87b44b'
+  label: 'Enlace a la estación meteorológica Geografía Unizar'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

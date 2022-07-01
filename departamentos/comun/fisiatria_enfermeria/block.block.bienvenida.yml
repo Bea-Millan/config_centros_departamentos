@@ -1,0 +1,30 @@
+uuid: b7c70fa2-05c3-4d49-932b-456ee6091048
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3bf086fa-6111-4714-8ff1-65b0d92d9eab'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: bienvenida
+theme: unizar_departamento
+region: content
+weight: -10
+provider: null
+plugin: 'block_content:3bf086fa-6111-4714-8ff1-65b0d92d9eab'
+settings:
+  id: 'block_content:3bf086fa-6111-4714-8ff1-65b0d92d9eab'
+  label: Bienvenida
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

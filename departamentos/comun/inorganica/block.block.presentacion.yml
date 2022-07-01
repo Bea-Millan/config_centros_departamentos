@@ -1,0 +1,30 @@
+uuid: 0738adbf-9815-4dd5-a912-1b86e41bdf55
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f3ae1d0c-9a2e-407e-b799-8a488e8b82f4'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: presentacion
+theme: unizar_departamento
+region: content
+weight: -7
+provider: null
+plugin: 'block_content:f3ae1d0c-9a2e-407e-b799-8a488e8b82f4'
+settings:
+  id: 'block_content:f3ae1d0c-9a2e-407e-b799-8a488e8b82f4'
+  label: Presentación
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: c5ebf4e0-f64c-4eea-93cf-9db9c4b9b89b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7f82fbb-8d20-47ea-a686-b17eb3d225aa'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: trabajofindegrado
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:c7f82fbb-8d20-47ea-a686-b17eb3d225aa'
+settings:
+  id: 'block_content:c7f82fbb-8d20-47ea-a686-b17eb3d225aa'
+  label: 'TRABAJO FIN DE GRADO'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

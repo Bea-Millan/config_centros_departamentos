@@ -1,0 +1,25 @@
+uuid: 117cdde9-ec56-40d2-a29c-f4eeea184d3e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4d46410a-2183-4b76-8e0e-80813ff841b1'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: noticiaseventos
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:4d46410a-2183-4b76-8e0e-80813ff841b1'
+settings:
+  id: 'block_content:4d46410a-2183-4b76-8e0e-80813ff841b1'
+  label: 'Noticias, eventos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

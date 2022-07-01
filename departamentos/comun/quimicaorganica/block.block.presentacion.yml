@@ -1,0 +1,30 @@
+uuid: c3f9fb48-7929-42b0-ae2a-c61187a38aa0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1dc6f10d-c360-4276-a645-83353c872063'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: presentacion
+theme: unizar_departamento
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:1dc6f10d-c360-4276-a645-83353c872063'
+settings:
+  id: 'block_content:1dc6f10d-c360-4276-a645-83353c872063'
+  label: 'Bienvenido a la web del Departamento de Química Orgánica'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<Front>'

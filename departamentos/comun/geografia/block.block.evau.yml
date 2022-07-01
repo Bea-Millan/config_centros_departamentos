@@ -1,0 +1,30 @@
+uuid: 6f1b9b1d-947c-44c7-8c58-7e3931a9f515
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:499511e8-8a02-4bbc-a793-3194ae881530'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: evau
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:499511e8-8a02-4bbc-a793-3194ae881530'
+settings:
+  id: 'block_content:499511e8-8a02-4bbc-a793-3194ae881530'
+  label: 'EvAU - Geografía'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

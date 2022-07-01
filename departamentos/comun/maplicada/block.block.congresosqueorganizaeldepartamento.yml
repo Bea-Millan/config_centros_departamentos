@@ -1,0 +1,25 @@
+uuid: 4ef4dd16-40aa-43f0-90a9-8630e16969bb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f6b0ecad-2448-4716-9908-e9bc2ff150d2'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: congresosqueorganizaeldepartamento
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:f6b0ecad-2448-4716-9908-e9bc2ff150d2'
+settings:
+  id: 'block_content:f6b0ecad-2448-4716-9908-e9bc2ff150d2'
+  label: Congresos
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,34 @@
+uuid: b688ac8a-cfcf-40aa-b1b3-8931881924bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.parrilla_principal
+  module:
+    - system
+    - views
+  theme:
+    - unizar_departamento
+id: views_block__parrilla_principal_block_1_2
+theme: unizar_departamento
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:parrilla_principal-block_1'
+settings:
+  id: 'views_block:parrilla_principal-block_1'
+  label: 'Enlaces Directos'
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: 'Enlaces Directos'
+  items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

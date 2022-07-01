@@ -1,0 +1,30 @@
+uuid: e52995fc-3a79-440c-8f8e-e14982d3585b
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:931955aa-66f2-4747-a1b6-2ff6bc39b0e3'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: presentaciondeldepartamento
+theme: unizar_departamento
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:931955aa-66f2-4747-a1b6-2ff6bc39b0e3'
+settings:
+  id: 'block_content:931955aa-66f2-4747-a1b6-2ff6bc39b0e3'
+  label: 'Presentación del Departamento'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

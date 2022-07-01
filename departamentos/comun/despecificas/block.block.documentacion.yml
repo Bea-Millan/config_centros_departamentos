@@ -1,0 +1,25 @@
+uuid: 5d4e76ee-d322-4f5f-a6a0-e6027ce1b5d4
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0f4b366f-b66e-4406-9644-75168bad8fb1'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: documentacion
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:0f4b366f-b66e-4406-9644-75168bad8fb1'
+settings:
+  id: 'block_content:0f4b366f-b66e-4406-9644-75168bad8fb1'
+  label: Documentacion
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

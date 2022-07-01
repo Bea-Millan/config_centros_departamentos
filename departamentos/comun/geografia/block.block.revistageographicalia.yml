@@ -1,0 +1,30 @@
+uuid: 2ce7a016-7bfe-4241-b337-bd8c7b8ef4f8
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:df8be5f2-3013-4625-b016-1cc5df5e83a1'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: revistageographicalia
+theme: unizar_departamento
+region: columna_lateral
+weight: -10
+provider: null
+plugin: 'block_content:df8be5f2-3013-4625-b016-1cc5df5e83a1'
+settings:
+  id: 'block_content:df8be5f2-3013-4625-b016-1cc5df5e83a1'
+  label: 'Revista Geographicalia'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,30 @@
+uuid: 600edae9-ade8-4e02-8654-5f3e49bfde15
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:866f72f3-6765-4c92-bea9-6258b0b54b60'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: enlaces
+theme: unizar_departamento
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:866f72f3-6765-4c92-bea9-6258b0b54b60'
+settings:
+  id: 'block_content:866f72f3-6765-4c92-bea9-6258b0b54b60'
+  label: Enlaces
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,29 @@
+uuid: 1ee803e2-7386-480a-837b-c0e639c5b9a4
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.noticias
+  module:
+    - views
+  theme:
+    - unizar_departamento
+id: views_block__noticias_block_2_2
+theme: unizar_departamento
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'views_block:noticias-block_2'
+settings:
+  id: 'views_block:noticias-block_2'
+  label: Destacado
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: Destacado
+  items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility: {  }

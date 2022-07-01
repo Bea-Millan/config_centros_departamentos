@@ -1,0 +1,25 @@
+uuid: 24f2605b-5ef7-4f9f-8e6e-9217b9aefbc6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:88d2891c-9971-4bb4-9571-43308778aa80'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: relaciones.accesorapido
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:88d2891c-9971-4bb4-9571-43308778aa80'
+settings:
+  id: 'block_content:88d2891c-9971-4bb4-9571-43308778aa80'
+  label: 'Acceso rapido'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

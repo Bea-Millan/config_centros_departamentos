@@ -1,0 +1,30 @@
+uuid: 06cd5d91-bf2c-40b2-aaa3-f21df3c7ac34
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e058a7c8-40f8-4bf3-8e6a-07a029415efd'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: enbreve...sucederaenlasproximassemanas
+theme: unizar_departamento
+region: columna_lateral
+weight: -5
+provider: null
+plugin: 'block_content:e058a7c8-40f8-4bf3-8e6a-07a029415efd'
+settings:
+  id: 'block_content:e058a7c8-40f8-4bf3-8e6a-07a029415efd'
+  label: 'Premio IGEAR a la excelencia en materia de información geográfica'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

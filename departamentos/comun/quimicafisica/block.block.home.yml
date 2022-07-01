@@ -1,0 +1,30 @@
+uuid: 36a89dc4-41b4-4de0-babb-e99b4f1b86e6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a331a499-1ed7-45d8-907e-4c115091e06d'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: home
+theme: unizar_departamento
+region: content
+weight: -8
+provider: null
+plugin: 'block_content:a331a499-1ed7-45d8-907e-4c115091e06d'
+settings:
+  id: 'block_content:a331a499-1ed7-45d8-907e-4c115091e06d'
+  label: 'Bienvenido a la web del Departamento de Química Física'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: 1067e917-b43a-4fed-a813-8f77672ea6e0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05fa648b-d791-416f-8731-04422630ec68'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: recursosymaterialesdidacticos
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:05fa648b-d791-416f-8731-04422630ec68'
+settings:
+  id: 'block_content:05fa648b-d791-416f-8731-04422630ec68'
+  label: 'Recursos y materiales didácticos'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

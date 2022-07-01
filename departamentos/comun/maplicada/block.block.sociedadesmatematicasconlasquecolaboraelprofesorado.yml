@@ -1,0 +1,25 @@
+uuid: 10ce6ce2-2d05-4522-8059-0bc7595e6f0c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c91af3aa-d0cd-434c-b420-5658b5f00465'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: sociedadesmatematicasconlasquecolaboraelprofesorado
+theme: unizar_departamento
+region: columna_lateral
+weight: -8
+provider: null
+plugin: 'block_content:c91af3aa-d0cd-434c-b420-5658b5f00465'
+settings:
+  id: 'block_content:c91af3aa-d0cd-434c-b420-5658b5f00465'
+  label: 'Sociedades Matemáticas'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,29 @@
+uuid: c121643e-f554-4fd0-9de6-192829a1d0ed
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.parrilla_principal
+  module:
+    - views
+  theme:
+    - unizar_departamento
+id: views_block__parrilla_principal_block_1_2
+theme: unizar_departamento
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:parrilla_principal-block_1'
+settings:
+  id: 'views_block:parrilla_principal-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility: {  }

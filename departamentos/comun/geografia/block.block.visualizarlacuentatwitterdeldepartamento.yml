@@ -1,0 +1,30 @@
+uuid: 8210c82a-76f1-4924-b212-6253e0628f81
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:128527ba-d1cf-4e79-90d2-b5ec9a672093'
+  module:
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+id: visualizarlacuentatwitterdeldepartamento
+theme: unizar_departamento
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:128527ba-d1cf-4e79-90d2-b5ec9a672093'
+settings:
+  id: 'block_content:128527ba-d1cf-4e79-90d2-b5ec9a672093'
+  label: 'Visualizar la cuenta Twitter del Departamento'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

@@ -1,0 +1,25 @@
+uuid: 136ba040-e270-4110-bf5e-ae91251c056c
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b57c11e3-3a7b-4444-9d63-b99570bc404c'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: einagmaps
+theme: unizar_departamento
+region: columna_lateral
+weight: -9
+provider: null
+plugin: 'block_content:b57c11e3-3a7b-4444-9d63-b99570bc404c'
+settings:
+  id: 'block_content:b57c11e3-3a7b-4444-9d63-b99570bc404c'
+  label: 'EINA GMaps'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

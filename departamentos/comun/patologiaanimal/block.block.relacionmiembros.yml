@@ -1,0 +1,25 @@
+uuid: f1b0cb5c-10b4-49d6-9586-68aa36722ede
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:abac0014-f3a9-4742-8b8e-30d93a47e965'
+  module:
+    - block_content
+  theme:
+    - unizar_departamento
+id: relacionmiembros
+theme: unizar_departamento
+region: columna_lateral
+weight: -6
+provider: null
+plugin: 'block_content:abac0014-f3a9-4742-8b8e-30d93a47e965'
+settings:
+  id: 'block_content:abac0014-f3a9-4742-8b8e-30d93a47e965'
+  label: 'Relación miembros'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
