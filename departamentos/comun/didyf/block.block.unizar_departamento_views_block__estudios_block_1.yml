@@ -23,10 +23,10 @@ provider: null
 plugin: 'views_block:estudios-block_1'
 settings:
   id: 'views_block:estudios-block_1'
-  label: ''
+  label: 'Docencia e Investigación'
   label_display: visible
   provider: views
-  views_label: ''
+  views_label: 'Docencia e Investigación'
   items_per_page: none
 visibility:
   request_path:

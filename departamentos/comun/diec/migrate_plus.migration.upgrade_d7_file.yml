@@ -21,7 +21,7 @@ source:
   plugin: d7_file
   scheme: public
   constants:
-    source_base_path: 'http://diec.unizar.es/sites/diec.unizar.es'
+    source_base_path: 'http://diec2.unizar.es/sites/diec2.unizar.es'
     profile_base_path: 'public:'
 process:
   fid:

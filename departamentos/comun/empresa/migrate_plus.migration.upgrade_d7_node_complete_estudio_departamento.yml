@@ -23,11 +23,6 @@ source:
 process:
   nid: tnid
   vid: vid
-  langcode:
-    -
-      plugin: default_value
-      source: language
-      default_value: und
   title:
     -
       plugin: get
