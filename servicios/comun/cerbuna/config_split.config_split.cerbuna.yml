@@ -1,6 +1,7 @@
+uuid: 5705172a-aa6e-407d-9aef-08bd2264c630
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: cerbuna
 label: cerbuna
 description: ''
@@ -27,13 +28,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
+  - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

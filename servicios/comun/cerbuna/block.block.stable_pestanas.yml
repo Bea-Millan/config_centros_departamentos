@@ -1,0 +1,27 @@
+uuid: c188c2a1-0357-46ef-8251-bbc76b9d596b
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
+id: stable_pestanas
+theme: stable
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

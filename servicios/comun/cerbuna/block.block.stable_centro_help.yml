@@ -1,0 +1,26 @@
+uuid: 0878e762-22da-47ca-9304-8978b0530ada
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - help
+  theme:
+    - stable
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
+id: stable_centro_help
+theme: stable
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

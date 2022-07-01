@@ -1,0 +1,26 @@
+uuid: b1136920-a421-4186-b657-c9fbb2d73fe7
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - help
+  theme:
+    - unizar_colegio
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
+id: unizar_colegio_centro_help
+theme: unizar_colegio
+region: content
+weight: -9
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Ayuda
+  label_display: '0'
+  provider: help
+visibility: {  }

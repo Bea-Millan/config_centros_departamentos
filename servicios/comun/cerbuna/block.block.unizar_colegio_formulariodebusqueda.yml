@@ -1,0 +1,27 @@
+uuid: 1a718e68-82de-435a-91b0-66af5291f34c
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - unizar_colegio
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: LWDpVO3fQvH0VWXvTBrH0GkmdY57_Azxb0lzNYyIBIs
+id: unizar_colegio_formulariodebusqueda
+theme: unizar_colegio
+region: cabecera_med_derecha
+weight: -9
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Formulario de búsqueda'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
