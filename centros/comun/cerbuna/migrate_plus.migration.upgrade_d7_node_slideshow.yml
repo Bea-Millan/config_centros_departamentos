@@ -1,0 +1,112 @@
+uuid: 048e4bff-7c7b-4c2c-99d7-bd8384abf91a
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+_core:
+  default_config_hash: BLoFcZ32AOJQjHwMVYzcERbV5zMP5JRDSWqOQSwgzOo
+id: upgrade_d7_node_slideshow
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Nodes (Imagen rotativa)'
+source:
+  plugin: d7_node_complete
+  node_type: slideshow
+process:
+  nid: tnid
+  vid: vid
+  langcode:
+    -
+      plugin: default_value
+      source: language
+      default_value: und
+  title:
+    -
+      plugin: get
+      source: title
+  uid:
+    -
+      plugin: get
+      source: node_uid
+  status:
+    -
+      plugin: get
+      source: status
+  created:
+    -
+      plugin: get
+      source: created
+  changed:
+    -
+      plugin: get
+      source: changed
+  promote:
+    -
+      plugin: get
+      source: promote
+  sticky:
+    -
+      plugin: get
+      source: sticky
+  revision_uid:
+    -
+      plugin: get
+      source: revision_uid
+  revision_log:
+    -
+      plugin: get
+      source: log
+  revision_timestamp:
+    -
+      plugin: get
+      source: timestamp
+  field_subtitulo:
+    -
+      plugin: get
+      source: field_subtitulo
+  field_imagen_valid:
+    -
+      plugin: null_coalesce
+      source:
+        - field_image
+        - field_imagen_slide
+  field_imagen_slide:
+    -
+      plugin: sub_process
+      source: '@field_imagen_valid'
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_ocultar_titulo:
+    -
+      plugin: get
+      source: field_quitar_texto
+  field_enlace:
+    -
+      plugin: sub_process
+      source: field_enlace
+      process:
+        uri: value
+        title: title
+destination:
+  plugin: 'entity_complete:node'
+  translations: true
+  default_bundle: slideshow
+migration_dependencies:
+  required:
+    - upgrade_d7_user
+    - upgrade_d7_node_type
+  optional:
+    - upgrade_d7_field_instance
+    - upgrade_d7_comment_field_instance

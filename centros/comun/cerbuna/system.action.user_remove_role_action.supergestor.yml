@@ -1,0 +1,16 @@
+uuid: e05e4ae3-9629-495a-abd8-30ef4915d2aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.supergestor
+  module:
+    - user
+_core:
+  default_config_hash: BYluf2_5FK1q01F-aiyhDkpPCzhKQjryHOtudbwCLko
+id: user_remove_role_action.supergestor
+label: 'Remove the supergestor role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: supergestor

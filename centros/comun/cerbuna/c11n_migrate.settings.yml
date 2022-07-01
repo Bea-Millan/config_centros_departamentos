@@ -1,0 +1,6 @@
+_core:
+  default_config_hash: ixbmasLDZDWVIsphuMxxnPWXECbLHWiVA0s2UiLa9eE
+plugin:
+  host: cerbuna.unizar.es
+  url_host: sites/cerbuna
+langcode: es

@@ -1,0 +1,40 @@
+uuid: 832967e0-46a1-4067-b9b6-5f2824859062
+langcode: es
+status: true
+dependencies: {  }
+id: cerbuna
+label: cerbuna
+description: ''
+weight: 0
+folder: ../config/sites/centros/comun/cerbuna
+module:
+  c11n_migrate: 0
+theme:
+  unizar_centro: 0
+blacklist:
+  - config_split.config_split.cerbuna
+  - system.site
+  - system.theme
+  - asset_injector.css.cerbuna_inyeccion_css
+  - core.entity_view_mode.shortcut.token
+  - shortcut.set.default
+  - unizar_centro.settings
+  - unizar_base.settings
+  - unizar_departamento.settings
+  - smtp.settings
+  - language.negotiation
+  - language.types
+  - matomo.settings
+  - unizar_modulos_configuracion.settings
+  - unizar_admin_menu.settings
+  - migrate_drupal.settings
+  - 'webform.webform.*'
+  - user.role.administrator
+  - user.role.anonymous
+  - user.role.supergestor
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

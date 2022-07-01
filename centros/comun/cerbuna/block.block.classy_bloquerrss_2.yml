@@ -1,0 +1,37 @@
+uuid: c6bbe41a-18c7-4c01-88f4-0aacc6437ac7
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - unizar_modulos_configuracion
+  theme:
+    - classy
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
+id: classy_bloquerrss_2
+theme: classy
+region: footer
+weight: 0
+provider: null
+plugin: bloque_rrss
+settings:
+  id: bloque_rrss
+  label: 'Bloque rrss'
+  label_display: '0'
+  provider: unizar_modulos_configuracion
+  redes_sociales:
+    rrss_header: null
+    rss_header: null
+    blog: 'http://www.unizar.es'
+    blog_class: 'http://www.unizar.es'
+    instagram: instagram
+    facebook: facebook
+    twitter: twitter
+    youtube: Youtube
+    linkedin: linkedin
+    soundcloud: soundcloud
+visibility: {  }

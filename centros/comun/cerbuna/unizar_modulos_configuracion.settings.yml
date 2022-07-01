@@ -1,0 +1,22 @@
+_core:
+  default_config_hash: 8clNj9gkCF_eOOicC4Q__YKKkYEMTuv8RI7uyCOg0gA
+logo_path: 'public://ccmm_web-cerbuna-blanco_0.png'
+logo_upload: ''
+favicon_path: ''
+favicon_upload: ''
+id_centro: ''
+nombre_centro: 'Colegio Mayor Universitario Pedro Cerbuna'
+dir_centro: 'Pedro Cerbuna, 12 - 50009 Zaragoza'
+telefono_centro: '(0034)  976 551750 / 876 554352'
+mail_centro: cerbuna@unizar.es
+url_mapa: /contacto
+dir_centro2: ''
+telefono_centro2: ''
+mail_centro2: ''
+url_mapa2: ''
+logo_blanco: '949'
+imagen_segundas: '953'
+facebook: ''
+twitter: ''
+meta_desc: 'Colegio Mayor Universitario de fundación propia de  la Universidad de Zaragoza'
+langcode: es
