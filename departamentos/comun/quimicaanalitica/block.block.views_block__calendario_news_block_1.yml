@@ -1,0 +1,25 @@
+uuid: 857a3b71-b62b-459d-a5bf-3d27eb3bead6
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.calendario_news
+  module:
+    - views
+  theme:
+    - unizar_departamento
+id: views_block__calendario_news_block_1
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'views_block:calendario_news-block_1'
+settings:
+  id: 'views_block:calendario_news-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility: {  }
