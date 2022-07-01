@@ -1,0 +1,35 @@
+uuid: 3fea62aa-690d-4314-9043-7aac646e9069
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - unizar_admin_menu
+    - user
+  theme:
+    - unizar_colegio
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
+id: unizar_colegio_administracion
+theme: unizar_colegio
+region: cabecera_sup
+weight: -8
+provider: null
+plugin: administracion
+settings:
+  id: administracion
+  label: Administración
+  label_display: '0'
+  provider: unizar_admin_menu
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator
+      gestor_basico: gestor_basico

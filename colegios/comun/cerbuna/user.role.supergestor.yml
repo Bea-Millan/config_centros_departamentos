@@ -1,0 +1,18 @@
+uuid: 300a682f-a8bd-4aef-93c9-2ba7fca73f42
+langcode: es
+status: true
+dependencies:
+  module:
+    - publishcontent
+_core:
+  default_config_hash: j2KQ4IZQeBq4ZlqRTLG3roeUskYg2ADQzxlCkgazdpI
+id: supergestor
+label: supergestor
+weight: 7
+is_admin: null
+permissions:
+  - 'access all webform results'
+  - 'publish any content'
+  - 'publish editable content'
+  - 'unpublish any content'
+  - 'unpublish editable content'

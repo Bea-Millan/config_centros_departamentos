@@ -1,15 +1,16 @@
+uuid: 9acdf2f7-8a16-4dea-b3bd-2cac643fc844
 langcode: es
 status: true
-dependencies: {}
+dependencies: {  }
 id: cerbuna
 label: cerbuna
 description: ''
 weight: 0
-folder: ../config/sites/servicios/comun/cerbuna
+folder: ../config/sites/colegios/comun/cerbuna
 module:
   c11n_migrate: 0
 theme:
-  unizar_centro: 0
+  unizar_colegio: 0
 blacklist:
   - config_split.config_split.cerbuna
   - system.site
@@ -27,13 +28,13 @@ blacklist:
   - unizar_modulos_configuracion.settings
   - unizar_admin_menu.settings
   - migrate_drupal.settings
-  - webform.webform.*
+  - 'webform.webform.*'
   - user.role.administrator
   - user.role.anonymous
   - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
-graylist: {}
+  - 'system.menu.*'
+  - 'language.entity.*'
+  - 'block.block.*'
+graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

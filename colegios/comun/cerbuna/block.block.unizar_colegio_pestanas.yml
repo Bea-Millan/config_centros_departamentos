@@ -1,0 +1,27 @@
+uuid: ab5e2e3e-a67d-462f-aaac-0136f63b66f3
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+  theme:
+    - unizar_colegio
+third_party_settings:
+  block_class:
+    classes: null
+_core:
+  default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
+id: unizar_colegio_pestanas
+theme: unizar_colegio
+region: content
+weight: -8
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

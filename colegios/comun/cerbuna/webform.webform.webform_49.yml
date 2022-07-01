@@ -1,0 +1,138 @@
+uuid: 0e10fa44-bb68-40cf-b47a-310627c04815
+langcode: es
+status: open
+dependencies: {  }
+weight: 0
+open: null
+close: null
+uid: 85
+template: false
+archive: false
+id: webform_49
+title: 'Formulario '
+description: null
+category: null
+elements: |-
+  fieldset_datos_de_la_solicitud_de_reserva:
+    '#type': fieldset
+    '#open': true
+    '#title': 'DATOS DE LA SOLICITUD DE RESERVA'
+    apellidos_y_nombre_7:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Apellidos y nombre'
+      '#required': true
+    dni___pasaporte_7:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'DNI / Pasaporte'
+    fecha_de_entrada_7:
+      '#type': date
+      '#title_display': inline
+      '#title': 'Fecha de entrada '
+    fecha_de_salida_7:
+      '#type': date
+      '#title_display': inline
+      '#title': 'Fecha de salida'
+    tipo_de_alojamiento_7:
+      '#type': select
+      '#options':
+        1: ' individual'
+        2: ' doble'
+      '#title_display': inline
+      '#title': 'Tipo de alojamiento'
+    e_mail_7:
+      '#type': textfield
+      '#title_display': inline
+      '#title': E-mail
+      '#required': true
+    vinculcion_con_la_universidad_de_zaragoza_7:
+      '#type': textarea
+      '#title': 'Vincualción con la Universidad de Zaragoza'
+      '#description': |-
+        Motivo de su estancia en la Universidad de Zaragoza / 
+        Departamento en que va a realizar su servicio
+  fieldset_datos_de_la_reserva:
+    '#type': fieldset
+    '#open': true
+    '#title': 'SOLICITUD REALIZADA POR UN DEPARTAMENTO DE LA UNIVERSIDAD DE ZARAGOZA'
+    nombre_4:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Nombre y Apellidos'
+      '#description': 'Persona que realiza la reserva'
+      '#required': true
+    departamento_centro_4:
+      '#type': textfield
+      '#size': 25
+      '#title_display': inline
+      '#title': Departamento/Centro
+    correo_electronico_4:
+      '#type': textfield
+      '#size': 25
+      '#title_display': inline
+      '#title': 'Correo electrónico'
+    extension_interna__telefono_movil_4:
+      '#type': textfield
+      '#title_display': inline
+      '#title': 'Extensión interna/ teléfono movil'
+css: ''
+javascript: ''
+settings:
+  page: true
+  wizard_progress_bar: true
+  preview: 0
+  draft: '0'
+  draft_auto_save: false
+  confirmation_type: page
+  confirmation_url: ''
+  confirmation_message: '<p>Mensaje enviado.</p>'
+  limit_total: null
+  limit_user: null
+  form_submit_label: ''
+  wizard_complete: 1
+access:
+  create:
+    roles:
+      - anonymous
+      - authenticated
+    users: {  }
+handlers:
+  email_1:
+    id: email
+    handler_id: email_1
+    label: 'Email 1'
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 1
+    settings:
+      states:
+        - completed
+      to_mail: cerbuna@unizar.es
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: default
+      from_options: {  }
+      from_name: default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: default
+      body: default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+variants: {  }
