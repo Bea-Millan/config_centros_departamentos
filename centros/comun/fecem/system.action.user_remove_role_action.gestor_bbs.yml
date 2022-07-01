@@ -1,0 +1,14 @@
+uuid: 95a2aedb-403e-4097-affa-9cc8c746da9a
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_bbs
+  module:
+    - user
+id: user_remove_role_action.gestor_bbs
+label: 'Elimina el rol gestor bbs al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: gestor_bbs

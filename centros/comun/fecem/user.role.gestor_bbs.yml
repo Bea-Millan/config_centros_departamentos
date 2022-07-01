@@ -1,0 +1,16 @@
+uuid: 8c2ae8b7-fe44-478a-9979-84e7376e9d1f
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - system
+    - toolbar
+id: gestor_bbs
+label: 'gestor bbs'
+weight: 9
+is_admin: null
+permissions:
+  - 'access toolbar'
+  - 'view own unpublished content'
+  - 'view the administration theme'

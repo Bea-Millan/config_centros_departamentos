@@ -1,0 +1,14 @@
+uuid: bd720d60-743d-4fb0-9664-440fc5051f77
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.gestor_bbs
+  module:
+    - user
+id: user_add_role_action.gestor_bbs
+label: 'Añade el rol gestor bbs al(los) usuario(s) seleccionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_bbs
