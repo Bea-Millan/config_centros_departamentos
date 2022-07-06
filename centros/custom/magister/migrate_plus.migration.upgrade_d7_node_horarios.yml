@@ -1,4 +1,4 @@
-uuid: 618596a6-e32f-42fd-ad71-ad56c8f022c7
+uuid: 4d6936bc-9a54-47a7-9cc8-b5ebe5307d3d
 langcode: es
 status: true
 dependencies:
@@ -6,20 +6,19 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: sCyuK5DTuP8mo3WvH4jE60H2u_01Ax-q3s6lwrNgpYA
-id: upgrade_d7_node_te_interesa
+  default_config_hash: _JnOUa2dFdgHtWblLdXm9kZ57dXXZcrdf9awFtcPipc
+id: upgrade_d7_node_horarios
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Te interesa)'
+label: 'Nodes (Horarios)'
 source:
   plugin: d7_node_complete
-  node_type: te_interesa
+  node_type: horarios
 process:
   nid: tnid
   vid: vid
@@ -47,7 +46,7 @@ process:
   changed:
     -
       plugin: get
-      source: changed
+      source: timestamp
   promote:
     -
       plugin: get
@@ -68,19 +67,42 @@ process:
     -
       plugin: get
       source: timestamp
-  field_link/uri:
+  field_curso:
+    plugin: migration_lookup
+    source: field_curso
+    migration: upgrade_d7_taxonomy_term_curso
+  field_estudio:
     -
-      plugin: CheckUrl
-      source: field_link/0/value
-  field_link/title: title
+      plugin: migration_lookup
+      source: field_estudio
+      migration: upgrade_d7_node_estudio
+  field_adjunto_horarios:
+    -
+      plugin: sub_process
+      source: field_adjunto_horarios
+      process:
+        target_id: fid
+        display: display
+        description: description
+  field_semestre:
+    -
+      plugin: get
+      source: field_semestre
+  field_metatag:
+    -
+      plugin: get
+      source: pseudo_metatag_entities
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: te_interesa
+  default_bundle: horarios
 migration_dependencies:
   required:
     - upgrade_d7_user
     - upgrade_d7_node_type
+    - upgrade_language
+    - upgrade_d7_taxonomy_term_curso
+    - upgrade_d7_node_estudio
   optional:
     - upgrade_d7_field_instance
     - upgrade_d7_comment_field_instance

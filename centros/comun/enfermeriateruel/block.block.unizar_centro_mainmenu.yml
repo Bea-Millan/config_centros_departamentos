@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - superfish
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: unizar_centro_mainmenu
@@ -25,7 +29,7 @@ settings:
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
-  style: none
+  style: blue
   arrow: 1
   shadow: 1
   speed: fast

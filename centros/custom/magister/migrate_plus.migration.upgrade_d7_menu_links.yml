@@ -1,4 +1,4 @@
-uuid: f0fd84ae-b57d-4881-9dbe-bbb5ab994823
+uuid: add64da7-68f0-4d62-9637-ed6f7cb392cf
 langcode: es
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: Q_XiHCmQdTHya8jzxlLqmQjVfeFRtj87-GjgxYOArs8
+  default_config_hash: TmFXYFUpta_Od5jWd1oHzJ8j_Tpmw47iKn0e4B626eA
 id: upgrade_d7_menu_links
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -29,7 +28,6 @@ process:
       use_as_key: language
       valid_keys:
         - es
-        - ''
         - und
       key_direction: unlock
   bundle:

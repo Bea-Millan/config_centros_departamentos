@@ -1,4 +1,4 @@
-uuid: 618596a6-e32f-42fd-ad71-ad56c8f022c7
+uuid: bbc58eaf-ffee-4814-858e-3e5a9e55052a
 langcode: es
 status: true
 dependencies:
@@ -6,13 +6,12 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: sCyuK5DTuP8mo3WvH4jE60H2u_01Ax-q3s6lwrNgpYA
+  default_config_hash: qG8ETO9J8k6V1Q1P0S9x3NLCwP0-moLI_g3mjf2rUAM
 id: upgrade_d7_node_te_interesa
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
@@ -72,6 +71,9 @@ process:
     -
       plugin: CheckUrl
       source: field_link/0/value
+    -
+      plugin: skip_on_empty
+      method: row
   field_link/title: title
 destination:
   plugin: 'entity_complete:node'

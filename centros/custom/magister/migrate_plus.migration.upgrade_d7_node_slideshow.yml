@@ -1,4 +1,4 @@
-uuid: 618596a6-e32f-42fd-ad71-ad56c8f022c7
+uuid: 5b33eedf-06e3-4af4-9786-30939be4b313
 langcode: es
 status: true
 dependencies:
@@ -6,20 +6,19 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: sCyuK5DTuP8mo3WvH4jE60H2u_01Ax-q3s6lwrNgpYA
-id: upgrade_d7_node_te_interesa
+  default_config_hash: dbbmd45aCcSDQalvum8OhC8nvngXvBB8lofDYChR0Js
+id: upgrade_d7_node_slideshow
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Te interesa)'
+label: 'Nodes (Imagen rotativa)'
 source:
   plugin: d7_node_complete
-  node_type: te_interesa
+  node_type: slideshow
 process:
   nid: tnid
   vid: vid
@@ -34,7 +33,7 @@ process:
       source: title
   uid:
     -
-      plugin: MapUid
+      plugin: get
       source: node_uid
   status:
     -
@@ -68,15 +67,41 @@ process:
     -
       plugin: get
       source: timestamp
-  field_link/uri:
+  field_subtitulo:
     -
-      plugin: CheckUrl
-      source: field_link/0/value
-  field_link/title: title
+      plugin: get
+      source: field_subtitulo
+  field_imagen_valid:
+    -
+      plugin: null_coalesce
+      source:
+        - field_image
+        - field_imagen_slide
+  field_imagen_slide:
+    -
+      plugin: sub_process
+      source: '@field_imagen_valid'
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_ocultar_titulo:
+    -
+      plugin: get
+      source: field_quitar_texto
+  field_enlace:
+    -
+      plugin: sub_process
+      source: field_enlace
+      process:
+        uri: value
+        title: title
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: te_interesa
+  default_bundle: slideshow
 migration_dependencies:
   required:
     - upgrade_d7_user

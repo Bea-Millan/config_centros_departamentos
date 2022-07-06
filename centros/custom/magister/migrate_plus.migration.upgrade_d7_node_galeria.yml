@@ -1,4 +1,4 @@
-uuid: 56bd8b5d-2ebe-4906-a5f6-3bcd5b1fe235
+uuid: 5ba17a92-61a0-40c4-a154-0daa228c572c
 langcode: es
 status: true
 dependencies:
@@ -6,20 +6,19 @@ dependencies:
     module:
       - c11n_migrate
 _core:
-  default_config_hash: JKTEvoE7CRnjexnNYFRsJU3b7TTuWPuUj6lFbFFcBHk
-id: upgrade_d7_node_noticia
+  default_config_hash: VfZW-RD_bdZQ5MqW_ARr_eHEaEpzEKp4pafus73BBUg
+id: upgrade_d7_node_galeria
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
 cck_plugin_method: null
 migration_tags:
-  - Final
   - 'Drupal 7'
   - Content
 migration_group: migrate_drupal_7
-label: 'Nodes (Noticia)'
+label: 'Nodes (Galería)'
 source:
   plugin: d7_node_complete
-  node_type: noticia
+  node_type: galeria
 process:
   nid: tnid
   vid: vid
@@ -28,22 +27,10 @@ process:
       plugin: default_value
       source: language
       default_value: und
-  title_visible:
-    -
-      plugin: null_coalesce
-      source:
-        - field_titulo_visible
-        - field_um_noticias_titulo_visible
   title:
     -
-      plugin: Ctitle
-      source:
-        - title
-        - '@title_visible'
-  path/pathauto:
-    plugin: default_value
-    default_value: 0
-  path/alias: alias
+      plugin: get
+      source: title
   uid:
     -
       plugin: MapUid
@@ -91,82 +78,46 @@ process:
         format:
           plugin: default_value
           default_value: filtered_html
-  field_fecha_caducidad:
+  field_foto_portada:
     -
       plugin: sub_process
-      source: field_fecha_caducidad
-      process:
-        value:
-          plugin: format_date
-          from_format: 'Y-m-d H:i:s'
-          to_format: Y-m-d
-          source: value
-  field_link_noticia:
-    -
-      plugin: sub_process
-      source: field_link_noticia
-      process:
-        uri: value
-  field_agenda_noticias:
-    -
-      plugin: get
-      source: field_agenda_noticias
-  field_destacada:
-    -
-      plugin: get
-      source: field_destacada
-  field_imagen_valid:
-    -
-      plugin: null_coalesce
-      source:
-        - field_imagen_noticia
-        - field_image
-  field_imagen_noticia:
-    -
-      plugin: sub_process
-      source: '@field_imagen_valid'
+      source: field_foto_portada
       process:
         target_id: fid
         alt: alt
         title: title
         width: width
         height: height
-  _prepare_tipo_evento:
-    -
-      plugin: static_map
-      source: field_tipo_evento
-      map:
-        1: Actualidad
-        2: 'Agenda cultural'
-      bypass: true
-  field_seccion:
-    -
-      plugin: skip_on_empty
-      source: '@_prepare_tipo_evento'
-      method: process
-      message: 'No eventos.'
-    -
-      plugin: entity_generate
-      entity_type: taxonomy_term
-      value_key: name
-      bundle_key: vid
-      bundle: secciones
-      ignore_case: true
-  field_fecha:
-    -
-      plugin: null_coalesce
-      source:
-        - field_fecha
-        - field_fecha_evento
-        - field_um_noticias_fecha
+  field_foto_galeria:
     -
       plugin: sub_process
+      source: field_foto_galeria
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
+  field_fecha:
+    -
+      plugin: sub_process
+      source: field_fecha
       process:
         value:
           plugin: format_date
           from_format: 'Y-m-d H:i:s'
           to_format: Y-m-d
           source: value
+  field_imagen_nodo:
+    -
+      plugin: sub_process
+      source: field_imagen_nodo
+      process:
+        target_id: fid
+        alt: alt
+        title: title
+        width: width
+        height: height
   field_ocultar_lateral:
     -
       plugin: get
@@ -178,7 +129,7 @@ process:
 destination:
   plugin: 'entity_complete:node'
   translations: true
-  default_bundle: noticia
+  default_bundle: galeria
 migration_dependencies:
   required:
     - upgrade_d7_user
