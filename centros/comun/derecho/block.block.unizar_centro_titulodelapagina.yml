@@ -3,15 +3,19 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - node
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: unizar_centro_titulodelapagina
 theme: unizar_centro
 region: content
-weight: -12
+weight: -11
 provider: null
 plugin: page_title_block
 settings:
@@ -27,7 +31,6 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       elemento_parrilla: elemento_parrilla
-      entrada_blog: entrada_blog
       estudio: estudio
       slideshow: slideshow
       te_interesa: te_interesa

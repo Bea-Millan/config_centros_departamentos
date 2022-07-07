@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:11d3638f-171e-4504-858a-ee65fb0748ae'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: botoncovidpaginaprincipal
 theme: unizar_centro
 region: columna_lateral
-weight: -10
+weight: -7
 provider: null
 plugin: 'block_content:11d3638f-171e-4504-858a-ee65fb0748ae'
 settings:

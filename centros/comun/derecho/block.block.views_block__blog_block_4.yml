@@ -9,10 +9,13 @@ dependencies:
     - views
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block__blog_block_4
 theme: unizar_centro
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: 'views_block:blog-block_4'
 settings:

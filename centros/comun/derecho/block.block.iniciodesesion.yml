@@ -7,10 +7,13 @@ dependencies:
     - user
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: iniciodesesion
 theme: unizar_centro
 region: content
-weight: -10
+weight: -9
 provider: null
 plugin: user_login_block
 settings:

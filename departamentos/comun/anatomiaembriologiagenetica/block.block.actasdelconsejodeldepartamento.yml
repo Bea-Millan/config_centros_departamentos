@@ -5,10 +5,15 @@ dependencies:
   content:
     - 'block_content:basic:bbd85559-7542-438b-bcaa-ae035f897fc7'
   module:
+    - block_class
     - block_content
     - system
+    - user
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: actasdelconsejodeldepartamento
 theme: unizar_departamento
 region: content
@@ -28,3 +33,10 @@ visibility:
     id: request_path
     negate: false
     pages: '<front>'
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      intranet: intranet

@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:561a67b7-af6b-44c5-a812-0329fcc817a8'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: botonreiit
 theme: unizar_centro
 region: columna_lateral
-weight: -8
+weight: -5
 provider: null
 plugin: 'block_content:561a67b7-af6b-44c5-a812-0329fcc817a8'
 settings:

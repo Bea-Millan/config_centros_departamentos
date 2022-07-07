@@ -2,6 +2,8 @@ uuid: ad823c50-d595-48a2-8078-02ebda105eba
 langcode: es
 status: open
 dependencies:
+  module:
+    - webform_double_opt_in
   enforced:
     module:
       - webform
@@ -17,7 +19,7 @@ id: contact
 title: Contacto
 description: 'Basic email contact webform.'
 category: ''
-elements: |
+elements: |-
   name:
     '#title': 'Your Name'
     '#type': textfield
@@ -38,6 +40,9 @@ elements: |
     '#type': textarea
     '#required': true
     '#test': 'Please ignore this email.'
+  opt_in_status:
+    '#type': value
+    '#title': opt_in_status
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -227,11 +232,11 @@ handlers:
   email_confirmation:
     id: email
     handler_id: email_confirmation
-    label: 'Email confirmation'
+    label: 'Confirmación por correo electrónico'
     notes: ''
     status: true
     conditions: {  }
-    weight: 1
+    weight: -49
     settings:
       states:
         - completed
@@ -268,7 +273,7 @@ handlers:
     notes: ''
     status: true
     conditions: {  }
-    weight: 2
+    weight: -48
     settings:
       states:
         - completed
@@ -298,4 +303,42 @@ handlers:
       theme_name: ''
       parameters: {  }
       debug: false
+  double_opt_in_e_mail:
+    id: webform_double_opt_in_email
+    handler_id: double_opt_in_e_mail
+    label: 'Double opt-in e-mail'
+    notes: ''
+    status: false
+    conditions: {  }
+    weight: -50
+    settings:
+      states:
+        - completed
+      to_mail: '[webform_submission:values:email:raw]'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: _default
+      from_options: {  }
+      from_name: _default
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      html: true
+      attachments: false
+      twig: false
+      theme_name: ''
+      debug: false
+      exclude_attachments: false
+      parameters: {  }
+      opt_in_globally: 0
 variants: {  }

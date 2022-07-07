@@ -5,14 +5,18 @@ dependencies:
   config:
     - views.view.calendario_noticias
   module:
+    - block_class
     - system
     - views
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block__calendario_noticias_block_1_2
 theme: unizar_centro
 region: columna_lateral
-weight: -6
+weight: -2
 provider: null
 plugin: 'views_block:calendario_noticias-block_1'
 settings:

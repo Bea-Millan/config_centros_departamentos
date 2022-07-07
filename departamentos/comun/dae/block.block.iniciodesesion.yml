@@ -1,12 +1,9 @@
-uuid: f021fcbb-a7b7-42ee-8e0f-4bead1bf9e0f
+uuid: 95286311-5949-48a8-8a88-0057542e3860
 langcode: es
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
   module:
     - block_class
-    - block_content
     - system
     - user
   theme:
@@ -14,29 +11,26 @@ dependencies:
 third_party_settings:
   block_class:
     classes: null
-id: presentacion
+id: iniciodesesion
 theme: unizar_departamento
-region: content
-weight: -8
+region: columna_lateral
+weight: 0
 provider: null
-plugin: 'block_content:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
+plugin: user_login_block
 settings:
-  id: 'block_content:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
-  label: Presentación
+  id: user_login_block
+  label: 'Inicio de sesión'
   label_display: '0'
-  provider: block_content
-  status: true
-  info: ''
-  view_mode: full
+  provider: user
 visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /intranet/intranet
   user_role:
     id: user_role
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
-      intranet: intranet
+      anonymous: anonymous

@@ -4,12 +4,15 @@ status: true
 dependencies:
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_centro_pestanas
 theme: unizar_centro
 region: content
-weight: -11
+weight: -10
 provider: null
 plugin: local_tasks_block
 settings:

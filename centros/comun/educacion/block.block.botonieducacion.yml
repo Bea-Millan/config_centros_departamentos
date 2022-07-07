@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:3d2fc57b-5c91-4bb4-af21-51096936be15'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: botonieducacion
 theme: unizar_centro
 region: columna_lateral
-weight: -9
+weight: -6
 provider: null
 plugin: 'block_content:3d2fc57b-5c91-4bb4-af21-51096936be15'
 settings:

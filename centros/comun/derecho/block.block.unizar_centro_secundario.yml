@@ -8,12 +8,15 @@ dependencies:
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
 id: unizar_centro_secundario
 theme: unizar_centro
 region: cabecera_sup
-weight: -10
+weight: -13
 provider: null
 plugin: 'system_menu_block:menu-secundario'
 settings:

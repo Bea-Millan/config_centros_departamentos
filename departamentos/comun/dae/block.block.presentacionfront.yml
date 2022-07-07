@@ -5,14 +5,18 @@ dependencies:
   content:
     - 'block_content:basic:36f3a128-cc56-4e66-83b5-a8a8c6bdf41a'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: presentacionfront
 theme: unizar_departamento
 region: content
-weight: -10
+weight: -9
 provider: null
 plugin: 'block_content:36f3a128-cc56-4e66-83b5-a8a8c6bdf41a'
 settings:

@@ -6,10 +6,13 @@ dependencies:
     - language
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: alternadordeidioma
 theme: unizar_centro
 region: cabecera_sup
-weight: -11
+weight: -14
 provider: null
 plugin: 'language_block:language_interface'
 settings:

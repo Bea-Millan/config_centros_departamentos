@@ -5,9 +5,14 @@ dependencies:
   config:
     - system.menu.menu-te-interesa
   module:
+    - block_class
     - menu_block
+    - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: teinteresa
 theme: unizar_departamento
 region: columna_lateral
@@ -28,4 +33,8 @@ settings:
   expand_all_items: false
   parent: 'menu-te-interesa:'
   suggestion: menu_te_interesa
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

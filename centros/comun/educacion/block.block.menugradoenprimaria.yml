@@ -5,14 +5,18 @@ dependencies:
   config:
     - system.menu.menu-menu-grado-en-primaria
   module:
+    - block_class
     - menu_block
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: menugradoenprimaria
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: 3
 provider: null
 plugin: 'menu_block:menu-menu-grado-en-primaria'
 settings:

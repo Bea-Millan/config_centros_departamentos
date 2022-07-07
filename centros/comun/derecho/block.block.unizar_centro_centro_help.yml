@@ -6,12 +6,15 @@ dependencies:
     - help
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: unizar_centro_centro_help
 theme: unizar_centro
 region: content
-weight: -13
+weight: -12
 provider: null
 plugin: help_block
 settings:

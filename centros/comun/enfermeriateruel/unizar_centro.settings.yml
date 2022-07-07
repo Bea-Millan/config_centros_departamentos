@@ -9,7 +9,7 @@ features:
   favicon: true
   node_user_picture: true
 logo:
-  path: 'public://enfermeria_teruel-01_2.png'
-  use_default: true
+  path: 'public://logo-svg/enfermeria_teruel.svg'
+  use_default: false
 logo_footer_path: ''
 logo_footer_upload: {  }

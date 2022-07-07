@@ -9,6 +9,9 @@ dependencies:
     - superfish
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: mainmenu_en
 theme: unizar_centro
 region: menu_principal

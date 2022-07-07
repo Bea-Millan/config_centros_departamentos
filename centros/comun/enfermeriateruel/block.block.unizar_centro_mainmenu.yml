@@ -29,7 +29,7 @@ settings:
   depth: '0'
   expand_all_items: false
   menu_type: horizontal
-  style: blue
+  style: none
   arrow: 1
   shadow: 1
   speed: fast

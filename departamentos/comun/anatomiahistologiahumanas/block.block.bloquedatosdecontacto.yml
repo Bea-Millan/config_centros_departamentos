@@ -1,16 +1,17 @@
-uuid: b83e0b97-0974-4846-933d-0df7ab749812
+uuid: 237f0fe0-7177-4f42-807b-f6e94c77eab5
 langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - unizar_modulos_configuracion
   theme:
-    - unizar_centro
+    - unizar_departamento
 third_party_settings:
   block_class:
     classes: null
 id: bloquedatosdecontacto
-theme: unizar_centro
+theme: unizar_departamento
 region: footer
 weight: 0
 provider: null

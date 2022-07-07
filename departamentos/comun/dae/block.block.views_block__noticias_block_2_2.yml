@@ -5,9 +5,13 @@ dependencies:
   config:
     - views.view.noticias
   module:
+    - block_class
     - views
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block__noticias_block_2_2
 theme: unizar_departamento
 region: columna_lateral

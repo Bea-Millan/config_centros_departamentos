@@ -2,12 +2,17 @@ uuid: c8945779-53e0-48bd-9cb5-38bd5632095e
 langcode: es
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: pestanas_2
 theme: unizar_departamento
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: local_tasks_block
 settings:

@@ -3,10 +3,14 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - unizar_admin_menu
     - user
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: k5itf4C_uiZvscVzx0ETrDjgZG275wItSytvUgwqJnQ
 id: unizar_departamento_administracion

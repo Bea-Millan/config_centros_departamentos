@@ -1,9 +1,9 @@
-uuid: f021fcbb-a7b7-42ee-8e0f-4bead1bf9e0f
+uuid: fd6c0f29-4fa6-492e-a98b-e45131d7e62d
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
+    - 'block_content:basic:711ca181-35b3-4632-9a7e-b7cf1376d176'
   module:
     - block_class
     - block_content
@@ -14,15 +14,15 @@ dependencies:
 third_party_settings:
   block_class:
     classes: null
-id: presentacion
+id: presentacionintranet
 theme: unizar_departamento
 region: content
-weight: -8
+weight: 0
 provider: null
-plugin: 'block_content:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
+plugin: 'block_content:711ca181-35b3-4632-9a7e-b7cf1376d176'
 settings:
-  id: 'block_content:c66a2a21-6961-499e-8dfe-d5a30b61c1f4'
-  label: Presentación
+  id: 'block_content:711ca181-35b3-4632-9a7e-b7cf1376d176'
+  label: 'Presentación intranet'
   label_display: '0'
   provider: block_content
   status: true
@@ -32,11 +32,11 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /intranet/intranet
   user_role:
     id: user_role
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
-      intranet: intranet
+      anonymous: anonymous

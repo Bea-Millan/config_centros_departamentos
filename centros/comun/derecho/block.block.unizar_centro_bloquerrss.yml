@@ -6,12 +6,15 @@ dependencies:
     - unizar_modulos_configuracion
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: Yg2RTQVe4z0STvDLhKiurK4RoqKAAjv57QQ6dOeVq38
 id: unizar_centro_bloquerrss
 theme: unizar_centro
 region: cabecera_med_derecha
-weight: -10
+weight: -14
 provider: null
 plugin: bloque_rrss
 settings:

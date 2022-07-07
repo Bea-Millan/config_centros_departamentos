@@ -1,0 +1,29 @@
+uuid: 82ff4604-397f-4836-ac00-4f1eb519b594
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a30270b3-df46-4474-9aa2-352f7ef130fd'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
+id: botonguiasgrado
+theme: unizar_centro
+region: columna_lateral
+weight: -4
+provider: null
+plugin: 'block_content:a30270b3-df46-4474-9aa2-352f7ef130fd'
+settings:
+  id: 'block_content:a30270b3-df46-4474-9aa2-352f7ef130fd'
+  label: 'boton guias grado'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

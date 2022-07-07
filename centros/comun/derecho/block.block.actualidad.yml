@@ -9,10 +9,13 @@ dependencies:
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: actualidad
 theme: unizar_centro
 region: content
-weight: -4
+weight: -8
 provider: null
 plugin: 'block_content:8e01e995-f049-41a9-a2c7-a64487cd91de'
 settings:

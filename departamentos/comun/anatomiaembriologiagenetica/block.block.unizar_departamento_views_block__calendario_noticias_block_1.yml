@@ -6,12 +6,13 @@ dependencies:
     - views.view.calendario_noticias
   module:
     - block_class
+    - system
     - views
   theme:
     - unizar_departamento
 third_party_settings:
   block_class:
-    classes: calendar
+    classes: null
 _core:
   default_config_hash: ScXfzRMKEJJ3a5aLH5dZaCTN7Mfgdrc55okjZyktoqM
 id: unizar_departamento_views_block__calendario_noticias_block_1
@@ -28,4 +29,8 @@ settings:
   context_mapping: {  }
   views_label: ''
   items_per_page: none
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

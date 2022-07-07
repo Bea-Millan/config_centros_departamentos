@@ -5,9 +5,14 @@ dependencies:
   config:
     - system.menu.menu-tabl-n-de-anuncios
   module:
+    - block_class
     - menu_block
+    - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: tablondeanuncios
 theme: unizar_departamento
 region: columna_lateral
@@ -28,4 +33,8 @@ settings:
   expand_all_items: false
   parent: 'menu-tabl-n-de-anuncios:'
   suggestion: menu_tabl_n_de_anuncios
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

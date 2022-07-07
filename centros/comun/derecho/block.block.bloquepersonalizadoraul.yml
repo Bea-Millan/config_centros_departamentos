@@ -9,6 +9,9 @@ dependencies:
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: bloquepersonalizadoraul
 theme: unizar_centro
 region: columna_lateral

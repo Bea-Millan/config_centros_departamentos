@@ -6,12 +6,15 @@ dependencies:
     - search
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: LWDpVO3fQvH0VWXvTBrH0GkmdY57_Azxb0lzNYyIBIs
 id: unizar_centro_formulariodebusqueda
 theme: unizar_centro
 region: cabecera_med_derecha
-weight: -9
+weight: -13
 provider: null
 plugin: search_form_block
 settings:

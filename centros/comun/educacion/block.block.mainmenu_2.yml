@@ -5,14 +5,18 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - menu_block
     - system
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 id: mainmenu_2
 theme: unizar_centro
 region: columna_lateral
-weight: -5
+weight: -1
 provider: null
 plugin: 'menu_block:main'
 settings:

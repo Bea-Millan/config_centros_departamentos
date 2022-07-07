@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - superfish
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: menuprincipal_2
 theme: unizar_departamento
 region: menu_principal

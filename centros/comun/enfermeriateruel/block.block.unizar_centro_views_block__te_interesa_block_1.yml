@@ -17,7 +17,7 @@ _core:
 id: unizar_centro_views_block__te_interesa_block_1
 theme: unizar_centro
 region: columna_lateral
-weight: 0
+weight: -3
 provider: null
 plugin: 'views_block:te_interesa-block_1'
 settings:
