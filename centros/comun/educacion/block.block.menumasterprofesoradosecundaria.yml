@@ -24,8 +24,8 @@ settings:
   label: 'Menu master profesorado secundaria'
   label_display: '0'
   provider: menu_block
-  follow: false
-  follow_parent: child
+  follow: true
+  follow_parent: active
   label_link: false
   label_type: block
   level: 1
