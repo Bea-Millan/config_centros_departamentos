@@ -5,10 +5,14 @@ dependencies:
   content:
     - 'block_content:basic:7add3f14-7f53-4541-9439-7454102a586f'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: bloquedepresentacionenlahome
 theme: unizar_departamento
 region: content
@@ -17,7 +21,7 @@ provider: null
 plugin: 'block_content:7add3f14-7f53-4541-9439-7454102a586f'
 settings:
   id: 'block_content:7add3f14-7f53-4541-9439-7454102a586f'
-  label: 'Bloque de presentación en la home'
+  label: Presentación
   label_display: visible
   provider: block_content
   status: true

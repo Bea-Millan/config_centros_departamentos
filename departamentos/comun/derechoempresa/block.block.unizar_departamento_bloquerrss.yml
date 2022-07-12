@@ -3,9 +3,13 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - unizar_modulos_configuracion
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: Yg2RTQVe4z0STvDLhKiurK4RoqKAAjv57QQ6dOeVq38
 id: unizar_departamento_bloquerrss

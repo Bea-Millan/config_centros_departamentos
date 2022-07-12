@@ -4,6 +4,9 @@ status: true
 dependencies:
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_departamento_pestanas

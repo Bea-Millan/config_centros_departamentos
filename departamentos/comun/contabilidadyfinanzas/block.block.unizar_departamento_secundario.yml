@@ -5,9 +5,13 @@ dependencies:
   config:
     - system.menu.menu-secundario
   module:
+    - block_class
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: kFvDGvPOo5WFn9SieSQE7t1QmtaHsiGnGkhwJKRT1ow
 id: unizar_departamento_secundario

@@ -1,0 +1,34 @@
+uuid: 793c2f48-52f3-45dd-b053-072c5a4dc785
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:886ddf07-a312-4382-ab8c-041f0a2bcc00'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
+id: tablondeanuncios
+theme: unizar_departamento
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:886ddf07-a312-4382-ab8c-041f0a2bcc00'
+settings:
+  id: 'block_content:886ddf07-a312-4382-ab8c-041f0a2bcc00'
+  label: 'TABLÓN DE ANUNCIOS'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

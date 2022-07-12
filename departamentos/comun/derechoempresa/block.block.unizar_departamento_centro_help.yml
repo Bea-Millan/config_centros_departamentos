@@ -3,9 +3,13 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - help
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: TmxQa9G32c-q6JijiPDOojHOJ373td1RWNEMPuQzxt4
 id: unizar_departamento_centro_help

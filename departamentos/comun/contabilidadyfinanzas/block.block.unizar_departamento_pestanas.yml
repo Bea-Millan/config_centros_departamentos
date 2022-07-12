@@ -2,14 +2,19 @@ uuid: 63d471d1-4629-4070-9315-334df8e238bf
 langcode: es
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_departamento_pestanas
 theme: unizar_departamento
 region: content
-weight: -9
+weight: -7
 provider: null
 plugin: local_tasks_block
 settings:

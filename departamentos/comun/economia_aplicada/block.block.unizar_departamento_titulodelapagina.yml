@@ -6,6 +6,9 @@ dependencies:
     - node
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: WJF-U2_YPu272GVKQhy_X1pfGvxlRi6JM6ZzNpJtEUs
 id: unizar_departamento_titulodelapagina

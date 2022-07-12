@@ -5,10 +5,14 @@ dependencies:
   config:
     - system.menu.main
   module:
+    - block_class
     - language
     - superfish
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: le857WId8g8WBGukbTkkREVom119d9hxZ4EHO1jiE8Q
 id: unizar_departamento_mainmenu

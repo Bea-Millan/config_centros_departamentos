@@ -1,25 +1,34 @@
-uuid: 54df13f3-7e28-433b-a30a-fe2ac0b96dae
+uuid: 1125e203-2153-4315-a6d4-6347be0bc3fb
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:0e410315-7fe3-4e1e-ae80-8740a83f8489'
+    - 'block_content:basic:c6768993-cd46-4321-9c75-4d22f8f1565e'
   module:
+    - block_class
     - block_content
+    - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: relacionmiembros
 theme: unizar_departamento
 region: columna_lateral
-weight: -6
+weight: -7
 provider: null
-plugin: 'block_content:0e410315-7fe3-4e1e-ae80-8740a83f8489'
+plugin: 'block_content:c6768993-cd46-4321-9c75-4d22f8f1565e'
 settings:
-  id: 'block_content:0e410315-7fe3-4e1e-ae80-8740a83f8489'
+  id: 'block_content:c6768993-cd46-4321-9c75-4d22f8f1565e'
   label: 'Relación miembros'
   label_display: visible
   provider: block_content
   status: true
   info: ''
   view_mode: full
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

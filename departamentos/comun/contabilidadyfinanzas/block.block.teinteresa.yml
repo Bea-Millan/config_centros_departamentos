@@ -1,17 +1,22 @@
-uuid: 3617735e-4f90-4b75-9e80-f45fbb1fa961
+uuid: f290b0d8-66b7-4c6a-ab0d-2bbab9ed8167
 langcode: es
 status: true
 dependencies:
   config:
     - system.menu.menu-te-interesa
   module:
+    - block_class
     - menu_block
+    - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: teinteresa
 theme: unizar_departamento
 region: columna_lateral
-weight: -7
+weight: -8
 provider: null
 plugin: 'menu_block:menu-te-interesa'
 settings:
@@ -28,4 +33,8 @@ settings:
   expand_all_items: false
   parent: 'menu-te-interesa:'
   suggestion: menu_te_interesa
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

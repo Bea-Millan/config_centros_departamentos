@@ -5,10 +5,14 @@ dependencies:
   config:
     - views.view.estudios
   module:
+    - block_class
     - system
     - views
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: views_block__estudios_block_1_2
 theme: unizar_departamento
 region: content

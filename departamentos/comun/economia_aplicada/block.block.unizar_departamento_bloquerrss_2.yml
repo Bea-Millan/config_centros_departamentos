@@ -6,12 +6,15 @@ dependencies:
     - unizar_modulos_configuracion
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: 357BbniP2u6jJaSmDvDLBVX9_SextxZOJbxrP2Ax3As
 id: unizar_departamento_bloquerrss_2
 theme: unizar_departamento
 region: footer
-weight: 0
+weight: -9
 provider: null
 plugin: bloque_rrss
 settings:

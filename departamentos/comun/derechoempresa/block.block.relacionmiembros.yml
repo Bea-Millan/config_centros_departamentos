@@ -5,9 +5,13 @@ dependencies:
   content:
     - 'block_content:basic:613e853e-5467-4b29-a720-d74cc1bb9200'
   module:
+    - block_class
     - block_content
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: relacionmiembros
 theme: unizar_departamento
 region: columna_lateral

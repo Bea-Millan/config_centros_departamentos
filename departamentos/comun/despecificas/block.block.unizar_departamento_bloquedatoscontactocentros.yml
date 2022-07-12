@@ -6,6 +6,9 @@ dependencies:
     - unizar_modulos_configuracion
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: R9XOv47XqjtJftFYUNN_NXNWaHD7D2-JIZJerE-SjkI
 id: unizar_departamento_bloquedatoscontactocentros

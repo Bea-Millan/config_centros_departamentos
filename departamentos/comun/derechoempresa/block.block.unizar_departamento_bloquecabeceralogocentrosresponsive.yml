@@ -3,9 +3,13 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - unizar_modulos_configuracion
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: Hveg_TbKr0pKqbVCC5pl9hputahu34GJQO7Nuv26E10
 id: unizar_departamento_bloquecabeceralogocentrosresponsive

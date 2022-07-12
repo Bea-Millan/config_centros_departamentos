@@ -3,9 +3,13 @@ langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - language
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: alternadordeidioma
 theme: unizar_departamento
 region: cabecera_sup

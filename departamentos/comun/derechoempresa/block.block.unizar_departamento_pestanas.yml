@@ -2,8 +2,13 @@ uuid: ea37ba52-13ef-46ff-8e36-dffdb2883f2a
 langcode: es
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_departamento_pestanas

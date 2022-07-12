@@ -6,6 +6,9 @@ dependencies:
     - search
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: LWDpVO3fQvH0VWXvTBrH0GkmdY57_Azxb0lzNYyIBIs
 id: unizar_departamento_formulariodebusqueda

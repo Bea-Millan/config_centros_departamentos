@@ -1,23 +1,26 @@
-uuid: 7d6f0788-6f7a-4144-b040-2fe3809bca27
+uuid: 885dd249-9685-4478-afd7-c73443ee0250
 langcode: es
 status: true
 dependencies:
   content:
-    - 'block_content:basic:23413319-5333-4132-8d1a-4039825bcff9'
+    - 'block_content:basic:ca3ea978-8ecb-4e79-bff2-6fedac751dfd'
   module:
+    - block_class
     - block_content
-    - language
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: presentacionpaginainicio
 theme: unizar_departamento
 region: content
 weight: -6
 provider: null
-plugin: 'block_content:23413319-5333-4132-8d1a-4039825bcff9'
+plugin: 'block_content:ca3ea978-8ecb-4e79-bff2-6fedac751dfd'
 settings:
-  id: 'block_content:23413319-5333-4132-8d1a-4039825bcff9'
+  id: 'block_content:ca3ea978-8ecb-4e79-bff2-6fedac751dfd'
   label: 'Presentación página inicio'
   label_display: '0'
   provider: block_content
@@ -29,10 +32,3 @@ visibility:
     id: request_path
     negate: false
     pages: '<front>'
-  language:
-    id: language
-    negate: false
-    context_mapping:
-      language: '@language.current_language_context:language_interface'
-    langcodes:
-      es: es
