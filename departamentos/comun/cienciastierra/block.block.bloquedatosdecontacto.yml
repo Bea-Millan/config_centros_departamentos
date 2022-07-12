@@ -1,25 +1,24 @@
-uuid: 58f5da76-a9cd-46bf-8409-c183aa013095
+uuid: 6ec41d56-6dcb-43e1-a0c8-531a3cd9d9ce
 langcode: es
 status: true
 dependencies:
   module:
+    - block_class
     - unizar_modulos_configuracion
   theme:
     - unizar_departamento
 third_party_settings:
   block_class:
     classes: null
-_core:
-  default_config_hash: R9XOv47XqjtJftFYUNN_NXNWaHD7D2-JIZJerE-SjkI
-id: unizar_departamento_bloquedatoscontactocentros
+id: bloquedatosdecontacto
 theme: unizar_departamento
-region: cabecera_med_derecha
-weight: -8
+region: footer
+weight: 0
 provider: null
 plugin: bloque_cabecera_contacto
 settings:
   id: bloque_cabecera_contacto
-  label: 'Bloque  datos contacto centros'
+  label: 'Bloque datos de contacto'
   label_display: '0'
   provider: unizar_modulos_configuracion
   datoscentro:
@@ -34,5 +33,4 @@ settings:
       url_mapa2: 0
     contacto_header: null
     id: null
-  logo_blanco: {  }
 visibility: {  }

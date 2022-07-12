@@ -9,6 +9,9 @@ dependencies:
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: bienvenidapaginainicio
 theme: unizar_departamento
 region: content

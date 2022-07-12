@@ -1,0 +1,29 @@
+uuid: 037b98ae-c75a-4bb4-b791-e85bb77392f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+    - user
+  theme:
+    - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
+id: iniciodesesion
+theme: unizar_departamento
+region: content
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: 'Inicio de sesión'
+  label_display: visible
+  provider: user
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /acceso-intranet

@@ -5,10 +5,14 @@ dependencies:
   content:
     - 'block_content:basic:94b85823-79a2-4943-8685-9edd35358315'
   module:
+    - block_class
     - block_content
     - system
   theme:
     - unizar_departamento
+third_party_settings:
+  block_class:
+    classes: null
 id: presentacion
 theme: unizar_departamento
 region: content
@@ -17,7 +21,7 @@ provider: null
 plugin: 'block_content:94b85823-79a2-4943-8685-9edd35358315'
 settings:
   id: 'block_content:94b85823-79a2-4943-8685-9edd35358315'
-  label: presentacion
+  label: 'Departamento de Ciencias de la Educación'
   label_display: visible
   provider: block_content
   status: true
