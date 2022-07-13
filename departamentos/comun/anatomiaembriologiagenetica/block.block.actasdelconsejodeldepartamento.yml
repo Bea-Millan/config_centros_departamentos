@@ -32,11 +32,14 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: '<front>'
+    pages: /acceso-intranet
   user_role:
     id: user_role
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
     roles:
+      gestor_basico: gestor_basico
+      administrator: administrator
+      supergestor: supergestor
       intranet: intranet

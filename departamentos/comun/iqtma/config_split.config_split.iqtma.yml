@@ -32,9 +32,9 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - language.negotiation
-  - user.role.supergestor
   - user.role.administrator
   - user.role.anonymous
+  - migrate_plus.migration.persona
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

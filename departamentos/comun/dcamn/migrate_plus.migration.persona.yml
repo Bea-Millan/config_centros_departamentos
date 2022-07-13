@@ -1,0 +1,180 @@
+uuid: c2b10c5a-c43b-4e30-a98d-c24280e6decf
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - unizar_ficha_personal
+_core:
+  default_config_hash: Sm0978ILRe0XKhgNtnIsqHcYsSMnhdcCVD4aycLNUK8
+id: persona
+class: null
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags: null
+migration_group: Persona
+label: Persona
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: 'https://directorio.unizar.es/rest/persona/unidad_persona_web?cod_unidad=25&colectivo=TODOS'
+  ids:
+    id:
+      type: integer
+  item_selector: /
+  fields:
+    -
+      name: id
+      label: 'Provider ID'
+      selector: /id
+    -
+      name: nombPersona
+      label: 'nombre de pila'
+      selector: /nombPersona
+    -
+      name: informacionComplementaria
+      label: 'informacion tutorias'
+      selector: /informacionComplementaria
+    -
+      name: nipPersona
+      label: nipPersona
+      selector: /nipPersona
+    -
+      name: ape1Persona
+      label: 'primer apellido'
+      selector: /ape1Persona
+    -
+      name: ape1Persona
+      label: 'primer apellido'
+      selector: /ape1Persona
+    -
+      name: ape2Persona
+      label: 'segundo apellido'
+      selector: /ape2Persona
+    -
+      name: email
+      label: email
+      selector: /email
+    -
+      name: telefonoExterior
+      label: 'telefono exterior'
+      selector: /telefonoExterior
+    -
+      name: extension
+      label: extension
+      selector: /extension
+    -
+      name: edificio
+      label: edificio
+      selector: /edificio
+    -
+      name: denomCentro
+      label: centro
+      selector: /denomCentro
+    -
+      name: denomDpto
+      label: 'nombre departamento'
+      selector: /denomDpto
+    -
+      name: denomArea
+      label: denomArea
+      selector: /denomArea
+    -
+      name: denomCelula
+      label: denomCelula
+      selector: /denomCelula
+    -
+      name: pasPdi
+      label: pasPdi
+      selector: /pasPdi
+process:
+  nid:
+    -
+      plugin: entity_lookup
+      source: nipPersona
+      ignore_case: true
+      entity_type: node
+      value_key: field_nip
+      bundle_key: type
+      bundle: ficha_personal
+  title:
+    -
+      plugin: concat
+      source:
+        - nombPersona
+        - ape1Persona
+        - ape2Persona
+      delimiter: ' '
+  field_nombre: nombPersona
+  field_nip: nipPersona
+  field_tutorias/value: informacionComplementaria
+  field_tutorias/format:
+    -
+      plugin: default_value
+      default_value: filtered_html
+  field_id_view_form: id
+  field_apellido1: ape1Persona
+  field_apellido2: ape2Persona
+  field_datosagenda_email: email
+  field_telefono_exterior: telefonoExterior
+  field_extension: extension
+  field_edificio: edificio
+  field_centro: denomCentro
+  field_departamento: denomDpto
+  field_area: denomArea
+  field_celula: denomCelula
+  field_colectivotxt: pasPdi
+  field_colectivo:
+    -
+      plugin: entity_generate
+      source: pasPdi
+      entity_type: taxonomy_term
+      value_key: name
+      bundle_key: vid
+      bundle: colectivo
+  field_asignaturas_impartidas/value: asignaturas_impartidas
+  field_asignaturas_impartidas/format:
+    -
+      plugin: default_value
+      default_value: filtered_html
+  field_asignaturas_coordinadas/value: asignaturas_coordinadas
+  field_asignaturas_coordinadas/format:
+    -
+      plugin: default_value
+      default_value: filtered_html
+  field_lineas_investigacion/value: lineas_investigacion
+  field_lineas_investigacion/format:
+    -
+      plugin: default_value
+      default_value: filtered_html
+  field_cv_sideral/value: cv_sideral
+  field_cv_sideral/format:
+    plugin: default_value
+    default_value: filtered_html
+destination:
+  plugin: 'entity:node'
+  default_bundle: ficha_personal
+  overwrite_properties:
+    - nid
+    - title
+    - field_nombre
+    - field_nip
+    - field_tutorias
+    - field_id_view_form
+    - field_apellido1
+    - field_apellido2
+    - field_datosagenda_email
+    - field_telefono_exterior
+    - field_extension
+    - field_edificio
+    - field_centro
+    - field_departamento
+    - field_area
+    - field_celula
+    - field_colectivo
+    - field_asignaturas_impartidas
+    - field_asignaturas_coordinadas
+    - field_lineas_investigacion
+    - field_cv_sideral
+migration_dependencies: {  }

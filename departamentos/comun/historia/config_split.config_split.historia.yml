@@ -33,9 +33,9 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - config_split.config_split.departamento.yml
-  - user.role.supergestor
   - user.role.administrator
   - user.role.anonymous
+  - migrate_plus.migration.persona
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true

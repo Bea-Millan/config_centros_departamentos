@@ -1,39 +1,39 @@
-langcode: es
-status: true
-dependencies: {}
-id: ctmfy
-label: ctmfy
-description: ''
-weight: 0
-folder: ../config/sites/departamentos/comun/ctmfy
-module:
-  c11n_migrate: 0
-theme:
-  unizar_departamento: 0
 blacklist:
-  - config_split.config_split.ctmfy
-  - system.site
-  - system.theme
-  - asset_injector.css.ctmfy_inyeccion_css
-  - core.entity_view_mode.shortcut.token
-  - shortcut.set.default
-  - unizar_centro.settings
-  - unizar_base.settings
-  - unizar_departamento.settings
-  - smtp.settings
-  - language.negotiation
-  - language.types
-  - matomo.settings
-  - unizar_modulos_configuracion.settings
-  - unizar_admin_menu.settings
-  - migrate_drupal.settings
-  - webform.webform.*
-  - user.role.administrator
-  - user.role.anonymous
-  - user.role.supergestor
-  - system.menu.*
-  - language.entity.*
-  - block.block.*
+- config_split.config_split.ctmfy
+- system.site
+- system.theme
+- asset_injector.css.ctmfy_inyeccion_css
+- core.entity_view_mode.shortcut.token
+- shortcut.set.default
+- unizar_centro.settings
+- unizar_base.settings
+- unizar_departamento.settings
+- smtp.settings
+- language.negotiation
+- language.types
+- matomo.settings
+- unizar_modulos_configuracion.settings
+- unizar_admin_menu.settings
+- migrate_drupal.settings
+- webform.webform.*
+- user.role.administrator
+- user.role.anonymous
+- system.menu.*
+- language.entity.*
+- block.block.*
+- migrate_plus.migration.persona
+dependencies: {}
+description: ''
+folder: ../config/sites/departamentos/comun/ctmfy
 graylist: {}
 graylist_dependents: true
 graylist_skip_equal: true
+id: ctmfy
+label: ctmfy
+langcode: es
+module:
+  c11n_migrate: 0
+status: true
+theme:
+  unizar_departamento: 0
+weight: 0

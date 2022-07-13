@@ -25,11 +25,16 @@ process:
     -
       plugin: entity_lookup
       source: field_nip/0/value
-      ignore_case: true
       entity_type: node
       value_key: field_nip
       bundle_key: type
       bundle: ficha_personal
+  status:
+    plugin: skip_on_value
+    method: row
+    not_equals: true
+    value: 1
+    source: status
   title:
     -
       plugin: get
@@ -38,10 +43,6 @@ process:
     -
       plugin: MapUid
       source: node_uid
-  status:
-    -
-      plugin: get
-      source: status
   created:
     -
       plugin: get

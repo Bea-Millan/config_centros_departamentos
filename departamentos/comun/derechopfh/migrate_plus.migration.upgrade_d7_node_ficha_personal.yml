@@ -39,9 +39,11 @@ process:
       plugin: MapUid
       source: node_uid
   status:
-    -
-      plugin: get
-      source: status
+    plugin: skip_on_value
+    method: row
+    not_equals: true
+    value: 1
+    source: status
   created:
     -
       plugin: get

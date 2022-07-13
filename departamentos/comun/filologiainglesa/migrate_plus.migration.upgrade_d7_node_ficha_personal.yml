@@ -30,11 +30,6 @@ process:
       value_key: field_nip
       bundle_key: type
       bundle: ficha_personal
-  langcode:
-    -
-      plugin: default_value
-      source: language
-      default_value: und
   title:
     -
       plugin: get

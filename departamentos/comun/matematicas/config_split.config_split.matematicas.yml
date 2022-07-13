@@ -35,6 +35,7 @@ blacklist:
   - 'language.entity.*'
   - 'block.block.*'
   - config_split.config_split.departamento.yml
+  - migrate_plus.migration.persona
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
