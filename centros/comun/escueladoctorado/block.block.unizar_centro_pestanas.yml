@@ -2,8 +2,13 @@ uuid: c56464e9-641f-40a4-a06e-ca002c9d02d0
 langcode: es
 status: true
 dependencies:
+  module:
+    - block_class
   theme:
     - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
 _core:
   default_config_hash: D-ZgQiFrLUSAt_Xvie31wMXXdYCvlrPzgSJk0QNd2Ao
 id: unizar_centro_pestanas

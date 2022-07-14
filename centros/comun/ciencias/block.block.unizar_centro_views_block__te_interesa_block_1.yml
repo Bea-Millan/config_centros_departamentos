@@ -11,7 +11,7 @@ dependencies:
     - unizar_centro
 third_party_settings:
   block_class:
-    classes: 'te-interesa ojo'
+    classes: te-interesa
 _core:
   default_config_hash: do8pCR7ovNedtuJG-gIwJx3qSYHL3vtWXyNc73SoBAU
 id: unizar_centro_views_block__te_interesa_block_1
@@ -25,6 +25,11 @@ settings:
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
 visibility: {  }

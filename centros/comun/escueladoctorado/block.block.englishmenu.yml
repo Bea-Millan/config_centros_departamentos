@@ -1,0 +1,37 @@
+uuid: 0c796925-1c7a-44e5-a27c-f1eca44fcbfb
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6057491f-9f48-4311-bce3-971031141636'
+  module:
+    - block_class
+    - block_content
+    - language
+  theme:
+    - unizar_centro
+third_party_settings:
+  block_class:
+    classes: null
+id: englishmenu
+theme: unizar_centro
+region: columna_lateral
+weight: 0
+provider: null
+plugin: 'block_content:6057491f-9f48-4311-bce3-971031141636'
+settings:
+  id: 'block_content:6057491f-9f48-4311-bce3-971031141636'
+  label: 'English menu'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      en: en

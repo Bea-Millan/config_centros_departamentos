@@ -6,6 +6,8 @@ dependencies:
     - views.view.te_interesa
   module:
     - block_class
+    - language
+    - system
     - views
   theme:
     - unizar_centro
@@ -25,6 +27,22 @@ settings:
   label: ''
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: ''
   items_per_page: none
-visibility: {  }
+  arguments:
+    Sección:
+      type: taxonomy_index_tid_depth
+      value: ''
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '/en/*'
+  language:
+    id: language
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+    langcodes:
+      es: es
