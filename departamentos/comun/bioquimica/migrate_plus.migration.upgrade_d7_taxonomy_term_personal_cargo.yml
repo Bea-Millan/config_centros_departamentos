@@ -1,0 +1,32 @@
+uuid: 101b667a-0fa4-46a2-bd87-19541f112ee6
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - c11n_migrate
+id: upgrade_d7_taxonomy_term_personal_cargo
+class: Drupal\migrate\Plugin\Migration
+field_plugin_method: null
+cck_plugin_method: null
+migration_tags:
+  - Final
+  - 'Drupal 7'
+  - Content
+migration_group: migrate_drupal_7
+label: 'Taxonomy terms (personal_cargo)'
+source:
+  plugin: d7_taxonomy_term
+  bundle: personal_cargo
+process:
+  tid: tid
+  vid:
+    plugin: default_value
+    default_value: personal_cargo
+  name: name
+  weight: weight
+  description/value: description
+  description/format: format
+destination:
+  plugin: 'entity:taxonomy_term'
+migration_dependencies: null

@@ -1,12 +1,10 @@
-uuid: 839bf5dc-c073-45e7-ace6-58fec2d40d6e
+uuid: 2ba0a367-d453-428e-ab22-e59201fc92f7
 langcode: es
 status: true
 dependencies:
   enforced:
     module:
       - c11n_migrate
-_core:
-  default_config_hash: 0U1QPyChbl2sQ069wuP_f003I9NySR9WGH-Y7hMB-78
 id: upgrade_d7_node_ficha_personal
 class: Drupal\migrate\Plugin\Migration
 field_plugin_method: null
@@ -39,9 +37,11 @@ process:
       plugin: MapUid
       source: node_uid
   status:
-    -
-      plugin: get
-      source: status
+    plugin: skip_on_value
+    method: row
+    not_equals: true
+    value: 1
+    source: status
   created:
     -
       plugin: get
@@ -62,6 +62,15 @@ process:
     -
       plugin: get
       source: field_nip
+  field_equipo_de_direccion:
+    -
+      plugin: get
+      source: field_equipo_de_direccion
+  field_cargo:
+    -
+      plugin: migration_lookup
+      source: field_cargo
+      migration: upgrade_d7_taxonomy_term_personal_cargo
   field_categoria:
     -
       plugin: migration_lookup
@@ -84,10 +93,6 @@ process:
       plugin: migration_lookup
       source: field_sector_consejo
       migration: upgrade_d7_taxonomy_term_personal_sector_consejo
-  field_equipo_de_direccion:
-    -
-      plugin: get
-      source: field_equipo_de_direccion
   field_foto_personal:
     -
       plugin: sub_process
@@ -145,6 +150,7 @@ migration_dependencies:
     - upgrade_d7_user
     - upgrade_d7_node_type
     - upgrade_d7_taxonomy_term_personal_categoria
+    - upgrade_d7_taxonomy_term_personal_cargo
     - upgrade_d7_taxonomy_term_personal_sector_consejo
   optional:
     - upgrade_d7_field_instance
