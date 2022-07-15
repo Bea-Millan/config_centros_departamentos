@@ -1,4 +1,4 @@
-uuid: 279518af-ec53-4f75-a8e8-d69c8b8bfc30
+uuid: 9a34175a-a36f-4e54-863d-1a03d7510a86
 langcode: es
 status: true
 dependencies:
@@ -37,9 +37,11 @@ process:
       plugin: MapUid
       source: node_uid
   status:
-    -
-      plugin: get
-      source: status
+    plugin: skip_on_value
+    method: row
+    not_equals: true
+    value: 1
+    source: status
   created:
     -
       plugin: get
