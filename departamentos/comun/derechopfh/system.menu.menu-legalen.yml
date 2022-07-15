@@ -1,8 +1,8 @@
-uuid: 858cf332-2bbd-4b28-94b0-94a923088bd2
+uuid: 63a46ab2-df0b-4158-9c1c-aa54e6697e0a
 langcode: es
 status: true
 dependencies: {  }
-id: menu-legal
-label: Legal
+id: menu-legalen
+label: Legal_en
 description: 'Menú de links legales que aparecerá en el pie del sitio.'
 locked: false
